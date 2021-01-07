@@ -451,8 +451,8 @@ input::placeholder{color:#bbb}
     color: #fff;
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
-    #cartCnt.cart_num {padding-top:0px;}
-    #header .header_title {margin-top:6px;}
+    #cartCnt.cart_num {padding-top:1px;}
+    #header .header_title {margin-top:8px;}
     #header {background-color:skyblue}
     }
 }
