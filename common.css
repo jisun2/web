@@ -453,14 +453,19 @@ input::placeholder{color:#bbb}
 }
 
 /* Safari 9 */
-@supports (overflow:-webkit-marquee) and (justify-content:inherit)
-{ #cartCnt.cart_num {padding-top:1px;}
-#header .header_title {margin-top:9px;}
- }
+@supports (overflow:-webkit-marquee) and (justify-content:inherit){
+    #cartCnt.cart_num {padding-top:1px;}
+    #header .header_title {margin-top:9px;}
+    #header {background-color:red}
+     }
 
 /* IOS  */
-/* @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none))
- { .safari_only { color:#0000FF; background-color:#CCCCCC; } } */
+@supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)){
+    #cartCnt.cart_num {padding-top:1px;}
+    #header .header_title {margin-top:9px;}
+    #header {background-color:blue}
+     }
+
 
 
 /* navigation */
