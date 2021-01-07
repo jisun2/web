@@ -451,20 +451,26 @@ input::placeholder{color:#bbb}
     font-size: 10px;
     color: #fff;
 }
-
-/* Safari 9 */
-@supports (overflow:-webkit-marquee) and (justify-content:inherit){
+@media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
     #header .header_title {margin-top:9px;}
     #header {background-color:red}
-     }
+    }
+}
+
+/* Safari 9 */
+/* @supports (overflow:-webkit-marquee) and (justify-content:inherit){
+    #cartCnt.cart_num {padding-top:1px;}
+    #header .header_title {margin-top:9px;}
+    #header {background-color:red}
+     } */
 
 /* IOS  */
-@supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)){
+/* @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)){
     #cartCnt.cart_num {padding-top:1px;}
     #header .header_title {margin-top:9px;}
     #header {background-color:blue}
-     }
+     } */
 
 
 
