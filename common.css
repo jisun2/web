@@ -424,7 +424,7 @@ input::placeholder{color:#bbb}
     transform: translate(-50%,-7%) rotateZ(-45deg);
 }
 
-
+#header {background-color:skyblue}
 #header {padding-top:5px; display:flow-root;}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
