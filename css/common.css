@@ -429,7 +429,7 @@ input::placeholder{color:#bbb}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
 #header .logo_area {margin-left:16px; display:inline-block;}
 #header .header_title {margin-top:6px; letter-spacing:-1px; vertical-align: middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
-#header .header_title .number {font-size:18px; line-height:10px; font-family:'Proxima-Nova' !important}
+#header .header_title .number {font-size:18px; line-height:10px; font-family:'Proxima-Nova'}
 #header .btn_area {width:100%; height:45px;}
 #header .btn_area a {position:relative; display:inline-block;}
 #header .btn_area li {float:right; margin-right:7px}
@@ -455,14 +455,13 @@ input::placeholder{color:#bbb}
     #cartCnt.cart_num {padding-top:1px;}
     #header .header_title {margin-top:8px;}
     #header {background-color:skyblue}
+    #header .header_title .number {font-family:'Proxima-Nova' !important}
 }
 /* 사파리 */
 _::-webkit-full-page-media, _:future, :root .safari_only {
   #header {background-color:blue}
 }
 
-
-}
 
 
 
