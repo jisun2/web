@@ -454,15 +454,8 @@ input::placeholder{color:#bbb}
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
     #header .header_title {margin-top:8px;}
-    #header {background-color:skyblue}
     #header .header_title .number {font-family:'Proxima-Nova' !important}
 }
-/* 사파리 */
-_::-webkit-full-page-media, _:future, :root .safari_only {
-  #header {background-color:blue}
-}
-
-
 
 
 /* navigation */
