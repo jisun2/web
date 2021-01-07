@@ -450,32 +450,19 @@ input::placeholder{color:#bbb}
     font-size: 10px;
     color: #fff;
 }
+/*  테스트 결과 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
     #header .header_title {margin-top:8px;}
     #header {background-color:skyblue}
-    }
 }
-@media screen and (-moz-min-device-pixel-ratio:0){
-    #cartCnt.cart_num {padding-top:2px;}
-    #header .header_title {margin-top:10px;}
-    #header {background-color:red}
-    }
+/* 사파리 */
+_::-webkit-full-page-media, _:future, :root .safari_only {
+  #header {background-color:blue}
 }
 
-/* Safari 9 */
-/* @supports (overflow:-webkit-marquee) and (justify-content:inherit){
-    #cartCnt.cart_num {padding-top:1px;}
-    #header .header_title {margin-top:9px;}
-    #header {background-color:red}
-     } */
 
-/* IOS  */
-/* @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)){
-    #cartCnt.cart_num {padding-top:1px;}
-    #header .header_title {margin-top:9px;}
-    #header {background-color:blue}
-     } */
+}
 
 
 
