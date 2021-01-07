@@ -424,13 +424,12 @@ input::placeholder{color:#bbb}
     transform: translate(-50%,-7%) rotateZ(-45deg);
 }
 
-
 #header {padding-top:5px; display:flow-root;}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
 #header .logo_area {margin-left:16px; display:inline-block;}
-#header .header_title {margin-top:6px; letter-spacing:-1px; vertical-align: middle; font-weight:bold;font-size:16px; font-family:"notosans"; color:#111;}
-#header .header_title .number {font-size:18px; font-family:"ProximaNova";}
+#header .header_title {margin-top:6px; letter-spacing:-1px; vertical-align: middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
+#header .header_title .number {font-size:18px; line-height:10px; font-family:'Proxima-Nova' !important}
 #header .btn_area {width:100%; height:45px;}
 #header .btn_area a {position:relative; display:inline-block;}
 #header .btn_area li {float:right; margin-right:7px}
@@ -442,8 +441,7 @@ input::placeholder{color:#bbb}
 #header .btn_area .logom {background-position: -119px 0px; width:26px; height:24px}
 #header .btn_area .noti {background-position: -226px 0px}
 #header .btn_area .close {background-position: -265px 0px}
-#cartCnt.cart_num {
-    display: inline-block; padding:0 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px; height:20px; border-radius:50px; line-height:19px; text-align:center; font-style:normal; vertical-align:middle;
+#cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px; height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;
 	background: #ff4e25;
 	-webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -452,6 +450,34 @@ input::placeholder{color:#bbb}
     font-size: 10px;
     color: #fff;
 }
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    #cartCnt.cart_num {padding-top:0px;}
+    #header .header_title {margin-top:6px;}
+    #header {background-color:skyblue}
+    }
+}
+@media screen and (-moz-min-device-pixel-ratio:0){
+    #cartCnt.cart_num {padding-top:2px;}
+    #header .header_title {margin-top:10px;}
+    #header {background-color:red}
+    }
+}
+
+/* Safari 9 */
+/* @supports (overflow:-webkit-marquee) and (justify-content:inherit){
+    #cartCnt.cart_num {padding-top:1px;}
+    #header .header_title {margin-top:9px;}
+    #header {background-color:red}
+     } */
+
+/* IOS  */
+/* @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none)){
+    #cartCnt.cart_num {padding-top:1px;}
+    #header .header_title {margin-top:9px;}
+    #header {background-color:blue}
+     } */
+
+
 
 /* navigation */
 #container .fixed_nav {z-index:100; position:fixed; bottom:0; width:100%; line-height:15px; background-color: #fff;}
