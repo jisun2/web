@@ -452,6 +452,17 @@ input::placeholder{color:#bbb}
     color: #fff;
 }
 
+/* Safari 9 */
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{ #cartCnt.cart_num {padding-top:1px;}
+#header .header_title {margin-top:9px;}
+ }
+
+/* IOS  */
+/* @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) and (not (-moz-appearance:none))
+ { .safari_only { color:#0000FF; background-color:#CCCCCC; } } */
+
+
 /* navigation */
 #container .fixed_nav {z-index:100; position:fixed; bottom:0; width:100%; line-height:15px; background-color: #fff;}
 #container .fixed_nav.hide {bottom:-10%}
