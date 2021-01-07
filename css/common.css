@@ -450,27 +450,27 @@ input::placeholder{color:#bbb}
     font-size: 10px;
     color: #fff;
 }
-/*  테스트 결과 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
+/* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
     #header .header_title {margin-top:8px;}
-    #header .header_title .number {font-family:'Proxima-Nova' !important}
+    #header .header_title .number {font-family:'Proxima-Nova'!important}
 }
 
 
 /* navigation */
-#container .fixed_nav {z-index:100; position:fixed; bottom:0; width:100%; line-height:15px; background-color: #fff;}
+#container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; line-height:15px; background-color: #fff;}
 #container .fixed_nav.hide {bottom:-10%}
 #container .fixed_nav .cate {width:20px; height:20px; background-position: -36px -23px}
 #container .fixed_nav .search {width:20px; height:20px; background-position: -59px -27px}
 #container .fixed_nav .home {width:32px; height:32px; background-position: 0px -27px}
 #container .fixed_nav .mypage {width:20px; height:20px; background-position: -84px -27px}
 #container .fixed_nav .product {width:20px; height:20px; background-position: -109px -28px}
-#container .fixed_nav .fbn-list {display:table; width:100%; height:60px}
-#container .fixed_nav .fbn-list li {display: table-cell; width: 20%; height: 60px; vertical-align: middle; text-align: center; border-top: 1px solid #e5e5e5;}
-#container .fixed_nav .fbn-list li a {margin-top:1px; display:block}
+#container .fixed_nav .fbn-list {width:100%;}
+#container .fixed_nav .fbn-list li {display:block; float:left; padding:0; width:20%; height:60px; vertical-align:middle; text-align:center; border-top: 1px solid #e5e5e5;}
+#container .fixed_nav .fbn-list li a {padding-top:13px; height:46px; display:block}
 #container .fixed_nav .fbn-list li.on {border-top:1px solid #333;}
-#container .fixed_nav .fbn-list .fbn-item {display:inline-block; width:100%; color: #333; font-size:9px; font-weight:500;}
+#container .fixed_nav .fbn-list .fbn-item {display:inline-block; width:100%; color:#333; font-size:9px; font-weight:500;}
 
 
 /* .fbn-list .search::before { background: url(../common/images/ico/fbn_search-icon.png) center center/100% no-repeat}
