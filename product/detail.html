@@ -5,9 +5,10 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>힙합퍼 상품 상세 _ 상품</title>
         <meta name="description">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
         <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="assets/css/productdetail.css">
     </head>
     <body>
@@ -15,19 +16,19 @@
         <div id="wrap">
 
             <div id="header">
-                <div class="page-header white">
-                    <div class="sz-wrap justify_box">
-                        <div class="just_left">
-                            <a href="#" class="back-btn"></a>
-                            <h2 class="page-title">상세 정보</h2>
-                        </div>
-                        <div class="just_right">
-                            <ul class="ph_icon-list">
-                                <li><a href="#" class="ph-btn home"></a></li>
-                                <li><a href="#" class="ph-btn cart"></a></li>
-                                <li><a href="#" class="ph-btn search"></a></li>
-                            </ul>
-                        </div>
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            의류
+                        </p>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico search"><span class="blind">서치 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">99+</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
