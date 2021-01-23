@@ -100,7 +100,7 @@
                                     2,987,750 <span class="pay_num num">원</span>
                                 </p>
                                 <!-- <div><button type="button" onclick="openLayer(event,'#tempLayer1',this)"> (레이어 팝업) 버튼 타입 1개 타이틀 기본형(넓이 600px / 300px)</button></div> -->
-                                <button type="button" class="sale-btn pop_open" onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button>
+                                <button type="button" class="sale-btn pop_open" onclick="openLayer('#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button>
                                 <!-- <button type="button" class="sale-btn pop_open" data-popup="coupDe"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
                                 <div class="dim_layer hide">
                         			<div class="popuplayer" id="tempLayer1">
@@ -152,14 +152,14 @@
                                             <p><span class="naver_pay"></span>결제 시 N포인트 <span class="num">1%</span>적립</p>
                                             <!-- <button type="button" class="card-btn"></button> -->
                                             <!-- <a href="#" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</a> -->
-                                            <button type="button" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</button>
+                                            <button type="button" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)" data-popup="pop_card_benefit">카드사 혜택</button>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <!-- 팝업 카드사 혜택 S-->
-                        <div id="pop_card_benefit" class="popup-wrap">
+                        <div id="pop_card_benefit" class="popuplayer popup-wrap">
                             <h2 class="page-title">이달의 카드사 혜택</h2>
                             <div class="paymt_wrap">
                             <div class="paymt_card_benefit">
@@ -782,7 +782,7 @@
                                                     <div class="relative_box">
                                                         <ul class="re_img ovr_x">
                                                             <li class="">
-                                                                <a href="#" class="pop_open" onclick="openLayer(event,'#photoView',this)"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a>
+                                                                <a href="#" class="pop_open" onclick="openLayer(event,'#photoView',this)" data-popup="photoView"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a>
                                                             </li>
                                                             <li><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a></li>
                                                             <li><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a></li>
