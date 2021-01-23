@@ -144,6 +144,7 @@ td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].erro
 .white .btn_like .count{color:#fff!important}
 .tc_b,
 .tc_b [class^=btn_]{color:#bbb}
+button:focus {outline:none}
 input.tc_3::-webkit-input-placeholder{color:#bbb!important}
 input.tc_3::-moz-placeholder{color:#bbb!important}
 input.tc_3:-ms-input-placeholder{color:#bbb!important}
@@ -800,5 +801,5 @@ input:checked+label, .tc_3, .tc_3_h:focus, .tc_3_h:hover {
 @media screen and (min-width:720px) {
     #wrap.wd720 {width:720px; margin:0 auto}
     #photoView {width:800px; margin:0 20%;}
-    #pop_card_benefit {width:800px; margin:0 20%}
+    /* #pop_card_benefit {width:800px; margin:0 20%} */
 }
