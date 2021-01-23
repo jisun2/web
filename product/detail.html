@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maxim.um-scale=1.0, user-scalable=no">
         <script src="../js/plugin.js"></script>
         <script src="../js/common.js"></script>
-        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <!-- <script src="../common/lib/jquery-2.2.4.min.js"></script> -->
         <!-- <link rel="stylesheet" href="../common/css/common.css"> -->
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="assets/css/productdetail.css">
@@ -75,8 +75,8 @@
                               $slider.on('afterChange', function(event, slick, currentSlide) {
                                 updateSliderCounter(slick, currentSlide);
                               });
-
-                              $slider.slick();
+                              //
+                              // $slider.slick();
                             }
                     </script>
 
@@ -100,8 +100,8 @@
                                     2,987,750 <span class="pay_num num">원</span>
                                 </p>
                                 <!-- <div><button type="button" onclick="openLayer(event,'#tempLayer1',this)"> (레이어 팝업) 버튼 타입 1개 타이틀 기본형(넓이 600px / 300px)</button></div> -->
-                                <button type="button" class="sale-btn pop_open" onclick="openLayer('#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button>
-                                <!-- <button type="button" class="sale-btn pop_open" data-popup="coupDe"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
+                                <button type="button" class="sale-btn pop_open" onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button>
+                                <!-- <button type="button" class="sale-btn pop_open" data-popup="tempLayer1"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
                                 <div class="dim_layer hide">
                         			<div class="popuplayer" id="tempLayer1">
                         				<div class="popup_area wd260">
