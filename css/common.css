@@ -431,6 +431,10 @@ input[type=checkbox] {background-color:#333; color:#fff}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px}
 
+/* btn */
+.btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color: #111}
+.btn_bk .dark {display:block; padding:17px 0}
+
 
 /* 레이어 팝업 */
 .dim_layer {position:fixed;z-index:200;left:0;top:0;bottom:0;right:0;background-color:rgba( 0, 0, 0, 0.8)}
@@ -755,6 +759,29 @@ input[type=checkbox] {background-color:#333; color:#fff}
 #footer .footer_top li.on_m {margin-right:0}
 input::-ms-clear{display:none}
 
+
+#photoView {width:100%}
+#pop_card_benefit {}
+.input_checkbox label:before, .input_radio_check label:before {
+border-radius: 2px;}
+
+.input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {
+    background-color: #333;
+    color:#fff;
+    width:300px;
+    height:30px;
+}
+.input_checkbox label, .input_radio label, .input_radio_check label {
+    display: block;
+    position: relative;
+    height: 22px;
+    padding: 0 0 0 30px;
+    font-size: 14px;
+    line-height: 24px;}
+
+input:checked+label, .tc_3, .tc_3_h:focus, .tc_3_h:hover {
+    color: #333!important;}
+
 /* @media all screen (max-width:320px){
     #footer .footer_top .on_m {margin:0}
     #footer .inlink li {position:relative;height:22px;margin-right:14px;}
@@ -771,5 +798,7 @@ input::-ms-clear{display:none}
     #wrap.wd720 {min-width:320px}
 }
 @media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px; margin:0 auto; overflow-x:inherit}
+    #wrap.wd720 {width:720px; margin:0 auto}
+    #photoView {width:800px; margin:0 20%;}
+    #pop_card_benefit {width:800px; margin:0 20%}
 }
