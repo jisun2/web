@@ -251,18 +251,26 @@ input::placeholder{color:#bbb}
 .lc_err{border-color:#f32323!important}
 .order_form .sel_payment input:checked+label, .order_form .sel_payment input:focus+label, .tc_3, .tc_3_h:focus, .tc_3_h:hover
 {background-color:#fff}
-.input_radio_check label:after{left:5px;top:6px;width:12px;height:10px;background-position:-118px -34px;opacity:.1}
+/* .input_radio_check label:after{left:5px;top:6px;width:12px;height:10px;background-position:-118px -34px;opacity:.1}
 input[type=checkbox] {background-color:#333; color:#fff}
 
 .input_checkbox label:before, .input_number [class^=btn_], .input_radio label:before, .input_radio_check label:before, .lc_d0, .table_st td, .table_st th, .table_st.lc_d0, [class^=btn_].lc_d0 {
     border-color:#e5e5e5;
-}
+} */
 .input_checkbox input:checked+label:after,
 .input_radio_check input:checked+label:after{opacity:1;}
-.input_checkbox label:before{width:40px;height:40px; background-color:#333; color:#fff}
+.input_checkbox input[type=checkbox] {padding-left:20px; width:18px;height:18px;
+    display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px;
+    background-position:0 -60px;
+}
+.input_checkbox input[type=checkbox]:checked +label {
+    width:18px;height:18px;
+        display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px;
+    background-position:-22px -60px;
+}
 /* .input_checkbox label:after{padding:0;left:7px;top:8px;min-width:6px;height:12px;background-position:-132px -20px} */
-.input_checkbox label{height:28px;line-height:30px;font-weight:500}
-.input_radio_check label{padding-left:28px}
+/* .input_checkbox label{height:28px;line-height:30px;font-weight:500}
+.input_radio_check label{padding-left:28px} */
 
 
 [class*=btn_]{display:inline-block;vertical-align:top}
@@ -381,10 +389,10 @@ input[type=checkbox] {background-color:#333; color:#fff}
 
 /* Slider */
 .slick-slider
-{ position: relative; display: block; box-sizing: border-box; -webkit-user-select: none;-moz-user-select: none; -ms-user-select: none;user-select: none;-webkit-touch-callout: none;
+{ position: relative; display: block; box-sizing: border-box;
     -khtml-user-select: none;-ms-touch-action: pan-y; touch-action: pan-y;-webkit-tap-highlight-color: transparent;}
 .slick-list{position: relative;display: block; overflow: hidden; margin: 0; padding: 0;}
-.slick-list:focus {outline: none;}
+/* .slick-list:focus {outline: none;} */
 .slick-list.dragging {cursor: pointer;cursor: hand;}
 .slick-slider .slick-track, .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
@@ -425,17 +433,22 @@ input[type=checkbox] {background-color:#333; color:#fff}
 .orange {color:#ff4e25 !important}
 .blue {color:#3067cc !important}
 
-.num {font-family:'proxima-nova'}
+.num {font-family:'proxima-nova'!important}
 .notoS {font-weight:200; font-family:'Noto Sans KR'!important}
 .proxima {font-family:'proxima-nova'!important}
 .box_right, .box_left {position:relative; float:left; width:50%; vertical-align: middle;}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px}
+.ico.Warning {width:14px; height:14px; background-position:-227px -26px}
 
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color: #111}
 .btn_bk .dark {display:block; padding:17px 0}
 
+/* badge */
+.badge {display:inline-block; margin:0 auto; text-align:center; min-width:65px; max-height:24px; font-family:'Noto Sans KR'; font-size:11px}
+.badge.ble {background-color:#3067cc; color:#fff}
+.badge.bk {background-color:#000; color:#fff}
 
 /* 레이어 팝업 */
 .dim_layer {position:fixed;z-index:200;left:0;top:0;bottom:0;right:0;background-color:rgba( 0, 0, 0, 0.8)}
@@ -448,8 +461,10 @@ input[type=checkbox] {background-color:#333; color:#fff}
 .popuplayer .popup_area .btns button {float:left; height:45px}
 .popuplayer .popup_area .btns .mgl6 {margin-left:6px}
 .popuplayer .popup_area .btns .btn_cancel50 {width:48.5%; color:#000; border:1px solid #111}
-.popuplayer .popup_area .btns .btn_confirm50 {width:48.5%; color:#fff; background-color: #111}
-.popuplayer .popup_area .btns .btn_confirm100 {width:100%; color:#fff; background-color: #111}
+.popuplayer .popup_area .btns .btn_confirm50 {width:48.5%; color:#fff; background-color:#111}
+.popuplayer .popup_area .btns .btn_confirm100 {width:100%; color:#fff; background-color:#111}
+
+
 /* 레이어 팝업 close button 때문에 추가 */
 .dim_layer .wrap_layer{width:320px;border-radius:5px;background-color:#fff;box-shadow:0 15px 40px 0 rgba(0,0,0,.2);left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 .dim_layer .popuplayer.wrap_layer button.btn_close {padding:20px}
@@ -530,7 +545,7 @@ input[type=checkbox] {background-color:#333; color:#fff}
 /* 공통  tooltip */
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -208px -45px}
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
-.tooltip .tooltiptext {visibility:hidden;width:200px;background-color:#3067cc;color:#fff;text-align:center;border-radius:6px;padding:5px 0;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:11px; font-weight:200; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2); line-height:15pt}
+.tooltip .tooltiptext {padding:5px 0;visibility:hidden;width:200px;background-color:#3067cc;color:#fff;text-align:center;border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:11px; font-weight:200; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2); line-height:15pt}
 .tooltip .tooltiptext:after {content: '';position:absolute;top:100%;left:50%;margin-left:-5px;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
 .tooltip:hover .tooltiptext {visibility:visible}
 
@@ -555,7 +570,7 @@ input[type=checkbox] {background-color:#333; color:#fff}
 .popup_close-btn {position: fixed; left: 50%; bottom: 30px; width: 40px;height: 40px; background: url(../common/images/ico/popup_close-icon.png) center center/cover no-repeat;
   -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); z-index: 100;}
 .popup-content .page-header .sz-wrap {padding: 0 20px}
-.popup-content .page-title {font-size: 18px;margin-left: 0}
+.popup-content .page-title {font-size:18px;margin-left:0}
 .terms-popup { width: 100vw; height: 100vh; background-color: #fff}
 .terms-popup .terms-content {margin: 0 auto;
   max-width: 466px; padding: 25px 20px 95px; height: calc(100vh - 50px); overflow: auto}
@@ -717,6 +732,24 @@ input[type=checkbox] {background-color:#333; color:#fff}
   } */
 
 
+.paymt_card_benefit {padding:0 0 30px; margin:0 20px; display:block;/* height:calc(100vh - 60px)*/}
+.paymt_card_benefit strong {display:block;margin-top:25px;font-size:12px; color:#555; text-align:left; border:0;}
+/* .paymt_card_benefit strong:first-of-type {padding:25px 0 15px; } */
+.paymt_card_benefit ul.card li:first-child {border-top:1px solid #e5e5e5}
+.paymt_card_benefit ul.card li:after {display:block; content:''; clear:both;}
+.paymt_card_benefit ul.card li {padding:22px 0; border-bottom:1px solid #e5e5e5;}
+.paymt_card_benefit ul.card li .card {float:left; margin:0 16px 0 0 ;}
+.paymt_card_benefit ul.card li dl {float:left; text-align:left}
+.paymt_card_benefit ul.card li dl dt {font-size:0;}
+.paymt_card_benefit ul.card li dl dd {font-size:13px; color:#888}
+.paymt_card_benefit ul.card li dl>dd:first-of-type {font-size:14px; font-weight:500; color:#000; margin:0 0 6px}
+
+/* 이달의 카드사 혜택 */
+.paymt_card_benefit .card_benefit_info { margin:25px 0 0}
+.paymt_card_benefit .card_benefit_info p span {display:block; font-size:12px; font-weight: 300; color:#555; margin:0 0 15px}
+.paymt_card_benefit .card_benefit_info li {padding:unset;font-size:11px; font-weight: 200;color:#888; line-height:1; margin:0 0 8px;}
+.paymt_card_benefit .card_benefit_info li::before {background-color:#888; display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:3px;height:3px; vertical-align:2px; margin-right:5px; }
+
 
 #footer {padding:20px 16px 80px 16px}
 #footer .footer_top {z-index:1;clear:both;display:inline-block;width:100%;min-width: 50%;padding-bottom: 16px;border-bottom: 1px solid #eee;-ms-flex-pack: start;justify-content: flex-start;text-align: left;}
@@ -763,7 +796,8 @@ input::-ms-clear{display:none}
 
 #photoView {width:100%}
 #pop_card_benefit {}
-.input_checkbox label:before, .input_radio_check label:before {
+
+/* .input_checkbox label:before, .input_radio_check label:before {
 border-radius: 2px;}
 
 .input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {
@@ -778,7 +812,7 @@ border-radius: 2px;}
     height: 22px;
     padding: 0 0 0 30px;
     font-size: 14px;
-    line-height: 24px;}
+    line-height: 24px;} */
 
 input:checked+label, .tc_3, .tc_3_h:focus, .tc_3_h:hover {
     color: #333!important;}
@@ -792,8 +826,6 @@ input:checked+label, .tc_3, .tc_3_h:focus, .tc_3_h:hover {
     #footer .footer_top li {margin-right:18px;}
     #footer .footer_top li.on_m {margin-right:0}
 } */
-
-
 
 @media screen and (min-width:320px) {
     #wrap.wd720 {min-width:320px}
