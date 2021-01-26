@@ -13,10 +13,9 @@
 /* .product_detail_slider .slick-dots li.slick-active button {background-color:#333}
 .product_detail_slider .slick-dots li button {width:100%; height:100%; background-color:#d0d0d0; border-radius:50%; text-indent:-9999px; overflow:hidden} */
 .slider__counter {position:absolute; bottom: 1rem; left:45%; text-align:center;
-  z-index:1; font-size:20px; font-weight:200; color:#fff; background-color:rgba(0, 0, 0, 0.9);  min-width:60px;
+  z-index:1; font-size:20px; font-weight:200; color:#fff; background-color:rgba(0, 0, 0, 0.9);  min-width:60px
+  pointer-events: none; border-radius: 50px 50px;-webkit-border-radius:50px 50px;
   /* mix-blend-mode: difference; */
-  pointer-events: none;
-  border-radius: 50px 50px;
 }
 .review_wrap .slick-arrow {text-indent:-999px}
 .review_wrap .slick-list.draggable {margin:0 10px}
@@ -29,7 +28,7 @@
 .product_info {padding:25px 20px; position:relative; font-family:'Noto Sans KR'}
 .product_info .product_detail-acco .pda-title.active::after {top:15px}
 .product_info .ico.share {display:inline-block; margin:10px; position:absolute; top:15px; right:5px; width:27px; height:27px; margin-left:8px;  background-position: -148px -22px}
-.product_info .sale-btn {position:absolute; right:0; bottom:0; width:80px; height:24px; border-radius:3px; vertical-align:middle; background-color:#333;  color: #fff; font-size:11px; font-weight:300}
+.product_info .sale-btn {position:absolute; right:0; bottom:0; width:80px; height:24px; border-radius:3px; -webkit-border-radius:3px; vertical-align:middle; background-color:#333;  color: #fff; font-size:11px; font-weight:300}
 
 .ico.down {width:12px; height:10px; margin-left:8px; background-position: -233px -50px}
 .ico.like_s {width:14px; height:14px; background-position:-193px -45px}
@@ -100,7 +99,7 @@
 .btn_bk {margin:25px 0 40px 0;}
 
 /* 상세 탭 별점 상품평  */
-p._ellipsis {overflow: hidden; text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;}
+p._ellipsis {overflow: hidden; text-overflow:ellipsis;-o-text-overflow:ellipsis; display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
 /* .reviewer {margin: 20px auto 40px; display: block;width:100%;} */
 .reviewer strong { display: block; text-align: center; font-size: 16px;font-weight: 500; color: #333; line-height: 1; margin-bottom: 15px;}
 .reviewer .star {float:left;}
@@ -108,7 +107,7 @@ p._ellipsis {overflow: hidden; text-overflow:ellipsis;display:-webkit-box;-webki
 .reviewer .star_wrap {margin-top:4px; display:inline-block;}
 .reviewer .star_rating_s .star_wrap {float:left;}
 .reviewer .review_wrap {position:relative; width:100%;}
-.reviewer .review_wrap .review_id {position:absolute; right:0; color:#333}
+.reviewer .review_wrap .review_id {position:absolute; right:-60px; color:#333}
 .reviewer .review_box {position:relative;}
 .reviewer .review_box span {margin:5px 0 0 10px; float:left; font-size: 12px; color: #888;}
 /* .reviewer .review_box li {display:inline-block;} */
@@ -149,13 +148,14 @@ p._ellipsis {overflow: hidden; text-overflow:ellipsis;display:-webkit-box;-webki
 .reviewer .list_selector li a.on span {font-weight: bold; color:#333}
 .reviewer .list_selector span{font-size: 16px; color:#bbb;}
 .reviewer .list_selector span.le_mg {margin-left:25px}
-.reviewer .list_selector ._selected span{font-weight: bold; color:#333}
+.reviewer .list_selector ._selected span {font-weight: bold; color:#333}
 .reviewer .list_selector a + a{margin-left:25px;}
 .reviewer .list li{padding:25px 0;}
 /* 상품 QnA */
 .dis_if {display:none}
 .overh {height:300px; overflow:hidden}
 .qnaBox {position:relative; width:100%; text-align:left}
+.qnaBox .list_bar li::before {right:5px}
 .qnaBox span {float:right}
 .list_bar {display:inline-block;}
 /* .list_bar.btn {float:right} */
@@ -181,7 +181,7 @@ p._ellipsis {overflow: hidden; text-overflow:ellipsis;display:-webkit-box;-webki
 .product div.tab_inr:nth-child(3) {}
 .product div.tab_inr.QA {padding:0;}
 .product .product_lst li {width:100%; text-align: left;}
-.product .product_lst > li a {display: inline-block; position:relative; width:70%; text-overflow:ellipsis;white-space: nowrap;overflow:hidden;font-size: 0.95rem;}
+.product .product_lst > li a {display:inline-block; position:relative; width:70%; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;font-size:0.95rem;}
 .product .product_lst >li .date { display: block;float: right;color: #999;font-size: .875rem;}
 
 /* 상세 탭 Q&A */
@@ -230,7 +230,7 @@ input[type=checkbox]:checked + label.ico.check {background-position: -20px 20px;
 .wrap_board .que .secret:after{width:16px;height:17px;background-position:-71px -133px;vertical-align:sub;margin-left:8px;}
 .wrap_board .que .view{position:absolute;left:0;top:0; width:100%;/*height:22px;*/ }
 .wrap_board .que .cont{position:relative;}
-.wrap_board .que .cont ._ellipsis{clear:both; display:-webkit-box;
+.wrap_board .que .cont ._ellipsis {clear:both; display:-webkit-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -326,7 +326,7 @@ input[type=checkbox]:checked + label.ico.check {background-position: -20px 20px;
 .product_banner_slide .slick-dots::after {content:''; display:block; clear:both}
 .product_banner_slide .slick-dots li {float:left; width:6px; height:6px; margin:12px 0; margin-left:6px}
 .product_banner_slide .slick-dots li.slick-active button {background-color:#333}
-.product_banner_slide .slick-dots li button {width: 100%; height: 100%; background-color: #d0d0d0; border-radius: 50%; text-indent: -9999px; overflow: hidden}
+.product_banner_slide .slick-dots li button {width:100%; height:100%; background-color:#d0d0d0; border-radius:50%; -webkit-border-radius:50%; text-indent: -9999px; overflow: hidden}
 /* 페이지 더보기 */
 /* .pf-box {padding: 20px 20px 15px; border-bottom: 8px solid #f0f0f0} */
 .pf-box .long-btn {margin-bottom: 40px}
@@ -380,23 +380,23 @@ input[type=checkbox]:checked + label.ico.check {background-position: -20px 20px;
 .coupon-cate {display: block;color: #888; font-size: 11px; font-weight: 500}
 .coupon-title {line-height: 1.2; margin: 10px 0 20px; font-size: 15px; font-weight: 500}
 .coupon_info-list li {line-height: 13px; color: #ababab; font-size: 10px} */
-.product_fixed-wrap { position: fixed; bottom: 0; width: 100%}
+.product_fixed-wrap {z-index:20; position:fixed; bottom:0; width:100%; font-weight:200}
 
 /* 쇼핑백 담기 바로구매 btn */
-.pf_btn-box {padding: 13px 15px; background-color: #000; position: relative; height: 71px;}
+.ico.del {margin:3px 0 0 18px; width:22px; height:22px; background-position: -50px -55px}
+.pf_btn-box {padding:13px 15px;position:relative; height:80px; background-color:#000;}
 .pf_btn-box.pl0 {padding-left:0;}
 .pf_btn-box::after {content: ''; display: block; clear: both}
-.pf_btn-box .pf-btn { width: calc(50% - 6px);  height: 45px; float: left; margin: 0 3px; color: #fff; font-size: 17px; font-weight: 300}
+.pf_btn-box .pf-btn {width: calc(50% - 6px); height:45px; float:left; margin:0 3px; color: #fff; font-size:17px; font-weight: 300}
 .pf_btn-box .orange_btn2 {width: 72.2222%; height: 45px; position:absolute; right: 18px; /* left: 23.61111%; */ background-color: #ff4e25; color: #fff; font-size: 17px; font-weight: 500}
-.orange-btn {color: #fff; background-color: #ff4e25}
+.orange-btn {color:#fff; background-color:#ff4e25}
 .button_like_new_wrap {width:25%;height:100%;position:relative;}
-.button_like_new { /* float: left; */ position:absolute; left:50%; transform:translateX(-50%); width:55px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0px -46px;
-  background-size: 55px 91px; height: 45px; font-size:0;}
-.button_like_new.selected { /* float: left; */ background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0 0;
-  background-size: 55px 91px; font-size:0;}
-.count-input-box {border: 1px solid #e5e5e5; background-color: #fff; font-family: Montserrat,sans-serif}
+.button_like_new { /* float: left; */ position:absolute; left:50%; transform:translateX(-50%); width:55px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0px -46px;  background-size: 55px 91px; height:45px}
+.button_like_new .num {display:inline-block; padding-top:40px; font-size:11px; font-weight:300; color:#fff}
+.button_like_new.selected { /* float: left; */ background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0 0; background-size: 55px 91px; font-size:11px;}
+.count-input-box {background-color: #fff; font-family: Montserrat,sans-serif}
 .count-input-box::after {content: ''; display: block; clear: both}
-.count-input-box button,.count-input-box input { float: left; text-align: center}
+.count-input-box button,.count-input-box input { float: left; text-align: center; border: 1px solid #e5e5e5}
 .count-input-box .count-btn {width: 30px; height: 30px; background-color: #fff}
 .count-input-box .count-btn.minus {background: url(../../../common/images/ico/acco_more_active-icon.png) center center/12px 2px no-repeat}
 .count-input-box .count-btn.plus {background: url(../../../common/images/ico/acco_more-icon.png) center center/12px 12px no-repeat}
@@ -405,20 +405,24 @@ input[type=checkbox]:checked + label.ico.check {background-position: -20px 20px;
 .count-input-box .total-pay .font-mont {font-weight: 700}
 
 /* 상품 셀렉트 박스 201020 */
-.pf_fc-box {padding: 0 15px; background-color: #fff; border-top: 1px solid #e5e5e5}
-.pf_fc-box .more_link-btn {width: 162px;height: 35px;line-height: 33px;background-color: #fff;  border: 1px solid #ff4e25;  font-size: 13px}
+.pf_fc-box .box_close {margin:10px 48.5%; text-align:center;}
+.ico.box_close {width:17px; height:17px; background-position: -112px -52px}
+.pf_fc-box {max-height:333px; padding:0 15px; background-color:#fff; border-top:1px solid #e5e5e5}
+.pf_fc-box .more_link-btn {width:162px; height:35px; line-height:33px; background-color:#fff;  border: 1px solid #ff4e25;  font-size:13px; box-shadow:0px -5px 15px 0px rgba(0,0,0,0.05);}
 .pf_fc-box .more_link-btn::after {height: 11px;background: url(../../../common/images/ico/arrow_orange-icon.png) center center/cover no-repeat;vertical-align: -1px}
-.pf_fc-box .pf_box-close {display: block;width: 100%;height: 35px;background-color: #fff;background: url(../../../common/images/ico/acco_arrow-icon.png) center center/17px 9px no-repeat}
 .pf_fc-box .pf_fc {padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px solid #e5e5e5;color: #333;font-size: 13px}
 .pf_fc-box .pf_fc:first-child,.pf_fc-box .pf_fc:last-child {border-bottom: none;margin-bottom: 0}
 .pf_fc-box .pf_fc.no_border {border: none;margin-bottom: 0}
-.pf_fc-box .pf_fc .product-select .sz-select_sub {max-height: 78px}
-.pf_fc-box .pf_fc .product-select .sz-select_sub li {position: relative; padding: 11px 10px}
-.pf_fc-box .pro_pay {display: block;padding: 6px 0}
+.pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
+/* .pf_fc-box .pf_fc .product-select .sz-select_sub li {position: relative; padding: 11px 10px} */
+.pf_fc-box .pro_pay {display:block; padding: 6px 0; width:55%}
+.pf_fc-box .pro_pay.ellipsis {line-height:15px; height:37px; white-space:normal; word-break:break-all;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;clear:both;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;margin-bottom:8px;}
+
 .pf_fc-box .gray_close-btn {margin-top: 6px;margin-left: 20px}
-.gray_close-btn { width: 22px; height: 22px; background: url(../../../common/images/ico/gray_close-btn.png) center center/cover no-repeat}
-.pf_fc-btm {position: relative;line-height: 55px;border-top: 1px solid #333; font-size: 14px; z-index: 1}
-.pf_fc-btm .pfb-pay {display: inline-block; margin-left: 12px; margin-right: 6px; font-size: 25px; font-weight: 700}
+/* .gray_close-btn {width:22px; height:22px; background: url(../../../common/images/ico/gray_close-btn.png) center center/cover no-repeat} */
+.total.justify_box {z-index:1; position:relative; line-height:55px; border-top:1px solid #333; font-size:14px; color:#000}
+.total .pfb_pay {display:inline-block; margin-left:12px; margin-right:6px; font-size:25px; font-weight: 700}
+
 
 .regi_pro-list {margin-bottom: 10px}
 .regi_pro-list::after {content: ''; display: block; clear: both}
@@ -444,35 +448,116 @@ input[type=checkbox]:checked + label.ico.check {background-position: -20px 20px;
 
 
 /* 상품 상세 셀렉박스 / 재입고 알림 신청 S*/
-.product-select .selected {padding: 12px 10px; color: #ababab; border: 1px solid #e5e5e5; background: url(../../../common/images/ico/acco_arrow-icon.png) 95% center/13px 7px no-repeat;
-  font-size: 13px}
-.product-select .selected span {display: block; max-width: 90%; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap}
+.justify_box .just_left {float:left}
+.justify_box .just_right {float:right}
+.normal-title {margin-bottom:20px}
+.normal-title .just_left {color:#fff;  font-size:12px}
+.sz-select_list {position:relative;}
+.sz-select_sub {z-index:1; overflow-x:hidden; display:none; position:absolute; width:100%}
+.sz-select_sub li {cursor:pointer;width:100%; overflow:hidden;}
+.sz-select_sl {display:none}
+.sz-custom_check {display:none}
+.product-select {}
+.product-select .selected {padding: 8px 10px; color: #ababab; border: 1px solid #e5e5e5; background: url(../../../common/images/ico/acco_arrow-icon.png) 95% center/13px 7px no-repeat;font-size:13px}
+.product-select .selected .product_name {display:inline-block; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap}
+.product-select .selected .product_line {display:inline-block; line-height:1; vertical-align:6px;font-weight:200; color:#ababab}
+.product-select .selected .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
+
+.product-select .selected span {display: block; max-width: 90%; overflow: hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space: nowrap}
 .product-select .selected.active {color: #333; border: 1px solid #333; background: url(../../../common/images/ico/acco_arrow_active-icon.png) 95% center/13px 7px no-repeat}
-.product-select .sz-select_sub {position: static; max-height: 149px; overflow: auto; border: 1px solid #333; border-top: none}
-.product-select .sz-select_sub li {width: 100%; padding: 10px; background-color: #fff; border-bottom: 1px solid #e5e5e5; font-size: 13px}
+.product-select .sz-select_sub {position:static; width:99.5%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
+.product-select .sz-select_sub li {overflow-y:hidden; max-height:40px; background-color:#fff; border-bottom:1px solid #e5e5e5; font-size:13px}
 .product-select .sz-select_sub li:last-child {border-bottom: none}
-.product-select .sz-select_sub .just_left {width: 90%; margin-top: 1px}
-.product-select .sz-select_sub .product_name {display: inline-block; width: 68%; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap}
-.product-select .sz-select_sub .product_pay {display: inline-block; line-height: 1; vertical-align: 1px}
-.product-select .sz-select_sub .product_pay::before {content: ''; display: inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
+.product-select .sz-select_sub .just_left {padding:10px; width:90%; margin-top:1px}
+.product-select .sz-select_sub .product_name {display:inline-block; width:68%; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space: nowrap}
+.product-select .sz-select_sub .product_line {display:inline-block; line-height:1; vertical-align:6px;font-weight:200; color:#ababab}
+.product-select .sz-select_sub .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
 .product-select .sz-custom_label { width: 16px; height: 16px; vertical-align: bottom}
-.pf_fc_item-box {max-height: 243px; overflow-y:scroll; overflow-x:hidden;}
-.product-select.big .selected {padding: 15px 10px}
-.pf_fc .product-select .selected {border-top: none}
-.pf_fc .product-select .selected.active {border-top: 1px solid #333}
-.pf_fc .product-select:first-child .selected {border-top: 1px solid #e5e5e5}
-.pf_fc .product-select:first-child .selected.active { border-top: 1px solid #333}
-.rece_product-box {display: table; margin-top: 25px; margin-bottom: 15px}
-.rece_product-box .rp-thumb {display: table-cell; width: 90px; height: 90px; background-size: cover; background-position: center center; background-repeat: no-repeat}
-.rece_product-box .rp-info {display: table-cell; width: calc(100% - 90px); padding-left: 15px; vertical-align: middle}
-.rece_product-box .rp-cate {display: block; margin-bottom: 2px; line-height: 1; color: #111; font-size: 12px; font-weight: 700}
-.rece_product-box .rp-name { margin-bottom: 10px; color: #555;  font-size: 12px}
-.rece_product-box .rp-pay {color: #ff4e25; font-size: 18px; font-weight: 700}
-.rece-wrap .member-wrap {padding: 0; margin-bottom: 25px}
-.rece-wrap .product-select {margin-bottom: 25px}
-.rece-wrap .double_btn-box { position: fixed; left: 0; bottom: 30px; width: 100%; padding: 0 20px}
+.pf_fc_item-box {max-height:243px; overflow-y:scroll; overflow-x:hidden; font-size:13px}
+.product-select.big .selected {padding:15px 10px}
+/* .pf_fc .just_right.wd40 {width:40%; vertical-align:middle;float:right} */
+.pf_fc .product-select .selected {max-height:20px; border-top:none}
+.pf_fc .product-select .selected.active {border-top:1px solid #333}
+.pf_fc .product-select:first-child .selected {border-top:1px solid #e5e5e5}
+.pf_fc .product-select:first-child .selected.active {border-top: 1px solid #333}
+.rece_product-box {display:table; margin-top: 25px; margin-bottom: 15px}
+.rece_product-box .rp-thumb {display:table-cell; width: 90px; height: 90px; background-size: cover; background-position: center center; background-repeat: no-repeat}
+.rece_product-box .rp-info {display:table-cell; width:calc(100% - 90px); padding-left:15px; vertical-align:middle}
+.rece_product-box .rp-cate {display:block; margin-bottom:2px; line-height:1; color:#111; font-size:12px; font-weight:700}
+.rece_product-box .rp-name {margin-bottom:10px; color:#555;  font-size:12px}
+.rece_product-box .rp-pay {color:#ff4e25; font-size:18px; font-weight: 700}
+.rece-wrap .member-wrap {padding:0; margin-bottom:25px}
+.rece-wrap .product-select {margin-bottom:25px}
+.rece-wrap .double_btn-box {position:fixed; left: 0; bottom: 30px; width: 100%; padding: 0 20px}
 .rece-phone {margin-bottom: 10px;color: #444;font-size: 12px}
 /* 상품 상세 셀렉박스 / 재입고 알림 신청 신청 E*/
+
+
+.gray-btn {color: #fff; background-color: #5d5e6a;
+border: 1px solid #5d5e6a
+}
+
+.top_box .fs_close {
+  padding: 5px 0 6px 15px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500
+}
+.top_box.no_search {
+  height: auto
+}
+.fs-box {
+  padding: 20px 15px
+}
+.fs-list li {
+  margin-top: 15px;
+  color: #888;
+  font-size: 16px
+}
+.fs-list li .close_gray-btn {
+  margin-top: 3px
+}
+.fs-list .active {
+  color: #fff
+}
+
+ .justify_box::after {
+  content: '';
+  display: block;
+  clear: both
+}
+
+/* 결제 체크 박스 */
+.sz-custom_label {
+  display: inline-block;
+  width:24px;height:24px;background: url(../../../common/images/ico/check_off.png) center center/cover no-repeat;cursor:pointer}
+.sz-custom_check:checked ~ .sz-custom_label {
+  background: url(../../../common/images/ico/check_on.png) center center/cover no-repeat
+}
+.sz-custom_text {
+  cursor: pointer
+}
+.radio-check .sz-custom_label {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url(../../../common/images/ico/radio-icon.png) center center/cover no-repeat;
+  vertical-align: bottom
+}
+.radio-check .sz-custom_check:checked ~ .sz-custom_label {
+  background: url(../../../common/images/ico/radio_checked-icon.png) center center/cover no-repeat
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .dot-list {color:#ababab; font-size:11px}
@@ -500,17 +585,13 @@ input[type=checkbox]:checked + label.ico.check {background-position: -20px 20px;
 /* .ranking_product_item_wrap .list_product.small>li .poz_rel {position:relative;} */
 
 /* 이 상품은 어때요? */
-.viewdetail{    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    width: 100%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;}
+.viewdetail{display: -ms-flexbox;
+    display:flex;-ms-flex-align:start; align-items:flex-start;
+    width: 100%;-ms-flex-wrap: wrap;flex-wrap: wrap;}
 .relative_product{padding:30px 20px 0 20px;width:100%;}
 .relative_product:first-child {margin-bottom:0}
 .relative_product h3{width:100%; font-size:18px; font-weight:500; color:#333}
-.reviewPhoto_box {margin-top:19px; width:100%; overflow:hidden; position:relative;overflow-x:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;}
+.reviewPhoto_box {margin:19px auto; width:100%; overflow:hidden; position:relative;overflow-x:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
 .reviewPhoto_box .re_img {width:15%}
 .pd_item_wrap {margin-top:19px; width:100%; overflow:hidden; position:relative;overflow-x:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;}
 .pd_item_wrap .list_pd.small {display:flex; overflow-y:hidden; overflow-x:scroll}
@@ -561,7 +642,7 @@ input[type=checkbox]:checked + label.ico.check {background-position: -20px 20px;
 .typeSelect {position:relative; width:100%;overflow-x:scroll; white-space:nowrap; font-size:13px}
 .typeSelect .ovr_x {width:100%; height:30px; overflow-x:auto; overflow-y:hidden; white-space:nowrap}
 .typeSelect ul li {float:left; margin-right:10px; min-height:27px; max-height:27px}
-.typeSelect ul li a {padding:2px 15px; min-width:62px; max-height:15px; vertical-align:middle; border-radius:50px 50px; background-color:#f0f0f0}
+.typeSelect ul li a {padding:2px 15px; min-width:62px; max-height:15px; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; background-color:#f0f0f0}
 .typeSelect ul li.on a {color:#fff; background-color:#3067cc}
 /*  */
 .write_info_wrap {margin-top:25px; padding:20px; background-color:#f9f9f9}
