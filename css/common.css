@@ -434,7 +434,7 @@ input[type=checkbox] {display:none}
 .box_right, .box_left {position:relative; float:left; width:50%; vertical-align: middle;}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px}
-.ico.Warning {width:14px; height:14px; background-position:-227px -26px}
+.ico.Warning {width:14px; height:16px; background-position:-227px -23px}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color: #111}
 .btn_bk .dark {display:block; padding:17px 0}
@@ -530,7 +530,7 @@ input[type=checkbox] {display:none}
 #container .fixed_nav .fbn-list .fbn-item {display:inline-block; width:100%; color:#333; font-size:9px; font-weight:500;}
 
 /* 공통  tooltip */
-.ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -208px -45px}
+.ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -207px -25px}
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
 .tooltip .tooltiptext {padding:5px 0;visibility:hidden;width:200px;background-color:#3067cc;color:#fff;text-align:center;border-radius:6px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:11px; font-weight:200; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2); line-height:15pt}
 .tooltip .tooltiptext:after {content: '';position:absolute;top:100%;left:50%;margin-left:-2px;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
