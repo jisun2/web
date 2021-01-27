@@ -54,32 +54,6 @@
                             </div>
                         </div>
                     </div>
-                    <script type="text/javascript">
-                        var $slider = $('.slider');
-                            if ($slider.length) {
-                              var currentSlide;
-                              var slidesCount;
-                              var sliderCounter = document.createElement('div');
-                              sliderCounter.classList.add('slider__counter');
-                              var updateSliderCounter = function(slick, currentIndex) {
-                                currentSlide = slick.slickCurrentSlide() + 1;
-                                slidesCount = slick.slideCount;
-                                $(sliderCounter).text(currentSlide + '/' +slidesCount)
-                              };
-
-                              $slider.on('init', function(event, slick) {
-                                $slider.append(sliderCounter);
-                                updateSliderCounter(slick);
-                              });
-
-                              $slider.on('afterChange', function(event, slick, currentSlide) {
-                                updateSliderCounter(slick, currentSlide);
-                              });
-                              //
-                              // $slider.slick();
-                            }
-                    </script>
-
                     <!-- .product_info  -->
                     <div class="product_info clear">
                         <div class="pi_txtBox">
@@ -90,7 +64,7 @@
                                 <span class="star active"></span>
                                 <span class="star active"></span>
                                 <span class="star active"></span>
-                                <span class="star"></span>
+                                <span class="star half"></span>
                                 <span class="star_num">(<span class="num">999+</span>)</span>
                             </div>
                             <div class="pi_pay clear">
@@ -152,7 +126,7 @@
                                             <p><span class="naver_pay"></span>결제 시 N포인트 <span class="num">1%</span>적립</p>
                                             <!-- <button type="button" class="card-btn"></button> -->
                                             <!-- <a href="#" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</a> -->
-                                            <button type="button" class="pop_open" data-popup="pop_card_benefit">카드사 혜택</button>
+                                            <button type="button" class="pop_open under" data-popup="pop_card_benefit">카드사 혜택</button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -267,8 +241,7 @@
                                             </dl>
                                         </li>
                                     </ul>
-
-                                    <div class="card_benefit_info br_0">
+                                    <div class="card_benefit_info">
                                         <p><span>유의사항</span></p>
                                         <ul>
                                             <li>공공기관 및 오프라인 제외</li>
@@ -279,9 +252,9 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button type="button" class="popup_close-btn pop_close" onclick="closeLayer('#pop_card_benefit');"><span class="blind">닫기버튼</span></button>
                                 <!-- <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button> -->
                             </div>
+                            <button type="button" class="popup_close-btn pop_close" onclick="closeLayer('#pop_card_benefit');"><span class="blind">닫기버튼</span></button>
                         </div>
                         <!--// 팝업 카드사 혜택 E -->
                     </div>
@@ -333,11 +306,11 @@
                                         <button type="button" class="acco-btn"></button>
                                     </div>
                                     <div class="pda-content">
-                                        <div class="viewdetail" style="width:100%; height:300px; background-color:#f3f3f3">
+                                        <div class="viewdetail">
                                             <table>
+                                                <caption class="blind">상품 디테일 정보 표</caption>
                                                 <colgroup>
                                                     <col style="width:100px">
-                                                    <col>
                                                 </colgroup>
                                                 <tbody>
                                                     <tr>
@@ -398,6 +371,61 @@
                                         <button type="button" class="acco-btn"></button>
                                     </div>
                                     <div class="pda-content">
+                                        <div class="viewdetail row">
+                                        	<table>
+                                        	    <caption class="blind">배송 정보에 대한 표</caption>
+                                                <colgroup>
+                                                    <col style="">
+                                                </colgroup>
+                                            	<tbody>
+                                            	<tr>
+                                            		<th>사이즈 명</th>
+                                                    <th>
+                                            			허리
+                                            		</th>
+                                            		<th>
+                                            			밑위
+                                            		</th>
+                                            		<th>
+                                            			허벅지
+                                            		</th>
+                                                    <th>
+                                            			기장
+                                            		</th>
+                                                    <th>
+                                            			밑단
+                                            		</th>
+                                            	</tr>
+                                            	<tr>
+                                            		<td>free</td>
+                                            		<td>free1</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>free</td>
+                                            	</tr>
+                                            	<!-- <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr> -->
+                                            	</tbody>
+                                        	</table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -720,14 +748,14 @@
 
                                  <!-- 리뷰 탭 -->
                                  <ul class="list_selector">
-                                     <li><a href="#" class="on">전체<span>(5)</span></span></a></li>
-                                     <li><a href="#"><span class="le_mg">포토 상품평<span>(15)</span></span></a></li>
+                                     <li><a href="#" class="on">전체<span class="proxima">(5)</span></span></a></li>
+                                     <li><a href="#"><span class="le_mg">포토 상품평<span class="proxima">(15)</span></span></a></li>
                                  </ul>
                                  <div class="review_area">
                                     <ul class="review_box">
                                         <li class="review_lst">
                                             <div class="review_wrap">
-                                                <div class="">
+                                                <div class="pos_center_before">
                                                     <div class="star_rating_s">
                                                         <div class="star_wrap">
                                                             <div class="star on"></div>
@@ -743,258 +771,129 @@
                                                             <li><span class="review_id">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
-                                                    <!-- <div class="product_option"><p class="bk">160cm / 47kg</p></div> -->
                                                     <div class="product_option">
                                                         <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
                                                     </div>
                                                     <div class="cont clear">
-                                                        <!-- <p>가성비 좋네요. 정말 마음에 듭니다.</p> -->
-                                                        <p id="re_more33" class="re_txt _ellipsis">
-                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
-                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        <p class="re_txt _ellipsis">
+                                                            가성비 좋네요. 정말 마음에 듭니다.
                                                         </p>
-                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                        <!-- <a href="#" class="review_txt_moreview"><span>더보기</span></a> -->
                                                     </div>
                                                 </div>
-                                                <!-- <div class="review_data_content">
-                                                    <div class="product_title">
-                                                        <p>
-                                                        옵션 : OLD SCHOOL 후드(SBH9S-338){화이트} [XL] / OLD SCHOOL 후드(SBH9S-338){화이트} [XL]
-
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="user_data">
-                                                        <span><em>180</em>cm / <em>70</em>kg</span>
-                                                    </div>
-                                                    <div class="review_detail_txt">
-                                                        <p class="_ellipsis">
-                                                            가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어요 굿굿굿 정말 마음에 듭니다.
-                                                        </p>
-                                                    </div>
-                                                </div> -->
-
                                                 <div class="reviewPhoto_box">
                                                     <ul class="re_img">
-                                                        <li class="">
-                                                            <!-- <a href="#" class="modalButton" data-popup="popupOne"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a> -->
-                                                            <a href="#" class="pop_open" data-popup="photoView"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a>
-                                                        </li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy13.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
                                                     </ul>
                                                 </div>
-                                                <!-- 포토 리뷰 -->
-                                                <div id="photoView" class="popup-wrap bg_wht">
-                                                    <!-- <head>
-                                                        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-                                                        <script src="../common/lib/jquery-2.2.4.min.js"></script>
-                                                        <script src="../common/lib/slick.min.js"></script>
-                                                    </head> -->
-                                                    <h2 class="page-title">크게보기</h2>
-                                                    <div class="photo_wrap" style="background-color:#f5f5f5">
-                                                        <div class="main" style="display:block;">
-                                                          <div class="slider_for size">
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
-                                                            <!-- <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
-                                                            <div><h3>3</h3></div>
-                                                            <div><h3>4</h3></div>
-                                                            <div><h3>5</h3></div> -->
-                                                          </div>
-                                                          <div class="slider_nav mini">
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
-                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
-                                                            <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="60px" height="60px" alt="후기 사진"></a></div>
 
-                                                          </div>
-                                                          <!-- <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
-                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
-                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
-                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
-                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div> -->
+                                            </div>
+                                        </li>
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="pos_center_before">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
                                                         </div>
-                                                        <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
-
-                                                        <script type="text/javascript">
-                                                        settings = {
-                                                            //Model Popup
-                                                            objModalPopupBtn: ".modalButton",
-                                                            objModalCloseBtn: ".overlay, .closeBtn",
-                                                            objModalDataAttr: "data-popup"
-                                                        }
-                                                          $(settings.objModalPopupBtn).bind("click", function () {
-                                                                if ($(this).attr(settings.objModalDataAttr)) {
-                                                                    var strDataPopupName = $(this).attr(settings.objModalDataAttr);
-                                                                    //Fade In Modal Pop Up
-                                                                    $(".overlay, #" + strDataPopupName).fadeIn(170);
-                                                                $('slider_for').resize();
-                                                                }
-                                                            });
-
-                                                            //On clicking the modal background
-                                                            $(settings.objModalCloseBtn).bind("click", function () {
-                                                                $(".modal").fadeOut(90);
-                                                            });
-                                                        // settings = {
-                                                        //     //Model Popup
-                                                        //     objModalPopupBtn: ".modalButton",
-                                                        //     objModalCloseBtn: ".overlay, .closeBtn",
-                                                        //     objModalDataAttr: "data-popup"
-                                                        // }
-                                                        //   $(settings.objModalPopupBtn).bind("click", function () {
-                                                        //         if ($(this).attr(settings.objModalDataAttr)) {
-                                                        //             var strDataPopupName = $(this).attr(settings.objModalDataAttr);
-                                                        //             //Fade In Modal Pop Up
-                                                        //             $(".overlay, #" + strDataPopupName).fadeIn(170);
-                                                        // 	    $('slider_for').resize();
-                                                        //         }
-                                                        //     });
-                                                        //
-                                                        //     //On clicking the modal background
-                                                        //     $(settings.objModalCloseBtn).bind("click", function () {
-                                                        //         $(".modal").fadeOut(90);
-                                                        //     });
-                                                        // $('.photoView').click(function(){
-                                                        //     $('#photoView').show();
-                                                            $('.slider_for').slick({
-                                                             slidesToShow: 1,
-                                                             pauseOnHover:true,
-                                                             // slidesToScroll: 1,
-                                                             // arrows: false,
-                                                             // fade: true,
-                                                             autoplay: true,
-                                                             asNavFor: '.slider_nav'
-                                                            });
-                                                        $('.slider_nav').slick({
-                                                         slidesToShow:5,
-                                                         slidesToScroll: 1,
-                                                         asNavFor: '.slider_for',
-                                                         infinite: true,
-                                                         // swipe:false,
-                                                         // dots: true,
-                                                         // centerMode: true,
-                                                         focusOnSelect: true,
-                                                         // pauseOnHover:true,
-                                                        });
-                                                        // $('.slider_for').slick({
-                                                        //   slidesToShow: 1,
-                                                        //   slidesToScroll: 1,
-                                                        //   arrows: false,
-                                                        //   fade: true,
-                                                        //   asNavFor: '.slider_nav'
-                                                        // });
-                                                        // $('.slider_nav').slick({
-                                                        //   slidesToShow: 3,
-                                                        //   slidesToScroll: 1,
-                                                        //   asNavFor: '.slider_for',
-                                                        //   dots: false,
-                                                        //   focusOnSelect: true
-                                                        // });
-                                                        </script>
-                                                     </div>
+                                                    </div>
+                                                    <div class="idDate">
+                                                        <ul class="list_bar">
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product_option">
+                                                        <p>옵션 : OLD SCHOOL 후드(SBH9S... / OLD SCHOOL 후드 </p>
+                                                    </div>
+                                                    <div class="cont clear">
+                                                        <p class="re_txt _ellipsis">
+                                                            가성비 좋네요. 정말 마음에 듭니다.
+                                                            이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
+                                                            없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
+                                                            요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
+                                                            한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
+                                                            요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
+                                                            없어요 굿굿굿
+                                                        </p>
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                    </div>
                                                 </div>
-
-                                                <script type="text/javascript">
-
-                                                // $('.slider').each(function() {
-                                                // var $this = $(this);
-                                                // var $group = $this.find('.slide_group');
-                                                // var $slides = $this.find('.slide');
-                                                // var bulletArray = [];
-                                                // var currentIndex = 0;
-                                                // var timeout;
-                                                //
-                                                // function move(newIndex) {
-                                                // var animateLeft, slideLeft;
-                                                //
-                                                // advance();
-                                                //
-                                                // if ($group.is(':animated') || currentIndex === newIndex) {
-                                                //   return;
-                                                // }
-                                                //
-                                                // bulletArray[currentIndex].removeClass('active');
-                                                // bulletArray[newIndex].addClass('active');
-                                                //
-                                                // if (newIndex > currentIndex) {
-                                                //   slideLeft = '100%';
-                                                //   animateLeft = '-100%';
-                                                // } else {
-                                                //   slideLeft = '-100%';
-                                                //   animateLeft = '100%';
-                                                // }
-                                                //
-                                                // $slides.eq(newIndex).css({
-                                                //   display: 'block',
-                                                //   left: slideLeft
-                                                // });
-                                                // $group.animate({
-                                                //   left: animateLeft
-                                                // }, function() {
-                                                //   $slides.eq(currentIndex).css({
-                                                //     display: 'none'
-                                                //   });
-                                                //   $slides.eq(newIndex).css({
-                                                //     left: 0
-                                                //   });
-                                                //   $group.css({
-                                                //     left: 0
-                                                //   });
-                                                //   currentIndex = newIndex;
-                                                // });
-                                                // }
-                                                //
-                                                // function advance() {
-                                                // clearTimeout(timeout);
-                                                // timeout = setTimeout(function() {
-                                                //   if (currentIndex < ($slides.length - 1)) {
-                                                //     move(currentIndex + 1);
-                                                //   } else {
-                                                //     move(0);
-                                                //   }
-                                                // }, 4000);
-                                                // }
-                                                //
-                                                // $('.next_btn').on('click', function() {
-                                                // if (currentIndex < ($slides.length - 1)) {
-                                                //   move(currentIndex + 1);
-                                                // } else {
-                                                //   move(0);
-                                                // }
-                                                // });
-                                                //
-                                                // $('.previous_btn').on('click', function() {
-                                                // if (currentIndex !== 0) {
-                                                //   move(currentIndex - 1);
-                                                // } else {
-                                                //   move(3);
-                                                // }
-                                                // });
-                                                //
-                                                // $.each($slides, function(index) {
-                                                // var $button = $('<a class="slide_btn">&bull;</a>');
-                                                //
-                                                // if (index === currentIndex) {
-                                                //   $button.addClass('active');
-                                                // }
-                                                // $button.on('click', function() {
-                                                //   move(index);
-                                                // }).appendTo('.slide_buttons');
-                                                // bulletArray.push($button);
-                                                // });
-                                                //
-                                                // advance();
-                                                // });
-                                                </script>
-                                                <!-- 포토 리뷰 -->
+                                            </div>
+                                        </li>
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="pos_center_before">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="idDate">
+                                                        <ul class="list_bar">
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product_option">
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
+                                                    </div>
+                                                    <div class="cont clear">
+                                                        <p class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
+                                                    </div>
+                                                    <div class="reviewPhoto_box">
+                                                        <ul class="re_img">
+                                                            <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                            <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="pos_center_before">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="idDate">
+                                                        <ul class="list_bar">
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product_option">
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
+                                                    </div>
+                                                    <div class="cont clear">
+                                                        <p class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </li>
                                     </ul>
@@ -1015,7 +914,7 @@
                                 상품 문의 외 배송/반품/교환 문의는 1:1문의를 이용해 주세요.
                             </p>
                             <div class="btn_bk">
-                                 <a href="detail0.html" class="dark">상품 문의 작성하기</a>
+                                 <a href="write.html" class="dark">상품 문의 작성하기</a>
                             </div>
                             <div class="qnaBox">
                                 <ul class="list_bar">
@@ -1029,14 +928,10 @@
                                         <a href="#">답변대기</a>
                                     </li>
                                 </ul>
-
                                 <span class="input_checkbox">
-                                    <label for="checkbox01" class="ico check tc_3 spr_after"><input type="checkbox" name="checkbox1" class="blind" id="checkbox01">내 문의 보기</label>
+                                    <input type="checkbox" id="checkbox01" name="selmenu" class="gnb_input_check" value="">
+                                    <label for="checkbox01">내 문의 보기</label>
                     			</span>
-                                <!-- <span>
-                                    <input type="checkbox" name="checkbox01" value="tt" checked>
-                                    <span>내 문의 보기</span>
-                                </span> -->
                             </div>
 
                             <section class="wrap_board">
@@ -1110,9 +1005,9 @@
                                     <div class="item lc_e5">
                                         <div class="que tc_5 clear view">
                                             <span class="blind">문의내용 : </span>
-                                            <a href="#">
+                                            <a href="#none">
                                                 <span class="badge ble br50">내 문의</span>
-                                                <ul class="list_bar btn">
+                                                <ul class="list_bar modi">
                                                     <li>
                                                         <a href="#">수정</a>
                                                     </li>
@@ -1136,7 +1031,7 @@
                                             <span class="blind">문의내용 : </span>
                                             <a href="#">
                                                 <span class="badge ble br50">내 문의</span>
-                                                <ul class="list_bar btn">
+                                                <ul class="list_bar modi">
                                                     <li>
                                                         <a href="#">수정</a>
                                                     </li>
@@ -1159,8 +1054,9 @@
                                     <div  class="item seller view"><!-- 열릴때는 class에 view 추가 -->
                                         <div class="que tc_5 clear view">
                                             <a href="#">
-                                                <i class="line"><span class="blind">판매자 게시글</span></i>
-                                                <span class="badge bk br50">판매자</span>
+                                                <div class="">
+                                                    <i class="ico line"></i><span class="blind">판매자 게시글</span><span class="badge bk br50">판매자</span>
+                                                </div>
                                                 <div class="cont clear">
                                                     <p>안녕하세요 고객님, 엑스엑스메인 입니다. 해당 제품은 더 이상 재입고 계획이 잡혀있지 않은 상품입니다. 감사합니다.</p>
                                                 </div>
@@ -1175,7 +1071,35 @@
                                         <div class="que tc_5 clear">
                                             <a href="#">
                                                 <div class="cont clear">
-                                                    <p>비밀글입니다.<i class="ico search"><span class="blind">비밀 게시글</span></i></p>
+                                                    <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item lc_e5">
+                                        <div class="que tc_5 clear">
+                                            <a href="#">
+                                                <div class="cont clear">
+                                                    <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item lc_e5">
+                                        <div class="que tc_5 clear">
+                                            <a href="#">
+                                                <div class="cont clear">
+                                                    <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
                                                 </div>
                                             </a>
                                         </div>
@@ -1194,20 +1118,6 @@
                                     </a>
                                 </div>
                             </section>
-
-                            <div class="qnaform">
-                                <table>
-                                    <caption class="blind">Q&A작성 폼</caption>
-                                    <colgroup>
-                                        <col style="width:100%">
-                                    </colgroup>
-                                    <tr>
-                                        <th></th>
-                                        <td></td>
-                                    </tr>
-                                </table>
-
-                            </div>
                         </div>
 
                     </div>
@@ -1215,32 +1125,56 @@
             </div>
         </div>
         <!-- 구매 버튼  -->
-        <div class="product_fixed-wrap">
-            <!-- 바로 구매 누르면 나오는 BTN  S -->
-            <!-- <div class="pf_btn-box">
-            <button type="button" class="pf-btn gray-btn">쇼핑백 담기</button>
-            <button type="button" class="pf-btn orange-btn">바로구매</button>
-        </div> -->
-        <!-- 바로 구매 누르면 나오는 BTN  E -->
-        <!-- like btn S  -->
-        <!-- <div class="pf_btn-box pl0" style="">
-            <button type="button" class="orange_btn2">구매하기</button>
-            <div class="button_like_new_wrap"><button type="button" class="button_like_new">좋아요</button></div>
-        </div> -->
-        <div class="pf_btn-box pl0">
-            <button type="button" class="orange_btn2">구매하기</button>
-            <div class="button_like_new_wrap">
-                <!-- <button type="button" class="button_like_new"><span class="blind">좋아요</span></button> -->
-                <button type="button" class="button_like_new selected"><span class="blind">좋아요</span><span class="num">999+</span></button>
-
+        <div class="pd_fixed_wrap" style="display:none">
+            <ul class="pd_btn_box">
+                <li><button type="button" class="pf-btn gray-btn">쇼핑백 담기</button></li>
+                <li><button type="button" class="pf-btn orange-btn">바로구매</button></li>
+            </ul>
+            <!-- like btn S  -->
+            <div class="pd_btn_box clear">
+                <button type="button" class="orange_btn2">구매하기</button>
+                <div class="button_like_new_wrap"><button type="button" class="button_like_new"><span class="blind">좋아요</span></button></div>
+            </div>
+            <div class="pd_btn_box pl0">
+                <button type="button" class="orange_btn2">구매하기</button>
+                <div class="button_like_new_wrap">
+                    <!-- 좋아요 누르기 전 -->
+                    <button type="button" class="button_like_new"><span class="blind">좋아요</span></button>
+                    <!-- 좋아요 누르기 후 -->
+                    <button type="button" class="button_like_new selected"><span class="blind">좋아요</span><span class="num">999+</span></button>
+                </div>
             </div>
         </div>
-    </div>
         <!-- //구매 버튼 -->
         <!-- slick slider -->
         <script src="../common/lib/slick.min.js"></script>
         <script src="../common/lib/main.js"></script>
         <!-- <script src="../common/lib/common.js"></script> -->
+        <script type="text/javascript">
+            var $slider = $('.slider');
+                if ($slider.length) {
+                  var currentSlide;
+                  var slidesCount;
+                  var sliderCounter = document.createElement('div');
+                  sliderCounter.classList.add('slider_counter');
+                  var updateSliderCounter = function(slick, currentIndex) {
+                    currentSlide = slick.slickCurrentSlide() + 1;
+                    slidesCount = slick.slideCount;
+                    $(sliderCounter).text(currentSlide + ' / ' +slidesCount)
+                  };
+
+                  $slider.on('init', function(event, slick) {
+                    $slider.append(sliderCounter);
+                    updateSliderCounter(slick);
+                  });
+
+                  $slider.on('afterChange', function(event, slick, currentSlide) {
+                    updateSliderCounter(slick, currentSlide);
+                  });
+                  //
+                  // $slider.slick();
+                }
+        </script>
         <script type="text/javascript">
             if ($('.review_txt_moreview')) {
                     $('.review_txt_moreview').on('click', function (e) {
