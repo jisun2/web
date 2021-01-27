@@ -145,7 +145,7 @@ p._ellipsis {overflow:hidden; text-overflow:ellipsis;-o-text-overflow:ellipsis; 
 .reviewer .button_review_write span{color:#fff; font-size:16px; font-weight: 600;}
 .reviewer .list_selector {display:inline-block; width:100%; text-align:left; line-height: 1; padding-bottom:15px; border-bottom:1px solid #e5e5e5}
 .reviewer .list_selector li {position:relative; display:inline-block;}
-.reviewer .list_selector li::before {content:''; position:absolute; top:22%; right:-15px; width:1px; height:15px;background-color:#e5e5e5}
+.reviewer .list_selector li::before {content:''; position:absolute; top:15%; right:-15px; width:1px; height:15px;background-color:#e5e5e5}
 .reviewer .list_selector li:last-child::before {display:none}
 .reviewer .list_selector li a {display:inline-block; float:left;}
 .reviewer .list_selector li a.on span {font-weight: bold; color:#333}
