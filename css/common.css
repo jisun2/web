@@ -537,18 +537,24 @@ input[type=checkbox] {display:none}
 .tooltip:hover .tooltiptext {visibility:visible}
 
 /* 이달의 카드사 혜택 팝업 */
-.paymt_card_benefit {padding:0 0 60px; margin:0 20px; display:block}
+.paymt_card_benefit {padding:0 0 30px; margin:0 20px 50px 20px; display:block;/* height:calc(100vh - 60px)*/}
+.paymt_card_benefit .card img {width:95px; height:32px}
 .paymt_card_benefit strong {display:block;margin-top:25px;font-size:12px; color:#555; text-align:left; border:0;}
+/* .paymt_card_benefit strong:first-of-type {padding:25px 0 15px; } */
 .paymt_card_benefit .card li:first-child {border-top:1px solid #e5e5e5}
 .paymt_card_benefit .card li:after {display:block; content:''; clear:both;}
-.paymt_card_benefit .card li {padding:22px 0; border-bottom:1px solid #e5e5e5;}
-.paymt_card_benefit .card li .card {float:left; margin:0 16px 0 0 ;}
+.paymt_card_benefit .card li {padding:22px 0; border-bottom:1px solid #e5e5e5}
+.paymt_card_benefit .card li .cardName {float:left; margin:0 16px 0 0}
 .paymt_card_benefit .card li dl {float:left; text-align:left}
 .paymt_card_benefit .card li dl dt {font-size:0;}
 .paymt_card_benefit .card li dl dd {font-size:13px; color:#888}
-.paymt_card_benefit .card li dl>dd:first-of-type {font-size:14px; font-weight:500; color:#000; margin:0 0 6px}
-.paymt_card_benefit {padding:0 0 30px; margin:0 20px; display:block}
-.paymt_card_benefit strong {display:block;margin-top:25px;font-size:12px; color:#555; text-align:left; border:0;}
+.paymt_card_benefit .card li dl>dd:first-of-type {line-height:1; font-size:13px; font-weight:400; color:#000; margin:0 0 6px}
+/* 이달의 카드사 혜택 */
+.paymt_card_benefit .card_benefit_info {margin:25px 0}
+.paymt_card_benefit .card_benefit_info p span {display:block; font-size:12px; font-weight:400; color:#555; margin:0 0 15px}
+.paymt_card_benefit .card_benefit_info li {padding:unset;font-size:11px; font-weight: 200;color:#888; line-height:1; margin:0 0 8px;}
+.paymt_card_benefit .card_benefit_info li::before {background-color:#888; display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:3px;height:3px; vertical-align:2px; margin-right:5px}
+
 /* 상품쿠폰 선택 */
 .popup-wrap h2{font-size:16px; font-weight:700; text-align:left; padding:17px; border-bottom:1px solid #d0d0d0; color:#000}
 .popup-wrap .border_tab-cont > .paymt_wrap {display:none}
@@ -620,22 +626,6 @@ input[type=checkbox] {display:none}
     height: calc(100% - 10%);
     overflow: auto;
   } */
-.paymt_card_benefit {padding:0 0 30px; margin:0 20px; display:block;/* height:calc(100vh - 60px)*/}
-.paymt_card_benefit strong {display:block;margin-top:25px;font-size:12px; color:#555; text-align:left; border:0;}
-/* .paymt_card_benefit strong:first-of-type {padding:25px 0 15px; } */
-.paymt_card_benefit .card li:first-child {border-top:1px solid #e5e5e5}
-.paymt_card_benefit .card li:after {display:block; content:''; clear:both;}
-.paymt_card_benefit .card li {padding:22px 0; border-bottom:1px solid #e5e5e5;}
-.paymt_card_benefit .card li .card {float:left; margin:0 16px 0 0 ;}
-.paymt_card_benefit .card li dl {float:left; text-align:left}
-.paymt_card_benefit .card li dl dt {font-size:0;}
-.paymt_card_benefit .card li dl dd {font-size:13px; color:#888}
-.paymt_card_benefit .card li dl>dd:first-of-type {font-size:14px; font-weight:500; color:#000; margin:0 0 6px}
-/* 이달의 카드사 혜택 */
-.paymt_card_benefit .card_benefit_info {margin:25px 0}
-.paymt_card_benefit .card_benefit_info p span {display:block; font-size:12px; font-weight: 300; color:#555; margin:0 0 15px}
-.paymt_card_benefit .card_benefit_info li {padding:unset;font-size:11px; font-weight: 200;color:#888; line-height:1; margin:0 0 8px;}
-.paymt_card_benefit .card_benefit_info li::before {background-color:#888; display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:3px;height:3px; vertical-align:2px; margin-right:5px}
 
 
 #footer {padding:20px 16px 80px 16px}
@@ -705,11 +695,9 @@ border-radius: 2px;}
     #footer .footer_top li.on_m {margin-right:0}
 } */
 
-@media screen and (min-width:320px) {
-    #wrap.wd720 {min-width:320px}
-}
+
 @media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px; margin:0 auto}
+    #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 20%;}
     /* #pop_card_benefit {width:800px; margin:0 20%} */
 }
