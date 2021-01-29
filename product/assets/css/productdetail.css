@@ -354,7 +354,7 @@ input[type=checkbox] { display:none;}
 .orange-btn {color:#fff; background-color:#ff4e25}
 .button_like_new {position:absolute; top:-4px; left:50%; transform:translateX(-50%); width:55px; height:34px;  background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0px -46px;  background-size: 55px 91px;}
 .button_like_new_wrap {width:25%;height:100%;position:relative;}
-.button_like_new .num {display:block; padding-top:35px; padding-bottom:2px; font-size:11px; font-weight:300; color:#fff}
+.button_like_new .num {display:block; padding-top:33px; padding-bottom:2px; font-size:11px; font-weight:300; color:#fff}
 .button_like_new.selected {background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0 0; background-size: 55px 91px; font-size:11px;}
 .count-input-box {background-color: #fff; font-family: Montserrat,sans-serif}
 .count-input-box::after {content: ''; display: block; clear: both}
@@ -373,8 +373,7 @@ input[type=checkbox] { display:none;}
 .pf_fc-box .pf_fc {display:flow-root; padding:20px 0; margin-bottom:20px; border-bottom: 1px solid #e5e5e5;color: #333;font-size: 13px}
 .pf_fc-box .pf_fc:first-child,.pf_fc-box .pf_fc:last-child {border-bottom: none;margin-bottom: 0}
 .pf_fc-box .pf_fc.no_border {border: none;margin-bottom: 0}
-.pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
-/* .pf_fc-box .pf_fc .product-select .sz-select_sub li {position: relative; padding: 11px 10px} */
+
 .pf_fc-box .pro_pay {display:block; padding: 6px 0; width:60%}
 .pf_fc-box .pro_pay.ellipsis {line-height:15px; height:37px; white-space:normal; word-break:break-all;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;clear:both;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;margin-bottom:8px;}
 .pf_fc-box .gray_close-btn {margin-top: 6px;margin-left: 20px}
@@ -427,15 +426,16 @@ input[type=checkbox] { display:none;}
 .product-select .selected .product_name {display:inline-block; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap}
 .product-select .selected .product_line {display:inline-block; padding-top:4px; line-height:1; vertical-align:6px;font-weight:200; color:#ababab}
 .product-select .selected .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
-.product-select .sz-select_sub {position:static; width:99.8%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
 .pf_fc .product-select:first-child .selected {border-top:1px solid #e5e5e5}
 .pf_fc .product-select:first-child .selected.active {border-top: 1px solid #333}
 .pf_fc .product-select:first-child .selected.active span {float:left}
+.pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
+.product-select .sz-select_sub {position:static; width:99.2%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
 .product-select .sz-select_sub li {position:relative; overflow-y:hidden; max-height:40px; background-color:#fff; border-bottom:1px solid #e5e5e5; font-size:13px}
 .product-select .sz-select_sub li:last-child {border-bottom: none}
-.product-select .sz-select_sub .just_left {margin:6px 10px; width:82%; margin-top:1px}
+.product-select .sz-select_sub .just_left {padding:6px 10px; width:80%; margin-top:1px}
 .product-select .sz-select_sub .product_name {display:inline-block; width:68%; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space: nowrap}
-.product-select .sz-select_sub .product_line {display:inline-block; line-height:1; vertical-align:6px;font-weight:200; color:#ababab}
+.product-select .sz-select_sub .product_line {display:inline-block; line-height:0; vertical-align:4px;font-weight:200; color:#ababab}
 .product-select .sz-select_sub .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
 .pf_fc_item-box {max-height:243px; overflow-y:scroll; overflow-x:hidden; font-size:13px}
 .product-select.big .selected {padding:15px 10px}
@@ -575,9 +575,11 @@ input[type=checkbox] { display:none;}
 .btns .btn_confirm50 {width:48.5%; color:#fff; background-color:#111}
 .btns .btn_confirm100 {width:100%; color:#fff; background-color:#111}
 
-
 @media screen and (min-width:720px) {
     .review_txt_moreview {display:none}
-    .product-select .sz-select_sub {width:99.7%}
     .typeSelect .ovr_x {overflow-x:hidden;}
+}
+
+@media screen and (min-width:620px) and (max-width:1200px) {
+.product-select .sz-select_sub {width:99.7%}
 }
