@@ -584,6 +584,6 @@ input[type=checkbox] { display:none;}
     .pf_fc-box .pro_pay {width:52%}
 }
 
-@media screen and (min-width:360px) and (max-width:719px) {
+@media screen and (min-width:420px) and (max-width:719px) {
     .product-select .sz-select_sub {width:99.7%}
 }
