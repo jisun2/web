@@ -586,11 +586,10 @@ input[type=checkbox] {display:none}
 .popup-content .rece_product-box .rp-pay {font-size:20px}
 .popup-content .coupon-text {margin-bottom:5px}
 .popup-content .rece_product-box {margin-bottom:20px}
-.popup-content .product-select .selected {padding:15px 20px; cursor:pointer}
+.popup-content .product-select .selected {padding:15px 20px; cursor:pointer; font-size:15px;}
 .popup-content .product-select .sz-select_sub {position:absolute}
 .popup-content .rece-wrap .product-select {margin-bottom:30px}
 .popup-content .rece-phone {font-size:13px}
-.popup-content .product-select .selected {font-size:15px}
 .popup-content .member-wrap .sz-select_list .selected {padding:13px 20px 14px}
 .popup-content .rece-wrap .product-select .sz-select_sub .product_name {font-size:15px}
 .popup-content .member-wrap .sz-select_sub li {padding:10px 20px}
