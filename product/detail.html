@@ -57,13 +57,6 @@
                         <div class="pi_txtBox">
                             <span class="pi_cate">엑스씨엑스메인</span>
                             <p class="pi_name">SPACE LINE 에드반스 freeline no.26 퍼플 스웨트 셔츠 (챔피온 코튼)</p>
-                            <!-- <div class="star_box">
-                                <span class="star active"></span>
-                                <span class="star active"></span>
-                                <span class="star active"></span>
-                                <span class="star active"></span>
-                                <span class="star half"></span>
-                            </div> -->
                             <div class="star_rating_s top">
                                 <div class="star_wrap">
                                     <div class="star on"></div>
@@ -79,10 +72,10 @@
                                 <p class="sale_per">
                                     <span class="orange num"><span>15</span>%</span>2,987,750<span class="pay_won">원</span>
                                 </p>
-                                <!-- <div><button type="button" onclick="openLayer(event,'#tempLayer1',this)"> (레이어 팝업) 버튼 타입 1개 타이틀 기본형(넓이 600px / 300px)</button></div> -->
-                                <button type="button" class="sale-btn pop_open" onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button>
-                                <!-- <button type="button" class="sale-btn pop_open" data-popup="tempLayer1"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
-                                <div class="dim_layer hide">
+                                <!-- <button type="button" class="sale-btn pop_open" onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
+                                <button type="button" class="sale-btn pop_open"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button>
+                                <!-- 쿠폰 발급 -->
+                                <!-- <div class="dim_layer hide">
                         			<div class="popuplayer" id="tempLayer1">
                         				<div class="popup_area wd260">
                         					<p class="title">쿠폰 발급 완료</p>
@@ -92,7 +85,8 @@
                         					</div>
                         				</div>
                         			</div>
-                        		</div>
+                        		</div> -->
+                                <!-- //쿠폰 발급 -->
                             </div>
                         </div>
                         <a href="#none" class="b_share" data-type="copyurl"><i class="ico share"></i><span class="blind">공유하기 버튼</span></a>
@@ -131,7 +125,7 @@
                                             <p>적립예정 마일리지 <span class="num">298,775M</span></p>
                                             <p><span class="naver_pay"></span>결제 시 N포인트 <span class="num">1%</span>적립</p>
                                             <!-- <button type="button" class="card-btn"></button> -->
-                                            <!-- <a href="#" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</a> -->
+                                            <!-- z<a href="#" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</a> -->
                                             <button type="button" class="pop_open under" data-popup="pop_card_benefit">카드사 혜택</button>
                                         </td>
                                     </tr>
@@ -373,7 +367,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="relative_product clear">
                                 <h3>이 상품은 어때요?</h3>
                                 <div class="pd_item_wrap">
@@ -1058,6 +1051,7 @@
         <script src="../common/lib/main.js"></script>
         <!-- <script src="../common/lib/common.js"></script> -->
         <script type="text/javascript">
+
             var $slider = $('.slider');
                 if ($slider.length) {
                   var currentSlide;
