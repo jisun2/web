@@ -429,7 +429,7 @@ input[type=checkbox] { display:none;}
 .pf_fc .product-select:first-child .selected.active {border-top: 1px solid #333}
 .pf_fc .product-select:first-child .selected.active span {float:left}
 .pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
-.product-select .sz-select_sub {position:static; width:99.3%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
+.product-select .sz-select_sub {position:static; width:99.1%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
 .product-select .sz-select_sub li {position:relative; overflow-y:hidden; max-height:40px; background-color:#fff; border-bottom:1px solid #e5e5e5; font-size:13px}
 .product-select .sz-select_sub li:last-child {border-bottom: none}
 .product-select .sz-select_sub .just_left {padding:6px 10px; width:80%; margin-top:1px}
@@ -584,6 +584,6 @@ input[type=checkbox] { display:none;}
     .pf_fc-box .pro_pay {width:52%}
 }
 
-@media screen and (min-width:460px) and (max-width:719px) {
+@media screen and (min-width:480px) and (max-width:719px) {
     .product-select .sz-select_sub {width:99.7%}
 }
