@@ -554,7 +554,7 @@ input[type=checkbox] { display:none;}
 .write_check .input_checkbox.mgl20 {margin-left:20px;}
 .txtReview_wrap h2 {padding:25px 20px}
 .typeSelect {position:relative; width:100%;overflow-x:scroll; white-space:nowrap; font-size:13px}
-.typeSelect .ovr_x {display:flex;overflow-x: scroll; width:100%; height:30px; overflow-y:hidden; white-space:nowrap}
+.typeSelect .ovr_x {display:flex; width:100%; height:30px; overflow-y:hidden; white-space:nowrap}
 .typeSelect ul li {float:left; margin-top:2px; margin-right:10px; min-height:27px; max-height:30px; font-weight:200}
 .typeSelect ul li a {padding:5px 13px; min-width:62px; max-height:15px; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
 .typeSelect ul li.on a {color:#fff; background-color:#3067cc}
@@ -574,7 +574,9 @@ input[type=checkbox] { display:none;}
 .btns .btn_confirm50 {width:48.5%; color:#fff; background-color:#111}
 .btns .btn_confirm100 {width:100%; color:#fff; background-color:#111}
 
+
 @media screen and (min-width:720px) {
     .review_txt_moreview {display:none}
     .product-select .sz-select_sub {width:99.7%}
+    .typeSelect .ovr_x {overflow-x:hidden;}
 }
