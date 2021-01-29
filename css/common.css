@@ -528,7 +528,7 @@ input[type=checkbox] {display:none}
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -207px -25px}
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
 .tooltip .tooltiptext {padding:5px 0;visibility:hidden;width:200px;background-color:#3067cc;color:#fff;text-align:center;border-radius:6px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:11px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
-.tooltip .tooltiptext:after {content: '';position:absolute;top:100%;left:50%;margin-left:-5px;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
+.tooltip .tooltiptext:after {content: '';position:absolute;top:100%;left:50%;margin-left:-0;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
 .tooltip:hover .tooltiptext {visibility:visible}
 
 /* 이달의 카드사 혜택 팝업 */
