@@ -415,21 +415,22 @@ input[type=checkbox] { display:none;}
 .normal-title {margin-bottom:20px}
 .normal-title .just_left {color:#fff; font-size:12px}
 .sz-select_list {position:relative;}
-.sz-select_list li {}
+.sz-select_list li:nth-child(1) {border-top:1px solid #e5e5e5;}
 .sz-select_sub {z-index:1; overflow-x:hidden; display:none; position:absolute; width:100%}
 .sz-select_sub li {cursor:pointer;width:100%; overflow:hidden;}
 .sz-select_sl {display:none}
 .sz-custom_check {display:none}
 .product-select select {}
-.product-select .selected {padding:8px 10px; max-height:20px; color:#ababab; border:1px solid #e5e5e5;font-size:13px;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
+.product-select .selected {padding:8px 10px; max-height:20px; color:#ababab; border:1px solid #e5e5e5; border-top:none; font-size:13px;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
 .product-select .selected.active {border:1px solid #333}
 .product-select .selected .sel_arrow {float:right}
 .product-select .selected .product_name {display:inline-block; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap}
 .product-select .selected .product_line {display:inline-block; padding-top:4px; line-height:1; vertical-align:6px;font-weight:200; color:#ababab}
 .product-select .selected .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
-.product-select .sz-select_sub {position:static; width:99%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
+.product-select .sz-select_sub {position:static; width:99.8%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
 .pf_fc .product-select:first-child .selected {border-top:1px solid #e5e5e5}
 .pf_fc .product-select:first-child .selected.active {border-top: 1px solid #333}
+.pf_fc .product-select:first-child .selected.active span {float:left}
 .product-select .sz-select_sub li {position:relative; overflow-y:hidden; max-height:40px; background-color:#fff; border-bottom:1px solid #e5e5e5; font-size:13px}
 .product-select .sz-select_sub li:last-child {border-bottom: none}
 .product-select .sz-select_sub .just_left {padding:6px 10px; width:82%; margin-top:1px}
@@ -525,7 +526,7 @@ input[type=checkbox] { display:none;}
 .pd_item_wrap .list_pd.small .name,
 .pd_item_wrap .list_pd.small .price {margin-right:10px;font-size:11px;line-height:17px;}
 .pd_item_wrap .list_pd.small .brand {font-size:13px;line-height:26px;font-weight:700;margin-bottom:-3px;}
-.pd_item_wrap .list_pd.small .name {font-size:12px;line-height:15px;max-width:100%;min-height:32px;white-space:normal;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;clear:both;height:32px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;margin-bottom:8px;}
+.pd_item_wrap .list_pd.small .name {font-size:12px;line-height:15px;max-width:100%; height:30px;white-space:normal;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;clear:both;height:32px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;margin-bottom:8px;}
 .pd_item_wrap .list_pd.small .set_pos {position:absolute;right:0;top:0;width:0;padding-top:100%;}
 
 .viewdetail {padding:20px 0px; width:100%; vertical-align:middle; font-size:11px}
