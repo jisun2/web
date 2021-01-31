@@ -362,7 +362,6 @@
                                         <button type="button" class="acco-btn"></button>
                                     </div>
                                     <div class="pda-content">
-
                                     </div>
                                 </div>
                             </div>
@@ -451,8 +450,7 @@
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>
-                                                            999+</li>
+                                                        <li><span class="ico like_s"></span>999+</li>
                                                         <li>상품평 999+</li>
                                                     </ul>
                                                 </div>
@@ -495,8 +493,7 @@
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>
-                                                            999+</li>
+                                                        <li><span class="ico like_s"></span>999+</li>
                                                         <li>상품평 999+</li>
                                                     </ul>
                                                 </div>
@@ -717,7 +714,7 @@
                                         <li class="review_lst">
                                             <div class="review_wrap">
                                                 <div class="pos_center_before">
-                                                    <div class="star_rating_s top">
+                                                    <div class="star_rating_s">
                                                         <div class="star_wrap">
                                                             <div class="star on"></div>
                                                             <div class="star on"></div>
@@ -1052,7 +1049,6 @@
         <script src="../common/lib/main.js"></script>
         <!-- <script src="../common/lib/common.js"></script> -->
         <script type="text/javascript">
-
             var $slider = $('.slider');
                 if ($slider.length) {
                   var currentSlide;
@@ -1083,7 +1079,6 @@
                         e.preventDefault();
                         $(this).toggleClass('on');
                         $(this).siblings('p').toggleClass('_ellipsis');
-
                         if ($(this).hasClass('on')) {
                             $(this).children('span').text('접기')
                         } else {
@@ -1112,11 +1107,10 @@
                 } );
             } );
 
-          $( '.Demore_btn' ).click( function() {
+            $( '.Demore_btn' ).click( function() {
             $( '#re_more' ).removeClass( '_ellipsis'),
             $('.Demore_btn').hide();
-          });
-
+            });
             (function () {
                 function oneSlide($ele) {
                     $ele.slick({
@@ -1124,7 +1118,6 @@
                         arrows: false,
                     });
                 }
-
                 function centerSlide($ele) {
                     $ele.slick({
                         infinite: false,
