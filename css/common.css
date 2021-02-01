@@ -423,7 +423,7 @@ input[type=checkbox] {display:none}
 .orange {color:#ff4e25 !important}
 .blue {color:#3067cc !important}
 .num {font-family:'proxima-nova'!important}
-.notoS {font-weight:200; font-family:'Noto Sans KR'!important}
+.notoS {font-family:'Noto Sans KR'!important}
 .proxima {font-family:'proxima-nova'!important}
 .box_right, .box_left {position:relative; float:left; width:50%; vertical-align: middle;}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
@@ -434,7 +434,7 @@ input[type=checkbox] {display:none}
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color: #111}
 .btn_bk .dark {display:block; padding:17px 0}
 /* badge */
-.badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:47px; max-height:24px; font-family:'Noto Sans KR'; font-size:11px}
+.badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:54px; max-height:24px; font-family:'Noto Sans KR'; font-size:14px}
 .badge.ble {background-color:#3067cc; color:#fff}
 .badge.bk {background-color:#000; color:#fff}
 /* 레이어 팝업 */
@@ -445,7 +445,7 @@ input[type=checkbox] {display:none}
 .popuplayer .popup_area .title {margin-top:20px; font-size:22px; font-weight:bold; color:#333}
 .popuplayer .popup_area .txt {margin:14px 0 23px; line-height:24px; font-size:19px}
 .popuplayer .popup_area .subtxt {margin:9px 0 23px; line-height:20px; font-size:14px}
-.popuplayer .popup_area .btns button {float:left; height:45px}
+.popuplayer .popup_area .btns button {float:left; height:45px; font-size:16px}
 .popuplayer .popup_area .btns .mgl6 {margin-left:6px}
 .popuplayer .popup_area .btns .btn_cancel50 {width:48.5%; color:#000; border:1px solid #111}
 .popuplayer .popup_area .btns .btn_confirm50 {width:48.5%; color:#fff; background-color:#111}
@@ -527,13 +527,13 @@ input[type=checkbox] {display:none}
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -207px -25px}
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
 .tooltip .tooltiptext {padding:5px 0;visibility:hidden;width:200px;background-color:#3067cc;color:#fff;text-align:center;border-radius:6px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:11px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
-.tooltip .tooltiptext:after {content: '';position:absolute;top:100%;left:50%;margin-left:0;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
+.tooltip .tooltiptext:after {content: '';position:absolute;top:100%;left:50%;margin-left:5px;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
 .tooltip:hover .tooltiptext {visibility:visible}
 
 /* 이달의 카드사 혜택 팝업 */
 .paymt_card_benefit {padding:0 0 30px; margin:0 20px 50px 20px; display:block;/* height:calc(100vh - 60px)*/}
 .paymt_card_benefit .card img {width:95px; height:32px}
-.paymt_card_benefit strong {display:block;margin-top:25px;font-size:12px; color:#555; text-align:left; border:0;}
+.paymt_card_benefit strong {display:block;margin-top:25px;font-size:14px; color:#555; text-align:left; border:0;}
 /* .paymt_card_benefit strong:first-of-type {padding:25px 0 15px; } */
 .paymt_card_benefit .card li:first-child {border-top:1px solid #e5e5e5}
 .paymt_card_benefit .card li:after {display:block; content:''; clear:both;}
@@ -541,16 +541,16 @@ input[type=checkbox] {display:none}
 .paymt_card_benefit .card li .cardName {float:left; margin:0 16px 0 0}
 .paymt_card_benefit .card li dl {float:left; text-align:left}
 .paymt_card_benefit .card li dl dt {font-size:0;}
-.paymt_card_benefit .card li dl dd {font-size:13px; color:#888}
-.paymt_card_benefit .card li dl>dd:first-of-type {margin-bottom:4px; line-height:1; font-size:13px; font-weight:400; color:#000;}
+.paymt_card_benefit .card li dl dd {font-size:15px; color:#888}
+.paymt_card_benefit .card li dl>dd:first-of-type {margin-bottom:4px; line-height:1; font-size:15px; font-weight:400; color:#000;}
 /* 이달의 카드사 혜택 */
 .paymt_card_benefit .card_benefit_info {margin:25px 0}
-.paymt_card_benefit .card_benefit_info p span {display:block; font-size:12px; font-weight:400; color:#555; margin:0 0 15px}
-.paymt_card_benefit .card_benefit_info li {padding:unset;font-size:11px; font-weight: 200;color:#888; line-height:1; margin:0 0 8px;}
+.paymt_card_benefit .card_benefit_info p span {display:block; font-size:14px; font-weight:400; color:#555; margin:0 0 15px}
+.paymt_card_benefit .card_benefit_info li {padding:unset;font-size:13px; font-weight: 200;color:#888; line-height:1; margin:0 0 8px;}
 .paymt_card_benefit .card_benefit_info li::before {background-color:#888; display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:3px;height:3px; vertical-align:2px; margin-right:5px}
 
 /* 상품쿠폰 선택 */
-.popup-wrap h2{font-size:16px; font-weight:700; text-align:left; padding:17px; border-bottom:1px solid #d0d0d0; color:#000}
+.popup-wrap h2{font-size:20px; font-weight:700; text-align:left; padding:17px; border-bottom:1px solid #d0d0d0; color:#000}
 .popup-wrap .border_tab-cont > .paymt_wrap {display:none}
 .popup-wrap .border_tab-cont > .paymt_wrap.active {display:block}
 /* 공통 팝업 close btn */
@@ -574,7 +574,7 @@ input[type=checkbox] {display:none}
 .tab-content {display:none}
 .tab-content.active {display:block}
 .sz-select_list {position:relative}
-.sz-select_sub {z-index:1; display:none; position:absolute; width:100%;}
+/* .sz-select_sub {z-index:1; display:none; position:absolute; width:100%;} */
 .sz-select_sub li {cursor:pointer}
 .sz-select_sl {display:none}
 .sz-custom_check {display:none}
@@ -624,8 +624,7 @@ input[type=checkbox] {display:none}
 #photoView {width:100%}
 #pop_card_benefit {}
 
-.input_checkbox label:before, .input_radio_check label:before {
-border-radius: 2px;}
+.input_checkbox label:before, .input_radio_check label:before {border-radius: 2px;}
 
 .input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {
     background-color: #333;
