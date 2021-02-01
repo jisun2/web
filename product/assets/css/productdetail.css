@@ -442,8 +442,8 @@ input[type=checkbox] { display:none;}
 .product-select .sz-select_sub li {position:relative; overflow-y:hidden; max-height:40px; background-color:#fff; border-bottom:1px solid #e5e5e5; font-size:14px}
 .product-select .sz-select_sub li:last-child {border-bottom: none}
 .product-select .sz-select_sub .just_left {padding:6px 10px; width:80%; margin-top:1px}
-.product-select .sz-select_sub .product_name {float:left; display:inline-block; width:68%; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space: nowrap}
-.product-select .sz-select_sub .product_line {display:inline-block; line-height:0; vertical-align:2px; font-weight:200; color:#ababab}
+.product-select .sz-select_sub .product_name {float:left;width:68%; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space: nowrap}
+.product-select .sz-select_sub .product_line {float:left; line-height:0; vertical-align:2px; font-weight:200; color:#ababab}
 .product-select .sz-select_sub .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
 .pf_fc_item-box {max-height:243px; overflow-y:scroll; overflow-x:hidden; font-size:13px}
 .product-select.big .selected {padding:15px 10px}
