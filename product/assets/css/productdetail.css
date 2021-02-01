@@ -3,7 +3,7 @@
 #container {overflow:hidden}
 #pop_card_benefit {overflow-y:scroll}
 #tab-btn {min-width:320px}
-.tooltip .tooltiptext.mov:after {margin-left:-5px;}
+
 /* btn */
 .btn_bk {margin:25px 0 40px 0; font-size:17px; font-weight:500}
 /* 결제 체크 박스 */
@@ -359,7 +359,7 @@ input[type=checkbox] { display:none;}
 .pd_btn_box .pf-btn {width:calc(50% - 6px); height:45px; float:left; margin:0 3px; color:#fff; font-size:17px; font-weight: 300}
 .pd_btn_box .orange_btn2 {width:72.2222%; height: 45px; position:absolute; right:18px; /* left: 23.61111%; */ background-color: #ff4e25; color: #fff; font-size: 17px; font-weight: 500}
 .orange-btn {color:#fff; background-color:#ff4e25}
-.button_like_new {position:absolute; top:-4px; left:50%; transform:translateX(-50%); width:55px; height:45px;  background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0px -46px;  background-size: 55px 91px;}
+.button_like_new {position:absolute; top:-4px; left:50%; transform:translateX(-50%); width:55px; height:52px;background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0px -46px;  background-size: 55px 91px;}
 .button_like_new_wrap {width:25%;height:100%;position:relative;}
 .button_like_new .num {display:block; padding-top:35px; font-size:13px; font-weight:300; color:#fff}
 .button_like_new.selected {background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0 0; background-size: 55px 91px; font-size:11px;}
@@ -443,7 +443,7 @@ input[type=checkbox] { display:none;}
 .product-select .sz-select_sub li:last-child {border-bottom: none}
 .product-select .sz-select_sub .just_left {padding:6px 10px; width:80%; margin-top:1px}
 .product-select .sz-select_sub .product_name {display:inline-block; width:68%; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space: nowrap}
-.product-select .sz-select_sub .product_line {display:inline-block; line-height:0; vertical-align:5px; font-weight:200; color:#ababab}
+.product-select .sz-select_sub .product_line {display:inline-block; line-height:0; vertical-align:2px; font-weight:200; color:#ababab}
 .product-select .sz-select_sub .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
 .pf_fc_item-box {max-height:243px; overflow-y:scroll; overflow-x:hidden; font-size:13px}
 .product-select.big .selected {padding:15px 10px}
@@ -571,6 +571,7 @@ input[type=checkbox] { display:none;}
 .write_info {margin-top:13px}
 .write_info_wrap {margin-top:19px; padding:20px; background-color:#f9f9f9}
 .write_info_wrap .tooltip.tit {font-size:15px}
+.tooltip .tooltiptext.mov:after {margin-left:-1px;}
 .write_info_wrap  p span {font-size:12px; font-weight: 300; color:#555; margin:0 0 15px}
 .write_info_wrap  li {padding:unset;font-size:11px; font-weight: 200;color:#888; line-height:1; margin:0 0 8px;}
 .write_info_wrap  li::before {display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:3px;height:3px; vertical-align:2px; margin-right:3px; background-color:#888}
