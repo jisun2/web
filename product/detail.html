@@ -112,14 +112,7 @@
                                             <div class="tooltip"><span class="con">해외배송</span><span class="ico tip"></span>
                                               <span class="tooltiptext">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
                                             </div>
-                                            <script type="text/javascript">
-                                                $(document).ready(function(){
-                                                    $(".tooltiptext").show();
-                                                    setTimeout(function () {
-                                                        $(".tooltiptext").hide();
-                                                    }, 4000);
-                                                });
-                                            </script>
+
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1058,6 +1051,14 @@
         <script src="../common/lib/slick.min.js"></script>
         <script src="../common/lib/main.js"></script>
         <!-- <script src="../common/lib/common.js"></script> -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".tooltiptext").show();
+                setTimeout(function () {
+                    $(".tooltiptext").hide();
+                }, 4000);
+            });
+        </script>
         <script type="text/javascript">
             var $slider = $('.slider');
                 if ($slider.length) {
