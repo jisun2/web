@@ -93,7 +93,6 @@
                             </div>
                         </div>
                         <a href="#none" class="b_share" data-type="copyurl"><i class="ico share"></i><span class="blind">공유하기 버튼</span></a>
-
                         <div class="pi_listWrap">
                             <table class="pi_list clear">
                                 <caption class="blind">상품 할인 상세 영역</caption>
@@ -113,6 +112,14 @@
                                             <div class="tooltip"><span class="con">해외배송</span><span class="ico tip"></span>
                                               <span class="tooltiptext">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
                                             </div>
+                                            <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                    $(".tooltiptext").show();
+                                                    setTimeout(function () {
+                                                        $(".tooltiptext").hide();
+                                                    }, 3000);
+                                                });
+                                            </script>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1063,12 +1070,10 @@
                     slidesCount = slick.slideCount;
                     $(sliderCounter).text(currentSlide + ' / ' +slidesCount)
                   };
-
                   $slider.on('init', function(event, slick) {
                     $slider.append(sliderCounter);
                     updateSliderCounter(slick);
                   });
-
                   $slider.on('afterChange', function(event, slick, currentSlide) {
                     updateSliderCounter(slick, currentSlide);
                   });
@@ -1085,15 +1090,13 @@
                         if ($(this).hasClass('on')) {
                             $(this).children('span').text('접기')
                         } else {
-                            $(this).children('span').text('더보기')
+                        $(this).children('span').text('더보기')
                     }
                 });
                 // 상품 상세 tab
                 var tabBtn = $("#tab-btn > ul > li");
                 var tabCont = $("#tab-cont > div");
-
                 tabCont.hide().eq(0).show();
-
                 tabBtn.click(function(){
                 var target = $(this);
                 var index = target.index();
@@ -1104,11 +1107,11 @@
                 tabCont.eq(index).css("display","block");
                 });
             }
-            $( document ).ready( function() {
-                $( '.Demore_btn' ).click( function() {
+            $( document ).ready(function() {
+                $( '.Demore_btn' ).click(function() {
                     $( "#Demore" ).removeClass( "overh" )
-                } );
-            } );
+                });
+            });
 
             $( '.Demore_btn' ).click( function() {
             $( '#re_more' ).removeClass( '_ellipsis'),
@@ -1133,7 +1136,6 @@
                 oneSlide($('.recc_place-slide'));
                 centerSlide($('.product_color_slide'));
                 centerSlide($('.more_prod_slide'));
-
                 function acAcco(ele, content) {
                     $(ele).on('click touch', function () {
                         $(this).toggleClass('active');
