@@ -687,7 +687,7 @@ input[type=checkbox] {display:none}
 /*footter start*/
 #footer {padding: 20px; background-color: #f9f9f9;font-weight:300}
 #footer .footer_top {overflow: hidden}
-#footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height:30px; line-height: 30px; font-size: 15px; font-weight:600; color: #888; margin-bottom: 20px;}
+#footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height:30px; line-height: 30px; font-size: 14px; font-weight:500; color: #888; margin-bottom: 20px;}
 #footer .footer_top div {display:inline-block;width:100%;border-bottom: 1px solid #e5e5e5; font-family: 'Noto Sans KR'; font-size: 14px; color: #ababab}
 #footer .footer_top ul {min-width:320px}
 #footer .footer_top ul li {position:relative;float:left; margin-bottom:20px}
@@ -712,12 +712,12 @@ input[type=checkbox] {display:none}
 #footer .outlink {display:inline-block; margin-bottom:30px; text-align: center;}
 #footer .outlink a {display:block;width:38.4px;height:38.4px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
 #footer .outlink li {margin-right: 12px; display:block;flex:1; float:left}
-#footer .outlink i {display:inline-block; position:relative; top:22%;}
+#footer .outlink i {display:inline-block; position:relative; top:21%;}
 #footer .outlink i.ig {width:19.2px; height:19.2px; background-position: 0px -127.8px; background-size: 360px 360px}
 #footer .outlink i.ig_st {width:29.4px; height:31.8px; background-position:-24px -127.8px; background-size: 360px 360px}
 #footer .outlink i.fb {width:9px; height:19.2px; background-position:-58.2px -127.8px; background-size: 360px 360px}
 #footer .outlink i.pin {width:15px; height:19.2px; background-position:-72px -127.8px; background-size: 360px 360px; left:2%;}
-#footer .outlink i.blog {width:25.2px; height:11.4px; background-position: -91.8px -127.8px; background-size: 360px 360px; top:24%;}
+#footer .outlink i.blog {width:25.2px; height:11.4px; background-position: -91.8px -127.8px; background-size: 360px 360px; top:23%;}
 #footer .outlink_kcp {display:inline-block;float: right}
 #footer .outlink_kcp a {display:block;width:38.4px;height:38.4px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
 #footer .outlink_kcp i {display: inline-block}
