@@ -693,7 +693,7 @@ input[type=checkbox] {display:none}
 #footer .footer_top ul li {position:relative;float:left; margin-bottom:20px}
 #footer .footer_top ul li:first-child {color: #888; font-weight:400}
 #footer .footer_top ul li:not(:first-child) {padding-left:18px}
-#footer .footer_top ul li.dot ::before {position: absolute; left:6.8px; width: 2px;content: "\00B7"}
+#footer .footer_top ul li.dot ::before {position: absolute; left:6px; width: 2px;content: "\00B7"}
 #footer .footer_middle {margin-top: 23px; font-size: 13px; font-family: 'Noto Sans KR';color: #ababab; font-weight:300}
 #footer .tel {line-height: 20px; display: inline-block; clear: left;}
 #footer .tel strong {font-size:16px; font-family:'proxima-nova'; color: #888; font-weight: 600}
@@ -723,20 +723,21 @@ input[type=checkbox] {display:none}
 #footer .outlink_kcp i {display: inline-block}
 #footer .outlink_kcp i.kcp {width: 38.4px; height: 38.4px; background-position: -148.2px -127.8px;background-size:360px 360px}
 @media screen and (min-width:280px) and (max-width:374px){
-    #footer .footer_middle, .footer_top ul {font-size: 10px;}
+    #footer .addr, .footer_top ul {font-size: 11px;}
     #footer .footer_top ul li:not(:first-child) {padding-left:14px;}
     #footer .info_txt strong {font-size: 12px;}
-    #footer .button_tip_toggle span {font-size: 12px;}
+    #footer .button_tip_toggle span {font-size: 13px;}
     #footer .tel strong {font-size: 14px;}
     #footer .footer_top button {font-size: 13px;}
-    #footer .outlink li {margin-right: 9px;}
+    #footer .outlink li {margin-right: 9.5px;}
+    #footer .footer_top ul li.dot ::before {left: 4px;}
 }
 @media screen and (min-width:375px) and (max-width:420px){
-    #footer .footer_middle {font-size: 12px;}
-    #footer .footer_top ul {font-size: 12px;}
+    #footer .footer_middle {font-size: 13px;}
+    #footer .footer_top ul {font-size: 13px;}
     #footer .footer_top ul li:not(:first-child) {padding-left:17px;}
-    #footer .info_txt strong {font-size: 12px;}
-    #footer .button_tip_toggle span {font-size: 12px;}
+    #footer .info_txt strong {font-size: 13px;}
+    #footer .button_tip_toggle span {font-size: 13px;}
     #footer .tel strong {font-size: 14px;}
 }
 /* -footer end- */
