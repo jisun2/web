@@ -526,12 +526,9 @@ input[type=checkbox] {display:none}
 /* 공통  tooltip */
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -207px -25px}
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
-.tooltip .tooltiptext {padding:5px 0;width:200px;background-color:#3067cc;color:#fff;text-align:center;border-radius:6px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:11px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
+.tooltip .tooltiptext {padding:5px 0;visibility:hidden;width:200px;background-color:#3067cc;color:#fff;text-align:center;border-radius:6px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:11px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
 .tooltip .tooltiptext:after {content: '';position:absolute;top:100%;left:50%;margin-left:3.5px;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
-.tooltip .tooltiptext1 {visibility:hidden;}
-.tooltip .tooltiptext1 {padding:5px 0;width:200px;background-color:#3067cc;color:#fff;text-align:center;border-radius:6px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:11px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
-.tooltip .tooltiptext1:after {content: '';position:absolute;top:100%;left:50%;margin-left:3.5px;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
-.tooltip:hover .tooltiptext1 {visibility:visible}
+.tooltip:hover .tooltiptext {visibility:visible}
 
 /* 이달의 카드사 혜택 팝업 */
 .paymt_card_benefit {padding:0 0 30px; margin:0 20px 50px 20px; display:block;/* height:calc(100vh - 60px)*/}
@@ -617,16 +614,16 @@ input[type=checkbox] {display:none}
 }
 
 /*footter css*/
-#footer {font-weight:300}
-#footer {padding: 20px; background-color: #f9f9f9}
+
+#footer {padding: 20px; background-color: #f9f9f9;font-weight:300}
 #footer .footer_top {overflow: hidden}
-#footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height: 30px; font-size: 15px; font-weight:300; color: #888; margin-bottom: 20px; text-align: center;}
+#footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height: 30px; font-size: 15px; font-weight:600; color: #888; margin-bottom: 20px; text-align: center;}
 #footer .footer_top div {display:inline-block;width:100%;border-bottom: 1px solid #e5e5e5; font-family: 'Noto Sans KR'; font-size: 14px; color: #ababab}
 #footer .footer_top ul {min-width:320px}
 #footer .footer_top ul li {position:relative;float:left; margin-bottom:20px}
 #footer .footer_top ul li:first-child {color: #888; font-weight:400}
 #footer .footer_top ul li:not(:first-child) {padding-left:18px}
-#footer .footer_top ul li.dot ::before {position: absolute; left:7px; width: 2px;content: "\00B7"}
+#footer .footer_top ul li.dot ::before {position: absolute; left:6.8px; width: 2px;content: "\00B7"}
 #footer .footer_middle {margin-top: 23px; font-size: 13px; font-family: 'Noto Sans KR';color: #ababab; font-weight:300}
 #footer .tel {line-height: 20px;display: inline-block;}
 #footer .tel strong {font-size:16px; font-family:'proxima-nova'; color: #888; font-weight: 600}
@@ -638,7 +635,7 @@ input[type=checkbox] {display:none}
 #footer .button_tip_toggle.on span:after {background:url("../common/images/ico/acco_arrow-gray_off.png") 0 0 no-repeat; width: 10px; height: 5px}
 #footer .cont_tip_toggle {margin-top: 10px;}
 #footer .cont_tip_toggle ul:first-child {float: left; padding-right: 20px}
-#footer .cont_tip_toggle ul li:not(:last-child) {padding-bottom: 5px}
+#footer .cont_tip_toggle ul li:not(:last-child) {padding-bottom: 3px}
 #footer .cont_tip_toggle ul li:nth-child(3) {line-height: 16px}
 #footer .cont_tip_toggle ul li a {text-decoration: underline!important; color: #888; font-weight:400}
 #footer .footer_bottom {margin-top: 25px}
@@ -657,8 +654,22 @@ input[type=checkbox] {display:none}
 #footer .outlink_kcp i {display: inline-block}
 #footer .outlink_kcp i.kcp {width: 32px; height: 32px; background-position: -123.5px -106.5px}
 
-@media screen and (min-width:720px) {
+@media screen and (min-width:280px) and (max-width:374px){
+    #footer .footer_middle, .footer_top ul {font-size: 10px;}
+    #footer .footer_top ul li:not(:first-child) {padding-left:14px;}
+    #footer .info_txt strong {font-size: 12px;}
+    #footer .button_tip_toggle span {font-size: 12px;}
+    #footer .tel strong {font-size: 14px;}
+    #footer .footer_top button {font-size: 13px;}
+}
+
+@media screen and (min-width:375px) and (max-width:420px){
+    #footer .footer_middle {font-size: 12px;}
+    #footer .footer_top ul {font-size: 12px;}
+    #footer .footer_top ul li:not(:first-child) {padding-left:17px;}
+}
+
+/* @media screen and (min-width:720px) {
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 20%;}
-    /* #pop_card_benefit {width:800px; margin:0 20%} */
-}
+} */
