@@ -688,23 +688,22 @@ input[type=checkbox] {display:none}
 
 /*footter start*/
 #footer {padding: 20px; background-color: #f9f9f9;font-weight:300}
-#footer .footer_top {overflow: hidden; text-align: center;}
-#footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height:30px; font-size: 14px; font-weight:400; color: #888; margin-bottom: 20px;}
+#footer .footer_top {overflow: hidden;}
+#footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height:30px; font-size: 14px; font-weight:400; color: #888; margin-bottom: 14px;}
 #footer .footer_top div {display:inline-block;width:100%;border-bottom: 1px solid #e5e5e5; font-family: 'Noto Sans KR'; font-size: 14px; color: #ababab}
-#footer .footer_top ul {min-width:320px}
-#footer .footer_top ul li {position:relative;float:left; margin-bottom:20px}
+#footer .footer_top ul { display: inline-block;margin-bottom: 12px;}
+#footer .footer_top ul li {position:relative;float:left;padding-right:20px;}
 #footer .footer_top ul li:first-child {color: #888; font-weight:400}
-#footer .footer_top ul li:not(:first-child) {padding-left:18px}
-#footer .footer_top ul li.dot ::before {position: absolute; left:6px; width: 2px;content: "\00B7"}
-#footer .footer_middle {margin-top: 23px; font-size: 13px; font-family: 'Noto Sans KR';color: #ababab; font-weight:300}
+#footer .footer_top ul li.dot ::before {width: 2px;content: "\00B7"; position: relative; right: 9px;}
+#footer .footer_middle {margin-top: 25px; font-size: 13px; font-family: 'Noto Sans KR';color: #ababab; font-weight:300}
 #footer .tel {line-height: 20px; display: inline-block; clear: left;}
 #footer .tel strong {font-size:16px; font-family:'proxima-nova'; color: #888; font-weight: 600}
-#footer .info_txt{margin-top: 13px; margin-bottom: 28px; line-height: 20px; display: inline-block}
-#footer .info_txt strong {font-size:14px; font-weight:600; font-family:'proxima-nova'; color: #888}
+#footer .info_txt{margin-top: 13px; margin-bottom: 26px; line-height: 20px; display: inline-block}
+#footer .info_txt strong {font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .button_tip_toggle {display:block}
 #footer .button_tip_toggle span {font-size: 14px; color: #888; font-weight:400; display:inline-block;position: relative}
 #footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../common/images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
-#footer .button_tip_toggle.on span:after {background:url("../common/images/ico/acco_arrow-gray_off.png") 0 0 no-repeat; width: 10px; height: 5px}
+#footer .button_tip_toggle.on span:after {background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVBhXXcqxCkBQGIbhQ7kDoywGg8FtuBODCzDZT0qZLVIkZbZI5G7chfeczil56+kf/s+RUopPPjZ4yPBA55qrCnBjwYALIXR2GEE9WjTm1jgRQw8THKjQwdajxI5UDUcUmPFvRS6EmF4f7xIVsncdqQAAAABJRU5ErkJggg==") 0 0 no-repeat; width: 10px; height: 5px}
 #footer .cont_tip_toggle {margin-top: 10px;}
 #footer .cont_tip_toggle ul:first-child {float: left; padding-right: 20px}
 #footer .cont_tip_toggle ul li:not(:last-child) {padding-bottom: 3px}
@@ -714,33 +713,23 @@ input[type=checkbox] {display:none}
 #footer .outlink {display:inline-block; margin-bottom:30px; text-align: center;}
 #footer .outlink a {display:block;width:38.4px;height:38.4px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
 #footer .outlink li {margin-right: 12px; display:block;flex:1; float:left}
-#footer .outlink i {display:inline-block; position:relative; top:21.5%;}
+#footer .outlink i {display:inline-block; position:relative; top:9.6px;}
 #footer .outlink i.ig {width:19.2px; height:19.2px; background-position: 0px -127.8px; background-size: 360px 360px}
 #footer .outlink i.ig_st {width:29.4px; height:31.8px; background-position:-24px -127.8px; background-size: 360px 360px}
 #footer .outlink i.fb {width:9px; height:19.2px; background-position:-58.2px -127.8px; background-size: 360px 360px}
-#footer .outlink i.pin {width:15px; height:19.2px; background-position:-72px -127.8px; background-size: 360px 360px; left:2%;}
-#footer .outlink i.blog {width:25.2px; height:11.4px; background-position: -91.8px -127.8px; background-size: 360px 360px; top:23%;}
+#footer .outlink i.pin {width:15px; height:19.2px; background-position:-72px -127.8px; background-size: 360px 360px; left:3%;}
+#footer .outlink i.blog {width:25.2px; height:11.4px; background-position: -91.8px -127.8px; background-size: 360px 360px; top:9px;}
 #footer .outlink_kcp {display:inline-block;float: right}
 #footer .outlink_kcp a {display:block;width:38.4px;height:38.4px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
 #footer .outlink_kcp i {display: inline-block}
 #footer .outlink_kcp i.kcp {width: 38.4px; height: 38.4px; background-position: -148.2px -127.8px;background-size:360px 360px}
-@media screen and (min-width:280px) and (max-width:374px){
-    #footer .addr, .footer_top ul {font-size: 11px;}
-    #footer .footer_top ul li:not(:first-child) {padding-left:14px;}
-    #footer .info_txt strong {font-size: 12px;}
-    #footer .button_tip_toggle span {font-size: 13px;}
-    #footer .tel strong {font-size: 14px;}
-    #footer .footer_top button {font-size: 13px;}
-    #footer .outlink li {margin-right: 9.5px;}
-    #footer .footer_top ul li.dot ::before {left: 4px;}
+@media all and (max-width:525px) {
+    #footer .footer_top ul li:nth-child(4) {clear: both;}
+    #footer .footer_top ul li:nth-child(4) ::before {display: none;}
+    #footer .footer_top ul li:nth-child(4), .footer_top ul li:nth-child(5) {display: inline-block;margin-top: 5px;}
 }
-@media screen and (min-width:375px) and (max-width:420px){
-    #footer .footer_middle {font-size: 13px;}
-    #footer .footer_top ul {font-size: 13px;}
-    #footer .footer_top ul li:not(:first-child) {padding-left:17px;}
-    #footer .info_txt strong {font-size: 13px;}
-    #footer .button_tip_toggle span {font-size: 13px;}
-    #footer .tel strong {font-size: 14px;}
+@media all and (min-width:375px) and (max-width:1980px){
+    #footer .footer_top ul li:nth-child(4) ::before {width: 2px;content: "\00B7"; position: relative; right: 9px;}
 }
 /* -footer end- */
 @media screen and (min-width:720px) {
