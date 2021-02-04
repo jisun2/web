@@ -6,8 +6,8 @@
         <title>힙합퍼 상품 상세 _ 상품</title>
         <meta name="description">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <script src="../js/plugin.js"></script>
-        <script src="../js/common.js"></script>
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="assets/css/productdetail.css">
     </head>
@@ -74,7 +74,7 @@
                                     <span class="pay_Range">상품쿠폰 적용가</span>
                                 </p>
                                 <div class="coupDwon clear">
-                                    <button type="button" class="orange_border" onclick="openLayer(event,'#tempLayer1',this)"><span class="proxima">175,750</span><span class="notoS">원 할인 쿠폰 받기</span><i class="ico down"></i></button>
+                                    <button type="button" class="org_br" onclick="openLayer(event,'#tempLayer1',this)"><span class="proxima">175,750</span><span class="notoS">원 할인 쿠폰 받기</span><i class="ico down"></i></button>
                                 </div>
                                 <!-- <button type="button" class="sale-btn"  onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
                                 <!-- 쿠폰 발급 팝업-->
@@ -108,13 +108,11 @@
                                     <tr>
                                         <th scope="row">배송비</th>
                                         <td>
-
                                             <span class="num">10,000</span>원
                                             <div class="tooltip"><span class="con">해외배송</span><span class="ico tip"></span>
                                               <span class="tooltiptext">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
                                               <span class="tooltiptext1">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
                                             </div>
-
                                         </td>
                                     </tr>
                                 </tbody>
@@ -273,9 +271,9 @@
                     </div>
                 </div>
 
-                <div id="tab-menu" class="product">
-                    <div id="tab-btn">
-                        <ul class="tab border_tab-list white clearfix">
+                <div class="product">
+                    <div id="tab_btn" class="sticky">
+                        <ul class="tab" id="selectInfoTab">
                             <li class="active">
                                 <a class="pro" href="#none">상품 상세</a>
                            </li>
@@ -294,10 +292,10 @@
                                 <p class="overh" id="Demore">
                                     <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="">
                                 </p>
-                                <button type="button" id="Demore_btn" class="Demore_btn orange_border">상품 상세 더보기</button>
+                                <button type="button" id="Demore_btn" class="Demore_btn org_br">상품 상세 더보기<span class="ico detailBtn"></span></button>
                             </div>
                             <div class="member_event_acco-box lcear">
-                                <div class="product_detail-acco">
+                                <div class="product_detail-acco brT">
                                     <div class="pda-title">
                                         <span>상품정보고시</span>
                                         <button type="button" class="acco-btn"><span class="ico acco"></span></button>
@@ -381,7 +379,7 @@
                                                     <a href="#" class="img">
                                                         <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
                                                     </a>
-                                                    <a href="#" class="brand ellipsis">나이키 나이키나이키</a>
+                                                    <a href="#" class="brand ellipsis">나이키</a>
                                                     <a href="#" class="name ellipsis">비욘드 레터링 특양면 반팔 (티화이트)</a>
                                                     <div class="price tc_3 clear">
                                                         <p><del class="origin tc_b">9,552,000</del></p>
@@ -665,7 +663,7 @@
                                  </div>
                                 <div class="review_none">
                                      <p class="innerTxt">
-                                        등록된 상품평이 없습니다.
+                                        등록된 상품평이 없어요.
                                      </p>
                                      <div class="btn_bk">
                                           <a href="write.html" class="dark">상품평 쓰기</a>
@@ -698,7 +696,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="product_option">
-                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
+                                                        <p class="ellipsis">옵션 : 1. 블랙 / US 9/UK 8(270) 블랙 / US 9/UK 8(270)11</p>
                                                     </div>
                                                     <div class="cont clear">
                                                         <p class="re_txt _ellipsis">
@@ -736,20 +734,20 @@
                                                         </ul>
                                                     </div>
                                                     <div class="product_option">
-                                                        <p>옵션 : OLD SCHOOL 후드(SBH9S... / OLD SCHOOL 후드 </p>
+                                                        <p class="ellipsis">옵션 : OLD SCHOOL 후드(SBH9S... / OLD SCHOOL 신상 후드 집업 세트</p>
                                                     </div>
                                                     <div class="cont clear">
-                                                        <p class="re_txt _ellipsis">
-                                                            가성비 좋네요. 정말 마음에 듭니다.
-                                                            이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                            없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                            요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                            한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                            요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                            없어요 굿굿굿
-                                                        </p>
-                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
-                                                        <!-- <a href="#" class="review_txt_moreview"><span>...더보기</span></a> -->
+                                                        <a href="#" class="review_txt_moreview">
+                                                            <p class="re_txt _ellipsis">
+                                                                가성비 좋네요. 정말 마음에 듭니다.
+                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
+                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
+                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
+                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
+                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
+                                                                없어요 굿굿굿
+                                                            </p>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -776,11 +774,17 @@
                                                         <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
                                                     </div>
                                                     <div class="cont clear">
-                                                        <p class="re_txt _ellipsis">
-                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
-                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                                                        </p>
-                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                        <a href="#" class="review_txt_moreview">
+                                                            <p class="re_txt _ellipsis">
+                                                                가성비 좋네요. 정말 마음에 듭니다.
+                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
+                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
+                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
+                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
+                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
+                                                                없어요 굿굿굿
+                                                            </p>
+                                                        </a>
                                                     </div>
                                                     <div class="reviewPhoto_box">
                                                         <ul class="re_img">
@@ -810,14 +814,20 @@
                                                         </ul>
                                                     </div>
                                                     <div class="product_option">
-                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
+                                                        <p>옵션 : 1. 그레이 / US 9/UK 8(270)</p>
                                                     </div>
                                                     <div class="cont clear">
-                                                        <p class="re_txt _ellipsis">
-                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
-                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                                                        </p>
-                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                        <a href="#" class="review_txt_moreview">
+                                                            <p class="re_txt _ellipsis">
+                                                                가성비 좋네요. 정말 마음에 듭니다.
+                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
+                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
+                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
+                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
+                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
+                                                                없어요 굿굿굿
+                                                            </p>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -835,12 +845,14 @@
                             </section>
                         </div>
                         <div class="tab_inr qna">
-                            <p class="innerTxt">
-                                구매하시려는 상품의 궁금한 점에 대해 문의 남겨주세요.<br />
-                                상품 문의 외 배송/반품/교환 문의는 1:1문의를 이용해 주세요.
-                            </p>
-                            <div class="btn_bk">
-                                 <a href="write.html" class="dark">상품 문의 작성하기</a>
+                            <div class="inquire">
+                                <p class="innerTxt">
+                                    구매하시려는 상품의 궁금한 점에 대해 문의 남겨주세요.<br />
+                                    상품 문의 외 배송/반품/교환 문의는 1:1문의를 이용해 주세요.
+                                </p>
+                                <div class="btn_bk">
+                                     <a href="write.html" class="dark">상품 문의 작성하기</a>
+                                </div>
                             </div>
                             <div class="qnaBox">
                                 <ul class="list_bar">
@@ -915,8 +927,15 @@
                                         <a href="#">
                                             <div class="que tc_5 clear">
                                                 <div class="cont clear">
-                                                    <p id="re_more" class="re_txt _ellipsis">안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
-                                                    싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?</p>
+                                                    <a href="#" class="review_txt_moreview">
+                                                        <p id="re_more" class="re_txt _ellipsis">
+                                                            안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
+                                                            싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?
+                                                            안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
+                                                            싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
+                                                            싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?
+                                                        </p>
+                                                    </a>
                                                 </div>
                                             </div>
                                             <ul class="list_bar info">
@@ -979,7 +998,7 @@
                                     <div  class="item seller view"><!-- 열릴때는 class에 view 추가 -->
                                         <div class="que tc_5 clear view">
                                             <a href="#">
-                                                <div class="">
+                                                <div class="sellerBadge">
                                                     <i class="ico line"></i><span class="blind">판매자 게시글</span><span class="badge bk br50">판매자</span>
                                                 </div>
                                                 <div class="cont clear">
@@ -1052,16 +1071,26 @@
         <!-- slick slider -->
         <script src="../common/lib/slick.min.js"></script>
         <script src="../common/lib/main.js"></script>
-        <!-- <script src="../common/lib/common.js"></script> -->
         <script type="text/javascript">
+
+            // function hasScrolled() {
+            //
+            //     if (st > lastScrollTop && st > navbarHeight + 55) {
+            //         $('#selectInfoTab').css({'top':'0','position':'sticky'});
+            //     } else {
+            //         if (st + $(window).height() < $(document).height()) {
+            //         $('#selectInfoTab').css({'top':$('#header').height(),'position':'sticky'});
+            //     }
+            //     lastScrollTop = st;
+            // }
+
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
                     $(".tooltiptext").hide();
-                }, 4000);
+                }, 3000);
+                // $('#selectInfoTab').css({'top':$('.product').height(),'position':'sticky','z-index':'10'});
             });
-        </script>
-        <script type="text/javascript">
             var $slider = $('.slider');
                 if ($slider.length) {
                   var currentSlide;
@@ -1083,21 +1112,29 @@
                   //
                   // $slider.slick();
                 }
-        </script>
-        <script type="text/javascript">
-            if ($('.review_txt_moreview')) {
+                if ($('.review_txt_moreview')) {
                     $('.review_txt_moreview').on('click', function (e) {
                         e.preventDefault();
                         $(this).toggleClass('on');
-                        $(this).siblings('p').toggleClass('_ellipsis');
-                        if ($(this).hasClass('on')) {
-                            $(this).children('span').text('접기')
-                        } else {
-                        $(this).children('span').text('더보기')
-                    }
+                        $(this).children('p').toggleClass('_ellipsis');
+                        // if ($(this).hasClass('on')) {
+                        //     $(this).children('span').text('접기')
+                        // } else {
+                        // $(this).children('span').text('더보기')
+                    // }
+                // if ($('.review_txt_moreview')) {
+                //     $('.review_txt_moreview').on('click', function (e) {
+                //         e.preventDefault();
+                //         $(this).toggleClass('on');
+                //         $(this).siblings('p').toggleClass('_ellipsis');
+                //         if ($(this).hasClass('on')) {
+                //             $(this).children('span').text('접기')
+                //         } else {
+                //         $(this).children('span').text('더보기')
+                //     }
                 });
                 // 상품 상세 tab
-                var tabBtn = $("#tab-btn > ul > li");
+                var tabBtn = $("#tab_btn > ul > li");
                 var tabCont = $("#tab-cont > div");
                 tabCont.hide().eq(0).show();
                 tabBtn.click(function(){
@@ -1115,7 +1152,6 @@
                     $( "#Demore" ).removeClass( "overh" )
                 });
             });
-
             $( '.Demore_btn' ).click( function() {
             $( '#re_more' ).removeClass( '_ellipsis'),
             $('.Demore_btn').hide();
