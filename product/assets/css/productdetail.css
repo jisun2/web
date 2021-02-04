@@ -116,7 +116,7 @@
 
 .reviewer .review_box {position:relative;}
 .reviewer .review_lst .idDate span {float:left; font-size:14px; color:#888;}
-.reviewer .review_box .review_lst {display: inline-block; padding:25px 0; width:100%; height: auto; border-bottom: 1px solid #f5f5f5}
+.reviewer .review_box .review_lst {display:block; padding:25px 0; width:100%; height:auto; border-bottom: 1px solid #f5f5f5}
 .reviewer .review_box .ovr_x {width:95%;overflow-x:scroll;}
 .reviewer .review_box .ovr_x .box {-ms-overflow-style: none;}
 .box::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
@@ -133,7 +133,7 @@
 .reviewer .product_option p {margin-top:10px; float:left; font-size:14px; font-weight:200; color:#888; line-height:1.4em;}
 .reviewer .product_option p.gray {font-size:12px; color:#888}
 .reviewer .product_option .ellipsis {width:100%}
-.reviewer p.re_txt {float:left; max-height:200px; margin:8px 0; line-height:20px; font-size:15px; font-weight:200; text-align:left; color:#000}
+.reviewer p.re_txt {float:left; margin:8px 0; line-height:20px; font-size:15px; font-weight:200; text-align:left; color:#000}
 /* .reviewer .button_review_write{width:100%; height:55px; line-height:55px; background: #000; margin:0 0 40px;}
 .reviewer .button_review_write a{display:block; width:100%; height:100%; text-align: center;}
 .reviewer .button_review_write span{color:#fff; font-size:16px; font-weight: 600;} */
@@ -151,8 +151,9 @@
 /* 상품 QnA */
 .dis_if {display:none}
 .overh {height:1200px; overflow:hidden}
-.qnaBox {position:relative; padding:0 20px; text-align:left; font-size:16px}
-.qnaBox .list_bar li::before {right:5px; height:13px}
+.qnaBox {position:relative; padding:0 21px; text-align:left; font-size:16px}
+.qnaBox .list_bar li {padding-right:21px}
+.qnaBox .list_bar li::before {right:9px; height:13px}
 .product .tab_inr.qna {padding: 40px 0 0 0}
 .product .tab_inr.qna .inquire {padding:0 20px}
 .tab_inr .innerTxt {display:inline-block; text-align:center; letter-spacing: -1px; font-size:15px; color:#555}
@@ -202,6 +203,7 @@ input[type=checkbox] { display:none;}
 ._ellipsis {display:inline-block; overflow:hidden; text-overflow:clip; -o-text-overflow:clip; display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
 .ico.line {margin-right:10px; width:13px; height:13px; background-position:-150px -66px}
 .wrap_board{margin-top:20px; position:relative; font-size:15px; font-weight:200; color:#333}
+.wrap_board .re_txt {margin:6px 0 12px 0}
 .wrap_board .tit{display:none}
 .wrap_board .group{clear:both; text-align:left; width:100%; border-bottom:1px solid #e5e5e5;}
 .wrap_board .group + .pages{margin-top:30px}
@@ -302,7 +304,7 @@ input[type=checkbox] { display:none;}
 .Demore_btn {width:100%; height:45px; color:#333; background-color:transparent; font-size:17px}
 /* .Demore_btn::after {content: ''; display:inline-block; width:14px; height:8px; margin-left:10px; background: url(../../../common/images/ico/acco_arrow-icon.png) center center/cover no-repeat; vertical-align: 2px} */
 .Demore_btn.org_br {color:#ff4e25; border:1px solid #ff4e25; border-radius:3px; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); background-color:#fff}
-.Demore_btn .ico.detailBtn {margin:0 0 2px 10px; width:14px; height:7px; background-position: -134px -72px; background-repeat:no-repeat;}
+.Demore_btn .ico.detailBtn {margin:0 0 2px 8px; width:15px; height:7px; background-position: -132px -72px; background-repeat:no-repeat;}
 .member_event-acco {padding:10px 20px; border-bottom:1px solid #e5e5e5}
 .recc_place_slide-wrap {padding: 40px 20px 0}
 .pd-title {line-height: 1; margin-bottom:20px; font-size:18px; font-weight:500}
@@ -330,28 +332,28 @@ input[type=checkbox] { display:none;}
 .pd_btn_box li {padding:0 15px}
 .pd_btn_box.pl0 {padding-left:0;}
 .pd_btn_box::after {content: ''; display:block; clear:both}
-.pd_btn_box .pf-btn {width:calc(50% - 6px); height:45px; float:left; margin:0 3px; color:#fff; font-size:17px; font-weight: 300}
-.pd_btn_box .orange_btn2 {width:72.2222%; height: 45px; position:absolute; right:18px; /* left: 23.61111%; */ background-color: #ff4e25; color: #fff; font-size: 17px; font-weight: 500}
+.pd_btn_box .pf-btn {width:calc(50% - 6px); height:45px; float:left; margin:0 3px; color:#fff; font-size:17px; font-weight:300}
+.pd_btn_box .orange_btn2 {width:72.2222%; height: 45px; position:absolute; right:18px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:400; border-radius:3px}
 .orange-btn {color:#fff; background-color:#ff4e25}
 .button_like_new {position:absolute; top:-4px; left:50%; transform:translateX(-50%); width:55px; height:52px;background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0px -46px;  background-size: 55px 91px;}
 .button_like_new_wrap {width:25%;height:100%;position:relative;}
-.button_like_new .num {display:block; padding-top:35px; font-size:13px; font-weight:300; color:#fff}
+.button_like_new .num {display:block; padding-top:35px; font-size:13px; font-weight:400; color:#fff}
 .button_like_new.selected {background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0 0; background-size: 55px 91px; font-size:11px;}
 .count-input-box {background-color: #fff; font-family: Montserrat,sans-serif}
 .count-input-box::after {content: ''; display: block; clear: both}
 .count-input-box button,.count-input-box input {float: left; text-align: center; border: 1px solid #e5e5e5}
 .count-input-box .count-btn {width: 30px; height: 30px; background-color: #fff}
-.count-input-box .count-btn.minus {background: url(../../../common/images/ico/acco_more_active-icon.png) center center/12px 2px no-repeat}
+.count-input-box .count-btn.minus {background: url(../../../common/images/ico/acco_more_active-icon.png) center center/12px 1px no-repeat}
 .count-input-box .count-btn.plus {background: url(../../../common/images/ico/acco_more-icon.png) center center/12px 12px no-repeat}
 .count-input-box .count-input {width:30px; height:30px; color:#555; font-size:15px; border-left:none; border-right:none;}
 
 /* 상품 셀렉트 박스 */
 .ico.box_close {width:18px; height:17px; background-position:-111px -52px}
-.pf_fc-box {max-height:333px; padding:0 15px 159px 15px; background-color:#fff}
+.pf_fc-box {max-height:333px; padding:0 15px 163px 15px; font-weight:400; background-color:#fff}
 .pf_fc-box .box_close {margin:10px 47.5%; text-align:center;}
 .pf_fc-box .more_link-btn {width:162px; height:35px; line-height:33px; background-color:#fff;  border: 1px solid #ff4e25;  font-size:13px; box-shadow:0px -5px 15px 0px rgba(0,0,0,0.05);}
 .pf_fc-box .more_link-btn::after {height: 11px;background: url(../../../common/images/ico/arrow_orange-icon.png) center center/cover no-repeat;vertical-align: -1px}
-.pf_fc-box .pf_fc {display:flow-root; padding:20px 0; margin-bottom:20px; border-bottom: 1px solid #e5e5e5;color: #333;font-size:14px}
+.pf_fc-box .pf_fc {display:flow-root; padding:20px 0; border-bottom: 1px solid #e5e5e5;color: #333;font-size:14px}
 .pf_fc-box .pf_fc:first-child,.pf_fc-box .pf_fc:last-child {border-bottom: none;margin-bottom: 0}
 .pf_fc-box .pf_fc.no_border {border: none;margin-bottom: 0}
 
@@ -402,7 +404,7 @@ input[type=checkbox] { display:none;}
 .sz-select_sl {display:none}
 .sz-custom_check {display:none}
 .product-select select {}
-.product-select .selected {padding:8px 10px; max-height:20px; color:#ababab; border:1px solid #e5e5e5; border-top:none; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
+.product-select .selected {padding:9px 10px; max-height:20px; color:#ababab; border:1px solid #e5e5e5; border-top:none; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
 .product-select .selected.active {border:1px solid #333}
 .product-select .selected .sel_arrow {float:right}
 .product-select .selected .product_name {display:inline-block; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap}
@@ -507,34 +509,36 @@ input[type=checkbox] { display:none;}
 .writeWrap h2{font-size:20px; font-weight:700; text-align:left; padding:17px; border-bottom:1px solid #d0d0d0; color:#000}
 .txtwrite_wrap {padding:25px 20px}
 .txtwrite_wrap .input_textarea {position:relative; margin-top:15px; font-size:15px; width:100%}
-.txtwrite_wrap .input_textarea .count {position:absolute; right:10px; bottom:10px; font-size:15px}
+.txtwrite_wrap .input_textarea .count {position:absolute; right:10px; bottom:10px; font-size:12px}
 .txtwrite_wrap .input_textarea .count .bk {color:#000}
-.txtwrite_wrap .input_textarea textarea {height:180px; padding:10px; border:1px solid #e5e5e5}
+.txtwrite_wrap .input_textarea textarea {height:180px; padding:10px; border:1px solid #e5e5e5; border-radius:0}
+.txtwrite_wrap .input_textarea textarea:active {border-radius:0}
 .write_check {margin-top:10px; font-size:15px}
 .write_check .input_checkbox.mgl20 {margin-left:20px;}
 .txtReview_wrap h2 {padding:25px 20px}
 .typeSelect {position:relative; width:100%; white-space:nowrap; font-size:13px}
-.typeSelect .ovr_x {display:flex; width:100%; height:30px; overflow-y:hidden; white-space:nowrap}
+.typeSelect .ovr_x {display:flex; padding-bottom:5px; width:100%; overflow-y:hidden; white-space:nowrap}
 .typeSelect ul li {float:left; margin-top:3px; margin-right:10px; min-height:32px; max-height:34px; font-weight:300}
-.typeSelect ul li a {padding:5px 13px; min-width:62px; max-height:15px; font-size:15px; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
+.typeSelect ul li a {padding:4px 13px; min-width:62px; max-height:15px; font-size:15px; font-weight:400; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
 .typeSelect ul li.on a {color:#fff; background-color:#3067cc}
 /*  */
-.write_info {margin-top:13px}
+.write_info {margin-top:13px; text-indent:-9px;}
+.write_info li {font-size:13px; list-style-position:inside;}
 .write_info_wrap {margin-top:19px; padding:20px; background-color:#f9f9f9}
-.write_info_wrap .tooltip.tit {font-size:15px}
+.write_info_wrap .tooltip.tit {font-size:15px; font-weight:500}
 .tooltip .tooltiptext.mov:after {margin-left:-1px;}
+.tooltip .tooltiptext1.mov:after {margin-left:-1px;}
 .write_info_wrap  p span {font-size:12px; font-weight: 300; color:#555; margin:0 0 15px}
-.write_info_wrap  li {padding:unset;font-size:11px; font-weight: 300;color:#888; line-height:1; margin:0 0 8px;}
+.write_info_wrap  li {padding:unset; font-size:11px; font-weight:400; color:#888; line-height:1.2; margin:0 0 8px;}
 .write_info_wrap  li::before {display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:3px;height:3px; vertical-align:2px; margin-right:3px; background-color:#888}
 .write_info_wrap .tooltiptext {padding:10px; left:62%; bottom:140%}
-.write_info li {font-size:13px; line-height:1.3;}
 .write_bottom {padding:15px; background-color:#fff; border-top:1px solid #d0d0d0}
-.write_bottom .War_txt {font-size:14px; color:#888; font-weight:300}
+.write_bottom .War_txt {display:inline-block; padding-left:8px; width:90%; text-align:left; font-size:14px; color:#888; font-weight:400}
 .btns {margin-top:15px; font-size:16px}
 .btns button {height:45px;}
-.btns .btn_cancel50 {width:48.5%; color:#000; border:1px solid #111}
-.btns .btn_confirm50 {width:48.5%; color:#fff; background-color:#111}
-.btns .btn_confirm100 {width:100%; color:#fff; background-color:#111}
+.btns .btn_cancel50 {width:48.5%; border-radius:3px;  color:#000; border:1px solid #111}
+.btns .btn_confirm50 {width:48.5%; border-radius:3px; color:#fff; background-color:#111}
+.btns .btn_confirm100 {width:100%; border-radius:3px; color:#fff; background-color:#111}
 
 
 @media screen and (min-width:320px) and (max-width:719px) {
