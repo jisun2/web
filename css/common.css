@@ -483,7 +483,6 @@ input[type=checkbox] {display:none}
 .set_transition{-webkit-transition-duration:.3s;-o-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:cubic-bezier(.645,.045,.355,1);-o-transition-timing-function:cubic-bezier(.645,.045,.355,1);transition-timing-function:cubic-bezier(.645,.045,.355,1)}
 .clear:after{content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 
-.ovef_h {overflow:hidden}
 .clear {clear:both !important}
 .flt_le {float:left !important}
 .dis_in {display:inline-block !important}
@@ -497,8 +496,8 @@ input[type=checkbox] {display:none}
 .box_right, .box_left {position:relative; float:left; width:50%; vertical-align: middle;}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px}
-.ico.Warning {margin-top:4px; float:left; width:14px; height:16px; background-position:-227px -25px}
-.ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
+.ico.Warning {width:14px; height:16px; background-position:-227px -23px}
+.ico.sel_arrow {width:14px; height:12px; background-position:-90px -49px}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color: #111}
 .btn_bk .dark {display:block; padding:17px 0}
@@ -635,7 +634,7 @@ input[type=checkbox] {display:none}
 .slick-slide a:focus, .slick-slide:focus {outline:0}
 .tab-content {display:none}
 .tab-content.active {display:block}
-.sz-select_list {position:relative;}
+.sz-select_list {position:relative}
 /* .sz-select_sub {z-index:1; display:none; position:absolute; width:100%;} */
 .sz-select_sub li {cursor:pointer}
 .sz-select_sl {display:none}
@@ -697,8 +696,7 @@ input[type=checkbox] {display:none}
 #footer .footer_top ul li:first-child {color: #888; font-weight:500}
 #footer .footer_top ul li.dot ::before {width: 2px;content: "\00B7"; position: relative; right: 9px}
 #footer .footer_middle {margin-top: 25px; font-size: 13px; font-family: 'Noto Sans KR';color: #ababab; font-weight:400}
-#footer .tel {line-height: 20px; display: inline-block;}
-#footer .tel strong {font-size:16px; font-family:'proxima-nova'; color: #888; font-weight: 600}
+#footer .tel strong {font-size:16px;font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .info_txt{margin-top: 13px; margin-bottom: 26px; line-height: 20px; display: inline-block}
 #footer .info_txt strong {font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .button_tip_toggle {display:block}
