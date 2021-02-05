@@ -483,6 +483,7 @@ input[type=checkbox] {display:none}
 .set_transition{-webkit-transition-duration:.3s;-o-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:cubic-bezier(.645,.045,.355,1);-o-transition-timing-function:cubic-bezier(.645,.045,.355,1);transition-timing-function:cubic-bezier(.645,.045,.355,1)}
 .clear:after{content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 
+.ovef_h {overflow:hidden}
 .clear {clear:both !important}
 .flt_le {float:left !important}
 .dis_in {display:inline-block !important}
@@ -496,8 +497,8 @@ input[type=checkbox] {display:none}
 .box_right, .box_left {position:relative; float:left; width:50%; vertical-align: middle;}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px}
-.ico.Warning {width:14px; height:16px; background-position:-227px -23px}
-.ico.sel_arrow {width:14px; height:12px; background-position:-90px -49px}
+.ico.Warning {margin-top:4px; float:left; width:14px; height:16px; background-position:-227px -25px}
+.ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color: #111}
 .btn_bk .dark {display:block; padding:17px 0}
@@ -515,9 +516,9 @@ input[type=checkbox] {display:none}
 .popuplayer .popup_area .subtxt {margin:9px 0 23px; line-height:20px; font-size:14px}
 .popuplayer .popup_area .btns button {float:left; height:45px; font-size:16px}
 .popuplayer .popup_area .btns .mgl6 {margin-left:6px}
-.popuplayer .popup_area .btns .btn_cancel50 {width:48.5%; color:#000; border:1px solid #111}
-.popuplayer .popup_area .btns .btn_confirm50 {width:48.5%; color:#fff; background-color:#111}
-.popuplayer .popup_area .btns .btn_confirm100 {width:100%; color:#fff; background-color:#111}
+.popuplayer .popup_area .btns .btn_cancel50 {width:48.5%; color:#000; border-radius:3px; border:1px solid #111}
+.popuplayer .popup_area .btns .btn_confirm50 {width:48.5%; color:#fff; border-radius:3px; background-color:#111}
+.popuplayer .popup_area .btns .btn_confirm100 {width:100%; color:#fff; border-radius:3px; background-color:#111}
 /* 레이어 팝업 close button 추가 */
 .dim_layer .wrap_layer{width:320px;border-radius:5px;-webkit-border-radius:5px;background-color:#fff;box-shadow:0 15px 40px 0 rgba(0,0,0,.2);left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 .dim_layer .popuplayer.wrap_layer button.btn_close {padding:20px}
@@ -551,7 +552,6 @@ input[type=checkbox] {display:none}
     -o-transform: translate(-50%,-7%) rotateZ(-45deg);
     transform: translate(-50%,-7%) rotateZ(-45deg);
 }
-#wrap.wd720 {}
 #header {padding-top:5px; display:flow-root}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
@@ -634,7 +634,7 @@ input[type=checkbox] {display:none}
 .slick-slide a:focus, .slick-slide:focus {outline:0}
 .tab-content {display:none}
 .tab-content.active {display:block}
-.sz-select_list {position:relative}
+.sz-select_list {position:relative;}
 /* .sz-select_sub {z-index:1; display:none; position:absolute; width:100%;} */
 .sz-select_sub li {cursor:pointer}
 .sz-select_sl {display:none}
@@ -696,9 +696,9 @@ input[type=checkbox] {display:none}
 #footer .footer_top ul li:first-child {color: #888; font-weight:500}
 #footer .footer_top ul li.dot ::before {width: 2px;content: "\00B7"; position: relative; right: 9px}
 #footer .footer_middle {margin-top: 25px; font-size: 13px; font-family: 'Noto Sans KR';color: #ababab; font-weight:400}
-#footer .tel strong {font-size:16px;font-weight:600; font-family:'proxima-nova'; color: #888}
+#footer .tel span {font-size:16px;font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .info_txt{margin-top: 13px; margin-bottom: 26px; line-height: 20px; display: inline-block}
-#footer .info_txt strong {font-weight:600; font-family:'proxima-nova'; color: #888}
+#footer .info_txt span {font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .button_tip_toggle {display:block}
 #footer .button_tip_toggle span {font-size: 14px; color: #888; font-weight:500; display:inline-block;position: relative}
 #footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../common/images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
