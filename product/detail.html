@@ -8,9 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <script src="../common/lib/plugin.js"></script>
         <script src="../common/lib/common.js"></script>
-        <!-- slick slider -->
         <script src="../common/lib/slick.min.js"></script>
-        <!-- <script src="../common/lib/slick.js"></script> -->
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="assets/css/productdetail.css">
     </head>
@@ -720,6 +718,9 @@
 
                                                 <!-- 포토 리뷰 -->
                                                 <div id="photoView" class="popup-wrap bg_wht">
+                                                    <head>
+                                                        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+                                                    </head>
                                                     <!-- <head>
                                                         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
                                                         <script src="../common/lib/jquery-2.2.4.min.js"></script>
@@ -729,8 +730,8 @@
                                                     <div class="photo_wrap" style="background-color:#f5f5f5">
                                                         <div class="main clear" style="display:block;">
                                                             <div class="slider_for size clear">
-                                                                  <div><a href="#re1"><img src="../common/images/dummy/dummy11.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
-                                                                  <div><a href="#re2"><img src="../common/images/dummy/dummy12.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#r"><img src="../common/images/dummy/dummy11.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#"><img src="../common/images/dummy/dummy12.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
                                                                   <div><a href="#none"><img src="../common/images/dummy/dummy13.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
                                                                   <div><a href="#none"><img src="../common/images/dummy/dummy14.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
                                                                   <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="200px" height="200px" alt="후기 사진"></a></div>
@@ -745,8 +746,8 @@
                                                                 <div><a href="#none"><img src="../common/images/dummy/dummy14.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
                                                                 <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="60px" height="60px" alt="후기 사진"></a></div> -->
                                                                 <!-- <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div> -->
-                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#re1"><img src="../common/images/dummy/dummy11.jpg"height="60px" alt="후기 사진"></a></div>
-                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#re2"><img src="../common/images/dummy/dummy12.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#"><img src="../common/images/dummy/dummy11.jpg"height="60px" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#"><img src="../common/images/dummy/dummy12.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
                                                                 <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy13.jpg" height="60px" alt="후기 사진"></a></div>
                                                                 <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy14.jpg" height="60px" alt="후기 사진"></a></div>
                                                                 <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" height="60px" alt="후기 사진"></a></div>
@@ -759,6 +760,7 @@
                                                              slidesToScroll: 1,
                                                              arrows: false,
                                                              fade: true,
+                                                             centerMode: true,
                                                              // autoplay: true,
                                                              // autoplaySpeed:10000,
                                                              asNavFor: '.slider_nav',
@@ -766,7 +768,7 @@
                                                             $('.slider_nav').slick({
                                                              slidesToShow: 5,
                                                              // slidesToScroll: 1,
-                                                             asNavFor: '.slider_for',
+                                                             // asNavFor: '.slider_for',
                                                              dots:false,
                                                              centerMode: true,
                                                              focusOnSelect: true,
