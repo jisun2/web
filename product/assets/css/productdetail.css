@@ -34,7 +34,7 @@ textarea:focus {outline:none}
 /* .product_detail_slider .slick-dots li {float:left; width:6px; height:6px; margin-top:6px; margin-left:6px} */
 /* .product_detail_slider .slick-dots li.slick-active button {background-color:#333}
 .product_detail_slider .slick-dots li button {width:100%; height:100%; background-color:#d0d0d0; border-radius:50%; text-indent:-9999px; overflow:hidden} */
-.review_wrap .slick-arrow {text-indent:-999px}
+/* .review_wrap .slick-arrow {text-indent:-999px} */
 .review_wrap .star_wrap .star {margin-right:2px}
 .review_wrap .slick-list.draggable {margin:0 10px}
 .review_wrap .slick-slide .slick-current.slick-active img {border:2px solid #333}
@@ -103,7 +103,7 @@ textarea:focus {outline:none}
 .reviewer .star {float:left}
 .reviewer .review_wrap {position:relative; width:100%}
 .reviewer .review_wrap .review_id {}
-.idDate {position:absolute;top:-5px; right:10px; font-weight:200}
+.idDate {position:absolute;top:-5px; right:0; font-weight:200}
 .idDate ul {font-size:15px; font-weight:400; color:#888}
 .idDate ul li {float:left}
 .idDate .list_bar li::before {right:5px}
@@ -111,7 +111,7 @@ textarea:focus {outline:none}
 .pos_center_before {text-align:left}
 .reviewer .review_box {position:relative;}
 .reviewer .review_lst .idDate span {float:left; font-size:14px; color:#888;}
-.reviewer .review_box .review_lst {display:block; padding:25px 0; width:100%; height:auto; border-bottom: 1px solid #f5f5f5}
+.reviewer .review_box .review_lst {overflow:hidden; display:block; padding:25px 0; width:100%; height:auto; border-bottom: 1px solid #f5f5f5}
 .reviewer .review_box .ovr_x {width:95%;overflow-x:scroll;}
 .reviewer .review_box .ovr_x .box {-ms-overflow-style: none;}
 .box::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
@@ -123,11 +123,11 @@ textarea:focus {outline:none}
 .reviewer .list li { padding: 25px 0; border-bottom: 1px solid #e5e5e5;}
 .reviewer .list .review_date {float: left;height: 15px; margin-left: 10px;}
 .reviewer .review_area, .reviewer .review_box {display: inline-block; width:100%}
-.reviewer .product_option {float:left; margin-top:10px; width:100%}
-.reviewer .product_option p {margin-top:10px; float:left; font-size:14px; font-weight:200; color:#888; line-height:1.4em;}
-.reviewer .product_option p.gray {font-size:12px; color:#888}
-.reviewer .product_option .ellipsis {width:100%}
-.reviewer p.re_txt {float:left; margin:8px 0; line-height:20px; font-size:15px; font-weight:200; text-align:left; color:#000}
+.reviewer .review_txt {padding:25px 0}
+.reviewer .product_option {float:left; font-size:13px; font-weight:200; color:#888; line-height:1.4em;}
+.reviewer .product_option .gray {font-size:12px; color:#888}
+.reviewer .product_option.ellipsis {width:95%}
+.reviewer p.re_txt {float:left; margin:8px 0; line-height:20px; font-size:14px; font-weight:200; text-align:left; color:#000}
 .reviewer .list_selector {display:inline-block; padding-bottom:18px; width:100%; text-align:left; line-height:1; font-size:15px; border-bottom:1px solid #e5e5e5}
 .reviewer .list_selector li {position:relative; display:inline-block;}
 .reviewer .list_selector li::before {content:''; position:absolute; top:15%; right:-15px; width:1px; height:13px; background-color:#e5e5e5}
@@ -155,7 +155,7 @@ textarea:focus {outline:none}
 .list_bar li.on {font-weight:bold; color:#333}
 .list_bar li:last-child {padding:0}
 .list_bar li:last-child::before {display:none}
-.list_bar li::before {content: '';position:absolute; top:32%; right:9px; width:1px; height:12px; background-color: #e5e5e5}
+.list_bar li::before {content: '';position:absolute; top:25%; right:9px; width:1px; height:12px; background-color: #e5e5e5}
 .list_bar.info {width:100%; font-size:14px; color:#888}
 .list_bar.info .date {font-size:13px; font-family:'proxima-nova'}
 .list_bar.info li {padding-right:12px; font-weight:200; color:#888}
@@ -206,6 +206,7 @@ input[type=checkbox] { display:none;}
 .wrap_board .item .category:before{content:'/\00a0'}
 .wrap_board.noslash .item .category:before{content:''}
 .wrap_board .item .info{position:relative;height:20px;font-weight:200}
+.seller .list_bar.info {margin-left:20px}
 .wrap_board .item .info dd{height:17px;line-height:18px;overflow:hidden}
 .wrap_board.noslash .item .info dd{height:17px;line-height:18px;overflow:hidden;margin-left:-2px}
 .wrap_board .item .flag,
@@ -224,6 +225,7 @@ input[type=checkbox] { display:none;}
 .wrap_board .item .ans, .wrap_board .item
 .ico.secret {margin-left:4px; width:16px; height:14px; background-position:-163px -48px}
 .wrap_board .item.view + .item{border-color:#e5e5e5;}
+.item.seller .cont p {padding-left:20px;}
 .item.seller.view {padding-left:20px;}
 .wrap_board .item.view .que .view{display:none;}
 .wrap_board .item.view .admin, .wrap_board .item.view .ans{display:block;}
@@ -430,7 +432,7 @@ input[type=checkbox] { display:none;}
 .relative_product{padding:30px 20px 0 20px;width:100%;}
 .relative_product:first-child {margin-bottom:0}
 .relative_product h3 {width:100%; font-size:1.25rem; font-weight:500; color:#333}
-.reviewPhoto_box {margin:19px auto; width:100%; overflow:hidden; position:relative;overflow-x:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+.reviewPhoto_box {margin:0 auto; width:100%; overflow:hidden; position:relative;overflow-x:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
 .reviewPhoto_box .re_img {width:15%}
 .pd_item_wrap {margin-top:19px; width:100%; overflow:hidden; position:relative;overflow-x:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;}
 .pd_item_wrap .list_pd.small {display:flex; overflow-y:hidden; overflow-x:scroll;  -ms-overflow-style: none;}
@@ -490,9 +492,20 @@ input[type=checkbox] { display:none;}
 .write_bottom .War_txt {display:inline-block; padding-left:8px; width:90%; text-align:left; font-size:14px; color:#888; font-weight:400}
 .btns {margin-top:15px; font-size:16px}
 .btns button {height:45px;}
-.btns .btn_cancel50 {width:48.5%; border-radius:3px;  color:#000; border:1px solid #111}
+.btns .btn_cancel50 {width:48.5%; border-radius:3px; color:#000; border:1px solid #111}
 .btns .btn_confirm50 {width:48.5%; border-radius:3px; color:#fff; background-color:#111}
 .btns .btn_confirm100 {width:100%; border-radius:3px; color:#fff; background-color:#111}
+
+.main {clear:both}
+.main a {float:left}
+.main img {text-align:center; margin:0 auto}
+.main .slider_for {text-align:center; margin:0 20%}
+.main .slider_nav {position:absolute; padding:0 20px; margin:0 auto; overflow:hidden; border:2px solid #7890af}
+.main .slider_nav .slick-slide {width:15%; margin:0 5px; }
+.main .slider_nav img {float:left;}
+.main .slider_nav a:focus {border:2px solid #3067cc}
+.main .slider_nav a img {float:left;}
+
 
 
 @media screen and (min-width:320px) and (max-width:719px) {
