@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <script src="../common/lib/plugin.js"></script>
         <script src="../common/lib/common.js"></script>
+        <!-- slick slider -->
+        <script src="../common/lib/slick.min.js"></script>
+        <!-- <script src="../common/lib/slick.js"></script> -->
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="assets/css/productdetail.css">
     </head>
@@ -76,7 +79,6 @@
                                 <div class="coupDwon clear">
                                     <button type="button" class="org_br" onclick="openLayer(event,'#tempLayer1',this)"><span class="proxima">175,750</span><span class="notoS">원 할인 쿠폰 받기</span><i class="ico down"></i></button>
                                 </div>
-                                <!-- <button type="button" class="sale-btn"  onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
                                 <!-- 쿠폰 발급 팝업-->
                                 <div class="dim_layer hide">
                         			<div class="popuplayer" id="tempLayer1">
@@ -127,8 +129,6 @@
                                         <td>
                                             <p>적립예정 마일리지 <span class="num">298,775M</span></p>
                                             <p><span class="ico naver"></span>결제 시 N포인트 <span class="num">1%</span>적립</p>
-                                            <!-- <button type="button" class="card-btn"></button> -->
-                                            <!-- z<a href="#" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</a> -->
                                             <button type="button" class="pop_open under" data-popup="pop_card_benefit">카드사 혜택</button>
                                         </td>
                                     </tr>
@@ -695,13 +695,127 @@
                                                             <li><span class="review_id">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="product_option">
-                                                        <p class="ellipsis">옵션 : 1. 블랙 / US 9/UK 8(270) 블랙 / US 9/UK 8(270)11</p>
+                                                    <div class="review_txt clear">
+                                                        <p class="product_option ellipsis">옵션 : 1. 블랙 / US 9/UK 8(270) 블랙 / US 9/UK 8(270)1111111111</p>
+                                                        <div class="cont clear">
+                                                            <a href="#" class="review_txt_moreview">
+                                                                <p class="re_txt _ellipsis">
+                                                                    가성비 좋네요. 정말 마음에 듭니다. 굿굿굿
+                                                                </p>
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                    <div class="cont clear">
-                                                        <p class="re_txt _ellipsis">
-                                                            가성비 좋네요. 정말 마음에 듭니다.
-                                                        </p>
+                                                </div>
+                                                <div class="reviewPhoto_box">
+                                                    <ul class="re_img">
+                                                        <li><a href="#" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
+                                                    </ul>
+                                                </div>
+
+
+
+                                                <!-- 포토 리뷰 -->
+                                                <div id="photoView" class="popup-wrap bg_wht">
+                                                    <!-- <head>
+                                                        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+                                                        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+                                                        <script src="../common/lib/slick.min.js"></script>
+                                                    </head> -->
+                                                    <h2 class="page-title">크게보기</h2>
+                                                    <div class="photo_wrap" style="background-color:#f5f5f5">
+                                                        <div class="main clear" style="display:block;">
+                                                            <div class="slider_for size clear">
+                                                                  <div><a href="#re1"><img src="../common/images/dummy/dummy11.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#re2"><img src="../common/images/dummy/dummy12.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy13.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy14.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <!-- <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" wwidth="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="200px" height="200px" alt="후기사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" width="200px" height="200px"  alt="후기사진"></a></div> -->
+                                                            </div>
+                                                            <div class="slider_nav mini">
+                                                                <!-- <div><a href="#none"><img src="../common/images/dummy/dummy11.jpg" width="60" height="60" alt="후기사진"></a></div>
+                                                                <div><a href="#none"><img src="../common/images/dummy/dummy12.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div><a href="#none"><img src="../common/images/dummy/dummy13.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div><a href="#none"><img src="../common/images/dummy/dummy14.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="60px" height="60px" alt="후기 사진"></a></div> -->
+                                                                <!-- <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div> -->
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#re1"><img src="../common/images/dummy/dummy11.jpg"height="60px" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#re2"><img src="../common/images/dummy/dummy12.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy13.jpg" height="60px" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy14.jpg" height="60px" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" height="60px" alt="후기 사진"></a></div>
+                                                            </div>
+                                                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
+
+                                                        <script type="text/javascript">
+                                                        $('.slider_for').slick({
+                                                             slidesToShow: 1,
+                                                             slidesToScroll: 1,
+                                                             arrows: false,
+                                                             fade: true,
+                                                             // autoplay: true,
+                                                             // autoplaySpeed:10000,
+                                                             asNavFor: '.slider_nav',
+                                                            });
+                                                            $('.slider_nav').slick({
+                                                             slidesToShow: 5,
+                                                             // slidesToScroll: 1,
+                                                             asNavFor: '.slider_for',
+                                                             dots:false,
+                                                             centerMode: true,
+                                                             focusOnSelect: true,
+                                                            });
+                                                        </script>
+
+
+                                            </div>
+                                        </li>
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="pos_center_before">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="idDate">
+                                                        <ul class="list_bar">
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="review_txt clear">
+                                                        <p class="product_option ellipsis">옵션 : 1. 블랙</p>
+                                                        <div class="cont clear">
+                                                            <a href="#" class="review_txt_moreview">
+                                                                <p class="re_txt _ellipsis">
+                                                                    가성비 좋네요. 정말 마음에 듭니다. 굿굿굿
+                                                                    이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
+                                                                  없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
+                                                                  요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
+                                                                  한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
+                                                                  요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
+                                                                  없어요 굿굿굿
+                                                                  가성비 좋네요. 정말 마음에 듭니다.
+                                                                  이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
+                                                                  없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
+                                                                  요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
+                                                                  한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
+                                                                  요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
+                                                                  없어요 굿굿굿
+                                                                </p>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="reviewPhoto_box">
@@ -711,6 +825,43 @@
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="pos_center_before">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="idDate">
+                                                        <ul class="list_bar">
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="review_txt clear">
+                                                        <p class="product_option ellipsis">옵션 : 1. 블랙</p>
+                                                        <div class="cont clear">
+                                                            <a href="#" class="review_txt_moreview">
+                                                                <p class="re_txt _ellipsis">
+                                                                    가성비 좋네요. 정말 마음에 듭니다. 굿굿굿
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviewPhoto_box">
+                                                    <ul class="re_img">
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -733,71 +884,15 @@
                                                             <li><span class="review_id">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="product_option">
-                                                        <p class="ellipsis">옵션 : OLD SCHOOL 후드(SBH9S... / OLD SCHOOL 신상 후드 집업 세트</p>
-                                                    </div>
-                                                    <div class="cont clear">
-                                                        <a href="#" class="review_txt_moreview">
-                                                            <p class="re_txt _ellipsis">
-                                                                가성비 좋네요. 정말 마음에 듭니다.
-                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                없어요 굿굿굿
-                                                                가성비 좋네요. 정말 마음에 듭니다.
-                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                없어요 굿굿굿
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="review_lst">
-                                            <div class="review_wrap">
-                                                <div class="pos_center_before">
-                                                    <div class="star_rating_s">
-                                                        <div class="star_wrap">
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star off"></div>
-                                                            <div class="star off"></div>
+                                                    <div class="review_txt clear">
+                                                        <p class="product_option ellipsis">옵션 : 1. 블랙</p>
+                                                        <div class="cont clear">
+                                                            <a href="#" class="review_txt_moreview">
+                                                                <p class="re_txt _ellipsis">
+                                                                    가성비 좋네요. 정말 마음에 듭니다. 굿굿굿
+                                                                </p>
+                                                            </a>
                                                         </div>
-                                                    </div>
-                                                    <div class="idDate">
-                                                        <ul class="list_bar">
-                                                            <li><span class="review_date">hiph***</span></li>
-                                                            <li><span class="review_id">2021.01.01</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="product_option">
-                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
-                                                    </div>
-                                                    <div class="cont clear">
-                                                        <a href="#" class="review_txt_moreview">
-                                                            <p class="re_txt _ellipsis">
-                                                                가성비 좋네요. 정말 마음에 듭니다.
-                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                없어요 굿굿굿
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    <div class="reviewPhoto_box">
-                                                        <ul class="re_img">
-                                                            <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                            <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
@@ -820,22 +915,18 @@
                                                             <li><span class="review_id">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="product_option">
-                                                        <p>옵션 : 1. 그레이 / US 9/UK 8(270)</p>
+                                                    <div class="review_txt clear">
+                                                        <p class="product_option ellipsis">옵션 : 1. 블랙 / US 9/UK 8(270) 블랙 / US 9/UK 8(270)1111111111</p>
                                                     </div>
-                                                    <div class="cont clear">
-                                                        <a href="#" class="review_txt_moreview">
-                                                            <p class="re_txt _ellipsis">
-                                                                가성비 좋네요. 정말 마음에 듭니다.
-                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                없어요 굿굿굿
-                                                            </p>
-                                                        </a>
-                                                    </div>
+                                                </div>
+                                                <div class="reviewPhoto_box">
+                                                    <ul class="re_img">
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </li>
@@ -1079,24 +1170,11 @@
         <script src="../common/lib/slick.min.js"></script>
         <script src="../common/lib/main.js"></script>
         <script type="text/javascript">
-
-            // function hasScrolled() {
-            //
-            //     if (st > lastScrollTop && st > navbarHeight + 55) {
-            //         $('#selectInfoTab').css({'top':'0','position':'sticky'});
-            //     } else {
-            //         if (st + $(window).height() < $(document).height()) {
-            //         $('#selectInfoTab').css({'top':$('#header').height(),'position':'sticky'});
-            //     }
-            //     lastScrollTop = st;
-            // }
-
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
                     $(".tooltiptext").hide();
-                }, 3000);
-                // $('#selectInfoTab').css({'top':$('.product').height(),'position':'sticky','z-index':'10'});
+                }, 5000);
             });
             var $slider = $('.slider');
                 if ($slider.length) {
@@ -1116,29 +1194,12 @@
                   $slider.on('afterChange', function(event, slick, currentSlide) {
                     updateSliderCounter(slick, currentSlide);
                   });
-                  //
-                  // $slider.slick();
                 }
                 if ($('.review_txt_moreview')) {
                     $('.review_txt_moreview').on('click', function (e) {
                         e.preventDefault();
                         $(this).toggleClass('on');
                         $(this).children('p').toggleClass('_ellipsis');
-                        // if ($(this).hasClass('on')) {
-                        //     $(this).children('span').text('접기')
-                        // } else {
-                        // $(this).children('span').text('더보기')
-                    // }
-                // if ($('.review_txt_moreview')) {
-                //     $('.review_txt_moreview').on('click', function (e) {
-                //         e.preventDefault();
-                //         $(this).toggleClass('on');
-                //         $(this).siblings('p').toggleClass('_ellipsis');
-                //         if ($(this).hasClass('on')) {
-                //             $(this).children('span').text('접기')
-                //         } else {
-                //         $(this).children('span').text('더보기')
-                //     }
                 });
                 // 상품 상세 tab
                 var tabBtn = $("#tab_btn > ul > li");
@@ -1147,7 +1208,6 @@
                 tabBtn.click(function(){
                 var target = $(this);
                 var index = target.index();
-                // alert(index);
                 tabBtn.removeClass("active");
                 target.addClass("active");
                 tabCont.css("display","none");
