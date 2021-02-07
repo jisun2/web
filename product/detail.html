@@ -761,7 +761,7 @@
                                                              arrows: false,
                                                              fade: true,
                                                              centerMode: true,
-                                                             // autoplay: true,
+                                                             autoplay: true,
                                                              // autoplaySpeed:10000,
                                                              asNavFor: '.slider_nav',
                                                             });
@@ -773,6 +773,14 @@
                                                              centerMode: true,
                                                              focusOnSelect: true,
                                                             });
+
+                                                            $('.slider_nav > div').click(function() {
+                                                              var slideNo = $(this).index();
+                                                              $('.slider_for').slick('slickGoTo', slideNo);
+                                                            });
+                                                            // $('.slider_nav > div').click(function() {
+                                                            // 	$('.slider_for').slick('slickGoTo',$(this).index());
+                                                            // })
                                                         </script>
 
 
