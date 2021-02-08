@@ -707,15 +707,12 @@
                                                 <div class="reviewPhoto_box">
                                                     <ul class="re_img">
                                                         <li><a href="#" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
                                                     </ul>
                                                 </div>
-
-
-
                                                 <!-- 포토 리뷰 -->
                                                 <div id="photoView" class="popup-wrap">
                                                     <head>
@@ -750,6 +747,13 @@
                                                             <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
 
                                                         <script type="text/javascript">
+                                                       //  $(".overlay, #" + strDataPopupName).fadeIn(170);
+                                                       //     $('slick 플러그인 클래스명').resize();
+                                                       //     }
+                                                       // });
+                                                       $('.pop_open').click(function(){
+                                                            $('.slider_for').show()
+                                                        });
                                                         $('.slider_for').slick({
                                                              slidesToShow: 1,
                                                              slidesToScroll: 1,
@@ -759,6 +763,7 @@
                                                              autoplay: true,
                                                              pauseOnHover:true,
                                                              asNavFor: '.slider_nav',
+                                                             // infinite: false,
                                                             });
                                                             $('.slider_nav').slick({
                                                              slidesToShow: 5,
@@ -766,7 +771,7 @@
                                                              // asNavFor: '.slider_for',
                                                              dots:false,
                                                              centerMode: true,
-                                                             pauseOnHover: true,
+                                                             pauseOnHover: false,
                                                              focusOnSelect: true,
                                                             });
 
@@ -775,8 +780,6 @@
                                                               $('.slider_for').slick('slickGoTo', slideNo);
                                                             });
                                                         </script>
-
-
                                             </div>
                                         </li>
                                         <li class="review_lst">
