@@ -200,7 +200,7 @@ input[type=checkbox] { display:none;}
 .wrap_board .group .item{position:relative; padding:25px 20px; border-top:1px solid #e5e5e5; font-family:'Noto Sans KR'}
 .wrap_board .que .secret:after{width:16px;height:17px;background-position:-71px -133px;vertical-align:sub;margin-left:8px;}
 .wrap_board .que .view{position:absolute;left:0;top:0; width:100%;/*height:22px;*/ }
-.wrap_board .que .cont{position:relative;}
+.wrap_board .que .cont{margin:6px 0 12px 0; position:relative;}
 .wrap_board .item .flag:not(.new) .blind,
 .wrap_board .item .category{position:static;font-size:12px;color:#888;line-height:20px;}
 .wrap_board .item .category:before{content:'/\00a0'}
@@ -229,7 +229,7 @@ input[type=checkbox] { display:none;}
 .item.seller.view {padding-left:20px;}
 .wrap_board .item.view .que .view{display:none;}
 .wrap_board .item.view .admin, .wrap_board .item.view .ans{display:block;}
-.wrap_board .item.view .que .cont p{margin:6px 0 12px 0;height:auto;overflow:visible;white-space:normal;}
+.wrap_board .item.view .que .cont p{height:auto;overflow:visible;white-space:normal;}
 .wrap_board.view .qnq_write{display:block;width:92%;margin:0 auto;}
 .wrap_board.view .qnq_write table{margin-top:21px;}
 .wrap_board.view .qnq_write .button_wrap{overflow: hidden;position: static;width:100%;box-sizing: border-box;padding:20px 4%;}
