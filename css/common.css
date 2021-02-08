@@ -867,31 +867,19 @@ input[type=checkbox] {display:none}
     height:30px;
 }
 
-/* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
-@media screen and (-webkit-min-device-pixel-ratio:0){
-    #cartCnt.cart_num {padding-top:1px;}
-    #header .header_title {margin-top:8px;}
-    #header .header_title .number {font-family:'Proxima-Nova'!important}
-}
-@media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
-    #photoView {width:800px; margin:0 20%;}
-    /* #pop_card_benefit {width:800px; margin:0 20%} */
-}
-
-
-/*footter start*/
-#footer {padding: 20px; background-color: #f9f9f9;font-weight:300}
-#footer .footer_top {overflow: hidden; text-align: center;}
-#footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height:30px; font-size: 14px; font-weight:400; color: #888; margin-bottom: 20px;}
+/*footter css*/
+#footer {font-weight:300}
+#footer {padding: 20px; background-color: #f9f9f9}
+#footer .footer_top {overflow: hidden}
+#footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height: 30px; font-size: 15px; font-weight:300; color: #888; margin-bottom: 20px; text-align: center;}
 #footer .footer_top div {display:inline-block;width:100%;border-bottom: 1px solid #e5e5e5; font-family: 'Noto Sans KR'; font-size: 14px; color: #ababab}
 #footer .footer_top ul {min-width:320px}
 #footer .footer_top ul li {position:relative;float:left; margin-bottom:20px}
 #footer .footer_top ul li:first-child {color: #888; font-weight:400}
 #footer .footer_top ul li:not(:first-child) {padding-left:18px}
-#footer .footer_top ul li.dot ::before {position: absolute; left:6px; width: 2px;content: "\00B7"}
+#footer .footer_top ul li.dot ::before {position: absolute; left:7px; width: 2px;content: "\00B7"}
 #footer .footer_middle {margin-top: 23px; font-size: 13px; font-family: 'Noto Sans KR';color: #ababab; font-weight:300}
-#footer .tel {line-height: 20px; display: inline-block; clear: left;}
+#footer .tel {line-height: 20px;display: inline-block;}
 #footer .tel strong {font-size:16px; font-family:'proxima-nova'; color: #888; font-weight: 600}
 #footer .info_txt{margin-top: 13px; margin-bottom: 28px; line-height: 20px; display: inline-block}
 #footer .info_txt strong {font-size:14px; font-weight:600; font-family:'proxima-nova'; color: #888}
@@ -901,43 +889,31 @@ input[type=checkbox] {display:none}
 #footer .button_tip_toggle.on span:after {background:url("../common/images/ico/acco_arrow-gray_off.png") 0 0 no-repeat; width: 10px; height: 5px}
 #footer .cont_tip_toggle {margin-top: 10px;}
 #footer .cont_tip_toggle ul:first-child {float: left; padding-right: 20px}
-#footer .cont_tip_toggle ul li:not(:last-child) {padding-bottom: 3px}
+#footer .cont_tip_toggle ul li:not(:last-child) {padding-bottom: 5px}
 #footer .cont_tip_toggle ul li:nth-child(3) {line-height: 16px}
 #footer .cont_tip_toggle ul li a {text-decoration: underline!important; color: #888; font-weight:400}
 #footer .footer_bottom {margin-top: 25px}
 #footer .outlink {display:inline-block; margin-bottom:30px; text-align: center;}
-#footer .outlink a {display:block;width:38.4px;height:38.4px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
+#footer .outlink a {display:block;width:32px;height:32px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
 #footer .outlink li {margin-right: 12px; display:block;flex:1; float:left}
-#footer .outlink i {display:inline-block; position:relative; top:21.5%;}
-#footer .outlink i.ig {width:19.2px; height:19.2px; background-position: 0px -127.8px; background-size: 360px 360px}
-#footer .outlink i.ig_st {width:29.4px; height:31.8px; background-position:-24px -127.8px; background-size: 360px 360px}
-#footer .outlink i.fb {width:9px; height:19.2px; background-position:-58.2px -127.8px; background-size: 360px 360px}
-#footer .outlink i.pin {width:15px; height:19.2px; background-position:-72px -127.8px; background-size: 360px 360px; left:2%;}
-#footer .outlink i.blog {width:25.2px; height:11.4px; background-position: -91.8px -127.8px; background-size: 360px 360px; top:23%;}
+#footer .outlink li:last-child {text-align:right}
+#footer .outlink i {display:inline-block; position:relative; top: 8px}
+#footer .outlink i.ig {width:16px; height:16px; background-position: 0px -106.5px}
+#footer .outlink i.ig_st {width:24.5px; height:26.5px; background-position:-20px -106.5px}
+#footer .outlink i.fb {width:7.5px; height:16px; background-position:-48.5px -106.5px}
+#footer .outlink i.pin {width:12.5px; height:16px; background-position:-60px -106.5px; right: -1px}
+#footer .outlink i.blog {width:21px; height:9.5px; background-position: -76.5px -106.5px; top: 5.5px; right: 5px}
 #footer .outlink_kcp {display:inline-block;float: right}
-#footer .outlink_kcp a {display:block;width:38.4px;height:38.4px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
+#footer .outlink_kcp a {display:block;width:32px;height:34px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
 #footer .outlink_kcp i {display: inline-block}
-#footer .outlink_kcp i.kcp {width: 38.4px; height: 38.4px; background-position: -148.2px -127.8px;background-size:360px 360px}
-@media screen and (min-width:280px) and (max-width:374px){
-    #footer .addr, .footer_top ul {font-size: 11px;}
-    #footer .footer_top ul li:not(:first-child) {padding-left:14px;}
-    #footer .info_txt strong {font-size: 12px;}
-    #footer .button_tip_toggle span {font-size: 13px;}
-    #footer .tel strong {font-size: 14px;}
-    #footer .footer_top button {font-size: 13px;}
-    #footer .outlink li {margin-right: 9.5px;}
-    #footer .footer_top ul li.dot ::before {left: 4px;}
+#footer .outlink_kcp i.kcp {width: 32px; height: 32px; background-position: -123.5px -106.5px}
+/* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    #cartCnt.cart_num {padding-top:1px;}
+    #header .header_title {margin-top:8px;}
+    #header .header_title .number {font-family:'Proxima-Nova'!important}
 }
-@media screen and (min-width:375px) and (max-width:420px){
-    #footer .footer_middle {font-size: 13px;}
-    #footer .footer_top ul {font-size: 13px;}
-    #footer .footer_top ul li:not(:first-child) {padding-left:17px;}
-    #footer .info_txt strong {font-size: 13px;}
-    #footer .button_tip_toggle span {font-size: 13px;}
-    #footer .tel strong {font-size: 14px;}
-}
-/* -footer end- */
 @media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
-    #photoView {width:800px; margin:0 20%;}
+    #wrap.wd720 {width:720px; margin:0 auto}
+    /* #pop_card_benefit {width:800px; margin:0 20%} */
 }
