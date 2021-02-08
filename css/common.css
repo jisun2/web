@@ -915,7 +915,7 @@ input[type=checkbox] {display:none}
 /* -footer end- */
 @media screen and (min-width:720px) {
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
-    #photoView {width:800px; margin:0 20%;}
+    #photoView {width:800px; margin:0 50%; transform: translatex(-50%);}
 }
 
 /* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
@@ -926,5 +926,5 @@ input[type=checkbox] {display:none}
 }
 @media screen and (min-width:720px) {
     #wrap.wd720 {width:720px; margin:0 auto}
-    /* #pop_card_benefit {width:800px; margin:0 20%} */
+    /* #pop_card_benefit {width:800px;} */
 }
