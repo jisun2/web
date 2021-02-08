@@ -91,114 +91,99 @@
                     </div>
                 </div>
             </div>
-            
             <div id="container">
                 <div style="width: 100%; height: 1100px; background-color: gray;">기존 ui area</div>
-                <div class="fixed_nav">
-                    <ul class="fbn-list">
-                        <li class="on">
-                            <a href="#none">
-                                <i class="ico cate"></i>
-                                <span class="fbn-item">카테고리</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#none">
-                                <i class="ico search"></i>
-                                <span class="fbn-item">검색</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#none">
-                                <i class="ico home"></i>
-                                <span class="blind">메인</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#none">
-                                <i class="ico mypage"></i>
-                                <span class="fbn-item">마이 페이지</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#none">
-                                <i class="ico product"></i>
-                                <span class="fbn-item">최근 본 상품</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-
             <div id="footer">
-                <ul class="footer_top">
-                      <li><a href="/help/faq">HELP</a></li>
-                      <li><a href="https://forms.gle/hfEDKVrC11Hz9xKF6" target="_blank" class="orange">입점문의</a></li>
-                      <li class=""><a href="/policy">이용약관</a></li>
-                      <li class=""><a href="/privacypolicy">개인정보 처리방침</a></li>
-                      <!-- <li class="on_m" v-if="!userToken"><a href="#">로그인</a></li> -->
-                      <li class="on_m" v-if="userToken"><a href="#">로그아웃</a></li>
-                </ul>
-                <div class="inner miw1180 clear">
-                    <div class="left">
-                         <p class="info_txt">힙합퍼에서 입점 판매되는 모든 브랜드 상품은 <strong>정식제조, 정식수입절차를 통해서 유통되는 100% 정품</strong>입니다.</p>
-                         <a href="#" class="tel tc_3">1599-7616</a>
-                         <p class="time tc_3">평일 10:00 ~ 17:00 / 점심시간 12:00 ~ 13:30 / 주말, 공휴일 휴무</p>
-                         <address class="addr tc_8"><span>(주) 힙합퍼 </span> <span>주소 : 06f531 서울시 서초구 신반포로 339, 1층 (잠원동, 논현빌딩)</span> <span>사업자등록번호 : 211-88-70875</span> <span>통신판매업신고번호 : 제 2018-서울서초-1992호</span><br>
-                        <span id="dev_code">개인정보관리책임자 : 문장우</span></address>
+                <div class="footer_top">
+                    <button type="button">로그아웃</button>
+                    <button type="button" onclick="window.open('https://hiphoper.page.link/5vwe')">앱설치</button>
+                    <div>
+                        <ul>
+                            <li><a href="https://forms.gle/hfEDKVrC11Hz9xKF6" target="_blank">입점문의</a></li>
+                            <li class="dot"><a href="/help/faq">자주하는 질문</a></li>
+                            <li class="dot"><a href="help/notice">공지사항</a></li>
+                            <li><a href="/policy">이용약관</a></li>
+                            <li class="dot"><a href="/privacypolicy">개인정보 취급방침</a></li>
+                        </ul>
                     </div>
-                    <div class="right">
-                        <ul class="outlink clear dis_f ai_c">
-                            <li><a href="https://www.facebook.com/hiphoperdotcom" target="_blank"><i class="ispr fb"><span class="blind">힙합퍼 페이스북</span></i></a></li>
-                            <li><a href="https://www.instagram.com/hiphoper_com" target="_blank"><i class="ispr ig"><span class="blind">힙합퍼 인스타그램/span></i></a></li>
-                            <li><a href="http://post.naver.com/h_store" target="_blank"><i class="ispr pin"><span class="blind">힙합퍼 포스트</span></i></a></li>
-                            <li><a href="http://blog.naver.com/h_store" target="_blank"><i class="ispr blog"><span class="blind">힙합퍼블로그</span></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCOjxWGrdIet-njboUOpFJTQ/featured?view_as=subscriber" target="_blank"><i class="ispr yt"><span class="blind">힙합퍼 유튜브</span></i></a></li>
-                            <li><a href="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp?site_cd=A886N" target="_blank"><img src="common/images/ico/kcp.png" alt="kcp 인증마크"><span class="blind">kcp 인증마크</span></a></li>
+                </div>
+                <div class="clear">
+                    <div class="footer_middle">
+                        <div class="info">
+                            <p class="tel"><a href="">고객센터 <span>1599-7616</span></a></p>
+                            <p>평일 10:00~17:00(점심시간 12:00~13:30)주말/공휴일 휴무</p>
+                            <p class="info_txt">힙합퍼에서 입점 판매되는 모든 브랜드 상품은 <span>정식 제조, 정식 수입 절차를 통하여 유통되는 100% 정품입니다.</span></p>
+                        </div>
+                        <div class="addr">
+                            <a href="javascript:;" class="button_tip_toggle"><span>(주) 힙합퍼</span></a>
+                            <div class="cont_tip_toggle">
+                                <table>
+                                    <tr>
+                                        <td>대표이사</td>
+                                        <td>문인식</td>
+                                    </tr>
+                                    <tr>
+                                        <td>개인정보보호책임자</td>
+                                        <td>문장우</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주소</td>
+                                        <td>서울특별시 서초구 신반포로 339, 1층 (잠원동, 논현빌딩)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>사업자등록번호</td>
+                                        <td>211-88-70875 <a href="#"><span>사업자정보확인</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>통신판매업신고번호</td>
+                                        <td>제 2018-서울서초-1992호</td>
+                                    </tr>
+                                    <tr>
+                                        <td>호스팅서비스사업자</td>
+                                        <td>아마존 웹 서비스 (AWS)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>이메일</td>
+                                        <td>hiphoher@hiphoper.com</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bottom">
+                        <ul class="outlink">
+                            <li><a href="https://www.instagram.com/hiphoper_com" target="_blank"><i class="ico ig"><span class="blind">인스타그램</span></i></a></li>
+                            <li><a href="https://www.instagram.com/hiphoper_street" target="_blank"><i class="ico ig_st"><span class="ig_st blind">인스타그램 스트릿</span></i></a></li>
+                            <li><a href="https://www.facebook.com/hiphoperdotcom" target="_blank"><i class="ico fb"><span class="fb blind"></span></i></a></li>
+                            <li><a href="http://post.naver.com/h_store" target="_blank"><i class="ico pin"><span class="pin blind">포스트</span></i></a></li>
+                            <li><a href="http://blog.naver.com/h_store" target="_blank"><i class="ico blog"><span class="blog blind">블로그</span></i></a></li>
+                        </ul>
+                        <ul class="outlink_kcp">
+                            <li class="kcp"><a href="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp?site_cd=A886N" target="_blank"><i class="ico kcp"><span class="blind">kcp 인증마크</span></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-
         <script>
-            (function () {
-                $(window).scroll(function(){
-                    var nowScroll = $(window).scrollTop();
-                    if ( nowScroll > 120) {
-                        $('.fixed_nav').addClass('hide');
-                    } else {
-                        $('.fixed_nav').removeClass('hide');
-                    }
-                });
-            })(jQuery);
-
-    //         jQuery(window).scroll(function() {
-    //
-    //    if (jQuery(this).scrollTop()>0)
-    //     {
-    //      jQuery('.fixed_nav').fadeOut();
-    //     }
-    //    else
-    //     {
-    //      jQuery('.fixed_nav').fadeIn();
-    //     }
-    // });
-        </script>
-        <!-- <script type="text/javascript">
-        	$(function(){
-        			$(window).scroll(function(){
-        				var nowScroll = $(document).scrollTop();
-        				// 스크롤 값이 120보다 크다면 gnb 나타나도록 만들기
-        				if(nowScroll > 120){ //     !=0
-        						$('.fixed_nav').css('bottom', '0');
-        					}
-        				else{
-        							$('.fixed_nav').css('bottom', '-121px');
-        						}
+            $(function(){
+                var tipToggle = function () {
+        			var $btn_tip_toggle = $('.button_tip_toggle'),
+        				$cont_tip_toggle = $('.cont_tip_toggle');
+        			$btn_tip_toggle.off().on('click', function(e) {
+        				e.preventDefault();
+        				$(this).toggleClass('on');
+        				$(this).next().toggle();
         			});
-        		});
-        </script> -->
+        		}
+        		tipToggle();
+                var windowWidth = $(window).with();
+                var pcOpen = $('.pc720')
+                if(windowWidth<530){
+                    pcOpen.show();
+                }
+            })
+        </script>
     </body>
 </html>
