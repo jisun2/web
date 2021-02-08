@@ -690,7 +690,7 @@ input[type=checkbox] {display:none}
 .box_right, .box_left {position:relative; float:left; width:50%; vertical-align: middle;}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px}
-.ico.Warning {margin-top:4px; float:left; width:14px; height:16px; background-position:-227px -25px}
+.ico.Warning {margin-top:2px; float:left; width:15px; height:16px; background-position:-227px -27px}
 .ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color: #111}
