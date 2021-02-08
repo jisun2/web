@@ -498,12 +498,16 @@ input[type=checkbox] { display:none;}
 
 .main {clear:both}
 .main a {float:left}
-.main img {text-align:center; margin:0 auto}
+/* .main img {text-align:center; margin:0 auto} */
 .main .slider_for {text-align:center; margin:0 20%}
-.main .slider_nav {position:absolute; padding:0 20px; margin:0 auto; overflow:hidden; border:2px solid #7890af}
-.main .slider_nav .slick-slide {width:15%; margin:0 5px; }
-.main .slider_nav img {float:left;}
-.main .slider_nav a:focus {border:2px solid #3067cc}
+.main .slider_for img {text-align:center; margin:0 auto; vertical-align:middle}
+.main .slider_nav {position:absolute; left:0; margin:10px auto; overflow:hidden; border:2px solid #fff}
+.main .slider_nav .slick-slide {width:18%; margin:0 1%; }
+.main .slider_nav img {margin:0 auto}
+/* .main .slider_nav a:focus {border:2px solid #ff4e25} */
+.main .slider_nav a:active {border:2px solid #ff4e25}
+.main .slider_nav a:hover {border:2px solid #ff4e25}
+/* .main .slider_nav a::selection {border:2px solid #ff4e25} */
 .main .slider_nav a img {float:left;}
 
 
@@ -513,5 +517,10 @@ input[type=checkbox] { display:none;}
 }
 
 @media screen and (min-width:480px) and (max-width:719px) {
+    .main .slider_nav {left:25%;}
     .product-select .sz-select_sub {width:99.7%}
+}
+
+@media screen and (min-width:480px) {
+    .main .slider_nav {left:25%;}
 }
