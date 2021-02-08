@@ -717,7 +717,7 @@
 
 
                                                 <!-- 포토 리뷰 -->
-                                                <div id="photoView" class="popup-wrap bg_wht">
+                                                <div id="photoView" class="popup-wrap">
                                                     <head>
                                                         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
                                                     </head>
@@ -727,9 +727,9 @@
                                                         <script src="../common/lib/slick.min.js"></script>
                                                     </head> -->
                                                     <h2 class="page-title">크게보기</h2>
-                                                    <div class="photo_wrap" style="background-color:#f5f5f5">
-                                                        <div class="main clear" style="display:block;">
-                                                            <div class="slider_for size clear">
+                                                    <div class="photo_wrap">
+                                                        <div class="main clear">
+                                                            <div class="slider_for clear">
                                                                   <div><a href="#r"><img src="../common/images/dummy/dummy11.jpg" alt="후기 사진"></a></div>
                                                                   <div><a href="#"><img src="../common/images/dummy/dummy12.jpg" alt="후기 사진"></a></div>
                                                                   <div><a href="#none"><img src="../common/images/dummy/dummy13.jpg" alt="후기 사진"></a></div>
@@ -739,17 +739,17 @@
                                                                   <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="200px" height="200px" alt="후기사진"></a></div>
                                                                   <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" width="200px" height="200px"  alt="후기사진"></a></div> -->
                                                             </div>
-                                                            <div class="slider_nav mini">
+                                                            <div class="slider_nav">
                                                                 <!-- <div><a href="#none"><img src="../common/images/dummy/dummy11.jpg" width="60" height="60" alt="후기사진"></a></div>
                                                                 <div><a href="#none"><img src="../common/images/dummy/dummy12.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
                                                                 <div><a href="#none"><img src="../common/images/dummy/dummy13.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
                                                                 <div><a href="#none"><img src="../common/images/dummy/dummy14.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
                                                                 <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="60px" height="60px" alt="후기 사진"></a></div> -->
                                                                 <!-- <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div> -->
-                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#"><img src="../common/images/dummy/dummy11.jpg"height="60px" alt="후기 사진"></a></div>
-                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#"><img src="../common/images/dummy/dummy12.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
-                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy13.jpg" height="60px" alt="후기 사진"></a></div>
-                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy14.jpg" height="60px" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#"><img src="../common/images/dummy/dummy11.jpg" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy13.jpg" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기 사진"></a></div>
                                                                 <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" height="60px" alt="후기 사진"></a></div>
                                                             </div>
                                                             <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
@@ -761,8 +761,9 @@
                                                              arrows: false,
                                                              fade: true,
                                                              centerMode: true,
-                                                             // autoplay: true,
+                                                             autoplay: true,
                                                              // autoplaySpeed:10000,
+                                                             pauseOnHover:true,
                                                              asNavFor: '.slider_nav',
                                                             });
                                                             $('.slider_nav').slick({
@@ -771,7 +772,8 @@
                                                              // asNavFor: '.slider_for',
                                                              dots:false,
                                                              centerMode: true,
-                                                             focusOnSelect: true,
+                                                             pauseOnHover: true,
+                                                             // focusOnSelect: true,
                                                             });
 
                                                             $('.slider_nav > div').click(function() {
