@@ -518,6 +518,7 @@ input[type=checkbox] { display:none;}
 }
 @media screen and (min-width:321px) and (max-width:719px) {
     .pf_fc-box .pro_pay {width:52%}
+    .main .slider_for {height:590px;}
 }
 
 @media screen and (max-width:480px) {
