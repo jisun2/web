@@ -876,8 +876,8 @@ input[type=checkbox] {display:none}
 #footer .info_txt span {font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .button_tip_toggle {display:block}
 #footer .button_tip_toggle span {font-size: 14px; color: #888; font-weight:500; display:inline-block;position: relative}
-#footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../common/images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
-#footer .button_tip_toggle.on span:after {background:url("../common/images/ico/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
+#footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
+#footer .button_tip_toggle.on span:after {background:url("../images/ico/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
 #footer table {margin-top: 10px;}
 #footer table tr td {vertical-align: top}
 #footer table tr td:first-child {width: 115px; padding-right: 18px;}
@@ -919,7 +919,6 @@ input[type=checkbox] {display:none}
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 50%; transform: translatex(-50%)}
 }
-
 /* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
