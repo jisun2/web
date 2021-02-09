@@ -853,8 +853,6 @@ input[type=checkbox] {display:none}
   height: 100%;
   background-color: rgba(0,0,0,.8)
 }
-
-
 .input_checkbox label:before, .input_radio_check label:before {border-radius: 2px;}
 .input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {
     background-color: #333;
@@ -878,8 +876,8 @@ input[type=checkbox] {display:none}
 #footer .info_txt span {font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .button_tip_toggle {display:block}
 #footer .button_tip_toggle span {font-size: 14px; color: #888; font-weight:500; display:inline-block;position: relative}
-#footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
-#footer .button_tip_toggle.on span:after {background:url("../images/ico/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
+#footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../common/images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
+#footer .button_tip_toggle.on span:after {background:url("../common/images/ico/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
 #footer table {margin-top: 10px;}
 #footer table tr td {vertical-align: top}
 #footer table tr td:first-child {width: 115px; padding-right: 18px;}
