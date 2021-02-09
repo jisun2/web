@@ -24,7 +24,6 @@ input[type=checkbox] {display:none}
 .star_wrap .star.half {background: url(../images/ico/star_half.png) left top no-repeat;background-size:cover}
 .star_rating {margin:0 auto; text-align:center}
 .star_rating .star_wrap .star {margin-right:10px}
-
  /* 슬라이드 number */
 .product_detail_slider .slick-slide img {width:100%}
 .product_detail_slider .slick-dots {position:absolute; bottom:12px; left:42%; max-width:200px; margin-top:-6px}
@@ -41,7 +40,7 @@ input[type=checkbox] {display:none}
 .slider_counter {position:absolute; bottom:20px; left:45%; padding-bottom:2px; text-align:center; vertical-align:middle;z-index:1; font-size:12px; font-weight:300; color:#fff; min-width:44px; background-color:rgba(0, 0, 0, 0.5); min-width:44px; max-width:44px; max-height:20px;
   pointer-events: none; border-radius:50px 50px; -webkit-border-radius:50px 50px; font-family: 'proxima-nova'}
  /* 제품 정보 txt */
-.pdWrap .product_info {padding:25px 20px; min-width:320px; position:relative; font-family:'Noto Sans KR'}
+.pdWrap .product_info {padding:25px 20px; position:relative; font-family:'Noto Sans KR'}
 .pdWrap .product_info .product_detail-acco .pda-title.active::after {top:15px}
 .pdWrap .product_info .ico.share {display:inline-block; margin:10px; position:absolute; top:15px; right:5px; width:27px; height:27px; margin-left:8px;  background-position: -148px -22px}
 /* .pdWrap .product_info .sale-btn {position:absolute; right:0; bottom:0; width:80px; height:24px; border-radius:3px; -webkit-border-radius:3px; vertical-align:middle; background-color:#333;  color: #fff; font-size:13px; font-weight:300} */
@@ -54,7 +53,7 @@ input[type=checkbox] {display:none}
 .pdWrap .pi_txtBox {position:relative; width:100%; display:block; white-space:normal; color:#333}
 .pdWrap .pi_txtBox .pi_cate {display:block; width:88%; white-space:inherit; font-size:1.28rem; font-weight:700}
 .pdWrap .pi_txtBox .pi_name {margin-top:10px; width:88%; line-height:18px; font-size:1.16rem; font-weight:500}
-.pdWrap .pi_txtBox .pi_pay {min-width:320px; margin:23px 0 25px 0;line-height: 1;font-family:'proxima-nova'}
+.pdWrap .pi_txtBox .pi_pay {margin:23px 0 25px 0;line-height: 1;font-family:'proxima-nova'}
 .pdWrap .pi_txtBox .pi_pay .sale_before {display:inline-block; margin-top:21px; color:#ababab; font-size:1.28rem; text-decoration:line-through}
 .pdWrap .pi_txtBox .pi_pay .sale_per {display:block; margin-top:5px; font-size:1.85rem; font-weight:700; color:#333}
 .pdWrap .pi_txtBox .pi_pay .sale_per .orange {margin-right:8px}
@@ -412,7 +411,6 @@ input[type=checkbox] {display:none}
 .product_detail-table {width:100%}
 .product_detail-table .pd-th,.product_detail-table th {line-height: 1.3; padding:14px 0; color:#555; background-color:#f4f4f4; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; font-size:13px; text-align:center; vertical-align:middle}
 .product_detail-table td {line-height: 1.3; padding: 14px 0; color:#333; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; text-align:center; font-size:13px; vertical-align:middle}
-
 /* 이 상품은 어때요? */
 .bdrT_n {border-top:none}
 .relative_product{padding:30px 20px 0 20px;width:100%;}
