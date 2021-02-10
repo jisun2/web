@@ -31,7 +31,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="container" class="pdWrap">
                 <div class="pdTopArea">
                     <div class="product_slide_wrap">
@@ -381,7 +380,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p class="">
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">6,139,000</strong>
+                                                            <span class="now tc_3">6,139,000</span>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -403,10 +402,10 @@
                                                     </a>
                                                     <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
                                                     <a href="#" class="name ellipsis">베이직</a>
-                                                    <div class="price tc_3 clear none">
+                                                    <div class="price tc_3 clear none"><!-- 정상가 가격 없을 때 none -->
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">51,800</strong>
+                                                            <span class="now tc_3">51,800</span>
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
@@ -428,7 +427,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">51,800</strong>
+                                                            <span class="now tc_3">51,800</span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -446,7 +445,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">51,800</strong>
+                                                            <span class="now tc_3">51,800</span>
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
@@ -468,7 +467,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">51,800</strong>
+                                                            <span class="now tc_3">51,800</span>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -489,7 +488,7 @@
                                                     <div class="price tc_3 clear">
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">51,800</strong>
+                                                            <span class="now tc_3">51,800</span>
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
@@ -519,7 +518,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">6,139,000</strong>
+                                                            <span class="now tc_3">6,139,000</span>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -546,7 +545,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">51,800</strong>
+                                                            <span class="now tc_3">51,800</span>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -573,7 +572,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">51,800</strong>
+                                                            <span class="now tc_3">51,800</span>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -600,7 +599,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <strong class="now tc_3">51,800</strong>
+                                                            <span class="now tc_3">51,800</span>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -696,11 +695,6 @@
                                                     <head>
                                                         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
                                                     </head>
-                                                    <!-- <head>
-                                                        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-                                                        <script src="../common/lib/jquery-2.2.4.min.js"></script>
-                                                        <script src="../common/lib/slick.min.js"></script>
-                                                    </head> -->
                                                     <h2 class="page-title">크게보기</h2>
                                                     <div class="photo_wrap">
                                                         <div class="main clear">
@@ -723,41 +717,42 @@
                                                             </div>
 
                                                             <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
-
-                                                        <script type="text/javascript">
-                                                       //  $(".overlay, #" + strDataPopupName).fadeIn(170);
-                                                       //     $('slick 플러그인 클래스명').resize();
-                                                       //     }
-                                                       // });
-                                                       $('.pop_open').click(function(){
-                                                            $('.slider_for').show()
-                                                        });
-                                                        $('.slider_for').slick({
-                                                             slidesToShow: 1,
-                                                             slidesToScroll: 1,
-                                                             arrows: false,
-                                                             fade: true,
-                                                             centerMode: true,
-                                                             autoplay: true,
-                                                             pauseOnHover:true,
-                                                             asNavFor: '.slider_nav',
-                                                             // infinite: false,
-                                                            });
-                                                            $('.slider_nav').slick({
-                                                             slidesToShow: 5,
-                                                             // slidesToScroll: 1,
-                                                             // asNavFor: '.slider_for',
-                                                             dots:false,
-                                                             centerMode: true,
-                                                             pauseOnHover: false,
-                                                             focusOnSelect: true,
-                                                            });
-
-                                                            $('.slider_nav > div').click(function() {
-                                                              var slideNo = $(this).index();
-                                                              $('.slider_for').slick('slickGoTo', slideNo);
-                                                            });
-                                                        </script>
+                                                            <script type="text/javascript">
+                                                               //  $(".overlay, #" + strDataPopupName).fadeIn(170);
+                                                               //     $('slick 플러그인 클래스명').resize();
+                                                               //     }
+                                                               // });
+                                                               $('.pop_open').click(function(){
+                                                                    $('.slider_for').show()
+                                                                });
+                                                                $('.slider_for').slick({
+                                                                     slidesToShow: 1,
+                                                                     slidesToScroll: 1,
+                                                                     arrows: false,
+                                                                     fade: true,
+                                                                     centerMode: true,
+                                                                     autoplay: true,
+                                                                     pauseOnHover:true,
+                                                                     asNavFor: '.slider_nav',
+                                                                     // infinite: false,
+                                                                });
+                                                                $('.slider_nav').slick({
+                                                                 slidesToShow: 5,
+                                                                 // slidesToScroll: 1,
+                                                                 // asNavFor: '.slider_for',
+                                                                 dots:false,
+                                                                 centerMode: true,
+                                                                 pauseOnHover: false,
+                                                                 focusOnSelect: true,
+                                                                });
+                                                                $('.slider_nav > div').click(function() {
+                                                                  var slideNo = $(this).index();
+                                                                  $('.slider_for').slick('slickGoTo', slideNo);
+                                                                });
+                                                            </script>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </li>
                                         <li class="review_lst">
@@ -923,7 +918,6 @@
                                          </p>
                                      </a>
                                  </div>
-                                 <!-- <div class="product_select_list_moreview"><a href="#"><span>더보기</span></a></div> -->
                             </section>
                         </div>
                         <div class="tab_inr qna">
@@ -963,7 +957,6 @@
                                             <a href="#">
                                                 <div class="cont clear">
                                                     <p>오버 사이즈 제품 맞나요?</p>
-                                                    <!-- <button type="button" class="view" data-type="qnaview"><span class="blind">답변보기</span></button> -->
                                                 </div>
                                             </a>
                                         </div>
@@ -972,18 +965,7 @@
                                             <li>dng6***</li>
                                             <li>2021. 01. 05 13:48</li>
                                         </ul>
-                                        <!-- <dl class="info">
-                                            <dt class="blind">상태</dt>
-                                            <dd class="flag kor tc_3">답변 대기</span></dd>
-                                            <dt class="blind">구분</dt>
-                                            <dd class="category tc_b">기타</dd>
-                                            <dt class="blind">작성자</dt>
-                                            <dd class="writer tc_5">yj2323232***</dd>
-                                            <dt class="blind">작성일</dt>
-                                            <dd class="date tc_5">2018.12.11</dd>
-                                        </dl> -->
                                     </div>
-
                                     <div class="item lc_e5">
                                         <a href="#">
                                             <div class="que tc_5 clear">
@@ -993,7 +975,6 @@
                                                         <p id="re_more" class="re_txt _ellipsis">
                                                             안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고 싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?! 궁금합니다.
                                                         </p>
-                                                        <!-- <a href="#" class="review_txt_moreview"><span>더보기</span></a> -->
                                                     </div>
                                                 </a>
                                             </div>
@@ -1004,7 +985,6 @@
                                             </ul>
                                         </a>
                                     </div>
-
                                     <div class="item lc_e5">
                                         <a href="#">
                                             <div class="que tc_5 clear">
@@ -1027,7 +1007,6 @@
                                             </ul>
                                         </a>
                                     </div>
-
                                     <div class="item lc_e5">
                                         <div class="que tc_5 clear view">
                                             <span class="blind">문의내용 : </span>
@@ -1042,7 +1021,7 @@
                                                     </li>
                                                 </ul>
                                                 <div class="cont clear">
-                                                    <p>정품 확실한가요?</p>
+                                                    <p>정품 확실한거 맞죠?</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -1071,12 +1050,11 @@
                                             </a>
                                         </div>
                                         <ul class="list_bar info">
-                                            <li>답변 대기</li>
+                                            <li class="blue">답변 완료</li>
                                             <li>dng6***</li>
                                             <li>2021. 01. 05 13:48</li>
                                         </ul>
                                     </div>
-
                                     <div  class="item seller view"><!-- 열릴때는 class에 view 추가 -->
                                         <div class="que tc_5 clear view">
                                             <a href="#">
@@ -1092,7 +1070,6 @@
                                             <li>2021. 01. 05 13:48</li>
                                         </ul>
                                     </div>
-
                                     <div class="item lc_e5">
                                         <div class="que tc_5 clear">
                                             <a href="#">
@@ -1184,18 +1161,18 @@
                         e.preventDefault();
                         $(this).toggleClass('on');
                         $(this).children('p').toggleClass('_ellipsis');
-                });
+                    });
                 // 상품 상세 tab
-                var tabBtn = $("#tab_btn > ul > li");
-                var tabCont = $("#tab-cont > div");
-                tabCont.hide().eq(0).show();
-                tabBtn.click(function(){
-                var target = $(this);
-                var index = target.index();
-                tabBtn.removeClass("active");
-                target.addClass("active");
-                tabCont.css("display","none");
-                tabCont.eq(index).css("display","block");
+                    var tabBtn = $("#tab_btn > ul > li");
+                    var tabCont = $("#tab-cont > div");
+                    tabCont.hide().eq(0).show();
+                    tabBtn.click(function(){
+                    var target = $(this);
+                    var index = target.index();
+                    tabBtn.removeClass("active");
+                    target.addClass("active");
+                    tabCont.css("display","none");
+                    tabCont.eq(index).css("display","block");
                 });
             }
             $( document ).ready(function() {
