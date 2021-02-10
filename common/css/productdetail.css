@@ -488,7 +488,7 @@ input[type=checkbox] {display:none}
 .main .slider_for img {max-height:700px; text-align:center;margin:0 auto; vertical-align:middle; background-color:#f5f5f5}
 .main .slider_for .pdT {width:100%; padding-top:35%; transform:translateY(-50%);}
 .slider_nav_box {display:inline-block; background-color:#fff}
-.main .slider_nav {padding:10px 0 80px 37px; position:absolute; min-height:66px; max-height:60%; bottom:0%; transform:translatex(-50%); width:100%; overflow:hidden; background-color:#fff}
+.main .slider_nav {padding:10px 0 80px 0; padding-left:10%; position:absolute; min-height:66px; max-height:60%; bottom:0%; transform:translatex(-50%); width:100%; overflow:hidden; background-color:#fff}
 .main .slider_nav .slick-slide {margin:0 1%;}
 .main .slider_nav img {width:60px; height:60px; margin:0 auto}
 .main .slider_nav a img {float:left;}
