@@ -4,6 +4,7 @@ input[type=checkbox] {display:none}
 #tab_btn {min-width:320px; height:auto; width:100%;}
 .sticky {z-index:1; position:sticky; top:0}
 .top_box .fs_close {padding: 5px 0 6px 15px; background-color:transparent; color:#fff; font-size:16px; font-weight:500}
+.slider .product_detail_slider img {display:block}
 /* btn */
 .pf-btn.gray-btn {background-color:#5d5e6a}
 .btn_bk {margin:25px 0 40px 0; font-size:17px; font-weight:500; border-radius:3px}
