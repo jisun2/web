@@ -305,7 +305,7 @@ var mSize = 426, // 813
 			$(this).off('click');
 			$tar.addClass('hide');
 		});
-		
+
 	},
 	transitionendEvent = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
 	autoWidthSelect = function(obj){
@@ -330,7 +330,7 @@ var mSize = 426, // 813
 			}
 			return copysuccess;
 		}
-		var layerCode = `<div class="alert_layer lc_b pos_center hide" id="copyAlert">
+		var layerCode = <div class="alert_layer lc_b pos_center hide" id="copyAlert">
 			<button type="button" class="btn_close bg_3_a bg_3_b pos_center_before pos_center_after on_m"><span class="s_out">본문으로 돌아가기</span></button>
 			<p class="message tc_3"></p>
 			<div class="btns lc_e5 clear">
@@ -497,7 +497,7 @@ $(window).on({
 				e.preventDefault();
 				if(!$this.closest('li').hasClass('on')){
 					$('#gnb').removeClass('hide');
-                    $('#gnb').css('height','100%');                    
+                    $('#gnb').css('height','100%');
 					$this.closest('li').addClass('on')
 				}else{
 					$('#gnb').addClass('hide');
@@ -851,24 +851,3 @@ $(document).ready(function(){
 		}
 	}).change();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
