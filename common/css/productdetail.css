@@ -421,7 +421,7 @@ input[type=checkbox] {display:none}
 .pd_item_wrap .list_pd.small li::-webkit-scrollbar {display:none}
 .pd_item_wrap .list_pd.small>li {margin-right:10px; width:139px; min-height:244px; max-height:310px; display:inline-block; border-top:0;}
 .pd_item_wrap .list_pd.small .link {width:100%; padding:0;}
-.pd_item_wrap .list_pd.small .link .img {width:100%; min-width:139px; height:0;padding-top:100%;position:relative;display:block;margin-bottom:8px;}
+.pd_item_wrap .list_pd.small .link .img {width:100%;width:139px; height:0;padding-top:100%;position:relative;display:block;margin-bottom:8px;}
 .pd_item_wrap .list_pd.small .price {margin-bottom:8px}
 .pd_item_wrap .list_pd.small .price.none {display:inline-block; margin:17px 0 0 0}
 .pd_item_wrap .list_pd.small .price p {line-height:16px; font-weight:700}
@@ -488,8 +488,13 @@ input[type=checkbox] {display:none}
 .main .slider_nav .slick-slide {margin:0 1%;}
 .main .slider_nav img {width:60px; height:60px; margin:0 auto}
 .main .slider_nav a img {float:left;}
-.main .slider_nav a:hover img, .main .slider_nav a:active img {z-index:2; outline: 2px solid #ff4e25; outline-offset: -2px}
+.main .slider_nav a:hover img, .main .slider_nav a:active img {z-index:2; outline: 2px solid #ff4e25; outline-offset:-2px}
 
+@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0){
+    @media {
+
+    }
+}
 @media screen and (max-width:320px){
     .qnaBox {font-size:13.5px}
     .main .slider_nav {left:2%}
