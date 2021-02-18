@@ -8,8 +8,8 @@ input[type=checkbox] {display:none}
 .pf-btn.gray-btn {background-color:#5d5e6a}
 .btn_bk {margin:25px 0 40px 0; font-size:17px; font-weight:500; border-radius:3px}
 /* 결제 체크 박스 */
-.sz-custom_label {display:inline-block; width:24px;height:24px;background: url(../images/ico/check_off.png) center center/cover no-repeat;cursor:pointer}
-.sz-custom_check:checked ~ .sz-custom_label {background: url(../images/ico/check_on.png) center center/cover no-repeat}
+.sz-custom_label {display:inline-block; width:24px; height:24px; background: url(../images/ico/check_off.png) center center/cover no-repeat;cursor:pointer}
+.sz-custom_check:checked ~ .sz-custom_label {background:url(../images/ico/check_on.png) center center/cover no-repeat}
 .product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
 .sz-custom_text {cursor: pointer}
 /* 별점평  */
@@ -45,7 +45,7 @@ input[type=checkbox] {display:none}
 .pdWrap .product_info .product_detail-acco .pda-title.active::after {top:15px}
 .pdWrap .product_info .ico.share {display:inline-block; margin:10px; position:absolute; top:15px; right:5px; width:27px; height:27px; margin-left:8px;  background-position: -148px -22px}
 /* .pdWrap .product_info .sale-btn {position:absolute; right:0; bottom:0; width:80px; height:24px; border-radius:3px; -webkit-border-radius:3px; vertical-align:middle; background-color:#333;  color: #fff; font-size:13px; font-weight:300} */
-.ico.down {width:20px; height:14px; margin-left:8px; background-position: -233px -50px}
+.ico.down {width:20px; height:14px; margin:2px 0 0 8px; background-position:-233px -50px}
 .ico.like_s {width:15px; height:15px; background-position:-193px -45px}
 .ico.more_arw {width:10px; height:16px; margin-left:10px; background-position:-183px -45px}
 .ico.more_down {width:15px; height:8px; margin:0 0 2px 10px; background-position:-133px -41px}
@@ -99,7 +99,7 @@ input[type=checkbox] {display:none}
 .product .tab>li.active {padding-bottom:21px; vertical-align:middle; height:30px; border-bottom:2px solid #ff4e25}
 .product .tab>li.active a {color:#ff4e25}
 /* 상세 탭 별점 상품평  */
-.reviewer strong { display:block; text-align:center; font-size:18px; font-weight:500; color:#333; line-height:1; margin-bottom:15px;}
+.reviewer strong {margin-bottom:15px; display:block; text-align:center; font-size:18px; font-weight:500; color:#333; line-height:1}
 .reviewer .star {float:left}
 .reviewer .review_wrap {position:relative; width:100%}
 .reviewer .review_wrap .review_id {}
@@ -484,7 +484,7 @@ input[type=checkbox] {display:none}
 .main .slider_for img {max-height:700px; text-align:center;margin:0 auto; vertical-align:middle; background-color:#f5f5f5}
 .main .slider_for .pdT {width:100%; height:100vh; transform:translateY(15%);}
 .slider_nav_box {display:inline-block; width:100%; padding-bottom:105px; position:absolute; min-height:66px; max-height:60%; left:0; bottom:0%; background-color:#fff}
-.main .slider_nav {padding:10px 0 100px 0; position:absolute; bottom:0%; left:10%; width:100%; overflow:hidden; background-color:#fff}
+.main .slider_nav {padding:10px 0 100px 0; position:absolute; bottom:0%; width:100%; overflow:hidden; background-color:#fff}
 .main .slider_nav .slick-slide {margin:0 1%;}
 .main .slider_nav img {width:60px; height:60px; margin:0 auto}
 .main .slider_nav a img {float:left;}
@@ -523,7 +523,7 @@ input[type=checkbox] {display:none}
 .cart_area {padding:11px 15px}
 .cart_option_cor.active {display:block; width:200%; margin-left:-120%}
 /* .cart_option_cor.active {display:block; width:256%; margin-left:-164%} */
-.tooltip .tooltiptext {position:absolute; width:133px; bottom:20px; margin-left:-28px; border-radius:3px}
+.tooltip .tooltiptext {position:absolute; width:260px; bottom:20px; margin-left:-28px; border-radius:3px}
 
 /* 셀렉트 박스 옵션 */
 /* .product-select .selected {padding:12px 10px; color:#ababab; border:1px solid #e5e5e5; background: url(../../../common/images/ico/acco_arrow-icon.png) 95% center/13px 7px no-repeat;font-size: 13px}
@@ -575,7 +575,7 @@ input[type=checkbox] {display:none}
 .cart_fc-box {float:right; width:38%}
 .cart_fc-box .justify_box {width:100%}
 .cart_fc-box .ico.sel_arrow {margin-left:6px}
-.cart_option {display:inline-block; margin:20px 0 0 32px; padding:15px; line-height:1.3; color:#888; font-size:12px; background-color:#e5e5e5;}
+.cart_option {display:inline-block; margin:20px 0 0 32px; padding:15px; line-height:1.3; color:#888; font-size:12px; background-color:#f5f5f5;}
 .cart_option .select {width:100%}
 .cart_option .just_left {float:left; width:62%}
 .cart_option .option_txt {overflow:hidden; display:-webkit-box; height:auto; max-height:36px; word-break: break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;}
@@ -589,11 +589,11 @@ input[type=checkbox] {display:none}
 .cart_fc-box .gray_border-btn.active::after { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); vertical-align: 3px}
 /* .cart_fc-box .gray_border-btn::after {content: '';display: inline-block; width: 10px;height: 6px; margin-left: 8px; background: url(../../../common/images/ico/acco_arrow-gray_mo11.png) center center/cover no-repeat; vertical-align: 2px} */
 .cart_fc-box .black_border-btn {width:calc(100% - 3px); margin-left:3px; height:38px; color:#000; border: 1px solid #000; font-size: 13px; font-weight: 500; background-color: #fff}
-.cart_fc-box .black_border-btn::after {content: ''; display: inline-block; width:6px; height:10px; margin-left: 8px; background: url(../../../common/images/ico/right_arrow-icon.png) center center/cover no-repeat; vertical-align: 0}
-.cart_fc-box .black-btn {width:calc(100% - 3px); height:38px; margin-left:3px; font-size:13px; font-weight: 500}
-.cart_option_cor {position:relative; display:none; margin-top:15px; padding:15px; border: 1px solid #ababab; background-color:#fff}
-.cart_option_cor .product-select .selected {padding: 8px 10px; background: 0 0; font-size: 11px}
-.cart_option_cor .product-select .selected::after {content: '';display: block; position: absolute; top: 12px; right: 10px; width: 10px; height: 5px; background: url(../../../common/images/ico/acco_arrow-gray.png) center center/cover no-repeat}
+.cart_fc-box .black_border-btn::after {content:''; display:inline-block; width:6px; height:10px; margin-left:8px; background: url(../../../common/images/ico/right_arrow-icon.png) center center/cover no-repeat; vertical-align: 0}
+.cart_fc-box .black-btn {width:calc(100% - 3px); height:38px; margin-left:3px; font-size:13px; font-weight:500}
+.cart_option_cor {position:relative; display:none; margin-top:15px; padding:15px; border:1px solid #ababab; background-color:#fff}
+.cart_option_cor .product-select .selected {padding:8px 10px; background:0 0; font-size:11px}
+.cart_option_cor .product-select .selected::after {content: ''; display:block; position:absolute; top:12px; right:10px; width:10px; height: 5px; background: url(../../../common/images/ico/acco_arrow-gray.png) center center/cover no-repeat}
 .cart_option_cor .product-select .selected.active::after {-webkit-transform: rotate(180deg); -ms-transform: rotate(180deg);transform: rotate(180deg)}
 .cart_option_cor .product-select .just_right {width: auto}
 .cart_option_cor .pro_opt {display:inline-block; padding-top:9px}
@@ -629,24 +629,24 @@ input[type=checkbox] {display:none}
 .cart_nav_wrap .just_left,.cart_nav_wrap .just_right { width: 50%}
 .cart_nav_wrap .orange-btn { width: 100%; height: 45px; font-size: 16px; font-weight: 500} */
 
-.pl_fc-border .plf-text-btn {height: 24px;line-height: 24px; color: #888; font-size: 13px; background-color:#fff}
+.pl_fc-border .plf-text-btn {height:24px; line-height:24px; color:#888; font-size:13px; background-color:#fff}
 .pl_fc-border .plf-text-btn:first-child::after {content: '';display: inline-block;width: 1px; height: 13px; margin: 0 4px 0 10px; background-color: #ababab; vertical-align: -2px}
-.cart_total_wrap {padding: 30px 15px 100px 15px}
+.cart_total_wrap {padding:30px 15px 100px 15px}
 .cart_total_wrap .pc-only {display: none}
 .cart_total_wrap table {width:100%}
-.cart_total_wrap tbody td:first-child {width: 30%;color: #888;font-size: 13px}
-.cart_total_wrap tbody td:last-child {width: 70%;color: #000; font-size: 16px; text-align: right}
-.cart_total_wrap tbody td:last-child span {font-size: 18px}
-.cart_total_wrap tbody td {padding-bottom: 4px}
-.cart_total_wrap tbody tr:last-child td {padding-bottom: 18px;border-bottom: 1px solid #f0f0f0}
-.cart_total_wrap tfoot td {padding-top: 16px}
-.cart_total_wrap tfoot td:first-child {color: #000;font-size: 15px;font-weight: 500}
-.cart_total_wrap tfoot td:last-child {text-align: right}
-.cart_total_wrap tfoot td .ctt-pay {display: block; color: #ff4e25; font-size: 17px; font-weight: 500}
-.cart_total_wrap tfoot td .ctt-pay .ctt-pay-num {font-size: 21px; font-weight: 700}
-.cart_total_wrap tfoot td .ctt-bonus {display: block; margin-bottom: 15px; color: #888; font-size: 12px; font-weight: 400}
-.cart_total_wrap tfoot td .ctt-bonus .ctt-bonus-num {font-size: 14px; font-weight: 700}
-.cart_total_wrap tfoot td .ctt-info {color: #ababab; font-size: 11px}
+.cart_total_wrap tbody td:first-child {width:30%; color:#888; font-size:13px}
+.cart_total_wrap tbody td:last-child {width:70%; color:#000; font-size:16px; text-align:right}
+.cart_total_wrap tbody td:last-child span {font-size:18px}
+.cart_total_wrap tbody td {padding-bottom:4px}
+.cart_total_wrap tbody tr:last-child td {padding-bottom:18px; border-bottom:1px solid #f0f0f0}
+.cart_total_wrap tfoot td {padding-top:16px}
+.cart_total_wrap tfoot td:first-child {color:#000; font-size:15px; font-weight:500}
+.cart_total_wrap tfoot td:last-child {text-align:right}
+.cart_total_wrap tfoot td .ctt-pay {display:block; color:#ff4e25; font-size:17px; font-weight:500}
+.cart_total_wrap tfoot td .ctt-pay .ctt-pay-num {font-size:21px; font-weight:700}
+.cart_total_wrap tfoot td .ctt-bonus {display:block; margin-bottom:15px; color:#888; font-size:12px; font-weight:400}
+.cart_total_wrap tfoot td .ctt-bonus .ctt-bonus-num {font-size:14px; font-weight:700}
+.cart_total_wrap tfoot td .ctt-info {color:#ababab; font-size:11px}
 .just_left.black-border-btn.pop_close {background-color: #fff;}
 
 
