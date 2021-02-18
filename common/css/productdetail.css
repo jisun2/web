@@ -423,7 +423,7 @@ input[type=checkbox] {display:none}
 .reviewPhoto_box {margin:0 auto; width:100%; overflow:hidden; position:relative;overflow-x:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}
 .reviewPhoto_box .re_img {padding-top:25px; width:15%}
 .pd_item_wrap {margin-top:19px; width:100%; overflow:hidden; position:relative;}
-.pd_item_wrap .list_pd.small {clear:both; display:flex; overflow-y:hidden; padding-bottom:5px}
+.pd_item_wrap .list_pd.small {clear:both; display:flex; overflow-y:scroll; padding-bottom:5px}
 .pd_item_wrap .list_pd.small li::-webkit-scrollbar {display:none}
 .pd_item_wrap .list_pd.small>li {clear:both; padding-right:10px; width:139px; min-height:244px; max-height:310px; display:inline-block; border-top:0;}
 .pd_item_wrap .list_pd.small .link {width:139px; padding:0;}
