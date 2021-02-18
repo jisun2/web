@@ -426,8 +426,8 @@ input[type=checkbox] {display:none}
 .pd_item_wrap .list_pd.small {display:flex; overflow-y:hidden; padding-bottom:5px}
 .pd_item_wrap .list_pd.small li::-webkit-scrollbar {display:none}
 .pd_item_wrap .list_pd.small>li {margin-right:10px; width:139px; min-height:244px; max-height:310px; display:inline-block; border-top:0;}
-.pd_item_wrap .list_pd.small .link {width:100%; padding:0;}
-.pd_item_wrap .list_pd.small .link .img {width:100%; min-width:139px; height:0;padding-top:100%;position:relative;display:block;margin-bottom:8px;}
+.pd_item_wrap .list_pd.small .link {width:139px; padding:0;}
+.pd_item_wrap .list_pd.small .link .img {width:100%; height:0;padding-top:100%;position:relative;display:block;margin-bottom:8px;}
 .pd_item_wrap .list_pd.small .price {margin-bottom:8px}
 .pd_item_wrap .list_pd.small .price.none {display:inline-block; margin:17px 0 0 0}
 .pd_item_wrap .list_pd.small .price p {line-height:16px; font-weight:700}
