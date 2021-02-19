@@ -416,6 +416,7 @@ input[type=checkbox] {display:none}
 .ovef_h {overflow:hidden}
 .clear {clear:both !important}
 .flt_le {float:left !important}
+.flt_ri {float:right !important}
 .dis_in {display:inline-block !important}
 .dis_blk {display:block !important}
 .txt_cnt {text-align:center !important}
@@ -518,8 +519,8 @@ input[type=checkbox] {display:none}
 /* 공통  tooltip */
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -50px -83px}
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
-.tooltip .tooltiptext, .tooltip .tooltiptext1 {padding:10px;max-width:260px; min-width:200px; background-color:#3067cc;color:#fff;text-align:left;border-radius:5px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:12px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
-.tooltip .tooltiptext:after, .tooltip .tooltiptext1:after {content: '';position:absolute;top:100%; left:48%; border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
+.tooltip .tooltiptext, .tooltip .tooltiptext1 {padding:10px; background-color:#3067cc;color:#fff;text-align:left;border-radius:5px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:12px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
+.tooltip .tooltiptext:after, .tooltip .tooltiptext1:after {content:'';position:absolute;top:100%; left:48%; border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
 .tooltip .tooltiptext1 {visibility:hidden;}
 .tooltip:hover .tooltiptext1 {visibility:visible}
 /* 이달의 카드사 혜택 팝업 */
@@ -605,7 +606,7 @@ input[type=checkbox] {display:none}
 #footer .info_txt{margin-top: 13px; margin-bottom: 26px; line-height: 20px; display: inline-block}
 #footer .info_txt span {font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .button_tip_toggle {display:block}
-#footer .button_tip_toggle span {font-size: 14px; color: #888; font-weight:500; display:inline-block;position: relative}
+#footer .button_tip_toggle span {font-size:14px; color:#888; font-weight:500; display:inline-block;position:relative}
 #footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
 #footer .button_tip_toggle.on span:after {background:url("../images/ico/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
 #footer table {margin-top: 10px;}

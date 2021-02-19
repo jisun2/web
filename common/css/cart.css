@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 .justify_box::after {content: ''; display:block; clear:both}
 .justify_box .just_right {float:right}
 .justify_box .just_left {float:left}
@@ -8,33 +6,31 @@
 .delBtn {float:right; padding: 0 0 20px 20px;}
 .cart_area {padding:11px 15px}
 .cart_option-cor.active {display:block; width:256%; margin-left:-164%}
-.tooltip .tooltiptext {position:absolute; width:133px; bottom:20px; margin-left:0; border-radius:3px}
-
+.tooltip .tooltiptext {position:absolute; width:133px; bottom:20px; margin-left:-28px; border-radius:3px}
 
 /* 셀렉트 박스 옵션 */
-.product-select .selected {padding: 12px 10px;color: #ababab;border: 1px solid #e5e5e5; background: url(../../../common/images/ico/acco_arrow-icon.png) 95% center/13px 7px no-repeat;font-size: 13px}
-.product-select .selected span {display: block; max-width: 90%; overflow: hidden;-o-text-overflow: ellipsis; text-overflow: ellipsis;white-space: nowrap}
-.product-select .selected.active {color: #333;border: 1px solid #333;background: url(../../../common/images/ico/acco_arrow_active-icon.png) 95% center/13px 7px no-repeat}
-.product-select .sz-select_sub {position: static;max-height: 149px; overflow: auto; border: 1px solid #333; border-top: none}
-.product-select .sz-select_sub li {width: 100%;padding: 10px;background-color: #fff;border-bottom: 1px solid #e5e5e5; font-size: 13px}
-.product-select .sz-select_sub li:last-child {border-bottom: none}
-.product-select .sz-select_sub .just_left {width: 90%; margin-top: 1px}
-.product-select .sz-select_sub .product_name {display:inline-block; width:68%; overflow:hidden;-o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap}
+.product-select .selected {padding:12px 10px; color:#ababab; border:1px solid #e5e5e5; background: url(../../../common/images/ico/acco_arrow-icon.png) 95% center/13px 7px no-repeat;font-size: 13px}
+.product-select .selected span {display:block; max-width:90%; overflow:hidden;-o-text-overflow: ellipsis; text-overflow: ellipsis;white-space: nowrap}
+.product-select .selected.active {color:#333; border:1px solid #333; background:url(../../../common/images/ico/acco_arrow_active-icon.png) 95% center/13px 7px no-repeat}
+.product-select .sz-select_sub {position:static; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
+.product-select .sz-select_sub li {width:100%; padding:10px; background-color:#fff; border-bottom:1px solid #e5e5e5; font-size:13px}
+.product-select .sz-select_sub li:last-child {border-bottom:none}
+.product-select .sz-select_sub .just_left {width:90%; margin-top:1px}
+.product-select .sz-select_sub .product_name {display:inline-block; width:68%; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis; white-space: nowrap}
 .product-select .sz-select_sub .product_pay {display:inline-block; line-height:1; vertical-align:1px}
 .product-select .sz-select_sub .product_pay::before {content:'';display:inline-block; width:1px; height:12px; margin:0 10px; background-color:#e5e5e5; vertical-align:-2px}
 .product-select .sz-custom_label {width:16px; height:16px; vertical-align:bottom}
+.pd_btn_box button {width:100%}
 
 /* 1015 팝업 */
 .just_left.black-border-btn.pop_close {background-color: #fff;}
 .cart-section {border-top:1px solid #d0d0d0}
-.cart_wrap {border-top:none}
-.cart_wrap {border-top: 8px solid #e5e5e5}
+.cart_wrap:first-child {border-top: 8px solid #e5e5e5}
 .cart-top {padding: 12px 17px; border-bottom: 1px solid #e5e5e5}
-.cart-top::after {content: ''; display: block;clear: both}
+.cart-top::after {content: ''; display: block;clear:both}
 /* .cart-top .sz-custom_label {float: left} */
 .underline-btn-orange {float: left; display: block; height: 24px; line-height: 24px; color: #ff4e25; margin-left: 6px; font-size: 10px;text-decoration: underline; cursor: pointer}
-.cart-btm a {}
-.cart-btm {padding:25px 15px; min-width:270px; border-bottom: 1px solid #d0d0d0}
+.cart-btm {padding:25px 15px; min-width:270px; border-bottom:1px solid #d0d0d0}
 .cart-btm .input_checkbox {float:left; min-height:72px; width:27px}
 .cart-btm .input_checkbox label {padding:0; width:22px; height:22px}
 .cart-btm .just_left {width:90%}
@@ -50,7 +46,7 @@
 .cart_info {}
 .cart_info .input_checkbox input[type=checkbox]:checked +label {}
 .cart_info .cart_de {float:right; width:calc(100% - 119px)}
-.cart_info .just_left {float:left; width:72px; height:72px; }
+.cart_info .just_left {float:left; width:72px; height:72px;}
 .cart_info .just_left img {width:100%; height:100%}
 .cart_info .soldout {position:relative}
 .cart_info .soldout::after {content: 'SOLD OUT'; display: block; position: absolute; top: 0; left: 0; line-height: 1.2; width: 100%; padding: 16px 0; background-color: rgba(0,0,0,.6); color: #fff; font-size: 18px; font-weight: 700; text-align: center}
@@ -98,7 +94,7 @@
 .cart_nav-wrap .prod_total {color: #ff4e25; font-size: 18px}
 .cart_nav-wrap .prod_total .ptolal_num { font-size: 22px;  font-weight: 700}
 .cart_nav-wrap .orange-btn { width: 100%; height: 45px; font-size: 16px; font-weight: 500}
-.cart_box_total {padding:20px 15px; text-align:right; font-size:13px; color:#555; border-bottom:1px solid #d0d0d0; background-color:#fff}
+.cart_box_total {padding:20px 15px; text-align:right; font-size:13px; color:#555; border-bottom:1px solid #d0d0d0; border-bottom:8px solid #e5e5e5; background-color:#fff}
 .cart_box_total strong {font-weight:bold}
 
 
@@ -113,22 +109,22 @@
 
 .pl_fc-border .plf-text-btn {height: 24px;line-height: 24px; color: #888; font-size: 13px; background-color:#fff}
 .pl_fc-border .plf-text-btn:first-child::after {content: '';display: inline-block;width: 1px; height: 13px; margin: 0 4px 0 10px; background-color: #ababab; vertical-align: -2px}
-.cart-total_table-wrap {padding: 30px 15px 100px 15px}
-.cart-total_table-wrap .pc-only {display: none}
-.cart-total_table-wrap table {width:100%}
-.cart-total_table-wrap tbody td:first-child {width: 30%;color: #888;font-size: 13px}
-.cart-total_table-wrap tbody td:last-child {width: 70%;color: #000; font-size: 16px; text-align: right}
-.cart-total_table-wrap tbody td:last-child span {font-size: 18px}
-.cart-total_table-wrap tbody td {padding-bottom: 4px}
-.cart-total_table-wrap tbody tr:last-child td {padding-bottom: 18px;border-bottom: 1px solid #f0f0f0}
-.cart-total_table-wrap tfoot td {padding-top: 16px}
-.cart-total_table-wrap tfoot td:first-child {color: #000;font-size: 15px;font-weight: 500}
-.cart-total_table-wrap tfoot td:last-child {text-align: right}
-.cart-total_table-wrap tfoot td .ctt-pay {display: block; color: #ff4e25; font-size: 17px; font-weight: 500}
-.cart-total_table-wrap tfoot td .ctt-pay .ctt-pay-num {font-size: 21px; font-weight: 700}
-.cart-total_table-wrap tfoot td .ctt-bonus {display: block; margin-bottom: 15px; color: #888; font-size: 12px; font-weight: 400}
-.cart-total_table-wrap tfoot td .ctt-bonus .ctt-bonus-num {font-size: 14px; font-weight: 700}
-.cart-total_table-wrap tfoot td .ctt-info {color: #ababab; font-size: 11px}
+.cart_total_wrap {padding: 30px 15px 100px 15px}
+.cart_total_wrap .pc-only {display: none}
+.cart_total_wrap table {width:100%}
+.cart_total_wrap tbody td:first-child {width: 30%;color: #888;font-size: 13px}
+.cart_total_wrap tbody td:last-child {width: 70%;color: #000; font-size: 16px; text-align: right}
+.cart_total_wrap tbody td:last-child span {font-size: 18px}
+.cart_total_wrap tbody td {padding-bottom: 4px}
+.cart_total_wrap tbody tr:last-child td {padding-bottom: 18px;border-bottom: 1px solid #f0f0f0}
+.cart_total_wrap tfoot td {padding-top: 16px}
+.cart_total_wrap tfoot td:first-child {color: #000;font-size: 15px;font-weight: 500}
+.cart_total_wrap tfoot td:last-child {text-align: right}
+.cart_total_wrap tfoot td .ctt-pay {display: block; color: #ff4e25; font-size: 17px; font-weight: 500}
+.cart_total_wrap tfoot td .ctt-pay .ctt-pay-num {font-size: 21px; font-weight: 700}
+.cart_total_wrap tfoot td .ctt-bonus {display: block; margin-bottom: 15px; color: #888; font-size: 12px; font-weight: 400}
+.cart_total_wrap tfoot td .ctt-bonus .ctt-bonus-num {font-size: 14px; font-weight: 700}
+.cart_total_wrap tfoot td .ctt-info {color: #ababab; font-size: 11px}
 .just_left.black-border-btn.pop_close {background-color: #fff;}
 
 
