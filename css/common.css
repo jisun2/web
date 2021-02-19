@@ -1,6 +1,6 @@
 @charset "utf-8";
 body,input[type=email],input[type=number],input[type=password],input[type=text],option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
-html{font-size:14px;line-height:22px;color:#555}
+html{font-size:14px;line-height:20px;color:#555}
 body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar}
 button,input,pre,textarea{font-family:inherit;font-size:inherit;color:inherit}
 body,html{height:100%}
@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,strong,th{font-weight:400}
 address,em{font-style:normal}
 fieldset{border:0;border-radius:0; -webkit-border-radius:0;}
 table{border-collapse:collapse}
-img{max-width:100%;vertical-align:top;border:0}
+img{vertical-align:top;border:0}
 button:disabled,input:disabled{background-color:transparent}
 pre{white-space:pre-wrap}
 label{cursor:pointer}
@@ -260,23 +260,20 @@ input[type=checkbox] {display:none}
 .input_checkbox label, .input_radio label, .input_radio_check label {
     display: inline-block;
     padding-left:20px;
-    background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px;
-    background-position:-284px -52px; background-repeat: no-repeat;}
+    background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px;
+    background-position:-284px -53px; background-repeat: no-repeat;}
 .input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after{opacity:1;}
-/* .input_checkbox input[type=checkbox] {padding-left:20px;
-     background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px;
-    background-position:-284px -75px; background-repeat: no-repeat;} */
 .input_checkbox input[type=checkbox]:checked +label {
     padding-left:20px;
-    background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px;
-    background-position:-284px -73px; background-repeat: no-repeat;
+    background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px;
+    background-position:-284px -74px; background-repeat: no-repeat;
 }
 [class*=btn_]{display:inline-block;vertical-align:top}
 .error [class*=input_] .error,
 .input_text button:focus,
 .input_text button:hover,
 .input_text input:focus+button,
-.input_text input:hover+button,[class*=input_].error .error{display:block}
+.input_text input:hover+button,[class*=input_].error .error {display:block}
 /* .bg_def,
 .bg_f7,
 .wrap_board .item.view{background-color:#f7f7f7}
@@ -385,270 +382,10 @@ input[type=checkbox] {display:none}
 .list_tab.length6 li{width:calc(16.6666666667% + .8333333333px)}
 .list_tab.length7 li{width:calc(14.2857142857% + .8571428571px)}
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Regular),
-    url(/path/to/NotoSansCJKkr-Regular.woff2) format("woff2"),
-    url(/path/to/NotoSansCJKkr-Regular.woff) format("woff"),
-    url(/path/to/NotoSansCJKkr-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Medium),
-    url(/path/to/NotoSansCJKkr-Medium.woff2) format("woff2"),
-    url(/path/to/NotoSansCJKkr-Medium.woff) format("woff"),
-    url(/path/to/NotoSansCJKkr-Medium.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Bold),
-    url(/path/to/NotoSansCJKkr-Bold.woff2) format("woff2"),
-    url(/path/to/NotoSansCJKkr-Bold.woff) format("woff"),
-    url(/path/to/NotoSansCJKkr-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: ProximaNova;
-  src: local(ProximaNova-Regular),
-    url(/path/to/ProximaNova-Regular.woff2) format("woff2"),
-    url(/path/to/ProximaNova-Regular.woff) format("woff"),
-    url(/path/to/ProximaNova-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: ProximaNova;
-  src: local(ProximaNova-Semibold),
-    url(/path/to/ProximaNova-Semibold.woff2) format("woff2"),
-    url(/path/to/ProximaNova-Semibold.woff) format("woff"),
-    url(/path/to/ProximaNova-Semibold.ttf) format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-}
-.Text-Style-16 {
-  font-family: ProximaNova;
-  font-size: 22px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.09;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--orange-red);
-}
-.Text-Style-13 {
-  font-family: ProximaNova;
-  font-size: 21px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.07;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--black);
-}
-.Text-Style-8 {
-  font-family: ProximaNova;
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.57;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--black);
-}
-.Text-Style-2 {
-  font-family: ProximaNova;
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #111111;
-}
-.Text-Style-15 {
-  font-family: NotoSansCJKkr;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--orange-red);
-}
-.Text-Style-19 {
-  font-family: NotoSansCJKkr;
-  font-size: 17px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.62;
-  letter-spacing: -0.17px;
-  text-align: center;
-  color: var(--white-three);
-}
-.Text-Style {
-  font-family: NotoSansCJKkr;
-  font-size: 16px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #111111;
-}
-.Text-Style-17 {
-  font-family: ProximaNova;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.94;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--white-three);
-}
-.Text-Style-3 {
-  font-family: NotoSansCJKkr;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.73;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--black);
-}
-.Text-Style-9 {
-  font-family: NotoSansCJKkr;
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.32;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--black);
-}
-.Text-Style-18 {
-  font-family: NotoSansCJKkr;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.07;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--white-three);
-}
-.Text-Style-12 {
-  font-family: NotoSansCJKkr;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.61;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--black);
-}
-.Text-Style-5 {
-  font-family: NotoSansCJKkr;
-  font-size: 13px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--warm-grey);
-}
-.Text-Style-6 {
-  font-family: NotoSansCJKkr;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.08;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--black-two);
-}
-.Text-Style-4 {
-  font-family: NotoSansCJKkr;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.85;
-  letter-spacing: normal;
-  text-align: right;
-  color: var(--warm-grey);
-}
-.Text-Style-7 {
-  font-family: ProximaNova;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.08;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--black-two);
-}
-.Text-Style-11 {
-  font-family: ProximaNova;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.73;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--warm-grey);
-}
-.Text-Style-10 {
-  font-family: NotoSansCJKkr;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--warm-grey);
-}
-.Text-Style-14 {
-  font-family: NotoSansCJKkr;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.36;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--greyish);
-}
-
 
 /* Slider */
 .slick-slider {position:relative; display:block; box-sizing:border-box;-khtml-user-select:none;-ms-touch-action:pan-y; touch-action:pan-y;-webkit-tap-highlight-color: transparent;}
-.slick-list{position:relative; display:block; overflow:hidden; margin:0; padding:0}
+.slick-list {position:relative; display:block; overflow:hidden; margin:0; padding:0}
 /* .slick-list:focus {outline: none;} */
 .slick-list.dragging {cursor: pointer;cursor: hand;}
 .slick-slider .slick-track, .slick-slider .slick-list {
@@ -662,7 +399,7 @@ input[type=checkbox] {display:none}
 .slick-track:before,.slick-track:after{display: table; content: '';}
 .slick-track:after {clear:both;}
 .slick-loading .slick-track {visibility:hidden;}
-.slick-slide {display:none; float:left; height:100%; min-height:1px}
+.slick-slide {float:left; height:100%; min-height:1px}
 [dir='rtl'] .slick-slide{float:right}
 .slick-slide img {display:block;}
 .slick-slide.slick-loading img {display:none;}
@@ -679,6 +416,7 @@ input[type=checkbox] {display:none}
 .ovef_h {overflow:hidden}
 .clear {clear:both !important}
 .flt_le {float:left !important}
+.flt_ri {float:right !important}
 .dis_in {display:inline-block !important}
 .dis_blk {display:block !important}
 .txt_cnt {text-align:center !important}
@@ -687,14 +425,16 @@ input[type=checkbox] {display:none}
 .num {font-family:'proxima-nova'!important}
 .notoS {font-family:'Noto Sans KR'!important}
 .proxima {font-family:'proxima-nova'!important}
-.box_right, .box_left {position:relative; float:left; width:50%; vertical-align: middle;}
+.box_right, .box_left {position:relative; float:left; width:50%; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
-.ico {display:inline-block; background:url("../common/images/ico/ispr.png") center center/ cover; background-size:300px 300px}
+.ico {display:inline-block; background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px}
 .ico.Warning {margin-top:2px; float:left; width:17px; height:16px; background-position:-227px -27px}
 .ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
+.ico.delete {width:14px; height:14px; background-position:-287px -27px; background-repeat: no-repeat}
 /* btn */
-.btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color: #111}
+.btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color:#111}
 .btn_bk .dark {display:block; padding:17px 0}
+.pd_btn_box .orange_btn {width:100%; height:45px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:400; border-radius:3px}
 /* badge */
 .badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:58px; max-height:24px; font-family:'Noto Sans KR'; font-size:13px}
 .badge.ble {background-color:#3067cc; color:#fff}
@@ -779,11 +519,9 @@ input[type=checkbox] {display:none}
 /* 공통  tooltip */
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -50px -83px}
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
-.tooltip .tooltiptext {padding:5px 10px;width:200px;background-color:#3067cc;color:#fff;text-align:left;border-radius:6px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:12px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
-.tooltip .tooltiptext:after {content: '';position:absolute;top:100%;left:50%;margin-left:-2px;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
+.tooltip .tooltiptext, .tooltip .tooltiptext1 {padding:10px; background-color:#3067cc;color:#fff;text-align:left;border-radius:5px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:12px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
+.tooltip .tooltiptext:after, .tooltip .tooltiptext1:after {content:'';position:absolute;top:100%; left:48%; border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
 .tooltip .tooltiptext1 {visibility:hidden;}
-.tooltip .tooltiptext1 {padding:5px 10px;width:200px;background-color:#3067cc;color:#fff;text-align:left;border-radius:6px;-webkit-border-radius:6px;position:absolute;z-index:1;bottom:130%;left:20%; margin-left:-58px;font-size:12px; font-weight:200; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
-.tooltip .tooltiptext1:after {content: '';position:absolute;top:100%;left:50%;margin-left:-2px;border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
 .tooltip:hover .tooltiptext1 {visibility:visible}
 /* 이달의 카드사 혜택 팝업 */
 .paymt_card_benefit {padding:0 0 30px; margin:0 20px 50px 20px; display:block;/* height:calc(100vh - 60px)*/}
@@ -808,19 +546,19 @@ input[type=checkbox] {display:none}
 .popup-wrap .border_tab-cont > .paymt_wrap {display:none}
 .popup-wrap .border_tab-cont > .paymt_wrap.active {display:block}
 /* 공통 팝업 close btn */
-.popup_close-btn {position:fixed; left:50%; bottom:20px; width:40px; height:40px; background:url(../common/images/ico/popup_close-icon.png) center center/cover no-repeat;
+.popup_close-btn {position:fixed; left:50%; bottom:20px; width:40px; height:40px; background:url(../images/ico/popup_close-icon.png) center center/cover no-repeat;
   -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform:translateX(-50%); z-index:100}
 .popup-content .page-header .sz-wrap {padding:0 20px}
 .popup-content .page-title {font-size:18px;margin-left:0}
 .terms-popup {width:100vw; height:100vh; background-color:#fff}
 .terms-popup .terms-content {margin:0 auto; max-width:466px; padding:25px 20px 95px; height:calc(100vh - 50px); overflow:auto}
 .alert-popup {position:absolute; top:50%; width:calc(100% - 60px); padding:20px; margin:0 30px; color:#333; background-color:#fff; border-radius:6px; -webkit-box-shadow:0 15px 40px 0 rgba(0,0,0,.2); box-shadow:0 15px 40px 0 rgba(0,0,0,.2); -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); text-align: center}
-.alert-popup .popup_close-btn {position:absolute; top:20px; left:auto; right:20px; width:14px; height:14px; background: url(../../common/images/ico/close-icon.png) center center/cover no-repeat; -webkit-transform: none; -ms-transform:none; transform:none}
+.alert-popup .popup_close-btn {position:absolute; top:20px; left:auto; right:20px; width:14px; height:14px; background: url(../../images/ico/close-icon.png) center center/cover no-repeat; -webkit-transform: none; -ms-transform:none; transform:none}
 .alert-popup .ap-title {line-height:1; margin-top:20px; margin-bottom:10px; font-size:22px; font-weight:700}
 .alert-popup .ap-text {margin-bottom:34px; font-size:14px; font-weight:500}
 .alert-popup .black-border-btn {width:calc(50% - 3px); height:45px; margin-right:3px; border:1px solid #555; color:#555; font-size:14px; font-weight: 500}
 .alert-popup .black-btn {width:calc(50% - 3px);height:45px;margin-left:3px;border:1px solid #555;color:#fff;font-size:14px;font-weight:500}
-.member-wrap .sz-select_list .selected {padding: 13px 10px 14px;border:1px solid #e5e5e5;background: url(../../common/images/ico/acco_arrow-icon.png) 89% center/13px 7px no-repeat; font-size:16px;cursor:pointer}
+.member-wrap .sz-select_list .selected {padding: 13px 10px 14px;border:1px solid #e5e5e5;background: url(../../images/ico/acco_arrow-icon.png) 89% center/13px 7px no-repeat; font-size:16px;cursor:pointer}
 .member-wrap .sz-select_list .selected::after {content: ''; display:block}
 .member-wrap .sz-select_sub {border:1px solid #e5e5e5;border-top:none;background-color:#fff}
 .member-wrap .sz-select_sub li {padding:10px; font-size:16px}
@@ -833,7 +571,7 @@ input[type=checkbox] {display:none}
 .sz-select_sl {display:none}
 .sz-custom_check {display:none}
 /* 제품 상세 페이지 팝업 */
-.popup-content .rece_product-box .rp-cate {font-size:16px; color: #000}
+.popup-content .rece_product-box .rp-cate {font-size:16px; color:#000}
 .popup-content .rece_product-box .rp-name {font-size:16px}
 .popup-content .rece_product-box .rp-pay {font-size:20px}
 .popup-content .coupon-text {margin-bottom:5px}
@@ -848,26 +586,12 @@ input[type=checkbox] {display:none}
 .popup-content .double_btn-box button {height:60px; font-size:20px}
 .popup-content .text-input,
 .popup-content input[type=password].text-input,
-.popup-content input[type=text].text-input {padding: 0 20px}
+.popup-content input[type=text].text-input {padding:0 20px}
 .popup-content .rece-wrap .dot-list li {font-size:13px}
 .popup-wrap {display:none; position:fixed; top:0; left:0; width:100%; height:100vh; z-index:100; background-color:#fff;}
-.popup-layer {display:block; position:absolute; top:0; left:0;width:100%;
-  height: 100%;
-  background-color: rgba(0,0,0,.8)
-}
-
-#photoView {width:100%}
-#pop_card_benefit {}
-
-.input_checkbox label:before, .input_radio_check label:before {border-radius: 2px;}
-.input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {
-    background-color: #333;
-    color:#fff;
-    width:300px;
-    height:30px;
-}
-
-
+.popup-layer {display:block; position:absolute; top:0; left:0;width:100%; height:100%; background-color:rgba(0,0,0,.8)}
+.input_checkbox label:before, .input_radio_check label:before {border-radius:2px;}
+.input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {background-color: #333; color:#fff; width:300px; height:30px;}
 /*footter start*/
 #footer {padding: 20px; background-color: #f9f9f9;}
 #footer .footer_top {overflow: hidden}
@@ -882,9 +606,9 @@ input[type=checkbox] {display:none}
 #footer .info_txt{margin-top: 13px; margin-bottom: 26px; line-height: 20px; display: inline-block}
 #footer .info_txt span {font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .button_tip_toggle {display:block}
-#footer .button_tip_toggle span {font-size: 14px; color: #888; font-weight:500; display:inline-block;position: relative}
-#footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../common/images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
-#footer .button_tip_toggle.on span:after {background:url("../common/images/ico/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
+#footer .button_tip_toggle span {font-size:14px; color:#888; font-weight:500; display:inline-block;position:relative}
+#footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
+#footer .button_tip_toggle.on span:after {background:url("../images/ico/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
 #footer table {margin-top: 10px;}
 #footer table tr td {vertical-align: top}
 #footer table tr td:first-child {width: 115px; padding-right: 18px;}
@@ -917,7 +641,6 @@ input[type=checkbox] {display:none}
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 20%;}
 }
-
 @media screen and (min-width:720px) {
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 20%;}
@@ -926,7 +649,6 @@ input[type=checkbox] {display:none}
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 50%; transform: translatex(-50%)}
 }
-
 /* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
