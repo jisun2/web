@@ -529,7 +529,7 @@ input[type=checkbox] {display:none}
 .cart-top {padding:12px 17px; border-bottom:1px solid #e5e5e5}
 .cartWrap .cart-top::after {content: ''; display: block;clear:both}
 .cartWrap .pro_check {margin-right:10px}
-.cartWrap .pro_check .all {margin-left:10px; color:#000}
+.cartWrap .pro_check .all {margin:2px 0 0 10px; color:#000}
 .underline-btn-orange {float:left; display:block; height:24px; line-height:24px; color:#ff4e25; margin-left:6px; font-size:10px; text-decoration:underline; cursor:pointer}
 .cartWrap .cart_section {margin-top:8px;}
 .cartWrap .cart_section1 {margin-top:8px; padding:0 15px; background-color:#fff}
@@ -607,7 +607,7 @@ input[type=checkbox] {display:none}
 .cart_total_wrap tfoot tr {padding:20px 0}
 .cart_total_wrap tfoot td:first-child {text-align:left; color:#000; font-size:15px; font-weight:500}
 .cart_total_wrap tfoot td:last-child {text-align:right}
-.cart_total_wrap tfoot td .ctt-pay {margin-top:20px; display:block; color:#ff4e25; font-size:17px; font-weight:500}
+.cart_total_wrap tfoot td .ctt-pay {margin-top:17px; display:block; color:#ff4e25; font-size:17px; font-weight:500}
 .cart_total_wrap tfoot td .ctt-pay .ctt-pay-num {font-size:20px; font-weight:700}
 .cart_total_wrap tfoot td .ctt-bonus {display:block; margin-bottom:15px; color:#888; font-size:12px; font-weight:500}
 .cart_total_wrap tfoot td .ctt-bonus .ctt-bonus-num {font-size:12px;}
