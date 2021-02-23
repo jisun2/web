@@ -430,7 +430,7 @@ input[type=checkbox] {display:none}
 .ico {display:inline-block; background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px}
 .ico.Warning {margin-top:2px; float:left; width:17px; height:16px; background-position:-227px -27px}
 .ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
-.ico.delete {width:14px; height:14px; background-position:-287px -27px; background-repeat: no-repeat}
+.ico.delete {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color:#111}
 .btn_bk .dark {display:block; padding:17px 0}
