@@ -549,7 +549,7 @@ input[type=checkbox] {display:none}
 .cart_info .just_left img {width:100%; height:100%}
 .cart_info .soldout::before {content:'SOLD OUT';overflow:hidden; display:block; padding:18.5px 0; position:absolute; top:0px; left:0; line-height:1;background-color: rgba(0,0,0,.6); color: #fff; font-size:18px; font-weight:600; text-align:center; font-family:'ProximaNova';}
 .cart_brd { line-height:1.33; display:-webkit-box; height: auto; max-height:30px; margin-bottom:6px; line-height: 1.3; color: #555; font-size:12px; font-weight:500; font-stretch:normal; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;}
-.cart-sub a {display:-webkit-box; height:auto; max-height:30px; margin-bottom:8px; line-height:1.3; color:#555; font-size:12px; word-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden}
+.cart-sub {display:-webkit-box; height:auto; max-height:30px; margin-bottom:8px; line-height:1.3; color:#555; font-size:12px; word-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden}
 .cart-price {margin-top:-3px; display:block; color:#000; font-size:12px}
 .cart-price .flex-text {font-size:16px; font-weight:700}
 .cart-price .flex-text .num {font-size:18px}
