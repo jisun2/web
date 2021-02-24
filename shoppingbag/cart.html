@@ -37,7 +37,7 @@
                             <div class="just_left">
                                 <div class="input_checkbox_b">
                                     <input type="checkbox" name="checkAll" id="checkAll" data-type="checkAll" class="flt_le sz-custom_check">
-                                    <label for="checkAll" class="flt_le sz-custom_label"><span class="all flt_le">전체선택 (<span class="num">10</span>)</span></label>
+                                    <label for="checkAll" class="flt_le sz-custom_label"><b class="all flt_le">전체선택 (<span class="num">10</span>)</b></label>
                                 </div>
                             </div>
                             <div class="top_del just_right">
@@ -346,37 +346,26 @@
                             </div>
                         </div>
                         <div class="cart_total_wrap">
-                            <table>
-                                <caption class="blind">장바구니 총 예상 결제 금액</caption>
-                                <thead>
-                                    <colgroup>
-                                        <col style ="width:45%" />
-                                    </colgroup>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>총 상품 금액 (<span class="num">4</span>)</td>
-                                        <td><span class="num">10,533,200</span>원</td>
-                                    </tr>
-                                    <tr>
-                                        <td>총 할인 금액</td>
-                                        <td><span class="num">- 208,000</span>원</td>
-                                    </tr>
-                                    <tr>
-                                        <td>총 배송비</td>
-                                        <td> <span class="num">+ 5,000</span>원</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td>예상 결제 금액</td>
-                                        <td>
-                                            <span class="ctt-pay"><b class="ctt-pay-num">10,330,200</b>원</span>
-                                            <span class="ctt-bonus">예상 적립금 <span class="ctt-bonus-num">10,330,200M</span></span>
-                                        </td>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                            <h3 class="blind">총 주문 금액 정보</h3>
+                            <dl>
+                                <dt>총 상품 금액 (<span class="num">4</span>)</dt>
+                                <dd><span class="num">10,533,200</span>원</dd>
+                            </dl>
+                            <dl>
+                                <dt>총 할인 금액</dt>
+                                <dd><span class="num">- 208,000</span>원</dd>
+                            </dl>
+                            <dl>
+                                <dt>총 배송비</dt>
+                                <dd><span class="num">+ 5,000</span>원</dd>
+                            </dl>
+                            <dl class="last">
+                                <dt>예상 결제 금액</dt>
+                                <dd>
+                                    <span class="ctt-pay"><b class="ctt-pay-num">10,330,200</b>원</span>
+                                    <span class="ctt-bonus">예상 적립금 <span class="ctt-bonus-num">10,330,200M</span></span>
+                                </dd>
+                            </dl>
                             <button type="submit" class="black-btn pc-only">구매하기</button>
                         </div>
 
