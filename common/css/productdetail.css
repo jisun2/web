@@ -5,7 +5,6 @@ input[type=checkbox] {display:none}
 #pop_card_benefit {overflow-y:scroll}
 #tab_btn {min-width:320px; height:auto; width:100%;}
 #container_select {width:100%}
-
 .sticky {z-index:1; position:sticky; top:0}
 .top_del .fs_close {padding: 5px 0 6px 15px; background-color:transparent; color:#fff; font-size:16px; font-weight:500}
 
@@ -357,9 +356,7 @@ input[type=checkbox] {display:none}
 .nav_fixed_wrap .just_right.pfb_pay {float:right;}
 .normal-title {margin-bottom:20px}
 .normal-title .just_left {color:#fff; font-size:12px}
-
-
-.sz-select_list li {border-top:none} */
+.sz-select_list li {border-top:none}
 .sz-select_list .selected.brdT {border-top:1px solid #e5e5e5;}
 .sz-select_sub {z-index:1; overflow-x:hidden; display:none; position:absolute; width:100%}
 .sz-select_sub li {cursor:pointer;width:100%; overflow:hidden;}
@@ -598,7 +595,6 @@ input[type=checkbox] {display:none}
 .cart_total_wrap {margin-top:8px; padding:25px 15px 110px 15px; background-color:#fff}
 .cart_total_wrap .pc-only {display: none}
 .cart_total_wrap table {width:100%}
-.cart_total_wrap tbody td {}
 .cart_total_wrap tbody td:first-child {width:30%; color:#888; font-size:13px}
 .cart_total_wrap tbody td:last-child {width:70%; color:#000; font-size:16px; font-weight:normal; text-align:right}
 .cart_total_wrap tbody td:last-child span {font-size:16px}
@@ -632,7 +628,6 @@ input[type=text].text-input.phone-last {width:70%}
 @media screen and (max-width:480px) {
     .nav_fixed_wrap.cart .prod_total {font-size:16px;}
 }
-
 /* 미디어 쿼리 */
 @media screen and (min-width:600px) {
     .cart_option_none {width:91%;}
@@ -645,3 +640,4 @@ input[type=text].text-input.phone-last {width:70%}
     /* .cart_fc-box {width:15%} */
     /* .cart_option_cor.active {display:block; min-width:550px; margin-left:-552%} */
 }
+/* --------------------------------------------------------------------- 결재  S ------------------------------------------------------------------ */
