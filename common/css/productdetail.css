@@ -12,12 +12,11 @@ input[type=checkbox] {display:none}
 .pf-btn.gray-btn {background-color:#5d5e6a}
 .btn_bk {margin:25px 0 40px 0; font-size:17px; font-weight:500; border-radius:3px}
 /* 결제 체크 박스 */
-.sz-custom_label {display:inline-block; width:24px !important; height:24px !important; background: url(../images/ico/check_off.png) center center/cover no-repeat;cursor:pointer}
+.sz-custom_label {display:inline-block; width:24px; height:24px; background: url(../images/ico/check_off.png) center center/cover no-repeat;cursor:pointer}
 .sz-custom_check:checked ~ .sz-custom_label {background:url(../images/ico/check_on.png) center center/cover no-repeat}
 .product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
-/* .cartWrap .sz-custom_label {width:22px; height:22px;} */
-.cartWrap .all.flt_le {width:100px;}
-/* .cartWrap .sz-custom_label {display:inline-block; width:24px; height:24px; background: url(../images/ico/check_off.png) center center/cover no-repeat;cursor:pointer} */
+.cartWrap .sz-custom_label {width:22px; height:22px;}
+.cartWrap .all.flt_le {margin-top:1px; width:100px;}
 .sz-custom_text {cursor: pointer}
 /* 별점평  */
 .star_rating_s .star_wrap .star.on, .star_rating_s .star_wrap .star.off, .star_rating_s .star_wrap .star.half
@@ -526,8 +525,8 @@ input[type=checkbox] {display:none}
 .cartWrap .cart_option_cor.active {display:block; width:200%; margin-left:-120%}
 .cartWrap .just_left.black-border-btn.pop_close {background-color: #fff;}
 .cartWrap .cart_inner {border-top:1px solid #f0f0f0}
-.cart-top {padding:12px 17px; border-bottom:1px solid #e5e5e5}
-.cartWrap .cart-top::after {content: ''; display: block;clear:both}
+.cartWrap .cart_top {padding:12px 17px; border-bottom:1px solid #e5e5e5}
+.cartWrap .cart_top::after {content: ''; display: block;clear:both}
 .cartWrap .pro_check {margin-right:10px}
 .cartWrap .pro_check .all {margin:2px 0 0 10px; color:#000}
 .underline-btn-orange {float:left; display:block; height:24px; line-height:24px; color:#ff4e25; margin-left:6px; font-size:10px; text-decoration:underline; cursor:pointer}
@@ -570,7 +569,7 @@ input[type=checkbox] {display:none}
 .nav_fixed_wrap.cart {padding:12px 15px; background-color:#000}
 .nav_fixed_wrap.cart .just_left {width:40%}
 .nav_fixed_wrap.cart .just_right {width:60%}
-.nav_fixed_wrap.cart .pd_btn_box {padding:0; margin-left:3%; width:80%}
+.nav_fixed_wrap.cart .pd_btn_box {padding:0; margin-left:3%; width:85%}
 .nav_fixed_wrap.cart .pd_btn_box button {float:left; width:100%}
 .nav_fixed_wrap.cart .prod_num {display:block; color:#fff; font-size:14px}
 .nav_fixed_wrap.cart .prod_num .num {font-size:16px}
@@ -598,20 +597,19 @@ input[type=checkbox] {display:none}
 .top_del .plf-text-btn:first-child::after {content: '';display: inline-block;width: 1px; height: 13px; margin: 0 4px 0 10px; background-color: #e5e5e5; vertical-align: -2px}
 .cart_total_wrap {margin-top:8px; padding:25px 15px 110px 15px; background-color:#fff}
 .cart_total_wrap .pc-only {display: none}
-.cart_total_wrap table {width:100%}
-.cart_total_wrap tbody td:first-child {width:30%; color:#888; font-size:13px}
-.cart_total_wrap tbody td:last-child {width:70%; color:#000; font-size:16px; font-weight:normal; text-align:right}
-.cart_total_wrap tbody td:last-child span {font-size:16px}
-.cart_total_wrap tbody td {padding-bottom:4px; font-size:13px; color:#888}
-.cart_total_wrap tbody tr:last-child td {padding-bottom:18px; border-bottom:1px solid #f0f0f0}
+.cart_total_wrap dl {width:100%}
+.cart_total_wrap dl.last {margin-top:24px; padding-top:20px; border-top:1px solid #e5e5e5}
+.cart_total_wrap dl.last dt {font-size:15px; font-weight:500; color:#000}
+.cart_total_wrap dt:first-child {float:left; width:32%; color:#888; font-size:13px}
+.cart_total_wrap tbody dt {padding-bottom:4px; font-size:13px; color:#888}
 .cart_total_wrap tfoot tr {padding:20px 0}
-.cart_total_wrap tfoot td:first-child {text-align:left; color:#000; font-size:15px; font-weight:500}
-.cart_total_wrap tfoot td:last-child {text-align:right}
-.cart_total_wrap tfoot td .ctt-pay {margin-top:17px; display:block; color:#ff4e25; font-size:17px; font-weight:500}
-.cart_total_wrap tfoot td .ctt-pay .ctt-pay-num {font-size:20px; font-weight:700}
-.cart_total_wrap tfoot td .ctt-bonus {display:block; margin-bottom:15px; color:#888; font-size:12px; font-weight:500}
-.cart_total_wrap tfoot td .ctt-bonus .ctt-bonus-num {font-size:12px;}
-.cart_total_wrap tfoot td .ctt-info {color:#ababab; font-size:11px}
+.cart_total_wrap dd {text-align:right; font-size:16px; color:#000}
+.cart_total_wrap dd:first-child {text-align:left; color:#000; font-size:15px; font-weight:500}
+.cart_total_wrap dd .ctt-pay {display:block; color:#ff4e25; font-size:17px; font-weight:500}
+.cart_total_wrap dd .ctt-pay .ctt-pay-num {font-size:20px; font-weight:700}
+.cart_total_wrap dd .ctt-bonus {display:block; margin-bottom:15px; color:#888; font-size:12px; font-weight:500}
+.cart_total_wrap dd .ctt-bonus .ctt-bonus-num {font-size:12px;}
+.cart_total_wrap dd .ctt-info {color:#ababab; font-size:11px}
 .just_left.black-border-btn.pop_close {background-color: #fff;}
 
 input[type=text].text-input.phone-last {width:70%}
@@ -630,7 +628,7 @@ input[type=text].text-input.phone-last {width:70%}
 .cnw-text {font-size:22px; color:#555}
 
 @media screen and (max-width:480px) {
-    .nav_fixed_wrap.cart .prod_total {font-size:16px;}
+    .nav_fixed_wrap.cart .prod_total {font-size:15px}
 }
 /* 미디어 쿼리 */
 @media screen and (min-width:600px) {
