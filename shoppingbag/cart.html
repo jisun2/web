@@ -35,11 +35,9 @@
                     <div class="cartWrap">
                         <div class="cart_top justify_box">
                             <div class="just_left">
-                                <div class="pro_check">
+                                <div class="input_checkbox_b">
                                     <input type="checkbox" name="checkAll" id="checkAll" data-type="checkAll" class="flt_le sz-custom_check">
-                                    <!-- <span class="input_checkbox"><input type="checkbox" name="checkAll" id="checkAll" data-type="checkAll"><label for="checkAll" class="tc_3 spr_after">전체선택</label></span> -->
-                                    <label for="checkAll" class="flt_le sz-custom_label"></label>
-                                    <b class="all flt_le">전체선택 (<span class="num">10</span>)</b>
+                                    <label for="checkAll" class="flt_le sz-custom_label"><span class="all flt_le">전체선택 (<span class="num">10</span>)</span></label>
                                 </div>
                             </div>
                             <div class="top_del just_right">
@@ -304,7 +302,7 @@
                                 </div>
                             </div>
                             <div class="cart_section_total">
-                                상품 <span class="num">87,500</span>원 + 배송비<span class="num">2,500</span>원<strong><span class="num"> = 89,500</span>원</strong>
+                                상품 <span class="num">87,500</span>원 + 배송비<span class="num">2,500</span>원<strong class="num">= 89,500</strong>원
                             </div>
                             <div class="cart_section clear">
                                 <div class="cart_box">
@@ -351,6 +349,11 @@
                         <div class="cart_total_wrap">
                             <table>
                                 <caption class="blind">장바구니 총 예상 결제 금액</caption>
+                                <thead>
+                                    <colgroup>
+                                        <col style ="width:45%" />
+                                    </colgroup>
+                                </thead>
                                 <tbody>
                                     <tr>
                                         <td>총 상품 금액 (<span class="num">4</span>)</td>
