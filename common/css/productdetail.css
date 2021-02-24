@@ -15,6 +15,9 @@ input[type=checkbox] {display:none}
 .sz-custom_label {display:inline-block; width:24px; height:24px; background: url(../images/ico/check_off.png) center center/cover no-repeat;cursor:pointer}
 .sz-custom_check:checked ~ .sz-custom_label {background:url(../images/ico/check_on.png) center center/cover no-repeat}
 .product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
+.cartWrap .sz-custom_label {width:22px; height:22px;}
+.cartWrap .all.flt_le {width:100px;}
+/* .cartWrap .sz-custom_label {display:inline-block; width:24px; height:24px; background: url(../images/ico/check_off.png) center center/cover no-repeat;cursor:pointer} */
 .sz-custom_text {cursor: pointer}
 /* 별점평  */
 .star_rating_s .star_wrap .star.on, .star_rating_s .star_wrap .star.off, .star_rating_s .star_wrap .star.half
@@ -534,6 +537,8 @@ input[type=checkbox] {display:none}
 .cartWrap .cart_box1 {padding:25px 0px; min-width:270px; background-color:#fff; border-bottom:1px solid #e5e5e5}
 .cartWrap .cart_box .input_checkbox {float:left; min-height:72px; width:27px}
 .cartWrap .cart_box .input_checkbox label {padding:0; width:22px; height:22px}
+.cartWrap .cart_box .input_checkbox_b {float:left; min-height:72px; width:27px}
+.cartWrap .cart_box .input_checkbox_b label {padding:0; width:22px; height:22px}
 .cartWrap .cart_box .close-btn {width: 13px; height: 13px; margin-top: 4px; border: none;background: url(../../../common/images/ico/close-icon.png) center center/cover no-repeat}
 /* .cart_box .just_left {width:90%} */
 /* 쇼핑백 */
@@ -543,7 +548,6 @@ input[type=checkbox] {display:none}
 .cart_brd-check .sz-custom_text {float: left;max-width: 53%; height: 24px; height: 20px; line-height: 20px; margin-left: 14px; font-size: 17px; line-height: 24px; color: #000; font-weight: 700; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap} */
 .plc_fc-filter {margin-top:-2px}
 .plc_fc-box .sz-custom_text { color: #333; margin-left: 2px; margin-right: 12px; vertical-align: 4px}
-.cart_info .input_checkbox input[type=checkbox]:checked +label {}
 .cart_info .cart_de {float:right; width:calc(100% - 119px)}
 .cart_info .just_left {position:relative; float:left; width:72px; height:72px;overflow:hidden;}
 .cart_info .just_left img {width:100%; height:100%}
