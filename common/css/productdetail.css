@@ -350,7 +350,7 @@ input[type=checkbox] {display:none}
 .rp_pro .rp_bar::after {right: 0}
 .rp_pro_text {display: block; line-height: 1; margin-top: 13px; font-size: 11px; text-align: center}
 /* 상품 상세 셀렉박스 / 재입고 알림 신청 */
-.nav_fixed_wrap.wd720 {width:720px; border-top:1px solid #e5e5e5}
+.nav_fixed_wrap.wd720 {width:720px;}
 .nav_fixed_wrap.wd720 form {min-width:320px; max-width:720px; margin:0 auto;}
 .nav_fixed_wrap .just_left {float:left}
 .nav_fixed_wrap .just_right {float:right}
@@ -514,7 +514,7 @@ input[type=checkbox] {display:none}
 }
 /* --------------------------------------------------------------------- 쇼핑백/카트  S ------------------------------------------------------------------ */
 
-.cartWrap {background-color:#e5e5e5}
+.cartWrap {background-color:#f0f0f0}
 .cartWrap .justify_box::after {content: ''; display:block; clear:both}
 .cartWrap .justify_box .just_right {float:right}
 .cartWrap .cart_txt {min-width:170px}
@@ -524,7 +524,7 @@ input[type=checkbox] {display:none}
 .cartWrap .cart_top {padding:11px 15px; background-color:#fff}
 .cartWrap .cart_option_cor.active {display:block; width:200%; margin-left:-120%}
 .cartWrap .just_left.black-border-btn.pop_close {background-color: #fff;}
-.cartWrap .cart_inner {border-top:1px solid #f0f0f0}
+.cartWrap .cart_inner {}
 .cartWrap .cart_top {padding:12px 17px; border-bottom:1px solid #e5e5e5}
 .cartWrap .cart_top::after {content: ''; display: block;clear:both}
 .cartWrap .pro_check {margin-right:10px}
@@ -532,8 +532,8 @@ input[type=checkbox] {display:none}
 .underline-btn-orange {float:left; display:block; height:24px; line-height:24px; color:#ff4e25; margin-left:6px; font-size:10px; text-decoration:underline; cursor:pointer}
 .cartWrap .cart_section {margin-top:8px;}
 .cartWrap .cart_section1 {margin-top:8px; padding:0 15px; background-color:#fff}
-.cartWrap .cart_box {padding:25px 15px; min-width:270px; background-color:#fff; border-bottom:1px solid #e5e5e5}
-.cartWrap .cart_box1 {padding:25px 0px; min-width:270px; background-color:#fff; border-bottom:1px solid #e5e5e5}
+.cartWrap .cart_box {padding:25px 15px; min-width:270px; background-color:#fff; border-bottom:1px solid #d0d0d0}
+.cartWrap .cart_box1 {padding:25px 0px; min-width:270px; background-color:#fff; border-bottom:1px solid #d0d0d0}
 .cartWrap .cart_box .input_checkbox {float:left; min-height:72px; width:27px}
 .cartWrap .cart_box .input_checkbox label {padding:0; width:22px; height:22px}
 .cartWrap .cart_box .input_checkbox_b {float:left; min-height:72px; width:27px}
@@ -571,13 +571,13 @@ input[type=checkbox] {display:none}
 .nav_fixed_wrap.cart .just_right {width:60%}
 .nav_fixed_wrap.cart .pd_btn_box {padding:0; margin-left:3%; width:85%}
 .nav_fixed_wrap.cart .pd_btn_box button {float:left; width:100%}
-.nav_fixed_wrap.cart .prod_num {display:block; color:#fff; font-size:14px}
+.nav_fixed_wrap.cart .prod_num {font-size:15px; display:block; color:#fff}
 .nav_fixed_wrap.cart .prod_num .num {font-size:16px}
 .nav_fixed_wrap.cart .prod_total {display:inline-block; width:100%; color:#ff4e25; font-size:22px; font-weight: normal;}
 .nav_fixed_wrap.cart .prod_total .num {font-size:18px}
 .nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:18px; font-weight:600}
 .nav_fixed_wrap.cart .orange-btn { width:100%; height:45px; font-size:16px; font-weight:500}
-.cart_section_total {padding:20px 15px; text-align:right; font-size:13px; color:#000; border-bottom:1px solid #d0d0d0; background-color:#fff}
+.cart_section_total {padding:15px; text-align:right; font-size:13px; color:#000; border-bottom:1px solid #d0d0d0; background-color:#fff}
 .cart_section_total .num {font-size:12px}
 .cart_section_total strong {font-weight:bold}
 .cart_none-wrap {background-color: #f0f0f0; min-height: calc(100vh - 67px)}
