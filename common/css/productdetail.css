@@ -566,13 +566,13 @@ input[type=checkbox] {display:none}
 .cart_option_none .option_txt, .cart_option .option_txt {overflow:hidden; display:-webkit-box; height:auto; max-height:36px; word-break: break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;}
 .nav_fixed_wrap.cart.wd720 {max-width:690px}
 .nav_fixed_wrap.cart {padding:12px 15px; background-color:#000}
-.nav_fixed_wrap.cart .just_left {width:40%}
-.nav_fixed_wrap.cart .just_right {width:60%}
+.nav_fixed_wrap.cart .just_left {width:41%}
+.nav_fixed_wrap.cart .just_right {width:59%}
 .nav_fixed_wrap.cart .pd_btn_box {padding:0; margin-left:3%; width:85%}
 .nav_fixed_wrap.cart .pd_btn_box button {float:left; width:100%}
 .nav_fixed_wrap.cart .prod_num {font-size:15px; display:block; color:#fff}
 .nav_fixed_wrap.cart .prod_num .num {font-size:16px}
-.nav_fixed_wrap.cart .prod_total {display:inline-block; width:100%; color:#ff4e25; font-size:20px; font-weight:normal}
+.nav_fixed_wrap.cart .prod_total {display:inline-block; width:100%; color:#ff4e25; font-size:19px; font-weight:normal}
 .nav_fixed_wrap.cart .prod_total .num {font-size:19px}
 .nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:20px; font-weight:600}
 .nav_fixed_wrap.cart .orange-btn { width:100%; height:45px; font-size:16px; font-weight:500}
