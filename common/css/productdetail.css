@@ -572,7 +572,7 @@ input[type=checkbox] {display:none}
 .nav_fixed_wrap.cart .pd_btn_box button {float:left; width:100%}
 .nav_fixed_wrap.cart .prod_num {font-size:15px; display:block; color:#fff}
 .nav_fixed_wrap.cart .prod_num .num {font-size:16px}
-.nav_fixed_wrap.cart .prod_total {display:inline-block; width:100%; color:#ff4e25; font-size:20px; font-weight: normal}
+.nav_fixed_wrap.cart .prod_total {display:inline-block; width:100%; color:#ff4e25; font-size:20px; font-weight:normal}
 .nav_fixed_wrap.cart .prod_total .num {font-size:19px}
 .nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:20px; font-weight:600}
 .nav_fixed_wrap.cart .orange-btn { width:100%; height:45px; font-size:16px; font-weight:500}
@@ -593,9 +593,9 @@ input[type=checkbox] {display:none}
 .nav_fixed_wrap.cart .orange-btn { width: 100%; height: 45px; font-size: 16px; font-weight: 500} */
 .top_del {font-size:13px; color:#888;}
 .top_del .plf-text-btn {height:24px; line-height:24px; color:#888; font-size:13px; background-color:#fff}
-.top_del .plf-text-btn:first-child::after {content: '';display: inline-block;width: 1px; height: 13px; margin: 0 4px 0 10px; background-color: #e5e5e5; vertical-align: -2px}
+.top_del .plf-text-btn:first-child::after {content: '';display:inline-block;width: 1px; height:13px; margin:0 4px 0 10px; background-color: #e5e5e5; vertical-align: -2px}
 .cart_total_wrap {margin-top:8px; padding:25px 15px 110px 15px; background-color:#fff}
-.cart_total_wrap .pc-only {display: none}
+.cart_total_wrap .pc-only {display:none}
 .cart_total_wrap dl {width:100%}
 .cart_total_wrap dl.last {margin-top:24px; padding-top:20px; border-top:1px solid #e5e5e5}
 .cart_total_wrap dl.last dt {font-size:15px; font-weight:500; color:#000}
@@ -610,7 +610,6 @@ input[type=checkbox] {display:none}
 .cart_total_wrap dd .ctt-bonus .ctt-bonus-num {font-size:12px;}
 .cart_total_wrap dd .ctt-info {color:#ababab; font-size:11px}
 .just_left.black-border-btn.pop_close {background-color: #fff;}
-
 input[type=text].text-input.phone-last {width:70%}
 .cart_aera .product-select .sz-select_sub li {font-size:11px}
 .cart_aera .product-select .sz-select_sub .just_left {margin-top:3px}
@@ -628,6 +627,9 @@ input[type=text].text-input.phone-last {width:70%}
 
 
 /* 미디어 쿼리 */
+@media screen and (max-width:350px) {
+    .nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:16px}
+}
 @media screen and (min-width:600px) {
     .cart_option_none {width:91%;}
     .cart_option_none .just_left {width:100%;}
