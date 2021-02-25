@@ -269,12 +269,12 @@ input[type=checkbox] {display:none}
 }
 /* bic check box */
 .input_checkbox_b label {
-    width:100px;
     display: inline-block; padding-left:30px;
     background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px;
     background-position:-278px -106px; background-repeat: no-repeat;}
 .input_checkbox_b input:checked+label:after {opacity:1;}
 .input_checkbox_b input[type=checkbox]:checked +label {
+    width:100px;
     padding-left:30px;
     background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px;
     background-position:-278px -139px; background-repeat: no-repeat;

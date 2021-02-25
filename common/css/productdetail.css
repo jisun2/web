@@ -16,6 +16,7 @@ input[type=checkbox] {display:none}
 .sz-custom_check:checked ~ .sz-custom_label {background:url(../images/ico/check_on.png) center center/cover no-repeat}
 .product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
 .cartWrap .sz-custom_label {width:22px; height:22px;}
+.cartWrap .sz-custom_label.de {width:100px; height:24px}
 .cartWrap .all.flt_le {margin-top:1px; width:100px; font-weight:500; color:#000}
 .sz-custom_text {cursor: pointer}
 /* 별점평  */
