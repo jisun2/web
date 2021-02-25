@@ -521,11 +521,9 @@ input[type=checkbox] {display:none}
 .cartWrap .cart_txt del {font-size:12px; color:#ababab}
 .cartWrap .delBtn {float:right; padding:20px; position:relative}
 .cartWrap .delBtn .btn_pos {position:absolute; top:0px; right:0px;}
-.cartWrap .cart_top {padding:11px 15px; background-color:#fff}
 .cartWrap .cart_option_cor.active {display:block; width:200%; margin-left:-120%}
-.cartWrap .just_left.black-border-btn.pop_close {background-color: #fff;}
-.cartWrap .cart_inner {}
-.cartWrap .cart_top {padding:12px 17px; border-bottom:1px solid #e5e5e5}
+.cartWrap .just_left.black-border-btn.pop_close {background-color:#fff}
+.cartWrap .cart_top {padding:12px 17px; background-color:#fff; border-bottom:1px solid #d0d0d0}
 .cartWrap .cart_top::after {content: ''; display: block;clear:both}
 .cartWrap .pro_check {margin-right:10px}
 .cartWrap .pro_check .all {margin:2px 0 0 10px; color:#000}
@@ -573,9 +571,9 @@ input[type=checkbox] {display:none}
 .nav_fixed_wrap.cart .pd_btn_box button {float:left; width:100%}
 .nav_fixed_wrap.cart .prod_num {font-size:15px; display:block; color:#fff}
 .nav_fixed_wrap.cart .prod_num .num {font-size:16px}
-.nav_fixed_wrap.cart .prod_total {display:inline-block; width:100%; color:#ff4e25; font-size:22px; font-weight: normal;}
-.nav_fixed_wrap.cart .prod_total .num {font-size:18px}
-.nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:18px; font-weight:600}
+.nav_fixed_wrap.cart .prod_total {display:inline-block; width:100%; color:#ff4e25; font-size:20px; font-weight: normal}
+.nav_fixed_wrap.cart .prod_total .num {font-size:19px}
+.nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:20px; font-weight:600}
 .nav_fixed_wrap.cart .orange-btn { width:100%; height:45px; font-size:16px; font-weight:500}
 .cart_section_total {padding:15px; text-align:right; font-size:13px; color:#000; border-bottom:1px solid #d0d0d0; background-color:#fff}
 .cart_section_total .num {font-size:12px}
@@ -605,7 +603,7 @@ input[type=checkbox] {display:none}
 .cart_total_wrap tfoot tr {padding:20px 0}
 .cart_total_wrap dd {text-align:right; font-size:16px; color:#000}
 .cart_total_wrap dd:first-child {text-align:left; color:#000; font-size:15px; font-weight:500}
-.cart_total_wrap dd .ctt-pay {display:block; color:#ff4e25; font-size:17px; font-weight:500}
+.cart_total_wrap dd .ctt-pay {display:block; color:#ff4e25; font-size:19px; font-weight:500}
 .cart_total_wrap dd .ctt-pay .ctt-pay-num {font-size:20px; font-weight:700}
 .cart_total_wrap dd .ctt-bonus {display:block; margin-bottom:15px; color:#888; font-size:12px; font-weight:500}
 .cart_total_wrap dd .ctt-bonus .ctt-bonus-num {font-size:12px;}
@@ -627,9 +625,7 @@ input[type=text].text-input.phone-last {width:70%}
 .member-wrap .sz-select_sub {border:1px solid #000; border-top:none}
 .cnw-text {font-size:22px; color:#555}
 
-@media screen and (max-width:480px) {
-    .nav_fixed_wrap.cart .prod_total {font-size:15px}
-}
+
 /* 미디어 쿼리 */
 @media screen and (min-width:600px) {
     .cart_option_none {width:91%;}
