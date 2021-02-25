@@ -600,7 +600,8 @@ input[type=checkbox] {display:none}
 .top_del .plf-text-btn:first-child::after {content: '';display:inline-block;width: 1px; height:13px; margin:0 4px 0 10px; background-color: #e5e5e5; vertical-align: -2px}
 .cart_total_wrap {margin-top:8px; padding:25px 15px 110px 15px; background-color:#fff}
 .cart_total_wrap .pc-only {display:none}
-.cart_total_wrap dl {width:100%}
+.cart_total_wrap dl {width:100%; margin-bottom:4px}
+.cart_total_wrap dl.mgbt0 {margin-bottom:0}
 .cart_total_wrap dl.last {margin-top:24px; padding-top:20px; border-top:1px solid #f0f0f0}
 .cart_total_wrap dl.last dt {font-size:15px; font-weight:500; color:#000}
 .cart_total_wrap dt:first-child {float:left; width:32%; color:#888; font-size:13px}
