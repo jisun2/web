@@ -521,7 +521,7 @@ input[type=checkbox] {display:none}
 .cartWrap .cart_txt {min-width:170px}
 .cartWrap .cart_txt del {font-size:12px; color:#ababab}
 .cartWrap .delBtn {float:right; padding:20px; position:relative}
-.cartWrap .delBtn .btn_pos {position:absolute; top:0px; right:0px;}
+.cartWrap .delBtn .btn_pos {position:absolute; top:0px; right:0px; margin:0; padding:0; width:14px; height:12px}
 .cartWrap .cart_option_cor.active {display:block; width:200%; margin-left:-120%}
 .cartWrap .just_left.black-border-btn.pop_close {background-color:#fff}
 .cartWrap .cart_top {padding:12px 17px; background-color:#fff; border-bottom:1px solid #d0d0d0}
@@ -530,10 +530,12 @@ input[type=checkbox] {display:none}
 .cartWrap .pro_check .all {margin:2px 0 0 10px; color:#000}
 .underline-btn-orange {float:left; display:block; height:24px; line-height:24px; color:#ff4e25; margin-left:6px; font-size:10px; text-decoration:underline; cursor:pointer}
 .cartWrap .cart_section {margin-top:8px;}
+.cartWrap .cart_section.soldout .cart_box {border-bottom:1px solid #d0d0d0}
 .cartWrap .cart_section1 {margin-top:8px; padding:0 15px; background-color:#fff}
-.cartWrap .cart_box {padding:25px 15px; min-width:270px; background-color:#fff; border-bottom:1px solid #d0d0d0}
+.cartWrap .cart_box {padding:25px 15px; min-width:270px; background-color:#fff; border-bottom:1px solid #e5e5e5}
 .cartWrap .cart_box .justify_box {overflow:hidden}
-.cartWrap .cart_box1 {padding:25px 0px; min-width:270px; background-color:#fff; border-bottom:1px solid #e5e5e5}
+.cartWrap .cart_box1 {padding:25px 0px; min-width:270px; background-color:#fff; border-bottom:1px solid #f0f0f0}
+.cartWrap .cart_box1.last {border:0}
 .cartWrap .cart_box .input_checkbox {float:left; min-height:72px; width:27px}
 .cartWrap .cart_box .input_checkbox label {padding:0; width:22px; height:22px}
 .cartWrap .cart_box .input_checkbox_b {float:left; min-height:72px; width:27px}
@@ -578,6 +580,7 @@ input[type=checkbox] {display:none}
 .nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:20px; font-weight:600}
 .nav_fixed_wrap.cart .orange-btn { width:100%; height:45px; font-size:16px; font-weight:500}
 .cart_section_total {padding:15px; text-align:right; font-size:13px; color:#000; border-bottom:1px solid #d0d0d0; background-color:#fff}
+.cart_section_total.brdT {border-top:1px solid #e5e5e5}
 .cart_section_total .num {font-size:12px}
 .cart_section_total strong {font-weight:bold}
 .cart_none-wrap {background-color: #f0f0f0; min-height: calc(100vh - 67px)}
@@ -598,7 +601,7 @@ input[type=checkbox] {display:none}
 .cart_total_wrap {margin-top:8px; padding:25px 15px 110px 15px; background-color:#fff}
 .cart_total_wrap .pc-only {display:none}
 .cart_total_wrap dl {width:100%}
-.cart_total_wrap dl.last {margin-top:24px; padding-top:20px; border-top:1px solid #e5e5e5}
+.cart_total_wrap dl.last {margin-top:24px; padding-top:20px; border-top:1px solid #f0f0f0}
 .cart_total_wrap dl.last dt {font-size:15px; font-weight:500; color:#000}
 .cart_total_wrap dt:first-child {float:left; width:32%; color:#888; font-size:13px}
 .cart_total_wrap tbody dt {padding-bottom:4px; font-size:13px; color:#888}
