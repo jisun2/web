@@ -604,7 +604,7 @@ input[type=checkbox] {display:none}
 .cart_total_wrap tfoot tr {padding:20px 0}
 .cart_total_wrap dd {text-align:right; font-size:16px; color:#000}
 .cart_total_wrap dd:first-child {text-align:left; color:#000; font-size:15px; font-weight:500}
-.cart_total_wrap dd .ctt-pay {display:block; color:#ff4e25; font-size:19px; font-weight:500}
+.cart_total_wrap dd .ctt-pay {vertical-align:middle; line-height:1.3; display:block; color:#ff4e25; font-size:19px; font-weight:500}
 .cart_total_wrap dd .ctt-pay .ctt-pay-num {font-size:20px; font-weight:700}
 .cart_total_wrap dd .ctt-bonus {display:block; margin-bottom:15px; color:#888; font-size:12px; font-weight:500}
 .cart_total_wrap dd .ctt-bonus .ctt-bonus-num {font-size:12px;}
