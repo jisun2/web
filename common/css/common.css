@@ -386,7 +386,6 @@ input[type=checkbox] {display:none}
 .list_tab.length6 li{width:calc(16.6666666667% + .8333333333px)}
 .list_tab.length7 li{width:calc(14.2857142857% + .8571428571px)}
 
-
 /* Slider */
 .slick-slider {position:relative; display:block; box-sizing:border-box;-khtml-user-select:none;-ms-touch-action:pan-y; touch-action:pan-y;-webkit-tap-highlight-color: transparent;}
 .slick-list {position:relative; display:block; overflow:hidden; margin:0; padding:0}
