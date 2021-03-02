@@ -13,18 +13,6 @@
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/productdetail.css">
     </head>
-    <!-- <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>힙합퍼 상품 상세 _ 상품</title>
-        <meta name="description">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-        <script src="../common/lib/plugin.js"></script>
-        <script src="../common/lib/common.js"></script>
-        <script src="../common/lib/slick.min.js"></script>
-        <link rel="stylesheet" href="../common/css/common.css">
-        <link rel="stylesheet" href="../common/css/productdetail.css">
-    </head> -->
     <body>
         <div id="wrap" class="wd720">
             <div id="header">
@@ -45,7 +33,7 @@
 
             <div id="container">
                 <form>
-                    <div class="paymt_wrap">
+                    <div class="paymtWrap">
                         <div class="paymt_info _member">
                             <div class="article_title">주문자<span class="orange_txt2">홍길동이 <em>(010-1234-5678)</em></span></div>
                         </div><!-- member -->
@@ -55,51 +43,198 @@
                                 <div class="pos_r">
                                     <dl class="addr_user">
                                         <dt>
-                                            홍길동 <span class="recent">최근배송지</span><span class="balloon">배송 정보를 확인해 주세요!</span>
-                                            <!--
-                                            .recent 최근배송지 일때만 .balloon 말풍선 붙음, 기본배송지 일땐 .recent 제거
-                                            (ex)홍길동 <span>기본</span>
-                                            -->
+                                            홍길동 <span class="recent">최근배송지</span>
+                                            <!-- <span>기본배송지</span>  -->
+                                            <span class="balloon">배송 정보를 확인해 주세요!</span>
                                         </dt>
                                         <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
                                         <dd>010-1234-5678</dd>
                                     </dl>
                                     <div class="addr_modify"><buttton class="pop_open" data-popup="popup_addr_modify">변경</button></div>
-                                    <div class="mt10">
-                                        <select class="sz-select_sl">
-                                            <option value="배송 요청사항을 선택해 주세요!">배송 요청사항을 선택해 주세요!</option>
-                                            <option value="직접받음">직접받음</option>
-                                            <option value="무인택배함">무인택배함</option>
-                                            <option value="문 앞">문 앞</option>
-                                        </select>
-                                        <ul class="sz-select_list">
-                                            <li class="selected">배송 요청사항을 선택해 주세요!</li>
-                                            <li>
-                                                <ul class="sz-select_sub">
-                                                    <li>배송 요청사항을 선택해 주세요!</li>
-                                                    <li>직접받음</li>
-                                                    <li>무인택배함</li>
-                                                    <li>문 앞</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <!-- 직접 입력 선택 했을 때 S-->
-                                        <div class="input_text_new input_wrap mt10">
-                                            <label for="id" id="label_id_area" class="blind">배송지 요청 사항을 직접 입력해주세요
-                                                <input type="number" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="50">
-                                                <p class="text_count"><span class="" data-type="showlength">0</span> / 30</p>
-                                            </label>
-                                            <!-- <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button> -->
+                                    <div class="mt10 pf_fc">
+                                        <div class="product-select">
+                                            <select class="sz-select_sl">
+                                                <option value="배송 요청사항을 선택해 주세요.">배송 요청사항을 선택해 주세요.</option>
+                                                <option value="부재 시 문 앞에 놓아주세요.">부재 시 문 앞에 놓아주세요.</option>
+                                                <option value="부재 시 경비실에 맡겨주세요.">부재 시 경비실에 맡겨주세요.</option>
+                                                <option value="부재 시 전화 또는 문자 주세요.">부재 시 전화 또는 문자 주세요.</option>
+                                                <option value="택배함에 넣어주세요.">택배함에 넣어주세요.</option>
+                                                <option value="직접입력">직접입력</option>
+                                            </select>
+                                            <ul class="sz-select_list">
+                                                <li class="selected">배송 요청사항을 선택해주세요<i class="ico sel_arrow"></i></li>
+                                                <li>
+                                                    <ul class="sz-select_sub">
+                                                        <li>부재 시 문 앞에 놓아주세요.</li>
+                                                        <li>부재 시 경비실에 맡겨주세요.</li>
+                                                        <li>부재 시 전화 또는 문자 주세요.</li>
+                                                        <li>택배함에 넣어주세요.</li>
+                                                        <li>직접입력</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <!-- 직접 입력 선택 했을 때 E-->
                                     </div>
+                                    <!-- 직접 입력 선택 했을 때 S-->
+                                    <div class="input_text_new input_wrap mt10">
+                                        <label for="id" id="label_id_area" class="blind">배송지 요청 사항을 직접 입력해주세요
+                                            <input type="number" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="50">
+                                            <p class="text_count"><span class="" data-type="showlength">0</span> / 30</p>
+                                        </label>
+                                        <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
+                                    </div>
+                                    <!-- 직접 입력 선택 했을 때 E-->
+                                    <!-- 배송지 없을 때 -->
+                                    <div class="addressNone">
+                                        <table>
+                                            <caption class="blind">받는분 주소 정보 입력란</caption>
+                                            <colgroup>
+                                                    <col style="width:20%">
+                                                    <col style="width:80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th><label for="addressee">받는분</label></th>
+                                                    <td>
+                                                        <input type="text" name="addressee" value="" class="text-input">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>연락처</th>
+                                                    <td>
+                                                        <ul class="inp_d sz-select_list">
+                                                            <li class="selected">
+                                                                <div class="slt_bx telNo1_1">
+                                                                    <select title="휴대폰 첫째자리 선택" class="sz-select_sl">
+                                                                        <option value="010" selected="">010</option>
+                                                                        <option value="011">011</option>
+                                                                        <option value="016">016</option>
+                                                                        <option value="017">017</option>
+                                                                        <option value="018">018</option>
+                                                                        <option value="019">019</option>
+                                                                        <option value="02">02</option>
+                                                                        <option value="031">031</option>
+                                                                        <option value="032">032</option>
+                                                                        <option value="033">033</option>
+                                                                        <option value="041">041</option>
+                                                                        <option value="042">042</option>
+                                                                        <option value="043">043</option>
+                                                                        <option value="044">044</option>
+                                                                        <option value="051">051</option>
+                                                                        <option value="052">052</option>
+                                                                        <option value="053">053</option>
+                                                                        <option value="054">054</option>
+                                                                        <option value="055">055</option>
+                                                                        <option value="061">061</option>
+                                                                        <option value="062">062</option>
+                                                                        <option value="063">063</option>
+                                                                        <option value="064">064</option>
+                                                                        <option value="070">070</option>
+                                                                        <option value="080">080</option>
+                                                                        <option value="0130">0130</option>
+                                                                        <option value="0303">0303</option>
+                                                                        <option value="0502">0502</option>
+                                                                        <option value="0503">0503</option>
+                                                                        <option value="0504">0504</option>
+                                                                        <option value="0505">0505</option>
+                                                                        <option value="0506">0506</option>
+                                                                        <option value="0507">0507</option>
+                                                                        <option value="050">050</option>
+                                                                        <option value="012">012</option>
+                                                                        <option value="059">059</option>
+                                                                    </select>
+                                                                    <span class="ico"></span>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <input type="tel" title="휴대폰 나머지 번호 입력" name="deliveryAddress.telNo1___2" class="inptxt inpnum _onlyNumberTarget _deliveryForm _group_tel1_2" maxlength="8" value="" pattern="[0-9]*">
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>배송지</th>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //배송지 없을 때 -->
                                 </div>
                             </div>
                         </div><!-- addr -->
+                        <!-- 할인 차감 -->
+                        <div class="paymt_info">
+                            <div class="article_title active">할인 차감</div>
+                            <div class="article_content" style="display:block">
+                                <div class="table_wrap2 pd_0">
+                                    <table>
+                                      <caption class="blind">할인 차감 내역 표</caption>
+                                        <colgroup>
+                                            <col width="20%"/>
+                                            <col width="53%"/>
+                                            <col width=""/>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>상품쿠폰</th>
+                                                <td>- <span>2,000</span> 원</td>
+                                                <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_prd_coupon">쿠폰선택</button></td>
+                                            </tr>
+                                            <tr>
+                                                <th>주문쿠폰</th>
+                                                <td>- <span>14,500</span> 원</td>
+                                                <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_ord_coupon">쿠폰선택</button></td>
+                                                </tr><tr>
+                                                <th class="v_top">마일리지</th>
+                                                <td>
+                                                    <div class="input_text_new input_wrap mb10"><input type="text" placeholder="0" class="text-input mr5" style="width:87%">M</div>
+                                                     <p class="add_notice">사용가능 <span>2,000M</span> / 보유 2,410M</p>
+                                                </td>
+                                                <td class="v_top"><button class="btn_find btn_black">최대사용</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- discount -->
+
                         <div class="paymt_info _product">
-                            <div class="article_title">주문 상품 <span class="orange_txt"><em>3</em>개</span></div>
+                            <div class="article_title">주문상품 <span class="orange_txt"><em>3</em>개</span></div>
+
                             <div class="article_content" style="padding:0">
+
+
                                 <div class="paymt_product">
+                                    <div class="cart_box">
+                                        <div class="cart_info justify_box clear">
+                                            <div class="just_left">
+                                                <a href="#none">
+                                                    <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cart_de">
+                                                <div class="cart_txt prd_info">
+                                                    <span class="cart_brd">
+                                                        <a href="#">
+                                                            태그호이어 태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어
+                                                        </a>
+                                                    </span>
+                                                    <span class="cou_bage">주문쿠폰 적용대상</span>
+                                                    <span class="cart-sub">
+                                                        <a href="#">
+                                                            TAG HEUER 태그호이어 WAR1114.BA060TAG HEUER 태그호이어 WAR1114.BA060
+                                                        </a>
+                                                    </span>
+
+                                                    <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b> <del class="num">6,798,000원</del></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart_section_total">
+                                            상품 <span class="num">87,500</span> + 배송비 <span class="num">2,500</span><strong class="num"> = 89,500</strong>
+                                        </div>
+                                    </div>
                                     <div class="list">
                                         <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
                                         <div class="just_right">
@@ -143,40 +278,6 @@
                                 </div>
                             </div>
                         </div><!-- product -->
-                        <div class="paymt_info">
-                            <div class="article_title active">할인 차감</div>
-                            <div class="article_content" style="display:block">
-                                <div class="table_wrap2 pd_0">
-                                    <table>
-                                      <caption class="blind">할인 차감 내역 표</caption>
-                                        <colgroup>
-                                            <col width="20%"/>
-                                            <col width="53%"/>
-                                            <col width=""/>
-                                        </colgroup>
-                                        <tbody>
-                                            <!-- <tr>
-                                                <th>상품쿠폰</th>
-                                                <td>- <span>2,000</span> 원</td>
-                                                <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_prd_coupon">쿠폰선택</button></td>
-                                            </tr> -->
-                                            <tr>
-                                                <th>주문쿠폰</th>
-                                                <td>- <span>14,500</span> 원</td>
-                                                <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_ord_coupon">쿠폰선택</button></td>
-                                                </tr><tr>
-                                                <th class="v_top">마일리지</th>
-                                                <td>
-                                                    <div class="input_text_new input_wrap mb10"><input type="text" placeholder="0" class="text-input mr5" style="width:87%">M</div>
-                                                     <p class="add_notice">사용가능 <span>2,000M</span> / 보유 2,410M</p>
-                                                </td>
-                                                <td class="v_top"><button class="btn_find btn_black">최대사용</button></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div><!-- discount -->
                         <div class="paymt_info _price">
                             <div class="article_title active">결제 금액</div>
                             <div class="article_content" style="display:block">
@@ -185,12 +286,12 @@
                                       <caption class="blind">최종 결제 내역 표</caption>
                                         <tbody>
                                             <tr>
-                                                <td>총 상품 금액 (<span>3</span>)</td>
-                                                <td><span>370,500</span>원</td>
+                                                <td>총 상품 금액</td>
+                                                <td><span>10,469,700</span>원</td>
                                             </tr>
                                             <tr>
-                                                <td>총 배송비</td>
-                                                <td>+ <span>2,500</span>원</td>
+                                                <td>즉시 할인</td>
+                                                <td><span>- 815,800</span>원</td>
                                             </tr>
                                             <tr>
                                                 <td>총 쿠폰 할인</td>
@@ -200,25 +301,28 @@
                                                 <td>마일리지 사용</td>
                                                 <td>- <span>2,000</span>원</td>
                                             </tr>
+                                            <tr>
+                                                <td>총 배송비</td>
+                                                <td>+ <span>2,500</span>원</td>
+                                            </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <td>최종 결제 금액</td>
                                                 <td>
-                                                    <span class="ctt-pay"><b class="ctt-pay-num">162,900</b>원</span>
+                                                    <span class="ctt-pay"><b class="ctt-pay-num">9,421,900</b>원</span>
                                                     <!-- <span class="ctt-bonus">예상 적립금 <span class="ctt-bonus-num">380M</span></span>
                                                     <span class="ctt-info">※ 쇼핑백에 담긴 상품은 30일 동안 보관됩니다.</span> -->
                                                 </td>
                                             </tr>
                                         </tfoot>
                                     </table>
-
                                     <button type="submit" class="black-btn pc-only">결제하기</button>
                                 </div>
                             </div>
                         </div><!-- price -->
                         <div class="paymt_info _mileage">
-                            <div class="article_title active">마일리지 적립 <span class="orange_txt">최대 <em>3,629M</em></span></div>
+                            <div class="article_title active">마일리지 적립 <span class="orange_txt">최대 <b>2,500M</b></span></div>
                             <div class="article_content" style="display:block">
                                 <div class="table_wrap1" style="padding:0">
                                     <table>
@@ -233,7 +337,7 @@
                                                 <td><span>1,629</span>M</td>
                                             </tr>
                                             <tr>
-                                                <td>텍스트 상품평 작성 시</td>
+                                                <td>일반 상품평 작성 시</td>
                                                 <td class="t_blue">+ <span>500</span>M</td>
                                             </tr>
                                             <tr>
@@ -319,7 +423,7 @@
                 </ul>
                 <div class="border_tab-cont">
                     <!-- 1번째 배송지선택 탭-->
-                    <div class="paymt_wrap active">
+                    <div class="paymtWrap active">
                         <div class="paymt_addr_modify">
                             <div class="pos_r">
                                 <ul>
@@ -457,7 +561,7 @@
                         </div>
                     </div>
                     <!-- 2번째 신규등록 탭 -->
-                    <div class="paymt_wrap">
+                    <div class="paymtWrap">
                         <div class="paymt_addr_modify">
                             <div class="pos_r">
                                 <div class="addr_new_wrap">
@@ -564,7 +668,7 @@
             <div id="popup_prd_coupon" class="popup-wrap bg_wht">
                 <h2>상품쿠폰 선택</h2>
                 <!-- 상품쿠폰 선택 -->
-                <div class="paymt_wrap">
+                <div class="paymtWrap">
                     <div class="paymt_coupon_applied">
                         <div class="paymt_info">
                             <div class="pos_r">
@@ -607,7 +711,6 @@
                                                 </span>
                                             </li>
                                         </ul>
-
                                     </div>
                                 </div>
                                 <div class="paymt_product">
@@ -710,7 +813,7 @@
             <div id="popup_ord_coupon" class="popup-wrap bg_wht">
                 <h2>주문쿠폰 선택</h2>
                 <!-- 주문쿠폰 선택 -->
-                <div class="paymt_wrap">
+                <div class="paymtWrap">
                     <div class="paymt_order_applied">
                         <div class="paymt_info">
                             <div class="pos_r">
@@ -793,7 +896,7 @@
             <!-- 팝업 카드사 혜택 S-->
             <div id="pop_card_benefit" class="popup-wrap bg_wht">
                 <h2 class="page-title">이달의 카드사 혜택</h2>
-                <div class="paymt_wrap">
+                <div class="paymtWrap">
                 <div class="paymt_card_benefit">
                     <strong>무이자 할부</strong>
                     <ul class="card">
@@ -977,8 +1080,7 @@
             </div>
             <!--// 팝업 결제정보 -->
         </div>
-
-        <script src="../common/scripts/main.js?v=1.3.7"></script>
+        <script src="../common/lib/main.js"></script>
         <script>
             (function(){
 
