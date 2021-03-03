@@ -175,14 +175,6 @@ input::placeholder{color:#bbb}
 .btn_like.selected .count,
 .tc_poi{color:#ff4e25!important}
 .tc_d0{color:#d0d0d0}
-.input_checkbox label:before,
-.input_number [class^=btn_],
-.input_radio label:before,
-.input_radio_check label:before,
-.lc_d0,
-.table_st td,
-.table_st th,
-.table_st.lc_d0,[class^=btn_].lc_d0{border-color:#d0d0d0}
 .dark[class*=btn_],
 .lc_1{border-color:#111}
 .input_text input:not([readonly]):focus,
@@ -267,7 +259,6 @@ input[type=checkbox] {display:none}
     background-position:-284px -74px; background-repeat: no-repeat;
 }
 
-.input_radio {vertical-align:middle}
 input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 /* bic check box */
 .input_checkbox_b label {display:inline-block; padding-left:30px; background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px; background-position:-277px -106px; background-repeat: no-repeat;}
@@ -494,7 +485,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
 #header .logo_area {margin-left:16px; display:inline-block;}
-#header .header_title {margin-top:6px; letter-spacing:-1px; vertical-align: middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
+#header .header_title {margin-top:8px; letter-spacing:-1px; vertical-align: middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
 #header .header_title .number {font-size:18px; line-height:10px; font-family:'Proxima-Nova'}
 #header .btn_area {width:100%; height:45px;}
 #header .btn_area a {position:relative; display:inline-block;}
@@ -642,10 +633,6 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
     #footer .footer_top ul li:nth-child(4) ::before {width: 2px;content: "\00B7"; position: relative; right: 9px}
 }
 /* -footer end- */
-@media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
-    #photoView {width:800px; margin:0 20%;}
-}
 @media screen and (min-width:720px) {
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 20%;}
