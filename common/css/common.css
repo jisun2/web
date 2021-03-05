@@ -7,7 +7,7 @@ body,html{height:100%}
 fieldset,ol,ul{margin:0;padding:0}
 ol,ul{list-style:none}
 dd,dl,h1,h2,h3,h4,h5,input,p,pre{margin:0}
-input[type=email],input[type=number],input[type=password],input[type=text],legend,td,th{padding:0}
+legend,td,th{padding:0}  /* input[type=email],input[type=number],input[type=password],input[type=text] */
 button,input[type=email],input[type=number],input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button,input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 button,textarea{border:0}
 /* input, button:focus {outline:none} */
@@ -106,7 +106,8 @@ textarea.tc_3:focus::placeholder{color:#333!important}
 .error [class*=input_],
 .site_main.join .cert.error,[class*=input_].error{margin-bottom:20px}
 td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].error{margin-bottom:20px}
-.site_main.join .cert .error,[class*=input_] .error{position:absolute;left:0;bottom:-24px;font-size:13px;padding-left:1px;line-height:17px;display:none;white-space:nowrap}
+.site_main.join .cert .error,[class*=input_] .error
+{position:absolute;left:0;bottom:-24px;font-size:13px;padding-left:1px;line-height:17px;display:none;white-space:nowrap}
 [class*=input_].error{position:relative}
 .desc_small,
 .desc_sub{line-height:21px}
@@ -237,11 +238,7 @@ input::placeholder{color:#bbb}
 .error .input_select,
 .error .input_text input,
 .error textarea, */
-.input_file.error input,
-.input_file.error label,
-.input_select.error,
-.input_text.error input,
-.lc_err{border-color:#f32323!important}
+.input_file.error input, .input_file.error label, .input_select.error, .input_text.error input, .lc_err{border-color:#f32323!important}
 .order_form .sel_payment input:checked+label, .order_form .sel_payment input:focus+label, .tc_3, .tc_3_h:focus, .tc_3_h:hover
 {background-color:#fff}
 .input_radio_check label:after {left:5px;top:6px;width:12px;height:10px;background-position:-118px -34px;opacity:.1}
@@ -251,20 +248,20 @@ input[type=checkbox] {display:none}
 .input_checkbox input:checked+label:after {opacity:1;}
 .input_checkbox label, .input_radio_check label {
     display: inline-block; padding-left:20px;
-    background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px;
+    background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px;
     background-position:-284px -53px; background-repeat: no-repeat;}
 .input_checkbox input[type=checkbox]:checked +label {
     padding-left:20px;
-    background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px;
+    background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px;
     background-position:-284px -74px; background-repeat: no-repeat;
 }
 
 input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 /* bic check box */
-.input_checkbox_b label {display:inline-block; padding-left:30px; background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px; background-position:-277px -106px; background-repeat: no-repeat;}
+.input_checkbox_b label {display:inline-block; padding-left:30px; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px; background-position:-277px -106px; background-repeat: no-repeat;}
 .input_checkbox_b input:checked+label:after {opacity:1;}
 .input_checkbox_b input[type=checkbox]:checked +label {
-    width:100px; padding-left:30px; background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px; background-position:-278px -139px; background-repeat: no-repeat;}
+    width:100px; padding-left:30px; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px; background-position:-278px -139px; background-repeat: no-repeat;}
 [class*=btn_]{display:inline-block;vertical-align:top}
 .error [class*=input_] .error,
 .input_text button:focus,
@@ -423,7 +420,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .proxima {font-family:'proxima-nova'!important}
 .box_right, .box_left {position:relative; float:left; width:50%; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
-.ico {display:inline-block; background:url("../images/ico/ispr.png") center center/ cover; background-size:300px 300px}
+.ico {display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
 .ico.Warning {margin-top:2px; float:left; width:17px; height:16px; background-position:-227px -27px}
 .ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
 .ico.delete {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
@@ -481,10 +478,12 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
     -o-transform: translate(-50%,-7%) rotateZ(-45deg);
     transform: translate(-50%,-7%) rotateZ(-45deg);
 }
-#header {padding-top:5px; display:flow-root}
+#header {display:flow-root}
+#header .popup {display:block; border-bottom:1px solid #e5e5e5}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
 #header .logo_area {margin-left:16px; display:inline-block;}
+#header .popup .header_title {margin:15px}
 #header .header_title {margin-top:8px; letter-spacing:-1px; vertical-align: middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
 #header .header_title .number {font-size:18px; line-height:10px; font-family:'Proxima-Nova'}
 #header .btn_area {width:100%; height:45px;}
@@ -542,7 +541,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .popup-wrap .border_tab-cont > .paymt_wrap {display:none}
 .popup-wrap .border_tab-cont > .paymt_wrap.active {display:block}
 /* 공통 팝업 close btn */
-.popup_close-btn {position:fixed; left:50%; bottom:20px; width:40px; height:40px; background:url(../images/ico/popup_close-icon.png) center center/cover no-repeat;
+.popup_close-btn {position:fixed; left:50%; bottom:20px; width:40px; height:40px; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/popup_close-icon.png") center center/cover no-repeat;
   -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform:translateX(-50%); z-index:100}
 .popup-content .page-header .sz-wrap {padding:0 20px}
 .popup-content .page-title {font-size:18px;margin-left:0}
@@ -580,9 +579,9 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .popup-content .rece-wrap .product-select .sz-select_sub .product_name {font-size:15px}
 .popup-content .member-wrap .sz-select_sub li {padding:10px 20px}
 .popup-content .double_btn-box button {height:60px; font-size:20px}
-.popup-content .text-input,
+/* .popup-content .text-input,
 .popup-content input[type=password].text-input,
-.popup-content input[type=text].text-input {padding:0 20px}
+.popup-content input[type=text].text-input {padding:0 20px} */
 .popup-content .rece-wrap .dot-list li {font-size:13px}
 .popup-wrap {display:none; position:fixed; top:0; left:0; width:100%; height:100vh; z-index:100; background-color:#fff;}
 .popup-layer {display:block; position:absolute; top:0; left:0;width:100%; height:100%; background-color:rgba(0,0,0,.8)}
@@ -603,8 +602,8 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #footer .info_txt span {font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .button_tip_toggle {display:block}
 #footer .button_tip_toggle span {font-size:14px; color:#888; font-weight:500; display:inline-block;position:relative}
-#footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("../images/ico/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
-#footer .button_tip_toggle.on span:after {background:url("../images/ico/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
+#footer .button_tip_toggle span:after {margin-left: 5px; content:'';display:inline-block;background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_arrow-gray.png") 0 0 no-repeat; width: 10px; height: 5px; vertical-align:2px}
+#footer .button_tip_toggle.on span:after {background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
 #footer table {margin-top: 10px;}
 #footer table tr td {vertical-align: top}
 #footer table tr td:first-child {width: 115px; padding-right: 18px;}
@@ -635,6 +634,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 /* -footer end- */
 @media screen and (min-width:720px) {
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
+    /* #pop_card_benefit.wd720 {z-index:100; width:720px; min-width:320px; margin:0 auto;} */
     #photoView {width:800px; margin:0 20%;}
 }
 @media screen and (min-width:720px) {
