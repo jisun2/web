@@ -37,10 +37,13 @@
                             <div class="article_content">
                                 <div class="pos_r">
                                     <dl class="addr_user">
-                                        <dt>
-                                            홍길동 <span class="recent">최근배송지</span>
-                                                   <!-- <span>기본배송지</span>  -->
-                                            <span class="balloon">배송 정보를 확인해 주세요!</span>
+                                        <dt class="tooltip">
+                                            <!-- <span class="balloon">배송 정보를 확인해 주세요!</span> -->
+                                            <div class="">
+                                                홍길동 <span>기본배송지</span>
+                                                <!-- <span class="recent">최근배송지</span> -->
+                                               <span class="tooltiptext">배송 정보를 확인해 주세요!</span>
+                                            </div>
                                         </dt>
                                         <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
                                         <dd>010-1234-5678</dd>
@@ -70,132 +73,159 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <!-- 직접 입력 선택 했을 때 S-->
-                                    <div class="input_text_new input_wrap mt10">
-                                        <label for="id" id="label_id_area" class="blind">배송지 요청 사항을 직접 입력해주세요
-                                            <input type="number" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="50">
-                                            <p class="text_count"><span class="" data-type="showlength">0</span> / 30</p>
-                                        </label>
+                                    <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
+                                    <div class="input_text_new">
+                                        <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
+                                        <input type="text" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
+                                        <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
                                         <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
                                     </div>
-                                    <!-- 직접 입력 선택 했을 때 E-->
+                                    <!-- // 배송 요청사항을 직접 입력 선택 했을 때 -->
                                     <!-- 배송지 없을 때 -->
                                     <div class="addressNone">
-                                        <table>
-                                            <caption class="blind">받는분 주소 정보 입력란</caption>
-                                            <colgroup>
-                                                    <col style="width:20%">
-                                            </colgroup>
-                                            <tbody>
-                                                <tr>
-                                                    <th><label for="addressee">받는분</label></th>
-                                                    <td>
-                                                        <input type="text" name="name" value="" class="text-input">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>연락처</th>
-                                                    <td>
-                                                        <div class="product-select fl_le">
-                                                            <select title="휴대폰 첫째자리 선택" class="sz-select_sl">
-                                                                <option value="010" selected="">010</option>
-                                                                <option value="011">011</option>
-                                                                <option value="016">016</option>
-                                                                <option value="017">017</option>
-                                                                <option value="018">018</option>
-                                                                <option value="019">019</option>
-                                                                <option value="02">02</option>
-                                                                <option value="031">031</option>
-                                                                <option value="032">032</option>
-                                                                <option value="033">033</option>
-                                                                <option value="041">041</option>
-                                                                <option value="042">042</option>
-                                                                <option value="043">043</option>
-                                                                <option value="044">044</option>
-                                                                <option value="051">051</option>
-                                                                <option value="052">052</option>
-                                                                <option value="053">053</option>
-                                                                <option value="054">054</option>
-                                                                <option value="055">055</option>
-                                                                <option value="061">061</option>
-                                                                <option value="062">062</option>
-                                                                <option value="063">063</option>
-                                                                <option value="064">064</option>
-                                                                <option value="070">070</option>
-                                                                <option value="080">080</option>
-                                                                <option value="0130">0130</option>
-                                                                <option value="0303">0303</option>
-                                                                <option value="0502">0502</option>
-                                                                <option value="0503">0503</option>
-                                                                <option value="0504">0504</option>
-                                                                <option value="0505">0505</option>
-                                                                <option value="0506">0506</option>
-                                                                <option value="0507">0507</option>
-                                                                <option value="050">050</option>
-                                                                <option value="012">012</option>
-                                                                <option value="059">059</option>
-                                                            </select>
-                                                            <ul class="inp_d sz-select_list">
-                                                                <li class="selected">010<i class="ico sel_arrow"></i></li>
-                                                                <li>
-                                                                    <ul class="sz-select_sub">
-                                                                        <li>011</li>
-                                                                        <li>016</li>
-                                                                        <li>017</li>
-                                                                        <li>018</li>
-                                                                        <li>019</li>
-                                                                        <li>02</li>
-                                                                        <li>031</li>
-                                                                        <li>032</li>
-                                                                        <li>033</li>
-                                                                        <li>041</li>
-                                                                        <li>042</li>
-                                                                        <li>043</li>
-                                                                        <li>044</li>
-                                                                        <li>051</li>
-                                                                        <li>052</li>
-                                                                        <li>053</li>
-                                                                        <li>054</li>
-                                                                        <li>055</li>
-                                                                        <li>061</li>
-                                                                        <li>062</li>
-                                                                        <li>063</li>
-                                                                        <li>064</li>
-                                                                        <li>070</li>
-                                                                        <li>080</li>
-                                                                        <li>013</li>
-                                                                        <li>0303</li>
-                                                                        <li>0502</li>
-                                                                        <li>0503</li>
-                                                                        <li>0504</li>
-                                                                        <li>0505</li>
-                                                                        <li>0506</li>
-                                                                        <li>0507</li>
-                                                                        <li>050</li>
-                                                                        <li>012</li>
-                                                                        <li>059</li>
+                                        <div class="paymt_modify">
+                                            <table>
+                                                    <caption class="blind">배송지 신규 등록</caption>
+                                                    <colgroup>
+                                                        <col style="width:20%"/>
+                                                        <col style="width:80%"/>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th><label for="addressee">받는분</label></th>
+                                                            <td>
+                                                                <div class="">
+                                                                    <input type="text" id="addressee" name="addressee" placeholder="받는분 성함" >
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <label for="number">연락처</label>
+                                                            </th>
+                                                            <td>
+                                                                <div class="num-select">
+                                                                    <select title="휴대폰 첫째자리 선택" class="sz-select_sl">
+                                                                        <option value="010" selected="">010</option>
+                                                                        <option value="011">011</option>
+                                                                        <option value="016">016</option>
+                                                                        <option value="017">017</option>
+                                                                        <option value="018">018</option>
+                                                                        <option value="019">019</option>
+                                                                        <option value="02">02</option>
+                                                                        <option value="031">031</option>
+                                                                        <option value="032">032</option>
+                                                                        <option value="033">033</option>
+                                                                        <option value="041">041</option>
+                                                                        <option value="042">042</option>
+                                                                        <option value="043">043</option>
+                                                                        <option value="044">044</option>
+                                                                        <option value="051">051</option>
+                                                                        <option value="052">052</option>
+                                                                        <option value="053">053</option>
+                                                                        <option value="054">054</option>
+                                                                        <option value="055">055</option>
+                                                                        <option value="061">061</option>
+                                                                        <option value="062">062</option>
+                                                                        <option value="063">063</option>
+                                                                        <option value="064">064</option>
+                                                                        <option value="070">070</option>
+                                                                        <option value="080">080</option>
+                                                                        <option value="0130">0130</option>
+                                                                        <option value="0303">0303</option>
+                                                                        <option value="0502">0502</option>
+                                                                        <option value="0503">0503</option>
+                                                                        <option value="0504">0504</option>
+                                                                        <option value="0505">0505</option>
+                                                                        <option value="0506">0506</option>
+                                                                        <option value="0507">0507</option>
+                                                                        <option value="050">050</option>
+                                                                        <option value="012">012</option>
+                                                                        <option value="059">059</option>
+                                                                    </select>
+                                                                    <ul class="inp_d sz-select_list flt_le">
+                                                                        <li class="selected">010<i class="ico sel_arrow"></i></li>
+                                                                        <li>
+                                                                            <ul class="sz-select_sub">
+                                                                                <li>011</li>
+                                                                                <li>016</li>
+                                                                                <li>017</li>
+                                                                                <li>018</li>
+                                                                                <li>019</li>
+                                                                                <li>02</li>
+                                                                                <li>031</li>
+                                                                                <li>032</li>
+                                                                                <li>033</li>
+                                                                                <li>041</li>
+                                                                                <li>042</li>
+                                                                                <li>043</li>
+                                                                                <li>044</li>
+                                                                                <li>051</li>
+                                                                                <li>052</li>
+                                                                                <li>053</li>
+                                                                                <li>054</li>
+                                                                                <li>055</li>
+                                                                                <li>061</li>
+                                                                                <li>062</li>
+                                                                                <li>063</li>
+                                                                                <li>064</li>
+                                                                                <li>070</li>
+                                                                                <li>080</li>
+                                                                                <li>013</li>
+                                                                                <li>0303</li>
+                                                                                <li>0502</li>
+                                                                                <li>0503</li>
+                                                                                <li>0504</li>
+                                                                                <li>0505</li>
+                                                                                <li>0506</li>
+                                                                                <li>0507</li>
+                                                                                <li>050</li>
+                                                                                <li>012</li>
+                                                                                <li>059</li>
+                                                                            </ul>
+                                                                        </li>
                                                                     </ul>
-                                                                </li>
-                                                                <li>
-                                                                    <input type="tel" title="휴대폰 나머지 번호 입력" name="deliveryAddress.telNo1___2" class="inptxt inpnum _onlyNumberTarget _deliveryForm _group_tel1_2" maxlength="8" value="" pattern="[0-9]*">
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>배송지</th>
-                                                    <td><input type="text" name="addressee" value="" class="text-input"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                                </div>
+                                                                <div class="input_text_new2" style="width:67%; margin-left:3%">
+                                                                    <input type="text" name="number" id="number" placeholder="휴대폰 나머지 번호" maxlength="8" class="wd100" >
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="last"><label for="address">배송지</label></th>
+                                                            <td>
+                                                                <div class="mgb10">
+                                                                    <div class="input_text_new2">
+                                                                        <input type="text" placeholder="" name="address"  title="주소찾기">
+                                                                    </div>
+                                                                    <button>주소찾기</button>
+                                                                </div>
+                                                                <div class="mgb10">
+                                                                    <input type="text" placeholder="배송지" name="address" id="address" title="주소 입력">
+                                                                </div>
+                                                                <div class="">
+                                                                    <input type="text" placeholder="상세 주소를 입력해주세요." name="address" title="상세 주소 입력">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>개인통관 고유부호</th>
+                                                            <td>
+                                                                <div class="">
+                                                                    <input type="text" placeholder="상세 주소를 입력해주세요." name="address" title="상세 주소 입력">
+                                                                </div>
+
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
                                     </div>
                                     <!-- //배송지 없을 때 -->
                                 </div>
                             </div>
                         </div><!-- addr -->
-                        <!-- 할인 차감 -->
-                        <div class="paymt_info">
+                        <div class="paymt_info _sale">
                             <div class="article_title active">할인 차감</div>
                             <div class="article_content" style="display:block">
                                 <div class="table_wrap2 pd_0">
@@ -209,18 +239,18 @@
                                         <tbody>
                                             <tr>
                                                 <th>상품쿠폰</th>
-                                                <td>- <span class="num">2,000</span> 원</td>
+                                                <td>- <span class="saleNum">2,000</span> 원</td>
                                                 <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_prd_coupon">쿠폰선택</button></td>
                                             </tr>
                                             <tr>
                                                 <th>주문쿠폰</th>
-                                                <td>- <span class="num">14,500</span> 원</td>
+                                                <td>- <span class="saleNum">14,500</span> 원</td>
                                                 <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_ord_coupon">쿠폰선택</button></td>
                                                 </tr><tr>
                                                 <th class="v_top">마일리지</th>
                                                 <td>
                                                     <div class="input_text_new input_wrap mb10"><input type="number" placeholder="0" class="text-input mr5" style="width:87%">M</div>
-                                                     <p class="add_disc">사용가능 <span class="num ble">2,000M</span> / 보유 <span class="num">2,410M</span></p>
+                                                     <p class="add_disc">사용가능 <span class="num ble">20,000M</span> / 보유 <span class="num">21,410M</span></p>
                                                 </td>
                                                 <td class="v_top"><button class="btn_find btn_black">최대사용</button></td>
                                             </tr>
@@ -229,7 +259,6 @@
                                 </div>
                             </div>
                         </div><!-- discount -->
-
                         <div class="paymt_info _product">
                             <div class="article_title">주문상품 <span class="orange_txt"><em>3</em>개</span></div>
 
@@ -239,7 +268,7 @@
                                         <div class="cart_info justify_box clear">
                                             <div class="just_left">
                                                 <a href="#none">
-                                                    <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                                    <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="cart_de">
@@ -274,16 +303,15 @@
                                         <div class="cart_info justify_box clear">
                                             <div class="just_left">
                                                 <a href="#none">
-                                                    <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                                    <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="cart_de">
                                                 <div class="cart_txt prd_info">
-                                                    <div class="">
-                                                        <a href="#" class="flt_le" style="overflow:hidden; height:16px">
+                                                    <div class="brd_area">
+                                                        <a href="#none" class="flt_le">
                                                             <span class="cart_brd">엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인</span>
                                                         </a>
-
                                                         <span class="cou_bage flt_le">주문쿠폰 적용대상</span>
                                                     </div>
                                                     <span class="cart-sub">
@@ -311,17 +339,43 @@
                                                 <div class="cart_info justify_box clear">
                                                     <div class="just_left">
                                                         <a href="#none">
-                                                            <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="cart_de">
                                                         <div class="cart_txt prd_info">
-                                                            <div class="">
-                                                                <span class="cart_brd flt_le">
-                                                                    <a href="#" class="flt_le">
-                                                                        태그호이어
-                                                                    </a>
-                                                                </span>
+                                                            <div class="brd_area">
+                                                                <a href="#none" class="flt_le">
+                                                                    <span class="cart_brd">태그호이어</span>
+                                                                </a>
+                                                            </div>
+                                                            <span class="cart-sub">
+                                                                <a href="#">
+                                                                    TAG HEUER 태그호이어 WAR1114.BA060TAG HEUER 태그호이어 WAR1114.BA060
+                                                                </a>
+                                                            </span>
+                                                            <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b> <del class="num">6,798,000원</del></span>
+                                                            <ul class="option">
+                                                                <li>옵션 : 모델명 / 424.13.40.20.06.001.40.20.06.001</li>
+                                                                <li>100개</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cart_info justify_box clear">
+                                                    <div class="just_left">
+                                                        <a href="#none">
+                                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="cart_de">
+                                                        <div class="cart_txt prd_info">
+                                                            <div class="brd_area">
+                                                                <a href="#none" class="flt_le">
+                                                                    <span class="cart_brd">엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인</span>
+                                                                </a>
                                                                 <span class="cou_bage flt_le">주문쿠폰 적용대상</span>
                                                             </div>
                                                             <span class="cart-sub">
@@ -342,48 +396,15 @@
                                                 <div class="cart_info justify_box clear">
                                                     <div class="just_left">
                                                         <a href="#none">
-                                                            <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="cart_de">
                                                         <div class="cart_txt prd_info">
-                                                            <div class="">
-                                                                <span class="cart_brd flt_le">
-                                                                    <a href="#" class="flt_le">
-                                                                        태그호이어
-                                                                    </a>
-                                                                </span>
-                                                                <span class="cou_bage flt_le">주문쿠폰 적용대상</span>
-                                                            </div>
-                                                            <span class="cart-sub">
-                                                                <a href="#">
-                                                                    TAG HEUER 태그호이어 WAR1114.BA060TAG HEUER 태그호이어 WAR1114.BA060
+                                                            <div class="brd_area">
+                                                                <a href="#none" class="flt_le">
+                                                                    <span class="cart_brd">엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨</span>
                                                                 </a>
-                                                            </span>
-                                                            <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b> <del class="num">6,798,000원</del></span>
-                                                            <ul class="option">
-                                                                <li>옵션 : 모델명 / 424.13.40.20.06.001.40.20.06.001</li>
-                                                                <li>100개</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="cart_info justify_box clear">
-                                                    <div class="just_left">
-                                                        <a href="#none">
-                                                            <img src="../common/images/dummy/dummy12.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="cart_de">
-                                                        <div class="cart_txt prd_info">
-                                                            <div class="">
-                                                                <span class="cart_brd flt_le">
-                                                                    <a href="#" class="flt_le">
-                                                                        태그호이어
-                                                                    </a>
-                                                                </span>
                                                                 <span class="cou_bage flt_le">주문쿠폰 적용대상</span>
                                                             </div>
                                                             <span class="cart-sub">
@@ -547,21 +568,41 @@
                                 </p>
                             </div>
                         </div><!-- agree -->
+                        <!-- fixed bottom total -->
+                        <div class="nav_fixed_wrap cart wd720">
+                            <div class="just_left">
+                                <span class="prod_num"><span class="num">3</span>개 상품</span>
+                                <span class="prod_total">총 <span class="ptolal_num">9,330,200</span>원</span>
+                            </div>
+                            <div class="just_right">
+                                <div class="pd_btn_box clear">
+                                    <button type="button" class="orange_btn">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // fixed bottom total -->
                     </div>
                 </form>
             </div>
+
+
+
 
             <!-- .팝업 상품쿠폰 선택 -->
             <div id="popup_prd_coupon" class="popup-wrap bg_wht">
                 <h2>상품쿠폰 선택</h2>
                 <!-- 상품쿠폰 선택 -->
-                <div class="paymtWrap">
+                <!-- <div class="paymtWrap">
                     <div class="paymt_coupon_applied">
                         <div class="paymt_info">
                             <div class="pos_r">
                                 <div class="paymt_product">
                                     <div class="list">
-                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_left"><a href="" class="prd_img">
+                                            <a href="#none">
+                                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
                                         <div class="just_right">
                                             <dl class="prd_info">
                                                 <dt>엑스씨엑스메인</dt>
@@ -602,7 +643,11 @@
                                 </div>
                                 <div class="paymt_product">
                                     <div class="list">
-                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_left">
+                                            <a href="#none">
+                                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
                                         <div class="just_right">
                                             <dl class="prd_info">
                                                 <dt>엑스씨엑스메인</dt>
@@ -643,7 +688,11 @@
                                 </div>
                                 <div class="paymt_product">
                                     <div class="list">
-                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_left">
+                                            <a href="#none">
+                                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
                                         <div class="just_right">
                                             <dl class="prd_info">
                                                 <dt>엑스씨엑스메인</dt>
@@ -690,10 +739,11 @@
                         <button class="last_btn_white pop_close">취소</button>
                         <button class="last_btn_black">저장</button>
                     </div>
-                </div>
+                </div> -->
+
+
                 <!--// 상품쿠폰 선택 끝 -->
             </div>
-            <!--//팝업 상품쿠폰 선택 -->
 
             <!-- .팝업 주문쿠폰 선택 -->
             <div id="popup_ord_coupon" class="popup-wrap bg_wht">
@@ -955,7 +1005,6 @@
         <script src="../common/lib/main.js"></script>
         <script>
             (function(){
-
                 function toggleAcco(ele, content) {
                     $(ele).on('click touch', function () {
                         $(this).toggleClass('active');
@@ -963,13 +1012,11 @@
                     });
                 }
                 toggleAcco('.article_title', '.article_content');
-
                //무통장입금 선택 시 환불계좌 정보 추가
                 $('.input_radio').change(function() {
                     $('.article_content .pay_back').remove();
                     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
                 });
-
                 $('.border_tab-list li').each(function(i){
                     $(this).click(function(){
                         $(this).addClass('active').siblings().removeClass('active');
@@ -977,11 +1024,9 @@
                         return false;
                     });
                 });
-
             })(jQuery);
 
             $(window).on({
-
                 keyup:function(e){
                     var $this = $(e.target);
                     if( $this.is('input[data-type=countlength]') ){//textarea 글자수 세기
@@ -997,7 +1042,6 @@
                     }
                 }
             })
-
         </script>
     </body>
 </html>
