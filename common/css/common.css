@@ -607,7 +607,7 @@ transparent transparent transparent}
 #footer .button_tip_toggle.on span:after {background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_arrow-gray_on.png") 0 0 no-repeat; width: 10px; height: 5px}
 #footer table {margin-top: 10px;}
 #footer table tr td {vertical-align: top}
-#footer table tr td:first-child {width: 115px; padding-right: 18px;}
+#footer table tr td:first-child {width:118px; padding-right:18px;}
 #footer table tr:nth-child(3) td {line-height: 16px}
 #footer table tr:nth-child(4) a span {text-decoration: underline!important; color: #888; font-weight:500}
 #footer .footer_bottom {margin-top: 25px}
