@@ -354,7 +354,8 @@ input[type=checkbox] {display:none}
 .sz-select_sub li {z-index:10; padding:5px; cursor:pointer;width:100%; overflow:hidden;}
 .sz-custom_check {display:none}
 /* 셀렉트 옵션  공통 */
-.product-select .selected {padding:5px; max-height:20px; color:#ababab; border:1px solid #e5e5e5; border-top:none; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
+.product-select {font-size:13px}
+.product-select .selected {padding:5px; max-height:20px; color:#ababab; border:1px solid #e5e5e5; border-top:none; text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
 .product-select .selected.active {border:1px solid #333}
 .product-select .selected .sel_arrow {float:right}
 .product-select .selected .product_name {display:inline-block; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap}
@@ -365,7 +366,7 @@ input[type=checkbox] {display:none}
 .pf_fc .product-select:first-child .selected.active span {float:left}
 .pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
 .product-select .sz-select_sub {position:static; width:99.5%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
-.product-select .sz-select_sub li {position:relative; overflow-y:hidden; max-height:40px; border-bottom:1px solid #e5e5e5; font-size:14px}
+.product-select .sz-select_sub li {position:relative; display:inline-block; overflow-y:hidden; max-height:40px; border-bottom:1px solid #e5e5e5; font-size:14px}
 .product-select .sz-select_sub li:last-child {border-bottom: none}
 .product-select .sz-select_sub .just_left {padding:10px; width:80%; margin-top:1px}
 .product-select .sz-select_sub .product_name {float:left;width:68%; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space: nowrap}
@@ -659,8 +660,8 @@ input[type=text].text-input.phone-last {width:70%}
 .addressNone .product-select {width:100%}
 .paymtWrap .addr_modify {position:absolute; top:25px; right:15px;border-radius:3px;font-size:12px; color:#fff; background:#000; width:50px; text-align:center; height:30px; line-height:30px;}
 .paymtWrap .article_content.pd0 {padding:0 !important}
-.paymtWrap .default_check {display:block; vertical-align:middle}
-.paymtWrap .default_check .sz-custom_text {margin-left:8px; height:30px}
+.paymtWrap .default_check {vertical-align:middle;}
+.paymtWrap .default_check .sz-custom_text {display:inline-block; margin:0 8px 8px; height:30px}
 .paymtWrap .default_check2 {display:inline-block; width:100%; padding-top:20px; margin:30px 0 0; border-top:1px solid #e5e5e5}
 .paymtWrap .default_check2 label {float:left}
 .paymtWrap .default_check3 {margin: 0 0 12px}
@@ -697,13 +698,18 @@ input[type=text].text-input.phone-last {width:70%}
 .pf_fc .num-select:first-child .selected.active {border-top: 1px solid #333}
 .pf_fc .num-select:first-child .selected.active span {float:left}
 .pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
-.paymtWrap .addr_user dt {font-size:13px; line-height:1; margin-bottom:7px; }
-.paymtWrap .addr_user dt span:first-of-type {display:inline-block; margin-left:10px; position:relative; top:-2px; padding:3px 8px; border:1px solid #1b61e3; border-radius:20px; font-size:10px; color:#1b61e3; }
+/* .addr_wrap .sz-select_sub {display:inline-block}
+.addr_wrap .sz-select_sub li {display:inline-block} */
+.paymtWrap .addr_user {position:relative;}
+.paymtWrap .addr_user dt {font-size:13px; line-height:1; margin-bottom:7px}
+.paymtWrap .addr_user dt span:first-of-type {margin-left:10px; top:-2px; padding:3px 8px; border:1px solid #1b61e3; border-radius:20px; font-size:10px; color:#1b61e3; }
 .paymtWrap .addr_user dt span:first-of-type.recent {color:#ababab; border-color:#ababab}
+.paymtWrap .addr_user .tooltiptext {position:absolute}
+.paymtWrap .tooltiptext:after,.paymtWrap .tooltip .tooltiptext1:after {left:0}
 .paymtWrap .addr_user dd {font-size:13px; word-break:keep-all}
 .paymtWrap .addr_user dd span {font-size:15px;}
 .paymtWrap .addr_user dd:last-child {font-size:15px;}
-.paymtWrap .paymt_info._addr .addr_user {width:80%}
+.paymtWrap .paymt_info._addr .addr_user {width:80%;}
 .paymtWrap .paymt_info .a_info {position:absolute; top:0; right:0; display:block; font-size:11px; color:#888; text-decoration:underline !important}
 /* 버튼 */
 .paymtWrap .paymt_info .btn_white {border:1px solid #555; background:#fff; font-size:12px; color:#555; line-height:12px; height:30px; padding:0; width:80px}
@@ -722,10 +728,13 @@ input[type=text].text-input.phone-last {width:70%}
 .addr_wrap .product-select {width:100%}
 .addr_wrap .product-select li {display:inline-block;}
 .addr_wrap .product-select .active li {border:0}
-.inp_d.sz-select_list {width:90%; height:38px; line-height:2}
+.inp_d.sz-select_list {width:95%; height:38px; line-height:2}
 .paymtWrap .text-input:focus {border:1px solid #333 !important}
-.paymtWrap .input_text_new2 {float:left; width:70%;}
-.paymtWrap .input_text_new2 + button {float:right; margin-left:10px; width:25%; border:1px solid #555; color:#555; font-size:12px; text-align:center; height:40px; background:#fff;}
+.paymtWrap .input_text_new {margin-top:10px}
+.paymtWrap .input_text_new .text_count {float:right; font-size:10px; color:#888}
+.paymtWrap .input_text_new .text_count .bk {color:#000}
+.paymtWrap .input_text_new2 {float:left; width:70%; text-align:center;}
+.paymtWrap .input_text_new2 + button {float:right; width:27%; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .paymtWrap .last_btnn_wrap {z-index:8;background:#fff; border-top:1px solid #d0d0d0;padding:12px 20px 25px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .paymtWrap .last_btn_white {z-index:10;display:block; float:left; width:49%; border:1px solid #000; background:#fff; font-size:17px; color:#555; line-height:17px; height:45px;}
 .paymtWrap .last_btn_black {display:block; float:right; width:49%;border:1px solid #000; background:#000; font-size:17px; color:#fff !important; line-height:17px; height:45px;}
