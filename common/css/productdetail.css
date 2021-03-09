@@ -355,13 +355,13 @@ input[type=checkbox] {display:none}
 .sz-custom_check {display:none}
 /* 셀렉트 옵션  공통 */
 .product-select {font-size:13px}
-.product-select .selected {padding:5px; max-height:20px; color:#ababab; border:1px solid #e5e5e5; border-top:none; text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
+.product-select .selected {padding:5px; max-height:30px; color:#ababab; border:1px solid #e5e5e5; border-top:none; text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
 .product-select .selected.active {border:1px solid #333}
 .product-select .selected .sel_arrow {float:right}
 .product-select .selected .product_name {display:inline-block; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap}
 .product-select .selected .product_line {display:inline-block; padding-top:4px; line-height:1; vertical-align:6px;font-weight:200; color:#ababab}
 .product-select .selected .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
-.pf_fc .product-select:first-child .selected {border-top:1px solid #e5e5e5}
+.pf_fc .product-select:first-child .selected {line-height:2.5; border-top:1px solid #e5e5e5}
 .pf_fc .product-select:first-child .selected.active {border-top: 1px solid #333}
 .pf_fc .product-select:first-child .selected.active span {float:left}
 .pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
@@ -537,7 +537,7 @@ input[type=checkbox] {display:none}
 .cart_info .just_left {position:relative; float:left; width:72px; height:72px;overflow:hidden;}
 .cart_info .just_left img {width:100%; height:100%}
 .cart_info .soldout::before {content:'SOLD OUT';overflow:hidden; display:block; padding:18.5px 0; position:absolute; top:0px; left:0; line-height:1;background-color: rgba(0,0,0,.6); color: #fff; font-size:18px; font-weight:600; text-align:center; font-family:'ProximaNova';}
-.cart_brd {overflow:hidden; height:15px; line-height:1.33; display:-webkit-box; height:auto; max-height:30px; margin-bottom:6px; line-height: 1.3; color: #555; font-size:12px; font-weight:500; font-stretch:normal; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+.cart_brd {margin-right:10px; overflow:hidden; height:15px; line-height:1.33; display:-webkit-box; height:auto; max-height:30px; margin-bottom:6px; line-height: 1.3; color: #555; font-size:12px; font-weight:500; font-stretch:normal; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
 .cart-sub {display:-webkit-box; display:block;height:auto; max-height:30px; margin-bottom:8px; line-height:1.3; color:#555; font-size:12px; word-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden}
 .cart-price {margin-top:-3px; display:block; color:#000; font-size:12px; font-family:'Noto Sans KR'}
 .cart-price .flex-text {font-size:16px; font-weight:700; font-family:'Noto Sans KR'}
@@ -617,6 +617,11 @@ input[type=text].text-input.phone-last {width:70%}
 }
 /* --------------------------------------------------------------------- 결재  S ------------------------------------------------------------------ */
 
+@media screen and (min-width:600px) {
+    .inp_d.sz-select_list {width:87%}
+    .num-select .sz-select_sub {width:116%;}
+}
+
 /* 팝업 탭 */
 .tab_list {width:100%; display:block; font-size:14px;}
 .tab_list li {float:left; width:50%; text-align:center}
@@ -657,6 +662,7 @@ input[type=text].text-input.phone-last {width:70%}
 /* .input_radio input[type=radio]:checked +label {z-index:1; width:22px; height:22px; border-radius:50%; border:1px solid #ff4e25} */
 
 /* 배송지 정보 입력 테이블 */
+.pr_chk_agree {margin-top:10px}
 .addressNone table {text-align:left; width:100%}
 .addressNone table td {margin-bottom:4px}
 .addressNone ul li {list-style:none}
@@ -680,15 +686,16 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .cart_section_total {background-color:#f9f9f9; border-bottom-left-radius:5px; border-bottom-right-radius:5px; border:1px solid #f0f0f0}
 .paymtWrap .paymt_info:first-of-type:before {display:block; content:''; clear:both; height:7px; background:#e5e5e5; border-top:1px solid #d0d0d0;}
 .paymtWrap .paymt_info .article_title {position:relative;padding:0 20px; height:50px; line-height:50px; font-size:16px; font-weight:500; color:#000;}
-.paymtWrap .paymt_info .article_title::after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_open_toggle.gif) center center/cover no-repeat}
-.paymtWrap .paymt_info .article_title.active::after {content:''; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_close_toggle.gif) center center/cover no-repeat}
+.paymtWrap .paymt_info .article_title::after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_close_toggle.gif) center center/cover no-repeat}
+.paymtWrap .paymt_info .article_title.active::after {content:''; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_open_toggle.gif) center center/cover no-repeat}
 .paymtWrap .paymt_info .article_title .orange_txt, .orange_txt2 {position:absolute; right:50px; display:inline-block; color:#ff4e25; font-family: proxima-nova,'Noto Sans KR',sans-serif; font-size:14px;}
 .paymtWrap .paymt_info .article_title .orange_txt em {font-size:16px;}
 .paymtWrap .paymt_info .article_title .orange_txt2 {right:20px;}
 .paymtWrap .paymt_info .article_content {border-top:1px solid #e5e5e5; padding:20px 15px; background:#fff; position:relative}
 .paymtWrap .paymt_info .article_content ._table th {text-align:left; font-size:13px; color:#333; vertical-align:middle}
 .paymtWrap .paymt_info .article_content ._table td > div::after {display:block; content:''; clear:both; height:100%;}
-.paymtWrap .paymt_info .sz-custom_text {margin:2px 0 0 9px; font-size:12px; font-weight:normal; color:#555;}
+.paymtWrap .paymt_info .sz-custom_text {float:left; margin:2px 0 0 9px; font-size:12px; font-weight:normal; color:#555;}
+.paymtWrap .paymt_info._agree {padding-bottom:20px}
 .paymtWrap ._agree .article_title::after, .paymtWrap ._member .article_title::after {display:none}
 .paymtWrap .balloon {display:inline-block; margin-left:7px; position:relative; top:-2px;padding:3px 10px;background:#4673c6; border-radius:5px; font-size:10px; color:#fff; box-shadow:3px 4px 10px 0px rgba(0,0,0,0.2)}
 .paymtWrap .balloon:after {content:'';position: absolute;top: 50%;right: 100%;margin-top: -3px;border-width:3px;border-style: solid;border-color: transparent #4673c6 transparent transparent}
@@ -696,23 +703,27 @@ input[type=text].text-input.phone-last {width:70%}
 .num-select {width:30%; float:left; display:inline-block;}
 .num-select ul li {}
 .num-select select {width:100%;}
-.num-select .selected {width:100%; vertical-align:middle; min-height:38px; color:#ababab;
+.num-select .selected {padding:0 5px; vertical-align:middle; min-height:38px; color:#ababab;
     background-color:#fff; border:1px solid #e5e5e5; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow:hidden; display:block; white-space:nowrap}
 .num-select .selected.active {border:1px solid #333; background-color:#fff}
-.num-select .selected.active ul li {}
+.num-select .sz-select_sub {width:97%; border:1px solid #333; border-top:0}
+/* .num-select .sz-select_sub li {padding:0 5px;} */
 .num-select .selected .sel_arrow {float:right; margin-top:7px}
 .pf_fc .num-select:first-child .selected {border-top:1px solid #e5e5e5}
-.pf_fc .num-select:first-child .selected.active {border-top: 1px solid #333}
+.pf_fc .num-select:first-child .selected.active {padding:0 5px; border-top: 1px solid #333; border-top:none;}
 .pf_fc .num-select:first-child .selected.active span {float:left}
 .pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
 /* .addr_wrap .sz-select_sub {display:inline-block}
 .addr_wrap .sz-select_sub li {display:inline-block} */
-.paymtWrap .addr_user {position:relative}
+.paymtWrap .addr_user {margin-bottom:20px; position:relative}
 .paymtWrap .addr_user dt {font-size:13px; line-height:1; margin-bottom:7px}
 .paymtWrap .addr_user dt span:first-of-type {margin-left:10px; top:-2px; padding:3px 8px; border:1px solid #1b61e3; border-radius:20px; font-size:10px; color:#1b61e3}
 .paymtWrap .addr_user dt span:first-of-type.recent {color:#ababab; border-color:#ababab}
 .paymtWrap .addr_user .tooltiptext {position:absolute}
-.paymtWrap .tooltiptext:after,.paymtWrap .tooltip .tooltiptext1:after {left:0}
+.tooltiptext .Pcc_sc {padding:5px; min-width:210px; font-size:11px; font-weight:normal;}
+.tooltiptext .Pcc_sc b {font-size:12px;}
+.paymtWrap .tooltiptext:after,.paymtWrap .tooltip .tooltiptext1:after {left:160px}
+.paymtWrap .tooltiptext {left:-95px}
 .paymtWrap .addr_user dd {font-size:13px; word-break:keep-all}
 .paymtWrap .addr_user dd span {font-size:15px;}
 .paymtWrap .addr_user dd:last-child {font-size:15px;}
@@ -729,13 +740,11 @@ input[type=text].text-input.phone-last {width:70%}
 .paymt_modify .mgb10 {display:inline-block; width:100%; margin-bottom:10px}
 .paymt_modify .wd100 {width:100% !important}
 .paymt_modify table tr {display:table; margin-bottom:10px}
-.paymt_modify table th {min-width:84px; text-align:left; font-size:13px; color:#333; vertical-align:middle;}
+.paymt_modify table th {min-width:85px; text-align:left; font-size:13px; color:#333; vertical-align:middle;}
 .paymt_modify table th.last {margin-top:10px; display:inline-block; vertical-align:top}
 .paymt_modify table td {width:100%}
-.paymt_modify .product-select {width:100%}
-.paymt_modify .product-select li {display:inline-block;}
 .paymt_modify .product-select .active li {border:0}
-.inp_d.sz-select_list {width:95%; height:38px; line-height:2}
+.inp_d.sz-select_list {vertical-align:middle; width:98%; height:38px; line-height:2}
 .paymtWrap .text-input:focus {border:1px solid #333 !important}
 /* .paymtWrap .input_text_new {margin-top:10px} */
 .paymtWrap .input_text_new .text_count {float:right; font-size:10px; color:#888}
@@ -749,20 +758,21 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap1 {border:0}
 .paymtWrap .paymt_info .table_wrap1 .pc-only {display: none}
 .paymtWrap .paymt_info .table_wrap1 table {width:100%; border:0}
-.paymtWrap .paymt_info .table_wrap1 tbody td:first-child {width:43%; color: #888;font-size: 13px}
-.paymtWrap .paymt_info .table_wrap1 tbody td:last-child {width: 70%; color: #000;font-size: 16px;text-align: right}
+.paymtWrap .paymt_info .table_wrap1 tbody th {padding-bottom:4px; text-align:left; width:70%; font-size:13px; color:#000;}
+.paymtWrap .paymt_info .table_wrap1 tbody td {text-align:right; width:30%; font-size:15px; color:#000;}
+/* .paymtWrap .paymt_info .table_wrap1 tbody tr:nth-last-child(1+0) {padding-bottom:25px;} */
 .paymtWrap .paymt_info .table_wrap1 tbody td.t_blue {color: #1b61e3;}
-.paymtWrap .paymt_info .table_wrap1 tbody td:last-child span {font-size: 18px}
-.paymtWrap .paymt_info .table_wrap1 tbody td {padding-bottom:4px}
+.paymtWrap .paymt_info .table_wrap1 tbody td span {font-size: 18px}
+.paymtWrap .paymt_info .table_wrap1 tfoot {margin-top:25px; border-top:1px solid #e5e5e5}
 .paymtWrap .paymt_info .table_wrap1 tfoot td {padding-top:16px}
-.paymtWrap .paymt_info .table_wrap1 tfoot td:first-child {font-size:15px; font-weight:500; color:#000}
+.paymtWrap .paymt_info .table_wrap1 tfoot th {text-align:left; vertical-align:middle; font-size:15px; font-weight:500; color:#000}
 .paymtWrap .paymt_info .table_wrap1 tfoot td:last-child {text-align:right}
 .paymtWrap .paymt_info .table_wrap1 tfoot td .ctt-pay {display:block; font-size:17px; font-weight:500; color:#ff4e25;}
 .paymtWrap .paymt_info .table_wrap1 tfoot td .ctt-pay .ctt-pay-num {font-size:21px; font-weight:700}
 .paymtWrap .paymt_info .table_wrap1 tfoot td .ctt-bonus {display:block; margin-bottom:15px; font-size:12px; font-weight:400; color:#888}
 .paymtWrap .paymt_info .table_wrap1 tfoot td .ctt-bonus .ctt-bonus-num {font-size:14px; font-weight:700}
 /* .paymtWrap .paymt_info .table_wrap1 tfoot td .mlg_info > * {margin:6px 20px; color: #888;  font-size: 11px; font-weight: 300;text-align:left; list-style:square;} */
-.paymtWrap .paymt_info._method .wrap_radio > span {margin:0 4px 15px vertical-align:middle; height:40px}
+.paymtWrap .paymt_info._method .wrap_radio > span {vertical-align:middle; height:40px}
 .paymtWrap input[type=text], .paymtWrap input[type=tel], .paymtWrap input[type=number]
 {padding:5px 10px; width:100%; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none}
 .paymtWrap .paymt_info._method .wrap_radio {vertical-align:middle}
@@ -783,6 +793,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info {}
 .paymtWrap .paymt_info .paymt_product {text-align:center; background-color:#e5e5e5}
 .paymtWrap .paymt_info .paymt_product .cart_de {float:right; width:calc(100% - 90px)}
+.paymtWrap .paymt_info .paymt_product .brd_area {}
 .paymtWrap .paymt_info .paymt_product .cart_box {margin-top:7px; display:inline-block; width:97%; text-align:left; border-radius:5px; border:1px solid #e5e5e5; background-color:#fff}
 .paymtWrap .paymt_info .paymt_product .list {margin:0 18px 25px; padding:25px 0 0;}
 .paymtWrap .paymt_info .paymt_product .list + .list {border-top:1px solid #f0f0f0;}
@@ -796,7 +807,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .paymt_product .prd_info ul li:last-child::before {display:none}
 .paymtWrap .paymt_info .paymt_product .prd_info .option {}
 .paymtWrap .paymt_info .paymt_product .prd_info div {display:inline-block; vertical-align:middle}
-.paymtWrap .paymt_info .paymt_product .prd_info span.cou_bage {z-index:1; position:relative; top:-4px; display:inline-block; margin-left:10px; font-size:10px; color:#1b61e3; }
+.paymtWrap .paymt_info .paymt_product .prd_info span.cou_bage {z-index:1; position:relative; top:-4px; display:inline-block; font-size:10px; color:#1b61e3; }
 .paymtWrap .paymt_info .paymt_product .prd_info span.cou_bage:before {z-index:-1; display:block; content:''; clear:both; position:absolute; bottom:0;  width:100%; height:6px; background:#edf3fd;}
 .paymtWrap .paymt_info .paymt_product .prd_info dt {font-size:12px; font-weight:400; color:#555; margin:0 0 10px; line-height:1}
 .paymtWrap .paymt_info .paymt_product .prd_info dd {font-size:12px; font-weight:300; color:#555; line-height:1.6;text-overflow: ellipsis;overflow: hidden;width: 57vw;white-space: nowrap;}
@@ -831,16 +842,19 @@ input[type=text].text-input.phone-last {width:70%}
 .paymt_order_applied .input_radio label:before, .paymt_order_applied .input_radio_check label:before
 {width:22px; height:22px; position:absolute; border:1px solid #dadada; content: "";border-radius: 50%; background-color:#fff}
 .input_radio input:checked+label:after {display:block;}
-.slick-slide a:focus,.slick-slide:focus {outline: 0}
+.input_radio dl {padding-left:35px}
+.input_radio .txt {padding-left:35px}
+.slick-slide a:focus,.slick-slide:focus {outline:0}
 .paymtWrap .paymt_order_applied > .paymt_info:first-of-type:before {display:none}
 .paymtWrap .paymt_order_applied .applied ul {margin:0 20px;}
+.paymtWrap .paymt_order_applied .applied li {min-height:45px}
 .paymtWrap .paymt_order_applied .applied li:first-child {padding:25px 0; height:unset}
 .paymtWrap .paymt_order_applied .applied li input:disabled,
 .paymtWrap .paymt_order_applied .applied li input:disabled + label,
 .paymtWrap .paymt_order_applied .applied li input:disabled + label dl > * {color:#d0d0d0 !important;}
 .paymtWrap .paymt_order_applied .applied li input:disabled + label dl dt span {color:#888;}
 .paymtWrap .paymt_order_applied .applied li input:disabled + label dl dt span:before {background:#f0f0f0}
-.paymtWrap .paymt_order_applied .applied li {padding:45px 0; position:relative; height:130px; border-top:1px solid #e5e5e5;}
+.paymtWrap .paymt_order_applied .applied li {padding:45px 0; position:relative; border-top:1px solid #e5e5e5;}
 .paymtWrap .paymt_order_applied .applied li dl dt {position:relative; font-family:proxima-nova,'Noto-sans KR'; font-size:16px; font-weight:600; color:#000; margin:0 0 10px; line-height:1}
 .paymtWrap .paymt_order_applied .applied li dl dt span {display:inline-block;font-size:14px; color:#ff4e25; position:absolute; left:0; top:-25px; z-index:4}
 .paymtWrap .paymt_order_applied .applied li dl dt span:before {display:block; content:''; clear:both; position:absolute; bottom:-1px;  width:100%; height:6px; background:#ffe5df; z-index:-1}
