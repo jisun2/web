@@ -49,8 +49,8 @@
                                         <dd>010-1234-5678</dd>
                                     </dl>
                                     <div class="addr_modify"><buttton class="pop_open" data-popup="popup_addr_modify">변경</button></div>
-                                    <!-- <div class="mt10 pf_fc">
-                                        <div class="product-select">
+                                    <div class="mt10 pf_fc">
+                                        <div class="product-select mgb10">
                                             <select class="sz-select_sl">
                                                 <option value="배송 요청사항을 선택해 주세요.">배송 요청사항을 선택해 주세요.</option>
                                                 <option value="부재 시 문 앞에 놓아주세요.">부재 시 문 앞에 놓아주세요.</option>
@@ -72,7 +72,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                                 <!-- 배송지 없을 때 -->
                                 <div class="addressNone">
@@ -179,7 +179,7 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="input_text_new2" style="width:68%; margin-left:2%">
+                                                        <div class="input_text_new2" style="width:68%; margin-left:2%;">
                                                             <input type="text" name="number" id="number" placeholder="휴대폰 나머지 번호" maxlength="8" class="wd100" >
                                                         </div>
                                                     </td>
@@ -200,9 +200,9 @@
                                                             <input type="text" placeholder="상세 주소를 입력해주세요." name="address" title="상세 주소 입력">
                                                         </div>
                                                         <div class="pr_chk_agree clear">
-                                                            <input type="checkbox" id="pr_chk_agree" class="sz-custom_check">
-                                                            <label for="pr_chk_agree" class="sz-custom_label flt_le"></label>
-                                                            <label for="pr_chk_agree" class="sz-custom_text">기본 배송지로 등록</label>
+                                                            <input type="checkbox" id="pr_chk_agree1" class="sz-custom_check">
+                                                            <label for="pr_chk_agree1" class="sz-custom_label flt_le"></label>
+                                                            <label for="pr_chk_agree1" class="sz-custom_text">기본 배송지로 등록</label>
                                                         </div>
 
                                                         <div class="mt10 pf_fc clear">
@@ -241,15 +241,15 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>개인통관<br />고유부호</th>
+                                                    <th>개인통관<br>고유부호</th>
                                                     <td>
                                                         <div class="">
                                                             <input type="number" name="address" title="개인통관 고유부호">
                                                         </div>
                                                         <div class="pr_chk_agree">
-                                                            <input type="checkbox" id="pr_chk_agree" class="sz-custom_check">
-                                                            <label for="pr_chk_agree" class="sz-custom_label flt_le"></label>
-                                                            <label for="pr_chk_agree" class="sz-custom_text">개인통관고유부호 수집에 대한 동의</label>
+                                                            <input type="checkbox" id="pr_chk_agree3" class="sz-custom_check">
+                                                            <label for="pr_chk_agree3" class="sz-custom_label flt_le"></label>
+                                                            <label for="pr_chk_agree3" class="sz-custom_text">개인통관고유부호 수집에 대한 동의</label>
                                                             <div class="tooltip"><span class="con">
                                                                 </span><span class="ico tip"></span>
                                                               <span class="tooltiptext">
@@ -362,9 +362,9 @@
                                 <div class="table_wrap1">
                                     <table>
                                       <caption class="blind">최종 결제 내역 표</caption>
-                                      <colgroup>
+                                      <!-- <colgroup>
                                               <col style="width:30%">
-                                      </colgroup>
+                                      </colgroup> -->
                                         <tbody>
                                             <tr>
                                                 <th>총 상품 금액</th>
@@ -382,7 +382,7 @@
                                                 <th>마일리지 사용</th>
                                                 <td>- <span class="num">2,000</span>원</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="pd20">
                                                 <th>총 배송비</th>
                                                 <td>+ <span class="num">2,500</span>원</td>
                                             </tr>
@@ -619,12 +619,12 @@
 
                         <div class="paymt_info _agree">
                             <div class="article_title">
-                                <p class="pos_r">
-                                    <input type="checkbox" id="chk_agree" class="sz-custom_check">
-                                    <label for="chk_agree" class="sz-custom_label flt_le"></label>
-                                    <label for="chk_agree" class="sz-custom_text">주문 상품 및 주문 정보,결제 동의 (필수)</label>
-                                    <a href="" data-popup="pop_paymt_guide" class="a_info pop_open">내용확인</a>
-                                </p>
+                                <div class="pos_r">
+                                    <input type="checkbox" id="chk_agree2" class="sz-custom_check">
+                                    <label for="chk_agree2" class="sz-custom_label flt_le" style="margin-top:15px"></label>
+                                    <label for="chk_agree2" class="sz-custom_text">주문 상품 및 주문 정보,결제 동의 (필수)</label>
+                                    <a href="" data-popup="pop_paymt_guide" class="a_info pop_open" style="padding-right:20px">내용확인</a>
+                                </div>
                             </div>
                         </div><!-- agree -->
                         <!-- fixed bottom total -->
@@ -643,171 +643,9 @@
                     </div>
                 </form>
             </div>
-
-
-
-
-            <!-- .팝업 상품쿠폰 선택 -->
-            <div id="popup_prd_coupon" class="popup-wrap bg_wht">
-                <h2>상품쿠폰 선택</h2>
-                <!-- 상품쿠폰 선택 -->
-                <!-- <div class="paymtWrap">
-                    <div class="paymt_coupon_applied">
-                        <div class="paymt_info">
-                            <div class="pos_r">
-                                <div class="paymt_product">
-                                    <div class="list">
-                                        <div class="just_left"><a href="" class="prd_img">
-                                            <a href="#none">
-                                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="just_right">
-                                            <dl class="prd_info">
-                                                <dt>엑스씨엑스메인</dt>
-                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
-                                                <dd><span>74,000</span>원</dd>
-                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                    <div class="applied">
-                                        <ul>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio3_1">
-                                                    <label for="radio3_1" class="">적용안함</label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio3_2">
-                                                    <label for="radio3_2" class="">- 2,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio3_3">
-                                                    <label for="radio3_3" class="">- 1,500원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio3_4">
-                                                    <label for="radio3_4" class="">- 1,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="paymt_product">
-                                    <div class="list">
-                                        <div class="just_left">
-                                            <a href="#none">
-                                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="just_right">
-                                            <dl class="prd_info">
-                                                <dt>엑스씨엑스메인</dt>
-                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
-                                                <dd><span>74,000</span>원</dd>
-                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                    <div class="applied">
-                                        <ul>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio4_1">
-                                                    <label for="radio4_1" class="">적용안함</label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio4_2">
-                                                    <label for="radio4_2" class="">- 2,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio4_3">
-                                                    <label for="radio4_3" class="">- 1,500원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio4_4">
-                                                    <label for="radio4_4" class="">- 1,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="paymt_product">
-                                    <div class="list">
-                                        <div class="just_left">
-                                            <a href="#none">
-                                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="just_right">
-                                            <dl class="prd_info">
-                                                <dt>엑스씨엑스메인</dt>
-                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
-                                                <dd><span>74,000</span>원</dd>
-                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                    <div class="applied">
-                                        <ul>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio5_1">
-                                                    <label for="radio5_1" class="">적용안함</label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio5_2">
-                                                    <label for="radio5_2" class="">- 2,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio5_3">
-                                                    <label for="radio5_3" class="">- 1,500원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <span class="input_radio">
-                                                    <input type="radio" name="radio1" id="radio5_4">
-                                                    <label for="radio5_4" class="">- 1,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
-                                                </span>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="last_btnn_wrap">
-                        <button class="last_btn_white pop_close">취소</button>
-                        <button class="last_btn_black">저장</button>
-                    </div>
-                </div> -->
-
-
-                <!--// 상품쿠폰 선택 끝 -->
-            </div>
-
             <!-- .팝업 주문쿠폰 선택 -->
-            <div id="popup_ord_coupon" class="popup-wrap bg_wht">
+            <!-- <div id="popup_ord_coupon" class="popup-wrap bg_wht wd720">
                 <h2>주문쿠폰 선택</h2>
-                <!-- 주문쿠폰 선택 -->
                 <div class="paymtWrap">
                     <div class="paymt_order_applied">
                         <div class="paymt_info">
@@ -881,13 +719,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="last_btnn_wrap">
+                    <div class="last_btnn_wrap1">
                         <button class="last_btn_white pop_close">취소</button>
                         <button class="last_btn_black">저장</button>
                     </div>
                 </div>
-                <!--// 주문쿠폰 선택 끝 -->
-            </div>
+            </div> -->
             <!--//팝업 주문쿠폰 선택 -->
 
             <!-- 팝업 카드사 혜택 -->
