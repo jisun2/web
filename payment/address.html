@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../common/css/common.css">
-        <link rel="stylesheet" href="assets/css/payment.css">
+        <!-- <link rel="stylesheet" href="assets/css/payment.css"> -->
         <link rel="stylesheet" href="../common/css/productdetail.css">
     </head>
     <body>
@@ -23,13 +23,13 @@
             </div>
 
             <div id="container">
-                <div class="paymt_wrap paymtWrap">
+                <div class="paymtWrap pdb0">
                     <ul class="tab_list clear">
                         <li class="active"><a class="bt-btn big-font" href="#">배송지 선택</a></li>
                         <li><a class="bt-btn big-font" href="addressNew.html">신규 주소</a></li>
                     </ul>
                     <div class="paymt_addr_modify">
-                        <div class="pos_r">
+                        <div class="addr_wrap">
                             <ul>
                                 <li>
                                     <span class="input_radio">
@@ -112,15 +112,19 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="last_btnn_wrap">
-                                <div class="pr_chk_agree clear">
-                                    <input type="checkbox" id="pr_chk" class="sz-custom_check">
-                                    <label for="pr_chk" class="sz-custom_label flt_le"></label>
-                                    <label for="pr_chk" class="sz-custom_text">기본 배송지로 등록</label>
-                                </div>
-                                <button class="last_btn_white">취소</button>
-                                <button class="last_btn_black">선택</button>
+                            <p class="reference">
+                                ※ 최근 배송지는 최대 5개 까지 저장 됩니다.
+                            </p>
+                        </div>
+
+                        <div class="last_btnn_wrap">
+                            <div class="pr_chk_agree clear">
+                                <input type="checkbox" id="pr_chk" class="sz-custom_check">
+                                <label for="pr_chk" class="sz-custom_label flt_le"></label>
+                                <label for="pr_chk" class="sz-custom_text">기본 배송지로 등록</label>
                             </div>
+                            <button class="last_btn_white">취소</button>
+                            <button class="last_btn_black">선택</button>
                         </div>
                     </div>
                 </div>

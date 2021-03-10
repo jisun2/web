@@ -18,7 +18,7 @@
             <div id="header">
                 <div class="headerWrap">
                     <div class="box_left back">
-                        <a href="#" title="뒤로가기" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
                         <p class="header_title">
                             주문결제
                         </p>
@@ -42,14 +42,14 @@
                                             <div class="">
                                                 홍길동 <span>기본배송지</span>
                                                 <!-- <span class="recent">최근배송지</span> -->
-                                               <!-- <span class="tooltiptext">배송 정보를 확인해 주세요!</span> -->
+                                               <span class="tooltiptext">배송 정보를 확인해 주세요!</span>
                                             </div>
                                         </dt>
                                         <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
                                         <dd>010-1234-5678</dd>
                                     </dl>
                                     <div class="addr_modify"><buttton class="pop_open" data-popup="popup_addr_modify">변경</button></div>
-                                    <div class="mt10 pf_fc">
+                                    <div class="mt20 pf_fc">
                                         <div class="product-select mgb10">
                                             <select class="sz-select_sl">
                                                 <option value="배송 요청사항을 선택해 주세요.">배송 요청사항을 선택해 주세요.</option>
@@ -75,7 +75,7 @@
                                             <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
                                             <div class="input_text_new mt10">
                                                 <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
-                                                <input type="text" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
+                                                <input type="text" title="배송지 요청 사항" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
                                                 <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
                                                 <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
                                             </div>
@@ -89,15 +89,15 @@
                                         <table>
                                             <caption class="blind">배송지 신규 등록</caption>
                                             <colgroup>
-                                                <col style="width:20%"/>
-                                                <col style="width:80%"/>
+                                                <col style="width:20%">
+                                                <col style="width:80%">
                                             </colgroup>
                                             <tbody>
                                                 <tr>
                                                     <th><label for="addressee">받는분</label></th>
                                                     <td>
                                                         <div class="">
-                                                            <input type="text" id="addressee" name="addressee" placeholder="받는분 성함" >
+                                                            <input title="받는분 성함" type="text" id="addressee" name="addressee" placeholder="받는분 성함" >
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -911,12 +911,12 @@
         </div>
         <script src="../common/lib/main.js"></script>
         <script>
-            // $(document).ready(function(){
-            //     $(".tooltiptext").show();
-            //     setTimeout(function () {
-            //         $(".tooltiptext").hide();
-            //     }, 5000);
-            // });
+            $(document).ready(function(){
+                $(".tooltiptext").show();
+                setTimeout(function () {
+                    $(".tooltiptext").hide();
+                }, 5000);
+            });
             (function(){
                 function toggleAcco(ele, content) {
                     $(ele).on('click touch', function () {
