@@ -18,7 +18,7 @@
             <div id="header">
                 <div class="headerWrap">
                     <div class="box_left back">
-                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <a href="#" title="뒤로가기" class="btn_back"><span class="blind">뒤로가기</span></a>
                         <p class="header_title">
                             주문결제
                         </p>
@@ -71,6 +71,15 @@
                                                     </ul>
                                                 </li>
                                             </ul>
+
+                                            <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
+                                            <div class="input_text_new mt10">
+                                                <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
+                                                <input type="text" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
+                                                <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
+                                                <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
+                                            </div>
+                                            <!-- // 배송 요청사항을 직접 입력 선택 했을 때 -->
                                         </div>
                                     </div>
                                 </div>
@@ -179,7 +188,7 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="input_text_new2" style="width:68%; margin-left:2%;">
+                                                        <div class="input_text_new2">
                                                             <input type="text" name="number" id="number" placeholder="휴대폰 나머지 번호" maxlength="8" class="wd100" >
                                                         </div>
                                                     </td>
@@ -216,7 +225,7 @@
                                                                     <option value="직접입력">직접입력</option>
                                                                 </select>
                                                                 <ul class="sz-select_list">
-                                                                    <li class="selected" style="width:98%">배송 요청사항을 선택해주세요<i class="ico sel_arrow"></i></li>
+                                                                    <li class="selected">배송 요청사항을 선택해주세요<i class="ico sel_arrow"></i></li>
                                                                     <li>
                                                                         <ul class="sz-select_sub">
                                                                             <li>부재 시 문 앞에 놓아주세요.</li>
@@ -231,7 +240,7 @@
                                                         </div>
 
                                                         <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
-                                                        <div class="input_text_new">
+                                                        <div class="input_text_new mt10">
                                                             <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
                                                             <input type="text" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
                                                             <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
@@ -285,9 +294,9 @@
                                     <table>
                                       <caption class="blind">할인 차감 내역 표</caption>
                                         <colgroup>
-                                            <col width="30%"/>
-                                            <col width="53%"/>
-                                            <col width=""/>
+                                            <col width="20%">
+                                            <col width="50%">
+                                            <col width="20%">
                                         </colgroup>
                                         <tbody>
                                             <tr>
@@ -382,7 +391,7 @@
                                                 <th>마일리지 사용</th>
                                                 <td>- <span class="num">2,000</span>원</td>
                                             </tr>
-                                            <tr class="pd20">
+                                            <tr>
                                                 <th>총 배송비</th>
                                                 <td>+ <span class="num">2,500</span>원</td>
                                             </tr>
@@ -902,12 +911,12 @@
         </div>
         <script src="../common/lib/main.js"></script>
         <script>
-            $(document).ready(function(){
-                $(".tooltiptext").show();
-                setTimeout(function () {
-                    $(".tooltiptext").hide();
-                }, 5000);
-            });
+            // $(document).ready(function(){
+            //     $(".tooltiptext").show();
+            //     setTimeout(function () {
+            //         $(".tooltiptext").hide();
+            //     }, 5000);
+            // });
             (function(){
                 function toggleAcco(ele, content) {
                     $(ele).on('click touch', function () {
