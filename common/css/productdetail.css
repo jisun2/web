@@ -681,6 +681,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .default_check2 label {float:left}
 .paymtWrap .default_check3 {margin: 0 0 12px}
 .paymtWrap .paymt_info:after {display:block; content:''; clear:both; height:7px; background:#e5e5e5; border-top:1px solid #d0d0d0;}
+.paymtWrap .paymt_info:after {display:block; content:''; clear:both; height:7px; background:#e5e5e5; border-top:1px solid #d0d0d0;}
 .paymtWrap .cart_box del {color:#ababab}
 .paymtWrap .cart_box .cart_info {padding:20px}
 .paymtWrap .cart_box .cart_list {padding:0 20px;}
@@ -945,7 +946,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap1 tbody td.t_blue {color: #1b61e3;}
 .paymtWrap .paymt_info .table_wrap1 tbody td:last-child span {font-size: 18px}
 .paymtWrap .paymt_info .table_wrap1 tbody td {padding-bottom: 4px}
-.paymtWrap .paymt_info .table_wrap1 tbody tr:last-child td {padding-bottom: 18px;border-bottom: 1px solid #f0f0f0}
+.paymtWrap .paymt_info .table_wrap1.br tbody tr:last-child td {padding-bottom: 18px;border-bottom: 1px solid #f0f0f0}
 .paymtWrap .paymt_info .table_wrap1 tfoot td {padding-top: 16px}
 .paymtWrap .paymt_info .table_wrap1 tfoot td:first-child {color: #000; font-size: 15px; font-weight: 500}
 .paymtWrap .paymt_info .table_wrap1 tfoot td:last-child {text-align: right}
