@@ -3296,7 +3296,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .txt_cnt {text-align:center !important}
 .orange {color:#ff4e25 !important}
 .blue {color:#3067cc !important}
-.num {font-family:'proxima-nova'!important}
+.num {font-family:'proxima'!important}
 .notoS {font-family:'Noto Sans KR'!important}
 .proxima {font-family:'proxima-nova'!important}
 .box_right, .box_left {position:relative; float:left; width:50%; vertical-align:middle}
@@ -3359,7 +3359,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
     -o-transform: translate(-50%,-7%) rotateZ(-45deg);
     transform: translate(-50%,-7%) rotateZ(-45deg);
 }
-#header {display:flow-root}
+#header {display:flow-root; height:50px; vertical-align:middle}
 #header .popup {display:block; border-bottom:1px solid #d0d0d0}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
