@@ -84,7 +84,7 @@
                                     </div>
                                 </div>
                                 <!-- 배송지 없을 때 -->
-                                <div class="addressNone">
+                                <div class="addrN">
                                     <div class="paymt_modify">
                                         <table>
                                             <caption class="blind">배송지 신규 등록</caption>
@@ -97,7 +97,7 @@
                                                     <th><label for="addressee">받는분</label></th>
                                                     <td>
                                                         <div class="mb10">
-                                                            <input title="받는분 성함" type="text" id="addressee" name="addressee" placeholder="받는분 성함" >
+                                                            <input title="받는분 성함" type="text" id="addressee" name="addressee" placeholder="" >
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -189,16 +189,16 @@
                                                             </ul>
                                                         </div>
                                                         <div class="input_text_new2">
-                                                            <input type="text" name="number" id="number" placeholder="휴대폰 나머지 번호" maxlength="8" class="wd100" >
+                                                            <input type="text" name="number" id="number"  maxlength="8" class="wd100" >
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="last"><label for="address">배송지</label></th>
+                                                    <th class="last mt10"><label for="address">배송지</label></th>
                                                     <td>
                                                         <div class="mgb10">
                                                             <div class="input_text_new2">
-                                                                <input type="text" placeholder="" name="address"  title="주소찾기">
+                                                                <input type="text" name="address"  title="주소찾기">
                                                             </div>
                                                             <button>주소찾기</button>
                                                         </div>
@@ -250,7 +250,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>개인통관<br>고유부호</th>
+                                                    <th class="last">개인통관<br>고유부호</th>
                                                     <td>
                                                         <div class="">
                                                             <input type="number" name="address" title="개인통관 고유부호">
@@ -357,23 +357,57 @@
                                         </label>
                                     </span>
                                 </div>
-                                <span class="default_check2">
-                                    <input type="checkbox" id="chk_method1" class="sz-custom_check">
-                                    <label for="chk_method1" class="sz-custom_label flt_le"></label>
-                                    <label for="chk_method1" class="sz-custom_text">선택한 결제 수단 다음에도 사용</label>
-                                </span>
+
+                                <div class="pay_back" style="display:block">
+                                	<div class="title">
+                                		환불계좌정보
+                                	</div>
+                                	<div class="account">
+                                		<div class="product-select mb10">
+                                			<select class="sz-select_sl">
+                                				<option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option>
+                                				<option value="국민">국민</option>
+                                				<option value="농협">농협</option>
+                                				<option value="신한">신한</option>
+                                			</select>
+                                			<ul class="sz-select_list">
+                                				<li class="selected">입금 은행을 선택해주세요.</li>
+                                				<li>
+                                				<ul class="sz-select_sub">
+                                					<li>국민</li>
+                                					<li>농협</li>
+                                					<li>신한</li>
+                                				</ul>
+                                				</li>
+                                			</ul>
+                                		</div>
+                                		<div class="input_text_new input_wrap mb10">
+                                			<input type="number" placeholder="계좌번호" class="text-input">
+                                		</div>
+                                        <div class="mgb10">
+                                            <div class="input_text_new2 mb10">
+                                                <input type="text" name="account" title="예금주" placeholder="예금주" >
+                                                <div class="acc_btn_bk">
+                                                    <button class="account" type="button" title="계좌인증">계좌인증</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="default_check2">
+                                        <input type="checkbox" id="chk_method1" class="sz-custom_check">
+                                        <label for="chk_method1" class="sz-custom_label flt_le"></label>
+                                        <label for="chk_method1" class="sz-custom_text">선택한 결제 수단 다음에도 사용</label>
+                                    </span>
+                                </div>
                             </div>
                         </div><!-- method -->
 
                         <div class="paymt_info _price">
                             <div class="article_title">결제 금액</div>
                             <div class="article_content" style="display:block">
-                                <div class="table_wrap1 br">
+                                <!-- <div class="table_wrap1 br">
                                     <table>
                                       <caption class="blind">최종 결제 내역 표</caption>
-                                      <!-- <colgroup>
-                                              <col style="width:30%">
-                                      </colgroup> -->
                                         <tbody>
                                             <tr>
                                                 <th>총 상품 금액</th>
@@ -401,16 +435,47 @@
                                                 <th>최종 결제 금액</th>
                                                 <td>
                                                     <span class="ctt-pay"><b class="ctt-pay-num">9,421,900</b>원</span>
-                                                    <!-- <span class="ctt-bonus">예상 적립금 <span class="ctt-bonus-num">380M</span></span>
-                                                    <span class="ctt-info">※ 쇼핑백에 담긴 상품은 30일 동안 보관됩니다.</span> -->
                                                 </td>
                                             </tr>
                                         </tfoot>
                                     </table>
                                     <button type="submit" class="black-btn pc-only">결제하기</button>
+                                </div> -->
+                                <div class="pay_total_wrap">
+                                    <p class="blind">총 결제 금액 정보</p>
+                                    <dl>
+                                        <dt>총 상품 금액</dt>
+                                        <dd><span class="num">10,469,700</span>원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>즉시 할인</dt>
+                                        <dd>- <span class="num">815,800</span>원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총 쿠폰 할인</dt>
+                                        <dd>- <span class="num">35,000</span>원</dd>
+                                    </dl>
+                                    <dl class="mgbt0">
+                                        <dt>마일리지 사용</dt>
+                                        <dd>- <span class="num">2,000</span>원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총 배송비</dt>
+                                        <dd>+ <span class="num">2,500</span>원</dd>
+                                    </dl>
+                                    <dl class="last">
+                                        <dt>최종 결제 금액</dt>
+                                        <dd>
+                                            <span class="ctt-pay"><b class="ctt-pay-num">9,421,900</b>원</span>
+                                        </dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div><!-- price -->
+
+
+
+
                         <div class="paymt_info _mileage">
                             <div class="article_title">마일리지 적립 <span class="orange_txt">최대 <b>2,500M</b></span></div>
                             <div class="article_content" style="display:block">
@@ -424,15 +489,15 @@
                                         <tbody>
                                             <tr>
                                                 <th>기본 구매 적립</th>
-                                                <td><span>1,629</span>M</td>
+                                                <td><span class="num">1,629</span>M</td>
                                             </tr>
                                             <tr>
                                                 <th>일반 상품평 작성 시</th>
-                                                <td class="t_blue">+ <span>500</span>M</td>
+                                                <td class="t_blue">+ <span class="num">500</span>M</td>
                                             </tr>
                                             <tr>
                                                 <th>포토 상품평 작성 시</th>
-                                                <td class="t_blue">+ <span>1,500</span>M</td>
+                                                <td class="t_blue">+ <span class="num">1,500</span>M</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -632,7 +697,7 @@
                                     <input type="checkbox" id="chk_agree2" class="sz-custom_check">
                                     <label for="chk_agree2" class="sz-custom_label flt_le" style="margin-top:15px"></label>
                                     <label for="chk_agree2" class="sz-custom_text">주문 상품 및 주문 정보,결제 동의 (필수)</label>
-                                    <a href="" data-popup="pop_paymt_guide" class="a_info pop_open" style="padding-right:20px">내용확인</a>
+                                    <a href="" data-popup="pop_paymt_guide" class="a_info pop_open" style="padding-right:20px">내용 확인</a>
                                 </div>
                             </div>
                         </div><!-- agree -->
@@ -915,7 +980,7 @@
                 $(".tooltiptext").show();
                 setTimeout(function () {
                     $(".tooltiptext").hide();
-                }, 5000);
+                }, 1000);
             });
             (function(){
                 function toggleAcco(ele, content) {
@@ -930,6 +995,10 @@
                     $('.article_content .pay_back').remove();
                     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
                 });
+                // $('.input_radio').change(function() {
+                //     $('.article_content .pay_back').remove();
+                //     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
+                // });
                 $('.border_tab-list li').each(function(i){
                     $(this).click(function(){
                         $(this).addClass('active').siblings().removeClass('active');
