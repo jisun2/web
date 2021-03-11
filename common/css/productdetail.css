@@ -663,7 +663,7 @@ input[type=text].text-input.phone-last {width:70%}
 /* 배송지 정보 입력 테이블 */
 .pr_chk_agree {margin-top:10px; vertical-align:middle; height:30px}
 .addressNone table {text-align:left; width:100%}
-.addressNone table td {margin-bottom:4px}
+.addressNone table td {width:60%; margin-bottom:4px}
 .addressNone ul li {list-style:none}
 .addressNone .product-select {width:100%}
 .addressNone .tooltip .tooltiptext {bottom:25px; right:-20px; border-radius:3px}
@@ -747,7 +747,7 @@ input[type=text].text-input.phone-last {width:70%}
 .addr_wrap .reference {padding:15px 0; border-top:1px solid #e5e5e5; color:#888}
 .paymt_modify .mgb10 {display:inline-block; width:100%; margin-bottom:10px}
 .paymt_modify .wd100 {width:100% !important}
-.paymt_modify table tr {display:table; margin-bottom:10px}
+.paymt_modify table tr {margin-bottom:10px}
 .paymt_modify table th {min-width:85px; text-align:left; font-size:13px; color:#333; vertical-align:middle;}
 .paymt_modify table th.last {margin-top:10px; display:inline-block; vertical-align:top}
 .paymt_modify table td {width:100%}
