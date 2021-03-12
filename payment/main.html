@@ -9,9 +9,9 @@
         <script src="../common/lib/plugin.js"></script>
         <script src="../common/lib/common.js"></script>
         <script src="../common/lib/slick.min.js"></script>
-        <!-- <link rel="stylesheet" href="assets/css/payment.css"> -->
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/productdetail.css">
+        <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/988304662/?random=1615532740819&amp;cv=9&amp;fst=1615532740819&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635470&amp;u_h=667&amp;u_w=375&amp;u_ah=667&amp;u_aw=375&amp;u_cd=24&amp;u_his=3&amp;u_tz=540&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2oa330&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.hiphoper.com%2Fevent%2Fview%2FMINIMALPROJECT0308&amp;ref=https%3A%2F%2Fwww.hiphoper.com%2F&amp;tiba=HIPHOPER&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
     </head>
     <body>
         <div id="wrap" class="wd720">
@@ -67,13 +67,12 @@
                                                         <li>부재 시 경비실에 맡겨주세요.</li>
                                                         <li>부재 시 전화 또는 문자 주세요.</li>
                                                         <li>택배함에 넣어주세요.</li>
-                                                        <li onclick="my1Function()">직접입력</li>
+                                                        <li onclick="myFunction()">직접입력</li>
                                                     </ul>
                                                 </li>
                                             </ul>
-
                                             <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
-                                            <div class="input_text_new mt10 panel1" style="display:none">
+                                            <div class="input_text_new mt10 pay_back" style="display:none">
                                                 <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
                                                 <input type="text" title="배송지 요청 사항" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
                                                 <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
@@ -109,23 +108,16 @@
                                                         <div class="num-select mb10">
                                                             <select title="휴대폰 첫째자리 선택" class="sz-select_sl">
                                                                 <option value="010" selected="">010</option>
-                                                                <option value="011">011</option>
-                                                                <option value="016">016</option>
-                                                                <option value="017">017</option>
-                                                                <option value="018">018</option>
-                                                                <option value="019">019</option>
                                                                 <option value="02">02</option>
                                                                 <option value="031">031</option>
                                                                 <option value="032">032</option>
                                                                 <option value="033">033</option>
-                                                                <option value="041">041</option>
-                                                                <option value="042">042</option>
-                                                                <option value="043">043</option>
-                                                                <option value="044">044</option>
+                                                                <option value="011">011</option>
+                                                                <option value="016">012</option>
+                                                                <option value="017">013</option>
                                                                 <option value="051">051</option>
                                                                 <option value="052">052</option>
                                                                 <option value="053">053</option>
-                                                                <option value="054">054</option>
                                                                 <option value="055">055</option>
                                                                 <option value="061">061</option>
                                                                 <option value="062">062</option>
@@ -133,39 +125,21 @@
                                                                 <option value="064">064</option>
                                                                 <option value="070">070</option>
                                                                 <option value="080">080</option>
-                                                                <option value="0130">0130</option>
-                                                                <option value="0303">0303</option>
-                                                                <option value="0502">0502</option>
-                                                                <option value="0503">0503</option>
-                                                                <option value="0504">0504</option>
-                                                                <option value="0505">0505</option>
-                                                                <option value="0506">0506</option>
-                                                                <option value="0507">0507</option>
-                                                                <option value="050">050</option>
-                                                                <option value="012">012</option>
-                                                                <option value="059">059</option>
                                                             </select>
                                                             <ul class="inp_d sz-select_list flt_le">
                                                                 <li class="selected">010<i class="ico sel_arrow"></i></li>
                                                                 <li>
                                                                     <ul class="sz-select_sub">
-                                                                        <li>011</li>
-                                                                        <li>016</li>
-                                                                        <li>017</li>
-                                                                        <li>018</li>
-                                                                        <li>019</li>
                                                                         <li>02</li>
                                                                         <li>031</li>
                                                                         <li>032</li>
                                                                         <li>033</li>
-                                                                        <li>041</li>
-                                                                        <li>042</li>
-                                                                        <li>043</li>
-                                                                        <li>044</li>
+                                                                        <li>011</li>
+                                                                        <li>012</li>
+                                                                        <li>013</li>
                                                                         <li>051</li>
                                                                         <li>052</li>
                                                                         <li>053</li>
-                                                                        <li>054</li>
                                                                         <li>055</li>
                                                                         <li>061</li>
                                                                         <li>062</li>
@@ -173,17 +147,6 @@
                                                                         <li>064</li>
                                                                         <li>070</li>
                                                                         <li>080</li>
-                                                                        <li>013</li>
-                                                                        <li>0303</li>
-                                                                        <li>0502</li>
-                                                                        <li>0503</li>
-                                                                        <li>0504</li>
-                                                                        <li>0505</li>
-                                                                        <li>0506</li>
-                                                                        <li>0507</li>
-                                                                        <li>050</li>
-                                                                        <li>012</li>
-                                                                        <li>059</li>
                                                                     </ul>
                                                                 </li>
                                                             </ul>
@@ -357,7 +320,7 @@
                                     </span>
                                 </div>
 
-                                <div class="pay_back" id="panel" style="display:none">
+                                <div class="pay_back" id="panel">
                                 	<div class="title">
                                 		환불계좌정보
                                 	</div>
@@ -454,7 +417,7 @@
                                         <dt>총 쿠폰 할인</dt>
                                         <dd>- <span class="num">35,000</span>원</dd>
                                     </dl>
-                                    <dl class="mgbt0">
+                                    <dl>
                                         <dt>마일리지 사용</dt>
                                         <dd>- <span class="num">2,000</span>원</dd>
                                     </dl>
@@ -465,7 +428,7 @@
                                     <dl class="last">
                                         <dt>최종 결제 금액</dt>
                                         <dd>
-                                            <span class="ctt-pay"><b class="ctt-pay-num">9,421,900</b>원</span>
+                                            <span class="ctt-pay"><b class="ctt-pay-num num">9,421,900</b>원</span>
                                         </dd>
                                     </dl>
                                 </div>
@@ -500,8 +463,6 @@
                                             </tr>
                                         </tbody>
                                     </table>
-
-                                    <button type="submit" class="black-btn pc-only">결제하기</button>
                                 </div>
                             </div>
                         </div><!-- mileage -->
@@ -810,50 +771,50 @@
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월/12개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~6</span>개월/<span class="num">12</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_02.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~5개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~6</span>개월/<span class="num">12</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_03.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~5개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_04.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~6</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_05.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_06.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</d>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                         </ul>
@@ -862,50 +823,50 @@
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월/12개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~5개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~5개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</dd>
-                                    <dd>5만원 이상 결제 시</dd>
+                                    <dd><span class="num">2~5</span>개월</dd>
+                                    <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                 </dl>
                             </li>
                         </ul>
@@ -985,7 +946,7 @@
                     con.style.display = 'none';
                 }
             }
-    
+
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
@@ -999,12 +960,16 @@
                         $(this).siblings(content).toggle();
                     });
                 }
-               //  toggleAcco('.article_title', '.article_content');
+                toggleAcco('.article_title', '.article_content');
+                $('.input_radio').change(function() {
+                    $('.article_content .pay_back').remove();
+                    $('.input_radio #radio1_2:checked').parent().parent().append();
+                });
                // 무통장입금 선택 시 환불계좌 정보 추가
-               //  $('.input_radio').change(function() {
-               //      $('.article_content .pay_back').remove();
-               //      $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
-               //  });
+                $('.input_radio').change(function() {
+                    $('.article_content .pay_back').remove();
+                    $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
+                });
                 // $('.input_radio').change(function() {
                 //     $('.article_content .pay_back').remove();
                 //     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
