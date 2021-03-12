@@ -30,20 +30,21 @@
                       <li><a class="bt-btn" href="address.html">배송지 선택</a></li>
                       <li class="active"><a class="bt-btn" href="#">신규 주소</a></li>
                   </ul>
+
                   <div class="paymt_modify hitC">
                       <div class="addr_wrap">
                           <table>
                               <caption class="blind">배송지 신규 등록</caption>
                               <colgroup>
-                                  <col style="width:20%"/>
-                                  <col style="width:80%"/>
+                                  <col style="width:20%">
+                                  <col style="width:80%">
                               </colgroup>
                               <tbody>
                                   <tr>
                                       <th><label for="addressee">받는분</label></th>
                                       <td>
-                                          <div class="">
-                                              <input type="text" id="addressee" name="addressee" placeholder="받는분 성함" >
+                                          <div class="mb10">
+                                              <input title="받는분 성함" type="text" id="addressee" name="addressee" placeholder="" >
                                           </div>
                                       </td>
                                   </tr>
@@ -52,26 +53,19 @@
                                           <label for="number">연락처</label>
                                       </th>
                                       <td>
-                                          <div class="num-select">
+                                          <div class="num-select mb10">
                                               <select title="휴대폰 첫째자리 선택" class="sz-select_sl">
                                                   <option value="010" selected="">010</option>
-                                                  <option value="011">011</option>
-                                                  <option value="016">016</option>
-                                                  <option value="017">017</option>
-                                                  <option value="018">018</option>
-                                                  <option value="019">019</option>
                                                   <option value="02">02</option>
                                                   <option value="031">031</option>
                                                   <option value="032">032</option>
                                                   <option value="033">033</option>
-                                                  <option value="041">041</option>
-                                                  <option value="042">042</option>
-                                                  <option value="043">043</option>
-                                                  <option value="044">044</option>
+                                                  <option value="011">011</option>
+                                                  <option value="016">012</option>
+                                                  <option value="017">013</option>
                                                   <option value="051">051</option>
                                                   <option value="052">052</option>
                                                   <option value="053">053</option>
-                                                  <option value="054">054</option>
                                                   <option value="055">055</option>
                                                   <option value="061">061</option>
                                                   <option value="062">062</option>
@@ -79,39 +73,21 @@
                                                   <option value="064">064</option>
                                                   <option value="070">070</option>
                                                   <option value="080">080</option>
-                                                  <option value="0130">0130</option>
-                                                  <option value="0303">0303</option>
-                                                  <option value="0502">0502</option>
-                                                  <option value="0503">0503</option>
-                                                  <option value="0504">0504</option>
-                                                  <option value="0505">0505</option>
-                                                  <option value="0506">0506</option>
-                                                  <option value="0507">0507</option>
-                                                  <option value="050">050</option>
-                                                  <option value="012">012</option>
-                                                  <option value="059">059</option>
                                               </select>
                                               <ul class="inp_d sz-select_list flt_le">
                                                   <li class="selected">010<i class="ico sel_arrow"></i></li>
                                                   <li>
                                                       <ul class="sz-select_sub">
-                                                          <li>011</li>
-                                                          <li>016</li>
-                                                          <li>017</li>
-                                                          <li>018</li>
-                                                          <li>019</li>
                                                           <li>02</li>
                                                           <li>031</li>
                                                           <li>032</li>
                                                           <li>033</li>
-                                                          <li>041</li>
-                                                          <li>042</li>
-                                                          <li>043</li>
-                                                          <li>044</li>
+                                                          <li>011</li>
+                                                          <li>012</li>
+                                                          <li>013</li>
                                                           <li>051</li>
                                                           <li>052</li>
                                                           <li>053</li>
-                                                          <li>054</li>
                                                           <li>055</li>
                                                           <li>061</li>
                                                           <li>062</li>
@@ -119,42 +95,31 @@
                                                           <li>064</li>
                                                           <li>070</li>
                                                           <li>080</li>
-                                                          <li>013</li>
-                                                          <li>0303</li>
-                                                          <li>0502</li>
-                                                          <li>0503</li>
-                                                          <li>0504</li>
-                                                          <li>0505</li>
-                                                          <li>0506</li>
-                                                          <li>0507</li>
-                                                          <li>050</li>
-                                                          <li>012</li>
-                                                          <li>059</li>
                                                       </ul>
                                                   </li>
                                               </ul>
                                           </div>
-                                          <div class="input_text_new2" style="width:67%; margin-left:3%">
-                                              <input type="text" name="number" id="number" placeholder="휴대폰 나머지 번호" maxlength="8" class="wd100" >
+                                          <div class="input_text_new2">
+                                              <input type="text" name="number" id="number"  maxlength="8" class="wd100" >
                                           </div>
                                       </td>
                                   </tr>
                                   <tr>
-                                      <th class="last"><label for="address">배송지</label></th>
-                                      <td>
-                                          <div class="mgb10">
-                                              <div class="input_text_new2">
-                                                  <input type="text" placeholder="" name="address"  title="주소찾기">
-                                              </div>
-                                              <button>주소찾기</button>
-                                          </div>
-                                          <div class="mgb10">
-                                              <input type="text" placeholder="배송지" name="address" id="address" title="주소 입력">
-                                          </div>
-                                          <div class="">
+                                     <th class="last mt10"><label for="address">배송지</label></th>
+                                     <td>
+                                        <div class="mgb10">
+                                            <div class="input_text_new2">
+                                                <input type="text" name="address"  title="주소찾기">
+                                            </div>
+                                            <button>주소찾기</button>
+                                        </div>
+                                        <div class="mgb10">
+                                              <input type="text" placeholder="" name="address" id="address" title="주소 입력">
+                                        </div>
+                                        <div class="">
                                               <input type="text" placeholder="상세 주소를 입력해주세요." name="address" title="상세 주소 입력">
-                                          </div>
-                                      </td>
+                                        </div>
+                                    </td>
                                   </tr>
                               </tbody>
                           </table>
