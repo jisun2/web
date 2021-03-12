@@ -727,9 +727,9 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info._addr .addr_user {width:80%;}
 .paymtWrap .paymt_info .a_info {position:absolute; top:0; right:0; display:block; font-size:11px; color:#888; text-decoration:underline !important}
 /* 버튼 */
+.top_box .float_search-box {width:calc(100% - 48px)}
 .paymtWrap .paymt_info .btn_white {line-height:12px; height:30px; padding:0; width:80px; border:1px solid #333; background:#fff; font-size:12px; color:#333}
 .paymtWrap .paymt_info .btn_black {line-height:12px; height:30px; padding:0; width:80px; border:1px solid #333; background:#333; font-size:12px; color:#fff;}
-.top_box .float_search-box {width:calc(100% - 48px)}
 .paymtWrap .addr_none_wrap {height:50%; min-height:calc(100vh - 220px); background:#fff}
 .paymtWrap .addr_none_wrap .addr_none_info {position: absolute;top:50%;left:50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);transform: translate(-50%,-50%);width: 100%;color: #ababab;font-size:16px;text-align: center;}
 /* 주소 연락처 */
@@ -750,8 +750,8 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .input_text_new2 {float:left; width:70%; text-align:center;}
 .paymtWrap .input_text_new2 + button {float:right; width:27%; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .pay_back input {height:40px}
-.pay_back .input_text_new2 {max-width:90%; width:80%}
-.pay_back .acc_wrap button {margin-left:10px; float:right; max-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
+.pay_back .input_text_new2 {max-width:90%; width:72%}
+.pay_back .acc_wrap button {margin-left:10px; float:right; width:92%; min-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
 .pay_back .acc_wrap .acc_btn_bk {width:20%}
 .pay_back .acc_wrap .acc_btn_bk button {float:left; padding:10px; background-color:#000; color:#fff; }
 .paymtWrap .last_btnn_wrap {z-index:8;background:#fff; max-width:720px; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
@@ -999,4 +999,5 @@ input[type=text].text-input.phone-last {width:70%}
 @media screen and (min-width:600px) {
     .inp_d.sz-select_list {width:87%}
     .num-select .sz-select_sub {width:99.2%;}
+    .pay_back .input_text_new2 {width:80%}
 }
