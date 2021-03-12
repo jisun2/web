@@ -30,7 +30,7 @@
                 <form>
                     <div class="paymtWrap">
                         <div class="paymt_info _member">
-                            <div class="article_title">주문자<span class="orange_txt2">홍길동 <b class="num">(010-1234-5678)</b></span></div>
+                            <div class="article_title">주문자<span class="orange_txt2">홍길동 (<b class="num">010-1234-5678</b>)</span></div>
                         </div>
                         <div class="paymt_info _addr">
                             <div class="article_title">배송지</div>
@@ -45,8 +45,8 @@
                                                <span class="tooltiptext">배송 정보를 확인해 주세요!</span>
                                             </div>
                                         </dt>
-                                        <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
-                                        <dd>010-1234-5678</dd>
+                                        <dd><span class="num">[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
+                                        <dd><span class="num">010-1234-5678</span></dd>
                                     </dl>
                                     <div class="addr_modify"><buttton class="pop_open" data-popup="popup_addr_modify">변경</button></div>
                                     <div class="mt20 pf_fc">
@@ -67,13 +67,13 @@
                                                         <li>부재 시 경비실에 맡겨주세요.</li>
                                                         <li>부재 시 전화 또는 문자 주세요.</li>
                                                         <li>택배함에 넣어주세요.</li>
-                                                        <li>직접입력</li>
+                                                        <li onclick="my1Function()">직접입력</li>
                                                     </ul>
                                                 </li>
                                             </ul>
 
                                             <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
-                                            <div class="input_text_new mt10">
+                                            <div class="input_text_new mt10 panel1" style="display:none">
                                                 <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
                                                 <input type="text" title="배송지 요청 사항" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
                                                 <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
@@ -296,7 +296,6 @@
                                         <colgroup>
                                             <col width="30%">
                                             <col width="50%">
-                                            <col width="20%">
                                         </colgroup>
                                         <tbody>
                                             <tr>
@@ -331,11 +330,11 @@
                                     </span>
                                     <span class="input_radio">
                                         <input type="radio" name="radio1" id="radio1_2">
-                                        <label for="radio1_2"><span class="mgl30">무통장입금</span></label>
+                                        <label for="radio1_2"><span class="mgl30" onclick="myFunction()">무통장입금</span></label>
                                     </span>
                                     <span class="input_radio">
                                         <input type="radio" name="radio1" id="radio1_3">
-                                        <label for="radio1_3"><span class="mgl30">실시간 계좌이체</span></label>
+                                        <label for="radio1_3"><span class="mgl30" onclick="myFunction()">실시간 계좌이체</span></label>
                                     </span>
                                     <span class="input_radio">
                                         <input type="radio" name="radio1" id="radio1_4">
@@ -358,7 +357,7 @@
                                     </span>
                                 </div>
 
-                                <div class="pay_back" style="display:block">
+                                <div class="pay_back" id="panel" style="display:none">
                                 	<div class="title">
                                 		환불계좌정보
                                 	</div>
@@ -482,10 +481,10 @@
                                 <div class="table_wrap1 pd0">
                                     <table>
                                         <caption class="blind">마일리지 적립 내역 표</caption>
-                                        <!-- <colgroup>
+                                        <colgroup>
                                             <col width="40%">
                                             <col width="">
-                                        </colgroup> -->
+                                        </colgroup>
                                         <tbody>
                                             <tr>
                                                 <th>기본 구매 적립</th>
@@ -853,7 +852,7 @@
                             <li>
                                 <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                 <dl>
-                                    <dd>2~6개월</dd>
+                                    <dd>2~6개월</d>
                                     <dd>5만원 이상 결제 시</dd>
                                 </dl>
                             </li>
@@ -976,6 +975,19 @@
         </div>
         <script src="../common/lib/main.js"></script>
         <script>
+
+            function myFunction() {
+                var con = document.getElementById("panel");
+                // var con = document.getElementById("account");
+                if(con.style.display=='none') {
+                    con.style.display = 'block';
+                }else{
+                    con.style.display = 'none';
+                }
+            }
+            function myFunction() {
+                onclick
+
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
@@ -989,12 +1001,12 @@
                         $(this).siblings(content).toggle();
                     });
                 }
-                toggleAcco('.article_title', '.article_content');
-               //무통장입금 선택 시 환불계좌 정보 추가
-                $('.input_radio').change(function() {
-                    $('.article_content .pay_back').remove();
-                    $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
-                });
+               //  toggleAcco('.article_title', '.article_content');
+               // 무통장입금 선택 시 환불계좌 정보 추가
+               //  $('.input_radio').change(function() {
+               //      $('.article_content .pay_back').remove();
+               //      $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
+               //  });
                 // $('.input_radio').change(function() {
                 //     $('.article_content .pay_back').remove();
                 //     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
