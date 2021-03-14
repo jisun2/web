@@ -29,7 +29,7 @@
             <div id="container">
                 <form>
                     <div class="paymtWrap">
-                        <div class="paymt_info _member">
+                        <div class="paymt_info _member clear">
                             <div class="article_title">주문자<span class="orange_txt2">홍길동 (<b class="num">010-1234-5678</b>)</span></div>
                         </div>
                         <div class="paymt_info _addr">
@@ -37,9 +37,9 @@
                             <div class="article_content">
                                 <div class="pos_r">
                                     <dl class="addr_user">
-                                        <dt class="tooltip">
+                                        <dt>
                                             <!-- <span class="balloon">배송 정보를 확인해 주세요!</span> -->
-                                            <div class="">
+                                            <div class="tooltip">
                                                 홍길동 <span>기본배송지</span>
                                                 <!-- <span class="recent">최근배송지</span> -->
                                                <span class="tooltiptext">배송 정보를 확인해 주세요!</span>
@@ -67,14 +67,14 @@
                                                         <li>부재 시 경비실에 맡겨주세요.</li>
                                                         <li>부재 시 전화 또는 문자 주세요.</li>
                                                         <li>택배함에 넣어주세요.</li>
-                                                        <li onclick="myFunction()">직접입력</li>
+                                                        <li onclick="intFunction()">직접입력</li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                             <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
-                                            <div class="input_text_new mt10 pay_back" style="display:none">
+                                            <div class="input_text_new" style="display:none">
                                                 <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
-                                                <input type="text" title="배송지 요청 사항" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
+                                                <input type="text" title="배송지 요청 사항" placeholder="내용을 입력해주세요" class="text-input"  data-type="countlength" maxlength="30">
                                                 <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
                                                 <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
                                             </div>
@@ -213,18 +213,22 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="last">개인통관<br>고유부호</th>
+                                                    <th class="last">
+                                                        <label for="acco">
+                                                                개인통관<br>고유부호
+                                                        </label>
+                                                    </th>
                                                     <td>
                                                         <div class="">
-                                                            <input type="number" name="address" title="개인통관 고유부호">
+                                                            <input type="number" id="acco" name="address" title="개인통관 고유부호">
                                                         </div>
                                                         <div class="pr_chk_agree">
                                                             <input type="checkbox" id="pr_chk_agree3" class="sz-custom_check">
                                                             <label for="pr_chk_agree3" class="sz-custom_label flt_le"></label>
                                                             <label for="pr_chk_agree3" class="sz-custom_text">개인통관고유부호 수집에 대한 동의</label>
-                                                            <div class="tooltip"><span class="con">
-                                                                </span><span class="ico tip"></span>
-                                                                <span class="tooltiptext">
+                                                            <div class="tooltip">
+                                                                <span class="ico tip"></span>
+                                                                <span class="tooltiptext show">
                                                                   <ul class="Pcc_sc">
                                                                         <li>
                                                                           <b>1.개인통관고유부호 수집<br></b>
@@ -239,6 +243,21 @@
                                                                         </li>
                                                                   </ul>
                                                               </span>
+                                                              <!-- <span class="tooltiptext1">
+                                                                <ul class="Pcc_sc">
+                                                                      <li>
+                                                                        <b>1.개인통관고유부호 수집<br></b>
+                                                                          개인통관고유부호는 수입통관 업무처리를 위해 <br>
+                                                                          수집하며, 다음 주문 시 사용할 수 있도록 서비스<br>
+                                                                          이용기간 동안 보관합니다.
+                                                                      </li>
+                                                                      <li>
+                                                                          <b><br>2.개인통관고유부호 판매자 제공<br></b>
+                                                                          수입통관 업무처리를 위해 본 상품 판매자에게
+                                                                          개인통관고유부호를 제공합니다.
+                                                                      </li>
+                                                                </ul>
+                                                            </span> -->
                                                             </div>
                                                         </div>
                                                     </td>
@@ -268,7 +287,7 @@
                                             </tr>
                                             <tr>
                                                 <th>주문쿠폰</th>
-                                                <td>- <span class="saleNum">14,500</span> 원</td>
+                                                <td>- <span class="saleNum num">14,500</span> 원</td>
                                                 <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_ord_coupon">쿠폰선택</button></td>
                                                 </tr><tr>
                                                 <th class="v_top">마일리지</th>
@@ -320,7 +339,7 @@
                                     </span>
                                 </div>
 
-                                <div class="pay_back" id="panel">
+                                <div class="pay_back" id="panel" style="display:none">
                                 	<div class="title">
                                 		환불계좌정보
                                 	</div>
@@ -937,21 +956,22 @@
         <script src="../common/lib/main.js"></script>
         <script>
 
-            function myFunction() {
+            function myFunction(){
                 var con = document.getElementById("panel");
-                // var con = document.getElementById("account");
                 if(con.style.display=='none') {
                     con.style.display = 'block';
                 }else{
                     con.style.display = 'none';
                 }
             }
-
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
                     $(".tooltiptext").hide();
-                }, 1000);
+                }, 2000);
+                $(".ico.tip").on('click', function() {
+                    $(".tooltiptext.show").show();
+                });
             });
             (function(){
                 function toggleAcco(ele, content) {
@@ -961,15 +981,15 @@
                     });
                 }
                 toggleAcco('.article_title', '.article_content');
-                $('.input_radio').change(function() {
-                    $('.article_content .pay_back').remove();
-                    $('.input_radio #radio1_2:checked').parent().parent().append();
-                });
+                // $('.input_radio').change(function() {
+                //     $('.article_content .pay_back').remove();
+                //     $('.input_radio #radio1_2:checked').parent().parent().append();
+                // });
                // 무통장입금 선택 시 환불계좌 정보 추가
-                $('.input_radio').change(function() {
-                    $('.article_content .pay_back').remove();
-                    $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
-                });
+                // $('.input_radio').change(function() {
+                //     $('.article_content .pay_back').remove();
+                //     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
+                // });
                 // $('.input_radio').change(function() {
                 //     $('.article_content .pay_back').remove();
                 //     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
