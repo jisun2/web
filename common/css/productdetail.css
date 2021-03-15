@@ -365,6 +365,8 @@ input[type=checkbox] {display:none}
 .product-select:first-child .selected.active {border-top: 1px solid #333}
 .product-select:first-child .selected.active span {float:left}
 .pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
+.nav_fixed_wrap .product-select .selected {line-height:2.3}
+.nav_fixed_wrap .product-select .selected .sel_arrow {margin-top:6px}
 .product-select .sz-select_sub {position:static; width:99.5%; max-height:149px; overflow:auto; border:1px solid #333; border-top:none}
 .product-select .sz-select_sub li {position:relative; display:inline-block; overflow-y:hidden; max-height:40px; border-bottom:1px solid #e5e5e5; font-size:14px}
 .product-select .sz-select_sub li:last-child {border-bottom: none}
@@ -997,7 +999,7 @@ input[type=text].text-input.phone-last {width:70%}
     .paymtWrap .paymt_info .sz-custom_text {font-size:10px}
 }
 @media screen and (min-width:600px) {
-    .inp_d.sz-select_list {width:87%}
+    .inp_d.sz-select_list {width:93%}
     .num-select .sz-select_sub {width:99.2%;}
     .pay_back .input_text_new2 {width:80%}
 }
