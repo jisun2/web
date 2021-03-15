@@ -969,16 +969,39 @@
                 var con = document.getElementById("request1");
                     con.style.display = 'none';
             }
+            // function onBtnFunction(){
+            //     var onBtn = document.getElementById("");
+            //     // var offBtn = document.getElementById("accoNum");
+            //         onBtn.style.display = 'block';
+            //     // }else{
+            //     //     offBtn.style.display = 'none';
+            //     // }
+            // }
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
                     $(".tooltiptext").hide();
-                }, 1000);
+                }, 5000);
                 $(".ico.tip").click(function(){
                     if($("#toolShow").css("display") != "block"){
                         $("#toolShow").show();
                     }else{
                         $("#toolShow").hide();
+                    }
+                });
+            });
+            $(document).ready(function(){
+                $("#radio1_2, #radio1_3").click(function(){
+                    if($("#accoNum").css("display") != "block"){
+                    $("#accoNum").show();
+                    }
+                });
+            });
+
+            $(document).ready(function(){
+                $("#radio1_1, #radio1_4, #radio1_5, #radio1_6").click(function(){
+                    if($("#accoNum").css("display") != "none"){
+                        $("#accoNum").hide();
                     }
                 });
             });
