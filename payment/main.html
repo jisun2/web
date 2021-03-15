@@ -73,8 +73,8 @@
                                                 </li>
                                             </ul>
                                             <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
-                                            <div class="input_text_new" style="display:none">
-                                                <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
+                                            <div class="input_text_new mt10" id="request" style="display:none">
+                                                <label for="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
                                                 <input type="text" title="배송지 요청 사항" placeholder="내용을 입력해주세요" class="text-input"  data-type="countlength" maxlength="30">
                                                 <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
                                                 <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
@@ -196,16 +196,15 @@
                                                                             <li>부재 시 경비실에 맡겨주세요.</li>
                                                                             <li>부재 시 전화 또는 문자 주세요.</li>
                                                                             <li>택배함에 넣어주세요.</li>
-                                                                            <li>직접입력</li>
+                                                                            <li  onclick="intreFunction()">직접입력</li>
                                                                         </ul>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
-
                                                         <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
-                                                        <div class="input_text_new mt10">
-                                                            <label for="request" id="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
+                                                        <div class="input_text_new mt10" id="request1" style="display:none">
+                                                            <label for="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
                                                             <input type="text" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30">
                                                             <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
                                                             <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
@@ -214,13 +213,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="last">
+                                                    <th class="last mt10">
                                                         <label for="acco">
                                                                 개인통관<br>고유부호
                                                         </label>
                                                     </th>
                                                     <td>
-                                                        <div class="">
+                                                        <div class="mt10">
                                                             <input type="number" id="acco" name="address" title="개인통관 고유부호">
                                                         </div>
                                                         <div class="pr_chk_agree">
@@ -339,8 +338,8 @@
                                         </label>
                                     </span>
                                 </div>
-
-                                <div class="pay_back" id="panel" style="display:none">
+                                <!--  -->
+                                <div class="pay_back" id="accoNum" style="display:none">
                                 	<div class="title">
                                 		환불계좌정보
                                 	</div>
@@ -956,9 +955,16 @@
         </div>
         <script src="../common/lib/main.js"></script>
         <script>
-
+            function intFunction(){
+                var con = document.getElementById("request");
+                    con.style.display = 'block';
+            }
+            function intreFunction(){
+                var con = document.getElementById("request1");
+                    con.style.display = 'block';
+            }
             function myFunction(){
-                var con = document.getElementById("panel");
+                var con = document.getElementById("accoNum");
                 if(con.style.display=='none') {
                     con.style.display = 'block';
                 }else{
@@ -972,8 +978,9 @@
                 }, 5000);
                 $(".ico.tip").on('click', function() {
                     $(".tooltiptext.show").show();
-                    // }else{
-                    //  $(".tooltiptext.show").hide();
+                    setTimeout(function () {
+                        $(".tooltiptext").hide();
+                    }, 2000);
                 });
             });
             (function(){
