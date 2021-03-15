@@ -75,6 +75,7 @@ input[type=checkbox] {display:none}
 .pdWrap .pi_list li.no_padding .pda-title {border-bottom: 1px solid #e5e5e5}
 .pdWrap .pi_list .product_detail-acco .pda-title {position:relative; line-height:1; padding:20px 0; margin-bottom:0; color:#555; font-size:14px; font-weight:400}
 .pdWrap .pi_list .pil-con p:last-child {margin-bottom:0}
+.pdwrap .product_info .tooltiptext {min-width:600px;}
 .ico.naver {width:35px; height:12px; background-position: -175px -27px}
 /* 상품 상세 탭 */
 .product img {max-width:100%}
@@ -638,6 +639,7 @@ input[type=text].text-input.phone-last {width:70%}
 .popup-content .member-wrap .sz-select_list .selected.active {border: 1px solid #000}
 .paymtWrap .input_checkbox, .input_radio, .input_radio_check {display:block; position:relative;}
 .paymtWrap .input_radio .mgl30 {display:inline-block; vertical-align:middle; margin-left:36px; height:24px}
+.paymtWrap .input_radio .mgl30 img {}
 .paymtWrap .input_radio input {display:none;vertical-align:middle;}
 .paymtWrap .input_radio label {display:inline-block; height:24px; vertical-align:middle;}
 .paymtWrap .input_radio img {margin-top:3px; width:60%}
