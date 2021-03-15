@@ -171,7 +171,7 @@
                                                             <input type="text" placeholder="" name="address" id="address" title="주소 입력">
                                                         </div>
                                                         <div class="">
-                                                            <input type="text" placeholder="상세 주소를 입력해주세요." name="address" title="상세 주소 입력">
+                                                            <input type="text" placeholder="내용을 입력해주세요." name="address" title="상세 주소 입력">
                                                         </div>
                                                         <div class="pr_chk_agree clear">
                                                             <input type="checkbox" id="pr_chk_agree1" class="sz-custom_check">
@@ -997,7 +997,6 @@
                     }
                 });
             });
-
             $(document).ready(function(){
                 $("#radio1_1, #radio1_4, #radio1_5, #radio1_6").click(function(){
                     if($("#accoNum").css("display") != "none"){
@@ -1013,19 +1012,6 @@
                     });
                 }
                 toggleAcco('.article_title', '.article_content');
-                // $('.input_radio').change(function() {
-                //     $('.article_content .pay_back').remove();
-                //     $('.input_radio #radio1_2:checked').parent().parent().append();
-                // });
-               // 무통장입금 선택 시 환불계좌 정보 추가
-                // $('.input_radio').change(function() {
-                //     $('.article_content .pay_back').remove();
-                //     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
-                // });
-                // $('.input_radio').change(function() {
-                //     $('.article_content .pay_back').remove();
-                //     $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
-                // });
                 $('.border_tab-list li').each(function(i){
                     $(this).click(function(){
                         $(this).addClass('active').siblings().removeClass('active');
