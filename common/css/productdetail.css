@@ -470,6 +470,7 @@ input[type=checkbox] {display:none}
 .write_info_wrap .tooltiptext {padding:10px; max-width:260px; width:236px; left:54%; bottom:140%}
 .write_bottom {padding:15px; background-color:#fff; border-top:1px solid #d0d0d0}
 .write_bottom .War_txt {display:inline-block; padding-left:8px; width:90%; text-align:left; line-height:1.4; font-size:12px; color:#888; font-weight:400}
+.pdWrap .tooltip .tooltiptext, .pdWrap .tooltip .tooltiptext1 {width:220px; left:6px}
 .btns {margin-top:15px; font-size:16px}
 .btns button {height:45px;}
 .btns .btn_cancel50 {width:48.5%; border-radius:3px; color:#000; border:1px solid #111}
@@ -753,9 +754,9 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .input_text_new2 {float:left; width:70%; text-align:center;}
 .paymtWrap .input_text_new2 + button {float:right; width:27%; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .pay_back input {height:40px}
-.pay_back .input_text_new2 {max-width:90%; width:72%}
-.pay_back .acc_wrap button {margin-left:10px; float:right; width:92%; min-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
-.pay_back .acc_wrap .acc_btn_bk {width:20%}
+.pay_back .input_text_new2 {max-width:90%; width:86%}
+.pay_back .acc_wrap button {margin-left:9px; float:right; width:92%; min-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
+.pay_back .acc_wrap .acc_btn_bk {}
 .pay_back .acc_wrap .acc_btn_bk button {float:left; padding:10px; background-color:#000; color:#fff; }
 .paymtWrap .last_btnn_wrap {z-index:8;background:#fff; max-width:720px; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .paymtWrap .last_btnn_wrap1 {z-index:8;background:#fff; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
