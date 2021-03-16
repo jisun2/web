@@ -931,7 +931,7 @@ input[type=text].text-input.phone-last {width:70%}
 /* 결제 완료 */
 .comp_info {border-top:1px solid #d0d0d0;padding-bottom:60px;color:#111;}
 /* .comp_info {padding-bottom:60px;border-bottom:8px solid #f0f0f0;color:#111;} */
-.comp_info .desc {padding:52px 65px 25px;line-height:20px;text-align:center;}
+.comp_info .desc {padding:52px 62px 25px;line-height:20px;text-align:center;}
 .comp_info .desc strong {display:block;font-size:22px; color:#000; font-weight:500;line-height:36px;margin-bottom:7px;}
 .comp_info .desc p {display:block; font-size:14px; color:#555; font-weight:300;}
 .comp_info .detail{margin:0 16px 30px;padding:27px 30px 25px}
