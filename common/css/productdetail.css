@@ -558,7 +558,7 @@ input[type=checkbox] {display:none}
 .nav_fixed_wrap.cart .just_right {width:59%}
 .nav_fixed_wrap.cart .pd_btn_box {padding:0; margin-left:3%; width:85%}
 .nav_fixed_wrap.cart .pd_btn_box button {float:left; width:100%}
-.nav_fixed_wrap.cart .prod_num {font-size:15px; display:block; color:#fff}
+.nav_fixed_wrap.cart .prod_num {font-size:14px; display:block; color:#fff}
 .nav_fixed_wrap.cart .prod_num .num {font-size:16px}
 .nav_fixed_wrap.cart .prod_total {display:inline-block; width:100%; color:#ff4e25; font-size:18px; font-weight:normal; font-family:'Noto Sans KR'}
 .nav_fixed_wrap.cart .prod_total .num {font-size:19px}
