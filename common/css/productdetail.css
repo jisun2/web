@@ -757,7 +757,8 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .input_text_new .text_count {float:right; font-size:10px; color:#888; font-family:'proxima-nova'}
 .paymtWrap .input_text_new .text_count .bk {color:#000}
 .paymtWrap .input_text_new2 {float:left; width:70%; text-align:center;}
-.paymtWrap .input_text_new2 + .addrBtn button {float:right; width:27%; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
+.paymtWrap .input_text_new3 {float:left; width:72%; text-align:center;}
+.paymtWrap .input_text_new3 + .addrBtn button {float:right; width:27%; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .pay_back input {height:40px}
 .pay_back .input_text_new2 {max-width:90%; width:86%}
 .pay_back .acc_wrap button {margin-left:9px; float:right; width:92%; min-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
@@ -779,7 +780,7 @@ input[type=text].text-input.phone-last {width:70%}
 .pay_total_wrap dt:first-child {float:left; width:32%; color:#888; font-size:13px}
 .pay_total_wrap tbody dt {padding-bottom:4px; font-size:13px; color:#888}
 .pay_total_wrap tfoot tr {padding:20px 0}
-.pay_total_wrap dd {text-align:right; font-size:13px; color:#000}
+.pay_total_wrap dd {text-align:right; font-size:12px; color:#000}
 .pay_total_wrap dd span {display:inline-block; vertical-align:middle}
 .pay_total_wrap dd .num {display:inline-block; vertical-align:middle; font-size:16px;}
 .pay_total_wrap dd:first-child {text-align:left; color:#000; font-size:15px; font-weight:500}
