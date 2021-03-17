@@ -688,7 +688,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .article_title::after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_close_toggle.gif) center center/cover no-repeat}
 .paymtWrap .paymt_info .article_title.active::after {content:''; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_open_toggle.gif) center center/cover no-repeat}
 .paymtWrap .paymt_info .article_title .orange_txt b {font-size:16px}
-.paymtWrap .paymt_info .article_title .orange_txt .mileM {font-size:13px}
+.paymtWrap .paymt_info .article_title .orange_txt .mileM {font-size:16px}
 .paymtWrap .paymt_info .article_title .orange_txt, .orange_txt2 {position:absolute; right:50px; display:inline-block; color:#ff4e25; font-size:14px; font-family: 'proxima-nova','Noto Sans KR',sans-serif}
 .paymtWrap .paymt_info .article_title .orange_txt em {font-size:16px; font-weight:600}
 .paymtWrap .paymt_info .article_title .orange_txt2 {right:20px; white-space:nowrap;}
@@ -820,7 +820,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap2 td button {max-width:100px; margin-left:5px}
 .paymtWrap .paymt_info .table_wrap2 td .saleNum {font-size:16px; color:#000; font-weight:500;}
 .paymtWrap .paymt_info .table_wrap2 td span.add_disc {margin-top:5px; font-size:11px; color:#ababab}
-.paymtWrap .paymt_info .table_wrap2 .add_disc {font-size:11px; color:#ababab; text-align:left}
+.paymtWrap .paymt_info .table_wrap2 .add_disc {font-size:11px; color:#ababab; text-align:left; white-space:nowrap;}
 .paymtWrap .paymt_info .table_wrap2 .add_disc .num {font-size:12px; color:#ababab}
 .paymtWrap .paymt_info .table_wrap2 .add_disc .ble {font-size:12px; color:#1b61e3}
 
@@ -970,7 +970,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap1 table {width:100%}
 .paymtWrap .paymt_info .table_wrap1 table th {text-align:left; min-width:130px}
 .paymtWrap .paymt_info .table_wrap1 tbody td:first-child {width:43%; color:#888; font-size:13px}
-.paymtWrap .paymt_info .table_wrap1 tbody td:last-child {width:70%; color:#000;font-size:15px; text-align:right}
+.paymtWrap .paymt_info .table_wrap1 tbody td:last-child {width:70%; color:#000;font-size:18px; text-align:right}
 .paymtWrap .paymt_info .table_wrap1 tbody td.t_blue {color:#1b61e3}
 .paymtWrap .paymt_info .table_wrap1 tbody td {padding-bottom:4px}
 .paymtWrap .paymt_info .table_wrap1 tbody td:last-child span {font-size:18px}
