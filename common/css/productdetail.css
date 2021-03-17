@@ -786,7 +786,7 @@ input[type=text].text-input.phone-last {width:70%}
 .pay_total_wrap dd .num {display:inline-block; font-size:16px;}
 .pay_total_wrap dd:first-child {text-align:left; color:#000; font-size:15px; font-weight:500}
 .pay_total_wrap dd .ctt-pay {display:inline-block; vertical-align:middle; line-height:1.3; display:block; color:#ff4e25; font-size:18px; font-weight:500}
-.pay_total_wrap dd .ctt-pay .ctt-pay-num {display:inline-block; vertical-align:middle; font-size:22px; font-weight:700}
+.pay_total_wrap dd .ctt-pay .ctt-pay-num {display:inline-block;font-size:22px; font-weight:700}
 .pay_total_wrap dd .ctt-bonus {display:block; margin-bottom:15px; color:#888; font-size:12px; font-weight:500}
 .pay_total_wrap dd .ctt-bonus .ctt-bonus-num {font-size:12px;}
 .pay_total_wrap dd .ctt-info {color:#ababab; font-size:11px}
