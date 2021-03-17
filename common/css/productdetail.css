@@ -757,8 +757,9 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .input_text_new .text_count {float:right; font-size:10px; color:#888; font-family:'proxima-nova'}
 .paymtWrap .input_text_new .text_count .bk {color:#000}
 .paymtWrap .input_text_new2 {float:left; width:70%; text-align:center;}
-.paymtWrap .input_text_new3 {float:left; width:72%; text-align:center;}
-.paymtWrap .input_text_new3 + .addrBtn button {float:right; width:27%; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
+.paymtWrap .input_text_new3 {float:left; width:65%; text-align:center;}
+.paymtWrap .input_text_new3 + .addrBtn {padding-left:10px; float:left; width:30%}
+.paymtWrap .input_text_new3 + .addrBtn button {float:right; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .pay_back input {height:40px}
 .pay_back .input_text_new2 {max-width:90%; width:86%}
 .pay_back .acc_wrap button {margin-left:9px; float:right; width:92%; min-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
