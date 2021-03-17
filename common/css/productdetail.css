@@ -666,7 +666,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .product-select .sz-select_sub {max-height:139px}
 .paymtWrap .product-select .selected {height:38px}
 .paymtWrap .product-select .selected .sel_arrow {margin-top:8px}
-.paymtWrap .addr_modify {position:absolute; top:45px; right:15px;border-radius:3px;font-size:12px; color:#fff; background:#333; width:50px; text-align:center; height:30px; line-height:30px;}
+.paymtWrap .addr_modify {position:absolute; top:45px; right:21px; border-radius:3px;font-size:12px; color:#fff; background:#333; width:50px; text-align:center; height:30px; line-height:30px;}
 .paymtWrap .article_content.pd0 {padding:0 !important}
 .paymtWrap .default_check {display:inline-block; width:100%; vertical-align:middle;}
 .paymtWrap .default_check .sz-custom_text {display:inline-block; margin:0 8px 8px; height:30px}
@@ -1011,6 +1011,6 @@ input[type=text].text-input.phone-last {width:70%}
     .inp_d.sz-select_list {width:93%}
     .num-select .sz-select_sub {width:99.2%;}
     .pay_back .input_text_new2 {width:72%}
-    .paymtWrap .paymt_product .prd_info .option li:first-child {padding-right:10px; width:70%}
+    .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
     .paymtWrap .paymt_info .table_wrap2 td input {width:88%;}
 }
