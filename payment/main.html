@@ -37,53 +37,52 @@
                         <div class="paymt_info _addr">
                             <div class="article_title">배송지</div>
                             <div class="article_content">
-                                <div class="pos_r">
-                                    <dl class="addr_user">
-                                        <dt>
-                                            <!-- <span class="balloon">배송 정보를 확인해 주세요!</span> -->
-                                            <div class="tooltip">
-                                                홍길동 <span>기본배송지</span>
-                                                <!-- <span class="recent">최근배송지</span> -->
-                                               <span class="tooltiptext">배송 정보를 확인해 주세요!</span>
-                                            </div>
-                                        </dt>
-                                        <dd><span class="num">[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
-                                        <dd><span class="num">010-1234-5678</span></dd>
-                                    </dl>
-                                    <div class="addr_modify"><buttton class="pop_open" data-popup="popup_addr_modify">변경</button></div>
-                                    <div class="mt20 pf_fc">
-                                        <div class="product-select mgb10">
-                                            <select class="sz-select_sl">
-                                                <option value="배송 요청사항을 선택해 주세요.">배송 요청사항을 선택해 주세요.</option>
-                                                <option value="부재 시 문 앞에 놓아주세요.">부재 시 문 앞에 놓아주세요.</option>
-                                                <option value="부재 시 경비실에 맡겨주세요.">부재 시 경비실에 맡겨주세요.</option>
-                                                <option value="부재 시 전화 또는 문자 주세요.">부재 시 전화 또는 문자 주세요.</option>
-                                                <option value="택배함에 넣어주세요.">택배함에 넣어주세요.</option>
-                                                <option value="직접입력">직접입력</option>
-                                            </select>
-                                            <ul class="sz-select_list">
-                                                <li class="selected">배송 요청사항을 선택해주세요<i class="ico sel_arrow"></i></li>
-                                                <li>
-                                                    <ul class="sz-select_sub">
-                                                        <li onclick="intNoFunction()">부재 시 문 앞에 놓아주세요.</li>
-                                                        <li onclick="intNoFunction()">부재 시 경비실에 맡겨주세요.</li>
-                                                        <li onclick="intNoFunction()">부재 시 전화 또는 문자 주세요.</li>
-                                                        <li onclick="intNoFunction()">택배함에 넣어주세요.</li>
-                                                        <li onclick="intFunction()">직접입력</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
-                                            <div class="input_text_new mt10" id="request" style="display:none">
-                                                <label for="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
-                                                <input type="text" title="배송지 요청 사항" placeholder="내용을 입력해주세요" class="text-input"  data-type="countlength" maxlength="30" />
-                                                <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
-                                                <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
-                                            </div>
-                                            <!-- // 배송 요청사항을 직접 입력 선택 했을 때 -->
+
+                                <dl class="addr_user">
+                                    <dt>
+                                        <div class="tooltip">
+                                            홍길동 <span>기본배송지</span>
+                                            <!-- <span class="recent">최근배송지</span> -->
+                                           <span class="tooltiptext">배송 정보를 확인해 주세요!</span>
                                         </div>
+                                    </dt>
+                                    <dd><span class="num">[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
+                                    <dd><span class="num">010-1234-5678</span></dd>
+                                </dl>
+                                <div class="addr_modify"><buttton class="pop_open" data-popup="popup_addr_modify">변경</button></div>
+                                <div class="mt20 pf_fc">
+                                    <div class="product-select mgb10">
+                                        <select class="sz-select_sl">
+                                            <option value="배송 요청사항을 선택해 주세요.">배송 요청사항을 선택해 주세요.</option>
+                                            <option value="부재 시 문 앞에 놓아주세요.">부재 시 문 앞에 놓아주세요.</option>
+                                            <option value="부재 시 경비실에 맡겨주세요.">부재 시 경비실에 맡겨주세요.</option>
+                                            <option value="부재 시 전화 또는 문자 주세요.">부재 시 전화 또는 문자 주세요.</option>
+                                            <option value="택배함에 넣어주세요.">택배함에 넣어주세요.</option>
+                                            <option value="직접입력">직접입력</option>
+                                        </select>
+                                        <ul class="sz-select_list">
+                                            <li class="selected">배송 요청사항을 선택해주세요<i class="ico sel_arrow"></i></li>
+                                            <li>
+                                                <ul class="sz-select_sub">
+                                                    <li onclick="intNoFunction()">부재 시 문 앞에 놓아주세요.</li>
+                                                    <li onclick="intNoFunction()">부재 시 경비실에 맡겨주세요.</li>
+                                                    <li onclick="intNoFunction()">부재 시 전화 또는 문자 주세요.</li>
+                                                    <li onclick="intNoFunction()">택배함에 넣어주세요.</li>
+                                                    <li onclick="intFunction()">직접입력</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
+                                        <div class="input_text_new mt10" id="request" style="display:none">
+                                            <label for="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
+                                            <input type="text" title="배송지 요청 사항" placeholder="내용을 입력해주세요" class="text-input"  data-type="countlength" maxlength="30" />
+                                            <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
+                                            <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
+                                        </div>
+                                        <!-- // 배송 요청사항을 직접 입력 선택 했을 때 -->
                                     </div>
                                 </div>
+
                                 <!-- 배송지 없을 때 -->
                                 <div class="addrN">
                                     <div class="paymt_modify">
@@ -154,7 +153,7 @@
                                                             </ul>
                                                         </div>
                                                         <div class="input_text_new2">
-                                                            <input type="text" name="number" id="number"  maxlength="8" class="wd100" >
+                                                            <input type="number" name="number" id="number"  maxlength="8" class="wd100" >
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -197,7 +196,7 @@
                                                                             <li onclick="intreNoFunction()">부재 시 경비실에 맡겨주세요.</li>
                                                                             <li onclick="intreNoFunction()">부재 시 전화 또는 문자 주세요.</li>
                                                                             <li onclick="intreNoFunction()">택배함에 넣어주세요.</li>
-                                                                            <li  onclick="intreFunction()">직접입력</li>
+                                                                            <li onclick="intreFunction()">직접입력</li>
                                                                         </ul>
                                                                     </li>
                                                                 </ul>
@@ -277,7 +276,7 @@
                                     <table>
                                       <caption class="blind">할인 차감 내역 표</caption>
                                         <colgroup>
-                                            <col width="30%">
+                                            <col width="20%">
                                             <col width="50%">
                                         </colgroup>
                                         <tbody>
@@ -293,13 +292,14 @@
                                                 </tr><tr>
                                                 <th class="v_top">마일리지</th>
                                                 <td>
-                                                    <div class="input_text_new input_wrap mb10"><input type="number" placeholder="0" class="text-input mr5" style="width:87%">M</div>
-                                                     <p class="add_disc">사용가능 <span class="num ble">20,000M</span> / 보유 <span class="num">21,410M</span></p>
+                                                    <div class="input_text_new input_wrap mb10"><input type="number" placeholder="0" class="text-input mr5"></div>
+                                                    <span class="flt_le">M</span>
                                                 </td>
                                                 <td class="v_top"><button class="btn_find btn_black">최대사용</button></td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <p class="add_disc">사용가능 <span class="num ble">20,000M</span> / 보유 <span class="num">21,410M</span></p>
                                 </div>
                             </div>
                         </div><!-- discount -->
@@ -369,54 +369,18 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <span class="default_check2">
-                                        <input type="checkbox" id="chk_method1" class="sz-custom_check">
-                                        <label for="chk_method1" class="sz-custom_label flt_le"></label>
-                                        <label for="chk_method1" class="sz-custom_text">선택한 결제 수단 다음에도 사용</label>
-                                    </span>
                                 </div>
+                                <span class="default_check2">
+                                    <input type="checkbox" id="chk_method1" class="sz-custom_check">
+                                    <label for="chk_method1" class="sz-custom_label flt_le"></label>
+                                    <label for="chk_method1" class="sz-custom_text">선택한 결제 수단 다음에도 사용</label>
+                                </span>
                             </div>
                         </div><!-- method -->
 
                         <div class="paymt_info _price">
                             <div class="article_title">결제 금액</div>
                             <div class="article_content" style="display:block">
-                                <!-- <div class="table_wrap1 br">
-                                    <table>
-                                      <caption class="blind">최종 결제 내역 표</caption>
-                                        <tbody>
-                                            <tr>
-                                                <th>총 상품 금액</th>
-                                                <td><span class="num">10,469,700</span>원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>즉시 할인</th>
-                                                <td>- <span class="num">815,800</span>원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>총 쿠폰 할인</th>
-                                                <td>- <span class="num">35,000</span>원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>마일리지 사용</th>
-                                                <td>- <span class="num">2,000</span>원</td>
-                                            </tr>
-                                            <tr>
-                                                <th>총 배송비</th>
-                                                <td>+ <span class="num">2,500</span>원</td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>최종 결제 금액</th>
-                                                <td>
-                                                    <span class="ctt-pay"><b class="ctt-pay-num">9,421,900</b>원</span>
-                                                </td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                    <button type="submit" class="black-btn pc-only">결제하기</button>
-                                </div> -->
                                 <div class="pay_total_wrap">
                                     <p class="blind">총 결제 금액 정보</p>
                                     <dl>
@@ -594,8 +558,8 @@
                                                             <div class="brd_area">
                                                                 <a href="#none" class="flt_le">
                                                                     <span class="cart_brd">엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인</span>
+                                                                    <span class="cou_bage flt_le">주문쿠폰 적용대상</span>
                                                                 </a>
-                                                                <span class="cou_bage flt_le">주문쿠폰 적용대상</span>
                                                             </div>
                                                             <span class="cart-sub">
                                                                 <a href="#">
