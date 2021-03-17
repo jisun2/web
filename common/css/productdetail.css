@@ -690,7 +690,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .article_title .orange_txt b {font-size:16px}
 .paymtWrap .paymt_info .article_title .orange_txt .mileM {font-size:13px}
 .paymtWrap .paymt_info .article_title .orange_txt, .orange_txt2 {position:absolute; right:50px; display:inline-block; color:#ff4e25; font-size:14px; font-family: 'proxima-nova','Noto Sans KR',sans-serif}
-.paymtWrap .paymt_info .article_title .orange_txt em {font-size:16px;}
+.paymtWrap .paymt_info .article_title .orange_txt em {font-size:16px; font-weight:600}
 .paymtWrap .paymt_info .article_title .orange_txt2 {right:20px; white-space:nowrap;}
 .paymtWrap ._agree .article_title::after, .paymtWrap ._member .article_title::after {display:none}
 .paymtWrap .paymt_info .article_content {border-top:1px solid #e5e5e5; padding:24px 20px; background:#fff; position:relative}
