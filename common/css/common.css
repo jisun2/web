@@ -419,9 +419,9 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .txt_cnt {text-align:center !important}
 .orange {color:#ff4e25 !important}
 .blue {color:#3067cc !important}
-.num {font-family:'proxima'!important}
+.num {font-family:'ProximaNova'!important}
 .notoS {font-family:'Noto Sans KR'!important}
-.proxima {font-family:'proxima-nova'!important}
+.proxima {font-family:'ProximaNova'!important}
 .box_right, .box_left {position:relative; float:left; width:50%; min-height:48px; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
@@ -489,7 +489,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #header .logo_area {margin-left:16px; display:inline-block;}
 #header .popup .header_title {margin:15px}
 #header .header_title {margin-top:10px; letter-spacing:-1px; vertical-align:middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
-#header .header_title .number {font-size:18px; line-height:10px; font-family:'Proxima-Nova'}
+#header .header_title .number {font-size:18px; line-height:10px; font-family:'ProximaNova'}
 #header .btn_area {width:100%; height:45px;}
 #header .btn_area a {position:relative; display:inline-block;}
 #header .btn_area li {float:right; margin-right:7px}
