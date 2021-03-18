@@ -768,8 +768,8 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .input_text_new .text_count {float:right; font-size:10px; color:#888; font-family:'proxima-nova'}
 .paymtWrap .input_text_new .text_count .bk {color:#000}
 .paymtWrap .input_text_new2 {float:left; width:70%; text-align:center;}
-.paymtWrap .input_text_new3 {float:left; width:83%; text-align:center;}
-.paymtWrap .input_text_new3 + .addrBtn {padding-left:10px; float:right;}
+.paymtWrap .input_text_new3 {float:left; width:83%}
+.paymtWrap .input_text_new3 + .addrBtn {float:right}
 .paymtWrap .input_text_new3 + .addrBtn button {float:right; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .pay_back input {height:40px}
 .pay_back .input_text_new2 {max-width:90%; width:86%}
@@ -862,7 +862,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_product .prd_info .option li:last-child {margin-left:5px}
 .paymtWrap .paymt_product .prd_info div {display:inline-block; vertical-align:middle}
 .paymtWrap .paymt_product .prd_info span.cou_bage {z-index:1; position:relative; top:-3px; display:inline-block; font-size:10px; color:#1b61e3; }
-.paymtWrap .paymt_product .prd_info span.cou_bage:before {z-index:-1; display:block; content:''; clear:both; position:absolute; bottom:0;  width:100%; height:6px; background:#edf3fd;}
+.paymtWrap .paymt_product .prd_info span.cou_bage:before {z-index:-1; display:block; content:''; clear:both; position:absolute; bottom:1px; width:100%; height:6px; background:#edf3fd;}
 .paymtWrap .paymt_product .prd_info dt {font-size:12px; font-weight:400; color:#555; margin:0 0 10px; line-height:1}
 .paymtWrap .paymt_product .prd_info dd {font-size:12px; font-weight:300; color:#555; line-height:1.6;text-overflow: ellipsis;overflow: hidden;width: 57vw;white-space: nowrap;}
 .paymtWrap .paymt_product .just_right {float:right;width:calc(100% - 105px)}
@@ -950,14 +950,14 @@ input[type=text].text-input.phone-last {width:70%}
 /* 결제 완료 */
 .comp_info {border-top:1px solid #d0d0d0;padding-bottom:60px;color:#111;}
 /* .comp_info {padding-bottom:60px;border-bottom:8px solid #f0f0f0;color:#111;} */
-.comp_info .desc {padding:52px 30px 25px;line-height:20px;text-align:center;}
+.comp_info .desc {padding:40px 20px;line-height:20px;text-align:center;}
 .comp_info .desc strong {display:block;font-size:22px; color:#000; font-weight:500;line-height:36px;margin-bottom:7px;}
 .comp_info .desc p {display:block; font-size:14px; color:#555; font-weight:300;}
 .comp_info .detail{margin:0 16px 30px;padding:27px 30px 25px}
 .comp_info .detail dt {float:left;width:100px;font-size:13px;line-height:21px;color:#888}
 .comp_info .detail dt.line2{width:165px;}
 .comp_info .detail dd{float:right;width:calc(100% - 100px);text-align:right;font-size:14px;color:#000;line-height:21px;}
-.comp_info .detail dd.line2{width:calc(100% - 165px);height:44px;line-height:44px;}
+.comp_info .detail dd.line2{width:calc(100% - 165px);height:44px;line-height:60px;}
 .comp_info .detail .line2{border-top:1px solid #e5e5e5;padding-top:17px;margin-top:15px;}
 .comp_info .btns .btn_link + .btn_link{margin-top:10px;}
 .comp_info .btn {padding:0 20px; text-align: center;}
@@ -1016,9 +1016,13 @@ input[type=text].text-input.phone-last {width:70%}
 #popup_ord_coupon .paymtWrap {padding-bottom:0}
 @media screen and (max-width:320px) {
     .paymtWrap .paymt_info .sz-custom_text {font-size:10px}
+    .paymtWrap .input_text_new3 {width:55%;}
 }
+@media screen and (min-width:321px) and (max-width:420px) {
+    .paymtWrap .input_text_new3 {width:64%;}
+}
+
 @media screen and (max-width:620px) {
-    .paymtWrap .input_text_new3 {width:62%;}
     .inp_d.sz-select_list {width:93%}
     .num-select .sz-select_sub {width:99.2%;}
     .pay_back .input_text_new2 {width:72%}
