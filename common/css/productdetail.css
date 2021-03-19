@@ -352,7 +352,7 @@ input[type=checkbox] {display:none}
 .sz-select_list li {border-top:none;}
 .sz-select_list .selected.brdT {border-top:1px solid #e5e5e5}
 .sz-select_sub {z-index:1; overflow-x:hidden; display:none; position:absolute; width:100%; border:1px solid #e5e5e5; background-color:#fff;}
-.sz-select_sub li {z-index:10; padding:5px; cursor:pointer;width:100%; overflow:hidden;}
+.sz-select_sub li {z-index:10; margin:5px; cursor:pointer;width:100%; overflow:hidden;}
 .sz-custom_check {display:none}
 /* 셀렉트 옵션  공통 */
 .product-select {font-size:13px}
@@ -1022,13 +1022,16 @@ input[type=text].text-input.phone-last {width:70%}
     .paymtWrap .paymt_info .sz-custom_text {font-size:10px}
     .paymtWrap .input_text_new3 {width:55%;}
 }
-@media screen and (min-width:321px) and (max-width:420px) {
-    .paymtWrap .input_text_new3 {width:66%;}
+@media screen and (min-width:321px) and (max-width:360px) {
+    .paymtWrap .input_text_new3 {width:64%;}
+}
+@media screen and (min-width:361px) and (max-width:420px) {
+    .paymtWrap .input_text_new3 {width:70%;}
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:800px) {
     .inp_d.sz-select_list {width:93%}
-    .num-select .sz-select_sub {width:99.2%;}
+    .num-select .sz-select_sub {width:96.2%;}
     .pay_back .input_text_new2 {width:72%}
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
     .paymtWrap .paymt_info .table_wrap2 td input {width:88%;}
