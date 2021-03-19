@@ -266,7 +266,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .input_checkbox_b input:checked+label:after {opacity:1;}
 .input_checkbox_b input[type=checkbox]:checked +label {
     width:100px; padding-left:30px; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px; background-position:-278px -139px; background-repeat: no-repeat;}
-[class*=btn_]{display:inline-block;vertical-align:top}
+[class*=btn_]{vertical-align:top}
 .error [class*=input_] .error,
 .input_text button:focus,
 .input_text button:hover,
