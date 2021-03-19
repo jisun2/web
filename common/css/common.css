@@ -651,7 +651,6 @@ transparent transparent transparent}
 /* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
-    #header .header_title {margin-top:10px;}
     #header .header_title .number {font-family:'Proxima-Nova'!important}
 }
 @media screen and (min-width:720px) {
