@@ -629,7 +629,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .num {font-family:'proxima-nova'}
 .paymtWrap ._addr input, .paymtWrap .paymt_modify input {height:40px}
 .paymtWrap ._sale input {min-height:30px; vertical-align:middle}
-.paymtWrap .paymt_modify {min-width:300px}
+.paymtWrap .paymt_modify {}
 .paymtWrap .paymt_modify.hitC {height:calc(100vh - 60px)}
 .paymtWrap .paymt_modify table {width:100%;}
 .paymtWrap .paymt_modify .b_modify {position:absolute; top:20px; right:0;}
@@ -709,6 +709,8 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .article_content ._table td > div::after {display:block; content:''; clear:both; height:100%;}
 .paymtWrap .paymt_info .sz-custom_text {float:left; margin:2px 0 0 9px; font-size:12px; font-weight:normal; color:#555;}
 .paymtWrap .paymt_info._agree {padding-bottom:29px}
+.paymtWrap .paymt_info._agree .sz-custom_label {margin-top:15px}
+.paymtWrap .paymt_info._agree .a_info {padding-right:20px}
 .paymtWrap .balloon {display:inline-block; margin-left:7px; position:relative; top:-2px;padding:3px 10px;background:#4673c6; border-radius:5px; font-size:10px; color:#fff; box-shadow:3px 4px 10px 0px rgba(0,0,0,0.2)}
 .paymtWrap .balloon:after {content:'';position: absolute;top: 50%;right: 100%;margin-top: -3px;border-width:3px;border-style: solid;border-color: transparent #4673c6 transparent transparent}
 /* 핸드폰 번호 셀렉트 박스 */
@@ -1021,7 +1023,7 @@ input[type=text].text-input.phone-last {width:70%}
     .paymtWrap .input_text_new3 {width:55%;}
 }
 @media screen and (min-width:321px) and (max-width:420px) {
-    .paymtWrap .input_text_new3 {width:64%;}
+    .paymtWrap .input_text_new3 {width:66%;}
 }
 
 @media screen and (max-width:620px) {
