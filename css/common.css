@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:300&subset=korean);
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-body,input[type=email],input[type=number],input[type=password],input[type=text],option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
+body,option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
+input[type=number] {font-family:'proxima-nova' !important}
 html{font-size:14px;line-height:20px;color:#555}
 body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar}
 button,input,pre,textarea{font-family:inherit;font-size:inherit;color:inherit}
@@ -259,14 +259,13 @@ input[type=checkbox] {display:none}
     background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px;
     background-position:-284px -74px; background-repeat: no-repeat;
 }
-
 input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 /* bic check box */
 .input_checkbox_b label {display:inline-block; padding-left:30px; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px; background-position:-277px -106px; background-repeat: no-repeat;}
 .input_checkbox_b input:checked+label:after {opacity:1;}
 .input_checkbox_b input[type=checkbox]:checked +label {
     width:100px; padding-left:30px; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px; background-position:-278px -139px; background-repeat: no-repeat;}
-[class*=btn_]{display:inline-block;vertical-align:top}
+[class*=btn_]{vertical-align:top}
 .error [class*=input_] .error,
 .input_text button:focus,
 .input_text button:hover,
@@ -420,9 +419,9 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .txt_cnt {text-align:center !important}
 .orange {color:#ff4e25 !important}
 .blue {color:#3067cc !important}
-.num {font-family:'ProximaNova'!important}
+.num {font-family:'proxima-nova'!important}
 .notoS {font-family:'Noto Sans KR'!important}
-.proxima {font-family:'ProximaNova'!important}
+.proxima {font-family:'proxima-nova'!important}
 .box_right, .box_left {position:relative; float:left; width:50%; min-height:48px; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
@@ -432,7 +431,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color:#111}
 .btn_bk .dark {display:block; padding:17px 0}
-.pd_btn_box .orange_btn {width:100%; height:45px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:400; border-radius:3px}
+.pd_btn_box .orange_btn {width:100%; height:45px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:500; border-radius:3px}
 /* badge */
 .badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:58px; max-height:24px; font-family:'Noto Sans KR'; font-size:13px}
 .badge.ble {background-color:#3067cc; color:#fff}
@@ -483,6 +482,27 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
     -o-transform: translate(-50%,-7%) rotateZ(-45deg);
     transform: translate(-50%,-7%) rotateZ(-45deg);
 }
+@font-face {
+    font-family:proxima-nova;
+    font-style:normal;
+    font-weight:400;
+    src: url(../fonts/ProximaNova/ProximaNova-Regular.ttf);
+  unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+}
+@font-face {
+  font-family: proxima-nova;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/ProximaNova/proximaNova-Medium.ttf);
+  unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+}
+@font-face {
+  font-family: proxima-nova;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ProximaNova/proximaNova-Semibold.ttf);
+  unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+}
 #header {display:flow-root; vertical-align:middle}
 #header .popup {display:block; border-bottom:1px solid #d0d0d0}
 #header .box_left .logo {display:block; overflow:hidden;}
@@ -490,7 +510,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #header .logo_area {margin-left:16px; display:inline-block;}
 #header .popup .header_title {margin:15px}
 #header .header_title {margin-top:10px; letter-spacing:-1px; vertical-align:middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
-#header .header_title .number {font-size:18px; line-height:10px; font-family:'ProximaNova'}
+#header .header_title .num {font-size:18px; line-height:10px; font-family:'proxima-nova'}
 #header .btn_area {width:100%; height:45px;}
 #header .btn_area a {position:relative; display:inline-block;}
 #header .btn_area li {float:right; margin-right:7px}
@@ -503,7 +523,9 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #header .btn_area .noti {background-position: -226px 0px}
 #header .btn_area .close {background-position: -265px 0px}
 /* #header .headerWrap.brb {border-bottom:1px solid #e5e5e5} */
-#cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px; height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px;}
+#cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px;
+     height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
+      -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
 #container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; line-height:15px; background-color: #fff; font-family:'Noto Sans KR'}
 #container .fixed_nav.hide {bottom:-10%}
