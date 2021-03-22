@@ -1031,7 +1031,7 @@ input[type=text].text-input.phone-last {width:70%}
     .paymtWrap .input_text_new3 {width:64%;}
 }
 @media screen and (min-width:361px) and (max-width:420px) {
-    .paymtWrap .input_text_new3 {width:70%;}
+    .paymtWrap .input_text_new3 {width:66%;}
 }
 @media screen and (max-width:800px) {
     .inp_d.sz-select_list {width:93%}
