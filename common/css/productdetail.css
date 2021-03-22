@@ -612,7 +612,7 @@ input[type=text].text-input.phone-last {width:70%}
     .nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:16px}
 }
 @media screen and (min-width:600px) {
-    .cart_option_none {width:91%;}
+    .cart_option_none {width:90%;}
     .cart_option_none .just_left {width:100%;}
     .nav_fixed_wrap.cart .pd_btn_box {width:97%}
     .cart_option .just_left {width:78%}
