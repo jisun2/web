@@ -776,7 +776,7 @@ input[type=text].text-input.phone-last {width:70%}
 .pay_back .input_text_new2 {max-width:90%;}
 .pay_back .input_text_new2.mb10 {width:86%}
 .paymtWrap .input_text_new2 {float:left; width:70%; text-align:center;}
-.paymtWrap .input_text_new3 {float:left; width:78%}
+.paymtWrap .input_text_new3 {float:left;}
 .paymtWrap .input_text_new3 + .addrBtn {float:right}
 .paymtWrap .input_text_new3 + .addrBtn button {float:right; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .pay_back input {height:40px}
@@ -867,7 +867,8 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_product .prd_info .cart-price.pay .num {font-size:16px;}
 .paymtWrap .cart_box del.num {font-size:11px !important; color:#ababab}
 .paymtWrap .paymt_product .prd_info ul {font-weight:400; font-size:12px; color:#888; font-family:'proxima-nova';}
-.paymtWrap .paymt_product .prd_info ul li {position:relative; float:left; text-overflow:ellipsis; overflow:hidden; white-space: nowrap;}
+.paymtWrap .paymt_product .prd_info ul li {position:relative; float:left}
+.paymtWrap .paymt_product .prd_info ul li span {display: -webkit-box; -webkit-box-orient:vertical; word-break: break-all; text-overflow:ellipsis; overflow:hidden;}
 /* .paymtWrap .paymt_product .prd_info ul li:last-child {margin:0 5px; width:35%;} */
 .paymtWrap .paymt_product .prd_info ul li::before {margin:0px 6px; position:absolute; right:-5px; top:5px; height:10px; width:1px; content:''; background-color:#e5e5e5}
 .paymtWrap .paymt_product .prd_info ul li:last-child::before {display:none}
@@ -1017,7 +1018,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap2 table {width:100%}
 .paymtWrap .paymt_info .table_wrap2 td {font-size:12px; color:#555; text-align:right; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 td span {padding-top:5px; font-size:16px; color:#000;}
-.paymtWrap .paymt_info .table_wrap2 td input {float:left; height:30px; width:93%; border:1px solid #e5e5e5; font-size:16px; color:#333; font-weight:400; text-align:right}
+.paymtWrap .paymt_info .table_wrap2 td input {float:left; height:30px; width:89%; border:1px solid #e5e5e5; font-size:16px; color:#333; font-weight:400; text-align:right}
 .paymtWrap .paymt_info .table_wrap2 td input[type=number] {font-family:'proxima-nova' !important; font-weight:400}
 .paymtWrap .paymt_info .table_wrap2 .add_notice {font-size:11px; color:#ababab; text-align:center}
 .paymtWrap .paymt_info .table_wrap2 .add_notice span {font-size:12px; color:#1b61e3; font-family:'proxima-nova';}
@@ -1044,7 +1045,6 @@ input[type=text].text-input.phone-last {width:70%}
     .pay_back .input_text_new2.mb10 {width:70%}
 }
 @media screen and (min-width:361px) and (max-width:420px) {
-    .paymtWrap .input_text_new3 {width:70%;}
     .pay_back .input_text_new2 {width:70%}
     .pay_back .input_text_new2.mb10 {width:73%}
 }
