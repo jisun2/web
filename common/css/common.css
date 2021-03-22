@@ -431,7 +431,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color:#111}
 .btn_bk .dark {display:block; padding:17px 0}
-.pd_btn_box .orange_btn {width:100%; height:45px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:400; border-radius:3px}
+.pd_btn_box .orange_btn {width:100%; height:45px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:500; border-radius:3px}
 /* badge */
 .badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:58px; max-height:24px; font-family:'Noto Sans KR'; font-size:13px}
 .badge.ble {background-color:#3067cc; color:#fff}
@@ -519,7 +519,9 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #header .btn_area .noti {background-position: -226px 0px}
 #header .btn_area .close {background-position: -265px 0px}
 /* #header .headerWrap.brb {border-bottom:1px solid #e5e5e5} */
-#cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px; height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px;}
+#cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px;
+     height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
+      -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
 #container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; line-height:15px; background-color: #fff; font-family:'Noto Sans KR'}
 #container .fixed_nav.hide {bottom:-10%}
