@@ -420,9 +420,9 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .txt_cnt {text-align:center !important}
 .orange {color:#ff4e25 !important}
 .blue {color:#3067cc !important}
-.num {font-family:'ProximaNova'!important}
+.num {font-family:'proxima-nova'!important}
 .notoS {font-family:'Noto Sans KR'!important}
-.proxima {font-family:'ProximaNova'!important}
+.proxima {font-family:'proxima-nova'!important}
 .box_right, .box_left {position:relative; float:left; width:50%; min-height:48px; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
@@ -485,41 +485,41 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 }
 
 @font-face {
-  font-family: ProximaNova;
+  font-family: proxima-nova;
   src: url(NanumSquareL.woff) format('woff');
   font-weight: 300;
 }
 @font-face {
-  font-family: ProximaNova;
+  font-family: proxima-nova;
   src: url(NanumSquareR.woff) format('woff');
   font-weight: 400;
 }
 @font-face {
-  font-family: ProximaNova;
+  font-family: proxima-nova;
   src: url(NanumSquareB.woff) format('woff');
   font-weight: 700;
 }
 @font-face {
-  font-family: ProximaNova;
+  font-family: proxima-nova;
   src: url(NanumSquareEB.woff) format('woff');
   font-weight: 800;
 }
 
-@font-face { font-family: proxima-nova; font-style: normal;  font-weight: 400;  src: url(../common/fonts/ProximaNova/ProximaNova-Regular.ttf);
+@font-face { font-family: proxima-nova; font-style: normal;  font-weight: 400;  src: url(../common/fonts/proxima-nova/proxima-nova-Regular.ttf);
   unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
 }
 @font-face {
   font-family: proxima-nova;
   font-style: normal;
   font-weight: 500;
-  src: url(../common/fonts/ProximaNova/ProximaNova-Medium.ttf);
+  src: url(../common/fonts/proxima-nova/proxima-nova-Medium.ttf);
   unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
 }
 @font-face {
   font-family: proxima-nova;
   font-style: normal;
   font-weight: 700;
-  src: url(../common/fonts/ProximaNova/ProximaNova-Semibold.ttf);
+  src: url(../common/fonts/proxima-nova/proxima-nova-Semibold.ttf);
   unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
 }
 #header {display:flow-root; vertical-align:middle}
@@ -529,7 +529,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #header .logo_area {margin-left:16px; display:inline-block;}
 #header .popup .header_title {margin:15px}
 #header .header_title {margin-top:10px; letter-spacing:-1px; vertical-align:middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
-#header .header_title .number {font-size:18px; line-height:10px; font-family:'ProximaNova'}
+#header .header_title .number {font-size:18px; line-height:10px; font-family:'proxima-nova'}
 #header .btn_area {width:100%; height:45px;}
 #header .btn_area a {position:relative; display:inline-block;}
 #header .btn_area li {float:right; margin-right:7px}
