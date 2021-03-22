@@ -928,7 +928,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_order_applied .applied li {padding:45px 0; position:relative; border-top:1px solid #e5e5e5;}
 .paymtWrap .paymt_order_applied .applied li dl dt {position:relative; font-family:'proxima-nova','Noto-sans KR'; font-size:16px; font-weight:500; color:#000; margin-bottom:6px; line-height:1}
 .paymtWrap .paymt_order_applied .applied li dl dt span.badge {z-index:4; display:inline-block;font-size:14px; color:#ff4e25; position:absolute; left:0; top:-25px;font-weight:Medium}
-.paymtWrap .paymt_order_applied .applied li dl dt span.badge:before {display:block; content:''; clear:both; position:absolute; bottom:-3px;  width:100%; height:6px; background:#ffe5df;}
+.paymtWrap .paymt_order_applied .applied li dl dt span.badge:before {z-index:-1; display:block; content:''; clear:both; position:absolute; bottom:-3px;  width:100%; height:6px; background:#ffe5df;}
 .paymtWrap .paymt_order_applied .applied li dl dd {font-size:11px; font-weight:normal; color:#888; line-height:1.6;}
 /* .paymtWrap .paymt_order_applied .applied li dl dd span {font-family:proxima-nova,'Noto-sans KR'; font-size:14px; font-weight:700; color:#000;} */
 .paymtWrap .paymt_order_applied .applied_info {margin:0 20px; padding:25px 0; text-indent:-8px}
