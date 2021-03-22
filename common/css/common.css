@@ -1,7 +1,28 @@
 @charset "utf-8";
 
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:300&subset=korean);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap);
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(NanumSquareL.woff) format('woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(NanumSquareR.woff) format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(NanumSquareB.woff) format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(NanumSquareEB.woff) format('woff');
+  font-weight: 800;
+}
 
 body,input[type=email],input[type=number],input[type=password],input[type=text],option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
 html{font-size:14px;line-height:20px;color:#555}
