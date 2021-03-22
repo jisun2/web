@@ -1025,7 +1025,7 @@ input[type=text].text-input.phone-last {width:70%}
 #popup_ord_coupon .paymtWrap {padding-bottom:0}
 @media screen and (max-width:320px) {
     .paymtWrap .paymt_info .sz-custom_text {font-size:10px}
-    .paymtWrap .input_text_new3 {width:55%;}
+    .paymtWrap .input_text_new3 {width:57%;}
 }
 @media screen and (min-width:321px) and (max-width:360px) {
     .paymtWrap .input_text_new3 {width:64%;}
