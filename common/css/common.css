@@ -492,7 +492,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 @font-face {
   font-family: proxima-nova;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   src: url(../fonts/ProximaNova/proximaNova-Medium.ttf);
   unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
 }
