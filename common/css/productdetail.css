@@ -352,7 +352,7 @@ input[type=checkbox] {display:none}
 .sz-select_list li {border-top:none;}
 .sz-select_list .selected.brdT {border-top:1px solid #e5e5e5}
 .sz-select_sub {z-index:1; overflow-x:hidden; display:none; position:absolute; width:100%; border:1px solid #e5e5e5; background-color:#fff;}
-.sz-select_sub li {z-index:10; margin:5px; cursor:pointer;width:100%; overflow:hidden;}
+.sz-select_sub li {z-index:3; padding:5px; cursor:pointer;width:100%; overflow:hidden;}
 .sz-custom_check {display:none}
 /* 셀렉트 옵션  공통 */
 .product-select {font-size:13px}
@@ -629,7 +629,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .num {font-family:'proxima-nova'}
 .paymtWrap ._addr input, .paymtWrap .paymt_modify input {height:40px}
 .paymtWrap ._sale input {min-height:30px; vertical-align:middle}
-.paymtWrap .paymt_modify {}
+.paymtWrap .paymt_modify .num-select ul li {font-family:'proxima-nova'; font-weight:400;}
 .paymtWrap .paymt_modify.hitC {height:calc(100vh - 60px)}
 .paymtWrap .paymt_modify table {width:100%;}
 .paymtWrap .paymt_modify .b_modify {position:absolute; top:20px; right:0;}
@@ -692,6 +692,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .article_title .orange_txt b {font-size:16px}
 .paymtWrap .paymt_info .article_title .orange_txt .mileM {font-size:16px}
 .paymtWrap .paymt_info .article_title .orange_txt, .orange_txt2 {position:absolute; right:50px; display:inline-block; color:#ff4e25; font-size:14px; font-family: 'proxima-nova','Noto Sans KR',sans-serif}
+.paymtWrap .paymt_info .article_title .orange_txt2 b {font-weight:400}
 .paymtWrap .paymt_info .article_title .orange_txt em {font-size:16px; font-weight:600}
 .paymtWrap .paymt_info .article_title .orange_txt2 {right:20px; white-space:nowrap;}
 
@@ -700,7 +701,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .article_title1.active::after {content:''; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_open_toggle.gif) center center/cover no-repeat}
 .paymtWrap .paymt_info .article_title1 .orange_txt b {font-size:16px}
 .paymtWrap .paymt_info .article_title1 .orange_txt .mileM {font-size:16px}
-.paymtWrap .paymt_info .article_title1 .orange_txt, .orange_txt2 {position:absolute; right:50px; display:inline-block; color:#ff4e25; font-size:14px; font-family: 'proxima-nova','Noto Sans KR',sans-serif}
+/* .paymtWrap .paymt_info .article_title1 .orange_txt, .orange_txt2 {position:absolute; right:50px; display:inline-block; color:#ff4e25; font-size:14px; font-family: 'proxima-nova','Noto Sans KR',sans-serif} */
 .paymtWrap .paymt_info .article_title1 .orange_txt em {font-size:16px; font-weight:600}
 .paymtWrap .paymt_info .article_title1 .orange_txt2 {right:20px; white-space:nowrap;}
 .paymtWrap ._agree .article_title::after, .paymtWrap ._member .article_title::after {display:none}
@@ -732,7 +733,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .addr_user .tooltip .tooltiptext {bottom:-10px; right:-165px; border-radius:3px}
 .paymtWrap .addr_user .tooltip .tooltiptext::after {top:14px; left:-10px; border-color:transparent #3067cc transparent transparent}
 /* .paymtWrap .addr_user {margin-bottom:20px;}  */
-.paymtWrap .addr_user dt {font-size:13px; line-height:3; margin-bottom:7px}
+.paymtWrap .addr_user dt {font-size:13px; margin-bottom:10px}
 .paymtWrap .addr_user dt span:first-of-type {margin-left:6px; top:-2px; padding:3px 8px; border:1px solid #1b61e3; border-radius:20px; font-size:10px; color:#1b61e3}
 .paymtWrap .addr_user dt span:first-of-type.recent {color:#ababab; border-color:#ababab}
 .paymtWrap .addr_user .tooltiptext {position:absolute}
@@ -741,7 +742,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymt_modify .tooltip span:hover .tooltiptext.show {display:block}
 .paymtWrap .tooltiptext:after {left:215px}
 .paymtWrap .addr_user dd {font-size:13px; word-break:keep-all}
-.paymtWrap .addr_user dd .num {display:inline-block; margin-top:10px; font-size:15px;}
+.paymtWrap .addr_user dd .num {display:inline-block; font-weight:400; font-size:15px; color:#333}
 .paymtWrap .addr_user dd:last-child {font-size:15px;}
 .paymtWrap .paymt_info._addr .addr_user {width:80%;}
 .paymtWrap .paymt_info .a_info {position:absolute; top:0; right:0; display:block; font-size:11px; color:#888; text-decoration:underline !important}
@@ -1006,6 +1007,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap2 td {font-size:12px; color:#555; text-align:right; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 td span {padding-top:5px; font-size:16px; color:#000;}
 .paymtWrap .paymt_info .table_wrap2 td input {float:left; height:30px; width:94%; border:1px solid #e5e5e5; font-size:16px; color:#333; font-weight:400; text-align:right}
+.paymtWrap .paymt_info .table_wrap2 td input[type=number] {font-family:'proxima-nova'; font-weight:400} 
 .paymtWrap .paymt_info .table_wrap2 .add_notice {font-size:11px; color:#ababab; text-align:center}
 .paymtWrap .paymt_info .table_wrap2 .add_notice span {font-size:12px; color:#1b61e3; font-family:'proxima-nova';}
 .paymtWrap .paymt_addr_modify li {padding:25px 0; position:relative;}
