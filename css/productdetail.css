@@ -314,7 +314,7 @@ input[type=checkbox] {display:none}
 .pf_fc-box {max-height:333px; padding:0 15px 163px 15px; font-weight:400; background-color:#fff}
 .pf_fc-box .box_close {margin:10px 47.5%; text-align:center;}
 .pf_fc-box .more_link-btn {width:162px; height:35px; line-height:33px; background-color:#fff;  border: 1px solid #ff4e25;  font-size:13px; box-shadow:0px -5px 15px 0px rgba(0,0,0,0.05);}
-.pf_fc-box .pf_fc {display:flow-root; padding:20px 0; border-bottom: 1px solid #e5e5e5;color: #333;font-size:14px}
+.pf_fc-box .pf_fc {clear:both; display:flow-root; padding:20px 0; border-bottom: 1px solid #e5e5e5;color: #333;font-size:14px}
 .pf_fc-box .pf_fc:first-child,.pf_fc-box .pf_fc:last-child {border-bottom: none;margin-bottom: 0}
 .pf_fc-box .pf_fc.no_border {border: none;margin-bottom: 0}
 .pf_fc-box .pro_pay {display:block; width:60%}
@@ -621,6 +621,7 @@ input[type=text].text-input.phone-last {width:70%}
 @media screen and (min-width:400px) and (min-width:720px) {
     .cart_option .just_left {width:80%}
 }
+
 /* --------------------------------------------------------------------- 결재  S ------------------------------------------------------------------ */
 
 .mr5 {margin-right:5px}
@@ -722,7 +723,7 @@ input[type=text].text-input.phone-last {width:70%}
 .num-select select {width:100%;}
 .num-select .selected {padding:0px 5px; vertical-align:middle; min-height:38px; color:#ababab; background-color:#fff; border:1px solid #e5e5e5; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow:hidden; display:block; white-space:nowrap}
 .num-select .selected.active {border:1px solid #333; background-color:#fff}
-.num-select .sz-select_sub {width:97%; border:1px solid #333; border-top:0}
+.num-select .sz-select_sub {width:97%; height:200px; overflow-y:auto; border:1px solid #333; border-top:0;}
 /* .num-select .sz-select_sub li {padding:0 5px;} */
 .num-select .selected .sel_arrow {float:right; margin-top:11px}
 .pf_fc .num-select:first-child .selected {border-top:1px solid #e5e5e5}
@@ -776,7 +777,7 @@ input[type=text].text-input.phone-last {width:70%}
 .pay_back .input_text_new2 {max-width:90%;}
 .pay_back .input_text_new2.mb10 {width:86%}
 .paymtWrap .input_text_new2 {float:left; width:70%; text-align:center;}
-.paymtWrap .input_text_new3 {float:left; width:83%}
+.paymtWrap .input_text_new3 {float:left; width:82%}
 .paymtWrap .input_text_new3 + .addrBtn {float:right}
 .paymtWrap .input_text_new3 + .addrBtn button {float:right; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .pay_back input {height:40px}
@@ -845,7 +846,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap2 .add_disc .ble {font-size:12px; color:#1b61e3}
 
 /* 주문상품 */
-.paymtWrap .cart_section_total .semi {font-weight:semibold}
+.paymtWrap .cart_section_total .semi {font-weight:500;}
 .paymtWrap button {border-radius:3px}
 .paymtWrap.pdb0 {padding-bottom:0}
 .paymtWrap .ico.tip {margin:0}
@@ -866,11 +867,13 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_product .prd_info .cart-price.pay {font-size:11px; font-weight:semibold}
 .paymtWrap .paymt_product .prd_info .cart-price.pay .num {font-size:16px;}
 .paymtWrap .cart_box del.num {font-size:11px !important; color:#ababab}
-.paymtWrap .paymt_product .prd_info ul {font-weight:400; font-size:12px; color:#888; font-family:'proxima-nova';}
-.paymtWrap .paymt_product .prd_info ul li {position:relative; float:left; text-overflow:ellipsis; overflow:hidden; white-space: nowrap;}
+.paymtWrap .paymt_product .prd_info ul {font-weight:400; font-size:12px; color:#888;}
+.paymtWrap .paymt_product .prd_info ul li {position:relative; float:left}
+.paymtWrap .paymt_product .prd_info ul li span {display: -webkit-box; -webkit-box-orient:vertical; word-break: break-all; text-overflow:ellipsis; overflow:hidden;}
 /* .paymtWrap .paymt_product .prd_info ul li:last-child {margin:0 5px; width:35%;} */
 .paymtWrap .paymt_product .prd_info ul li::before {margin:0px 6px; position:absolute; right:-5px; top:5px; height:10px; width:1px; content:''; background-color:#e5e5e5}
 .paymtWrap .paymt_product .prd_info ul li:last-child::before {display:none}
+.paymtWrap .paymt_product .prd_info .option li {line-height:16px}
 .paymtWrap .paymt_product .prd_info .option li:first-child {padding-right:10px}
 .paymtWrap .paymt_product .prd_info .option li:last-child {margin-left:5px}
 .paymtWrap .paymt_product .prd_info div {display:inline-block; vertical-align:middle}
@@ -927,8 +930,9 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_order_applied .applied li input:disabled + label dl dt span.badge:before {background:#f0f0f0}
 .paymtWrap .paymt_order_applied .applied li {padding:45px 0; position:relative; border-top:1px solid #e5e5e5;}
 .paymtWrap .paymt_order_applied .applied li dl dt {position:relative; font-family:'proxima-nova','Noto-sans KR'; font-size:16px; font-weight:500; color:#000; margin-bottom:6px; line-height:1}
-.paymtWrap .paymt_order_applied .applied li dl dt span.badge {z-index:4; display:inline-block;font-size:14px; color:#ff4e25; position:absolute; left:0; top:-25px;font-weight:Medium}
-.paymtWrap .paymt_order_applied .applied li dl dt span.badge:before {display:block; content:''; clear:both; position:absolute; bottom:-3px;  width:100%; height:6px; background:#ffe5df; z-index:-1}
+.paymtWrap .paymt_order_applied .applied li dl dt span.badge {z-index:4; display:inline-block;font-size:14px; color:#ff4e25; position:absolute; left:0; top:-25px;font-weight:500}
+.paymtWrap .paymt_order_applied .applied li dl dt span.badge .num {font-weight:600}
+.paymtWrap .paymt_order_applied .applied li dl dt span.badge:before {z-index:-1; display:block; content:''; clear:both; position:absolute; bottom:-3px;  width:100%; height:6px; background:#ffe5df;}
 .paymtWrap .paymt_order_applied .applied li dl dd {font-size:11px; font-weight:normal; color:#888; line-height:1.6;}
 /* .paymtWrap .paymt_order_applied .applied li dl dd span {font-family:proxima-nova,'Noto-sans KR'; font-size:14px; font-weight:700; color:#000;} */
 .paymtWrap .paymt_order_applied .applied_info {margin:0 20px; padding:25px 0; text-indent:-8px}
@@ -1016,7 +1020,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap2 table {width:100%}
 .paymtWrap .paymt_info .table_wrap2 td {font-size:12px; color:#555; text-align:right; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 td span {padding-top:5px; font-size:16px; color:#000;}
-.paymtWrap .paymt_info .table_wrap2 td input {float:left; height:30px; width:94%; border:1px solid #e5e5e5; font-size:16px; color:#333; font-weight:400; text-align:right}
+.paymtWrap .paymt_info .table_wrap2 td input {float:left; height:30px; width:89%; border:1px solid #e5e5e5; font-size:16px; color:#333; font-weight:400; text-align:right}
 .paymtWrap .paymt_info .table_wrap2 td input[type=number] {font-family:'proxima-nova' !important; font-weight:400}
 .paymtWrap .paymt_info .table_wrap2 .add_notice {font-size:11px; color:#ababab; text-align:center}
 .paymtWrap .paymt_info .table_wrap2 .add_notice span {font-size:12px; color:#1b61e3; font-family:'proxima-nova';}
@@ -1038,12 +1042,17 @@ input[type=text].text-input.phone-last {width:70%}
     .paymtWrap .input_text_new3 {width:64%;}
     .pay_back .input_text_new2.mb10 {width:70%}
 }
+/* @media screen and (min-width:361px) and (max-width:376px) {
+    .paymtWrap .input_text_new3 {width:65%;}
+    .pay_back .input_text_new2.mb10 {width:70%}
+} */
 @media screen and (min-width:361px) and (max-width:420px) {
-    .paymtWrap .input_text_new3 {width:66%;}
+    .paymtWrap .input_text_new3 {width:67%}
     .pay_back .input_text_new2 {width:70%}
     .pay_back .input_text_new2.mb10 {width:73%}
 }
-@media screen and (max-width:800px) {
+@media screen and (min-width:500px) and (max-width:1020px) {
+    .paymtWrap .input_text_new3 {width:83%}
     .inp_d.sz-select_list {width:93%}
     .num-select .sz-select_sub {width:96.2%;}
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
