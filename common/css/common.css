@@ -428,6 +428,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .clear:after{content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 .ovef_h {overflow:hidden}
 .clear {clear:both !important}
+.clearfix::after {content: '';display:block; clear:both}
 .flt_le {float:left !important}
 .flt_ri {float:right !important}
 .dis_in {display:inline-block !important}
