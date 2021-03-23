@@ -723,7 +723,7 @@ input[type=text].text-input.phone-last {width:70%}
 .num-select select {width:100%;}
 .num-select .selected {padding:0px 5px; vertical-align:middle; min-height:38px; color:#ababab; background-color:#fff; border:1px solid #e5e5e5; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow:hidden; display:block; white-space:nowrap}
 .num-select .selected.active {border:1px solid #333; background-color:#fff}
-.num-select .sz-select_sub {width:97%; border:1px solid #333; border-top:0}
+.num-select .sz-select_sub {width:97%; height:200px; overflow-y:auto; border:1px solid #333; border-top:0;}
 /* .num-select .sz-select_sub li {padding:0 5px;} */
 .num-select .selected .sel_arrow {float:right; margin-top:11px}
 .pf_fc .num-select:first-child .selected {border-top:1px solid #e5e5e5}
