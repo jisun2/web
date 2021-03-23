@@ -11,6 +11,8 @@
         <script src="../common/lib/slick.min.js"></script>
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/productdetail.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
     </head>
     <body>
         <div id="wrap" class="wd720">
@@ -1112,11 +1114,24 @@
         <script src="../common/lib/slick.min.js"></script>
         <script src="../common/lib/main.js"></script>
         <script type="text/javascript">
+            // $(document).ready(function(){
+            //     $(".tooltiptext").show();
+            //     setTimeout(function () {
+            //         $(".tooltiptext").hide();
+            //     }, 5000);
+            // });
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
                     $(".tooltiptext").hide();
                 }, 5000);
+                $(".ico.tip").click(function(){
+                    if($("#toolShow").css("display") != "block"){
+                        $("#toolShow").show();
+                    }else{
+                        $("#toolShow").hide();
+                    }
+                });
             });
             var $slider = $('.slider');
                 if ($slider.length) {
