@@ -872,6 +872,7 @@ input[type=text].text-input.phone-last {width:70%}
 /* .paymtWrap .paymt_product .prd_info ul li:last-child {margin:0 5px; width:35%;} */
 .paymtWrap .paymt_product .prd_info ul li::before {margin:0px 6px; position:absolute; right:-5px; top:5px; height:10px; width:1px; content:''; background-color:#e5e5e5}
 .paymtWrap .paymt_product .prd_info ul li:last-child::before {display:none}
+.paymtWrap .paymt_product .prd_info .option li {line-height:16px}
 .paymtWrap .paymt_product .prd_info .option li:first-child {padding-right:10px}
 .paymtWrap .paymt_product .prd_info .option li:last-child {margin-left:5px}
 .paymtWrap .paymt_product .prd_info div {display:inline-block; vertical-align:middle}
