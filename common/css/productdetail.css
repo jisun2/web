@@ -314,7 +314,7 @@ input[type=checkbox] {display:none}
 .pf_fc-box {max-height:333px; padding:0 15px 163px 15px; font-weight:400; background-color:#fff}
 .pf_fc-box .box_close {margin:10px 47.5%; text-align:center;}
 .pf_fc-box .more_link-btn {width:162px; height:35px; line-height:33px; background-color:#fff;  border: 1px solid #ff4e25;  font-size:13px; box-shadow:0px -5px 15px 0px rgba(0,0,0,0.05);}
-.pf_fc-box .pf_fc {display:flow-root; padding:20px 0; border-bottom: 1px solid #e5e5e5;color: #333;font-size:14px}
+.pf_fc-box .pf_fc {clear:both; display:flow-root; padding:20px 0; border-bottom: 1px solid #e5e5e5;color: #333;font-size:14px}
 .pf_fc-box .pf_fc:first-child,.pf_fc-box .pf_fc:last-child {border-bottom: none;margin-bottom: 0}
 .pf_fc-box .pf_fc.no_border {border: none;margin-bottom: 0}
 .pf_fc-box .pro_pay {display:block; width:60%}
