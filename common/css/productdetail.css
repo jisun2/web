@@ -203,8 +203,8 @@ input[type=checkbox] {display:none}
 .wrap_board .item .category:before{content:'/\00a0'}
 .wrap_board.noslash .item .category:before{content:''}
 .wrap_board .item .info{position:relative;height:20px; font-size:13px; font-weight:400}
-.seller .list_bar.info {margin-left:20px}
 .wrap_board .item .info dd{height:17px;line-height:18px;overflow:hidden}
+.seller .list_bar.info {margin-left:20px}
 .wrap_board.noslash .item .info dd{height:17px;line-height:18px;overflow:hidden;margin-left:-2px}
 .wrap_board .item .flag,
 .wrap_board .item .category{display:inline-block;vertical-align:top}
@@ -506,10 +506,10 @@ input[type=checkbox] {display:none}
 @media screen and (min-width:719px) {
     .main .slider_for {margin:0 30%;}
 }
+
 /* --------------------------------------------------------------------- 쇼핑백/카트  S ------------------------------------------------------------------ */
 
 .cartWrap {background-color:#f0f0f0}
-.cartWrap .btnMore {}
 .cartWrap .btnMore a {clear:both; display:block; padding:0}
 .cartWrap .btnMore .num {font-size:18px}
 .cartWrap .btnMore a p {padding:30px 0; display:block; vertical-align:middle; font-size:16px; background-color:#f0f0f0}
@@ -642,7 +642,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_modify .num-select ul li {font-family:'proxima-nova'; font-weight:400;}
 .paymtWrap .paymt_modify.hitC {height:calc(100vh - 60px)}
 .paymtWrap .paymt_modify.hitC .addr_wrap {margin:0 auto}
-.paymtWrap .paymt_modify.hitC table {margin:0 auto}
+.paymtWrap .paymt_modify.hitC table {margin:0 auto; width:100%}
 .paymtWrap .paymt_modify .b_modify {position:absolute; top:20px; right:0;}
 .paymtWrap .paymt_modify .b_modify button {background:none; position:relative; padding:0 8px; color:#ababaa; font-size:12px}
 .paymtWrap .paymt_modify .b_modify button:before {border-left:1px solid #e5e5e5;display: block;content: ''; height:11px; position:absolute; top:5px; left:-2px;}
@@ -677,8 +677,8 @@ input[type=text].text-input.phone-last {width:70%}
 .addrN .tooltip .tooltiptext {bottom:25px; right:-20px; border-radius:3px}
 .addrN .tooltip .tooltiptext::after {bottom:20px;}
     /* .paymtWrap .addr_user .tooltip .tooltiptext::after {top:14px; left:-10px; border-color:transparent #3067cc transparent transparent} */
-.product-select.mgb10 {margin-bottom:10px}
-.paymtWrap .product-select .sz-select_sub {max-height:139px}
+.product-select.mgb10 {margin-bottom:10px; min-width:280px}
+.paymtWrap .product-select .sz-select_sub {max-height:139px; overflow-x:hidden}
 .paymtWrap .product-select .selected {height:28px !important}
 .paymtWrap .product-select .selected .sel_arrow {margin-top:5px}
 .paymtWrap .addr_modify {position:absolute; top:45px; right:21px; border-radius:3px;font-size:12px; color:#fff; background:#333; width:50px; text-align:center; height:30px; line-height:30px;}
@@ -773,16 +773,15 @@ input[type=text].text-input.phone-last {width:70%}
 .paymt_modify .last_area {border-top:1px solid #f0f0f0}
 .paymt_modify .last_area th {margin-top:20px}
 /* .paymt_modify .mgb10 .input_text_new2 {margin-bottom:8px} */
-.paymt_modify .wd100 {width:100% !important}
-.paymt_modify table tr {}
-.paymt_modify table th {padding-bottom:10px; min-width:80px; text-align:left; font-size:13px; color:#333; vertical-align:middle;}
+/* .paymt_modify .wd100 {width:100% !important} */
+.paymt_modify {min-width:280px}
+.paymt_modify table th {padding-bottom:10px; min-width:60px; text-align:left; font-size:13px; color:#333; vertical-align:middle;}
 .paymt_modify table th.last {display:inline-block; vertical-align:top}
-.paymt_modify table td {width:100%; margin-bottom:10px}
+.paymt_modify table td {width:100%; min-width:160px; margin-bottom:10px}
 .paymt_modify .product-select .active li {border:0}
 .inp_d.sz-select_list {vertical-align:middle; width:90%; min-width:50px; height:39px; line-height:2.5}
 .paymtWrap .text-input:focus {border:1px solid #333 !important}
 .paymtWrap .text-input.mr5 {width:95%}
-/* .paymtWrap .input_text_new3 {margin-top:10px} */
 .paymtWrap .input_text_new .text_count {float:right; font-size:10px; color:#888; font-family:'proxima-nova'}
 .paymtWrap .input_text_new .text_count .bk {color:#000}
 .pay_back .input_text_new2 {max-width:90%;}
@@ -791,8 +790,8 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .input_text_new3 {float:left; width:82%; min-width:45%}
 .paymtWrap .input_text_new3 + .addrBtn {float:right}
 .paymtWrap .input_text_new3 + .addrBtn button {float:right; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
+
 .pay_back input {height:40px}
-/* .pay_back .input_text_new2 {max-width:90%; width:75%} */
 .pay_back .acc_wrap {display:flow-root;}
 .pay_back .acc_wrap button {margin-left:9px; float:right; width:92%; min-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
 .pay_back .acc_wrap .acc_btn_bk {}
@@ -817,39 +816,17 @@ input[type=text].text-input.phone-last {width:70%}
 .pay_total_wrap dd span {display:inline-block; vertical-align:middle}
 .pay_total_wrap dd .num {display:inline-block; font-size:16px;}
 .pay_total_wrap dd:first-child {text-align:left; color:#000; font-size:15px; font-weight:500}
+.pay_total_wrap dd .ctt-info {color:#ababab; font-size:11px}
 .pay_total_wrap dd .ctt-pay {display:inline-block; vertical-align:middle; line-height:1.3; display:block; color:#ff4e25; font-size:18px; font-weight:500}
 .pay_total_wrap dd .ctt-pay .ctt-pay-num {display:inline-block;font-size:22px; font-weight:Semibold}
 .pay_total_wrap dd .ctt-bonus {display:block; margin-bottom:15px; color:#888; font-size:12px; font-weight:500}
 .pay_total_wrap dd .ctt-bonus .ctt-bonus-num {font-size:12px;}
-.pay_total_wrap dd .ctt-info {color:#ababab; font-size:11px}
 
-/* .paymtWrap .paymt_info .table_wrap1 {border:0;}
-.paymtWrap .paymt_info .table_wrap1 .pc-only {display:none}
-.paymtWrap .paymt_info .table_wrap1 table {width:100%; border:0; vertical-align:middle;}
-.paymtWrap .paymt_info .table_wrap1 tbody th {padding-bottom:4px; width:30%; text-align:left; width:70%; font-size:13px; color:#000;}
-.paymtWrap .paymt_info .table_wrap1 tbody td {text-align:right; width:60%; font-size:15px; color:#000;} */
-/* .paymtWrap .paymt_info .table_wrap1 tbody tr:nth-last-child(1+0) {padding-bottom:25px;} */
-/* .paymtWrap .paymt_info .table_wrap1 tbody td.t_blue {color: #1b61e3;}
-.paymtWrap .paymt_info .table_wrap1 tbody td span {font-size: 18px}
-.paymtWrap .paymt_info .table_wrap1 tfoot {margin-top:25px; border-top:1px solid #e5e5e5}
-.paymtWrap .paymt_info .table_wrap1 tfoot td {padding-top:16px}
-.paymtWrap .paymt_info .table_wrap1 tfoot th {text-align:left; vertical-align:bottom; font-size:15px; font-weight:500; color:#000}
-.paymtWrap .paymt_info .table_wrap1 tfoot td:last-child {text-align:right}
-.paymtWrap .paymt_info .table_wrap1 tfoot td .ctt-pay {display:block; min-width:130px; font-size:17px; font-weight:500; color:#ff4e25;}
-.paymtWrap .paymt_info .table_wrap1 tfoot td .ctt-pay .ctt-pay-num {font-size:21px; font-weight:700}
-.paymtWrap .paymt_info .table_wrap1 tfoot td .ctt-bonus {display:block; margin-bottom:15px; font-size:12px; font-weight:400; color:#888}
-.paymtWrap .paymt_info .table_wrap1 tfoot td .ctt-bonus .ctt-bonus-num {font-size:14px; font-weight:700} */
-/* .paymtWrap .paymt_info .table_wrap1 tfoot td .mlg_info > * {margin:6px 20px; color: #888;  font-size: 11px; font-weight: 300;text-align:left; list-style:square;} */
 .paymtWrap input[type=text], .paymtWrap input[type=tel], .paymtWrap input[type=number]
 {padding:5px 10px; width:100%; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none}
 .paymtWrap .paymt_info._method .wrap_radio {vertical-align:middle}
 .paymtWrap .paymt_info._method .wrap_radio .input_radio label > img {height:50%; vertical-align:middle}
-/* .paymtWrap .paymt_info .table_wrap2 .v_top {vertical-align:top} */
-/* .paymtWrap .paymt_info .table_wrap2 th {padding:10px 0; min-width:84px; vertical-align:middle; text-align:left; font-size:13px; color:#888;} */
-/* .paymtWrap .paymt_info .table_wrap2 table {width:100%; vertical-align:middle;}
-.paymtWrap .paymt_info .table_wrap2 td {padding:5px;font-size:12px; color:#555; text-align:right; vertical-align:middle} */
-
-.paymtWrap .paymt_info .table_wrap2 th {text-align:left}
+.paymtWrap .paymt_info .table_wrap2 th {text-align:left; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 td {font-size:12px; color:#555; text-align:right; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 td span {padding-top:5px; font-size:16px; color:#000;}
 .paymtWrap .paymt_info .table_wrap2 td input {float:left; height:30px; width:89%; border:1px solid #e5e5e5; font-size:16px; color:#333; font-weight:400; text-align:right}
@@ -858,7 +835,13 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap2 td .saleNum {font-size:16px; color:#000; font-weight:500;}
 .paymtWrap .paymt_info .table_wrap2 td .add_disc {margin-top:5px; font-size:11px; color:#ababab}
 .paymtWrap .paymt_info .table_wrap2 table {width:100%}
-.paymtWrap .paymt_info .table_wrap2 .deduct tr {vertical-align:top; min-height:30px}
+.paymtWrap .article_content .deduct {clear:both}
+.paymtWrap .article_content .deduct tr {height:30px;vertical-align:top;}
+.paymtWrap .article_content .deduct th, .paymtWrap .article_content .deduct td {padding-bottom:10px}
+.paymtWrap .article_content .deduct .v_top {vertical-align:top; white-space:normal; min-width:80px}
+.paymtWrap .article_content .deduct .v_top.pdT {padding-top:5px;}
+
+
 .table_wrap2 .deduct th, .table_wrap2 .deduct td  {height:30px}
 .paymtWrap .paymt_info .table_wrap2 .add_disc {font-size:11px; color:#ababab; text-align:left; white-space:nowrap;}
 .paymtWrap .paymt_info .table_wrap2 .add_disc .num {font-size:12px; color:#ababab}
@@ -897,10 +880,9 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_product .prd_info .cart-price.pay {font-size:11px; font-weight:semibold}
 .paymtWrap .paymt_product .prd_info .cart-price.pay .num {font-size:16px;}
 .paymtWrap .cart_box del.num {font-size:11px !important; color:#ababab}
-.paymtWrap .paymt_product .prd_info ul {font-weight:400; font-size:12px; color:#888;}
+.paymtWrap .paymt_product .prd_info ul {display:block; white-space:nowrap; font-weight:400; font-size:12px; color:#888;word-break: break-all; text-overflow:ellipsis; overflow:hidden;}
 .paymtWrap .paymt_product .prd_info ul li {position:relative; float:left}
 .paymtWrap .paymt_product .prd_info ul li span {display: -webkit-box; -webkit-box-orient:vertical; word-break: break-all; text-overflow:ellipsis; overflow:hidden;}
-/* .paymtWrap .paymt_product .prd_info ul li:last-child {margin:0 5px; width:35%;} */
 .paymtWrap .paymt_product .prd_info ul li::before {margin:0px 6px; position:absolute; right:-5px; top:5px; height:10px; width:1px; content:''; background-color:#e5e5e5}
 .paymtWrap .paymt_product .prd_info ul li:last-child::before {display:none}
 .paymtWrap .paymt_product .prd_info .option li {line-height:16px}
@@ -953,23 +935,25 @@ input[type=text].text-input.phone-last {width:70%}
 .slick-slide a:focus,.slick-slide:focus {outline:0}
 .paymtWrap .paymt_order_applied > .paymt_info:first-of-type:before {display:none}
 .paymtWrap .paymt_order_applied .applied ul {margin:0 20px;}
-.paymtWrap .paymt_order_applied .applied li {min-height:45px}
-.paymtWrap .paymt_order_applied .applied li:first-child {display:inline-table; padding:25px 0;}
+.paymtWrap .paymt_order_applied .applied li {min-height:60px; padding:55px 0 25px 0; position:relative; border-top:1px solid #e5e5e5;}
+.paymtWrap .paymt_order_applied .applied li:first-child {padding:30px 0; display:inline-table;}
 .paymtWrap .paymt_order_applied .applied li input:disabled,
 .paymtWrap .paymt_order_applied .applied li input:disabled + label,
 .paymtWrap .paymt_order_applied .applied li input:disabled + label dl > * {color:#d0d0d0 !important;}
 .paymtWrap .paymt_order_applied .applied li input:disabled + label dl dt span.badge {color:#888;}
 .paymtWrap .paymt_order_applied .applied li input:disabled + label dl dt span.badge:before {background:#f0f0f0}
-.paymtWrap .paymt_order_applied .applied li {padding:45px 0; position:relative; border-top:1px solid #e5e5e5;}
 .paymtWrap .paymt_order_applied .applied li dl dt {position:relative; font-family:'proxima-nova','Noto-sans KR'; font-size:16px; font-weight:500; color:#000; margin-bottom:6px; line-height:1}
-.paymtWrap .paymt_order_applied .applied li dl dt span.badge {z-index:4; display:inline-block;font-size:12px; color:#ff4e25; position:absolute; left:0; top:-25px;font-weight:500}
-.paymtWrap .paymt_order_applied .applied li dl dt span.badge .num {font-size:14px; font-weight:500}
-.paymtWrap .paymt_order_applied .applied li dl dt span.badge:before {z-index:-1; display:block; content:''; clear:both; position:absolute; bottom:-2px;  width:100%; height:6px; background:#ffe5df;}
 .paymtWrap .paymt_order_applied .applied li dl dd {font-size:11px; font-weight:normal; color:#888; line-height:1.6;}
+
+.paymtWrap .paymt_order_applied .applied li .won {font-size:10px}
+.paymtWrap .paymt_order_applied .applied li span.badge {z-index:4; display:inline-block;font-size:12px; color:#ff4e25; position:absolute; left:0; top:-25px;font-weight:500}
+.paymtWrap .paymt_order_applied .applied li span.badge .num {font-size:14px; font-weight:500}
+.paymtWrap .paymt_order_applied .applied li span.badge:before {z-index:-1; display:block; content:''; clear:both; position:absolute; bottom:-2px;  width:100%; height:6px; background:#ffe5df;}
 /* .paymtWrap .paymt_order_applied .applied li dl dd span {font-family:proxima-nova,'Noto-sans KR'; font-size:14px; font-weight:700; color:#000;} */
 .paymtWrap .paymt_order_applied .applied_info {margin:0 20px; padding:25px 0; text-indent:-8px}
 .paymtWrap .paymt_order_applied .applied_info li {font-size:13px; color:#333; line-height:1.6}
 .paymtWrap .paymt_order_applied .applied_info li::before {background-color:#333; display:inline-block;width:2px;height:2px;border-radius:20%;-webkit-border-radius:20%;content:'';margin-right:5px;vertical-align:2px;}
+
 .paymt_card_benefit {padding:0 0 30px; margin:0 20px; display:block;/* height:calc(100vh - 60px)*/}
 .paymt_card_benefit strong {margin:25px 0 15px 0}
 .paymt_card_benefit ul.card li:first-child {border-top:1px solid #e5e5e5}
@@ -1013,7 +997,7 @@ input[type=text].text-input.phone-last {width:70%}
 .comp_info .btn {padding:0 20px; text-align: center;}
 .comp_info .btn a {padding: 15px 0; display:inline-block; width:100%; border:1px solid #111; border-radius:3px; color:#000; font-weight:500; text-align:center; font-size:17px}
 .comp_info a.btn_bk {margin-top:12px; color:#fff; background-color:#111}
-.input_radio dl {padding-left:39px}
+.applied .input_radio dl {padding-left:39px}
 .paymt_order_applied .applied li:first-child {padding-bottom:25px; display:block; width:100%; vertical-align:middle; max-height:0; min-height:0; height:24px}
 
 /* 팝업 탭 */
@@ -1054,32 +1038,36 @@ input[type=text].text-input.phone-last {width:70%}
 
 #popup_ord_coupon .paymtWrap {padding-bottom:0}
 @media screen and (max-width:320px) {
-    .paymtWrap table {min-width:300px}
     .paymtWrap .paymt_info .sz-custom_text {font-size:10px}
     .paymtWrap .input_text_new3 {width:57%;}
 }
 @media screen and (min-width:321px) and (max-width:360px) {
     .paymtWrap .input_text_new3 {width:64%;}
-    .pay_back .input_text_new2.mb10 {width:70%}
+    .pay_back .input_text_new2.mb10 {width:66%}
 }
 /* @media screen and (min-width:361px) and (max-width:376px) {
     .paymtWrap .input_text_new3 {width:65%;}
     .pay_back .input_text_new2.mb10 {width:70%}
 } */
 @media screen and (min-width:361px) and (max-width:519px) {
-    .paymtWrap .input_text_new3 {width:66%}
+    .paymtWrap .input_text_new3 {width:245px}
     .pay_back .input_text_new2 {width:70%}
     .pay_back .input_text_new2.mb10 {width:73%}
     .addrN table td {min-width:250px}
 }
+@media screen and (min-width:321px) and (max-width:519px) {
+    .paymtWrap .input_text_new3 {width:68%}
+    .pay_back .input_text_new2 {width:74%}
+}
 @media screen and (min-width:520px) and (max-width:600px) {
     .paymtWrap .input_text_new3 {width:77%}
+    .pay_back .input_text_new2.mb10 {width:81%}
 }
 @media screen and (min-width:600px) and (max-width:1020px) {
-    .paymtWrap .input_text_new3 {width:82%}
-    .inp_d.sz-select_list {width:93%}
-    .num-select .sz-select_sub {width:96.2%;}
+    .paymtWrap .input_text_new3 {width:80%}
+    .inp_d.sz-select_list {width:94%}
+    .num-select .sz-select_sub {width:96.2%}
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
-    .paymtWrap .paymt_info .table_wrap2 td input {width:88%;}
+    .paymtWrap .paymt_info .table_wrap2 td input {width:93%}
     .addrN table td {min-width:500px}
 }
