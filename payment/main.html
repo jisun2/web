@@ -290,30 +290,30 @@
                         </div><!-- discount -->
                         <div class="paymt_info _method">
                             <div class="article_title">결제 수단</div>
-                            <div class="article_content" style="display:block">
+                            <div class="article_content">
                                 <div class="wrap_radio">
                                     <span class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1"><span class="mgl30" onclick="offBtnFunction()">신용카드</span></label>
+                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1"><span class="mgl30">신용카드</span></label>
                                         <a href="#" title="결제혜택 확인" class="pop_open a_info" data-popup="pop_card_benefit">결제혜택 확인</a>
                                     </span>
                                     <span class="input_radio">
                                         <input type="radio" name="radio1" id="radio1_2">
-                                        <label for="radio1_2"><span class="mgl30" onclick="onBtnFunction()">무통장입금</span></label>
+                                        <label for="radio1_2"><span class="mgl30">무통장입금</span></label>
                                     </span>
                                     <span class="input_radio">
                                         <input type="radio" name="radio1" id="radio1_3">
-                                        <label for="radio1_3"><span class="mgl30" onclick="onBtnFunction()">실시간 계좌이체</span></label>
+                                        <label for="radio1_3"><span class="mgl30">실시간 계좌이체</span></label>
                                     </span>
                                     <span class="input_radio">
                                         <input type="radio" name="radio1" id="radio1_4">
                                         <label for="radio1_4">
-                                            <span class="mgl30" onclick="offBtnFunction()"><img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_npay.jpg" alt="네이버페이"></span>
+                                            <span class="mgl30"><img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_npay.jpg" alt="네이버페이"></span>
                                         </label>
                                     </span>
                                     <span class="input_radio">
                                         <input type="radio" name="radio1" id="radio1_5">
                                         <label for="radio1_5">
-                                            <span class="mgl30" onclick="offBtnFunction()"><img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_payco.jpg" alt="페이코"></span>
+                                            <span class="mgl30"><img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_payco.jpg" alt="페이코"></span>
                                         </label>
                                         <a href="#" class="pop_open a_info" data-popup="pop_card_benefit">결제혜택 확인</a>
                                     </span>
@@ -888,30 +888,18 @@
         </div>
         <script src="../common/lib/main.js"></script>
         <script>
-            function intFunction(){
-                var con = document.getElementById("request");
-                    con.style.display = 'block';
-            }
-            function intNoFunction(){
-                var con = document.getElementById("request");
-                    con.style.display = 'none';
-            }
-            function intreFunction(){
-                var con = document.getElementById("request1");
-                    con.style.display = 'block';
-            }
-            function intreNoFunction(){
-                var con = document.getElementById("request1");
-                    con.style.display = 'none';
-            }
-            // function onBtnFunction(){
-            //     var onBtn = document.getElementById("");
-            //     // var offBtn = document.getElementById("accoNum");
-            //         onBtn.style.display = 'block';
-            //     // }else{
-            //     //     offBtn.style.display = 'none';
-            //     // }
-            // }
+            $(document).ready(function(){
+                $("#radio1_1, #radio1_4, #radio1_5, #radio1_6").click(function(){
+                    if($("#accoNum").css("display") != "none"){
+                        $("#accoNum").hide();
+                    }
+                });
+                $("#radio1_2, #radio1_3").click(function(){
+                    if($("#accoNum").css("display") != "block"){
+                        $("#accoNum").show();
+                    }
+                });
+            });
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
@@ -925,20 +913,8 @@
                     }
                 });
             });
-            $(document).ready(function(){
-                $("#radio1_2, #radio1_3").click(function(){
-                    if($("#accoNum").css("display") != "block"){
-                    $("#accoNum").show();
-                    }
-                });
-            });
-            $(document).ready(function(){
-                $("#radio1_1, #radio1_4, #radio1_5, #radio1_6").click(function(){
-                    if($("#accoNum").css("display") != "none"){
-                        $("#accoNum").hide();
-                    }
-                });
-            });
+
+
             (function(){
                 function toggleAcco(ele, content) {
                     $(ele).on('click touch', function () {
