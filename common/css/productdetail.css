@@ -881,7 +881,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_product .prd_info .cart-price.pay {font-size:11px; font-weight:semibold}
 .paymtWrap .paymt_product .prd_info .cart-price.pay .num {font-size:16px;}
 .paymtWrap .cart_box del.num {font-size:11px !important; color:#ababab}
-.paymtWrap .paymt_product .prd_info ul {display:block; white-space:nowrap; font-weight:400; font-size:12px; color:#888;word-break: break-all; text-overflow:ellipsis; overflow:hidden;}
+.paymtWrap .paymt_product .prd_info ul {display:block; white-space:nowrap; width:100%; font-weight:400; font-size:12px; color:#888;word-break: break-all; text-overflow:ellipsis; overflow:hidden;}
 .paymtWrap .paymt_product .prd_info ul li {position:relative; float:left}
 .paymtWrap .paymt_product .prd_info ul li span {display: -webkit-box; -webkit-box-orient:vertical; word-break: break-all; text-overflow:ellipsis; overflow:hidden;}
 .paymtWrap .paymt_product .prd_info ul li::before {margin:0px 6px; position:absolute; right:-5px; top:5px; height:10px; width:1px; content:''; background-color:#e5e5e5}
@@ -1058,7 +1058,7 @@ input[type=text].text-input.phone-last {width:70%}
     .addrN table td {min-width:250px}
 }
 @media screen and (min-width:321px) and (max-width:519px) {
-    .paymtWrap .input_text_new3 {width:68%}
+    .paymtWrap .input_text_new3 {width:69%}
     .pay_back .input_text_new2 {width:74%}
 }
 @media screen and (min-width:520px) and (max-width:600px) {
@@ -1066,7 +1066,7 @@ input[type=text].text-input.phone-last {width:70%}
     .pay_back .input_text_new2.mb10 {width:81%}
 }
 @media screen and (min-width:600px) and (max-width:1020px) {
-    .paymtWrap .input_text_new3 {width:80%}
+    .paymtWrap .input_text_new3 {width:83%}
     .inp_d.sz-select_list {width:94%}
     .num-select .sz-select_sub {width:96.2%}
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
