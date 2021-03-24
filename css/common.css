@@ -428,6 +428,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .clear:after{content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 .ovef_h {overflow:hidden}
 .clear {clear:both !important}
+.clearfix::after {content: '';display:block; clear:both}
 .flt_le {float:left !important}
 .flt_ri {float:right !important}
 .dis_in {display:inline-block !important}
@@ -438,6 +439,8 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .num {font-family:'proxima-nova'!important}
 .notoS {font-family:'Noto Sans KR'!important}
 .proxima {font-family:'proxima-nova'!important}
+.btnMore {display:block; width:100%; text-align:center; background-color:#fff; font-size:16px; color:#333; font-weight:300}
+.btnMore a {display:block; font-size:18px; font-weight:500;}
 .box_right, .box_left {position:relative; float:left; width:50%; min-height:48px; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
@@ -484,8 +487,8 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 }
 /* back button */
 .back .btn_back::after,.back .btn_back::before {z-index:10; background-color:#222;overflow: hidden;display: inline-block;background-repeat: no-repeat;vertical-align: top;content: '';}
-.back .btn_back {margin:0 7px; display:block;float:left;background-color:rgba(0,0,0,0);width:40px;height:40px;min-width:20px}
-.back .btn_back::after, .back .btn_back::before {position:absolute; top:18px; left:24px; width:2px; height:17px;}
+.back .btn_back {margin:0 7px; display:block;float:left;background-color:rgba(0,0,0,0);width:40px;height:48px;min-width:20px}
+.back .btn_back::after, .back .btn_back::before {position:absolute; top:21px; left:24px; width:2px; height:17px;}
 .back .btn_back::before{
     -webkit-transform: translate(-50%,-72%) rotateZ(45deg);
     -ms-transform: translate(-50%,-72%) rotateZ(45deg);
@@ -500,12 +503,13 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 }
 
 #header {display:flow-root; vertical-align:middle}
+#header::after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 #header .popup {display:block; border-bottom:1px solid #d0d0d0}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
 #header .logo_area {margin-left:16px; display:inline-block;}
 #header .popup .header_title {margin:15px}
-#header .header_title {margin-top:10px; letter-spacing:-1px; vertical-align:middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
+#header .header_title {margin-top:11px; letter-spacing:-1px; vertical-align:middle; font-weight:bold;font-size:16px; font-family:'Noto Sans KR'; color:#111;}
 #header .header_title .num {font-size:18px; line-height:10px; font-family:'proxima-nova'}
 #header .btn_area {width:100%; height:45px;}
 #header .btn_area a {position:relative; display:inline-block;}
@@ -518,7 +522,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #header .btn_area .logom {background-position: -119px 0px; width:26px; height:24px}
 #header .btn_area .noti {background-position: -226px 0px}
 #header .btn_area .close {background-position: -265px 0px}
-/* #header .headerWrap.brb {border-bottom:1px solid #e5e5e5} */
+#header .headerWrap.brb {border-bottom:1px solid #e5e5e5}
 #cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px;
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
