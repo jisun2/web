@@ -740,6 +740,7 @@ input[type=text].text-input.phone-last {width:70%}
 /* .addr_wrap .sz-select_sub {display:inline-block}
 .addr_wrap .sz-select_sub li {display:inline-block} */
 .paymtWrap .addr_user {position:relative;}
+.paymtWrap .paymt_order_applied .addr_user {padding-left:58px}
 .paymtWrap .addr_user .num {margin-top:6px}
 .paymtWrap .addr_user .tooltip .tooltiptext {bottom:-10px; right:-165px; border-radius:3px}
 .paymtWrap .addr_user .tooltip .tooltiptext::after {top:14px; left:-10px; border-color:transparent #3067cc transparent transparent}
@@ -1007,7 +1008,8 @@ input[type=text].text-input.phone-last {width:70%}
 .tab_list .active .bt-btn {padding:19px 0 20px; font-size:14px; color:#888; color:#ff4e25; border-bottom:2px solid #ff4e25}
 .tab_list .bt-btn {display:block; width:100%; line-height:1; padding:20px 0; color:#888; background-color:#fff; border-bottom:1px solid #d0d0d0}
 /* 배송지 변경 팝업 */
-.paymtWrap .btnMore {background-color:#}
+/* .paymtWrap .popup .addr_wrap .input_radio {padding-left:25px} */
+/* .paymtWrap .btnMore {background-color:#} */
 .paymtWrap .paymt_addr_modify .b_modify {position:absolute; top:20px; right:0;}
 .paymtWrap .paymt_addr_modify .b_modify button {background:none;position:relative; padding:0 8px; color:#ababab; font-size:12px}
 .paymtWrap .paymt_addr_modify .b_modify button:before {border-left: 1px solid #e5e5e5;display: block;content: '';height:11px;position: absolute;top:5px;left:-2px;}
