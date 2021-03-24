@@ -76,7 +76,7 @@
                                     <span class="pay_Range">상품쿠폰 적용가</span>
                                 </p>
                                 <div class="coupDwon clear">
-                                    <button type="button" class="org_br" onclick="openLayer(event,'#tempLayer1',this)"><span class="proxima">175,750</span><span class="notoS">원 할인 쿠폰 받기</span><i class="ico down"></i></button>
+                                    <button type="button" class="org_br" onclick="openLayer(event,'#tempLayer1',this)"><span class="proxima">175,750</span><span class="notoS"><span class="won">원</span> 할인 쿠폰 받기</span><i class="ico down"></i></button>
                                 </div>
                                 <!-- 쿠폰 발급 팝업-->
                                 <div class="dim_layer hide">
@@ -100,19 +100,18 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">상품할인</th>
-                                        <td><span class="orange">10%</span> <span class="num">3,163,500</span>원</td>
+                                        <td><span class="orange">10%</span> <span class="num">3,163,500</span><span class="won">원</span></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">쿠폰할인</th>
-                                        <td><span class="orange">5%</span> <span class="num">175,500</span>원</td>
+                                        <td><span class="orange">5%</span> <span class="num">175,500</span><span class="won">원</span></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">배송비</th>
                                         <td>
-                                            <span class="num">10,000</span>원
+                                            <span class="num">10,000</span><span class="won">원</span>
                                             <div class="tooltip"><span class="con">해외배송</span><span class="ico tip"></span>
-                                              <span class="tooltiptext">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
-                                              <span class="tooltiptext1">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
+                                              <span class="tooltiptext" id="toolShow">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
                                             </div>
                                         </td>
                                     </tr>
@@ -135,111 +134,111 @@
                             </table>
                         </div>
                         <!-- 팝업 카드사 혜택 -->
-                        <div id="pop_card_benefit" class="popuplayer popup-wrap">
+                        <div id="pop_card_benefit" class="wd720 popuplayer popup-wrap">
                             <h2 class="page-title">이달의 카드사 혜택</h2>
                             <div class="paymt_wrap">
                                 <div class="paymt_card_benefit">
                                     <strong>무이자 할부</strong>
                                     <ul class="card">
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월/12개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~6</span>개월/<span class="num">12</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_02.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_02.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~5개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~6</span>개월/<span class="num">12</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_03.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_03.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~5개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_04.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_04.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~6</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_05.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_05.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_06.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_06.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                     </ul>
                                     <strong>부분 무이자 할부</strong>
                                     <ul class="card">
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월/12개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~5개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~5개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd>2~6개월</dd>
-                                                <dd>5만원 이상 결제 시</dd>
+                                                <dd><span class="num">2~5</span>개월</dd>
+                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                     </ul>
@@ -276,7 +275,7 @@
                                 <a class="pro" href="#none">상품 상세</a>
                            </li>
                             <li>
-                                <a class="pro" href="#none">상품평(<span>999+</span>)</a>
+                                <a class="pro" href="#none">상품평(<span class="num">999+</span>)</a>
                             </li>
                             <li>
                                 <a class="pro" href="#none">상품문의</a>
@@ -390,8 +389,8 @@
                                                         <span class="num">10,000원</span>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>999+</li>
-                                                        <li>상품평 999+</li>
+                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
+                                                        <li>상품평 <span class="num">999+</span></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -411,8 +410,8 @@
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>1</li>
-                                                        <li>상품평 1</li>
+                                                        <li><span class="ico like_s"></span><span class="num">1</span></li>
+                                                        <li>상품평 <span class="num">1</span></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -451,8 +450,8 @@
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>999+</li>
-                                                        <li>상품평 999+</li>
+                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
+                                                        <li>상품평 <span class="num">999+</span></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -494,8 +493,8 @@
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>999+</li>
-                                                        <li>상품평 999+</li>
+                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
+                                                        <li>상품평 <span class="num">999+</span></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -528,8 +527,8 @@
                                                         <span class="num">10,000원</span>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>999+</li>
-                                                        <li>상품평 999+</li>
+                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
+                                                        <li>상품평 <span class="num">999+</span></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -555,9 +554,8 @@
                                                         <span class="num">10,000원</span>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>
-                                                            999+</li>
-                                                        <li>상품평 999+</li>
+                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
+                                                        <li>상품평 <span class="num">999+</span></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -668,8 +666,8 @@
                                                     </div>
                                                     <div class="idDate">
                                                         <ul class="list_bar">
-                                                            <li><span class="review_date">hiph***</span></li>
-                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                            <li><span class="review_id">hiph***</span></li>
+                                                            <li><span class="review_date">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
                                                     <div class="review_txt clear">
@@ -768,8 +766,8 @@
                                                     </div>
                                                     <div class="idDate">
                                                         <ul class="list_bar">
-                                                            <li><span class="review_date">hiph***</span></li>
-                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                            <li><span class="review_id">hiph***</span></li>
+                                                            <li><span class="review_date">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
                                                     <div class="review_txt clear">
@@ -821,8 +819,8 @@
                                                     </div>
                                                     <div class="idDate">
                                                         <ul class="list_bar">
-                                                            <li><span class="review_date">hiph***</span></li>
-                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                            <li><span class="review_id">hiph***</span></li>
+                                                            <li><span class="review_date">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
                                                     <div class="review_txt clear">
@@ -858,8 +856,8 @@
                                                     </div>
                                                     <div class="idDate">
                                                         <ul class="list_bar">
-                                                            <li><span class="review_date">hiph***</span></li>
-                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                            <li><span class="review_id">hiph***</span></li>
+                                                            <li><span class="review_date">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
                                                     <div class="review_txt clear">
@@ -889,8 +887,8 @@
                                                     </div>
                                                     <div class="idDate">
                                                         <ul class="list_bar">
-                                                            <li><span class="review_date">hiph***</span></li>
-                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                            <li><span class="review_id">hiph***</span></li>
+                                                            <li><span class="review_date">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
                                                     <div class="review_txt clear">
@@ -1114,12 +1112,6 @@
         <script src="../common/lib/slick.min.js"></script>
         <script src="../common/lib/main.js"></script>
         <script type="text/javascript">
-            // $(document).ready(function(){
-            //     $(".tooltiptext").show();
-            //     setTimeout(function () {
-            //         $(".tooltiptext").hide();
-            //     }, 5000);
-            // });
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {
