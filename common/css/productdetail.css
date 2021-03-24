@@ -775,7 +775,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymt_modify .last_area {border-top:1px solid #f0f0f0}
 .paymt_modify .last_area th {margin-top:20px}
 .paymt_modify {min-width:280px}
-.paymt_modify table th {padding-bottom:10px; min-width:60px; text-align:left; font-size:13px; color:#333; vertical-align:middle;}
+.paymt_modify table th {padding-bottom:10px; min-width:70px; text-align:left; font-size:13px; color:#333; vertical-align:middle;}
 .paymt_modify table th.last {display:inline-block; vertical-align:top}
 .paymt_modify table td {width:100%; min-width:160px; margin-bottom:10px}
 .paymt_modify .product-select .active li {border:0}
@@ -824,7 +824,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap input[type=text], .paymtWrap input[type=tel], .paymtWrap input[type=number] {padding:5px 10px; width:100%; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none}
 .paymtWrap .paymt_info._method .wrap_radio {vertical-align:middle}
 .paymtWrap .paymt_info._method .wrap_radio .input_radio label > img {height:50%; vertical-align:middle}
-.paymtWrap .paymt_info .table_wrap2 th {text-align:left; vertical-align:middle}
+.paymtWrap .paymt_info .table_wrap2 th {text-align:left; min-width:70px; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 td {font-size:12px; color:#555; text-align:right; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 td span {padding-top:5px; font-size:16px; color:#000;}
 .paymtWrap .paymt_info .table_wrap2 td input {float:left; height:30px; width:89%; border:1px solid #e5e5e5; font-size:16px; color:#333; font-weight:400; text-align:right}
