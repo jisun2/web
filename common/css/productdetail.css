@@ -745,7 +745,7 @@ input[type=text].text-input.phone-last {width:70%}
 /* .addr_wrap .sz-select_sub {display:inline-block}
 .addr_wrap .sz-select_sub li {display:inline-block} */
 .paymtWrap .addr_user {position:relative;}
-.paymtWrap.popup .input_radio .addr_user {padding-left:58px}
+.paymtWrap.popup .input_radio .addr_user {padding-left:38px}
 .paymtWrap .addr_user .num {margin-top:6px}
 .paymtWrap .addr_user .tooltip .tooltiptext {bottom:-10px; right:-165px; border-radius:3px}
 .paymtWrap .addr_user .tooltip .tooltiptext::after {top:14px; left:-10px; border-color:transparent #3067cc transparent transparent}
