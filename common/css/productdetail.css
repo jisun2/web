@@ -773,7 +773,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymt_modify .mgb5 {margin-bottom:5px}
 .paymt_modify .mt10.pf_fc {margin-bottom:25px}
 .paymt_modify .last_area {border-top:1px solid #f0f0f0}
-.paymt_modify .last_area th {margin-top:20px}
+.paymt_modify .last_area th {margin-top:25px}
 .paymt_modify {min-width:280px}
 .paymt_modify table th {padding-bottom:10px; min-width:70px; text-align:left; font-size:13px; color:#333; vertical-align:middle;}
 .paymt_modify table th.last {display:inline-block; vertical-align:top}
