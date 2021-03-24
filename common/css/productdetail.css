@@ -875,6 +875,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_addr_modify li label:after {top:50%;}
 
 /* 주문상품 */
+.paymtWrap .product-select:first-child .selected {line-height:2;}
 .paymtWrap .cart_section_total .semi {font-weight:500;}
 .paymtWrap button {border-radius:3px}
 .paymtWrap.pdb0 {padding-bottom:0}
