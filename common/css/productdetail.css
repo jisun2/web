@@ -1048,6 +1048,9 @@ input[type=text].text-input.phone-last {width:70%}
     .paymtWrap .input_text_new3 {width:66%}
     .pay_back .input_text_new2 {width:74%}
 }
+@media screen and (min-width:420px) and (max-width:560px) {
+    .paymtWrap .input_text_new3 {width:70%}
+}
 @media screen and (min-width:520px) and (max-width:600px) {
     .paymtWrap .input_text_new3 {width:77%}
     .pay_back .input_text_new2.mb10 {width:81%}

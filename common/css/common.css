@@ -661,21 +661,13 @@ transparent transparent transparent}
     #footer .footer_top ul li:nth-child(4) ::before {width: 2px;content: "\00B7"; position: relative; right: 9px}
 }
 /* -footer end- */
-@media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
-    /* #pop_card_benefit.wd720 {z-index:100; width:720px; min-width:320px; margin:0 auto;} */
-    #photoView {width:800px; margin:0 20%;}
-}
-@media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
-    #photoView {width:800px; margin:0 50%; transform: translatex(-50%)}
-}
 /* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
     #header .header_title .number {font-family:'Proxima-Nova'!important}
 }
 @media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px; margin:0 auto}
+    #wrap.wd720 {width:720px;  min-width:320px; margin:0 auto}
+    #photoView {width:800px; margin:0 50%; transform: translatex(-50%)}
     /* #pop_card_benefit {width:800px;} */
 }
