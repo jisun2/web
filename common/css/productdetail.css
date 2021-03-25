@@ -1001,7 +1001,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info._method .wrap_radio .input_radio {display:block; position:relative}
 .paymtWrap .paymt_info._method .wrap_radio .input_radio label > img {height:75%; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 .v_top {vertical-align:top; white-space:normal; min-width:80px}
-#popup_ord_coupon .paymtWrap {padding-bottom:0}
+
 
 @media screen and (max-width:320px) {
     .paymtWrap .paymt_info .sz-custom_text {font-size:10px}

@@ -474,6 +474,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 #container .fixed_nav .fbn-list li a {padding-top:13px; height:46px; display:block}
 #container .fixed_nav .fbn-list li.on {border-top:1px solid #333;}
 #container .fixed_nav .fbn-list .fbn-item {display:inline-block; width:100%; color:#333; font-size:9px; font-weight:500;}
+#container .paymtWrap.pb0 {padding-bottom:0}
 /* 공통  tooltip */
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -50px -83px}
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
