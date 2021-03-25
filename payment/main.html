@@ -193,19 +193,19 @@
                                                                     <li class="selected">배송 요청사항을 선택해주세요<i class="ico sel_arrow"></i></li>
                                                                     <li>
                                                                         <ul class="sz-select_sub">
-                                                                            <li onclick="intreNoFunction()">부재 시 문 앞에 놓아주세요.</li>
-                                                                            <li onclick="intreNoFunction()">부재 시 경비실에 맡겨주세요.</li>
-                                                                            <li onclick="intreNoFunction()">부재 시 전화 또는 문자 주세요.</li>
-                                                                            <li onclick="intreNoFunction()">택배함에 넣어주세요.</li>
-                                                                            <li onclick="intreFunction()">직접입력</li>
+                                                                            <li onclick="intOffFunction()">부재 시 문 앞에 놓아주세요.</li>
+                                                                            <li onclick="intOffFunction()">부재 시 경비실에 맡겨주세요.</li>
+                                                                            <li onclick="intOffFunction()">부재 시 전화 또는 문자 주세요.</li>
+                                                                            <li onclick="intOffFunction()">택배함에 넣어주세요.</li>
+                                                                            <li onclick="intOnFunction()">직접입력</li>
                                                                         </ul>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
                                                         <!-- 배송 요청사항을 직접 입력 선택 했을 때 -->
-                                                        <div class="input_text_new mt10" id="request1" style="display:none">
-                                                            <label for="request" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
+                                                        <div class="input_text_new" id="request1" style="display:none">
+                                                            <label for="request1" class="blind">배송지 요청 사항을 직접 입력해주세요</label>
                                                             <input type="text" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="30" />
                                                             <p class="text_count"><span class="bk" data-type="showlength">0</span> / 30</p>
                                                             <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
@@ -365,7 +365,7 @@
 
                         <div class="paymt_info _price">
                             <div class="article_title1">결제 금액</div>
-                            <div class="article_content" style="display:block">
+                            <div class="article_content">
                                 <div class="pay_total_wrap">
                                     <p class="blind">총 결제 금액 정보</p>
                                     <dl>
@@ -489,9 +489,7 @@
                                                     </span>
                                                     <span class="cart-price pay"><span class="num">6,118,200</span>원 <del class="num">6,798,000원</del></span>
                                                     <ul class="option">
-                                                        <li>
-                                                            <span class="ellipsis">옵션 : 모델명 / 424.13.40.20.06.001.40.20.06.001</span>
-                                                        </li>
+                                                        <li><span class="ellipsis">옵션 : 모델명 / 424.13.40.20.06.001.40.20.06.001</span></li>
                                                         <li>1개</li>
                                                     </ul>
                                                 </div>
@@ -623,89 +621,6 @@
                     </div>
                 </form>
             </div>
-            <!-- .팝업 주문쿠폰 선택 -->
-            <!-- <div id="popup_ord_coupon" class="popup-wrap bg_wht wd720">
-                <h2>주문쿠폰 선택</h2>
-                <div class="paymtWrap">
-                    <div class="paymt_order_applied">
-                        <div class="paymt_info">
-                            <div class="pos_r">
-                                <div class="applied_info">
-                                    <ul>
-                                        <li>주문쿠폰의 경우, 각 쿠폰별로 적용대상이 다를 수 있습니다</li>
-                                        <li>일부 상품은 사용조건에 따라 주문쿠폰 적용이 불가할 수있습니다.</li>
-                                    </ul>
-                                </div>
-                                <div class="applied">
-                                    <ul>
-                                        <li>
-                                            <span class="input_radio">
-                                                <input type="radio" name="radio1" id="radio04_1">
-                                                <label for="radio04_1">
-                                                    <span  class="txt">적용안함</span>
-                                                </label>
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span class="input_radio">
-                                                <input type="radio" name="radio1" id="radio04_2">
-                                                <label for="radio04_2" class="">
-                                                    <dl>
-                                                        <dt>FLEX WEEK 05_30% <span>9,120원 할인</span></dt>
-                                                        <dd>최소결제 :50,000원 / 최대할인:10,000원</dd>
-                                                        <dd>20.05.31 23:59까지</dd>
-                                                    </dl>
-                                                </label>
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span class="input_radio">
-                                                <input type="radio" name="radio1" id="radio04_3">
-                                                <label for="radio04_3" class="">
-                                                    <dl>
-                                                        <dt>FLEX WEEK 05_30% <span>9,120원 할인</span></dt>
-                                                        <dd>최소결제 :50,000원 / 최대할인:10,000원</dd>
-                                                        <dd>20.05.31 23:59까지</dd>
-                                                    </dl>
-                                                </label>
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span class="input_radio">
-                                                <input type="radio" name="radio1" id="radio04_4" disabled="disabled">
-                                                <label for="radio04_4" >
-                                                    <dl>
-                                                        <dt>FLEX WEEK 05_30% <span>적용 가능 상품 없음</span></dt>
-                                                        <dd>최소결제 :50,000원 / 최대할인:10,000원</dd>
-                                                        <dd>20.05.31 23:59까지</dd>
-                                                    </dl>
-                                                </label>
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span class="input_radio">
-                                                <input type="radio" name="radio1" id="radio04_5" disabled="disabled">
-                                                <label for="radio04_5" class="">
-                                                    <dl>
-                                                        <dt>FLEX WEEK 05_50% <span>적용 가능 상품 없음</span></dt>
-                                                        <dd>최소결제 :50,000원 / 최대할인:10,000원</dd>
-                                                        <dd>20.05.31 23:59까지</dd>
-                                                    </dl>
-                                                </label>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="last_btn_wrap1">
-                        <button class="last_btn_white pop_close">취소</button>
-                        <button class="last_btn_black">저장</button>
-                    </div>
-                </div>
-            </div> -->
-            <!--//팝업 주문쿠폰 선택 -->
 
             <!-- 팝업 카드사 혜택 -->
             <div id="pop_card_benefit" class="wd720 popuplayer popup-wrap">
@@ -882,6 +797,25 @@
         </div>
         <script src="../common/lib/main.js"></script>
         <script>
+        // 배송지 직접 입력
+            function intFunction(){
+                var con = document.getElementById("request");
+                    con.style.display = 'block';
+            }
+            function intNoFunction(){
+                var con = document.getElementById("request");
+                    con.style.display = 'none';
+            }
+            function intOnFunction(){
+                var con = document.getElementById("request1");
+                    con.style.display = 'block';
+            }
+            function intOffFunction(){
+                var con = document.getElementById("request1");
+                    con.style.display = 'none';
+            }
+
+        // 결제 수단 무통장 입금
             $(document).ready(function(){
                 $("#radio1_1, #radio1_4, #radio1_5, #radio1_6").click(function(){
                     if($("#accoNum").css("display") != "none"){
@@ -907,8 +841,6 @@
                     }
                 });
             });
-
-
             (function(){
                 function toggleAcco(ele, content) {
                     $(ele).on('click touch', function () {
@@ -925,7 +857,6 @@
                     });
                 });
             })(jQuery);
-
             $(window).on({
                 keyup:function(e){
                     var $this = $(e.target);
