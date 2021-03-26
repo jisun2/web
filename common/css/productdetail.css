@@ -55,7 +55,7 @@ input[type=checkbox] {display:none}
 .pdWrap .pi_txtBox .pi_pay .pay_Range {font-size:14px; font-weight:400; color:#ababab; }
 .pdWrap .pi_txtBox .pi_pay .coupDwon {padding-top:20px; display:block; width:100%}
 .pdWrap .pi_txtBox .pi_pay .coupDwon button {width:100%; height:40px; background-color:transparent; border-radius:3px; font-size:1.12rem; font-weight:500; border:1px solid #ff4e25; color:#ff4e25}
-.pdWrap .pi_txtBox .pi_pay .coupDwon .won {font-size:12px}
+.pdWrap .pi_txtBox .pi_pay .coupDwon .won {font-size:1.12rem}
 .pdWrap .pi_txtBox .pi_pay .coupDwon .proxima {font-weight:700;}
 .pdWrap .pi_txtBox .star_num {position:absolute; top:-2.5px; margin-left:3px; color:#555; font-size:14px; font-weight:500}
 /* 상품 할인 구매 혜택 */
