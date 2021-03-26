@@ -1,7 +1,70 @@
 @charset "utf-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url("https://p.typekit.net/p.css?s=1&k=yzy2fux&ht=tk&f=173.175.25136&a=16936712&app=typekit&e=css");
 
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-style: normal;
+ font-weight: 300;
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot);
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot?#iefix)
+ format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff2)
+ format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff)
+ format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Light.otf)
+ format("opentype")
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-style: normal;
+ font-weight: 350;
+ src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot);
+ src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot?#iefix)
+ format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff2)
+ format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff)
+ format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.otf)
+ format("opentype")
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-style: normal;
+ font-weight: 400;
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot);
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot?#iefix)
+ format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff2)
+ format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff)
+ format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.otf)
+ format("opentype")
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-style: normal;
+ font-weight: 500;
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot);
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot?#iefix)
+ format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff2)
+ format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff)
+ format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.otf)
+ format("opentype")
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-style: normal;
+ font-weight: 700;
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot);
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot?#iefix)
+ format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff2)
+ format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff)
+ format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.otf)
+ format("opentype")
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-style: normal;
+ font-weight: 900;
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot);
+ src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
+}
 @font-face {
 font-family:"proxima-nova";
 src:url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
@@ -330,9 +393,9 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .slick-vertical .slick-slide {display:block; height:auto; border:1px solid transparent;}
 .slick-arrow.slick-hidden {display:none}
 .s_out,legend{position:absolute; width:0; height:0; line-height:0; overflow:hidden; text-indent:10rem;white-space:nowrap;color:rgba(0,0,0,0);border:0;padding:0;}
-.ellipsis {display:-webkit-box; text-overflow:ellipsis; overflow:hidden; height:auto; max-height: 30px; line-height: 1.3; word-break: break-all; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
-.ellipsis2 {line-height:15px; height:37px; white-space:normal;-webkit-box-sizing:border-box; -moz-box-sizing:border-box;
-     box-sizing:border-box;clear:both;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;margin-bottom:8px;}
+.ellipsis {display:-webkit-box; text-overflow:ellipsis; overflow:hidden; max-height: 30px; line-height: 1.3; word-break: break-all; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+.ellipsis2 {line-height:15px; height:37px; white-space:normal;-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    clear:both;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;margin-bottom:8px;}
 .set_transition{-webkit-transition-duration:.3s;-o-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:cubic-bezier(.645,.045,.355,1);-o-transition-timing-function:cubic-bezier(.645,.045,.355,1);transition-timing-function:cubic-bezier(.645,.045,.355,1)}
 .clear:after{content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 .ovef_h {overflow:hidden}
@@ -352,7 +415,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .btnMore a {display:block; font-size:18px; font-weight:500;}
 .box_right, .box_left {position:relative; float:left; width:50%; min-height:48px; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
-.ico {display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
+.ico {clear:both; display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
 .ico.Warning {margin-top:2px; float:left; width:17px; height:16px; background-position:-227px -27px}
 .ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
 .ico.delete {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
@@ -462,18 +525,18 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
-#container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; line-height:15px; background-color: #fff; font-family:'Noto Sans KR'}
+#container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; max-width:720px; line-height:15px; background-color: #fff; font-family:'Noto Sans KR'}
 #container .fixed_nav.hide {bottom:-10%}
-#container .fixed_nav .cate {width:20px; height:20px; background-position: -36px -23px}
-#container .fixed_nav .search {width:20px; height:20px; background-position: -59px -27px}
-#container .fixed_nav .home {width:32px; height:32px; background-position: 0px -27px}
-#container .fixed_nav .mypage {width:20px; height:20px; background-position: -84px -27px}
-#container .fixed_nav .product {width:20px; height:20px; background-position: -109px -28px}
+#container .fixed_nav .cate {width:20px; height:20px; background-position: -36px -23px; background-repeat:no-repeat;}
+#container .fixed_nav .search {width:20px; height:20px; background-position: -59px -27px; background-repeat:no-repeat;}
+#container .fixed_nav .home {width:32px; height:32px; background-position: 0px -27px; background-repeat:no-repeat;}
+#container .fixed_nav .mypage {width:20px; height:20px; background-position: -84px -27px; background-repeat:no-repeat;}
+#container .fixed_nav .product {width:20px; height:20px; background-position: -109px -28px; background-repeat:no-repeat;}
 #container .fixed_nav .fbn-list {width:100%;}
 #container .fixed_nav .fbn-list li {display:block; float:left; padding:0; width:20%; height:60px; vertical-align:middle; text-align:center; border-top: 1px solid #e5e5e5;}
 #container .fixed_nav .fbn-list li a {padding-top:13px; height:46px; display:block}
 #container .fixed_nav .fbn-list li.on {border-top:1px solid #333;}
-#container .fixed_nav .fbn-list .fbn-item {display:inline-block; width:100%; color:#333; font-size:9px; font-weight:500;}
+#container .fixed_nav .fbn-list .fbn-item {display:block; margin:0 auto; font-size:9px; font-weight:500; color:#333;}
 #container .paymtWrap.pb0 {padding-bottom:0}
 /* 공통  tooltip */
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -50px -83px}

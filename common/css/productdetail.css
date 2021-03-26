@@ -545,7 +545,7 @@ input[type=checkbox] {display:none}
 .cart_option_none .option_txt, .cart_option .option_txt {overflow:hidden; display:-webkit-box; height:auto; max-height:36px; word-break: break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;}
 .nav_fixed_wrap.cart.wd720 {max-width:690px}
 .nav_fixed_wrap.cart.wd720 .prod_num {font-weight:400;}
-.nav_fixed_wrap.cart {padding:12px 15px; background-color:#000}
+.nav_fixed_wrap.cart {padding:12px 20px; background-color:#000}
 .nav_fixed_wrap.cart .just_left {width:41%}
 .nav_fixed_wrap.cart .just_right {width:59%}
 .nav_fixed_wrap.cart .pd_btn_box {padding:0; margin-left:3%; width:85%}
@@ -1004,7 +1004,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .table_wrap2 .v_top {vertical-align:top; white-space:normal; min-width:80px}
 
 @media screen and (max-width:620px) {
-    .paymtWrap .paymt_product .prd_info .option li:first-child {width:55%}
+    .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:calc(100% - 47px)}
 }
 @media screen and (max-width:320px) {
     .paymtWrap .paymt_info .sz-custom_text {font-size:10px}
