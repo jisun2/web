@@ -1001,6 +1001,9 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info._method .wrap_radio .input_radio label > img {height:75%; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 .v_top {vertical-align:top; white-space:normal; min-width:80px}
 
+@media screen and (min-width: 720px) {
+    .paymtWrap .paymt_info .table_wrap2 td input {width:93%}
+}
 @media screen and (max-width:620px) {
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:calc(100% - 47px)}
 }
@@ -1028,9 +1031,6 @@ input[type=text].text-input.phone-last {width:70%}
 @media screen and (min-width:400px) and (max-width:519px) {
     .paymtWrap .input_text_new3 {width:70%}
 }
-/* @media screen and (min-width:420px) and (max-width:560px) {
-    .paymtWrap .input_text_new3 {width:70%}
-} */
 @media screen and (min-width:520px) and (max-width:600px) {
     .paymtWrap .input_text_new3 {width:77%}
     .pay_back .input_text_new2.mb10 {width:81%}
@@ -1040,6 +1040,5 @@ input[type=text].text-input.phone-last {width:70%}
     .inp_d.sz-select_list {width:94%}
     .num-select .sz-select_sub {width:96.2%}
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
-    .paymtWrap .paymt_info .table_wrap2 td input {width:93%}
     .addrN table td {min-width:500px}
 }
