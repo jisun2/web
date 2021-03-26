@@ -606,7 +606,7 @@ input[type=text].text-input.phone-last {width:70%}
 @media screen and (min-width:600px) {
     .cart_option_none {width:90%;}
     .cart_option_none .just_left {width:100%;}
-    .nav_fixed_wrap.cart .pd_btn_box {width:97%}
+    .nav_fixed_wrap.cart .pd_btn_box {width:91%}
     .cart_option .just_right {width:18%}
     .cart_option_none .option_txt, .cart_option .option_txt {width:100%}
 }
