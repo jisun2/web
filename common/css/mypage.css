@@ -8,7 +8,7 @@
 .myWrap .myInfo .name {float:left; max-height:35px; font-size:28px; font-weight:500; line-height:1.29; text-align:left; color:#fff}
 .myWrap .myInfo .myClass {display:inline-block; margin:14px 0 0 10px; float:left; text-align:left; font-size:16px; font-weight:normal; font-family:'ProximaNova';}
 .myWrap .myInfo .btn {position:absolute; top:28px; right:20px; width:88px; height:28px; border-radius: 2.5px; border:1px solid #fff}
-.myWrap .myInfo .btn button {display:inline-block; width:100%; padding:2px 0; color:#fff}
+.myWrap .myInfo .btn button {display:inline-block; width:100%; line-height:2; color:#fff}
 .myWrap .myInfo .myInfoBox {max-width:66%}
 .myWrap .myInfo .myInfoBox .name {max-width:60%}
 .myWrap .myInfo .myInfoBox .name.login {max-width:98%}
