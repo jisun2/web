@@ -114,8 +114,19 @@
                 </div>
             </div>
             <div id="container">
-                <div style="width: 100%; height: 1100px; background-color:#e5e5e5;">기존 ui area</div>
-            </div>
+
+              <div style="width: 100%; height: 800px; background-color:#e5e5e5">기존 ui</div>
+
+              <div class="fixed_nav">
+                  <ul class="fbn-list">
+                      <li><button type="button"><span class="ico fbn-item cate"></span><span class="txt">카테고리</span></button></li>
+                      <li> <button type="button"><span class="ico fbn-item search"></span><span class="txt">검색</span></button></li>
+                      <li> <button type="button"><span class="ico fbn-item home"></span><span class="blind">홈</span></button></li>
+                      <li> <button type="button"><span class="ico fbn-item mypage"></span><span class="txt">마이 페이지</span></button></li>
+                      <li> <button type="button"><span class="ico fbn-item product"></span><span class="txt">최근 본 상품</span></button></li>
+                  </ul>
+              </div>
+          </div>
             <div id="footer">
                 <div class="footer_top">
                     <button type="button">로그아웃</button>
@@ -188,24 +199,18 @@
                 </div>
             </div>
         </div>
-        <script>
+        <script type="text/javascript">
             $(function(){
-                var tipToggle = function () {
-        			var $btn_tip_toggle = $('.button_tip_toggle'),
-        				$cont_tip_toggle = $('.cont_tip_toggle');
-        			$btn_tip_toggle.off().on('click', function(e) {
-        				e.preventDefault();
-        				$(this).toggleClass('on');
-        				$(this).next().toggle();
-        			});
-        		}
-        		tipToggle();
-                var windowWidth = $(window).with();
-                var pcOpen = $('.pc720')
-                if(windowWidth<530){
-                    pcOpen.show();
-                }
-            })
-        </script>
+                $(window).scroll(function(){
+                    var nowScroll = $(document).scrollTop();
+                    // 스크롤 값이 120보다 크다면 gnb 나타나도록 만들기
+                    if(nowScroll > 120){ //     !=0
+                        $('.fixed_nav').css('bottom', '0');
+                        } else {
+                        $('.fixed_nav').css('bottom', '-121px');
+                    }
+                });
+            });
+      </script>
     </body>
 </html>
