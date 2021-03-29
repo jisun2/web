@@ -711,8 +711,8 @@ input[type=text].text-input.phone-last {width:70%}
 .pf_fc .num-select:first-child .selected.active {padding:0 5px; border-top: 1px solid #333; border-top:none;}
 .pf_fc .num-select:first-child .selected.active span {float:left}
 .pf_fc-box .pf_fc .product-select .sz-select_sub {max-height:223px}
-.paymtWrap .addr_user {position:relative;}
 .paymtWrap.popup .input_radio .addr_user {padding-left:38px}
+.paymtWrap .addr_user {position:relative;}
 .paymtWrap .addr_user .num {margin-top:6px}
 .paymtWrap .addr_user .tooltip .tooltiptext {bottom:-10px; right:-165px; border-radius:3px}
 .paymtWrap .addr_user .tooltip .tooltiptext::after {top:14px; left:-10px; border-color:transparent #3067cc transparent transparent}
@@ -852,7 +852,6 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_product .prd_info ul li span {display: -webkit-box; -webkit-box-orient:vertical; word-break: break-all; text-overflow:ellipsis; overflow:hidden;}
 .paymtWrap .paymt_product .prd_info ul li::before {margin:0px 6px; position:absolute; right:-5px; top:3px; height:10px; width:1px; content:''; background-color:#e5e5e5}
 .paymtWrap .paymt_product .prd_info ul li:last-child::before {display:none}
-.paymtWrap .paymt_product .prd_info .option {}
 .paymtWrap .paymt_product .prd_info .option li {line-height:16px}
 .paymtWrap .paymt_product .prd_info .option li:first-child {padding-right:10px}
 .paymtWrap .paymt_product .prd_info .option li:last-child {margin-left:5px}
@@ -867,6 +866,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_product .applied li label em {font-size:13px; color:#888;}
 
 /* 상품쿠폰 선택  */
+
 .popup-wrap h2{font-size:16px; font-weight:700; text-align:left; padding:17px; border-bottom:1px solid #d0d0d0; color:#000}
 .popup-wrap .border_tab-cont > .paymtWrap {display:none}
 .popup-wrap .border_tab-cont > .paymtWrap.active {display:block}
@@ -910,7 +910,6 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_order_applied .applied li span.badge {z-index:4; display:inline-block;font-size:12px; color:#ff4e25; position:absolute; left:0; top:-25px;font-weight:500}
 .paymtWrap .paymt_order_applied .applied li span.badge .num {font-size:13px;}
 .paymtWrap .paymt_order_applied .applied li span.badge:before {z-index:-1; display:block; content:''; clear:both; position:absolute; bottom:-2px;  width:100%; height:6px; background:#ffe5df;}
-/* .paymtWrap .paymt_order_applied .applied li dl dd span {font-family:proxima-nova,'Noto-sans KR'; font-size:14px; font-weight:700; color:#000;} */
 .paymtWrap .paymt_order_applied .applied_info {margin:0 20px; padding:25px 0; text-indent:-8px}
 .paymtWrap .paymt_order_applied .applied_info li {font-size:13px; color:#333; line-height:1.6}
 .paymtWrap .paymt_order_applied .applied_info li::before {background-color:#333; display:inline-block;width:2px;height:2px;border-radius:20%;-webkit-border-radius:20%;content:'';margin-right:5px;vertical-align:2px;}
