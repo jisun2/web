@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>힙합퍼 마이 페이지_내정보관리_정보변경</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="../common/lib/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/mypage.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+</head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            내 정보 관리
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <div class="myWrap">
+                    <div class="my_dft atc">
+                        <div class="tit">
+                            <p>기본정보</p>
+                        </div>
+                        <div class="cont">
+                            <input title="성함" type="text" class="bgGry" id="name" name="name" placeholder="홍길동" />
+                            <div class="int_btnType clear">
+                                <input title="email" type="text" class="email" id="email" name="email" placeholder="hongildong@hiphoper.com" />
+                                <div class="btn_wht">
+                                    <button type="button" name="button"><span>수정</span></button>
+                                    <!-- <button type="button" name="button"><span>취소</span></button>  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my_pwd atc">
+                        <div class="tit">
+                            <p>비밀번호 변경</p>
+                        </div>
+                        <div class="cont">
+                            <div class="int_pwd">
+                                <input title="password" type="password" class="password" id="password01" name="password01" placeholder="새 비밀 번호를 입력해 주세요." />
+                                <input title="password" type="password" class="password mgt10" id="password02" name="password02" placeholder="새 비밀번호를 한 번 더 입력해 주세요." />
+                                <p class="red">새 비밀번호가 서로일치하지 않습니다.</p>
+                            </div>
+                            <ul class="bltType">
+                                <li>영문 대/소문자, 숫자, 특수문자 조합 6~15자</li>
+                                <li>사용 가능한 특수 문자 !@#$%</li>
+                                <li>연속된 숫자/문자열 4자 이상 설정 제한</li>
+                                <li>다른 사이트나 소셜 미디어에서 사용한 적이 없는 안전한 비밀번호를 등록해 주세요.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="my_cellNum atc">
+                        <div class="tit">
+                            <p>휴대폰 본인 인증</p>
+                        </div>
+                        <div class="cont">
+                            <p> <span class="red">[필수]</span> 개인정보 수집 동의</p>
+                            <div class="agr_tle">
+                                <table>
+                                    <caption class="blind">휴대폰 본인 인증을 위한 필수 항목 동의</caption>
+                                    <colgroup>
+                                        <col style="width:30%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>목적</th>
+                                            <td>개인식별 및 중복 가입 확인(본인인증) <br />
+                                                부정행위 이용 모니터링
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>항목</th>
+                                            <td>
+                                                이름, 휴대폰번호, CI/DI
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>보유 및 <br />이용기간</th>
+                                            <td>
+                                                탈퇴 후 14일
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="int_btnType clear">
+                                    <input title="휴대폰 번호" type="number" class="cellNumber bgGry" id="cellNumber" name="cellNumber" placeholder="01012345678">
+                                    <div class="btn_wht">
+                                        <button type="button" name="button"><span>취소</span></button>
+                                    </div>
+                                </div>
+                                <ul class="bltType">
+                                    <li>휴대폰 본인 인증이 완료되면 이름 변경이 가능하며, 통신사에 등록된이름으로 자동 수정됩니다. </li>
+                                    <li>수정 시 본 내용에 동의한 것으로 간주합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my_ship atc">
+                        <div class="tit">
+                            <p>기본 배송지 (없을 때)</p>
+                        </div>
+                        <div class="cont">
+                            <div class="btn_gry">
+                                <button type="button" name="button">기본 배송지 등록</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my_ship atc">
+                        <div class="tit">
+                            <p>기본 배송지 (있을 때)</p>
+                        </div>
+                        <div class="cont">
+                            <div class="btn_gry">
+                                <button type="button" name="button">기본 배송지 등록</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my_accNum atc">
+                        <div class="tit">
+                            <p>환불계좌 (있을 때)</p>
+                        </div>
+                        <div class="cont">
+                            <p> <span class="red">[선택]</span> 개인정보 수집 동의</p>
+                            <div class="agr_tle">
+                                <table>
+                                    <caption class="blind">휴대폰 본인 인증을 위한 필수 항목 동의</caption>
+                                    <colgroup>
+                                        <col style="width:30%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>목적</th>
+                                            <td>개인식별 및 중복 가입 확인(본인인증) <br />
+                                                부정행위 이용 모니터링
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>항목</th>
+                                            <td>
+                                                이름, 휴대폰번호, CI/DI
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>보유 및 <br />이용기간</th>
+                                            <td>
+                                                탈퇴 후 14일
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="btn_gry">
+                                <button type="button" name="button">동의하고 인증하기</button>
+                            </div>
+                            <ul class="bltType">
+                                <li>관련법령(전자상거래법 및 정보통신망법)에 따라 요금 정산을 위해 계좌정보를 수집하면 삭제 요청 시 초기화 됩니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="my_accNum atc">
+                        <div class="tit">
+                            <p>환불계좌 (없을 때)</p>
+                        </div>
+                        <div class="cont">
+                            <p> <span class="red">[선택]</span> 개인정보 수집 동의</p>
+                            <div class="agr_tle">
+                                <table>
+                                    <caption class="blind">휴대폰 본인 인증을 위한 필수 항목 동의</caption>
+                                    <colgroup>
+                                        <col style="width:30%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>목적</th>
+                                            <td>개인식별 및 중복 가입 확인(본인인증) <br />
+                                                부정행위 이용 모니터링
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>항목</th>
+                                            <td>
+                                                이름, 휴대폰번호, CI/DI
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>보유 및 <br />이용기간</th>
+                                            <td>
+                                                탈퇴 후 14일
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="btn_gry">
+                                <button type="button" name="button">동의하고 인증하기</button>
+                            </div>
+                            <ul class="bltType">
+                                <li>관련법령(전자상거래법 및 정보통신망법)에 따라 요금 정산을 위해 계좌정보를 수집하면 삭제 요청 시 초기화 됩니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="my_select atc">
+                        <div class="tit">
+                            <p>선택정보</p>
+                        </div>
+                        <div class="cont">
+                            <div class="agr_tle">
+                                <table>
+                                    <caption class="blind">선택정보 체크 항목</caption>
+                                    <colgroup>
+                                        <col style="width:30%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>성별</th>
+                                            <td>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my_wdl atc">
+                        <div class="tit">
+                            <p>회원탈퇴</p>
+                            <span class="">탈퇴 신청</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
