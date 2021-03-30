@@ -407,6 +407,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .dis_blk {display:block !important}
 .txt_cnt {text-align:center !important}
 .orange {color:#ff4e25 !important}
+.red {color:#f43434 !important}
 .blue {color:#3067cc !important}
 .num {font-family:'proxima-nova'!important}
 .notoS {font-family:'Noto Sans KR'!important}
