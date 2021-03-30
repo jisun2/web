@@ -418,6 +418,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .ico {clear:both; display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
 .ico.Warning {margin-top:2px; float:left; width:17px; height:16px; background-position:-227px -27px}
 .ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
+.ico.mor_arrow {width:20px; height:19px; vertical-align:middle; background-position:-248px -26px}
 .ico.delete {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color:#111}
@@ -525,18 +526,19 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
-#container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; max-width:720px; line-height:15px; background-color: #fff; font-family:'Noto Sans KR'}
+#container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; max-width:720px; line-height:15px; font-size:9px; font-weight:500; background-color: #fff; font-family:'Noto Sans KR'}
+#container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
 #container .fixed_nav.hide {bottom:-10%}
 #container .fixed_nav .cate {width:20px; height:20px; background-position: -36px -23px; background-repeat:no-repeat;}
 #container .fixed_nav .search {width:20px; height:20px; background-position: -59px -27px; background-repeat:no-repeat;}
-#container .fixed_nav .home {width:32px; height:32px; background-position: 0px -27px; background-repeat:no-repeat;}
+#container .fixed_nav .home {margin-bottom:10px !important; width:32px; height:32px; background-position: 0px -27px; background-repeat:no-repeat;}
 #container .fixed_nav .mypage {width:20px; height:20px; background-position: -84px -27px; background-repeat:no-repeat;}
 #container .fixed_nav .product {width:20px; height:20px; background-position: -109px -28px; background-repeat:no-repeat;}
-#container .fixed_nav .fbn-list {display:inline-block; padding-bottom:30px; width:100%;}
-#container .fixed_nav .fbn-list li {display:block; float:left; padding:0; width:20%; height:60px; vertical-align:middle; text-align:center; border-top: 1px solid #e5e5e5;}
-#container .fixed_nav .fbn-list li a {padding-top:13px; height:46px; display:block}
+#container .fixed_nav .fbn-list {display:inline-block; width:100%; border-top: 1px solid #e5e5e5;}
+#container .fixed_nav .fbn-list li {display:block; float:left; padding:0; width:20%; vertical-align:middle; text-align:center;}
+#container .fixed_nav .fbn-list li button {width:100%; height:56px}
 #container .fixed_nav .fbn-list li.on {border-top:1px solid #333;}
-#container .fixed_nav .fbn-list .fbn-item {display:block; margin:0 auto; margin-top:26px; font-size:9px; font-weight:500; color:#333;}
+#container .fixed_nav .fbn-list .fbn-item {display:block; margin:0 auto; margin-top:11.5px; font-size:9px; font-weight:500; color:#333;}
 #container .paymtWrap.pb0 {padding-bottom:0}
 /* 공통  tooltip */
 .ico.tip {margin-bottom:3px; vertical-align:middle; width:20px; height:17px; background-position: -50px -83px}
