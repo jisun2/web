@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+select {padding:10px; color:#999; border:1px solid #e5e5e5}
 input[type=text], input[type=tel], input[type=number], input[type=password]
 {padding:5px 10px; width:100%; height:40px; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none; font-family:'Noto Sans KR'}
 .input_checkbox, .input_radio, .input_radio_check {display:inline-block; position:relative;}
@@ -72,10 +73,16 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 }
 
 /* -----------------------------------내정보관리 정보변경 _ 기본정보 ------------------------------------------- */
+
+.sltType {width:100%; position:relative;}
+.sltType option .sel_arrow {display:none}
+.sltType .sel_arrow {position:absolute; top:10px; right:10px}
 .myWrap .atc {font-family:'Noto Sans KR'}
 .myWrap .cont {padding:25px 20px;}
 .myWrap .cont p {margin-bottom:10px; font-weight:400;}
-.myWrap .atc .tit {padding:15px 20px; font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #e5e5e5}
+.myWrap .atc .tit {position:relative;}
+.myWrap .atc .tit button {padding:15px 0; position:absolute; top:0; right:20px}
+.myWrap .atc .tit p {padding:15px 20px; font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #e5e5e5}
 .my_dft::before, .my_dft::after, .my_pwd::after, .my_cellNum::after, .my_ship::after, .my_accNum::after, .my_wdl::before, .my_wdl::after
 {display:block; content:''; clear:both; height:8px; background:#f0f0f0; border-top:1px solid #d0d0d0;}
 .myWrap .bltType {padding:20px; font-size:12px; color:#888; background-color:#f5f5f5}
@@ -112,6 +119,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .tblType th, .tblType td {margin-bottom:14px;}
 .tblType1 th, .tblType1 td {display:inline-block; margin-bottom:14px;}
 .tblType .input_radio {float:left; width:50%}
+.tblType .default_check {float:left;width:50%}
 .num-select {width:30%; min-width:60px; float:left; display:inline-block;}
 .num-select select {width:100%;}
 .num-select .selected {padding:0px 5px; vertical-align:middle; min-height:38px; color:#ababab; background-color:#fff; border:1px solid #e5e5e5; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow:hidden; display:block; white-space:nowrap}
@@ -119,6 +127,14 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .num-select .sz-select_sub {width:97%; height:200px; overflow-y:auto; border:1px solid #333; border-top:0;}
 .num-select .selected .sel_arrow {float:right; margin-top:11px}
 
+/* 결제 체크 박스 */
+.sz-custom_text {cursor: pointer}
+.sz-custom_label {display:inline-block; width:24px; height:24px; background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_off.png") center center/cover no-repeat;cursor:pointer}
+.sz-custom_check:checked ~ .sz-custom_label {background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_on.png") center center/cover no-repeat}
+.product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
+.cartWrap .sz-custom_label {width:22px; height:22px;}
+.cartWrap .sz-custom_label.de {width:100px; height:24px}
+.cartWrap .all.flt_le {margin-top:1px; width:100px; font-weight:500; color:#000}
 /* 셀렉트 옵션 my 공통 */
 .product-select {font-size:13px}
 .product-select .selected {padding:5px 10px; height:30px; color:#ababab; border:1px solid #e5e5e5; border-top:none; text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
