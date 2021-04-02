@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 .myWrap {padding-bottom:60px; min-width:320px; font-family:'Noto Sans KR'}
-.myWrap .mgT10 {margin-top:10px}
-.myWrap .mgT15 {margin-top:15px}
-.myWrap .mgB10 {margin-bottom:10px}
+.myWrap.pdB0 {padding-bottom:0px}
 .myWrap .my_area {width:100%}
 .myWrap .my_area::after {display:block; content: ''; clear:both; height:7px; background: #f0f0f0;border-top: 1px solid #d0d0d0;}
 .myWrap .my_top {margin-bottom:8px;}
@@ -59,24 +57,27 @@
     /* .myWrap .myInfo .name {width:50%} */
 }
 
-/* -----------------------------------내정보관리 정보변경 _ 기본정보 ------------------------------------------- */
+/* -------------------------------------------------회원탈퇴------------------------------------------------- */
 
-select {padding:10px; border-radius:0; background-color:#fff; color:#999; border:1px solid #e5e5e5}
-input[type=text], input[type=tel], input[type=number], input[type=password]
-{padding:5px 10px; width:100%; height:40px; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none; font-family:'Noto Sans KR'}
-.input_checkbox, .input_radio, .input_radio_check {display:inline-block; position:relative;}
-.input_radio .mgl30 {display:inline-block; vertical-align:middle; margin-left:36px; height:24px}
-.input_radio input {display:none;vertical-align:middle;}
-.input_radio label {display:inline-block; height:24px; vertical-align:middle;}
-.input_radio img {margin-top:3px; width:50%}
-.input_radio label:after {display:none; background-color:#ff4e25; border-radius:50%; position:absolute; top:49%; left:7px; width:10px; height:10px; content:"";-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
-.input_radio input:checked + label:before {border-color:#ff4e25;}
-.input_radio label:before, .input_radio_check label:before {width:22px; height:22px; position:absolute; border:1px solid #dadada; content: "";border-radius: 50%; background-color:#fff}
-.input_radio input:checked+label:after {display:block;}
+.myWrap.brBox::before {content: ''; display:block; border-top: 1px solid #d0d0d0;}
+.myWrap.brBox::after {content: ''; display:block; border-bottom: 1px solid #d0d0d0;}
+.myWrap .withdrawWrap {padding:20px 20px 25px;}
+.myWrap .wd_tit {padding: 22px 0 0 19px; font-size: 16px; font-weight: 500; color: #000; line-height: 1.13;}
+.myWrap .guide_lst {width: 100%;}
+.myWrap .guide_lst table { font-size: 12px; line-height: 1.42; text-align: left; color: #333333;}
+.myWrap .guide_lst table td {border: 1px solid #e5e5e5; box-sizing: border-box;}
+.myWrap .guide_lst table td:first-child {width: 80px; background-color: #f5f5f5; text-align: center;font-weight: 500; box-sizing: border-box;}
+.myWrap .guide_lst table td:last-child {padding: 15px;}
+.myWrap .guide_lst p {margin-top: 5px;}
+.myWrap .guide_lst span {color: #f43434;}
+.myWrap .caution {padding-top: 16px; position: relative; width: 100%;}
+.myWrap .caution .Warning {width: 17px; float: left; height: 16px; vertical-align: middle; background-position: -227px -27px;}
+.myWrap .caution span:last-child {display: inline-block; width: 90%; padding-left: 5.5px; font-size: 12px; line-height: 1.33; text-align: left; color: #888888;}
+.wd_btn {padding: 15px 20px; text-align: center;}
+.wd_btn button {width: 100%; height: 45px; border-radius: 2.5px; background-color: #000; color: #fff; font-size: 17px; font-weight: 500; line-height: 0.65; letter-spacing: -0.17px;}
 
-.sltType {width:100%; position:relative;}
-.sltType option .sel_arrow {display:none}
-.sltType .sel_arrow {position:absolute; top:10px; right:10px}
+/* -----------------------------------내정보관리 정보변경 _ 기본정보-------------------------------------------- */
+
 .myWrap .atc {font-family:'Noto Sans KR'}
 .myWrap .cont {padding:25px 20px;}
 .myWrap .cont p {margin-bottom:10px; font-weight:400;}
@@ -85,23 +86,27 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .myWrap .atc .tit p {padding:15px 20px; font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #e5e5e5}
 .my_dft::before, .my_dft::after, .my_pwd::after, .my_cellNum::after, .my_ship::after, .my_accNum::after, .my_wdl::before, .my_wdl::after
 {display:block; content:''; clear:both; height:8px; background:#f0f0f0; border-top:1px solid #d0d0d0;}
-.myWrap .bltType {padding:20px; font-size:12px; color:#888; background-color:#f5f5f5}
+.my_wdl {position:relative}
+.my_wdl .request {position:absolute; top:15px; right:20px; display: block; font-size: 11px; color: #888; text-decoration: underline !important;}
+.myWrap .bltType {padding:20px; font-size:12px; color:#888; background-color:#f5f5f5;}
 .myWrap .bltType li {margin-left:8px; line-height:1.6; text-indent:-8px}
 .myWrap .bltType li::before {margin-right:5px; display:inline-block; width:3px; height:3px; vertical-align:2px; content:''; border-radius:30%; -webkit-border-radius:30%;background-color:#888;}
-.myWrap .bltType1 {font-size:10px; color:#888;}
+.myWrap .bltType1 {margin:10px 0;font-size:10px; color:#888;}
 .myWrap .bltType1 li {margin-left:8px; line-height:1.6; text-indent:-8px}
 .myWrap .bltType1 li::before {margin-right:5px; display:inline-block; width:3px; height:3px; vertical-align:2px; content:''; border-radius:30%; -webkit-border-radius:30%;background-color:#888;}
+.int_btnType1 {display:inline-block; width:82%}
 
+.accoNum {margin-top:10px; clear:both; display:inline-block; width:100%;}
+.intType {margin-top:10px; clear:both}
 .my_dft {}
 .my_dft .cont {}
 .cont button {padding:10px 0; width:100%}
 .cont .btn_wht {float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
-.cont .btn_gry {width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
+.cont .btn_gry {clear:both; display:inline-block; width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
 .cont .btn_gry button {padding:12.5px 0}
 .cont .int_btnType {margin-top:10px;}
-.cont .int_btnType input {width:70%}
-.cont .int_btnType::after {content: '';display:block; clear:both}
-/* .cont .bgGry {background-color:#f5f5f5} */
+.cont .int_btnType input {width:78%}
+.cont .int_btnType::after {clear:both; content: ''; display:block;}
 .my_dft .cont::after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 /* 내정보관리 정보변경 _ 기본정보 */
 .my_pwd {}
@@ -114,12 +119,18 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 /* 기본 배송지  */
 .my_ship {}
 .tblType {width:100%}
+.tblType.slt td {padding:10px 0}
 .tblType table {width:100%}
-.tblType th, .tblType1 th {width:20%; text-align:left; min-width:80px; font-size:14px; color:#555}
+/* .tblType.slt th {display:inline-block;}
+.tblType.slt td {display:inline-block;} */
+.tblType th, .tblType1 th, .tblType2 th {width:20%; text-align:left; min-width:80px; font-size:14px; color:#555}
 .tblType th, .tblType td {margin-bottom:14px;}
-.tblType1 th, .tblType1 td {display:inline-block; margin-bottom:14px;}
+.tblType1 th, .tblType1 td {margin-bottom:14px;}
+.tblType2 th, .tblType2 td {display:inline-block; margin-bottom:14px;}
 .tblType .input_radio {float:left; width:50%}
-.tblType .default_check {float:left;width:50%}
+.tblType .default_check {float:left; width:50%}
+.tblType .default_check span, .tblType .default_check1 .txt {margin-left:10px}
+.tblType .default_check label, .tblType .default_check1 label {float:left; font-size:14px; color:#333}
 .num-select {width:30%; min-width:60px; float:left; display:inline-block;}
 .num-select select {width:100%;}
 .num-select .selected {padding:0px 5px; vertical-align:middle; min-height:38px; color:#ababab; background-color:#fff; border:1px solid #e5e5e5; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow:hidden; display:block; white-space:nowrap}
@@ -128,39 +139,32 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .num-select .selected .sel_arrow {float:right; margin-top:11px}
 
 /* 결제 체크 박스 */
-.sz-custom_text {cursor: pointer}
+.sz-custom_text {cursor:pointer}
 .sz-custom_label {display:inline-block; width:24px; height:24px; background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_off.png") center center/cover no-repeat;cursor:pointer}
 .sz-custom_check:checked ~ .sz-custom_label {background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_on.png") center center/cover no-repeat}
 .product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
 .cartWrap .sz-custom_label {width:22px; height:22px;}
 .cartWrap .sz-custom_label.de {width:100px; height:24px}
 .cartWrap .all.flt_le {margin-top:1px; width:100px; font-weight:500; color:#000}
-/* 셀렉트 옵션 my 공통 */
-.product-select {font-size:13px}
-.product-select .selected {padding:5px 10px; height:30px; color:#ababab; border:1px solid #e5e5e5; border-top:none; text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;display:block;white-space:nowrap}
-.product-select .selected.active {border:1px solid #333}
-.product-select .selected .sel_arrow {float:right}
-.product-select .selected .product_name {display:inline-block; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap}
-.product-select .selected .product_line {display:inline-block; padding-top:4px; line-height:1; vertical-align:6px;font-weight:200; color:#ababab}
-.product-select .selected .product_line::before {content: ''; display:inline-block; width: 1px; height: 12px; margin: 0 10px; background-color: #e5e5e5; vertical-align: -2px}
-.product-select:first-child .selected {line-height:2.5; border-top:1px solid #e5e5e5}
-.product-select:first-child .selected.active {border-top: 1px solid #333}
-.product-select:first-child .selected.active span {float:left}
-/* 핸드폰 번호 셀렉트 박스 */
-.num-select {width:30%; min-width:60px; float:left; display:inline-block;}
-.num-select select {width:100%;}
-.num-select .selected {padding:0px 5px; vertical-align:middle; min-height:38px; color:#ababab; background-color:#fff; border:1px solid #e5e5e5; font-size:15px; text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow:hidden; display:block; white-space:nowrap}
-.num-select .selected.active {border:1px solid #333; background-color:#fff}
-.num-select .sz-select_sub {width:97%; height:200px; overflow-y:auto; border:1px solid #333; border-top:0;}
-.num-select .selected .sel_arrow {float:right; margin-top:11px}
+/* 셀렉트 박스 */
+.sltType {float:left; position:relative; width:100%;}
+.sltType select, .sltType option {font-family:'proxima-nova'}
+.last_btn_wrap {z-index:5; position:sticky; padding:12px 20px 44px; max-width:720px; border-top:1px solid #d0d0d0; bottom:0;  font-size:17px; background:#fff; box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
+.last_btn_wrap button {border-radius:3px}
+.last_btn_wrap .pr_chk_agree {margin-bottom:10px}
+.last_btn_wrap .sz-custom_text {margin:2px 0 0 8px}
+.last_btn_black {display:block;width:100%; height:45px; line-height:17px; background:#000; font-size:17px; color:#fff}
 
-
-@media screen and (min-width:590px) and (max-width:1920px) {
-    .cont .int_btnType input {float:left; width:86%}
-    .cont .int_btnType1 input {float:left; width:82.6%}
+@media screen and (min-width:320px) and (max-width:375px) {
+    .cont .int_btnType input {width:71%}
+    .cont .int_btnType1 {width:63%}
 }
 
+@media screen and (min-width:376px) and (max-width:589px) {
+    .cont .int_btnType input {width:71%}
+    .cont .int_btnType1 input {width:66%}
+}
 @media screen and (min-width:590px) and (max-width:1920px) {
-    .cont .int_btnType input {float:left; width:86%}
-    .cont .int_btnType1 input {float:left; width:82.6%}
+    .cont .int_btnType input {width:86%}
+    .cont .int_btnType1 input {width:70%}
 }
