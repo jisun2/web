@@ -94,7 +94,7 @@
 .myWrap .bltType1 {margin:10px 0;font-size:10px; color:#888;}
 .myWrap .bltType1 li {margin-left:8px; line-height:1.6; text-indent:-8px}
 .myWrap .bltType1 li::before {margin-right:5px; display:inline-block; width:3px; height:3px; vertical-align:2px; content:''; border-radius:30%; -webkit-border-radius:30%;background-color:#888;}
-.int_btnType1 {display:inline-block; width:82%}
+.int_btnType1 {display:inline-block;}
 
 .accoNum {margin-top:10px; clear:both; display:inline-block; width:100%;}
 .intType {margin-top:10px; clear:both}
@@ -159,12 +159,15 @@
     .cont .int_btnType input {width:71%}
     .cont .int_btnType1 {width:63%}
 }
-
 @media screen and (min-width:376px) and (max-width:589px) {
     .cont .int_btnType input {width:71%}
-    .cont .int_btnType1 input {width:66%}
+    .cont .int_btnType1 {width:70%}
 }
 @media screen and (min-width:590px) and (max-width:1920px) {
     .cont .int_btnType input {width:86%}
-    .cont .int_btnType1 input {width:70%}
+    .cont .int_btnType1 {width:83%}
+}
+@media screen and (min-width:591px) and (max-width:699px) {
+    .cont .int_btnType input {width:82%}
+    .cont .int_btnType1 {width:80%}
 }
