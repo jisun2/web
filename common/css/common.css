@@ -369,7 +369,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .input_textarea textarea{display:inline-block;font-size:14px;line-height:22px;vertical-align:top;background-color:transparent;overflow-x:hidden;overflow-y:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;min-height:120px;width:100%}
 .input_textarea .count{text-align:right;font-size:13px;line-height:22px;margin-top:10px}
 
-select {padding:10px; border-radius:0; background-color:#fff; color:#ababab; border:1px solid #e5e5e5}
+select {padding:10px; border-radius:0; background-color:#fff; color:#ababab;}
 input[type=text], input[type=tel], input[type=number], input[type=password]
 {padding:5px 10px; width:100%; height:40px; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none; font-family:'Noto Sans KR'}
 .input_checkbox, .input_radio, .input_radio_check {display:inline-block; position:relative;}
@@ -389,6 +389,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .sltType.dd {width:30%}
 .sltType option .sel_arrow {display:none}
 .sltType .sel_arrow {position:absolute; top:13px; right:15px}
+.sltType1 .sel_arrow {position:absolute; top:13px; right:10px}
 
 /* Slider */
 .slick-slider {position:relative; display:block; box-sizing:border-box;-khtml-user-select:none;-ms-touch-action:pan-y; touch-action:pan-y;-webkit-tap-highlight-color: transparent;}
