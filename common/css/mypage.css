@@ -100,10 +100,10 @@
 .intType {margin-top:10px; clear:both}
 .my_dft {}
 .my_dft .cont {}
-.cont button {line-height:2.7; display:inline-block; width:100%}
+.cont button {line-height:2.65; display:inline-block; width:100%}
 .cont .btn_wht {float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
 .cont .btn_gry {clear:both; display:inline-block; width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
-.cont .btn_gry button {padding:5px 0}
+.cont .btn_gry button {padding:4px 0}
 .cont .int_btnType {margin-top:10px;}
 .cont .int_btnType input {width:78%}
 .cont .int_btnType::after {clear:both; content: ''; display:block;}
