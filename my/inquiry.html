@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 마이 페이지 메인_최근 구매 묶음 내역</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/mypage.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap brb">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            문의
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <div class="myWrap">
+                    <ul class="tab_list clear">
+                        <li class="active"><a class="bt-btn" href="address.html">상품 문의</a></li>
+                        <li><a class="bt-btn" href="#">1:1문의</a></li>
+                    </ul>
+                    <div class="my_area1">
+                        <div class="my_topBox">
+                            상품 문의에 대한 답변은 상품 상세 정보에서<br / >확인하실 수 있어요.
+                        </div>
+
+                        <div class="lstBox">
+                            <ul class="list_bar">
+                                <li class="on">
+                                    <a href="#">전체</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="num">1</span>주일</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="num">1</span>개월</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="num">3</span>개월</a>
+                                </li>
+                            </ul>
+                            <div class="">
+                                답변전체
+                            </div>
+                        </div>
+                        <ul class="mypd_lst">
+                            <li class="ord_box">
+                                <div class="pd_thum">
+                                    <a href="#none">
+                                        <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mypd_deWrap">
+                                    <a href="#">
+                                        <span class="pd_brd">
+                                            태그호이어 태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어태그태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어그호이어태그호이어그호이어태그호이어
+                                        </span>
+                                    </a>
+                                    <p class="state">입금 대기</p>
+                                </div>
+                            </li>
+                            <li class="ord_box">
+                                <div class="pd_thum">
+                                    <a href="#none">
+                                        <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mypd_deWrap">
+                                    <a href="#">
+                                        <span class="pd_brd">
+                                            태그호이어 태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어태그태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어그호이어태그호이어그호이어태그호이어
+                                        </span>
+                                    </a>
+                                    <p class="state">배송 중</p>
+                                </div>
+                            </li>
+                            <li class="ord_box">
+                                <div class="pd_thum">
+                                    <a href="#none">
+                                        <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="mypd_deWrap">
+                                    <a href="#">
+                                        <span class="pd_brd">
+                                            태그호이어 태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어태그태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어그호이어태그호이어그호이어태그호이어
+                                        </span>
+                                    </a>
+                                    <p class="state blue">배송 완료</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="btnMore clearfix">
+                             <a href="#">
+                                 <p>
+                                     <span class="orange num">10</span>개 더보기<span class="ico more_down"></span>
+                                 </p>
+                             </a>
+                         </div>
+
+                    </div>
+                </div>
+
+                <div class="fixed_nav">
+                    <ul class="fbn-list">
+                        <li><button type="button"><span class="ico fbn-item cate"></span><span class="txt">카테고리</span></button></li>
+                        <li> <button type="button"><span class="ico fbn-item search"></span><span class="txt">검색</span></button></li>
+                        <li> <button type="button"><span class="ico fbn-item home"></span><span class="blind">홈</span></button></li>
+                        <li> <button type="button"><span class="ico fbn-item mypage"></span><span class="txt">마이 페이지</span></button></li>
+                        <li> <button type="button"><span class="ico fbn-item product"></span><span class="txt">최근 본 상품</span></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                $(window).scroll(function(){
+                    var nowScroll = $(document).scrollTop();
+                    // 스크롤 값이 120보다 크다면 gnb 나타나도록 만들기
+                    if(nowScroll > 120){ //     !=0
+                        $('.fixed_nav').css('bottom', '0');
+                        } else {
+                        $('.fixed_nav').css('bottom', '-121px');
+                    }
+                });
+            });
+      </script>
+    </body>
+</html>
