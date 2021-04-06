@@ -108,13 +108,15 @@
 /* 기본 배송지  */
 .tblType {width:100%}
 .tblType.slt td {padding:10px 0}
-.tblType table {width:100%}
+.tblType table, .tblType2 table {width:100%}
+/* .tblType table, .tblType2 th {margin-bottom:15px} */
 /* .tblType.slt th {display:inline-block;}
 .tblType.slt td {display:inline-block;} */
+
 .tblType th, .tblType1 th, .tblType2 th {width:20%; text-align:left; min-width:80px; font-size:14px; color:#555}
 .tblType th, .tblType td {margin-bottom:14px;}
 .tblType1 th, .tblType1 td {margin-bottom:14px;}
-.tblType2 th, .tblType2 td {display:inline-block; margin-bottom:14px;}
+.tblType2 th, .tblType2 td {padding:5px;}
 .tblType .input_radio {float:left; width:50%}
 .tblType .default_check {float:left; width:50%}
 .tblType .default_check span, .tblType .default_check1 .txt {margin-left:10px}
@@ -130,9 +132,9 @@
 .sz-custom_label {display:inline-block; width:24px; height:24px; background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_off.png") center center/cover no-repeat;cursor:pointer}
 .sz-custom_check:checked ~ .sz-custom_label {background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_on.png") center center/cover no-repeat}
 .product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
-.cartWrap .sz-custom_label {width:22px; height:22px;}
+/* .cartWrap .sz-custom_label {width:22px; height:22px;}
 .cartWrap .sz-custom_label.de {width:100px; height:24px}
-.cartWrap .all.flt_le {margin-top:1px; width:100px; font-weight:500; color:#000}
+.cartWrap .all.flt_le {margin-top:1px; width:100px; font-weight:500; color:#000} */
 /* 셀렉트 박스 */
 .sltType {float:left; position:relative; width:100%;}
 .sltType select {border:1px solid #e5e5e5;}
