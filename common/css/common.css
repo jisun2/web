@@ -230,7 +230,10 @@ td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].erro
 .tc_b [class^=btn_]{color:#bbb}
 
 select, button:focus {outline:none}
-input.tc_3::-webkit-input-placeholder{color:#bbb!important}
+-moz-appearance:none; /* Firefox */
+-webkit-appearance:none; /* Safari and Chrome */
+appearance:none;
+/* input.tc_3::-webkit-input-placeholder{color:#bbb!important}
 input.tc_3::-moz-placeholder{color:#bbb!important}
 input.tc_3:-ms-input-placeholder{color:#bbb!important}
 input.tc_3::placeholder{color:#bbb!important}
@@ -245,7 +248,7 @@ textarea.tc_3::placeholder{color:#bbb!important}
 textarea.tc_3::-webkit-input-placeholder{color:#bbb!important}
 textarea.tc_3::-moz-placeholder{color:#bbb!important}
 textarea.tc_3:-ms-input-placeholder{color:#bbb!important}
-textarea.tc_3::placeholder{color:#bbb!important}
+textarea.tc_3::placeholder{color:#bbb!important} */
 .order_discontent select[disabled],
 .table_st .disabled :not(.alram){color:#bbb!important}
 ::-webkit-input-placeholder,
