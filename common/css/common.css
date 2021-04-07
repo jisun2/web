@@ -83,7 +83,7 @@ font-display:auto;font-style:normal;font-weight:600;
 body,option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
 input[type=number] {font-family:'proxima-nova' !important}
 html{font-size:14px;line-height:20px;color:#555}
-body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar}
+body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar;}
 button,input,pre,textarea{font-family:inherit;font-size:inherit;color:inherit}
 body,html{height:100%}
 fieldset,ol,ul{margin:0;padding:0;}
@@ -564,6 +564,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
+#container {overflow-y:scroll;}
 #container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; max-width:720px; line-height:15px; font-size:9px; font-weight:500; background-color: #fff; font-family:'Noto Sans KR'}
 #container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
 #container .fixed_nav.hide {bottom:-10%}
@@ -708,6 +709,6 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
     #header .header_title .number {font-family:'Proxima-Nova'!important}
 }
 @media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px;  min-width:320px; margin:0 auto}
+    #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 50%; transform: translatex(-50%)}
 }
