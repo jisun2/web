@@ -211,6 +211,23 @@
                     }
                 });
             });
+            $(function(){
+                var tipToggle = function () {
+                  var $btn_tip_toggle = $('.button_tip_toggle'),
+                      $cont_tip_toggle = $('.cont_tip_toggle');
+                  $btn_tip_toggle.off().on('click', function(e) {
+                      e.preventDefault();
+                      $(this).toggleClass('on');
+                      $(this).next().toggle();
+                  });
+              }
+              tipToggle();
+                var windowWidth = $(window).with();
+                var pcOpen = $('.pc720')
+                if(windowWidth<530){
+                    pcOpen.show();
+                }
+            })
       </script>
     </body>
 </html>
