@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-@import url("https://p.typekit.net/p.css?s=1&k=yzy2fux&ht=tk&f=173.175.25136&a=16936712&app=typekit&e=css");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://p.typekit.net/p.css?s=1&k=yzy2fux&ht=tk&f=173.175.25136&a=16936712&app=typekit&e=css"); */
 
 /* @font-face {
  font-family: 'Noto Sans KR';
@@ -564,7 +564,6 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
-#container {overflow-y:scroll;}
 #container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; max-width:720px; line-height:15px; font-size:9px; font-weight:500; background-color: #fff; font-family:'Noto Sans KR'}
 #container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
 #container .fixed_nav.hide {bottom:-10%}
