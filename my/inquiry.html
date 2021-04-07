@@ -194,7 +194,7 @@
                                                         <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
                                                     </a>
                                                 </div>
-                                                <div class="mypd_deWrap">
+                                                <div class="mypd_deWrap sm">
                                                     <a href="#">
                                                         <span class="pd_brd">
                                                             [Attack03_02] Fleece Pants (U19DBPT44)
@@ -233,7 +233,7 @@
                                                         <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
                                                     </a>
                                                 </div>
-                                                <div class="mypd_deWrap">
+                                                <div class="mypd_deWrap sm">
                                                     <a href="#">
                                                         <span class="pd_brd">
                                                             태그호이어 태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어태그태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어그호이어태그호이어그호이어태그호이어
@@ -286,20 +286,20 @@
                 }
             });
         });
-        // var tabBtn = $("#tab_btn > ul > li");
-        // var tabCont = $("#tab_cont > div");
-        //
-        // tabCont.hide().eq(0).show();
-        // tabBtn.click(function(){
-        //
-        // var target = $(this);
-        // var index = target.index();
-        //
-        // tabBtn.removeClass("active");
-        // target.addClass("active");
-        // tabCont.css("display","none");
-        // tabCont.eq(index).css("display","block");
-        // });
+        var tabBtn = $("#tab_btn > ul > li");
+        var tabCont = $("#tab_cont > div");
+
+        tabCont.hide().eq(0).show();
+        tabBtn.click(function(){
+
+        var target = $(this);
+        var index = target.index();
+
+        tabBtn.removeClass("active");
+        target.addClass("active");
+        tabCont.css("display","none");
+        tabCont.eq(index).css("display","block");
+        });
       </script>
     </body>
 </html>
