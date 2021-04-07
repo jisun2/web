@@ -2,7 +2,7 @@
 
 .myWrap {padding-bottom:60px; min-width:320px; font-family:'Noto Sans KR'}
 .myWrap.pdB0 {padding-bottom:0px}
-.myWrap .my_area {width:100%}
+.myWrap .my_area {clear:both; width:100%}
 .myWrap .my_area::after {display:block; content: ''; clear:both; height:7px; background: #f0f0f0;border-top: 1px solid #d0d0d0;}
 .myWrap .my_top {margin-bottom:8px;}
 .myWrap .myInfo {position:relative; padding:25px 20px; height:40px; text-align:center; border-bottom:1px solid #222; background-color:#000}
@@ -20,18 +20,18 @@
 .myWrap .myInfoArea li.myBox .txt {display:inline-block; margin-top:15px; font-size:13px; font-weight:normal; letter-spacing:normal; text-align:center; color:#888}
 .myWrap .myInfoArea li.myBox:last-child {border:none}
 .myWrap .myInfoArea .myBox::after {content:'';display:block; clear:both}
-.myWrap .brGry::after {display:block; content: ''; clear:both; height:7px; background: #f0f0f0;border-top: 1px solid #d0d0d0;}
+.myWrap .brGry::after {display:block; content: ''; clear:both; height:7px; background:#f0f0f0; border-top: 1px solid #d0d0d0;}
 /* 최근 구매 내역 */
 .myWrap .my_lst {padding:25px 20px;}
-.myWrap .my_lst .btn_rel {margin:20px auto 0; width:90px; height:30px; text-align:center; vertical-align:middle; color:#555; border:1px solid #ababab; border-radius:3px}
+.myWrap .my_lst .btn_rel {margin:20px auto 0; width:90px; height:30px; text-align:center; vertical-align:middle; border-radius:3px; color:#555; border:1px solid #ababab;}
 .myWrap .my_lst .btn_rel button {width:100%; height:30px}
 .myWrap .my_lst .no_txt {margin:60px 0 35px 0; text-align:center; font-size:14px; color:#888}
 .myWrap .my_lst .no_txt .txt {display:inline-block; margin:0 auto}
 .myWrap .my_lst .sub_tit {font-size:16px; font-weight:500; color:#000}
 .myWrap .my_lst .bg_gry {padding:10px 20px; height:20px; background-color:#f9f9f9;}
 .myWrap .my_lst .odrNum {display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
-.myWrap .my_lst .odrNum .txt {font-size:13px; color:#888; font-weight:normal;}
-.myWrap .my_lst .odrNum .num {font-size:13px; color:#888; font-weight:normal;}
+.myWrap .my_lst .odrNum {font-size:13px; color:#888; font-weight:normal;}
+/* .myWrap .my_lst .odrNum .num {font-size:13px; color:#888; font-weight:normal;} */
 /* 하단 주문 목록, 취소/반품/교환 목록, 할인 쿠폰, 상품평 관리, 멤버십, 고객센터 */
 .myWrap .my_menu {padding:0 20px}
 .myWrap .my_menu li {font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #f0f0f0}
@@ -90,9 +90,9 @@
 .myWrap .bltType1 li::before {margin-right:5px; display:inline-block; width:3px; height:3px; vertical-align:2px; content:''; border-radius:30%; -webkit-border-radius:30%;background-color:#888;}
 .int_btnType1 {display:inline-block;}
 
-.accoNum {margin-top:10px; clear:both; display:inline-block; width:100%;}
-.intType {margin-top:10px; clear:both}
 .cont button {line-height:2.65; display:inline-block; width:100%}
+.cont .accoNum {margin-top:10px; clear:both; display:inline-block; width:100%;}
+.cont .intType {margin-top:10px; clear:both}
 .cont .btn_wht {float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
 .cont .btn_gry {clear:both; display:inline-block; width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
 .cont .btn_gry button {padding:4px 0}
@@ -174,36 +174,65 @@
 }
 
 /* ----------------------------------- 문의 -------------------------------------------- */
+.myWrap .txtCnr {text-align:center}
 .myWrap .my_area1 {padding-bottom:50px}
-.myWrap .mypd_lst {display:inline-block;}
-.myWrap .mypd_lst li.ord_box {float:left; padding:15px 20px; border-bottom:1px solid #e5e5e5}
+.myWrap .mypd_lst {display:inline-block; width:100%}
+.myWrap .mypd_lst li.ord_box {float:left; width:100%; border-bottom:1px solid #e5e5e5}
+.myWrap .mypd_lst li.ord_box .pd_box {padding:15px 20px;}
 .myWrap .pd_thum {display:inline-block; float:left}
 .myWrap .pd_thum a {display:block;}
 .myWrap .pd_thum a img {width:56px; height:56px}
-.myWrap .mypd_deWrap {display:block; float:left; margin-left:15px; width:calc(100% - 72px)}
-.myWrap .mypd_deWrap ul {position:relative;}
+.myWrap .mypd_deWrap {display:block; float:left; width:100%; margin:5px 0 0 10px; width:calc(100% - 72px)}
+.myWrap .mypd_deWrap ul {position:relative; width:100%;}
 .myWrap .mypd_deWrap ul li {float:left; display:block; position:relative; line-height:2.2; color:#888}
 .myWrap .mypd_deWrap ul li:first-child {padding-right:15px;}
 .myWrap .mypd_deWrap ul li::after {content:''; position:absolute; top:10px; right:6.5px; width:1px; height:12px; background-color:#e5e5e5}
-.myWrap .mypd_deWrap .pd_brd {display:-webkit-box; height:40px; text-overflow:ellipsis; overflow:hidden; max-height:34px; line-height: 1.3; word-break:break-all; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:13px; color:#555}
+.myWrap .mypd_deWrap.sm ul li::after {height:10px;}
+.myWrap .mypd_deWrap ul li:last-child::after {display:none}
+/* .myWrap .mypd_deWrap .pd_brd {display:-webkit-box; height:40px; text-overflow:ellipsis; overflow:hidden; max-height:34px; line-height: 1.3; word-break:break-all; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:13px; color:#555} */
 .myWrap .mypd_deWrap .state {font-size:14px; font-weight:bold; color:#888}
-.myWrap .my_topBox {padding:40px 20px; text-align:center;}
+.myWrap .my_topBox {clear:both; padding:25px 20px;}
+.tab_inr {}
+.tab_inr .subTxt {margin-bottom:15px; font-size:15px; font-weight:500; color:#333}
+.tab_inr .txt {font-size:14px; color:#555}
+.tab_inr .txt .num {font-size:16px;}
+.tab_inr .txt .txtGry {font-size:12px; color:#888}
+.tab_inr .btn_bk {margin:20px 0; font-size:17px;font-weight:500; border-radius:3px;}
+
+.badge {padding:1px;border-radius: 50px 50px;font-size:12px;}
 .lstBox {display:block; height:35px; border-bottom:1px solid #e5e5e5; position:relative; padding:0 21px; text-align:left; font-size:16px}
 .lstBox .list_bar {width:80%}
 .lstBox .list_bar li {padding-right:21px; font-size:14px}
+.myIqy {display:block; width:100%;}
+.myIqy li._lst {position:relative; border-bottom:1px solid #e5e5e5}
+.myIqy .myIqy_box {padding:25px 20px}
+
+/* 1:1 문의 */
+.myIqy_box .mypd_lst li.ord_box {float:left; padding:15px 20px; border-bottom:1px solid #e5e5e5}
+.myIqy_box .mypd_lst li.ord_box::before {float:left; padding-left:2px; position:absolute; left:20px; content:''; height:48px; background-color:#d0d0d0;}
+.myIqy_box .mypd_lst li.ord_box.br0 {padding:0; padding-left:17px; width:100%; border:0}
+.myIqy_box .pd_thum {display:inline-block; float:left}
+.myIqy_box .pd_thum a {display:block;}
+.myIqy_box .pd_thum a img {width:48px; height:48px}
+.myWrap .mypd_deWrap a {display:block}
+/* .myWrap .mypd_deWrap.wd90 {display:inline-block;} */
+.myWrap .mypd_deWrap .pd_brd {display:-webkit-box; overflow:hidden; max-height:15px; -webkit-box-orient:vertical;
+     word-break:break-all; line-height: 1.3; -webkit-line-clamp:1;-webkit-box-orient:vertical; font-size:12px; color:#888}
+.myWrap .myIqy_box .mypd_deWrap ul li {font-size:12px; color:#ababab}
+
 .product .tab_inr.qna {padding: 40px 0 0 0}
 .product .tab_inr.qna .inquire {padding:0 20px}
 .tab_inr .innerTxt {display:inline-block; text-align:center; letter-spacing: -1px; font-size:15px; color:#555}
 .list_bar {display:inline-block;}
-.list_bar li {float:left; padding-right:12px; position:relative; color:#ababab}
+.list_bar li {float:left; position:relative; padding-right:21px; color:#ababab}
 .list_bar li a {display:block;}
 .list_bar li.on {font-weight:bold; color:#333}
 .list_bar li:last-child {padding:0}
 .list_bar li:last-child::before {display:none}
-.list_bar li::before {content: '';position:absolute; top:22%; right:9px; width:1px; height:12px; background-color:#e5e5e5}
+.list_bar li::before {content: ''; position:absolute; top:5px; right:9px; width:1px; height:12px; background-color:#e5e5e5}
+.list_bar.mdf li::before {right:10px;}
 .list_bar.info {width:100%; font-size:14px; color:#888}
 .list_bar.info .date {font-size:13px; font-family:'proxima-nova'}
 .list_bar.info li {padding-right:12px; font-weight:400; color:#888}
 .list_bar.info li::before {right:6px; height:10px; background-color:#e5e5e5;}
 .list_bar.mdf {position:absolute; top:24px; right:20px; display:inline-block;}
-.list_bar.mdf li::before {right:5px;}
