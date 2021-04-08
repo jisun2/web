@@ -439,7 +439,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .notoS {font-family:'Noto Sans KR'!important}
 .proxima {font-family:'proxima-nova'!important}
 .btnMore {display:block; width:100%; text-align:center; background-color:#fff; font-size:16px; color:#333; font-weight:300}
-.btnMore a {display:block; font-size:18px; font-weight:500;}
+.btnMore a {padding:15px 0; display:block; font-size:18px; font-weight:500;}
 .box_right, .box_left {position:relative; float:left; width:50%; min-height:48px; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {clear:both; display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
@@ -459,13 +459,16 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .pd_btn_box .orange_btn {width:100%; height:45px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:500; border-radius:3px}
 .ico.more_arw {width:10px; height:16px; margin-left:10px; background-position:-183px -45px}
 .ico.more_down {width:15px; height:8px; margin:0 0 2px 10px; background-position:-133px -41px}
-.btnMore a {padding:15px 0}
+
 /* 라운드 흰색 검은색 버튼 */
 .btn_white {display:inline-block; line-height:17px; height:45px; border:1px solid #000; background:#fff; font-size:17px; color:#555}
 .btn_black {display:inline-block; line-height:17px; height:45px; background:#333; font-size:17px; color:#fff}
 .comp_info .btn {padding:0 20px; text-align: center;}
 .btn .btn a {padding: 15px 0; display:inline-block; width:100%; border:1px solid #111; border-radius:3px; color:#000; font-weight:500; text-align:center; font-size:17px}
 .comp_info a.btn_bk {margin-top:12px; color:#fff; background-color:#111}
+.last_btn_wrap {z-index:5;padding: 12px 20px 44px; position:sticky; bottom:0; box-shadow: 0px -5px 15px 0px rgb(0 0 0 / 5%);
+    overflow: hidden; margin:15px auto 0;max-width:720px; background:#fff; border-top:1px solid #d0d0d0; font-size: unset;}
+
 /* badge */
 .badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:58px; max-height:24px; font-family:'Noto Sans KR'; font-size:13px}
 .badge.ble {background-color:#3067cc; color:#fff}
@@ -558,15 +561,15 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #header .btn_area .logom {background-position: -119px 0px; width:26px; height:24px}
 #header .btn_area .noti {background-position: -226px 0px}
 #header .btn_area .close {background-position: -265px 0px}
-#header .headerWrap::after {content: '';display:block; clear:both}
 #header .headerWrap.brb {border-bottom:1px solid #d0d0d0}
+#header .headerWrap::after {content: '';display:block; clear:both}
 #cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px;
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
 #container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; max-width:720px; line-height:15px; font-size:9px; font-weight:500; background-color: #fff; font-family:'Noto Sans KR'}
-#container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
 #container .fixed_nav.hide {bottom:-10%}
+#container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
 #container .fixed_nav .cate {width:20px; height:20px; background-position: -36px -23px; background-repeat:no-repeat;}
 #container .fixed_nav .search {width:20px; height:20px; background-position: -59px -27px; background-repeat:no-repeat;}
 #container .fixed_nav .home {margin-bottom:10px !important; width:32px; height:32px; background-position: 0px -27px; background-repeat:no-repeat;}
