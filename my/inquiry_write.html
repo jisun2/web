@@ -6,6 +6,8 @@
         <title>힙합퍼 마이 페이지 문의_1:1문의 작성하기</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <script src="../common/lib/common.js"></script>
+        <script src="../common/lib/plugin.js"></script>
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/mypage.css">
         <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
@@ -24,16 +26,18 @@
             </div>
 
             <div id="container">
-                <div class="myWrap pd0">
+                <div class="myWrap pdB0">
                     <div class="txtwrite_wrap clear">
                         <p class="sub_tit">문의 유형 선택</p>
                         <div class="sltType clear mgT15">
                             <i class="ico sel_arrow"></i>
                             <select title="배송 문의">
-                                <option value="배송 문의">배송 문의</option>
-                                <option value="국민">국민</option>
-                                <option value="농협">농협</option>
-                                <option value="신한">신한</option>
+                                <option value="1002">배송 문의</option>
+                                <option value="1001">배송 지연</option>
+                                <option value="1003">배송비</option>
+                                <option value="1004">배송지 변경</option>
+                                <option value="1005">오배송</option>
+                                <option value="1006">배송누락</option>
                             </select>
                         </div>
                         <div class="typeSelect clear">
@@ -48,7 +52,7 @@
                         </div>
                         <p class="sub_tit brdT">문의 상품 선택</p>
                         <div class="iqy_inr">
-                            <ul class="pd_lst">
+                            <ul class="pd_lst pd clear">
                                 <li class="ord_box">
                                     <div class="pd_thum">
                                         <a href="#none">
@@ -56,12 +60,22 @@
                                         </a>
                                     </div>
                                     <div class="pd_deWrap">
+                                        <a href="#" class="delBtn">
+                                            <div class="btn_pd">
+                                                <span class="ico delete">
+                                                    <span class="blind">삭제버튼</span>
+                                                </span>
+                                            </div>
+                                        </a>
                                         <a href="#">
                                             <span class="pd_brd">
                                                 태그호이어 태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어태그태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어그호이어태그호이어그호이어태그호이어
                                             </span>
                                         </a>
-                                        <p class="state blue">배송 완료</p>
+                                        <ul class="list_bar">
+                                            <li>cement / XXL</li>
+                                            <li><span class="num">1개</span></li>
+                                        </ul>
                                     </div>
                                 </li>
                             </ul>
@@ -126,8 +140,10 @@
                       <div class="write_info_wrap pdB25">
                           <ul class="write_info">
                                <li>
-                                   카카오톡 알림톡 알림받기 설정을 하지않은 상태더라도, SMS를
-                                   통해 답변 알림을 확인하실 수 있습니다.
+                                  상품 불량 및 오배송의 경우, 해당 제품 사진을 등록해 주세요.
+                               </li>
+                               <li>
+                                   pg, jpeg, gif, png형식의 이미지만 첨부 가능하며, 파일당 최대 10MB까지 등록하실 수 있어요.
                                </li>
                            </ul>
                       </div>
@@ -140,18 +156,5 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-            $(function(){
-                $(window).scroll(function(){
-                    var nowScroll = $(document).scrollTop();
-                    // 스크롤 값이 120보다 크다면 gnb 나타나도록 만들기
-                    if(nowScroll > 120){ //     !=0
-                        $('.fixed_nav').css('bottom', '0');
-                        } else {
-                        $('.fixed_nav').css('bottom', '-121px');
-                    }
-                });
-            });
-      </script>
     </body>
 </html>
