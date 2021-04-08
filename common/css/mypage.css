@@ -41,7 +41,8 @@
 .myWrap .btn_more {margin:0 15px 20px 15px; text-align:center; color:#555; border-radius:3px; border:1px solid #ababab}
 .myWrap .btn_more button {padding:14px; width:100%; font-size:14px; font-weight:500; color:#555}
 .myWrap .btn_more .orange.num {font-size:16px;}
-.myWrap .pd_lst {clear:both; display:inline-block; padding:20px 15px;}
+.myWrap .pd_lst {display:inline-block; padding:20px 15px;}
+.myWrap .pd_lst.pd {padding:16px}
 .myWrap .pd_lst li.ord_box {float:left; padding:15px 0; border-bottom:1px solid #e5e5e5}
 .myWrap .pd_lst li.ord_box:last-child {padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0}
@@ -236,10 +237,12 @@
 
 /* 상품 문의 작성하기 */
 #header .box_left.nbk {padding-left:20px; display:inline-block;}
+.delBtn .btn_pd {float:right;padding:11px 14px; margin:-12px -12px 0 0; display:inline-block; }
+.delBtn .delete {display:inline-block; width:14px; height:12px;}
 .myWrap .sub_tit {font-size:15px; font-weight:500; color:#000}
 .myWrap .sub_tit.brdT {padding-top:25px; border-top:1px solid #e5e5e5}
 .txtwrite_wrap .sltType {width:100%}
-.txtwrite_wrap .sltType select {color:#333}
+.txtwrite_wrap .sltType select {font-size:13px; color:#333}
 .txtwrite_wrap {padding:25px 20px}
 .txtwrite_wrap .iqy_inr {display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
 /* .txtwrite_wrap .iqy_inr {font-size:13px; color:#888; font-weight:normal;} */
@@ -258,7 +261,7 @@
 
 .txtwrite_wrap .typeSelect {padding:15px 0; width:100%; white-space:nowrap; width:100%; overflow-y:hidden; font-size:13px}
 .typeSelect ul li {float:left; margin-top:5px; margin-right:10px; min-height:32px; max-height:34px; font-weight:300}
-.typeSelect ul li a {padding:4px 13px; min-width:62px; max-height:15px; font-size:15px; font-weight:400; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
+.typeSelect ul li a {padding:4px 13px; min-width:62px; max-height:15px; font-size:13px; font-weight:400; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
 .typeSelect ul li.on a {color:#fff; background-color:#3067cc}
 .write_info {padding-left:10px; margin-top:13px; text-indent:-9px;}
 .write_info li {font-size:13px; list-style-position:inside;}
