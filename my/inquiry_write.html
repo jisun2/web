@@ -5,9 +5,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>힙합퍼 마이 페이지 문의_1:1문의 작성하기</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <script src="../common/lib/jquery-2.2.4.min.js"></script>
-        <script src="../common/lib/common.js"></script>
         <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/mypage.css">
         <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
@@ -73,22 +72,20 @@
                                             </span>
                                         </a>
                                         <ul class="list_bar">
-                                            <li>cement / XXL</li>
+                                            <li>CEMENT / XXL</li>
                                             <li><span class="num">1개</span></li>
                                         </ul>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-
                         <div class="btn_sel">
-                            <button type="button" name="button">문의 상품 선택하기</button>
+                            <a href="inquiry_sel.html">문의 상품 선택하기</a>
                         </div>
                         <div class="caution pdB25">
                             <span class="ico Warning"></span>
                             <span>필요 시 주문 목록에서 문의상품을 선택해 주세요. 보다 원할한 상담이 가능합니다.</span>
                         </div>
-
                         <div>
                             <p class="sub_tit brdT">문의 내용 작성</p>
                            <div class="mgT15 input_textarea">
@@ -110,14 +107,14 @@
                                 </li>
                             </ul>
                        </div>
-
                        <div class="img_rgt_wrap clearfix">
-                           <p class="sub_tit brdT">이미지 등록</p>
+                           <p class="sub_tit brdT mgB15">이미지 등록</p>
                           <ul class="img_lst">
                             <li>
-                                  <a href="#none">
-                                      <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
-                                  </a>
+                                    <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                <a href="#none" class="btn_del">
+                                    <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ico_btn_del.png" alt="">
+                                </a>
                             </li>
                             <li>
                                 <form method="post" enctype="multipart/form-data">
@@ -129,12 +126,32 @@
                                     </div>
                                 </form>
                             </li>
-                              <li>
+                            <li>
+                                <form method="post" enctype="multipart/form-data">
+                                    <div>
+                                        <label for="file">
+                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/img_upload.png" alt="">
+                                        </label>
+                                        <input type="file" id="file" name="file" multiple style="display:none">
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <form method="post" enctype="multipart/form-data">
+                                    <div>
+                                        <label for="file">
+                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/img_upload.png" alt="">
+                                        </label>
+                                        <input type="file" id="file" name="file" multiple style="display:none">
+                                    </div>
+                                </form>
+                            </li>
+                              <!-- <li>
                                   <a href="#none">
                                       <div class="img_rgt">
                                       </div>
                                   </a>
-                              </li>
+                              </li> -->
                           </ul>
                       </div>
                       <div class="write_info_wrap pdB25">
