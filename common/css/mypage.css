@@ -38,7 +38,7 @@
 .myWrap .my_menu li {font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #f0f0f0}
 .myWrap .my_menu li a {display:block; padding:22px 0;}
 .myWrap .my_menu li .mor_arrow {display:inline-block; float:right}
-.myWrap .my_menu .badge {display:inline-block; margin-left:10px; line-height:1.5; height:19px; min-width:38.5px; border-radius:9px; font-size:12px; color:#fff; background-color:#ff4e25}
+.myWrap .my_menu .badge {display:inline-block; margin-left:10px; line-height:1.5; height:19px; min-width:38.5px; font-size:12px; color:#fff; background-color:#ff4e25}
 .myWrap .my_menu .badge .num {font-size:13px}
 .myWrap .btn_more {margin:0 15px 20px 15px; text-align:center; color:#555; border-radius:3px; border:1px solid #ababab}
 .myWrap .btn_more button {padding:14px; width:100%; font-size:14px; font-weight:500; color:#555}
