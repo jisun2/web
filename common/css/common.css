@@ -1,89 +1,9 @@
 @charset "utf-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-@import url("https://p.typekit.net/p.css?s=1&k=yzy2fux&ht=tk&f=173.175.25136&a=16936712&app=typekit&e=css");
-
-/* @font-face {
- font-family: 'Noto Sans KR';
- font-style: normal;
- font-weight: 300;
- src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot);
- src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot?#iefix)
- format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff2)
- format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff)
- format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Light.otf)
- format("opentype")
-}
-@font-face {
- font-family: 'Noto Sans KR';
- font-style: normal;
- font-weight: 350;
- src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot);
- src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot?#iefix)
- format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff2)
- format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff)
- format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.otf)
- format("opentype")
-}
-@font-face {
- font-family: 'Noto Sans KR';
- font-style: normal;
- font-weight: 400;
- src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot);
- src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot?#iefix)
- format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff2)
- format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff)
- format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.otf)
- format("opentype")
-}
-@font-face {
- font-family: 'Noto Sans KR';
- font-style: normal;
- font-weight: 500;
- src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot);
- src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot?#iefix)
- format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff2)
- format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff)
- format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.otf)
- format("opentype")
-}
-@font-face {
- font-family: 'Noto Sans KR';
- font-style: normal;
- font-weight: 700;
- src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot);
- src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot?#iefix)
- format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff2)
- format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff)
- format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.otf)
- format("opentype")
-}
-@font-face {
- font-family: 'Noto Sans KR';
- font-style: normal;
- font-weight: 900;
- src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot);
- src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
-}
-@font-face {
-font-family:"proxima-nova";
-src:url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:400;
-}
-@font-face {
-font-family:"proxima-nova";
-src:url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:500;
-}
-@font-face {
-font-family:"proxima-nova";
-src:url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:600;
-} */
 body,option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
 input[type=number] {font-family:'proxima-nova' !important}
 html{font-size:14px;line-height:20px;color:#555}
-body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar}
+body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar;}
 button,input,pre,textarea{font-family:inherit;font-size:inherit;color:inherit}
 body,html{height:100%}
 fieldset,ol,ul{margin:0;padding:0;}
@@ -230,25 +150,6 @@ td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].erro
 .tc_b [class^=btn_]{color:#bbb}
 
 select, button:focus {outline:none}
--moz-appearance:none; /* Firefox */
--webkit-appearance:none; /* Safari and Chrome */
-appearance:none;
-/* input.tc_3::-webkit-input-placeholder{color:#bbb!important}
-input.tc_3::-moz-placeholder{color:#bbb!important}
-input.tc_3:-ms-input-placeholder{color:#bbb!important}
-input.tc_3::placeholder{color:#bbb!important}
-input.tc_3::-webkit-input-placeholder{color:#bbb!important}
-input.tc_3::-moz-placeholder{color:#bbb!important}
-input.tc_3:-ms-input-placeholder{color:#bbb!important}
-input.tc_3::placeholder{color:#bbb!important}
-textarea.tc_3::-webkit-input-placeholder{color:#bbb!important}
-textarea.tc_3::-moz-placeholder{color:#bbb!important}
-textarea.tc_3:-ms-input-placeholder{color:#bbb!important}
-textarea.tc_3::placeholder{color:#bbb!important}
-textarea.tc_3::-webkit-input-placeholder{color:#bbb!important}
-textarea.tc_3::-moz-placeholder{color:#bbb!important}
-textarea.tc_3:-ms-input-placeholder{color:#bbb!important}
-textarea.tc_3::placeholder{color:#bbb!important} */
 .order_discontent select[disabled],
 .table_st .disabled :not(.alram){color:#bbb!important}
 ::-webkit-input-placeholder,
@@ -344,28 +245,6 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .input_text button:hover,
 .input_text input:focus+button,
 .input_text input:hover+button,[class*=input_].error .error {display:block}
-
-/* .list_tab{width:100%;position:relative}
-.list_tab:after{content:'';position:absolute;width:100%;height:2px;left:0;bottom:0;z-index:1}
-.list_tab a,
-.list_tab button,
-.list_tab li>strong{width:100%;border-width:1px 1px 0;line-height:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-weight:500}
-.list_tab li{position:relative}
-.list_tab li+li{margin-left:-1px}
-.list_tab .active{z-index:2;}
-.list_tab.length2 li{width:calc(50% + .5px)}
-.list_tab.length3 li{width:calc(33.3333333333% + .6666666667px)}
-.list_tab.length4 li{width:calc(25% + .75px)}
-.list_tab.length5 li{width:calc(20% + .8px)}
-.list_tab.length6 li{width:calc(16.6666666667% + .8333333333px)}
-.list_tab.length7 li{width:calc(14.2857142857% + .8571428571px)}
-.jc_s{-ms-flex-pack:start;justify-content:flex-start}
-.jc_e{-ms-flex-pack:end;justify-content:flex-end}
-.ac_s{-ms-align-content:flex-start;align-content:flex-start}
-.ac_e{-ms-align-content:flex-end;align-content:flex-end}
-.ac_c{-ms-align-content:center;align-content:center}
-.as_s{-ms-align-self:flex-start;align-self:flex-start}
-.fd_c{-ms-flex-direction:column;flex-direction:column} */
 .input_select{display:inline-block;vertical-align:top;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-color:#fff}
 .input_select select{display:block;width:100%;height:38px;background-color:transparent;border-radius:0;border:0;}
 .input_textarea{display:inline-block}
@@ -421,8 +300,8 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .slick-arrow.slick-hidden {display:none}
 .s_out,legend{position:absolute; width:0; height:0; line-height:0; overflow:hidden; text-indent:10rem;white-space:nowrap;color:rgba(0,0,0,0);border:0;padding:0;}
 .ellipsis {display:-webkit-box; text-overflow:ellipsis; overflow:hidden; max-height: 30px; line-height: 1.3; word-break: break-all; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
-.ellipsis2 {line-height:15px; height:37px; white-space:normal;-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
-    clear:both;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;margin-bottom:8px;}
+.ellipsis2 {line-height:17px; white-space:normal;-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    clear:both;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow: ellipsis; overflow:hidden}
 .set_transition{-webkit-transition-duration:.3s;-o-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:cubic-bezier(.645,.045,.355,1);-o-transition-timing-function:cubic-bezier(.645,.045,.355,1);transition-timing-function:cubic-bezier(.645,.045,.355,1)}
 .clear:after{content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 .ovef_h {overflow:hidden}
@@ -442,7 +321,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .notoS {font-family:'Noto Sans KR'!important}
 .proxima {font-family:'proxima-nova'!important}
 .btnMore {display:block; width:100%; text-align:center; background-color:#fff; font-size:16px; color:#333; font-weight:300}
-.btnMore a {display:block; font-size:18px; font-weight:500;}
+.btnMore a {padding:15px 0; display:block; font-size:18px; font-weight:500;}
 .box_right, .box_left {position:relative; float:left; width:50%; min-height:48px; vertical-align:middle}
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {clear:both; display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
@@ -462,16 +341,20 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .pd_btn_box .orange_btn {width:100%; height:45px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:500; border-radius:3px}
 .ico.more_arw {width:10px; height:16px; margin-left:10px; background-position:-183px -45px}
 .ico.more_down {width:15px; height:8px; margin:0 0 2px 10px; background-position:-133px -41px}
-.btnMore a {padding:15px 0}
+
 /* 라운드 흰색 검은색 버튼 */
 .btn_white {display:inline-block; line-height:17px; height:45px; border:1px solid #000; background:#fff; font-size:17px; color:#555}
 .btn_black {display:inline-block; line-height:17px; height:45px; background:#333; font-size:17px; color:#fff}
 .comp_info .btn {padding:0 20px; text-align: center;}
 .btn .btn a {padding: 15px 0; display:inline-block; width:100%; border:1px solid #111; border-radius:3px; color:#000; font-weight:500; text-align:center; font-size:17px}
 .comp_info a.btn_bk {margin-top:12px; color:#fff; background-color:#111}
+.last_btn_wrap {z-index:5;padding: 12px 20px 44px; position:sticky; bottom:0; box-shadow: 0px -5px 15px 0px rgb(0 0 0 / 5%);
+    overflow: hidden; margin:15px auto 0;max-width:720px; background:#fff; border-top:1px solid #d0d0d0; font-size: unset;}
+
 /* badge */
 .badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:58px; max-height:24px; font-family:'Noto Sans KR'; font-size:13px}
 .badge.ble {background-color:#3067cc; color:#fff}
+.badge.gry {background-color:#888; color:#fff}
 .badge.bk {background-color:#000; color:#fff}
 /* 옵션 수량 버튼  */
 .count-input-box {float:right; min-width:90px; background-color:#fff;}
@@ -490,7 +373,8 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .pf_fc-box .pf_fc:first-child,.pf_fc-box .pf_fc:last-child {border-bottom: none;margin-bottom: 0}
 .pf_fc-box .pf_fc.no_border {border: none;margin-bottom: 0}
 .pf_fc-box .pro_pay {display:block; width:60%}
-.pf_fc-box .pro_pay.ellipsis {line-height:15px; height:31px; white-space:normal; word-break:break-all;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;clear:both;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;}
+.pf_fc-box .pro_pay.ellipsis {line-height:15px; height:31px; white-space:normal; word-break:break-all;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;
+    box-sizing:border-box;clear:both;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-all;}
 .pf_fc-box .gray_close-btn {margin-top: 6px;margin-left: 20px}
 /* 레이어 팝업 */
 .dim_layer {position:fixed;z-index:200;left:0;top:0;bottom:0;right:0;background-color:rgba( 0, 0, 0, 0.8)}
@@ -541,7 +425,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 
 #header {clear:both; vertical-align:middle}
 #header::after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
-/* #header .popup {display:block; border-bottom:1px solid #d0d0d0} */
+#header .popup {display:block; border-bottom:1px solid #d0d0d0}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
 #header .logo_area {margin-left:16px; display:inline-block;}
@@ -559,15 +443,15 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #header .btn_area .logom {background-position: -119px 0px; width:26px; height:24px}
 #header .btn_area .noti {background-position: -226px 0px}
 #header .btn_area .close {background-position: -265px 0px}
-#header .headerWrap::after {content: '';display:block; clear:both}
 #header .headerWrap.brb {border-bottom:1px solid #d0d0d0}
+#header .headerWrap::after {content: '';display:block; clear:both}
 #cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px;
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
 #container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; max-width:720px; line-height:15px; font-size:9px; font-weight:500; background-color: #fff; font-family:'Noto Sans KR'}
-#container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
 #container .fixed_nav.hide {bottom:-10%}
+#container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
 #container .fixed_nav .cate {width:20px; height:20px; background-position: -36px -23px; background-repeat:no-repeat;}
 #container .fixed_nav .search {width:20px; height:20px; background-position: -59px -27px; background-repeat:no-repeat;}
 #container .fixed_nav .home {margin-bottom:10px !important; width:32px; height:32px; background-position: 0px -27px; background-repeat:no-repeat;}
@@ -709,6 +593,6 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
     #header .header_title .number {font-family:'Proxima-Nova'!important}
 }
 @media screen and (min-width:720px) {
-    #wrap.wd720 {width:720px;  min-width:320px; margin:0 auto}
+    #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 50%; transform: translatex(-50%)}
 }
