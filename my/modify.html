@@ -93,13 +93,13 @@
                                         <tr>
                                             <th>보유 및 <br />이용기간</th>
                                             <td>
-                                                탈퇴 후 7일
+                                                탈퇴 후 14일
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div class="int_btnType clear">
-                                    <input title="휴대폰 번호" type="number" id="cellNumber" name="cellNumber" placeholder="휴대폰 번호 입력 ('-'를 제외한 숫자만 입력)">
+                                    <input title="휴대폰 번호" type="number" class="cellNumber bgGry" id="cellNumber" name="cellNumber" placeholder="01012345678">
                                     <div class="btn_wht">
                                         <button type="button" name="button"><span>취소</span></button>
                                     </div>
@@ -261,8 +261,8 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <ul class="bltType mgT15">
-                                <li>관련법령(전자상거래법 및 정보통신망법)에 따라 요금 정산을 위해 계좌정보를 수집하면 삭제 요청 시 초기화됩니다.</li>
+                            <ul class="bltType">
+                                <li>관련법령(전자상거래법 및 정보통신망법)에 따라 요금 정산을 위해 계좌정보를 수집하면 삭제 요청 시 초기화 됩니다.</li>
                             </ul>
                         </div>
                     </div>
@@ -296,17 +296,17 @@
                                         <tr>
                                             <th>보유 및 <br />이용기간</th>
                                             <td>
-                                                탈퇴 후 7일
+                                                탈퇴 후 14일
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div class="pay_back" id="accoBnk">
+                            <div class="pay_back" id="accoNum">
                                 <div class="sltType clear mgT15">
                                     <i class="ico sel_arrow"></i>
-                                    <select title="입금 은행">
+                                    <select class="" style="width:100%">
                                         <option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요. </option>
                                         <option value="국민">국민</option>
                                         <option value="농협">농협</option>
@@ -356,7 +356,7 @@
                                             <td>
                                                 <div class="sltType yy">
                                                     <i class="ico sel_arrow"></i>
-                                                    <select title="생년월일">
+                                                    <select>
                                                         <option value="년">년</option>
                                                         <option value="2012">2012</option>
                                                         <option value="2011">2011</option>
@@ -369,7 +369,7 @@
                                                 </div>
                                                 <div class="sltType mm">
                                                     <i class="ico sel_arrow"></i>
-                                                    <select title="월">
+                                                    <select>
                                                         <option value="월">월</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -387,7 +387,7 @@
                                                 </div>
                                                 <div class="sltType dd">
                                                     <i class="ico sel_arrow"></i>
-                                                    <select title="일">
+                                                    <select>
                                                         <option value="일">일</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -448,6 +448,7 @@
                                 <ul class="bltType1">
                                     <li>카카오톡에 미등록 시 문자로 정보가 전달됩니다.</li>
                                 </ul>
+
                                 <table>
                                     <caption class="blind"></caption>
                                     <colgroup>
@@ -469,6 +470,7 @@
                                                 </div>
                                             </td>
                                         </tr>
+
                                         <tr>
                                             <th>마케팅<br />활용 동의</th>
                                             <td>
