@@ -262,6 +262,7 @@
 .txtwrite_wrap .iqy_inr {display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
 .txtwrite_wrap .iqy_inr .pd_deWrap {margin-left:10px; float:left; width:89%}
 .txtwrite_wrap .iqy_inr .list_bar li {font-size:12px; color:#888}
+.txtwrite_wrap .iqy_inr .list_bar li:first-child {max-width:70%}
 /* .txtwrite_wrap .iqy_inr {font-size:13px; color:#888; font-weight:normal;} */
 .txtwrite_wrap .input_textarea {position:relative; font-size:15px; width:100%}
 .txtwrite_wrap .input_textarea .count {position:absolute; right:10px; bottom:10px; font-size:12px}
@@ -312,6 +313,7 @@
 /* ----------------------------------------- 문의 상품 선택하기 -------------------------------------------- */
 .iqySel_wrap {padding:25px 20px}
 .iqySel_wrap .iqy_inr .list_bar {width:100%}
+.iqySel_wrap .iqy_inr .list_bar li {max-width:70%}
 .iqySel_wrap .odrNum {margin-bottom:25px}
 /* .iqySel_wrap .pd_lst {width:96%;} */
 .iqySel_wrap .pd_deWrap {display:block; float:left; margin-left:15px; width:82%}
