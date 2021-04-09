@@ -46,9 +46,9 @@
 .myWrap .pd_lst {padding:20px 15px;}
 .myWrap .pd_lst.pd {padding:16px;}
 .myWrap .pd_lst.pd0 {padding:0; width:100%;}
-.myWrap .pd_lst li.ord_box {float:left; width:100%; border-bottom:1px solid #e5e5e5}
-.myWrap .pd_lst li.ord_box:first-child {padding-bottom:15px}
-.myWrap .pd_lst li.ord_box:last-child {margin-top:15px; padding-bottom:0; border-bottom:none}
+.myWrap .pd_lst li.ord_box {float:left;margin-top:15px; width:100%; border-bottom:1px solid #e5e5e5}
+.myWrap .pd_lst li.ord_box:first-child {margin-top:0; padding-bottom:15px}
+.myWrap .pd_lst li.ord_box:last-child { padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0}
 .myWrap .pd_thum {display:inline-block; float:left}
 .myWrap .pd_thum a {display:block;}
@@ -260,8 +260,8 @@
 .txtwrite_wrap .sltType select {font-size:13px; color:#333}
 .txtwrite_wrap {padding:25px 20px}
 .txtwrite_wrap .iqy_inr {position:relative; display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
-.txtwrite_wrap .iqy_inr .pd_thum{position:absolute; top:10px; left:10px}
-.txtwrite_wrap .iqy_inr .pd_deWrap {float:left; padding-left:60px}
+.txtwrite_wrap .iqy_inr .pd_thum{position:absolute; top:15px; left:15px}
+.txtwrite_wrap .iqy_inr .pd_deWrap {float:left; padding-left:67px}
 .txtwrite_wrap .iqy_inr .list_bar li {font-size:12px; color:#888}
 .txtwrite_wrap .iqy_inr .list_bar li:first-child {max-width:70%}
 .txtwrite_wrap .iqy_inr .write_info {}
