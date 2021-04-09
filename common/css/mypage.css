@@ -304,7 +304,7 @@
 .img_rgt_wrap .img_lst img {width:100%; max-height:155px;}
 .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; max-height:155px; background-color:#e5e5e5; border:1px solid #333}
 
-@media screen and (min-width:300px) and (max-width:780px) {
+@media screen and (min-width:200px) and (max-width:780px) {
     .txtwrite_wrap .iqy_inr .pd_deWrap {float:left; width:82%}
 }
 @media screen and (min-width:590px) and (max-width:1920px) {
