@@ -38,7 +38,7 @@
 .myWrap .my_menu li {font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #f0f0f0}
 .myWrap .my_menu li a {display:block; padding:22px 0;}
 .myWrap .my_menu li .mor_arrow {display:inline-block; float:right}
-.myWrap .my_menu .badge {display:inline-block; margin-left:10px; line-height:1.5; height:19px; min-width:38.5px; border-radius:9px; font-size:12px; color:#fff; background-color:#ff4e25}
+.myWrap .my_menu .badge {display:inline-block; margin-left:10px; line-height:1.5; height:19px; min-width:38.5px; font-size:12px; color:#fff; background-color:#ff4e25}
 .myWrap .my_menu .badge .num {font-size:13px}
 .myWrap .btn_more {margin:0 15px 20px 15px; text-align:center; color:#555; border-radius:3px; border:1px solid #ababab}
 .myWrap .btn_more button {padding:14px; width:100%; font-size:14px; font-weight:500; color:#555}
@@ -146,7 +146,7 @@
 .num-select .selected .sel_arrow {float:right; margin-top:11px}
 /* 결제 체크 박스 */
 .sz-custom_text {cursor:pointer}
-.sz-custom_label {display:inline-block; width:24px; height:24px; background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_off.png") center center/cover no-repeat;cursor:pointer}
+.sz-custom_label {display:inline-block; width:25px; height:24px; background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_off.png") center center/cover no-repeat;cursor:pointer}
 .sz-custom_check:checked ~ .sz-custom_label {background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_on.png") center center/cover no-repeat}
 .product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
 /* .cartWrap .sz-custom_label {width:22px; height:22px;}
@@ -262,6 +262,7 @@
 .txtwrite_wrap .iqy_inr {display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
 .txtwrite_wrap .iqy_inr .pd_deWrap {margin-left:10px; float:left; width:89%}
 .txtwrite_wrap .iqy_inr .list_bar li {font-size:12px; color:#888}
+.txtwrite_wrap .iqy_inr .list_bar li:first-child {max-width:70%}
 /* .txtwrite_wrap .iqy_inr {font-size:13px; color:#888; font-weight:normal;} */
 .txtwrite_wrap .input_textarea {position:relative; font-size:15px; width:100%}
 .txtwrite_wrap .input_textarea .count {position:absolute; right:10px; bottom:10px; font-size:12px}
@@ -281,7 +282,7 @@
 .typeSelect ul li {float:left; margin-top:5px; margin-right:10px; min-height:32px; max-height:34px; font-weight:300}
 .typeSelect ul li a {padding:4px 13px; min-width:62px; max-height:15px; font-size:13px; font-weight:400; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
 .typeSelect ul li.on a {color:#fff; background-color:#3067cc}
-.write_info {padding:12px 0 0 10px; text-indent:-9px;}
+.write_info {text-indent:-9px; padding:12px 0 0 10px; font-size:13px; color:#333; }
 .write_info li {font-size:13px; list-style-position:inside;}
 .write_info_wrap {}
 /* .write_info_wrap  p span {font-size:12px; font-weight: 300; color:#555; margin:0 0 15px} */
@@ -303,12 +304,16 @@
 .img_rgt_wrap .img_lst img {width:100%; max-height:155px;}
 .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; max-height:155px; background-color:#e5e5e5; border:1px solid #333}
 
+@media screen and (min-width:300px) and (max-width:780px) {
+    .txtwrite_wrap .iqy_inr .pd_deWrap {float:left; width:82%}
+}
 @media screen and (min-width:590px) and (max-width:1920px) {
     .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; height:155px;}
 }
 /* ----------------------------------------- 문의 상품 선택하기 -------------------------------------------- */
 .iqySel_wrap {padding:25px 20px}
 .iqySel_wrap .iqy_inr .list_bar {width:100%}
+.iqySel_wrap .iqy_inr .list_bar li {max-width:70%}
 .iqySel_wrap .odrNum {margin-bottom:25px}
 /* .iqySel_wrap .pd_lst {width:96%;} */
 .iqySel_wrap .pd_deWrap {display:block; float:left; margin-left:15px; width:82%}
