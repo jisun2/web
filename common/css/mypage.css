@@ -258,6 +258,7 @@
 .delBtn .delete {display:inline-block; width:14px; height:12px;}
 .myWrap .sub_tit {font-size:15px; font-weight:500; color:#000}
 .myWrap .sub_tit.brdT {padding-top:25px; border-top:1px solid #e5e5e5}
+.txtwrite_wrap .sltType .sel_arrow {top:15px}
 .txtwrite_wrap .sltType {width:100%}
 .txtwrite_wrap .sltType select {font-size:13px; color:#333}
 .txtwrite_wrap {padding:25px 20px}
