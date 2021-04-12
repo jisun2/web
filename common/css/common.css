@@ -10,7 +10,7 @@ fieldset,ol,ul{margin:0;padding:0;}
 ol,ul{list-style:none}
 dd,dl,h1,h2,h3,h4,h5,input,p,pre{margin:0}
 legend,td,th{padding:0}  /* input[type=email],input[type=number],input[type=password],input[type=text] */
-button,input[type=email],input[type=number],input[type=number]:-webkit-inner-spin-button,input[type=number]:-webkit-outer-spin-button,input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+button,input[type=email],input[type=number],input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button,input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 button,textarea{border:0}
 /* input, button:focus {outline:none} */
 textarea{resize:none;padding:0}
@@ -28,9 +28,9 @@ label{cursor:pointer}
 main{display:block}
 del{text-decoration:line-through}
 input[type=email],input[type=number],input[type=password],input[type=text]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border-radius:0;border-width:0}
-input[type=number]:-webkit-inner-spin-button,input[type=number]:-webkit-outer-spin-button{appearance:none;-webkit-appearance:none;margin:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none;-webkit-appearance:none;margin:0}
 input[type=number]{-moz-appearance:textfield}
-input:-ms-clear{display:none}
+input::-ms-clear{display:none}
 .input_check label:before,
 .pos_center_after:after,
 .pos_center_before:before,
@@ -66,22 +66,22 @@ input:-ms-clear{display:none}
 .list_tab .active>strong,
 .lnb .list_lnb,
 .pages .link,[class*=tit_]{color:#333}
-input.tc_3:hover:-webkit-input-placeholder{color:#333!important}
-input.tc_3:hover:-moz-placeholder{color:#333!important}
+input.tc_3:hover::-webkit-input-placeholder{color:#333!important}
+input.tc_3:hover::-moz-placeholder{color:#333!important}
 input.tc_3:hover:-ms-input-placeholder{color:#333!important}
-input.tc_3:hover:placeholder{color:#333!important}
-input.tc_3:focus:-webkit-input-placeholder{color:#333!important}
-input.tc_3:focus:-moz-placeholder{color:#333!important}
+input.tc_3:hover::placeholder{color:#333!important}
+input.tc_3:focus::-webkit-input-placeholder{color:#333!important}
+input.tc_3:focus::-moz-placeholder{color:#333!important}
 input.tc_3:focus:-ms-input-placeholder{color:#333!important}
-input.tc_3:focus:placeholder{color:#333!important}
-textarea.tc_3:hover:-webkit-input-placeholder{color:#333!important}
-textarea.tc_3:hover:-moz-placeholder{color:#333!important}
+input.tc_3:focus::placeholder{color:#333!important}
+textarea.tc_3:hover::-webkit-input-placeholder{color:#333!important}
+textarea.tc_3:hover::-moz-placeholder{color:#333!important}
 textarea.tc_3:hover:-ms-input-placeholder{color:#333!important}
-textarea.tc_3:hover:placeholder{color:#333!important}
-textarea.tc_3:focus:-webkit-input-placeholder{color:#333!important}
-textarea.tc_3:focus:-moz-placeholder{color:#333!important}
+textarea.tc_3:hover::placeholder{color:#333!important}
+textarea.tc_3:focus::-webkit-input-placeholder{color:#333!important}
+textarea.tc_3:focus::-moz-placeholder{color:#333!important}
 textarea.tc_3:focus:-ms-input-placeholder{color:#333!important}
-textarea.tc_3:focus:placeholder{color:#333!important}
+textarea.tc_3:focus::placeholder{color:#333!important}
 .wrap_login .cert_num>.error{margin-bottom:20px}
 .wrap_login .cert>.phone p.error{bottom:-25px}
 .wrap_login .cert>.error{margin-bottom:20px}
@@ -152,13 +152,13 @@ td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].erro
 select, button:focus {outline:none}
 .order_discontent select[disabled],
 .table_st .disabled :not(.alram){color:#bbb!important}
-:-webkit-input-placeholder,
-.out_reason .input_textarea textarea:-webkit-input-placeholder{color:#bbb}
-:-moz-placeholder,
-.out_reason .input_textarea textarea:-moz-placeholder{color:#bbb}
+::-webkit-input-placeholder,
+.out_reason .input_textarea textarea::-webkit-input-placeholder{color:#bbb}
+::-moz-placeholder,
+.out_reason .input_textarea textarea::-moz-placeholder{color:#bbb}
 :-ms-input-placeholder,
 .out_reason .input_textarea textarea:-ms-input-placeholder{color:#bbb}
-input:placeholder{color:#bbb}
+input::placeholder{color:#bbb}
 .tc_err{color:#f32323!important}
 .btn_like.selected .count,
 .tc_poi{color:#ff4e25!important}
@@ -270,7 +270,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .sltType.mm {width:28%; margin-right:2%}
 .sltType.dd {width:30%}
 .sltType option .sel_arrow {display:none}
-.sltType .sel_arrow {position:absolute; top:15px; right:15px}
+.sltType .sel_arrow {position:absolute; top:13px; right:15px}
 .sltType1 .sel_arrow {position:absolute; top:15px; right:10px}
 
 /* Slider */
@@ -306,7 +306,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .clear:after{content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 .ovef_h {overflow:hidden}
 .clear {clear:both !important}
-.clearfix:after {content: '';display:block; clear:both}
+.clearfix::after {content: '';display:block; clear:both}
 .flt_le {float:left !important}
 .flt_ri {float:right !important}
 .dis_in {display:inline-block !important}
@@ -326,7 +326,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {clear:both; display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
 .ico.Warning {margin-top:2px; float:left; width:17px; height:16px; background-position:-227px -27px}
-.ico.sel_arrow {width:15px; height:12px; background-position:-87px -51px}
+.ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
 .ico.mor_arrow {width:20px; height:19px; vertical-align:middle; background-position:-248px -26px}
 .ico.delete {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
 .ico.reload {width:20px; height:20px; background-position:-260px -44px; background-repeat: no-repeat}
@@ -358,7 +358,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .badge.bk {background-color:#000; color:#fff}
 /* 옵션 수량 버튼  */
 .count-input-box {float:right; min-width:90px; background-color:#fff;}
-.count-input-box:after {content: ''; display: block; clear: both}
+.count-input-box::after {content: ''; display: block; clear: both}
 .count-input-box button,.count-input-box input {float: left; text-align: center; border: 1px solid #e5e5e5}
 .count-input-box .count-btn {width: 30px; height: 30px; background-color: #fff}
 .count-input-box .count-btn.minus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more_active-icon.png") center center/12px 1px no-repeat}
@@ -407,16 +407,16 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
     transform: translate(-50%,-50%) rotateZ(-45deg);
 }
 /* back button */
-.back .btn_back:after,.back .btn_back:before {z-index:10; background-color:#222;overflow: hidden;display: inline-block;background-repeat: no-repeat;vertical-align: top;content: '';}
+.back .btn_back::after,.back .btn_back::before {z-index:10; background-color:#222;overflow: hidden;display: inline-block;background-repeat: no-repeat;vertical-align: top;content: '';}
 .back .btn_back {margin:0 7px; display:block;float:left;background-color:rgba(0,0,0,0);width:40px;height:48px;min-width:20px}
-.back .btn_back:after, .back .btn_back:before {position:absolute; top:21px; left:24px; width:2px; height:17px;}
-.back .btn_back:before{
+.back .btn_back::after, .back .btn_back::before {position:absolute; top:21px; left:24px; width:2px; height:17px;}
+.back .btn_back::before{
     -webkit-transform: translate(-50%,-72%) rotateZ(45deg);
     -ms-transform: translate(-50%,-72%) rotateZ(45deg);
     -o-transform: translate(-50%,-72%) rotateZ(45deg);
     transform: translate(-50%,-72%) rotateZ(45deg);
 }
-.back a:after{
+.back a::after{
     -webkit-transform: translate(-50%,-7%) rotateZ(-45deg);
     -ms-transform: translate(-50%,-7%) rotateZ(-45deg);
     -o-transform: translate(-50%,-7%) rotateZ(-45deg);
@@ -424,7 +424,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 }
 
 #header {clear:both; vertical-align:middle}
-#header:after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
+#header::after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 #header .popup {display:block; border-bottom:1px solid #d0d0d0}
 #header .box_left .logo {display:block; overflow:hidden;}
 #header .logo {margin:10px 0; padding-top:0; width:114px; height:18px;background-position: 0 0; overflow:hidden}
@@ -444,7 +444,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #header .btn_area .noti {background-position: -226px 0px}
 #header .btn_area .close {background-position: -265px 0px}
 #header .headerWrap.brb {border-bottom:1px solid #d0d0d0}
-#header .headerWrap:after {content: '';display:block; clear:both}
+#header .headerWrap::after {content: '';display:block; clear:both}
 #cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:2px; min-width:16px; max-width:20px;
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
@@ -487,7 +487,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .paymt_card_benefit .card_benefit_info {margin:25px 0}
 .paymt_card_benefit .card_benefit_info p span {display:block; font-size:14px; font-weight:400; color:#555; margin:0 0 15px}
 .paymt_card_benefit .card_benefit_info li {padding:unset;font-size:13px; font-weight: 200;color:#888; line-height:1; margin:0 0 8px;}
-.paymt_card_benefit .card_benefit_info li:before {background-color:#888; display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:3px;height:3px; vertical-align:2px; margin-right:5px}
+.paymt_card_benefit .card_benefit_info li::before {background-color:#888; display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:3px;height:3px; vertical-align:2px; margin-right:5px}
 /* 상품쿠폰 선택 */
 .popup-wrap h2{font-size:18px; font-weight:700; text-align:left; padding:17px; border-bottom:1px solid #d0d0d0; color:#000}
 .popup-wrap .border_tab-cont > .paymt_wrap {display:none}
@@ -506,7 +506,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .alert-popup .black-border-btn {width:calc(50% - 3px); height:45px; margin-right:3px; border:1px solid #555; color:#555; font-size:14px; font-weight: 500}
 .alert-popup .black-btn {width:calc(50% - 3px);height:45px;margin-left:3px;border:1px solid #555;color:#fff;font-size:14px;font-weight:500}
 .member-wrap .sz-select_list .selected {padding: 13px 10px 14px;border:1px solid #e5e5e5;background: url(../../images/ico/acco_arrow-icon.png) 89% center/13px 7px no-repeat; font-size:16px;cursor:pointer}
-.member-wrap .sz-select_list .selected:after {content: ''; display:block}
+.member-wrap .sz-select_list .selected::after {content: ''; display:block}
 .member-wrap .sz-select_sub {border:1px solid #e5e5e5;border-top:none;background-color:#fff}
 .member-wrap .sz-select_sub li {padding:10px; font-size:16px}
 .slick-slide a:focus, .slick-slide:focus {outline:0}
@@ -550,7 +550,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #footer .footer_top ul { display: inline-block;margin-bottom: 12px}
 #footer .footer_top ul li {position:relative;float:left;padding-right:20px}
 #footer .footer_top ul li:first-child {color: #888; font-weight:500}
-#footer .footer_top ul li.dot :before {width: 2px;content: "\00B7"; position: relative; right: 9px}
+#footer .footer_top ul li.dot ::before {width: 2px;content: "\00B7"; position: relative; right: 9px}
 #footer .footer_middle {margin-top: 25px; font-size: 13px; font-family: 'Noto Sans KR';color: #ababab; font-weight:400}
 #footer .tel span {font-size:16px;font-weight:600; font-family:'proxima-nova'; color: #888}
 #footer .info_txt{margin-top: 13px; margin-bottom: 26px; line-height: 20px; display: inline-block}
@@ -580,11 +580,11 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #footer .outlink_kcp i.kcp {width: 38.4px; height: 38.4px; background-position: -148.2px -127.8px; background-size:360px 360px}
 @media all and (max-width:525px) {
     #footer .footer_top ul li:nth-child(4) {clear: both}
-    #footer .footer_top ul li:nth-child(4) :before {display: none}
+    #footer .footer_top ul li:nth-child(4) ::before {display: none}
     #footer .footer_top ul li:nth-child(4), .footer_top ul li:nth-child(5) {display: inline-block;margin-top: 5px}
 }
 @media all and (min-width:375px) and (max-width:1980px){
-    #footer .footer_top ul li:nth-child(4) :before {width: 2px;content: "\00B7"; position: relative; right: 9px}
+    #footer .footer_top ul li:nth-child(4) ::before {width: 2px;content: "\00B7"; position: relative; right: 9px}
 }
 /* -footer end- */
 /* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
