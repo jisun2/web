@@ -326,7 +326,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .blind {position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 .ico {clear:both; display:inline-block; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr.png") center center/ cover; background-size:300px 300px}
 .ico.Warning {margin-top:2px; float:left; width:17px; height:16px; background-position:-227px -27px}
-.ico.sel_arrow {width:15px; height:12px; background-position:-87px -49px}
+.ico.sel_arrow {width:15px; height:12px; background-position:-87px -51px}
 .ico.mor_arrow {width:20px; height:19px; vertical-align:middle; background-position:-248px -26px}
 .ico.delete {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
 .ico.reload {width:20px; height:20px; background-position:-260px -44px; background-repeat: no-repeat}
