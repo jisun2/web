@@ -31,8 +31,6 @@
 .myWrap .bg_gry {padding:10px 20px; height:20px; background-color:#f9f9f9;}
 .myWrap .bg_gry.brB {border-bottom:1px solid #e5e5e5}
 .myWrap .odrNum {display:block; width:100%; margin-top:15px; overflow:hidden; font-size:13px; color:#888; font-weight:normal; border-radius:3px; border:1px solid #e5e5e5}
-/* .myWrap .my_lst .odrNum .num {font-size:13px; color:#888; font-weight:normal;} */
-
 /* 하단 주문 목록, 취소/반품/교환 목록, 할인 쿠폰, 상품평 관리, 멤버십, 고객센터 */
 .myWrap .my_menu {padding:0 20px}
 .myWrap .my_menu li {font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #f0f0f0}
@@ -43,18 +41,16 @@
 .myWrap .btn_more {margin:0 15px 20px 15px; text-align:center; color:#555; border-radius:3px; border:1px solid #ababab}
 .myWrap .btn_more button {padding:14px; width:100%; font-size:14px; font-weight:500; color:#555}
 .myWrap .btn_more .orange.num {font-size:16px;}
-.myWrap .pd_lst {padding:20px 15px;}
-.myWrap .pd_lst.pd {padding:16px;}
-.myWrap .pd_lst.pd0 {padding:0; width:100%;}
 /* .myWrap .pd_lst li.ord_box {float:left;margin:15px 0; width:100%; border-bottom:1px solid #e5e5e5}
 .myWrap .pd_lst li.ord_box:first-child {margin-top:0; padding-bottom:15px}
 .myWrap .pd_lst li.ord_box:last-child { padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0} */
+.myWrap .pd_lst.pd {padding:16px;}
+.myWrap .pd_lst.pd0 {padding:0; width:100%;}
 .myWrap .pd_lst {display:inline-block; padding:20px 15px;}
 .myWrap .pd_lst li.ord_box {float:left; width:100%; padding:15px 0; border-bottom:1px solid #e5e5e5}
 .myWrap .pd_lst li.ord_box:last-child {padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0}
-
 .myWrap .pd_thum {display:inline-block; float:left}
 .myWrap .pd_thum a {display:block;}
 .myWrap .pd_thum a img {width:80px; height:80px}
@@ -79,8 +75,7 @@
 .myWrap .caution .Warning {width: 17px; float:left; height: 16px; vertical-align: middle; background-position: -227px -27px;}
 .myWrap .caution span {display:inline-block; float:left; width:90%; padding-left:5.5px; font-size:12px; line-height:1.33; text-align:left; color:#888;}
 
-/* ------------------------------------------------내정보관리_아이디 인증-------------------------------------------- */
-
+/* ---------------------------------------------내정보관리_아이디 인증----------------------------------------- */
 .myWrap .auth_menu {position: relative; width: 100%; height: 55px;}
 .myWrap .auth_menu ul {text-align: center; font-size:15px; color:#888}
 .myWrap .auth_menu li {float: left; font-size: 15px; width: 50%; height: 55px; line-height: 55px; box-sizing: border-box; border-bottom: 1px solid #d0d0d0;}
@@ -269,22 +264,18 @@
 .txtwrite_wrap .iqy_inr .pd_deWrap {float:left; padding-left:67px}
 .txtwrite_wrap .iqy_inr .list_bar li {font-size:12px; color:#888}
 .txtwrite_wrap .iqy_inr .list_bar li:first-child {max-width:70%}
-.txtwrite_wrap .iqy_inr .write_info {}
-/* .txtwrite_wrap .iqy_inr {font-size:13px; color:#888; font-weight:normal;} */
 .txtwrite_wrap .input_textarea {position:relative; font-size:15px; width:100%}
 .txtwrite_wrap .input_textarea .count {position:absolute; right:10px; bottom:10px; font-size:12px}
 .txtwrite_wrap .input_textarea .count .bk {color:#000}
 .txtwrite_wrap .input_textarea textarea {height:180px; padding:10px; border:1px solid #e5e5e5; border-radius:0}
 .txtwrite_wrap .input_textarea textarea:active {border-radius:0}
 .write_check {margin-top:10px; font-size:15px}
-/* .txtReview_wrap h2 {padding:25px 20px} */
 /* btn */
 .myWrap .btn_sel {margin-top:15px;text-align:center; color:#555; border-radius:3px; border:1px solid #ababab}
 .myWrap .btn_sel a {display:block; padding:10.5px; font-size:16px; font-weight:500; color:#555}
 .last_btn_white {z-index:10; display:block; float:left; width:49%; border:1px solid #000; background:#fff; font-size:17px; color:#555; line-height:17px; height:45px;}
 .last_btn_black {display:block; float:right; width:100%; border:1px solid #000; background:#000; font-size:17px; color:#fff !important; line-height:17px; height:45px;}
 .last_btn_black.wd50 {width:49%;}
-
 .txtwrite_wrap .typeSelect {padding:15px 0; width:100%; white-space:nowrap; width:100%; overflow-y:hidden; font-size:13px}
 .typeSelect ul li {float:left; margin-top:5px; margin-right:10px; min-height:32px; max-height:34px; font-weight:300}
 .typeSelect ul li a {padding:4px 13px; min-width:62px; max-height:15px; font-size:13px; font-weight:400; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
