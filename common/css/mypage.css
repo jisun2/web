@@ -50,7 +50,7 @@
 .myWrap .pd_lst.pd {padding:16px;}
 .myWrap .pd_lst.pd0 {padding:0; width:100%;}
 .myWrap .pd_lst {display:inline-block; padding:20px 15px;}
-.myWrap .pd_lst li.ord_box {display:flex; justify-content:center; align-items: center; float:left; width:100%; padding:15px 0; border-bottom:1px solid #e5e5e5}
+.myWrap .pd_lst li.ord_box {float:left; min-height:58px; width:100%; padding:15px 0; border-bottom:1px solid #e5e5e5}
 .myWrap .pd_lst li.ord_box:last-child {padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0}
 .myWrap .pd_thum {display:inline-block; float:left}
@@ -165,7 +165,7 @@
 .sltType {display:flex; justify-content:center; align-items:center; float:left; position:relative; width:100%;}
 .sltType select {border:1px solid #e5e5e5;}
 .tblType.slt .ico.sel_arrow {background-position:-87px -50px}
-.sltType1 {position:absolute; width:100px; top:-10px; right:15px}
+.sltType1 {position:absolute; width:100px; top:-11px; right:15px}
 .sltType1 select {display:flex; justify-content:center; align-items:center; padding:10px; width:100%; font-size:13px; color:#ababab; border:1px solid #fff !important}
 .sltType1 option {margin:12px; font-size:13px; color:#888}
 .sltType select, .sltType option {font-size:13px; font-family:'proxima-nova'}

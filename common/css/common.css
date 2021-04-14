@@ -271,7 +271,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .sltType.dd {width:30%}
 .sltType option .sel_arrow {display:none}
 .sltType .sel_arrow {position:absolute; top:13px; right:15px}
-.sltType1 .sel_arrow {position:absolute; top:15px; right:10px}
+.sltType1 .sel_arrow {position:absolute; top:17px; right:10px}
 
 /* Slider */
 .slick-slider {position:relative; display:block; box-sizing:border-box;-khtml-user-select:none;-ms-touch-action:pan-y; touch-action:pan-y;-webkit-tap-highlight-color: transparent;}
