@@ -114,10 +114,10 @@
 .myWrap .bltType1 li {margin-left:8px; line-height:1.6; text-indent:-8px}
 .myWrap .bltType1 li::before {margin-right:5px; display:inline-block; width:2px; height:2px; vertical-align:2px; content:''; border-radius:30%; -webkit-border-radius:30%;background-color:#888;}
 .int_btnType1 {display:inline-block;}
-.cont button {line-height:2.65; display:inline-block; width:100%}
+.cont button {display:flex; justify-content:center; align-items:center; width:100%}
 .cont .accoNum {clear:both; margin-top:10px; display:inline-block; width:100%;}
 .cont .intType {clear:both; margin-top:10px;}
-.cont .btn_wht {float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
+.cont .btn_wht {display:flex; justify-content:center; align-items:center; float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
 .cont .btn_gry {clear:both; display:inline-block; width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
 .cont .btn_gry button {padding:4px 0}
 .cont .int_btnType {margin-top:15px;}
@@ -161,7 +161,7 @@
 .cartWrap .sz-custom_label.de {width:100px; height:24px}
 .cartWrap .all.flt_le {margin-top:1px; width:100px; font-weight:500; color:#000} */
 /* 셀렉트 박스 */
-.sltType {float:left; position:relative; width:100%;}
+.sltType {display:flex; justify-content:center; align-items:center; float:left; position:relative; width:100%;}
 .sltType select {border:1px solid #e5e5e5;}
 .tblType.slt .ico.sel_arrow {background-position:-87px -50px}
 .sltType1 {position:absolute; width:100px; top:-10px; right:15px}
@@ -266,7 +266,7 @@
 .myWrap .sub_tit.brdT {padding-top:25px; border-top:1px solid #e5e5e5}
 .txtwrite_wrap {padding:25px 20px}
 .txtwrite_wrap .write_info li {font-size:12px; color:#888}
-.txtwrite_wrap .sltType .sel_arrow {top:15px}
+.txtwrite_wrap .sltType .sel_arrow {top:16px}
 .txtwrite_wrap .sltType {width:100%}
 .txtwrite_wrap .sltType select {font-size:13px; color:#333}
 .txtwrite_wrap .iqy_inr {position:relative; display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
