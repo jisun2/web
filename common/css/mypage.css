@@ -104,7 +104,7 @@
 .myWrap .atc .tit .brN {border:none}
 .my_dft::before, .my_dft::after, .my_pwd::after, .my_cellNum::after, .my_ship::after, .my_accNum::after, .my_wdl::before, .my_wdl::after
 {display:block; content:''; clear:both; height:8px; background:#f0f0f0; border-top:1px solid #d0d0d0;}
-.my_accNum .ico.sel_arrow {background-position:-87px -50px}
+.my_accNum .ico.sel_arrow {background-position:-87px -49px}
 .my_wdl {position:relative}
 .my_wdl .request {position:absolute; top:15px; right:20px; display: block; font-size: 11px; color: #888; text-decoration: underline !important;}
 .myWrap .bltType {padding:16px; font-size:12px; color:#888; background-color:#f5f5f5;}
