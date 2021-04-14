@@ -97,7 +97,7 @@
 .myWrap .atc {font-family:'Noto Sans KR'}
 .myWrap .cont {padding:25px 20px;}
 .myWrap .cont .tblType2 {font-size:12px}
-.myWrap .cont p {margin-bottom:5px; font-weight:400; font-size:12px}
+.myWrap .cont p {margin-bottom:5px; font-weight:400;}
 .myWrap .atc .tit {position:relative;}
 .myWrap .atc .tit button {padding:15px 0; position:absolute; top:0; right:20px}
 .myWrap .atc .tit p {padding:15px 20px; font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #e5e5e5}
@@ -119,14 +119,15 @@
 .cont .intType {clear:both; margin-top:10px;}
 .cont .btn_wht {display:flex; justify-content:center; align-items:center; float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
 .cont .btn_gry {clear:both; display:inline-block; width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
-.cont .btn_gry button {padding:4px 0}
+.cont .btn_gry button {height:45px}
 .cont .int_btnType {margin-top:15px;}
-.cont .int_btnType input {width:78%}
+.cont .int_btnType input {width:74%}
 .cont .int_btnType::after {clear:both; content: ''; display:block;}
 .my_dft .cont::after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 /* 내정보관리 정보변경 _ 휴대폰 본인 인증 */
+.cont .vt_top {vertical-align:top;}
 .cont .agr_tle table {width:100%;}
-.cont .agr_tle th, .cont .agr_tle td {border:1px solid #e5e5e5;}
+.cont .agr_tle th, .cont .agr_tle td {font-size:12px; border:1px solid #e5e5e5;}
 .cont .agr_tle th {padding:12px 0;text-align:center; min-width:80px; font-weight:500; background-color:#f5f5f5}
 .cont .agr_tle td {padding:12px 15px; text-align:left; font-weight:400;}
 /* 기본 배송지  */
@@ -141,7 +142,7 @@
 /* .tblType table, .tblType2 th {margin-bottom:15px} */
 /* .tblType.slt th {display:inline-block;}
 .tblType.slt td {display:inline-block;} */
-.tblType th, .tblType1 th, .tblType2 th {width:20%; text-align:left; min-width:80px; font-size:14px; color:#555}
+.tblType th, .tblType1 th, .tblType2 th {width:20%; text-align:left; min-width:80px; font-size:12px; color:#555}
 .tblType th, .tblType td {margin-bottom:14px;}
 .tblType1 th, .tblType1 td {margin-bottom:14px;}
 .tblType2 th, .tblType2 td {padding:5px;}
@@ -167,7 +168,7 @@
 .sltType1 {position:absolute; width:100px; top:-10px; right:15px}
 .sltType1 select {padding:10px; width:100%; font-size:13px; color:#ababab; border:1px solid #fff !important}
 .sltType1 option {margin:12px; font-size:13px; color:#888}
-.sltType select, .sltType option {font-family:'proxima-nova'}
+.sltType select, .sltType option {font-size:13px; font-family:'proxima-nova'}
 .last_btn_wrap {z-index:5; position:sticky; padding:15px 20px 44px; max-width:720px; border-top:1px solid #d0d0d0; bottom:0; font-size:17px; background:#fff; box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .last_btn_wrap button {border-radius:3px}
 .last_btn_wrap .pr_chk_agree {margin-bottom:10px}
