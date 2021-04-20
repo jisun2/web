@@ -118,7 +118,7 @@
 .cont button {display:flex; justify-content:center; align-items:center; width:100%}
 .cont .accoNum {clear:both; margin-top:10px; display:inline-block; width:100%;}
 .cont .intType {clear:both; margin-top:10px;}
-.cont .btn_wht {display:flex; justify-content:center; align-items:center; float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
+.cont .btn_wht {font-size:12px; display:flex; justify-content:center; align-items:center; float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
 .cont .btn_wht button {font-size:12px}
 .cont .btn_gry {clear:both; display:inline-block; width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
 .cont .btn_gry button {height:45px}
@@ -148,7 +148,7 @@
 /* .tblType.slt th {display:inline-block;}
 .tblType.slt td {display:inline-block;} */
 .tblType2 th {width:20%; text-align:left; min-width:80px; font-size:13px; color:#555}
-.tblType th, .tblType1 th {width:20%; text-align:left; min-width:80px; font-size:12px; color:#555}
+.tblType th, .tblType1 th {width:20%; text-align:left; min-width:80px; font-size:13px; color:#555}
 .tblType th, .tblType td {margin-bottom:14px;}
 .tblType1 th, .tblType1 td {margin-bottom:14px;}
 .tblType2 th, .tblType2 td {padding:5px 5px 5px 0;}
@@ -268,7 +268,7 @@
 
 /* 상품 문의 작성하기 */
 #header .box_left.nbk {padding-left:20px; display:inline-block;}
-.sltType1 .sel_arrow {top:15px}
+.sltType1 .sel_arrow {top:16px}
 .delBtn .btn_pd {float:right;padding:11px 14px; margin:-12px -12px 0 0; display:inline-block; }
 .delBtn .delete {display:inline-block; width:14px; height:12px;}
 .myWrap .sub_tit {font-size:16px; font-weight:500; color:#000}

@@ -22,7 +22,7 @@ address,em{font-style:normal}
 fieldset{border:0;border-radius:0; -webkit-border-radius:0;}
 table{border-collapse:collapse}
 img{vertical-align:top;border:0}
-button:disabled,input:disabled{background-color:transparent}
+button:disabled,input:disabled{color:#ababab !important; background-color:transparent}
 pre{white-space:pre-wrap}
 label{cursor:pointer}
 main{display:block}
