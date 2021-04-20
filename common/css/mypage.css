@@ -51,7 +51,7 @@
 /* .myWrap .pd_lst {display:inline-block; padding:20px 15px;} */
 .myWrap .pd_lst.pd {padding:16px;}
 .myWrap .pd_lst.pd0 {padding:0; width:100%;}
-.myWrap .pd_lst li.ord_box {float:left; display:flex; justify-content:center; align-items:center; min-height:58px; width:100%; padding:15px 0; border-bottom:1px solid #e5e5e5}
+.myWrap .pd_lst li.ord_box {float:left; min-height:58px; width:100%; padding:15px 0; border-bottom:1px solid #e5e5e5}
 .myWrap .pd_lst li.ord_box:last-child {padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0}
 .myWrap .pd_thum {display:inline-block; float:left}
@@ -98,7 +98,7 @@
 .myWrap .atc {font-family:'Noto Sans KR'}
 .myWrap .cont {padding:25px 20px;}
 .myWrap .cont .tblType2 {font-size:12px}
-.myWrap .cont p {margin-bottom:10px; font-weight:400;}
+.myWrap .cont p {margin-bottom:10px; font-weight:400; font-size:12px}
 .myWrap .atc .tit {position:relative;}
 .myWrap .atc .tit button {padding:15px 0; position:absolute; top:0; right:20px}
 .myWrap .atc .tit p {padding:15px 20px; font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #e5e5e5}
@@ -319,15 +319,19 @@
 }
 /* ----------------------------------------- 문의 상품 선택하기 -------------------------------------------- */
 .iqySel_wrap {padding:25px 20px}
-.iqySel_wrap .pd_lst {}
+.iqySel_wrap .pd_lst .v_center {display: flex; justify-content: center; align-items: center;}
 .iqySel_wrap .pd_lst .ord_box {display:flex; justify-content:center; align-items:center; position:relative; display:inline-block;}
+.iqySel_wrap .pd_lst .ord_box {}
 .iqySel_wrap .pd_lst .ord_box:first-child .default_check {top:0}
-.iqySel_wrap .pd_lst .pd_thum {position:absolute; left:40px}
+.iqySel_wrap .pd_lst .pd_thum { position:absolute; left:40px}
 .iqySel_wrap .iqy_inr .list_bar {width:100%}
 .iqySel_wrap .iqy_inr .list_bar li {max-width:70%}
 .iqySel_wrap .odrNum {margin-bottom:25px}
+.iqySel_wrap .odrNum .pdT10 {padding-top:10px}
 /* .iqySel_wrap .pd_lst {width:96%;} */
-.iqySel_wrap .pd_deWrap {display:block; float:left; padding-left:110px;}
+/* .my.iqySel_wrap .pd_brd {width:100%} */
+.iqySel_wrap .pd_deWrap {padding-top:5px; justify-content: center; align-items: center; height:56px; padding-left: 110px;}
+.iqySel_wrap .pd_deWrap a { display:block }
 .iqySel_wrap .write_info {padding-top:0}
 .iqySel_wrap .default_check {position:absolute; left:0px; top:15px}
 
