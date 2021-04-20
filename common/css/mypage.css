@@ -47,10 +47,11 @@
 .myWrap .pd_lst li.ord_box:first-child {margin-top:0; padding-bottom:15px}
 .myWrap .pd_lst li.ord_box:last-child { padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0} */
+.myWrap .pd_lst {padding:20px 15px;}
+/* .myWrap .pd_lst {display:inline-block; padding:20px 15px;} */
 .myWrap .pd_lst.pd {padding:16px;}
 .myWrap .pd_lst.pd0 {padding:0; width:100%;}
-.myWrap .pd_lst {display:inline-block; padding:20px 15px;}
-.myWrap .pd_lst li.ord_box {float:left; min-height:58px; width:100%; padding:15px 0; border-bottom:1px solid #e5e5e5}
+.myWrap .pd_lst li.ord_box {float:left; display:flex; justify-content:center; align-items:center; min-height:58px; width:100%; padding:15px 0; border-bottom:1px solid #e5e5e5}
 .myWrap .pd_lst li.ord_box:last-child {padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0}
 .myWrap .pd_thum {display:inline-block; float:left}
@@ -97,7 +98,7 @@
 .myWrap .atc {font-family:'Noto Sans KR'}
 .myWrap .cont {padding:25px 20px;}
 .myWrap .cont .tblType2 {font-size:12px}
-.myWrap .cont p {margin-bottom:5px; font-weight:400;}
+.myWrap .cont p {margin-bottom:10px; font-weight:400;}
 .myWrap .atc .tit {position:relative;}
 .myWrap .atc .tit button {padding:15px 0; position:absolute; top:0; right:20px}
 .myWrap .atc .tit p {padding:15px 20px; font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #e5e5e5}
@@ -118,16 +119,20 @@
 .cont .accoNum {clear:both; margin-top:10px; display:inline-block; width:100%;}
 .cont .intType {clear:both; margin-top:10px;}
 .cont .btn_wht {display:flex; justify-content:center; align-items:center; float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
+.cont .btn_wht button {font-size:12px}
 .cont .btn_gry {clear:both; display:inline-block; width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
 .cont .btn_gry button {height:45px}
-.cont .int_btnType {margin-top:15px;}
+.cont .int_btnType {margin-top:10px;}
 .cont .int_btnType input {width:74%}
 .cont .int_btnType::after {clear:both; content: ''; display:block;}
 .my_dft .cont::after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 /* 내정보관리 정보변경 _ 휴대폰 본인 인증 */
 .cont .vt_top {vertical-align:top;}
 .cont .agr_tle table {width:100%;}
-.cont .agr_tle th, .cont .agr_tle td {font-size:12px; border:1px solid #e5e5e5;}
+.cont .agr_tle .myWrap .bltType2 {;font-size:10px; color:#888;}
+.cont .agr_tle .myWrap .bltType2 li {margin-left:8px; line-height:1.6; text-indent:-8px}
+.cont .agr_tle .myWrap .bltType2 li::before {margin-right:5px; display:inline-block; width:2px; height:2px; vertical-align:2px; content:''; border-radius:30%; -webkit-border-radius:30%;background-color:#888;}
+.cont .agr_tle th, .cont .agr_tle td {font-size:13px; border:1px solid #e5e5e5;}
 .cont .agr_tle th {padding:12px 0;text-align:center; min-width:80px; font-weight:500; background-color:#f5f5f5}
 .cont .agr_tle td {padding:12px 15px; text-align:left; font-weight:400;}
 /* 기본 배송지  */
@@ -142,10 +147,11 @@
 /* .tblType table, .tblType2 th {margin-bottom:15px} */
 /* .tblType.slt th {display:inline-block;}
 .tblType.slt td {display:inline-block;} */
-.tblType th, .tblType1 th, .tblType2 th {width:20%; text-align:left; min-width:80px; font-size:12px; color:#555}
+.tblType2 th {width:20%; text-align:left; min-width:80px; font-size:13px; color:#555}
+.tblType th, .tblType1 th {width:20%; text-align:left; min-width:80px; font-size:12px; color:#555}
 .tblType th, .tblType td {margin-bottom:14px;}
 .tblType1 th, .tblType1 td {margin-bottom:14px;}
-.tblType2 th, .tblType2 td {padding:5px;}
+.tblType2 th, .tblType2 td {padding:5px 5px 5px 0;}
 
 .num-select {width:30%; min-width:60px; float:left; display:inline-block;}
 .num-select select {width:100%;}
@@ -219,6 +225,7 @@
 .myWrap .mypd_deWrap .state {font-size:14px; font-weight:bold; color:#888}
 .myWrap .my_topBox {clear:both; padding:25px 20px;}
 .tab_inr .subTxt {margin-bottom:15px; font-size:15px; font-weight:500; color:#333}
+.tab_inr ._lst .badge {height:22px; padding:0 8px;}
 .tab_inr .txt {font-size:14px; color:#555}
 .tab_inr .txt .num {font-size:16px;}
 .tab_inr .txt .txtGry {font-size:12px; color:#888}
@@ -261,9 +268,10 @@
 
 /* 상품 문의 작성하기 */
 #header .box_left.nbk {padding-left:20px; display:inline-block;}
+.sltType1 .sel_arrow {top:15px}
 .delBtn .btn_pd {float:right;padding:11px 14px; margin:-12px -12px 0 0; display:inline-block; }
 .delBtn .delete {display:inline-block; width:14px; height:12px;}
-.myWrap .sub_tit {font-size:15px; font-weight:500; color:#000}
+.myWrap .sub_tit {font-size:16px; font-weight:500; color:#000}
 .myWrap .sub_tit.brdT {padding-top:25px; border-top:1px solid #e5e5e5}
 .txtwrite_wrap {padding:25px 20px}
 .txtwrite_wrap .write_info li {font-size:12px; color:#888}
