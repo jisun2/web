@@ -335,10 +335,10 @@
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:62%}
 }
 @media screen and (min-width:370px) and (max-width:500px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:76%}
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:75%}
 }
 
-@media screen and (min-width:400px) and (max-width:890px) {
+@media screen and (min-width:500px) and (max-width:890px) {
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:83%}
 }
 
