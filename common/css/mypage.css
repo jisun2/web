@@ -338,7 +338,7 @@
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:78%}
 }
 
-@media screen and (min-width:400px) and (max-width:890px) {
+@media screen and (min-width:500px) and (max-width:890px) {
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:83%}
 }
 
