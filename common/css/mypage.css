@@ -287,7 +287,7 @@
 .txtwrite_wrap .sltType {width:100%}
 .txtwrite_wrap .sltType select {font-size:13px; color:#333}
 .txtwrite_wrap .iqy_inr {position:relative; display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
-/* .txtwrite_wrap .iqy_inr .pd_lst .ord_box {display:block;} */
+.txtwrite_wrap .iqy_inr .pd_lst .ord_box {display:block;}
 .txtwrite_wrap .iqy_inr .pd_thum{position:absolute; top:15px; left:15px}
 .txtwrite_wrap .iqy_inr .pd_deWrap {float:left; padding-left:67px; width:89%}
 .txtwrite_wrap .iqy_inr .list_bar li {font-size:12px; color:#888}
@@ -339,7 +339,7 @@
 }
 
 @media screen and (min-width:400px) and (max-width:890px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:82%}
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:83%}
 }
 
 /* ----------------------------------------- 문의 상품 선택하기 -------------------------------------------- */
@@ -361,7 +361,7 @@
 .iqySel_wrap .pd_lst {width:96%;}
 .my.iqySel_wrap .pd_brd {width:100%}
 @media screen and (min-width:361px) and (max-width:600px) {
-    .myWrap .pd_deWrap .pd_brd {width:90%}
+    .myWrap .pd_deWrap .pd_brd {width:88%}
 }
 
 /* @media screen and (min-width:320px) and (max-width:360px) {
