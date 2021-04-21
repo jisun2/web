@@ -214,7 +214,7 @@
 .myWrap .txtCnr {text-align:center}
 .myWrap .my_area1 {padding-bottom:50px}
 .myWrap .mypd_lst {display:inline-block; width:100%}
-.myWrap .mypd_lst li.ord_box {display:flex; justify-content:center; align-items:center; float:left; width:100%; border-bottom:1px solid #e5e5e5}
+.myWrap .mypd_lst li.ord_box {justify-content:center; align-items:center; float:left; width:100%; border-bottom:1px solid #e5e5e5}
 .myWrap .mypd_lst li.ord_box .pd_box { padding:15px 20px;}
 .myWrap .pd_thum a {display:block;}
 .myWrap .pd_thum a img {width:56px; height:56px}
@@ -324,7 +324,7 @@
     .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; height:155px;}
 }
 @media screen and (min-width:320px) and (max-width:890px) {
-    .sltType1 .sel_arrow {top:16px}
+    .sltType1 .sel_arrow {top:19px}
 }
 @media screen and (min-width:510px) and (max-width:890px) {
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:86%}
@@ -343,6 +343,7 @@
 .iqySel_wrap .iqy_inr .list_bar li {max-width:70%}
 .iqySel_wrap .odrNum {margin-bottom:25px}
 .iqySel_wrap .odrNum .pdT10 {padding-top:10px}
+.mypd_lst .pdT10 {padding-top:9px}
 
 .iqySel_wrap .pd_deWrap {padding-top:5px;justify-content: center; align-items: center; position:absolute; left:110px;}
 .iqySel_wrap .pd_deWrap a { display:block }
