@@ -287,7 +287,7 @@
 .txtwrite_wrap .sltType {width:100%}
 .txtwrite_wrap .sltType select {font-size:13px; color:#333}
 .txtwrite_wrap .iqy_inr {position:relative; display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
-.txtwrite_wrap .iqy_inr .pd_lst .ord_box {display:block;}
+/* .txtwrite_wrap .iqy_inr .pd_lst .ord_box {display:block;} */
 .txtwrite_wrap .iqy_inr .pd_thum{position:absolute; top:15px; left:15px}
 .txtwrite_wrap .iqy_inr .pd_deWrap {float:left; padding-left:67px; width:89%}
 .txtwrite_wrap .iqy_inr .list_bar li {font-size:12px; color:#888}
