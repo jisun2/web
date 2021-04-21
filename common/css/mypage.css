@@ -327,16 +327,19 @@
 @media screen and (min-width:590px) and (max-width:1920px) {
     .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; height:155px;}
 }
-@media screen and (min-width:320px) and (max-width:890px) {
+@media screen and (min-width:220px) and (max-width:890px) {
     .sltType1 .sel_arrow {top:19px}
 }
 
+@media screen and (min-width:300px) and (max-width:369px) {
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:62%}
+}
 @media screen and (min-width:370px) and (max-width:500px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:87%}
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:63%}
 }
 
-@media screen and (min-width:280px) and (max-width:890px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:89%}
+@media screen and (min-width:400px) and (max-width:890px) {
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:83%}
 }
 
 /* ----------------------------------------- 문의 상품 선택하기 -------------------------------------------- */
