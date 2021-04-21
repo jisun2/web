@@ -209,7 +209,7 @@
 .myWrap .txtCnr {text-align:center}
 .myWrap .my_area1 {padding-bottom:50px}
 .myWrap .mypd_lst {display:inline-block; width:100%}
-.myWrap .mypd_lst li.ord_box {display:flex; justify-content:center; align-items:center; float:left; width:100%; border-bottom:1px solid #e5e5e5}
+.myWrap .mypd_lst li.ord_box {justify-content:center; align-items:center; float:left; width:100%; border-bottom:1px solid #e5e5e5}
 .myWrap .mypd_lst li.ord_box .pd_box { padding:15px 20px;}
 .myWrap .pd_thum a {display:block;}
 .myWrap .pd_thum a img {width:56px; height:56px}
