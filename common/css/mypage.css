@@ -330,11 +330,9 @@
 @media screen and (min-width:320px) and (max-width:890px) {
     .sltType1 .sel_arrow {top:19px}
 }
-@media screen and (min-width:510px) and (max-width:890px) {
+
+@media screen and (min-width:280px) and (max-width:890px) {
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:86%}
-}
-@media screen and (min-width:280px) and (max-width:509px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:79%}
 }
 
 /* ----------------------------------------- 문의 상품 선택하기 -------------------------------------------- */
