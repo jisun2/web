@@ -332,11 +332,11 @@
 }
 
 @media screen and (min-width:370px) and (max-width:500px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:96%}
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:87%}
 }
 
 @media screen and (min-width:280px) and (max-width:890px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:86%}
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:91%}
 }
 
 /* ----------------------------------------- 문의 상품 선택하기 -------------------------------------------- */
