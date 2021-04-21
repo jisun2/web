@@ -283,8 +283,9 @@
 .txtwrite_wrap .sltType {width:100%}
 .txtwrite_wrap .sltType select {font-size:13px; color:#333}
 .txtwrite_wrap .iqy_inr {position:relative; display:block; margin-top:15px; overflow:hidden; border-radius:3px; border:1px solid #e5e5e5}
+.txtwrite_wrap .iqy_inr .pd_lst .ord_box {display:block;}
 .txtwrite_wrap .iqy_inr .pd_thum{position:absolute; top:15px; left:15px}
-.txtwrite_wrap .iqy_inr .pd_deWrap {float:left; padding-left:67px}
+.txtwrite_wrap .iqy_inr .pd_deWrap {float:left; padding-left:67px; width:89%}
 .txtwrite_wrap .iqy_inr .list_bar li {font-size:12px; color:#888}
 .txtwrite_wrap .iqy_inr .list_bar li:first-child {max-width:70%}
 .txtwrite_wrap .input_textarea {position:relative; font-size:15px; width:100%}
@@ -322,6 +323,16 @@
 @media screen and (min-width:590px) and (max-width:1920px) {
     .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; height:155px;}
 }
+@media screen and (min-width:320px) and (max-width:890px) {
+    .sltType1 .sel_arrow {top:16px}
+}
+@media screen and (min-width:510px) and (max-width:890px) {
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:86%}
+}
+@media screen and (min-width:280px) and (max-width:509px) {
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:75%}
+}
+
 /* ----------------------------------------- 문의 상품 선택하기 -------------------------------------------- */
 .iqySel_wrap {padding:25px 20px}
 .iqySel_wrap .pd_lst .v_center {display: flex; justify-content: center; align-items: center;}
