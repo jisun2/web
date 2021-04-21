@@ -335,7 +335,7 @@
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:62%}
 }
 @media screen and (min-width:370px) and (max-width:500px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:63%}
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:76%}
 }
 
 @media screen and (min-width:400px) and (max-width:890px) {
@@ -361,7 +361,7 @@
 .iqySel_wrap .pd_lst {width:96%;}
 .my.iqySel_wrap .pd_brd {width:100%}
 @media screen and (min-width:361px) and (max-width:600px) {
-    .myWrap .pd_deWrap .pd_brd {width:88%}
+    .iqySel_wrap .pd_deWrap .pd_brd {width:90%}
 }
 
 /* @media screen and (min-width:320px) and (max-width:360px) {
