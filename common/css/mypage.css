@@ -123,7 +123,7 @@
 .cont .btn_gry {clear:both; display:inline-block; width:100%; text-align:center; vertical-align:middle; color:#fff; border-radius:3px; background-color:#5d5e6a}
 .cont .btn_gry button {height:45px}
 .cont .int_btnType {margin-top:10px;}
-.cont .int_btnType input {width:74%}
+.cont .int_btnType input {width:86%}
 .cont .int_btnType::after {clear:both; content: ''; display:block;}
 .my_dft .cont::after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 /* 내정보관리 정보변경 _ 휴대폰 본인 인증 */
