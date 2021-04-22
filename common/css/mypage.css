@@ -100,6 +100,7 @@
 .myWrap .btnMore a {margin:15px 0}
 .myWrap .atc {font-family:'Noto Sans KR'}
 .myWrap .cont {padding:25px 20px;}
+.myWrap .cont .int_name input::placeholder{color:#333}
 .myWrap .cont .tblType2 {font-size:13px}
 .myWrap .cont p {margin-bottom:10px; font-weight:400; font-size:12px}
 .myWrap .atc .tit {position:relative;}
