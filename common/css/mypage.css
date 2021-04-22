@@ -100,6 +100,7 @@
 .myWrap .btnMore a {margin:15px 0}
 .myWrap .atc {font-family:'Noto Sans KR'}
 .myWrap .cont {padding:25px 20px;}
+.myWrap .cont .int_name input {opacity:1; -webkit-text-fill-color: inherit}
 .myWrap .cont .int_name input::placeholder {color:#ff0000}
 .myWrap .cont .int_name input:disabled {opacity:1; -webkit-text-fill-color: inherit}
 .myWrap .cont .tblType2 {font-size:13px}
