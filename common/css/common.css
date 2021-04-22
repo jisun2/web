@@ -159,7 +159,7 @@ select, button:focus {outline:none}
 .out_reason .input_textarea textarea::-moz-placeholder{color:#ababab}
 :-ms-input-placeholder,
 .out_reason .input_textarea textarea:-ms-input-placeholder{color:#ababab}
-input::placeholder{color:#ff4e25}
+input::placeholder{color:#ababab}
 .tc_err{color:#f32323!important}
 .btn_like.selected .count,
 .tc_poi{color:#ff4e25!important}
