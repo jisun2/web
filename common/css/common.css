@@ -22,7 +22,7 @@ address,em{font-style:normal}
 fieldset{border:0;border-radius:0; -webkit-border-radius:0;}
 table{border-collapse:collapse}
 img{vertical-align:top;border:0}
-button:disabled,input:disabled{ background-color:transparent}
+button:disabled,input:disabled{opacity:1; -webkit-text-fill-color: inherit; background-color:transparent}
 /* input:[type="text"]:disabled {background: #000;} */
 pre{white-space:pre-wrap}
 label{cursor:pointer}
