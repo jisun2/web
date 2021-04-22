@@ -23,7 +23,7 @@ fieldset{border:0;border-radius:0; -webkit-border-radius:0;}
 table{border-collapse:collapse}
 img{vertical-align:top;border:0}
 button:disabled,input:disabled{background-color:transparent}
-input:[type="text"]:disabled {background: #000;}
+/* input:[type="text"]:disabled {background: #000;} */
 pre{white-space:pre-wrap}
 label{cursor:pointer}
 main{display:block}
@@ -159,7 +159,7 @@ select, button:focus {outline:none}
 .out_reason .input_textarea textarea::-moz-placeholder{color:#ababab}
 :-ms-input-placeholder,
 .out_reason .input_textarea textarea:-ms-input-placeholder{color:#ababab}
-input::placeholder{color:#ababab}
+input::placeholder{color:#ff4e25}
 .tc_err{color:#f32323!important}
 .btn_like.selected .count,
 .tc_poi{color:#ff4e25!important}
@@ -222,9 +222,9 @@ input::placeholder{color:#ababab}
 .input_radio_check label:after {left:5px;top:6px;width:12px;height:10px;background-position:-118px -34px;opacity:.1}
 input[type="text"]:disabled, input[type="number"]:disabled {background-color:#f5f5f5}
 input[type=checkbox] {display:none}
-textarea::placeholder {color:#333;}
-textarea::-webkit-input-placeholder {color:#ff0000;}
-textarea:-ms-input-placeholder {color:#ff0000;}
+textarea::placeholder {color:#555;}
+textarea::-webkit-input-placeholder {color:#ababab;}
+textarea:-ms-input-placeholder {color:#ababab;}
 .input_checkbox label:before, .input_number [class^=btn_], .input_radio label:before, .input_radio_check label:before, .lc_d0, .table_st td, .table_st th, .table_st.lc_d0, [class^=btn_].lc_d0
 {border-color:#e5e5e5}
 .input_checkbox input:checked+label:after {opacity:1;}
