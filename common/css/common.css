@@ -148,11 +148,11 @@ td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].erro
 .tc_f .tc_3,
 .white .btn_like .count{color:#fff!important}
 .tc_b,
-.tc_b [class^=btn_]{color:#bbb}
+.tc_b [class^=btn_]{color:#ababab}
 
 select, button:focus {outline:none}
 .order_discontent select[disabled],
-.table_st .disabled :not(.alram){color:#bbb!important}
+.table_st .disabled :not(.alram){color:#ababab!important}
 ::-webkit-input-placeholder,
 .out_reason .input_textarea textarea::-webkit-input-placeholder{color:#ababab}
 ::-moz-placeholder,
@@ -195,8 +195,8 @@ input::placeholder{color:#ababab}
 .table_st.v td,
 .table_st.v th,
 .table_st.v tr:last-child td,
-.table_st.v tr:last-child th{border-color:#eee}
-.lc_d{border-color:#ddd}
+.table_st.v tr:last-child th{border-color:#ababab}
+.lc_d{border-color:#ababab}
 .lc_f,
 .lc_f_b:before,
 .lnb.white .list_lnb,
@@ -222,9 +222,9 @@ input::placeholder{color:#ababab}
 .input_radio_check label:after {left:5px;top:6px;width:12px;height:10px;background-position:-118px -34px;opacity:.1}
 input[type="text"]:disabled, input[type="number"]:disabled {background-color:#f5f5f5}
 input[type=checkbox] {display:none}
-textarea::placeholder {color:#f5f5f5;}
-textarea::-webkit-input-placeholder {color:#f5f5f5;}
-textarea:-ms-input-placeholder {color:#f5f5f5;}
+textarea::placeholder {color:#333;}
+textarea::-webkit-input-placeholder {color:#ff0000;}
+textarea:-ms-input-placeholder {color:#ff0000;}
 .input_checkbox label:before, .input_number [class^=btn_], .input_radio label:before, .input_radio_check label:before, .lc_d0, .table_st td, .table_st th, .table_st.lc_d0, [class^=btn_].lc_d0
 {border-color:#e5e5e5}
 .input_checkbox input:checked+label:after {opacity:1;}
