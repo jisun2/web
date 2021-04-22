@@ -100,9 +100,7 @@
 .myWrap .btnMore a {margin:15px 0}
 .myWrap .atc {font-family:'Noto Sans KR'}
 .myWrap .cont {padding:25px 20px;}
-/* .myWrap .cont .int_name input {opacity:1; -webkit-text-fill-color: inherit}
-.myWrap .cont .int_name input::placeholder {color:#ff0000}
-.myWrap .cont .int_name input:disabled {opacity:1; -webkit-text-fill-color: inherit} */
+.myWrap .cont .agr_txt {font-size:14px}
 .myWrap .cont .tblType2 {font-size:13px}
 .myWrap .cont p {margin-bottom:10px; font-weight:400; font-size:12px}
 .myWrap .atc .tit {position:relative;}
@@ -141,7 +139,6 @@
 .cont .bltType3 {font-size:10px; color:#888;}
 .cont .bltType3 li {margin-left:8px; line-height:1.6; text-indent:-8px}
 .cont .bltType3 li::before {margin-right:5px; display:inline-block; width:2px; height:2px; vertical-align:2px; content:''; border-radius:30%; -webkit-border-radius:30%;background-color:#888;}
-
 
 .cont .agr_tle th, .cont .agr_tle td {font-size:13px; border:1px solid #e5e5e5;}
 .cont .agr_tle th {padding:12px 0;text-align:center; min-width:80px; font-weight:500; background-color:#f5f5f5}
@@ -237,7 +234,7 @@
 .myWrap .my_topBox {clear:both; padding:25px 20px;}
 .tab_inr {}
 .tab_inr .subTxt {margin-bottom:15px; font-size:15px; font-weight:500; color:#333}
-.tab_inr ._lst .badge {height:22px; padding:0 8px;}
+.tab_inr ._lst .badge {height:22px; min-width:34px; padding:0 8px;}
 .tab_inr .txt {font-size:14px; color:#555}
 .tab_inr .txt .num {font-size:16px;}
 .tab_inr .txt .txtGry {font-size:12px; color:#888}

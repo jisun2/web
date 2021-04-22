@@ -335,10 +335,10 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .ico.delete {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
 .ico.reload {width:20px; height:20px; background-position:-260px -44px; background-repeat: no-repeat}
 /* margin / padding */
-.mgT10 {margin-top:10px}
-.mgT15 {margin-top:15px}
-.mgB10 {margin-bottom:10px}
-.mgB15 {margin-bottom:15px}
+.mgT10 {margin-top:10px !important}
+.mgT15 {margin-top:15px !important}
+.mgB10 {margin-bottom:10px !important}
+.mgB15 {margin-bottom:15px !important}
 /* btn */
 .btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color:#111}
 .btn_bk .dark {display:block; padding:17px 0}
