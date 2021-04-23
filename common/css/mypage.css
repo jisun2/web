@@ -193,7 +193,7 @@
     .cont .int_btnType1 {width:55%}
 }
 @media screen and (min-width:300px) and (max-width:719px) {
-    .tblType.slt .ico.sel_arrow {top:15px}
+    .tblType.slt .ico.sel_arrow {top:16px}
 }
 @media screen and (min-width:321px) and (max-width:375px) {
     .cont .int_btnType input {width:71%}
