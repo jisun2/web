@@ -178,7 +178,7 @@
 /* 셀렉트 박스 */
 .sltType {display:flex; justify-content:center; align-items:center; float:left; position:relative; width:100%;}
 .sltType select {border:1px solid #e5e5e5;}
-.tblType.slt .ico.sel_arrow {background-position:-87px -50px}
+.sltType .sel_arrow {background-position:-87px -50px}
 .sltType1 {position:absolute; width:100px; top:-12px; right:15px}
 .sltType1 select {display:flex; justify-content:center; align-items:center; padding:10px; width:100%; font-size:13px; color:#ababab; border:1px solid #fff !important}
 .sltType1 option {margin:12px; font-size:13px; color:#888}
@@ -191,6 +191,9 @@
 @media screen and (max-width:320px) {
     .cont .int_btnType input {width:68%}
     .cont .int_btnType1 {width:55%}
+}
+@media screen and (min-width:300px) and (max-width:719px) {
+    .tblType.slt .ico.sel_arrow {top:15px}
 }
 @media screen and (min-width:321px) and (max-width:375px) {
     .cont .int_btnType input {width:71%}
