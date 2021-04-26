@@ -218,7 +218,7 @@
 
 /* ----------------------------------------- 문의 -------------------------------------------- */
 .myWrap .txtCnr {text-align:center}
-.myWrap .my_area1 {padding-bottom:50px; overflow-x:hidden;}
+.myWrap .my_area1 {padding-bottom:50px;}
 .myWrap .mypd_lst {display:inline-block; width:100%}
 .myWrap .mypd_lst li.ord_box {justify-content:center; align-items:center; float:left; width:100%; border-bottom:1px solid #e5e5e5}
 .myWrap .mypd_lst li.ord_box .pd_box { padding:15px 20px;}
@@ -235,6 +235,7 @@
 .myWrap .mypd_deWrap .pd_brd {display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height: 1.5; word-break:break-all; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:13px; color:#555}
 .myWrap .mypd_deWrap .state {font-size:14px; font-weight:bold; color:#888}
 .myWrap .my_topBox {clear:both; padding:25px 20px;}
+.tab_inr {overflow-y:visible;}
 .tab_inr .subTxt {margin-bottom:15px; font-size:15px; font-weight:500; color:#333}
 .tab_inr ._lst .badge {height:22px; min-width:34px; padding:0 8px;}
 .tab_inr .txt {font-size:14px; color:#555}
