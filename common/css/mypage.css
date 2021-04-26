@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.myWrap {padding-bottom:60px; min-width:320px; font-family:'Noto Sans KR'}
+.myWrap {padding-bottom:60px; min-width:300px; font-family:'Noto Sans KR'}
 .myWrap.pdB0 {padding-bottom:0px}
 .myWrap .my_area {clear:both; width:100%}
 .myWrap .my_area::after {display:block; content: ''; clear:both; height:7px; background: #f0f0f0;border-top: 1px solid #d0d0d0;}
@@ -235,7 +235,6 @@
 .myWrap .mypd_deWrap .pd_brd {display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height: 1.5; word-break:break-all; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:13px; color:#555}
 .myWrap .mypd_deWrap .state {font-size:14px; font-weight:bold; color:#888}
 .myWrap .my_topBox {clear:both; padding:25px 20px;}
-.tab_inr {overflow-y:visible;}
 .tab_inr .subTxt {margin-bottom:15px; font-size:15px; font-weight:500; color:#333}
 .tab_inr ._lst .badge {height:22px; min-width:34px; padding:0 8px;}
 .tab_inr .txt {font-size:14px; color:#555}
