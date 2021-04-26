@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.myWrap {padding-bottom:60px; min-width:300px; font-family:'Noto Sans KR'}
+.myWrap {padding-bottom:60px; min-width:320px; font-family:'Noto Sans KR'}
 .myWrap.pdB0 {padding-bottom:0px}
 .myWrap .my_area {clear:both; width:100%}
 .myWrap .my_area::after {display:block; content: ''; clear:both; height:7px; background: #f0f0f0;border-top: 1px solid #d0d0d0;}
