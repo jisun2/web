@@ -357,7 +357,7 @@
 .iqySel_wrap .odrNum .pdT10 {padding-top:10px}
 .mypd_lst .pdT10 {padding-top:9px}
 
-.iqySel_wrap .pd_deWrap {padding-top:5px; display:inline-flex; justify-content: center; align-items: center; position:absolute; left:110px;}
+.iqySel_wrap .pd_deWrap {padding-top:5px; min-width:60%; justify-content: center; align-items: center; position:absolute; left:110px;}
 .iqySel_wrap .pd_deWrap a { display:block}
 .iqySel_wrap .write_info {padding-top:0}
 .iqySel_wrap .default_check {position:absolute; left:0px; top:15px}
