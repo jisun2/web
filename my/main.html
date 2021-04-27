@@ -37,10 +37,14 @@
                             <div class="myInfo">
                                 <div class="myInfoBox">
                                     <span class="name ellipsis">홍길동</span><span class="myClass">FAMILY</span>
+                                    <!-- 비로그인 상태 -->
+                                    <!-- <span class="name login">로그인 해주세요.</span> -->
                                 </div>
                                 <div class="btn">
                                     <button type="button" name="button">
                                         <span class="infoBtn">내 정보 관리</span>
+                                        <!-- 비로그인 상태 -->
+                                        <!-- <span class="infoBtn">로그인</span> -->
                                     </button>
                                 </div>
                             </div>
@@ -67,6 +71,47 @@
                         </div>
                         <div class="my_lst">
                             <p class="sub_tit">최근 구매 내역</p>
+                            <!-- 에러일 때 -->
+                            <!-- <div class="no_txt">
+                                예기치 않은 문제가 발생했습니다. <br> 새로고침 해주세요.
+                                <div class="btn_rel">
+                                    <button type="button" name="button"><span class="txt">새로고침</span></button>
+                                </div>
+                            </div> -->
+                            <!-- //에러일 때 -->
+
+                            <!-- 1개월 이내 구매한 상품 없을 때 -->
+                            <!-- <p class="no_txt">최근 1개월 이내에 구매한 상품이 없습니다.</p> -->
+
+                            <!-- 주문내역 한 건 일 때 -->
+                            <div class="odrNum">
+                                <div class="bg_gry">
+                                    <span class="txt">주문번호</span><span class="num">2020111816077088</span>
+                                </div>
+                                <ul class="pd_lst clear">
+                                    <li class="ord_box">
+                                        <div class="pd_thum">
+                                            <a href="#none">
+                                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pd_deWrap">
+                                            <a href="#">
+                                                <span class="pd_brd">
+                                                    태그호이어 태그호이어태그호이어태그그태그호이어그
+                                                </span>
+                                            </a>
+                                            <p class="state blue">배송 완료</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn_more">
+                                    <button type="button" name="button">상세 내역 보기</button>
+                                </div>
+                            </div>
+                            <!-- //주문내역 한 건 일 때 -->
+
+                            <!-- 주문내역 여러 건 일 때 -->
                             <div class="odrNum">
                                 <div class="bg_gry">
                                     <span class="txt">주문번호</span><span class="num">2020111816077088</span>
@@ -96,7 +141,8 @@
                                         <div class="pd_deWrap">
                                             <a href="#">
                                                 <span class="pd_brd">
-                                                    태그호이어                                                 </span>
+                                                    태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어태그호이어
+                                                </span>
                                             </a>
                                             <p class="state">배송 중</p>
                                         </div>
@@ -121,6 +167,8 @@
                                     <button type="button" name="button"><span class="orange">외 <span class="orange num">3</span>건 </span>상세 내역 보기</button>
                                 </div>
                             </div>
+                            <!-- //주문내역 여러 건 일 때 -->
+
                         </div>
                     </div>
                     <div class="my_area">
