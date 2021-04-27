@@ -169,7 +169,7 @@
 .num-select .selected .sel_arrow {float:right; margin-top:11px}
 /* 결제 체크 박스 */
 .sz-custom_text {cursor:pointer}
-.sz-custom_label {display:inline-block; width:25px; height:24px; background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_off.png") center center/cover no-repeat;cursor:pointer}
+.sz-custom_label {display:inline-block; width:25px; height:25px; background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_off.png") center center/cover no-repeat;cursor:pointer}
 .sz-custom_check:checked ~ .sz-custom_label {background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/check_on.png") center center/cover no-repeat}
 .product-select .sz-custom_label {margin:10px; width:16px; height:16px;}
 /* .cartWrap .sz-custom_label {width:22px; height:22px;}
