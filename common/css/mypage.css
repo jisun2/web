@@ -119,7 +119,7 @@
 .myWrap .bltType1 li {margin-left:8px; line-height:1.6; text-indent:-8px}
 .myWrap .bltType1 li::before {margin-right:5px; display:inline-block; width:2px; height:2px; vertical-align:2px; content:''; border-radius:30%; -webkit-border-radius:30%;background-color:#888;}
 .int_btnType1 {display:inline-block; width:82%}
-.cont button {display:flex; justify-content:center; align-items:center; width:100%}
+.cont button {display:flex; justify-content:center; align-items:center; padding:10px 0; width:100%}
 .cont .accoNum {clear:both; margin-top:10px; display:inline-block; width:100%;}
 .cont .intType {clear:both; margin-top:10px;}
 .cont .btn_wht {font-size:12px; display:flex; justify-content:center; align-items:center; float:right; margin-left:1%; width:80px; height:38px; text-align:center; vertical-align:middle; color:#333; border:1px solid #333; border-radius:2.5px}
