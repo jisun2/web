@@ -27,8 +27,12 @@ button:disabled,input:disabled{opacity:1; -webkit-text-fill-color: inherit; back
 pre{white-space:pre-wrap}
 label{cursor:pointer}
 main{display:block}
-select {border-radius:0; /* 아이폰 사파리 보더  */ -webkit-appearance:none; /* 화살표 for chrome*/ -moz-appearance:none; /* 화살표 for firefox*/ appearance:none /* 화살표 */ }
-select::-ms-expand{ display:none}/* 화살표 IE10, 11*/
+select {border-radius:0; /* 아이폰 사파리 보더  */
+-webkit-appearance:none; /* 화살표 for chrome*/
+-ms-appearance: none;
+-moz-appearance:none; /* 화살표 for firefox*/
+appearance:none;}
+select::-ms-expand{display:none}/* 화살표 IE10, 11*/
 del{text-decoration:line-through}
 input[type=email],input[type=number],input[type=password],input[type=text]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border-radius:0;border-width:0}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none;-webkit-appearance:none;margin:0}
