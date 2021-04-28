@@ -19,8 +19,8 @@
 .myWrap .myInfoArea li.myBox .num {font-size:18px; font-weight:500; letter-spacing:normal; text-align:center; color:#fff}
 .myWrap .myInfoArea li.myBox .txt {display:inline-block; margin-top:8px; font-size:13px; font-weight:normal; letter-spacing:normal; text-align:center; color:#888}
 .myWrap .myInfoArea li.myBox:last-child {border:none}
-.myWrap .myInfoArea .myBox::after {content:'';display:block; clear:both}
-.myWrap .brGry::after {display:block; content: ''; clear:both; height:7px; background:#f0f0f0; border-top: 1px solid #d0d0d0;}
+.myWrap .myInfoArea .myBox::after {clear:both; content:''; display:block;}
+.myWrap .brGry::after {clear:both; display:block; content: ''; height:7px; background:#f0f0f0; border-top: 1px solid #d0d0d0;}
 /* 최근 구매 내역 / 문의 상품 선택하기 */
 .myWrap .my_lst {padding:25px 20px;}
 .myWrap .my_lst .btn_rel {margin:20px auto 0; width:90px; height:30px; text-align:center; vertical-align:middle; border-radius:3px; color:#555; border:1px solid #ababab;}
@@ -31,7 +31,7 @@
 .myWrap .bg_gry {padding:10px 15px; height:25px; line-height:1.8; background-color:#f9f9f9;}
 .myWrap .bg_gry.brB {border-bottom:1px solid #e5e5e5}
 .myWrap .bg_gry .num {margin-left:8px}
-.myWrap .odrNum {display:block; width:100%; margin-top:15px; overflow:hidden; font-size:13px; color:#888; font-weight:normal; border-radius:3px; border:1px solid #e5e5e5}
+.myWrap .odrNum {display:block; width:100%; margin-top:15px; overflow:hidden; font-weight:normal; border-radius:3px; border:1px solid #e5e5e5; font-size:13px; color:#888;}
 /* 하단 주문 목록, 취소/반품/교환 목록, 할인 쿠폰, 상품평 관리, 멤버십, 고객센터 */
 .myWrap .my_menu {padding:0 20px}
 .myWrap .my_menu li {font-size:16px; font-weight:500; color:#000; border-bottom:1px solid #f0f0f0}
