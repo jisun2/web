@@ -58,7 +58,7 @@
 .myWrap .pd_thum a {display:block;}
 .myWrap .pd_thum a img {width:80px; height:80px}
 .my_area .pd_deWrap {display:block; float:left; margin-left:15px; width:calc(100% - 72px)}
-.myWrap .pd_deWrap .pd_brd {display:-webkit-box; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; line-height: 1.3; word-break:break-all; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:13px; color:#555}
+.myWrap .pd_deWrap .pd_brd {display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height: 1.3; word-break:break-all; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:13px; color:#555}
 .myWrap .pd_deWrap .state {margin-top:8px; font-size:14px; font-weight:bold;}
 .ico.more_arw {float:right; width:10px; height:16px; margin-left:10px; background-position:-183px -45px}
 @media screen and (min-width:320px) and (max-width:860px) {
