@@ -336,7 +336,7 @@ input[type=checkbox] {display:none}
 .sz-select_list li {border-top:none;}
 .sz-select_list .selected.brdT {border-top:1px solid #e5e5e5}
 .sz-select_sub {z-index:1; overflow-x:hidden; display:none; position:absolute; width:100%; border:1px solid #e5e5e5; background-color:#fff;}
-.sz-select_sub li {z-index:3; padding:5px; cursor:pointer;width:100%; overflow:hidden;}
+.sz-select_sub li {z-index:3; padding:5px 0 5px 5px; cursor:pointer; width:99%; overflow:hidden;}
 .sz-custom_check {display:none}
 /* 셀렉트 옵션  공통 */
 .product-select {font-size:13px}
@@ -403,7 +403,7 @@ input[type=checkbox] {display:none}
 .pd_item_wrap {margin-top:19px; width:100%; overflow:hidden; position:relative;}
 .pd_item_wrap .list_pd.small {clear:both; display:flex; overflow-y:scroll; padding-bottom:5px}
 .pd_item_wrap .list_pd.small li:-webkit-scrollbar {display:none}
-.pd_item_wrap .list_pd.small>li {clear:both; padding-right:10px; width:139px; min-height:244px; max-height:310px; display:inline-block; border-top:0;}
+.pd_item_wrap .list_pd.small>li {clear:both; margin-right:10px; width:139px; min-width:139px; min-height:244px; max-height:310px; display:inline-block; border-top:0;}
 .pd_item_wrap .list_pd.small .link {width:139px; padding:0;}
 .pd_item_wrap .list_pd.small .link .img {width:100%; height:0;padding-top:100%;position:relative;display:block;margin-bottom:8px;}
 .pd_item_wrap .list_pd.small .price {margin-bottom:8px}
