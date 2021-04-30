@@ -41,6 +41,8 @@ input[type=checkbox] {display:none}
 /* .pdWrap .product_info .sale-btn {position:absolute; right:0; bottom:0; width:80px; height:24px; border-radius:3px; -webkit-border-radius:3px; vertical-align:middle; background-color:#333;  color: #fff; font-size:13px; font-weight:300} */
 .ico.down {width:20px; height:14px; margin:2px 0 0 8px; background-position:-233px -50px}
 .ico.like_s {width:15px; height:15px; background-position:-193px -45px}
+.list_bar .on .ico.like_s {background-position:-193px -63px}
+.list_bar .on .num {font-weight:normal; color:#ff4e25}
 .ico.more_arw {width:10px; height:16px; margin-left:10px; background-position:-183px -45px}
 .ico.more_down {width:15px; height:8px; margin:0 0 2px 10px; background-position:-133px -41px}
 .pdWrap .btnMore a {padding:15px 0}
@@ -169,7 +171,7 @@ input[type=checkbox] {display:none}
 .list_bar.mdf li:before {right:5px;}
 /* 이 상품은 어때요?  */
 .list_bar.rcn li {font-size:12px; line-height:3; color:#555}
-.list_bar.rcn li:before {content: '';position:absolute; top:11px; right:5px; width:1px; height:11px; background-color:#e5e5e5}
+.list_bar.rcn li:before {content: '';position:absolute; top:13px; right:5px; width:1px; height:11px; background-color:#e5e5e5}
 .product .tab_inr {clear:both; display:block; padding:40px 20px; text-align:center; top:53px; left:0; border:none}
 .product .tab .tab_inr.qna .pd10 {padding:20px}
 .product div.tab_inr.QA {padding:0;}
