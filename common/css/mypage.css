@@ -299,7 +299,7 @@
 .txtwrite_wrap .typeSelect {padding:15px 0; width:100%; white-space:nowrap; width:100%; overflow-y:hidden; font-size:13px;}
 .txtwrite_wrap .typeSelect ul {}
 .typeSelect ul li {float:left; box-sizing:border-box; text-align:center; margin: -1px 0 0 -1px; width:33.33%; font-weight:300; border:1px solid #e5e5e5;}
-.typeSelect ul li:first-child {border:.5px solid #e5e5e5}
+/* .typeSelect ul li:first-child {border:.5px solid #e5e5e5} */
 .typeSelect ul li:nth-child(1) a, .typeSelect ul li:nth-child(4) a, .typeSelect ul li:nth-child(7) a, .typeSelect ul li:nth-child(10) a {border-left:1px solid #e5e5e5}
 /* .typeSelect ul li::after {display:block; content:''; clear:both;} */
 .typeSelect ul li a {padding:12px 0; display:inline-block; width:100%; margin:0 auto; font-size:13px; font-weight:400; vertical-align:middle; color:#888;}
