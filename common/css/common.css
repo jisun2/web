@@ -519,7 +519,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .member-wrap .sz-select_list .selected::after {content: ''; display:block}
 .member-wrap .sz-select_sub {border:1px solid #e5e5e5;border-top:none;background-color:#fff}
 .member-wrap .sz-select_sub li {padding:10px; font-size:16px}
-.slick-slide a:focus, .slick-slide:focus {outline:0}
+.slick-slide a:focus, .slick-slide:focus {outline:none}
 .tab-content {display:none}
 .tab-content.active {display:block}
 .sz-select_list {position:relative;}

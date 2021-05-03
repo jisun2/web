@@ -290,17 +290,23 @@
 .txtwrite_wrap .input_textarea textarea {height:180px; padding:10px; border:1px solid #e5e5e5; border-radius:0}
 .txtwrite_wrap .input_textarea textarea:active {border-radius:0}
 .write_check {margin-top:10px; font-size:15px}
+
 /* btn */
 .myWrap .btn_sel {margin-top:15px;text-align:center; color:#555; border-radius:3px; border:1px solid #ababab}
 .myWrap .btn_sel a {display:block; padding:10.5px; font-size:16px; font-weight:500; color:#555}
 .last_btn_white {z-index:10; display:block; float:left; width:49%; border:1px solid #000; background:#fff; font-size:17px; color:#555; line-height:17px; height:45px;}
 .last_btn_black {display:block; float:right; width:100%; border:1px solid #000; background:#000; font-size:17px; color:#fff !important; line-height:17px; height:45px;}
 .last_btn_black.wd50 {width:49%;}
-.txtwrite_wrap .typeSelect {padding:15px 0; width:100%; white-space:nowrap; width:100%; overflow-y:hidden; font-size:13px}
-.typeSelect ul li {float:left; margin-top:5px; margin-right:10px; font-weight:300}
-.typeSelect ul li a {text-align: center; display:block; width:74px; height:30px; font-size:13px; font-weight:400; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
-.typeSelect ul li a span {padding-top:5px; display:inline-block;}
-.typeSelect ul li.on a {color:#fff; background-color:#3067cc}
+.txtwrite_wrap .typeSelect {padding:15px 0; width:100%; white-space:nowrap; width:100%; overflow-y:hidden; font-size:13px;}
+.txtwrite_wrap .typeSelect ul {min-width:297px}
+.typeSelect ul li {float:left; text-align:center; margin: -1px 0 0 -1px; width:33%; font-weight:300; border:1px solid #e5e5e5;}
+.typeSelect ul li:nth-child(4) a {border-left:1px solid #e5e5e5}
+/* .typeSelect ul li::after {display:block; content:''; clear:both;} */
+.typeSelect ul li a {padding:12px 0; display:inline-block; width:100%; margin:0 auto; font-size:13px; font-weight:400; vertical-align:middle; color:#888;}
+/* .typeSelect ul li a span {display:flex; text-align:center; align-items:center;} */
+.typeSelect ul li.on {padding:1px; background-color:#3067cc; border:0}
+.typeSelect ul li.br_none {border-top:none}
+.typeSelect ul li.on a {color:#fff;}
 .write_info {text-indent:-9px; padding:12px 0 0 10px; font-size:13px; color:#333}
 .write_info li {font-size:13px; list-style-position:inside;}
 .write_info_wrap  li {margin:0 0 8px; line-height:1.4; font-size:13px; font-weight:400; color:#333;}
@@ -319,7 +325,7 @@
     .sltType1 .sel_arrow {top:19px}
 }
 @media screen and (min-width:300px) and (max-width:359px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:62%}
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:73%}
 }
 @media screen and (min-width:360px) and (max-width:400px) {
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:77%}
