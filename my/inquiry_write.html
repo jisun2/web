@@ -178,5 +178,14 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+        var BtnOn = $(".typeSelect  ul li");
+        BtnOn.click(function(){
+        var target = $(this);
+        var index = target.index();
+        BtnOn.removeClass("on");
+        target.addClass("on");
+        });
+        </script>
     </body>
 </html>
