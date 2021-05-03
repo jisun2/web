@@ -297,11 +297,15 @@
 .last_btn_black {display:block; float:right; width:100%; border:1px solid #000; background:#000; font-size:17px; color:#fff !important; line-height:17px; height:45px;}
 .last_btn_black.wd50 {width:49%;}
 .txtwrite_wrap .typeSelect {padding:15px 0; width:100%; white-space:nowrap; width:100%; overflow-y:hidden; font-size:13px;}
-.txtwrite_wrap .typeSelect ul {}
+.txtwrite_wrap .typeSelect ul {position:relative;}
 .typeSelect ul li {float:left; box-sizing:border-box; text-align:center; margin: -1px 0 0 -1px; width:33.33%; font-weight:300; border:1px solid #e5e5e5;}
-/* .typeSelect ul li:first-child {border:.5px solid #e5e5e5} */
-.typeSelect ul li:nth-child(1) a, .typeSelect ul li:nth-child(4) a, .typeSelect ul li:nth-child(7) a, .typeSelect ul li:nth-child(10) a {border-left:1px solid #e5e5e5}
-/* .typeSelect ul li::after {display:block; content:''; clear:both;} */
+/* .typeSelect ul li:nth-child(*)::before {content:''; display:inline-block; position:absolute; top:-1px; left:0; width:1px; height:45px; background-color:#e5e5e5} */
+.typeSelect ul li:nth-child(1)::before {content:''; display:inline-block; position:absolute; top:-1px; left:0; width:1px; height:45px; background-color:#e5e5e5}
+.typeSelect ul li:nth-child(4)::before {content:''; display:inline-block; position:absolute; top:44px; left:0; width:1px; height:45px; background-color:#e5e5e5}
+.typeSelect ul li:nth-child(7)::before {content:''; display:inline-block; position:absolute; top:88px; left:0; width:1px; height:45px; background-color:#e5e5e5}
+
+/* .typeSelect ul li:nth-child(1), .typeSelect ul li:nth-child(4) a, .typeSelect ul li:nth-child(7) a, .typeSelect ul li:nth-child(10) a
+{border-left:1px solid #e5e5e5} */
 .typeSelect ul li a {padding:12px 0; display:inline-block; width:100%; margin:0 auto; font-size:13px; font-weight:400; vertical-align:middle; color:#888;}
 /* .typeSelect ul li a span {display:flex; text-align:center; align-items:center;} */
 .typeSelect ul li.on {padding:1px; background-color:#3067cc; border:0}
