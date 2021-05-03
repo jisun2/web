@@ -48,7 +48,6 @@
 .myWrap .pd_lst li.ord_box:last-child { padding-bottom:0; border-bottom:none}
 .myWrap .pd_lst li:nth-child(1) {padding-top:0} */
 .myWrap .pd_lst {padding:20px 15px;}
-/* .myWrap .pd_lst {display:inline-block; padding:20px 15px;} */
 .myWrap .pd_lst.pd {box-sizing:border-box; padding:16px;}
 .myWrap .pd_lst.pd0 {padding:0; width:100%;}
 .myWrap .pd_lst li.ord_box {display:flex; justify-content:center; align-items:center; float:left; min-height:58px; width:100%; padding:15px 0; border-bottom:1px solid #e5e5e5}
@@ -300,7 +299,8 @@
 .txtwrite_wrap .typeSelect {padding:15px 0; width:100%; white-space:nowrap; width:100%; overflow-y:hidden; font-size:13px;}
 .txtwrite_wrap .typeSelect ul {}
 .typeSelect ul li {float:left; box-sizing:border-box; text-align:center; margin: -1px 0 0 -1px; width:33.33%; font-weight:300; border:1px solid #e5e5e5;}
-.typeSelect ul li:nth-child(4) a, .typeSelect ul li:nth-child(7) a, .typeSelect ul li:nth-child(10) a {border-left:1px solid #e5e5e5}
+.typeSelect ul li:first-child {border:.5px solid #e5e5e5}
+.typeSelect ul li:nth-child(1) a, .typeSelect ul li:nth-child(4) a, .typeSelect ul li:nth-child(7) a, .typeSelect ul li:nth-child(10) a {border-left:1px solid #e5e5e5}
 /* .typeSelect ul li::after {display:block; content:''; clear:both;} */
 .typeSelect ul li a {padding:12px 0; display:inline-block; width:100%; margin:0 auto; font-size:13px; font-weight:400; vertical-align:middle; color:#888;}
 /* .typeSelect ul li a span {display:flex; text-align:center; align-items:center;} */
