@@ -57,7 +57,7 @@
 .myWrap .pd_thum a {display:block;}
 .myWrap .pd_thum a img {width:80px; height:80px}
 .my_area .pd_deWrap {display:block; float:left; margin-left:15px; width:calc(100% - 72px)}
-.myWrap .pd_deWrap .pd_brd {display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height: 1.3; word-break:break-all; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:13px; color:#555}
+.myWrap .pd_deWrap .pd_brd {display:-webkit-box; justify-content:center; align-items:center; text-overflow:ellipsis; overflow:hidden; line-height: 1.6; word-break:break-all; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:13px; color:#555}
 .myWrap .pd_deWrap .state {margin-top:8px; font-size:14px; font-weight:bold;}
 .ico.more_arw {float:right; width:10px; height:16px; margin-left:10px; background-position:-183px -45px}
 @media screen and (min-width:320px) and (max-width:860px) {
@@ -339,7 +339,7 @@
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:80%}
 }
 @media screen and (min-width:510px) and (max-width:890px) {
-    .txtwrite_wrap .iqy_inr .pd_deWrap {width:90%}
+    .txtwrite_wrap .iqy_inr .pd_deWrap {width:87%}
 }
 @media screen and (min-width:590px) and (max-width:1920px) {
     .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; height:155px;}
