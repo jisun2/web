@@ -304,6 +304,8 @@
 .typeSelect ul li:nth-child(4)::before {content:''; display:inline-block; position:absolute; top:33px; left:0; width:1px; height:33px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(7)::before {content:''; display:inline-block; position:absolute; top:66px; left:0; width:1px; height:33px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(10)::before {content:''; display:inline-block; position:absolute; top:99px; left:0; width:1px; height:33px; background-color:#e5e5e5}
+.typeSelect ul li:nth-child(13)::before {content:''; display:inline-block; position:absolute; top:132px; left:0; width:1px; height:33px; background-color:#e5e5e5}
+.typeSelect ul li:nth-child(16)::before {content:''; display:inline-block; position:absolute; top:165px; left:0; width:1px; height:33px; background-color:#e5e5e5}
 
 /* .typeSelect ul li:nth-child(1), .typeSelect ul li:nth-child(4) a, .typeSelect ul li:nth-child(7) a, .typeSelect ul li:nth-child(10) a
 {border-left:1px solid #e5e5e5} */
