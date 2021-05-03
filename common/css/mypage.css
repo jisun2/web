@@ -306,7 +306,6 @@
 .typeSelect ul li:nth-child(13)::before {content:''; display:inline-block; position:absolute; top:139px; left:0; width:1px; height:36px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(16)::before {content:''; display:inline-block; position:absolute; top:174px; left:0; width:1px; height:36px; background-color:#e5e5e5}
 .typeSelect ul li a {padding:7px 0; display:inline-block; width:100%; margin:0 auto; font-size:13px; font-weight:400; vertical-align:middle; color:#888;}
-/* .typeSelect ul li a span {display:flex; text-align:center; align-items:center;} */
 .typeSelect ul li.on {padding:1px; background-color:#3067cc; border:0}
 .typeSelect ul li.br_none {border-top:none}
 .typeSelect ul li.on a {color:#fff;}
@@ -317,6 +316,7 @@
 .write_info_wrap  li::before {display:inline-block; content:''; border-radius:20%; -webkit-border-radius:20%; width:2px;height:2px; vertical-align:2px; margin-right:3px; background-color:#888}
 .myWrap .pdB25 {display:inline-block; padding-bottom:25px}
 .img_rgt_wrap .img_lst {float:left; clear:both; width:100%;}
+.img_rgt_wrap .img_lst input[type="file"] {display:none}
 .img_rgt_wrap .img_lst a {display:block;}
 .img_rgt_wrap .img_lst .btn_del {position:absolute; right:0; top:0; width:22px; height:22px}
 .img_rgt_wrap .img_lst li {float:left; position:relative; width:23%; max-height:155px; margin-right:2.2%;}
