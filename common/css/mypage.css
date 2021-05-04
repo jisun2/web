@@ -298,15 +298,15 @@
 .last_btn_black.wd50 {width:49%;}
 .txtwrite_wrap .typeSelect {padding:15px 0; width:100%; white-space:nowrap; width:100%; overflow-y:hidden; font-size:13px;}
 .txtwrite_wrap .typeSelect ul {position:relative;}
-.typeSelect ul li {float:left; box-sizing:border-box; text-align:center; margin: -1px 0 0 -1px; width:33.33%; font-weight:300; border:1px solid #e5e5e5;}
+.typeSelect ul li {float:left; box-sizing:border-box; text-align:center; margin: -1px 0 0 -1px; width:33.33%; font-weight:300;}
 .typeSelect ul li:nth-child(1)::before {content:''; display:inline-block; position:absolute; top:-1px; left:0; width:1px; height:36px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(4)::before {content:''; display:inline-block; position:absolute; top:34px; left:0; width:1px; height:36px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(7)::before {content:''; display:inline-block; position:absolute; top:69px; left:0; width:1px; height:36px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(10)::before {content:''; display:inline-block; position:absolute; top:103px; left:0; width:1px; height:36px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(13)::before {content:''; display:inline-block; position:absolute; top:139px; left:0; width:1px; height:36px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(16)::before {content:''; display:inline-block; position:absolute; top:174px; left:0; width:1px; height:36px; background-color:#e5e5e5}
-.typeSelect ul li a {padding:7px 0; display:inline-block; width:100%; margin:0 auto; font-size:13px; font-weight:400; vertical-align:middle; color:#888;}
-.typeSelect ul li.on {padding:1px; background-color:#3067cc; border:0}
+.typeSelect ul li a {padding:7px 0; display:inline-block; width:99%; margin:0 auto; font-size:13px; font-weight:400; vertical-align:middle; color:#888; border:1px solid #e5e5e5;}
+.typeSelect ul li.on {background-color:#3067cc; border:0}
 .typeSelect ul li.br_none {border-top:none}
 .typeSelect ul li.on a {color:#fff;}
 .write_info {text-indent:-9px; padding:12px 0 0 10px; font-size:13px; color:#333}
