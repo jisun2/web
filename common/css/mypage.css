@@ -306,9 +306,9 @@
 .typeSelect ul li:nth-child(13)::before {content:''; display:inline-block; position:absolute; top:139px; left:0; width:1px; height:36px; background-color:#e5e5e5}
 .typeSelect ul li:nth-child(16)::before {content:''; display:inline-block; position:absolute; top:174px; left:0; width:1px; height:36px; background-color:#e5e5e5} */
 .typeSelect ul li a {display:inline-block; width:99%; height:36px; margin:0 auto; font-size:13px; font-weight:400; vertical-align:middle; color:#888;}
-.typeSelect ul li.on a::after {z-index:11; content:''; display:block; position:absolute; top:-.5px; right:-1px; width:1px; height:36px; background-color:#3067cc;}
+.typeSelect ul li.on a::after {z-index:11; content:''; display:block; position:absolute; top:0; right:-1px; width:2px; height:36px; background-color:#3067cc;}
 .typeSelect ul li.on a::before {z-index:11; content:''; display:block; position:absolute; bottom:0px; left:1px; width:100%; height:1px; background-color:#3067cc;}
-.typeSelect ul li.on a span {height:36px; color:#fff; padding-right:1.5px; background-color:#3067cc; border:1px solid #3067cc;}
+.typeSelect ul li.on a span {height:36px; color:#fff; padding-right:1px; background-color:#3067cc; border:1px solid #3067cc;}
 .typeSelect ul li a span {display:flex; justify-content:center; align-items:center; width:100%; height:34px; margin:0 auto; font-size:13px; font-weight:400;
     vertical-align:middle; color:#888; border:1px solid #e5e5e5}
 /* .typeSelect ul li.on a {margin-left:1px; width:100%; } */
