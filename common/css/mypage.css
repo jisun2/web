@@ -335,6 +335,9 @@
     .typeSelect ul li {margin: -1px 0 0 0px; width:33%}
     .typeSelect ul li.on a::before {left:.5px; width:100%;}
 }
+@media screen and (min-width:765px) and (max-width:769px) {
+    .typeSelect ul li.on a::before {left:1px; width:100%;}
+}
 @media screen and (min-width:220px) and (max-width:890px) {
     .sltType1 .sel_arrow {top:19px}
 }
