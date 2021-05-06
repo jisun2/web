@@ -43,10 +43,6 @@
 .myWrap .btn_more {margin:0 15px 20px 15px; text-align:center; color:#555; border-radius:3px; border:1px solid #ababab}
 .myWrap .btn_more button {padding:9.5px; width:100%; font-size:14px; font-weight:500; color:#555}
 .myWrap .btn_more .orange.num {font-size:16px;}
-/* .myWrap .pd_lst li.ord_box {float:left;margin:15px 0; width:100%; border-bottom:1px solid #e5e5e5}
-.myWrap .pd_lst li.ord_box:first-child {margin-top:0; padding-bottom:15px}
-.myWrap .pd_lst li.ord_box:last-child { padding-bottom:0; border-bottom:none}
-.myWrap .pd_lst li:nth-child(1) {padding-top:0} */
 .myWrap .pd_lst {padding:20px 15px;}
 .myWrap .pd_lst.pd {box-sizing:border-box; padding:16px;}
 .myWrap .pd_lst.pd0 {padding:0; width:100%;}
@@ -64,7 +60,7 @@
     .txtwrite_wrap .myWrap .pd_lst li.ord_box {width:94%;}
 }
 @media screen and (min-width:319px) and (max-width:375px) {
-    .myWrap .pd_lst li.ord_box {width:91%;}
+    .myWrap .pd_lst li.ord_box {width:94%;}
 }
 @media screen and (min-width:376px) and (max-width:500px) {
     .myWrap .pd_lst li.ord_box {width:96%;}
@@ -200,7 +196,7 @@
     .cont .int_btnType input {width:79%}
     .cont .int_btnType1 {width:72%}
 }
-@media screen and (min-width:590px) and (max-width:1920px) {
+@media screen and (min-width:590px) and (max-width:800px) {
     .cont .int_btnType input {width:86%}
     .cont .int_btnType1 {width:83%}
 }
@@ -321,7 +317,6 @@
 .img_rgt_wrap .img_lst li:nth-last-child(1) {margin-right:0%;}
 .img_rgt_wrap .img_lst img {width:100%; max-height:155px;}
 .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; max-height:155px; background-color:#e5e5e5; border:1px solid #333}
-
 @media screen and (min-width:200px) and (max-width:500px) {
     .typeSelect ul li {margin: -1px 0 0 0px; width:33%}
     .typeSelect ul li.on a::before {left:.5px; width:100%;}
@@ -329,7 +324,7 @@
 @media screen and (min-width:700px) and (max-width:769px) {
     .typeSelect ul li.on a::before {left:1px; width:100%;}
 }
-@media screen and (min-width:220px) and (max-width:890px) {
+@media screen and (min-width:220px) and (max-width:800px) {
     .sltType1 .sel_arrow {top:19px}
 }
 @media screen and (min-width:300px) and (max-width:359px) {
@@ -344,7 +339,7 @@
 @media screen and (min-width:510px) and (max-width:890px) {
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:87%}
 }
-@media screen and (min-width:590px) and (max-width:1920px) {
+@media screen and (min-width:590px) and (max-width:800px) {
     .img_rgt_wrap .img_lst .img_rgt {display:block; width:100%; min-height:74px; height:155px;}
 }
 
