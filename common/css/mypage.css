@@ -64,7 +64,7 @@
     .txtwrite_wrap .myWrap .pd_lst li.ord_box {width:94%;}
 }
 @media screen and (min-width:319px) and (max-width:375px) {
-    .myWrap .pd_lst li.ord_box {width:90%;}
+    .myWrap .pd_lst li.ord_box {width:91%;}
 }
 
 /* -------------------------------------------------회원탈퇴------------------------------------------------- */
