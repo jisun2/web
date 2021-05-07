@@ -25,7 +25,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="container">
                 <div class="inaWrap">
                     <div class="txt">
@@ -37,7 +36,6 @@
                             <li>간편 인증으로 해제</li>
                         </ul>
                     </div>
-
                     <div id="tab_cont">
                         <div class="cont">
                                 <p> <span class="red">[필수]</span> 개인정보 수집 동의</p>
@@ -84,10 +82,7 @@
                                 <li>인증이 불가할 경우 고객센터(1599-7616)로 문의해 주시기 바랍니다.</li>
                             </ul>
                         </div>
-
                     </div>
-                    <button id="toastButton">toast button</button>
-                    <div id="toast">Toast Message</div>
                 </div>
             </div>
         </div>
@@ -104,21 +99,5 @@
             tabCont.eq(index).css("display","block");
             });
       </script>
-
-      <script>
-          const toast = document.getElementById('toast');  // id가 toast인 요소 div
-          let isToastShown = false;
-          // id가 toastButton인 요소를 클릭하면 아래 함수가 호출됨
-          document.getElementById('toastButton').addEventListener('click', function () {
-              if (isToastShown) return;   // 토스트 메시지가 띄어져 있다면 함수를 끝냄
-              isToastShown = true;
-              toast.classList.add('show');    // show라는 클래스를 추가해서 토스트 메시지를 띄우는 애니메이션을 발동시킴
-              setTimeout(function () {
-                  // 2700ms 후에 show 클래스를 제거함
-                  toast.classList.remove('show');
-                  isToastShown = false;
-              }, 2700);
-          });
-    </script>
     </body>
 </html>
