@@ -442,12 +442,7 @@ input[type=checkbox] {display:none}
 .write_check .input_checkbox.mgl20 {margin-left:20px;}
 .txtReview_wrap h2 {padding:25px 20px}
 .typeSelect {position:relative; width:100%; white-space:nowrap; font-size:13px}
-.typeSelect .ovr_x {display:flex; padding-bottom:15px; width:100%; overflow-y:hidden; white-space:nowrap
--ms-overflow-style:none;
-}
-.typeSelect .ovr_x::-webkit-scrollbar{
-    display:none
-}
+.typeSelect .ovr_x {display:flex; padding-bottom:15px; width:100%; overflow-y:hidden; white-space:nowrap}
 .typeSelect ul li {float:left; margin-top:5px; margin-right:10px; min-height:32px; max-height:34px; font-weight:300}
 .typeSelect ul li a {padding:4px 13px; min-width:62px; max-height:15px; font-size:15px; font-weight:400; vertical-align:middle; border-radius:50px 50px; -webkit-border-radius:50px 50px; color:#888; background-color:#f0f0f0}
 .typeSelect ul li.on a {color:#fff; background-color:#3067cc}
