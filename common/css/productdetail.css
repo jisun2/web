@@ -888,7 +888,7 @@ input[type=text].text-input.phone-last {width:70%}
 .radio_box .input_radio .date {color:#ababab}
 .radio_box .input_radio label:after {top:50%}
 .input_radio .txt {padding-left:35px; font-size:13px; color:#000}
-.paymt_order_applied {height:calc(100vh - 60px); padding:0 0 65px}
+.paymt_order_applied {min-height:calc(100vh); padding:0 0 65px}
 .paymt_order_applied .input_radio label:after {display:none; background-color:#ff4e25; border-radius:50%; position:absolute; top:49%; left:7px; width:10px; height:10px; content:"";-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
 .paymt_order_applied .input_radio input:checked + label:before {border-color:#ff4e25;}
 .paymt_order_applied .input_radio label:before, .paymt_order_applied .input_radio_check label:before
