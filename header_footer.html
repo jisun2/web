@@ -114,19 +114,17 @@
                 </div>
             </div>
             <div id="container">
-
-              <div style="width: 100%; height: 800px; background-color:#e5e5e5">기존 ui</div>
-
-              <div class="fixed_nav">
-                  <ul class="fbn-list">
-                      <li><button type="button"><span class="ico fbn-item cate"></span><span class="txt">카테고리</span></button></li>
-                      <li> <button type="button"><span class="ico fbn-item search"></span><span class="txt">검색</span></button></li>
-                      <li> <button type="button"><span class="ico fbn-item home"></span><span class="blind">홈</span></button></li>
-                      <li> <button type="button"><span class="ico fbn-item mypage"></span><span class="txt">마이 페이지</span></button></li>
-                      <li> <button type="button"><span class="ico fbn-item product"></span><span class="txt">최근 본 상품</span></button></li>
-                  </ul>
-              </div>
-          </div>
+                <div style="width: 100%; height:1800px; background-color:#e5e5e5">기존 ui</div>
+                <div class="fixed_nav bar_tabnav on_m nav-down">
+                    <ul class="fbn-list list_tab dis_f">
+                          <li><button type="button"><span class="ico fbn-item cate"></span><span class="txt">카테고리</span></button></li>
+                          <li> <button type="button"><span class="ico fbn-item search"></span><span class="txt">검색</span></button></li>
+                          <li> <button type="button"><span class="ico fbn-item home"></span><span class="blind">홈</span></button></li>
+                          <li> <button type="button"><span class="ico fbn-item mypage"></span><span class="txt">마이 페이지</span></button></li>
+                          <li> <button type="button"><span class="ico fbn-item product"></span><span class="txt">최근 본 상품</span></button></li>
+                    </ul>
+                </div>
+            </div>
             <div id="footer">
                 <div class="footer_top">
                     <button type="button">로그아웃</button>
@@ -198,36 +196,125 @@
                     </div>
                 </div>
             </div>
+            <div data-v-b30e71ac="" class="_button_top_wrap nav-up">
+                <div class="" style="position:relative;">
+                    <a data-v-b30e71ac="" href="#"><img data-v-b30e71ac="" src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/btn_go_to_top.png" width="40" height="" alt=""></a>
+                </div>
+            </div>
         </div>
         <script type="text/javascript">
             $(function(){
                 $(window).scroll(function(){
                     var nowScroll = $(document).scrollTop();
                     // 스크롤 값이 120보다 크다면 gnb 나타나도록 만들기
-                    if(nowScroll > 120){ //     !=0
+                    if(nowScroll < 1200 ){ //     !=0
                         $('.fixed_nav').css('bottom', '0');
                         } else {
                         $('.fixed_nav').css('bottom', '-121px');
                     }
                 });
             });
-            $(function(){
-                var tipToggle = function () {
-                  var $btn_tip_toggle = $('.button_tip_toggle'),
-                      $cont_tip_toggle = $('.cont_tip_toggle');
-                  $btn_tip_toggle.off().on('click', function(e) {
-                      e.preventDefault();
-                      $(this).toggleClass('on');
-                      $(this).next().toggle();
-                  });
-              }
-              tipToggle();
-                var windowWidth = $(window).with();
-                var pcOpen = $('.pc720')
-                if(windowWidth<530){
-                    pcOpen.show();
+
+            var prevScrollTop = 0;
+            var nowScrollTop = 0;
+
+            function wheelDelta(){
+                return prevScrollTop - nowScrollTop > 0 ? 'up' : 'down';
+            };
+            $(window).on('scroll', function(){
+            nowScrollTop = $(this).scrollTop();
+            if(wheelDelta() == 'down'){
+            }
+            if(wheelDelta() == 'up'){
+            }
+            prevScrollTop = nowScrollTop;
+            });
+                $(function(){
+                    var tipToggle = function () {
+                      var $btn_tip_toggle = $('.button_tip_toggle'),
+                          $cont_tip_toggle = $('.cont_tip_toggle');
+                      $btn_tip_toggle.off().on('click', function(e) {
+                          e.preventDefault();
+                          $(this).toggleClass('on');
+                          $(this).next().toggle();
+                      });
+                  }
+                  tipToggle();
+                    var windowWidth = $(window).with();
+                    var pcOpen = $('.pc720')
+                    if(windowWidth<530){
+                        pcOpen.show();
+                    }
+                })
+                var lastScrollTop = 0;
+            var delta = 55;
+            $(window).on('scroll', function() {
+
+                // 2020-11-30 theos
+                // 기획전 event_view_floating 영역 상단 고정 Start
+                var $floating = $('#floating')
+                if ($floating.length > 0) {
+                    var $fix = $floating.find('.event_view_floating'),
+                        objTop = $floating.offset().top,
+                        winTop = $(window).scrollTop();
+
+                    if (objTop <= winTop) {
+                        $fix.addClass('mfixScroll')
+
+                        if ($("header").css("top") == '0px') {
+                            $fix.css('top', '50px')
+                        } else {
+                            $fix.css('top', '0px')
+                        }
+                    } else {
+                        $fix.removeClass('mfixScroll')
+                    }
+
+                    if ($fix.css('position') == 'fixed') {
+                        $fix.css({left: 0 - $(this).scrollLeft()});
+                    }
                 }
-            })
+                // 기획전 event_view_floating 영역 상단 고정 END
+
+                var st = $(this).scrollTop();
+                if (Math.abs(lastScrollTop - st) <= delta) return;
+                if(st < 10){
+                    $('._button_top_wrap').fadeOut('fast');
+                }
+                if ((st > lastScrollTop) && (lastScrollTop > 0)) {
+                    $("header").css({"top": "-55px"});
+                    $('._button_top_wrap').fadeIn('fast');
+                    if ($('.top_banner').hasClass('hide')){
+                        //$('.site_header').removeClass('nav-down').addClass('nav-up');
+                        $('.H_SlideMenuWrap').removeClass('nav-down').addClass('nav-up');
+                        $('.bar_tabnav').removeClass('nav-down').addClass('nav-up');
+                        $('._button_top_wrap').removeClass('nav-down').addClass('nav-up');
+                    }else{
+                        //$('.site_header').removeClass('nav-down').addClass('nav-up2');
+                        // $('.H_SlideMenuWrap').removeClass('nav-down').addClass('nav-up2');
+                        $('.bar_tabnav').removeClass('nav-down').addClass('nav-up');
+                        $('._button_top_wrap').removeClass('nav-down').addClass('nav-up');
+                    }
+                    // $('#selectInfoTab').css({'top':'0','position':'sticky','z-index':'1'});
+                } else {
+                    $("header").css({"top": "0"});
+                    if (st + $(window).height() < $(document).height()) {
+                        if ($('.top_banner').hasClass('hide')) {
+                            //$('.site_header').removeClass('nav-up').addClass('nav-down');
+                            $('.H_SlideMenuWrap').removeClass('nav-up').addClass('nav-down');
+                            $('.bar_tabnav').removeClass('nav-up').addClass('nav-down');
+                            $('._button_top_wrap').removeClass('nav-up').addClass('nav-down');
+                        }else{
+                            //$('.site_header').removeClass('nav-up2').addClass('nav-down');
+                            // $('.H_SlideMenuWrap').removeClass('nav-up2').addClass('nav-down');
+                            $('.bar_tabnav').removeClass('nav-up').addClass('nav-down');
+                            $('._button_top_wrap').removeClass('nav-up').addClass('nav-down');
+                        }
+                    }
+                    $('#selectInfoTab').css({'top':$('.site_header').height(),'position':'sticky','z-index':'1'});
+                }
+                lastScrollTop = st;
+            });
       </script>
     </body>
 </html>
