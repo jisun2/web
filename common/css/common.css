@@ -483,7 +483,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .tooltip:hover .tooltiptext1 {visibility:visible} */
 /* 공통 TopBTN */
 ._button_top_wrap {overflow-x:hidden; max-width:720px; position:fixed; bottom:20px; right:20px!important; transition: bottom 0.1s ease-in-out; -webkit-transition: bottom 0.1s ease-in-out; -moz-transition: bottom 0.1s ease-in-out; -ms-transition: bottom 0.1s ease-in-out; -o-transition: bottom 0.1s ease-in-out;padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom);}
-._button_top_wrap.nav-up {bottom:0}
+._button_top_wrap.nav-up {bottom:20px}
 ._button_top_wrap.nav-down {right:20px; bottom:80px; right:0; overflow-x:hidden;}
 ._button_top_wrap a {display:block; width:40px; height:40px;}
 ._button_top_wrap a img {display:block; right:20px; bottom:20px; width:40px; height:40px;}
