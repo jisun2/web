@@ -260,7 +260,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .input_textarea{display:inline-block}
 .input_textarea textarea{display:inline-block;font-size:14px;line-height:22px;vertical-align:top;background-color:transparent;overflow-x:hidden;overflow-y:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;min-height:120px;width:100%}
 .input_textarea .count{text-align:right;font-size:13px;line-height:22px;margin-top:10px}
-
+div {word-break: }
 select {padding:10px; border-radius:0; background-color:#fff; color:#ababab;}
 input[type=text], input[type=tel], input[type=number], input[type=password]
 {padding:5px 10px; width:100%; height:40px; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none; font-family:'Noto Sans KR'}
@@ -357,8 +357,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .comp_info .btn {padding:0 20px; text-align: center;}
 .btn .btn a {padding: 15px 0; display:inline-block; width:100%; border:1px solid #111; border-radius:3px; color:#000; font-weight:500; text-align:center; font-size:17px}
 .comp_info a.btn_bk {margin-top:12px; color:#fff; background-color:#111}
-.last_btn_wrap {z-index:5;padding: 12px 20px 44px; position:sticky; bottom:0; box-shadow: 0px -5px 15px 0px rgb(0 0 0 / 5%);
-    overflow: hidden; margin:15px auto 0;max-width:720px; background:#fff; border-top:1px solid #d0d0d0; font-size: unset;}
+.last_btn_wrap {z-index:5;padding: 12px 20px 44px; position:sticky; bottom:0; box-shadow: 0px -5px 15px 0px rgba(0 0 0 / 5%); overflow: hidden; margin:15px auto 0;max-width:720px; background:#fff; border-top:1px solid #d0d0d0; font-size: unset;}
 
 /* badge */
 .badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:58px; max-height:24px; font-family:'Noto Sans KR'; font-size:13px}
@@ -562,7 +561,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .input_checkbox label:before, .input_radio_check label:before {border-radius:2px;}
 .input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {background-color: #333; color:#fff; width:300px; height:30px;}
 /*footter start*/
-#footer {padding:20px; background-color:#f9f9f9;}
+#footer {padding:20px 20px 100px 20px; background-color:#f9f9f9;}
 #footer .footer_top {overflow: hidden}
 #footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height:30px; font-size: 14px; font-weight:500; color: #888; margin-bottom: 14px}
 #footer .footer_top div {display:inline-block;width:100%;border-bottom: 1px solid #e5e5e5; font-family: 'Noto Sans KR'; font-size: 14px; color: #ababab}
