@@ -155,7 +155,6 @@ td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].erro
 .white .btn_like .count{color:#fff!important}
 .tc_b,
 .tc_b [class^=btn_]{color:#ababab}
-
 select, button:focus {outline:none}
 .order_discontent select[disabled],
 .table_st .disabled :not(.alram){color:#ababab!important}
@@ -260,7 +259,6 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .input_textarea{display:inline-block}
 .input_textarea textarea{display:inline-block;font-size:14px;line-height:22px;vertical-align:top;background-color:transparent;overflow-x:hidden;overflow-y:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;min-height:120px;width:100%}
 .input_textarea .count{text-align:right;font-size:13px;line-height:22px;margin-top:10px}
-div {word-break: }
 select {padding:10px; border-radius:0; background-color:#fff; color:#ababab;}
 input[type=text], input[type=tel], input[type=number], input[type=password]
 {padding:5px 10px; width:100%; height:40px; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none; font-family:'Noto Sans KR'}
@@ -296,7 +294,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
             transform: translate3d(0, 0, 0);
 }
 .slick-track {position:relative; top:0; left:0; display:block; margin-left:auto; margin-right:auto;}
-.slick-track:before,.slick-track:after{display: table; content: '';}
+.slick-track:before,.slick-track:after{display:table; content: '';}
 .slick-track:after {clear:both;}
 .slick-loading .slick-track {visibility:hidden;}
 .slick-slide {float:left; height:100%; min-height:1px}
@@ -366,7 +364,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .badge.bk {background-color:#000; color:#fff}
 /* 옵션 수량 버튼  */
 .count-input-box {float:right; min-width:90px; background-color:#fff;}
-.count-input-box::after {content: ''; display: block; clear: both}
+.count-input-box::after {content: ''; display: block; clear:both}
 .count-input-box button,.count-input-box input {float: left; text-align: center; border: 1px solid #e5e5e5}
 .count-input-box .count-btn {width: 30px; height: 30px; background-color: #fff}
 .count-input-box .count-btn.minus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more_active-icon.png") center center/12px 1px no-repeat}
