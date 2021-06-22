@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>검색 메인_default</title>
+        <title>리뉴얼 공통</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="common/css/common.css">
@@ -13,7 +13,7 @@
     </head>
     <body>
         <div id="wrap" class="wd720">
-            <div id="header" class="clear">
+            <div id="header">
                 <hr>
                 메인
                 <hr>
@@ -201,25 +201,6 @@
             </div>
         </div>
         <script type="text/javascript">
-            // $(function(){
-            //     $(window).scroll(function(){
-            //         var nowScroll = $(document).scrollTop();
-            //         // 스크롤 값이 120보다 크다면 gnb 나타나도록 만들기
-            //         if(nowScroll < 120 ){ //     !=0
-            //
-            //             $('.fixed_nav').css('bottom', '0');
-            //             } else {
-            //             $('.fixed_nav').css('bottom', '-121px');
-            //         }
-            //         if(nowScroll < 120 ){ //     !=0
-            //
-            //             $('.fixed_nav').css('bottom', '0');
-            //             } else {
-            //             $('.fixed_nav').css('bottom', '-121px');
-            //         }
-            //     });
-            // });
-
             var prevScrollTop = 0;
             var nowScrollTop = 0;
 
@@ -246,17 +227,15 @@
                     });
                 }
                 tipToggle();
-                var windowWidth = $(window).with();
-                var pcOpen = $('.pc720')
+                var windowWidth = $(window).with();1
                 if(windowWidth<530){
                     pcOpen.show();
                 }
             })
-            
+
             var lastScrollTop = 0;
             var delta = 55;
             $(window).on('scroll', function() {
-
                 var st = $(this).scrollTop();
                 if (Math.abs(lastScrollTop - st) <= delta) return;
                 if(st < 10){
