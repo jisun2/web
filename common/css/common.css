@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 body,option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
 input[type=number] {font-family:'proxima-nova' !important}
 html{font-size:14px;line-height:20px;color:#555}
@@ -12,7 +11,7 @@ dd,dl,h1,h2,h3,h4,h5,input,p,pre{margin:0}
 legend,td,th{padding:0}  /* input[type=email],input[type=number],input[type=password],input[type=text] */
 button,input[type=email],input[type=number],input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button,input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 button,textarea{border:0}
-/* input, button:focus {outline:none} */
+input, button:focus {outline:none}
 textarea{resize:none;padding:0}
 textarea:focus {outline:none}
 button{padding:0;background-color:rgba(0,0,0,0);border-radius:0;-webkit-border-radius:0; cursor:pointer}
@@ -38,7 +37,8 @@ input[type=email],input[type=number],input[type=password],input[type=text]{-webk
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none;-webkit-appearance:none;margin:0}
 input[type=number]{-moz-appearance:textfield}
 input::-ms-clear{display:none}
-.input_check label:before,
+.pos_rel {position:relative}
+/* .input_check label:before,
 .pos_center_after:after,
 .pos_center_before:before,
 .spr_after:after,
@@ -65,7 +65,7 @@ input::-ms-clear{display:none}
 .pos_center_before.v:before,
 .lnb_with_cont .cont>.func>li:first-child:after,
 .snb.magazine li+li:before,
-.viewdetail .info .links li+li:before{left:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%)}
+.viewdetail .info .links li+li:before{left:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%)} */
 .hide{display:none!important}
 .light[class*=btn_],
 .list_tab .active a,
@@ -306,6 +306,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .slick-loading .slick-slide {visibility:hidden;}
 .slick-vertical .slick-slide {display:block; height:auto; border:1px solid transparent;}
 .slick-arrow.slick-hidden {display:none}
+
 .s_out,legend{position:absolute; width:0; height:0; line-height:0; overflow:hidden; text-indent:10rem;white-space:nowrap;color:rgba(0,0,0,0);border:0;padding:0;}
 .ellipsis {display:block; display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height:18px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;}
 .ellipsis2 {display:block; display:-webkit-box; white-space:nowrap; word-wrap:normal; line-height:17px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:ellipsis; overflow:hidden}
@@ -428,7 +429,8 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
     -o-transform: translate(-50%,-7%) rotateZ(-45deg);
     transform: translate(-50%,-7%) rotateZ(-45deg);
 }
-
+.search {background-position: -201px 0px}
+.search {width:20px; height:20px; background-position: -59px -27px; background-repeat:no-repeat;}
 #header {clear:both; vertical-align:middle}
 #header::after {content:'';display:block;width:0;height:0;line-height:0;opacity:0;overflow:hidden;clear:both}
 #header .popup {display:block; border-bottom:1px solid #d0d0d0}
@@ -445,7 +447,6 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #header .btn_area .ico {margin:9px; width:22px; height:22px; overflow: hidden;}
 #header .btn_area .home {background-position: -148px 0px}
 #header .btn_area .bag {background-position: -175px 0px}
-#header .btn_area .search {background-position: -201px 0px}
 #header .btn_area .logom {background-position: -119px 0px; width:26px; height:24px}
 #header .btn_area .noti {background-position: -226px 0px}
 #header .btn_area .close {background-position: -265px 0px}
@@ -459,9 +460,8 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #container .fixed_nav.hide {bottom:-10%}
 #container .fixed_nav.nav-down {display:block;}
 #container .fixed_nav.nav-up {display:none;}
-#container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
+#container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0; font-size:9px} 
 #container .fixed_nav .cate {width:20px; height:20px; background-position: -36px -23px; background-repeat:no-repeat;}
-#container .fixed_nav .search {width:20px; height:20px; background-position: -59px -27px; background-repeat:no-repeat;}
 #container .fixed_nav .home {margin-bottom:10px !important; width:32px; height:32px; background-position: 0px -27px; background-repeat:no-repeat;}
 #container .fixed_nav .mypage {width:20px; height:20px; background-position: -84px -27px; background-repeat:no-repeat;}
 #container .fixed_nav .product {width:20px; height:20px; background-position: -109px -28px; background-repeat:no-repeat;}
@@ -581,7 +581,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #footer table tr:nth-child(3) td {line-height: 16px}
 #footer table tr:nth-child(4) a span {text-decoration: underline!important; color: #888; font-weight:500}
 #footer .footer_bottom {margin-top: 25px}
-#footer .outlink {display:inline-block; margin-bottom:30px; text-align: center}
+#footer .outlink {display:inline-block; text-align:center}
 #footer .outlink a {display:block;width:38.4px;height:38.4px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
 #footer .outlink li {margin-right: 12px; display:block;flex:1; float:left}
 #footer .outlink i {display:inline-block; position:relative; top:9.6px}
@@ -612,4 +612,13 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 50%; transform: translatex(-50%)}
     ._button_top_wrap {margin-right:calc(50% - 360px);}
+}
+
+
+.overflow_x {
+    overflow-x: auto
+  }
+
+  .justify_box .just_right {
+    float: right;
 }
