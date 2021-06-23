@@ -21,7 +21,7 @@
                     <div class="ss-box">
                         <form action="">
                             <div class="ss-text-box">
-                                <input type="text" class="ss-text" placeholder="검색어를 입력하세요" />
+                                <input type="text" id="txtOn" class="ss-text" placeholder="검색어를 입력하세요" />
                                 <input type="button" class="search_clear-btn" />
                             </div>
                             <button type="button" class="ss-cancel">취소</button>
@@ -176,6 +176,11 @@
                 //         $('.border_tab-list').removeClass('search_active');
                 //     }
                 // });
+
+                function fn_focus()
+                {
+                    document.getElementById("txtOn").focus();
+                }
 
                 $('.ss_major-slide').slick({
                     slidesToShow: 1,
