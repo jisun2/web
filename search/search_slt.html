@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 상품 상세 _ 상품 옵션</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/main.js"></script>
+        <script src="../common/lib/common.js"></script>
+        <script src="../common/lib/slick.min.js"></script>
+        <link rel="stylesheet" href="../common/css/color.css">
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/productdetail.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+        <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+        <!-- <script>
+        $( function() {
+          $( "#slider" ).slider();
+        } );
+        </script> -->
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            상세 정보
+                        </p>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico search"><span class="blind">서치 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">50</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                  <div class="headerWrap">
+                    <div class="box_left">
+                        <a class="logo_area" href="#"><h1 class="dis_in ico logo"><span class="blind">HIPHOPER</span></h1></a>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">31</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="container" class="pdWrap">
+
+                <!-- <div class="chckChoi">
+                    <label for="orderCheck">
+                            <input type="checkbox" id="orderCheck2" name="orderCheck1" value="ded" />
+                    </label>
+                    <label for="orderCheck">
+                            <input type="checkbox" class="order2" name="orderChec2" value="value" />
+                    </label>
+                    <label for="orderCheck">
+                            <input type="checkbox" class="order2" name="orderCheck3" value="" />
+                    </label>
+                </div> -->
+
+                <div class="btnArea">
+                    <div label="Save" onClick="save()" >
+                            save
+                    </div>
+
+                    <button class="btn" disabled="disabled" onclick="alert('버튼1 활성화');">
+                        버튼1
+                    </button>
+                    <button class="btn" disabled="disabled" onclick="alert('버튼2 활성화');">
+                        버튼2
+                    </button>
+                    <button class="btn" disabled="disabled" onclick="alert('버튼3 활성화');">
+                        버튼3
+                    </button>
+                    </div>
+                    <button class="btn" disabled="disabled" onclick="alert('버튼3 활성화');">
+                      버튼3
+                    </button>
+
+                <div class="checkT">
+                  <p>
+                    <input type="checkbox" id="order2_chk"/>
+                  </p>
+                  <p>
+                    <input type="checkbox" class="order2_chks"/>
+                  </p>
+                  <p>
+                    <input type="checkbox" class="order2_chks"/>
+                  </p>
+                </div>
+                <div class="slide-container clear">
+                   <div class="sliderX">
+                       <div class="img" style="">
+                           <img src="https://images.unsplash.com/photo-1604928141064-207cea6f571f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                       </div>
+                       <div class="img">
+                           <img src="https://images.unsplash.com/photo-1604769283067-12509928fdb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                       </div>
+                       <div class="img">
+                           <img src="https://images.unsplash.com/photo-1600073956897-4fc08a2b27d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                       </div>
+                       <div class="img">
+                           <img src="https://images.unsplash.com/photo-1603565671981-5d4986360d6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                       </div>
+                       <div class="img">
+                           <img src="https://images.unsplash.com/photo-1604756492314-704dee13ecea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                       </div>
+                       <div class="img">
+                           <img src="https://images.unsplash.com/photo-1604596036466-4a223443c46b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                       </div>
+                   </div>
+               </div>
+<!-- 
+                <script type="text/javascript">
+                function save() {
+                    alert("Java test");
+                }
+                function enableScroll() {
+                document.body.style.overflow = null;
+                }
+
+                    $(document).ready(function(){
+                    //전체 체크 클릭 시, 나머지 체크
+                    $("#order2_chk").click(function(){
+                    var order2Chk=$("#order2_chk").prop("checked");
+
+                    if(order2Chk){
+                        $(".order2_chks").prop("checked",true);
+                        $(".btnArea button").css({"backgroundColor":"#d2201d","cursor":"pointer","color":"#fff"}).prop("disabled",false);
+                    }
+                    else{
+                        $(".order2_chks").prop("checked",false);
+                        $(".btnArea button").css({"backgroundColor":"#cbcbcb","cursor":"auto","color":"#303033"}).prop("disabled",true);
+                    }
+                    });
+
+                    // 모든 체크박스를 클릭하면 버튼 활성화시키기
+                    $('.order2_chks').click(function(){
+                    var tmpp = $(this).prop('checked');
+                    //자식 체크 전체 체크시, 부모 체크박스 체크 됨
+                    var tt = $(".order2_chks").length;
+                    var ss = $(".order2_chks:checked").length;
+
+                    //선택한 체크박스 값이 true 이거나 체크박Q스 1개 이상 체크시 버튼 활성화시키기
+                    if(tmpp==true || ss>0){
+                    $(".btnArea button").css({"backgroundColor":"#d2201d","cursor":"pointer","color":"#fff"}).prop("disabled",false);
+                    }
+                    else{
+                    $(".btnArea button").css({"backgroundColor":"#cbcbcb","cursor":"auto","color":"#303033"}).prop("disabled",true);
+                    }
+
+
+                    // 체크박스가 모두 선택되었을 때 상위 체크박스 선택되도록 설정
+                    if(tt == ss){
+                        $("#order2_chk").prop("checked",true);
+                    }else{
+                        $("#order2_chk").prop("checked",false);
+                    }
+
+                    });
+
+
+                    }); -->
+                </script>
+
+                <div id="container_select">
+                    <div class="dd">
+                        <ul class="bb">
+                            <li class="item">
+                                <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="">
+                            </li>
+                            <li class="item">
+                                <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 옵션 S -->
+                    <div class="nav_fixed_wrap wd720">
+
+                            <form action="">
+                            	<div class="pf_fc-box hide" id="itemOption">
+                            		<button type="button" class="ico box_close">
+                            			<span class="blind">옵션선택 화면 전체 닫기</span>
+                            		</button>
+                            		<div class="check_box total">
+                                        <div class="slidecontainer">
+                                          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                        </div>
+
+                                        <div>
+                                            <span id="rangeValue">0</span>
+                                            <Input class="range" type="range" value="0" min="0" max="1000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+                                        </div>
+                                        <div class="container">
+                                            <a href="tel:010">전화번호:010-9381-9323</a>
+                                            <input class="variation" id="bluepurple" type="radio" value="1" name="color" checked="checked" />
+                                            <label for="bluepurple"></label><input class="variation" id="sunset" type="radio" value="2" name="color" />
+                                            <label for="sunset"></label><input class="variation" id="godiva" type="radio" value="3" name="color" />
+                                            <label for="godiva"></label><input class="variation" id="dark" type="radio" value="4" name="color" />
+                                            <label for="dark"></label><input class="variation" id="pinkaru" type="radio" value="5" name="color" />
+                                            <label for="pinkaru"></label>
+                                            <input class="variation" id="bluepurple" type="radio" value="1" name="color" checked="checked" />
+                                            <label for="bluepurple"></label><input class="variation" id="sunset" type="radio" value="2" name="color" />
+                                            <label for="sunset"></label><input class="variation" id="godiva" type="radio" value="3" name="color" />
+                                            <label for="godiva"></label><input class="variation" id="dark" type="radio" value="4" name="color" />
+                                            <label for="dark"></label><input class="variation" id="pinkaru" type="radio" value="5" name="color" />
+                                            <label for="volume"></label><input min="-10" max="10" value="80" step="1" type="range" />
+                                            <label for="pinkaru"></label>
+                                            <div class="dd" style="">
+                                                djfkdfjdkfj
+                                            </div>
+                                        </div>
+
+                                        <div slider id="slider-distance">
+                                          <div>
+                                            <div inverse-left style="width:70%;"></div>
+                                            <div inverse-right style="width:70%;"></div>
+                                            <div range style="left:30%;right:40%;"></div>
+                                            <span thumb style="left:30%;"></span>
+                                            <span thumb style="left:60%;"></span>
+                                            <div sign style="left:30%;">
+                                              <span id="value1">30</span>
+                                            </div>
+                                            <div sign style="left:60%;">
+                                              <span id="value1">60</span>
+                                            </div>
+                                          </div>
+                                          <input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="
+                                          this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                                          var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                          var children = this.parentNode.childNodes[1].childNodes;
+                                          children[1].style.width=value+'%';
+                                          children[5].style.left=value+'%';
+                                          children[7].style.left=value+'%';children[11].style.left=value+'%';
+                                          children[11].childNodes[1].innerHTML=this.value;" />
+
+                                          <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+                                          this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                                          var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                          var children = this.parentNode.childNodes[1].childNodes;
+                                          children[3].style.width=(100-value)+'%';
+                                          children[5].style.right=(100-value)+'%';
+                                          children[9].style.left=value+'%';children[13].style.left=value+'%';
+                                          children[13].childNodes[1].innerHTML=this.value;" />
+                                        </div>
+
+                                        <!-- <div class="range-slider">
+                                          <input class="range-slider__range" type="range" value="100" min="0" max="500">
+                                          <span class="range-slider__value">0</span>
+                                        </div>
+
+                                        <div class="range-slider">
+                                          <input class="range-slider__range" type="range" value="250" min="0" max="500" step="50">
+                                          <span class="range-slider__value">0</span>
+                                        </div>
+
+                                        <div class="range-slider">
+                                          <input class="range-slider__range" type="range" value="400" min="0" max="500">
+                                          <span class="range-slider__value">0</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- // 옵션 E -->
+                        <!-- 구매 버튼  -->
+                        <div class="nav_fixed_wrap wd720" id="btnOrder">
+                        	<ul class="pd_btn_box btn_buy2 hide">
+                        		<li><button type="button" class="pf-btn gray-btn" onclick="app.order('cart'); return false;">쇼핑백 담기</button></li>
+                        		<li><button type="button" class="pf-btn orange-btn" onclick="app.order('inst'); return false;">바로구매</button></li>
+                        	</ul>
+                        	<!-- like btn S  -->
+                        	<!-- <div class="pd_btn_box clear">
+                                <button type="button" class="orange_btn2">구매하기</button>
+                                <div class="button_like_new_wrap"><button type="button" class="button_like_new"><span class="blind">좋아요</span></button></div>
+                            </div> -->
+                        	<div class="pd_btn_box pl0">
+                        		<button type="button" class="orange_btn2 btn_buy1">구매하기</button>
+                        		<div class="button_like_new_wrap">
+                        			<!-- 좋아요 누르기 전 -->
+                        <!-- 			<button type="button" class="button_like_new" id="btn_like">
+                        				<span class="blind">좋아요</span>
+                        			</button> -->
+                        			<!-- 좋아요 누르기 후 -->
+                        			<button type="button" id="btn_favorite_ITEMQJEWB3Y" class="button_like_new btn_favorite_ITEMQJEWB3Y selected" data-item-id="ITEMQJEWB3Y" onclick="app.toggleFavorite('ITEMQJEWB3Y');">
+                        				<span class="blind">좋아요</span><span class="num favorite_cnt_ITEMQJEWB3Y" id="favorite_cnt_ITEMQJEWB3Y">
+                        		2
+                        				</span>
+                        			</button>
+                        		</div>
+                        	</div>
+                        </div>
+                        <!-- //구매 버튼 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- slick slider -->
+        <script src="../common/lib/slick.min.js"></script>
+        <script src="../common/lib/main.js"></script>
+        <script type="text/javascript">
+        //     function rangeSlide(value) {
+        //      document.getElementById('rangeValue').innerHTML = value;
+        //  }
+        // var slider = document.getElementById("myRange");
+        // var output = document.getElementById("demo");
+        // output.innerHTML = slider.value; // Display the default slider value
+        
+        // // Update the current slider value (each time you drag the slider handle)
+        // slider.oninput = function() {
+        //   output.innerHTML = this.value;
+        // }
+        $(document).ready(function() {
+	        var i=1;
+            $('.container label').click(function(){
+            $('.container').append("<div class='add'><a href='#'>gogogo"+i+"</a></div>");
+            i++;
+            });
+            $('.add a').click(function(){
+            $('add').addClass('hide');
+            });
+        });
+        $('.btn_buy1').on('click', function(){
+         $(this).parent().css('display', 'none');
+        $(this).parent().addClass('hide');
+        $('.btn_buy2, #itemOption').removeClass('hide');
+        $('.btn_buy2').addClass('hide');
+        $('html').addClass('scrollH');
+        // .css({'top':$('.site_header').height(),'position':'sticky','z-index':'1'});
+        });
+
+        $('.box_close').on('click', function(){
+            $('.btn_buy1').parent().removeClass('hide');
+            $('.btn_buy2, #itemOption').addClass('hide');
+            $('html').removeClass('scrollH');
+        });
+        $(this).on('click', '.review_txt_moreview', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('on');
+            $(this).children('p').toggleClass('_ellipsis');
+        })(jQuery);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>검색 메인_default</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/search.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="1">1</div>
+            <div id="2">2</div>
+            <div id="3">3</div>
+
+            <div id="header">
+                <div class="headerWrap">
+                    <div class="box_left">
+                        <a class="logo_area" href="#"><h1 class="dis_in ico logo"><span class="blind">HIPHOPER</span></h1></a>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">31</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="main_search-wrap">
+                    <div class="ms-box">
+                        <form action="" class="pos_rel">
+                            <input type="text" class="ms-text visi_hid" placeholder="힙합퍼">
+                            <!-- <input type="" class=""> -->
+                            <button type="submit" class="ico fbn-item search"><span class=""></span><span class="blind">검색</span></button>
+                        </form>
+                    </div>
+                    <div class="overflow_x">
+                        <ul class="ms-list">
+                            <li class="active"><a href="#" class="ms-item">랭킹</a></li>
+                            <li><a href="#" class="ms-item">의류</a></li>
+                            <li><a href="#" class="ms-item">슈즈</a></li>
+                            <li><a href="#" class="ms-item">악세사리</a></li>
+                            <li><a href="#" class="ms-item">라이프</a></li>
+                            <li><a href="#" class="ms-item">셀렉션</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div id="container">
+                    <div style="width: 100%; height:1800px; background-color:#e5e5e5">기존 ui</div>
+                    <div class="fixed_nav bar_tabnav on_m nav-down">
+                        <ul class="fbn-list list_tab dis_f">
+                              <li><button type="button"> <span class="ico fbn-item cate"></span><span class="txt">카테고리</span></button></li>
+                              <li> <button type="button"><span class="ico fbn-item search"></span><span class="txt">검색</span></button></li>
+                              <li> <button type="button"><span class="ico fbn-item home"></span><span class="blind">홈</span></button></li>
+                              <li> <button type="button"><span class="ico fbn-item mypage"></span><span class="txt">마이 페이지</span></button></li>
+                              <li> <button type="button"><span class="ico fbn-item product"></span><span class="txt">최근 본 상품</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("keydown", e => {
+            const key = document.getElementById(e.key);
+            if (key) key.classList.add('pressed');
+            });
+
+
+            window.addEventListener("keyup", e => {
+            const key = document.getElementById(e.key);
+            if (key) key.classList.remove('pressed');
+            });
+        //    $(document).ready(function(){
+        //     $(".fbn-item.search").click(function() {
+        //      $(this).siblings().removeClass('visi_hid');
+        //         })
+        //     });
+        //     });
+      
+            $(document).ready(function(){
+                $(".tooltiptext").show();
+                setTimeout(function () {
+                    $(".tooltiptext").hide();
+                }, 5000);
+                $(".ico.tip").click(function(){
+                    if($("#toolShow").css("display") != "block"){
+                        $("#toolShow").show();
+
+            var lastScrollTop = 0;
+            var delta = 55;
+            $(window).on('scroll', function() {
+                var st = $(this).scrollTop();
+                if (Math.abs(lastScrollTop - st) <= delta) return;
+                if(st < 10){
+                    $('._button_top_wrap').fadeOut('fast');
+                }
+                if ((st > lastScrollTop) && (lastScrollTop > 0)) {
+                    $("header").css({"top": "-55px"});
+                    $('._button_top_wrap').fadeIn('fast');
+                    if ($('.top_banner').hasClass('hide')){
+                        $('.H_SlideMenuWrap').removeClass('nav-down').addClass('nav-up');
+                        $('.bar_tabnav').removeClass('nav-down').addClass('nav-up');
+                        $('._button_top_wrap').removeClass('nav-down').addClass('nav-up');
+                    }else{
+                        $('.bar_tabnav').removeClass('nav-down').addClass('nav-up');
+                        $('._button_top_wrap').removeClass('nav-down').addClass('nav-up');
+                        $('.fixed_nav').removeClass('nav-down').addClass('nav-up');
+                    }
+                } else {
+                    $("header").css({"top": "0"});
+                    if (st + $(window).height() < $(document).height()) {
+                        if ($('.top_banner').hasClass('hide')) {
+                            $('.H_SlideMenuWrap').removeClass('nav-up').addClass('nav-down');
+                            $('.bar_tabnav').removeClass('nav-up').addClass('nav-down');
+                            $('._button_top_wrap').removeClass('nav-up').addClass('nav-down');
+                        }else{
+                            $('.bar_tabnav').removeClass('nav-up').addClass('nav-down');
+                            $('._button_top_wrap').removeClass('nav-up').addClass('nav-down');
+                            $('.fixed_nav').removeClass('nav-up').addClass('nav-down');
+                        }
+                    }
+                    $('#selectInfoTab').css({'top':$('.site_header').height(),'position':'sticky','z-index':'1'});
+                }
+                lastScrollTop = st;
+            });
+
+            (function () {
+                function autoWidth(ele, child, add) {
+                    var width = 0;
+
+                    $(child).each(function(i, e){
+                        width += $(e).width() * 1 + add;
+                    });
+
+                    $(ele).width(width);
+                }
+
+                autoWidth('.ms-list', '.ms-list li', 40);
+                autoWidth('.ss-list.first', '.ss-list.first li', 25);
+                autoWidth('.ss-list.second', '.ss-list.second li', 25);
+                autoWidth('.sbs-list', '.sbs-list li', 20);
+
+                $(window).scroll(function(){
+                    var nowScroll = $(window).scrollTop();
+
+                    if ( nowScroll > 80) {
+                        $('.ms-list').addClass('active');
+                        $('.fixed_b-nav').addClass('hide');
+                        $('.plc_fc-box.hastab').addClass('search_active');
+                        $('.plc_fc-box').addClass('active');
+                        $('.border_tab-list').addClass('search_active');
+                    } else {
+                        $('.ms-list').removeClass('active');
+                        $('.fixed_b-nav').removeClass('hide');
+                        $('.plc_fc-box.hastab').removeClass('search_active');
+                        $('.plc_fc-box').removeClass('active');
+                        $('.border_tab-list').removeClass('search_active');
+                    }
+                });
+
+                $('.ss_major-slide').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
+                });
+
+                // .ss-text 작성 시 x버튼 출력
+                $('.ss-text').keyup(function () {
+                    var valLeng = $(this).val().length;
+
+                    if (valLeng > 0) {
+                        $(this).siblings('.search_clear-btn').show().css('display', 'block');
+                    } else {
+                        $(this).siblings('.search_clear-btn').hide();
+                    }
+                });
+
+                $('.search_clear-btn').on('click touch', function () {
+                    $(this).siblings('.ss-text').val('');
+                    $(this).hide();
+                });
+
+                $('.filter_select').on('click touch', function () {
+                    $(this).toggleClass('active');
+                })
+            })(jQuery);
+        </script>
+    </body>
+</html>
