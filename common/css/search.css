@@ -3,6 +3,14 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
+
+::-webkit-scrollbar { width: 2px; height:6px; } /* 스크롤 바 */
+::-webkit-scrollbar-track { background-color:#fff; } /* 스크롤 바 밑의 배경 */
+::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; } /* 실질적 스크롤 바 */
+::-webkit-scrollbar-thumb:hover { background: #f5f5f5; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+::-webkit-scrollbar-thumb:active { background: #888; } /* 실질적 스크롤 바를 클릭할 때 */
+::-webkit-scrollbar-button { width:20px; height:10px; display: none; } /* 스크롤 바 상 하단 버튼 */
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box
@@ -373,12 +381,12 @@ body.scrollOff {
 .item_like-btn.active {
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/item_like_active-icon.png) center center/cover no-repeat
 }
- .search_clear-btn {
+ /* .search_clear-btn {
   width: 15px;
   height: 15px;
   padding: 0;
   background: url(../images/ico/ico_search_del.png) center center/cover no-repeat
-} 
+}  */
 .darkgray-btn {
   color: #fff;
   background-color: #2a2a2a;
@@ -2781,11 +2789,46 @@ body.scrollOff {
   vertical-align: middle
 } */
 
+/* 툴팁 */
+.tooltip {
+  width:100%;
+  padding:10px;
+  background-color: #3067cc;
+}
+.tooltip .txt {
+  width:100%;
+  background-color:#3067cc; color:#fff; text-align:left; font-size:12px; font-weight:300; line-height:15px;}
+.tooltip .txt:after {
+  content:'';position:absolute;top:100%; 
+  left:48%; border-width:5px;border-style:solid;
+  border-color:#3067cc transparent transparent transparent}
+
+.btn_del {
+  float:right;
+  font-size:12px; 
+  color:#fff;
+}
+
+.ss_fitr {
+  background-color: #f5f5f5;
+}
 
 .overflow_x {
   overflow-x: auto;
+}
+.overflow_x.mgTb {
+  overflow-x: auto;
   margin: 0 20px;
 }
+
+.scrB_none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrB_none::-webkit-scrollbar {
+  display: none;
+}
+
 /*
 .overflow_x .product_detail-table {
   min-width: 595px
@@ -3530,6 +3573,7 @@ body.scrollOff {
 } */
 
 .searchWrap .ss-box {
+  clear: both;
   padding: 8px 20px;
   position: sticky;
   top:0;
@@ -3538,7 +3582,7 @@ body.scrollOff {
 .searchWrap .ss-box::after {
   content: '';
   display: block;
-  clear: both
+  clear: both;
 }
 .searchWrap .ss-text-box {
   position: relative;
@@ -3671,7 +3715,7 @@ body.scrollOff {
   color: #555;
   font-size: 15px;
   border: 1px solid #e5e5e5;
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 30px
 }
 .searchWrap .ss-list .ss-item.gray {
@@ -4998,14 +5042,8 @@ body.scrollOff {
     top: 115px
   }
 }
-/* 스크롤 바 없애기 */
-/* .scrB_none {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.scrB_none::-webkit-scrollbar {
-  display: none;
-} */
+
+
 
 .searchWrap .ss-list {
   padding-bottom:10px;
@@ -5074,7 +5112,7 @@ body {
 }
 } */
 
-.error {250px; height: 20px; height:auto; position:fixed; margin:0 auto; left:25%; bottom:10%; z-index: 9999; background-color: #383838; color: #F0F0F0; font-family: Calibri; font-size: 15px; padding: 10px; text-align:center; border-radius:20px; -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1); -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1); box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);  }
+.toastPop {display:none; width: 250px; height: 20px; height:auto; position:fixed; margin:0 auto; left:25%; bottom:10%; z-index: 9999; background-color: #383838; color: #F0F0F0; font-family: Calibri; font-size: 15px; padding: 10px; text-align:center; border-radius:20px; -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1); -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1); box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);  }
 /* .searchWrd {text-align:center;} */
 
 .search_standard-wrap .ss-text{
