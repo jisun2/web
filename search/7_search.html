@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
         <link rel="stylesheet" href="../common/css/common.css">
-        <link rel="stylesheet" href="../common/css/slick.css">
+        <!-- <link rel="stylesheet" href="../common/css/slick.css"> -->
         <link rel="stylesheet" href="../common/css/search.css">
         <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
@@ -21,10 +21,13 @@
                     <div class="ss-box">
                         <form action="">
                             <div class="ss-text-box">
-                                <input type="search" class="ss-text" id="hhptemp" class="input_search" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" />
+                                <button type="button"class="search_clear-btn">
+                                    <span class="blind">검색어 삭제</span>
+                                </button>
+                                <input type="search" title="검색어 입력란" class="ss-text" id="hhptemp" class="input_search" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" />
                                 <!-- <input type="search" class="ss-text" id="idn" class="input_search" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" /> -->
                                 <!-- <input type="search" class="ss-text" id="siteSearchInput2" class="input_search" name="search" placeholder="검색어를 입력하세요" /> -->
-                                <input type="button" class="search_clear-btn" />
+                                <!-- <input type="button"  /> -->
                                 <button type="button" class="ss-cancel">취소</button>
                             </div>
                             <!-- <button type="submit"></button> -->
@@ -89,7 +92,7 @@
                             <div class="ss_major-item clearfix">
                                 <ul class="ss_major-list">
                                     <li class="active"><span class="ss_major_num">1.</span>반스 올드 스쿨</li>
-                                    <li class="active"><span class="ss_major_num">2.</span>뉴발란스 CTR 300</li>
+                                    <li class="active ellipsis"><span class="ss_major_num">2.</span>뉴발란스 CTR 300</li>
                                     <li class="active"><span class="ss_major_num">3.</span>나이키 운동화</li>
                                     <li><span class="ss_major_num">4.</span>후드티</li>
                                     <li><span class="ss_major_num">5.</span>나이키</li>
