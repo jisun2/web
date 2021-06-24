@@ -2784,7 +2784,7 @@ body.scrollOff {
 
 .overflow_x {
   overflow-x: auto;
-  margin-left:20px;
+  margin: 0 20px;
 }
 /*
 .overflow_x .product_detail-table {
@@ -3530,7 +3530,7 @@ body.scrollOff {
 } */
 
 .searchWrap .ss-box {
-  padding: 8px 15px;
+  padding: 8px 20px;
   position: sticky;
   top:0;
   background-color: #fff;
@@ -3544,13 +3544,12 @@ body.scrollOff {
   position: relative;
   float: left;
   width: 100%;
-  min-width: 283px;
 }
 .searchWrap .ss-text-box .search_clear-btn {
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_search_del.png)  center center/cover no-repeat
 }
 .searchWrap .ss-text {
-  /* min-width: 88%; */
+  position: relative;
   width: 93%;
   height: 39px;
   padding: 0 40px 0 10px;
@@ -3559,6 +3558,12 @@ body.scrollOff {
   color: #000;
   font-size: 16px;
   font-weight: 700;
+}
+
+@media screen and (min-width:100px) and (max-width:324px) {
+  .searchWrap .ss-text {
+    width: 85%;
+  }
 }
 
 @media screen and (min-width:320px) and (max-width:719px) {
@@ -3597,8 +3602,7 @@ body.scrollOff {
 }
 .searchWrap .ss-cancel {
   float: right;
-  /* margin-left:2%; */
-  margin-top: 10px;
+  margin-top: 8px;
   color: #000;
   background-color: transparent;
   font-size: 15px
@@ -3607,9 +3611,16 @@ body.scrollOff {
 .searchWrap .search_clear-btn {
   display: none;
   position: absolute;
-  right: 16.7%;
+  right: 20px;
   top: 12px;
   z-index: 1
+}
+
+/* @media screen and (max-width:719px) {
+  .searchWrap .search_clear-btn {
+    right: 16.7%;
+  } */
+  
 }
 .searchWrap .ss-content {
   padding: 0 0 10px 0
