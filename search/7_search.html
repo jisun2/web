@@ -20,16 +20,12 @@
                     <div class="ss-box">
                         <form action="">
                             <div class="ss-text-box">
+                                <input type="search" title="검색어 입력창" class="ss-text" id="hhptemp" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" />
                                 <button type="button" class="search_clear-btn">
                                     <span class="blind">검색어 삭제</span>
                                 </button>
-                                <input type="search" title="검색어 입력란" class="ss-text" id="hhptemp" class="input_search" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" />
-                                <!-- <input type="search" class="ss-text" id="idn" class="input_search" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" /> -->
-                                <!-- <input type="search" class="ss-text" id="siteSearchInput2" class="input_search" name="search" placeholder="검색어를 입력하세요" /> -->
-                                <!-- <input type="button"  /> -->
                                 <button type="button" class="ss-cancel">취소</button>
                             </div>
-                            <!-- <button type="submit"></button> -->
                         </form>
                     </div>
                     <!-- //검색창 -->
@@ -39,7 +35,7 @@
                             <span class="ss-title just_left">최근 검색어</span>
                             <button type="button" class="ss-btn just_right">전체 삭제</button>
                         </div>
-                        <div class="overflow_x mgTb">
+                        <div class="overflow_x mgTb pdB">
                             <ul class="ss-list first">
                                 <li><button type="button" class="ss-item gray">에어맥스 98</button></li>
                                 <li><button type="button" class="ss-item gray">운동화</button></li>
@@ -62,22 +58,22 @@
                         <!-- 추천 검색어 없을 때 -->
                         <!-- <p class="ss_none-text">아쉽게도 등록된 추천 검색어가 없어요.</p> -->
                         <!-- //추천 검색어 없을 때 -->
-                        <div class="overflow_x mgTb">
+                        <div class="overflow_x mgTb pdB">
                             <ul class="ss-list second">
                                 <li><button type="button" class="ss-item">#에어맥스 98</button></li>
                                 <li><button type="button" class="ss-item">#운동화</button></li>
                                 <li><button type="button" class="ss-item">#kf94</button></li>
                                 <li><button type="button" class="ss-item">#자켓</button></li>
-                                <li><button type="button" class="ss-item">#자켓자켓자켓자켓자켓자켓자켓자켓자켓자켓자켓</button></li>
+                                <li><button type="button" class="ss-item">#꼼데가르송 척테일러</button></li>
                                 <li><button type="button" class="ss-item">#아우터</button></li>
                             </ul>
                         </div>
                     </div>
                     <!-- 인기 검색어 -->
                     <div class="publi ss-content">
-                        <div class="ss-title-box pd20 justify_box">
+                        <div class="ss-title-box pd justify_box">
                             <span class="ss-title just_left">인기 검색어</span>
-                            <span class="ss-sub just_right">2020.04.08 기준</span>
+                            <span class="ss-sub just_right"><span class="num">2021.05.20</span> 기준</span>
                         </div>
                         <!-- 인기 검색어 없을 때  -->
                         <!-- <p class="ss_none-text">
@@ -90,18 +86,20 @@
                         <div class="ss_major-slide">
                             <div class="ss_major-item clearfix">
                                 <ul class="ss_major-list">
-                                    <li class="active"><span class="ss_major_num">1.</span>반스 올드 스쿨</li>
+                                    <li class="active ellipsis">
+                                        <span class="ss_major_num">1.</span>반스 올드 스쿨
+                                    </li>
                                     <li class="active ellipsis"><span class="ss_major_num">2.</span>뉴발란스 CTR 300</li>
-                                    <li class="active"><span class="ss_major_num">3.</span>나이키 운동화</li>
-                                    <li><span class="ss_major_num">4.</span>후드티</li>
-                                    <li><span class="ss_major_num">5.</span>나이키</li>
+                                    <li class="active ellipsis"><span class="ss_major_num">3.</span>나이키 운동화</li>
+                                    <li class="ellipsis"><span class="ss_major_num">4.</span>후드티</li>
+                                    <li class="ellipsis"><span class="ss_major_num">5.</span>나이키</li>
                                 </ul>
                                 <ul class="ss_major-list">
-                                    <li><span class="ss_major_num">6.</span>패딩</li>
-                                    <li><span class="ss_major_num">7.</span>니트</li>
-                                    <li><span class="ss_major_num">8.</span>아디다스</li>
-                                    <li><span class="ss_major_num">9.</span>뉴발란스 608</li>
-                                    <li><span class="ss_major_num">10.</span>후리스 자켓</li>
+                                    <li class="ellipsis"><span class="ss_major_num">6.</span>꼼데가르송 척테일러</li>
+                                    <li class="ellipsis"><span class="ss_major_num">7.</span>니트</li>
+                                    <li class="ellipsis"><span class="ss_major_num">8.</span>Galaxy Watch3</li>
+                                    <li class="ellipsis"><span class="ss_major_num">9.</span>뉴발란스 608</li>
+                                    <li class="ellipsis"><span class="ss_major_num">10.</span>후리스 자켓</li>
                                 </ul>
                             </div>
                             <div class="ss_major-item clearfix">
@@ -133,7 +131,6 @@
                                 </div>
                             </div>
                         </div>
-                       
                         <!-- //배너 슬라이드 -->
                     </div>
                     <!-- // 인기 검색어 -->
