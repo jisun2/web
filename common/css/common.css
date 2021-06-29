@@ -476,8 +476,6 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
 .tooltip .tooltiptext {z-index:1;padding:10px; background-color:#3067cc; color:#fff; text-align:left; border-radius:5px;-webkit-border-radius:6px;position:absolute;bottom:130%; margin-left:-58px;font-size:12px; font-weight:400; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
 .tooltip .tooltiptext:after {content:'';position:absolute;top:100%; left:48%; border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
-/* .tooltip .tooltiptext1 {visibility:p;}
-.tooltip:hover .tooltiptext1 {visibility:visible} */
 /* 공통 TopBTN */
 ._button_top_wrap {overflow-x:hidden; max-width:720px; position:fixed; bottom:20px; right:20px!important; transition: bottom 0.1s ease-in-out; -webkit-transition: bottom 0.1s ease-in-out; -moz-transition: bottom 0.1s ease-in-out; -ms-transition: bottom 0.1s ease-in-out; -o-transition: bottom 0.1s ease-in-out;padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom);}
 ._button_top_wrap.nav-up {bottom:20px}
@@ -600,19 +598,15 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
     float: right;
 }
 input::-ms-clear,
-input::-ms-reveal {visibility: hidden; width : 0; height: 0;}
+input::-ms-reveal {
+    display: none
+}
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
-input::-webkit-search-results-decoration { }
-
-
-/* .search_clear-btn {
-    width: 15px;
-    height: 15px;
-    padding: 0;
-    background: url(../images/ico/ico_search_del.png) center center/cover no-repeat
-  }  */
+input::-webkit-search-results-decoration {
+    display: none
+}
 
 @media all and (max-width:525px) {
     #footer .footer_top ul li:nth-child(4) {clear: both}
