@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <title>검색창</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/search.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="back"><a href="#" class="btn_back"><span class="blind">뒤로가기</span></a></div>
+                <!-- 검색창 -->
+                <div class="ss-box wd">
+                    <form action="">
+                        <div class="ss-text-box">
+                            <input type="search" title="검색어 입력창" class="ss-text" name="search" placeholder="검색어를 입력하세요" />
+                            <button type="button" class="search_clear-btn">
+                                <span class="blind">검색어 삭제</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- //검색창 -->
+            </div>
+
+            <div id="container">
+                <div class="searchWrap">
+                    <!-- 검색결과 찾을 수 없음 -->
+                    <div class="sr-none">
+                        <p>
+                            <span class="search_text">'@#$%!'</span>에 대한 검색결과를 찾을 수 없어요. <br>
+                            다른 키워드로 검색해 보세요.
+                        </p>
+                    </div>
+                    <div class="search_tip-box">
+                        <span class="stb-title">검색 팁</span>
+                        <ul class="dot-list">
+                            <li>검색어의 철자가 정확한지 확인해보세요.</li>
+                            <li>검색어의 단어수를 줄이거나 다른 검색어로 검색해보세요.</li>
+                            <li>보다 일반적인 단어로 다시 검색해보세요.</li>
+                        </ul>
+                    </div>
+                    <!-- //검색결과 찾을 수 없음 -->
+
+                    <!-- 인기 검색어 -->
+                  <div class="publi ss-content">
+                    <div class="ss-title-box pd justify_box">
+                        <span class="ss-title just_left">인기 검색어</span>
+                        <span class="ss-sub just_right"><span class="num">2021.05.20</span> 기준</span>
+                    </div>
+                    <div class="ss_major-slide pdB">
+                        <div class="ss_major-item">
+                            <ul class="ss_major-list">
+                                <li class="active ellipsis">
+                                    <span class="ss_major_num">1.</span>반스 올드 스쿨
+                                </li>
+                                <li class="active ellipsis"><span class="ss_major_num">2.</span>뉴발란스 CTR 300</li>
+                                <li class="active ellipsis"><span class="ss_major_num">3.</span>나이키 운동화</li>
+                                <li class="ellipsis"><span class="ss_major_num">4.</span>후드티</li>
+                                <li class="ellipsis"><span class="ss_major_num">5.</span>나이키</li>
+                            </ul>
+                            <ul class="ss_major-list">
+                                <li class="ellipsis"><span class="ss_major_num">6.</span>꼼데가르송 척테일러</li>
+                                <li class="ellipsis"><span class="ss_major_num">7.</span>니트</li>
+                                <li class="ellipsis"><span class="ss_major_num">8.</span>Galaxy Watch3</li>
+                                <li class="ellipsis"><span class="ss_major_num">9.</span>뉴발란스 608</li>
+                                <li class="ellipsis"><span class="ss_major_num">10.</span>후리스 자켓</li>
+                            </ul>
+                        </div>
+                        <div class="ss_major-item">
+                            <ul class="ss_major-list">
+                                <li><span class="ss_major_num">11.</span>패딩</li>
+                                <li><span class="ss_major_num">12.</span>니트</li>
+                                <li><span class="ss_major_num">13.</span>아디다스</li>
+                                <li><span class="ss_major_num">14.</span>뉴발란스 608</li>
+                                <li><span class="ss_major_num">15.</span>후리스 자켓</li>
+                            </ul>
+                            <ul class="ss_major-list">
+                                <li><span class="ss_major_num">16.</span>패딩</li>
+                                <li><span class="ss_major_num">17.</span>니트</li>
+                                <li><span class="ss_major_num">18.</span>아디다스</li>
+                                <li><span class="ss_major_num">19.</span>뉴발란스 608</li>
+                                <li><span class="ss_major_num">20.</span>후리스 자켓</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- // 인기 검색어 -->
+
+                    <div class="recom ss-content">
+                        <div class="ss-title-box justify_box">
+                            <span class="ss-title just_left">추천 검색어</span>
+                        </div>
+                        <div class="overflow_x mgTb">
+                            <ul class="ss-list second">
+                                <li><button type="button" class="ss-item">#에어맥스 98</button></li>
+                                <li><button type="button" class="ss-item">#운동화</button></li>
+                                <li><button type="button" class="ss-item">#kf94</button></li>
+                                <li><button type="button" class="ss-item">#자켓</button></li>
+                                <li><button type="button" class="ss-item">#꼼데가르송 척테일러</button></li>
+                                <li><button type="button" class="ss-item">#아우터</button></li>
+                            </ul>
+                        </div>
+                         <!-- 추천 검색어 없을 때 -->
+                         <!-- <p class="ss_none-text pdB">아쉽게도 등록된 추천 검색어가 없어요.</p> -->
+                         <!-- //추천 검색어 없을 때 -->
+
+                         <!-- 배너 슬라이드 -->
+                        <div class="ss-banner">
+                            <div class="ss_major-slide1">
+                                <div>
+                                    <img src="../common/images/dummy/banner01.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../common/images/dummy/banner01.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //배너 슬라이드 -->
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <script src="../common/lib/slick.min.js"></script>
+        
+        <script>
+            focusAndOpenKeyboard = function(el, timeout) {
+                if (!timeout) {
+                timeout = 100;
+                }
+                if (el) {
+                var __tempEl__ = document.createElement('input');
+                __tempEl__.style.position = 'absolute';
+                __tempEl__.style.top = (el.offsetTop + 7) + 'px';
+                __tempEl__.style.left = el.offsetLeft + 'px';
+                __tempEl__.style.height = 0;
+                __tempEl__.style.opacity = 1;
+                //document.body.appendChild(__tempEl__);
+                document.getElementById("hhptemp").appendChild(__tempEl__)
+                __tempEl__.focus();
+            
+                setTimeout(function() {
+                    el.focus();
+                    el.click();
+                    //document.body.removeChild(__tempEl__);
+                    document.getElementById("hhptemp").removeChild(__tempEl__)
+                }, timeout);
+                }
+            }
+        </script>
+
+        <script>
+            // 모바일 앱 input focus 후 키보드 노출 코드
+		// if (typeof $(item).next().offset() == 'undefined')
+		// if (typeof focus != 'undefined') {
+		// 	var focusObj = $(focus)
+		// 	if (focusObj.length > 0) {
+		// 		if (focusObj[0].id == 'siteSearchInput2') {
+		// 			navigator.sayswho = (function() {
+		// 				var ua = navigator.userAgent, tem, 
+		// 				M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+		// 				if (/trident/i.test(M[1])) {
+		// 					tem =  /\brv[ :]+(\d+)/g.exec(ua) || [];
+		// 					return 'IE ' + (tem[1] || '');
+		// 				}
+		// 				if (M[1] === 'Chrome') {
+		// 					tem = ua.match(/\b(OPR|Edge)\/(\d+)/);
+		// 					if(tem != null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+		// 				}
+		// 				M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+		// 				if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+		// 				return M.join(' ');
+		// 			})();
+		// 			//console.log(navigator.sayswho);
+		// 			if (navigator.sayswho.indexOf('OS 13') > 0 || navigator.sayswho.indexOf('OS 12') > 0 || navigator.sayswho.indexOf('OS 11') > 0) {
+		// 				setTimeout(function(){ focus.focus() }, 1)
+		// 			}
+
+		// 			focusAndOpenKeyboard(focus, 300)
+		// 		}
+		// 	}
+		// }
+         
+            (function () {
+                function autoWidth(ele, child, add) {
+                    var width = 0;
+
+                    $(child).each(function(i, e){
+                        width += $(e).width() * 1 + add;
+                    });
+
+                    $(ele).width(width);
+                }
+                autoWidth('.ms-list', '.ms-list li', 40);
+                autoWidth('.ss-list.first', '.ss-list.first li', 25);
+                autoWidth('.ss-list.second', '.ss-list.second li', 25);
+                autoWidth('.sbs-list', '.sbs-list li', 20);
+                // $(window).scroll(function(){
+                //     var nowScroll = $(window).scrollTop();
+
+                //     if ( nowScroll > 80) {
+                //         $('.ms-list').addClass('active');
+                //         $('.fixed_b-nav').addClass('hide');
+                //         $('.plc_fc-box.hastab').addClass('search_active');
+                //         $('.plc_fc-box').addClass('active');
+                //         $('.border_tab-list').addClass('search_active');
+                //     } else {
+                //         $('.ms-list').removeClass('active');
+                //         $('.fixed_b-nav').removeClass('hide');
+                //         $('.plc_fc-box.hastab').removeClass('search_active');
+                //         $('.plc_fc-box').removeClass('active');
+                //         $('.border_tab-list').removeClass('search_active');
+                //     }
+                // });
+
+                function fn_focus()
+                {
+                    document.getElementById("txtOn").focus();
+                }
+
+                $('.ss_major-slide').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
+                });
+
+                 $('.ss_major-slide1').slick({
+                    autoplay: true,
+                    slidesToShow: 1,
+                    dots: false,
+                    arrows: false,
+                    autoplaySpeed: 3000
+                });
+
+                // .ss-text 작성 시 x버튼 출력
+                $('.ss-text').keyup(function () {
+                    var valLeng = $(this).val().length;
+
+                    if (valLeng > 0) {
+                        $(this).siblings('.search_clear-btn').show().css('display', 'block');
+                    } else {
+                        $(this).siblings('.search_clear-btn').hide();
+                    }
+                });
+
+                $('.search_clear-btn').on('click touch', function () {
+                    $(this).siblings('.ss-text').val('');
+                    $(this).hide();
+                });
+
+                $('.filter_select').on('click touch', function () {
+                    $(this).toggleClass('active');
+                })
+
+            })(jQuery);
+        </script>
+    </body>
+</html>

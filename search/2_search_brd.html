@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <title>검색창</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/search.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+    </head>
+    <body>
+
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <!-- 검색창 -->
+                <div class="ss-box pd">
+                    <form action="">
+                        <div class="ss-text-box">
+                            <input type="search" title="검색어 입력창" class="ss-text" name="search" placeholder="검색어를 입력하세요" />
+                            <!-- <input type="search" title="검색어 입력창" class="ss-text" id="hhptemp" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" /> -->
+                            <button type="button" class="search_clear-btn">
+                                <span class="blind">검색어 삭제</span>
+                            </button>
+                        </div>
+                    </form>
+                    <button type="button" class="ss-cancel">취소</button>
+                </div>
+                <!-- //검색창 -->
+            </div>
+
+            <div id="container">
+                <div class="searchWrap pd">
+                    <ul class="search-key">
+                        <li class="pos_rel">
+                            <p class="keyword"><span class="blue">나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</span></p>
+                            <p class="keyBrand">NIKE</p>
+                            <a href="#none" title="브랜드 스토어 바로가기" ><span class="brdStr">브랜드 스토어 <span class="ico more"></span></span> </a>
+                        </li>
+                        <li class="pos_rel">
+                            <p class="keyword"><span class="blue">나이키</span> 골프</p>
+                            <p class="keyBrand">NIKE GOLF</p>
+                            <a href="#none" title="브랜드 스토어 바로가기" ><span class="brdStr">브랜드 스토어 <span class="ico more"></span></span> </a>
+                        </li>
+                    </ul>
+                    <ul class="search-key brT">
+                        <li class="pos_rel">
+                            <p class="keyword"><span class="orange">나이키</span></p>
+                        </li>
+                        <li class="pos_rel">
+                            <p class="keyword"><span class="orange">나이키</span> 운동화</p>
+                        </li>
+                        <li class="pos_rel">
+                            <p class="keyword"><span class="orange">나이키</span> 의류</p>
+                        </li>
+                        <li class="pos_rel">
+                            <p class="keyword"><span class="orange">나이키</span> 신발</p>
+                        </li>
+                        <li class="pos_rel">
+                            <p class="keyword"><span class="orange">나이키</span> 우먼</p>
+                        </li>
+                        <li class="pos_rel">
+                            <p class="keyword"><span class="orange">나이키</span> 우먼스 클래식 코르테즈</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="../common/lib/slick.min.js"></script>
+        <script>
+            (function () {
+                // .ss-text 작성 시 x버튼 출력
+                $('.ss-text').keyup(function () {
+                    var valLeng = $(this).val().length;
+
+                    if (valLeng > 0) {
+                        $(this).siblings('.search_clear-btn').show().css('display', 'block');
+                    } else {
+                        $(this).siblings('.search_clear-btn').hide();
+                    }
+                });
+
+                $('.search_clear-btn').on('click touch', function () {
+                    $(this).siblings('.ss-text').val('');
+                    $(this).hide();
+                });
+                $('.filter_select').on('click touch', function () {
+                    $(this).toggleClass('active');
+                })
+
+            })(jQuery);
+        </script>
+    </body>
+</html>
