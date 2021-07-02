@@ -12,6 +12,14 @@
 ::-webkit-scrollbar-thumb:hover { background: #f5f5f5; }
 ::-webkit-scrollbar-thumb:active { background: #888; } 
 ::-webkit-scrollbar-button { width:20px; height:10px; display: none; } 
+
+
+::-mos-scrollbar { width: 2px; height:6px; }
+::-webkit-scrollbar-track { background-color:#fff; } 
+::-webkit-scrollbar-thumb { background: #f5f5f5; border-radius: 4px; } 
+::-webkit-scrollbar-thumb:hover { background: #f5f5f5; }
+::-webkit-scrollbar-thumb:active { background: #888; } 
+::-webkit-scrollbar-button { width:20px; height:10px; display: none; } 
 }
 
 /* .product-item {
@@ -19,6 +27,30 @@
 } */
 .overflow_x {
   overflow-x: auto;
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
+}
+/* .overflow_x::-webkit-scrollbar {
+  display: none;
+} */
+@media screen and (min-width:100px) and (max-width:720px) {
+  .overflow_x {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .overflow_x::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
 }
 .overflow_x.mgTb {
   margin: 0 20px 0 20px;
@@ -79,15 +111,6 @@
   background-position: -183px -46px;
 }
 
-@media screen and (min-width:100px) and (max-width:620px) {
-  .overflow_x {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .overflow_x::-webkit-scrollbar {
-    display: none;
-  }
-}
 
 
 html {
@@ -2878,7 +2901,7 @@ textarea {
   height:40px;
   padding:10px;
   background-color: #3067cc;
-  animation: fade-in 1000ms, fade-out 700ms 2000ms
+  animation: close 1000ms, open 5000ms
 }
 .tooltip .txt {
   width:100%;
@@ -2886,8 +2909,9 @@ textarea {
   color:#fff; text-align:left; 
   font-size:12px; 
   font-weight:300; 
-  animation: fade-in 1000ms, fade-out 700ms 2000ms
+  /* animation: fade-open 1000ms */
 }
+
 .tooltip .txt:before {
   content:'';
   position:absolute;
@@ -2895,7 +2919,26 @@ textarea {
   left:80px; 
   border-width:7px;
   border-style:solid;
-  border-color: transparent transparent #3067cc transparent}
+  border-color: transparent transparent #3067cc transparent;
+}
+
+@keyframes close {
+  from {
+    display: none;
+    opacity: 0;
+    height:10px;
+  }
+}
+@keyframes open {
+  to {
+    /* opacity: 1; */
+    height: 40px; 
+    /* transform: translateX(-50%); */
+  }
+}
+
+
+
 
 .btn_del {
   float:right;
@@ -3178,7 +3221,7 @@ textarea {
   float: left;
   width: 50%;
   /* min-height: 580px; */
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
 }
 .product-item .soldout {
   display: block;
@@ -3204,6 +3247,7 @@ textarea {
   padding: 0 15px;
   min-height: 232px;
 }
+
 
 /* .product-item .pli-thumb {
   position: relative;
@@ -3264,7 +3308,8 @@ textarea {
   font-weight: 500
 }
 .product-item .pli-cate a {
-  display: block
+  display: block;
+  line-height:14px;
 }
 .product-item .pli-title {
   display: -webkit-box;
@@ -3427,7 +3472,7 @@ textarea {
   width: 10px;
   height: 5px;
   margin-left: 4px;
-  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/acco_arrow-gray.png) center center/10px 5px no-repeat;
+  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/acco_arrow-gray.png) center center/cover no-repeat;
   vertical-align: 1px
 }
 .option-view .ov-title.active::after {
