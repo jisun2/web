@@ -3259,7 +3259,7 @@ textarea {
   display: block;
   margin: 15px 0 6px 0;
   display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height:18px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;
-  line-height: 15px;
+  line-height: 13px;
   font-size: 14px;
   font-weight: 500
 }
