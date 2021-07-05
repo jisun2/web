@@ -3158,7 +3158,7 @@ textarea {
   text-align: right;
 }
 /* .plc_fc-filter select::before { */
-.plc_fc-filter .filter_view::after {
+/* .plc_fc-filter .filter_view::after {
   display: inline-block;
   position:absolute;
   top:13px;
@@ -3166,9 +3166,27 @@ textarea {
   content: '';
   width: 16px;
   height: 14px;
-  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/filter-icon.png) center center/100% 100% no-repeat;
+  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/filter-icon.png) center center/300px 300px no-repeat;
   vertical-align: -1px
+} */
+
+.ico.upDownArr {
+  display: inline-block;
+  position:absolute;
+  top:13px;
+  right:15px;
+  content: '';
+
 }
+
+.upDownArr {
+  width:15px;
+  height: 15px;
+  background-size: 150px 150px;
+  background-position:2px -68px;
+  background-repeat: no-repeat;
+}
+
 /* .plc_fc-filter .filter_select {
   color: #555;
   background-color: transparent;
