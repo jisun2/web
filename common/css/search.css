@@ -4252,10 +4252,11 @@ textarea {
 .sibi_search-wrap .sbs-list li {
   float: left;
   height: 14px;
-  color: #ababab;
   padding-left: 15px;
   font-size: 12px;
-  line-height: 1.2
+  white-space: nowrap;
+  line-height: 1.2;
+  color: #ababab;
 }
 .sr-none {
   padding: 36px 20px;
