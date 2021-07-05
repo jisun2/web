@@ -53,9 +53,16 @@
 scrollbar-width: none;  /* Firefox */
 }
 .overflow_x.mgTb {
-  margin: 0 0px 0 20px;
   display:block;
+  /* padding-right:20px; */
+  margin: 0 0px 0 20px;
 }
+
+.overflow_x.mgTb2 {
+  display:block;
+  margin: 0 20px;
+}
+
 .ss-list.first {
   position:relative;
 }
@@ -99,7 +106,6 @@ scrollbar-width: none;  /* Firefox */
   right: -1px;
   top: 14px;
   font-size: 13px;
-  line-height: 14px;
   color:#888;
 }
 
@@ -107,8 +113,8 @@ scrollbar-width: none;  /* Firefox */
   display:inline-block;
   width: 10px;
   height: 16px;
-  margin: 0 0 -1px 3px;
-  background-position: -183px -46px;
+  margin: 0 0 -2px 3px;
+  background-position: -182px -62px;
 }
 
 
@@ -3144,6 +3150,7 @@ textarea {
 .plc_fc-filter .filter_view option {
   text-align: right;
 }
+/* .plc_fc-filter select::before { */
 .plc_fc-filter .filter_view::after {
   display: inline-block;
   position:absolute;
@@ -3262,7 +3269,7 @@ textarea {
 .product-item .pli-thumb img {
   position: relative;
   width: 100%;
-  /* height: 236px; */
+  min-height: 180px;
   height: auto;
   background-size: cover;
   background-position: center center;
@@ -3305,7 +3312,7 @@ textarea {
   display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height:18px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;
   line-height: 13px;
   font-size: 14px;
-  font-weight: 500
+  font-weight: 700
 }
 .product-item .pli-cate a {
   display: block;
@@ -3326,12 +3333,13 @@ textarea {
 .product-item .pli-title a {
   display: block;
   width: 100%;
-  height: 34px
+  height: 30px;
+  min-height:38px;
 }
 .product-item .pli_pay-info {
   line-height: 1;
   color: #000;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   font-family: proxima-nova;
 }
@@ -3391,6 +3399,29 @@ textarea {
   font-size: 12px;
   color: #555;
 }
+.pli_dis-box li {
+  display:inline-block;
+}
+
+.pli_dis-box .big-font:nth-child(1)::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin: 0 4px;
+  background-color: #e5e5e5;
+  vertical-align: -2px
+}
+
+.pli_dis-box li:first-child .big-font:nth-child(1)::before {
+  content: none;
+}
+
+.ico.like_s {float:left; 
+  width:16px; height:15px; background-position:-192px -48px}
+.list_bar .on .ico.like_s {background-position:-192px -48px}
+
+
 
 .pli-top_wrap {
   position:relative;
@@ -3451,15 +3482,17 @@ textarea {
 }
 .option_info-box {
   position: relative;
-  margin-top:15px;
+  margin-top:8px;
   border-top: 1px solid #e5e5e5;
 }
 .option-view {
-  line-height: 32px;
+  margin-top:8px;
+  line-height: 16px;
   color: #888;
   font-size: 12px
 }
 .option-view .ov-title {
+  float:left;
   cursor: pointer
 }
 .option-view .ov-title::after {
@@ -3477,6 +3510,12 @@ textarea {
   transform: rotate(180deg);
   margin-bottom: 0
 }
+
+.ov_info-wrap {
+  float:right;
+  display:inline-block
+}
+
 .option-view .ov-info {
   display:inline-block;
   margin-left: 5px;
@@ -3808,6 +3847,7 @@ textarea {
 }
 #header .ss-text-box {
   position: relative;
+  margin-right:10px;
   /* padding-left:20px; */
   float: left;
   width:90%;
@@ -3838,7 +3878,7 @@ textarea {
     width:100%;
   }
   #header .ss-text-box {
-    width:85%;
+    width:82%;
   }
   /*
   #header .ss-box.wd .ss-text-box {
@@ -4000,7 +4040,8 @@ textarea {
   padding-right: 10px
 }
 .searchWrap .ss-list.second {
- height:50px;
+  /* height:50px; */
+  min-height:40px;
 }
 
 .searchWrap .ss-list.second .reset {
@@ -5133,9 +5174,9 @@ body {
 	position: fixed;
   left: 50%;
   bottom: 0;
-	padding: 8px 12px;
-  min-width: 150px;
-  font-size:14px;
+	/* padding: 8px 12px; */
+  min-width: 168px;
+  font-size:12px;
 	color:#3067cc;
   border:1px solid #3067cc; 
   text-align: center;
@@ -5147,10 +5188,11 @@ body {
 }
 
 .toastPop {z-index: 9999;
-  display:none; width: 250px; height: 20px;
+  /* display:none; */
+  min-width:214px; height: 20px;
   height:auto; position:fixed; margin:0 auto; left:50%; 
   bottom:10%;  background-color: #383838; 
-  color: #F0F0F0; font-family: Calibri; font-size: 15px; 
+  color: #F0F0F0; font-family: Calibri; font-size: 12px; 
   padding: 10px; text-align:center; border-radius:20px;
   transform: translate(-50%, -120%);
   animation: fade-in 1000ms, fade-out 1500ms, 2000ms;
