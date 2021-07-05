@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
-        <script src="../common/lib/common.js"></script>
+        <!-- <script src="../common/lib/common.js"></script> -->
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/search.css">
         <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
@@ -50,6 +50,9 @@
                                 <li><button type="button" class="ss-item gray">아우터</button></li>
                                 <li><button type="button" class="ss-item gray">상의</button></li>
                                 <li><button type="button" class="ss-item gray">하의</button></li>
+                                <li><button type="button" class="ss-item gray">하의</button></li>
+                                <li><button type="button" class="ss-item gray">하의</button></li>
+                                <li><button type="button" class="ss-item gray">하의</button></li>
                             </ul>
                         </div>
                         
@@ -63,14 +66,17 @@
                         <div class="ss-title-box justify_box">
                             <span class="ss-title just_left">추천 검색어 (라인 어미와 분리)</span>
                         </div>
-                        <div class="overflow_x mgTb">
-                            <div class="pdB">
+                        <div class="overflow_x">
+                            <div class="pdB mgTb2">
                                 <ul class="ss-list second">
                                     <li><button type="button" class="ss-item">#에어맥스 98</button></li>
                                     <li><button type="button" class="ss-item">#운동화</button></li>
                                     <li><button type="button" class="ss-item">#kf94</button></li>
                                     <li><button type="button" class="ss-item">#자켓</button></li>
                                     <li><button type="button" class="ss-item">#꼼데가르송 척테일러</button></li>
+                                    <li><button type="button" class="ss-item">#아우터</button></li>
+                                    <li><button type="button" class="ss-item">#아우터</button></li>
+                                    <li><button type="button" class="ss-item">#아우터</button></li>
                                     <li><button type="button" class="ss-item">#아우터</button></li>
                                 </ul>
                             </div>                    
@@ -233,10 +239,10 @@
 
                     $(ele).width(width);
                 }
-                autoWidth('.ms-list', '.ms-list li', 40);
-                autoWidth('.ss-list.first', '.ss-list.first li', 25);
-                autoWidth('.ss-list.second', '.ss-list.second li', 25);
-                autoWidth('.sbs-list', '.sbs-list li', 20);
+                autoWidth('.ms-list', '.ms-list li', 10);
+                autoWidth('.ss-list.first', '.ss-list.first li', 10);
+                autoWidth('.ss-list.second', '.ss-list.second li', 10);
+                autoWidth('.sbs-list', '.sbs-list li', 10);
                 // $(window).scroll(function(){
                 //     var nowScroll = $(window).scrollTop();
 
