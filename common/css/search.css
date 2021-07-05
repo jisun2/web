@@ -3173,7 +3173,7 @@ textarea {
 .ico.upDownArr {
   display: inline-block;
   position:absolute;
-  top:12.5px;
+  top:13.5px;
   right:15px;
   content: '';
 
@@ -3342,6 +3342,7 @@ textarea {
 .product-item .pli-cate a {
   display: block;
   line-height:18px;
+  color: #000;
 }
 .product-item .pli-title {
   display: -webkit-box;
