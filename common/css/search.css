@@ -58,6 +58,11 @@ scrollbar-width: none;  /* Firefox */
   margin: 0 0px 0 20px;
 }
 
+.overflow_x .mgTb2 {
+  display:inline-block;
+  width:147%;
+  margin: 0 20px !important;
+}
 .overflow_x.mgTb2 {
   display:block;
   margin: 0 20px;
@@ -69,6 +74,7 @@ scrollbar-width: none;  /* Firefox */
 
 .pdB {
   padding-bottom:25px;
+  /* width:100%; */
   border-bottom:1px solid #f0f0f0; 
 }
 
@@ -3487,7 +3493,7 @@ textarea {
 }
 .option-view {
   margin-top:8px;
-  line-height: 16px;
+  line-height: 18px;
   color: #888;
   font-size: 12px
 }
@@ -3878,7 +3884,7 @@ textarea {
     width:100%;
   }
   #header .ss-text-box {
-    width:82%;
+    width:88%;
   }
   /*
   #header .ss-box.wd .ss-text-box {
