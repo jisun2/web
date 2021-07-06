@@ -3817,10 +3817,6 @@ textarea {
 }
 
 
-/* #header .ss-text::-ms-input-placeholder {
-  color: #ababab !important;
-} */
-
 @media screen and (min-width:321px) and (max-width:600px) {
   /* #header .ss-text-box {
     width: 84%;
@@ -3845,12 +3841,6 @@ textarea {
   }
 
 }
-
-
-
-
-
-
 
 /* .searchWrap input:focus {
   background-color: yellow;
