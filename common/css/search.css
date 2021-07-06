@@ -2886,7 +2886,7 @@ textarea {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  margin-top:-8px;
+  margin-top:0px;
   width:100%;
   height:40px;
   padding:10px;
@@ -3721,7 +3721,7 @@ textarea {
 }
 
 #header .ss-box {
-  padding-top:10px;
+  padding:10px 0;
 }
 #header .back .btn_back::after, #header .back .btn_back::before {
   top: 29px;}
@@ -4074,7 +4074,7 @@ textarea {
 }
 
 .sibi_search-wrap {
-  padding: 18px 0 7px 15px;
+  padding: 7px 0 7px 15px;
   border-bottom: 1px solid #d0d0d0
 }
 .sibi_search-wrap .sibi-title {
