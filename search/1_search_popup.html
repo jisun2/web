@@ -111,7 +111,6 @@
                                             <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
                                         </div>
                                     </a>
-                                    <!-- <span class="pli-heart on"></span> -->
                                     <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
                                 </div>
 
@@ -746,7 +745,7 @@
                                 </div>
                             </div>
                             <!-- .product-item E -->
-                            <div class="toast like">
+                            <div class="toast">
                                 좋아요 목록에 추가 되었어요!
                             </div>
                         </div>
@@ -760,18 +759,28 @@
         <!-- slick slider -->
         <script src="../common/lib/slick.min.js"></script>
         <script>
+            // function myFunction(e) {
+            // e.classList.toggle("on");
+            // $('.toast.like').fadeIn().delay(1800);
+            // $('.toast.like').fadeOut();
+            // }
             function myFunction(e) {
-            e.classList.toggle("on");
-            $('.toast.like').fadeIn().delay(1800);
-            $('.toast.like').fadeOut();
+                e.classList.toggle("on");
+                $('.toast').fadeIn().delay(1800);
+                $('.toast').fadeOut();
+                $('.pli-heart.on').click(function(){
+                $('.toast').hide();
+                });
             }
-            $( document ).ready( function() {
+            $( document ).ready(function() {
+                $('.ss-text').keyup(function () {
+                });
                 $(".tooltip").slideDown(500); 
                 $( this ).css( 'background-color', '#ffcdd2' );
-                } );
+                });
                 $( '.tooltip' ).fadeIn(100);    
-                $( ".btn_del" ).click(function() {
-                    $( '.tooltip' ).hide();                
+                $( '.btn_del' ).click(function() {
+                $( '.tooltip' ).hide();                
                 $( '.tooltip' ).fadeOut(100);                
             });
         </script>
@@ -856,7 +865,6 @@
                 // .ss-text 작성 시 x버튼 출력
                 $('.ss-text').keyup(function () {
                     var valLeng = $(this).val().length;
-
                     if (valLeng > 0) {
                         $(this).siblings('.search_clear-btn').show().css('display', 'block');
                     } else {

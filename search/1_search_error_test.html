@@ -47,6 +47,11 @@
 
         <script src="../common/lib/slick.min.js"></script>
         <script>
+            $("#in").keyup(function() {
+                $("#out").val( $(this).val() )
+            });
+        </script>
+        <script>
             focusAndOpenKeyboard = function(el, timeout) {
                 if (!timeout) {
                 timeout = 100;
