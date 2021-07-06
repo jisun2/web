@@ -305,7 +305,7 @@
                             <!-- .product-item S -->
                             <div class="product-item">
                                 <div class="pli-top_wrap">
-                                    <a href="#" title="상품 이미지" >
+                                    <a href="#" >
                                         <div class="pli-thumb">
                                             <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
                                         </div>
@@ -774,6 +774,7 @@
             }
             $( document ).ready(function() {
                 $('.ss-text').keyup(function () {
+                    $('.ss-text').css('','');
                 });
                 $(".tooltip").slideDown(500); 
                 $( this ).css( 'background-color', '#ffcdd2' );
