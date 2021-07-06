@@ -19,6 +19,7 @@
             <div id="header">
                 <!-- 검색창 -->
                 <div class="ss-box pd">
+                    <form accept-charset="utf-8" action="."><fieldset><legend>검색어 입력</legend> <strong class="tit tc_1">고객님<br>무엇을 찾으세요?</strong> <div class="search_box lc_3 dis_f ai_c searched "><span class="input_text" style="width: 100%;"><input type="search" id="siteSearchInput2" name="search" placeholder="상품을 찾아보세요." class="input_search tc_1" style="border: 0px; padding: 10px 30px 0px 60px;"> <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button></span> <button type="button" class="btn_submit spr_before pos_center_before"><span class="s_out">검색하기</span></button></div></fieldset></form>
                     <form action="">
                         <div class="ss-text-box">
                             <input type="search" title="검색어 입력창" class="ss-text" name="search" placeholder="검색어를 입력하세요" />
@@ -153,14 +154,12 @@
                         <!-- // 인기 검색어 없을 때  -->
                         
                         <!-- 배너 슬라이드 -->
-                        <div class="ss-banner">
-                            <div class="ss_major-slide1">
-                                <div>
-                                    <img src="../common/images/dummy/banner01.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="../common/images/dummy/banner01.jpg" alt="">
-                                </div>
+                        <div class="ss_major-slide1">
+                            <div>
+                                <a href="#none" title="banner"><img src="../common/images/dummy/banner01.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#none" title="banner"><img src="../common/images/dummy/banner01.jpg" alt=""></a>
                             </div>
                         </div>
                         <!-- //배너 슬라이드 -->
@@ -260,18 +259,18 @@
                 //     }
                 // });
 
-                function fn_focus()
-                {
-                    document.getElementById("txtOn").focus();
-                }
-
+                // function fn_focus()
+                // {
+                //     document.getElementById("txtOn").focus();
+                // }
+                // 인기 검색어 슬라이드 
                 $('.ss_major-slide').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: true,
                     arrows: false,
                 });
-
+                // 배너 슬라이드
                  $('.ss_major-slide1').slick({
                     autoplay: true,
                     slidesToShow: 1,

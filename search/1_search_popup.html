@@ -749,9 +749,6 @@
                             <div class="toast like">
                                 좋아요 목록에 추가 되었어요!
                             </div>
-                            <!-- <div class="toast unlike">
-                                좋아요 목록에 삭제 되었어요!
-                            </div> -->
                         </div>
                         <!-- <div class="pagination"></div> -->
                     </div>
@@ -762,59 +759,12 @@
 
         <!-- slick slider -->
         <script src="../common/lib/slick.min.js"></script>
-
-        <!-- <script>
-            let removeToast;
-             function toast(string) {
-                 const toast = document.getElementById("toast");
- 
-                toast.classList.contains("reveal") ?
-                    (clearTimeout(removeToast), removeToast = setTimeout(function () {
-                        document.getElementById("toast").classList.remove("reveal")
-                     }, 1000)) :
-                    removeToast = setTimeout(function () {
-                        document.getElementById("toast").classList.remove("reveal")
-                     }, 1000)
-                toast.classList.add("reveal"),
-                    toast.innerText = string
-             }
-        </script> -->
-        <!-- <script src="../common/lib/main.js?v=1.3.0"></script> -->
-        <!-- <script type="text/javascript" charset="utf-8">
-            $(document).ready(function(){ $("#idn").focus(); });
-        </script> -->
-        <!-- <script>
-               function LikeBTN() {
-            $(".pli-heart").click(function (e) {
-                if ($(this).html() == "Like") {
-                    $(this).html('Unlike');
-                }
-                else {
-                    $(this).html('Like');
-                }
-            });
-        }
-        </script> -->
         <script>
             function myFunction(e) {
             e.classList.toggle("on");
             $('.toast.like').fadeIn().delay(1800);
             $('.toast.like').fadeOut();
             }
-        </script>
-        <script>
-            // $(document).ready(function(){
-            //     $(".tooltip").show();
-            //     setTimeout(function () {
-            //         $(".tooltip").hide();
-            //     }, fadeOut, 2000);
-            //     $(".txt").click(function(){
-            //         if($("#toolShow").css("display") != "block"){
-            //             $("#toolShow").show();
-            //         }else{
-            //             $("#toolShow").hide();
-            //         }
-            //     });
             $( document ).ready( function() {
                 $(".tooltip").slideDown(500); 
                 $( this ).css( 'background-color', '#ffcdd2' );
@@ -823,20 +773,8 @@
                 $( ".btn_del" ).click(function() {
                     $( '.tooltip' ).hide();                
                 $( '.tooltip' ).fadeOut(100);                
-                //  $( '.searchT' ).slideDown( function() {
-                //     $( this ).css( 'background-color', '#ffcdd2' );
-                // } );
             });
-
         </script>
-        <!-- <script>
-            // 좋아요 찜 눌렀을 시 토스트 팝업 
-            $( ".pli-heart" ).click(function() {
-                $(".pli-heart").addClass("on");
-                $('.toastPop').fadeIn().delay(800);
-                $('.toastPop').fadeOut();
-            });                
-        </script> -->
 
         <script>
              // $( document ).ready( function() {
@@ -891,50 +829,29 @@
                     $(child).each(function(i, e){
                         width += $(e).width() * 1 + add;
                     });
-
                     $(ele).width(width);
                 }
                 autoWidth('.ms-list', '.ms-list li', 15);
                 autoWidth('.ss-list.first', '.ss-list.first li', 20);
                 autoWidth('.ss-list.second', '.ss-list.second li', 15);
                 autoWidth('.sbs-list', '.sbs-list li', 15);
-                // $(window).scroll(function(){
-                //     var nowScroll = $(window).scrollTop();
-
-                //     if ( nowScroll > 80) {
-                //         $('.ms-list').addClass('active');
-                //         $('.fixed_b-nav').addClass('hide');
-                //         $('.plc_fc-box.hastab').addClass('search_active');
-                //         $('.plc_fc-box').addClass('active');
-                //         $('.border_tab-list').addClass('search_active');
-                //     } else {
-                //         $('.ms-list').removeClass('active');
-                //         $('.fixed_b-nav').removeClass('hide');
-                //         $('.plc_fc-box.hastab').removeClass('search_active');
-                //         $('.plc_fc-box').removeClass('active');
-                //         $('.border_tab-list').removeClass('search_active');
-                //     }
-                // });
                 function fn_focus()
                 {
                     document.getElementById("txtOn").focus();
                 }
-
                 $('.ss_major-slide').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: true,
                     arrows: false,
                 });
-
-                 $('.ss_major-slide1').slick({
+                $('.ss_major-slide1').slick({
                     autoplay: true,
                     slidesToShow: 1,
                     dots: false,
                     arrows: false,
                     autoplaySpeed: 3000
                 });
-
 
                 // .ss-text 작성 시 x버튼 출력
                 $('.ss-text').keyup(function () {
@@ -957,9 +874,8 @@
                 })
                 })(jQuery);
 
-        </script>
-        <script>
-            (function () {
+                //옵션 선택
+                (function () {
                 function acAcco(ele, content) {
                     $(ele).on('click touch', function () {
                         $(this).toggleClass('active');
@@ -968,21 +884,18 @@
                         $(this).parents('.pln-nav li').siblings('li').find(ele).removeClass('active');
                     });
                 }
-
                 function optionAcco(ele, content) {
                     $(ele).on('click touch', function () {
                         $(this).toggleClass('active');
                         $(this).siblings(content).toggle();
                     });
                 }
-
                 function toggleAcco(ele, content) {
                     $(ele).on('click touch', function () {
                         $(this).toggleClass('active');
                         $(this).parents('.option_info-box').find(content).toggle();
                     });
                 }
-
                 acAcco('.pln-title', '.pln-subnav');
                 optionAcco('.option-acco .has-acco', '.option-acco .option-content');
                 toggleAcco('.ov-title', '.option-detail');
@@ -1034,78 +947,6 @@
                 $('.filter_select').on('click touch', function () {
                     $(this).toggleClass('active');
                 })
-
-                // 카테고리 메인 슬라이더
-                var getSlide = $('.cate_main-slide').slick('getSlick');
-                var slideLength = getSlide.slideCount;
-                $('.cate_main-nav').append('<span>1 / ' + slideLength + '</span>');
-
-                $('.cate_main-slide').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-                    var navActive = currentSlide + 1 + ' / ' + slideLength;
-
-                    $('.cate_main-nav').empty();
-                    $('.cate_main-nav').append('<span>' + navActive + '</span>');
-                });
-
-                // sub slide
-                var $slideWrap = $('.slide-wrap');
-
-                $slideWrap.each(function(i,e){
-                    var $slide = $(e).children('.more_prod_slide');
-                    var $nav = $(e).find('.pd_slide-nav');
-
-                    $slide.slick({
-                        slidesToShow: 6,
-                        slidesToScroll: 6,
-                        infinite: false,
-                        responsive: [
-                            {
-                                breakpoint: 1556,
-                                settings: {
-                                    slidesToShow: 4,
-                                    slidesToScroll: 4,
-                                }
-                            },
-                            {
-                                breakpoint: 1279,
-                                settings: {
-                                    slidesToShow: 3,
-                                    slidesToScroll: 3,
-                                }
-                            },
-                            {
-                                breakpoint: 1149,
-                                settings: {
-                                    slidesToShow: 2,
-                                    slidesToScroll: 2,
-                                    infinite: true,
-                                }
-                            },
-                        ]
-                    });
-
-                    var getSlide = $slide.slick('getSlick');
-                    var slideLength = getSlide.slideCount;
-                    var $current = $(e).find('.current');
-                    var $total = $(e).find('.total');
-
-                    $current.text('1');
-                    $total.text(slideLength);
-
-                    $slide.on('afterChange', function (event, slick, currentSlide, nextSlide) {
-                        var navActive = currentSlide + 1 + ' / ' + slideLength;
-
-                        $current.text(currentSlide + 1);
-                        $total.text(slideLength);
-                    });
-
-                    $('.filter_view').on('click touch', function () {
-                        $(this).toggleClass('active');
-                    })
-                    $('.filter_select').on('click touch', function () {
-                        $(this).toggleClass('active');
-                    })
-                });
             })(jQuery);
         </script>
         <!-- <script>
