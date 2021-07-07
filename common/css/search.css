@@ -3489,7 +3489,7 @@ textarea {
   width: 10px;
   height: 5px;
   margin-left: 4px;
-  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/acco_arrow-gray.png) center center/cover no-repeat;
+  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/acco_arrow-gray_mo.png) center center/cover no-repeat;
   vertical-align: 1px
 }
 .option-view .ov-title.active::after {
@@ -3752,6 +3752,7 @@ textarea {
   padding-right:3%;
   float:right;
 }
+
 #header .ss-text-box {
   position: relative;
   margin-right:10px;
@@ -3759,7 +3760,6 @@ textarea {
   float: left;
   width:90%;
 }
-
 
 #header .ss-text {
   position: relative;
@@ -3806,6 +3806,11 @@ textarea {
   }
 }
 
+@media screen and (min-width:620px) and (max-width:719px) {
+  #header .ss-text-box {
+    width:90%;
+  }
+}
 @media screen and (min-width:720px) {
   #header .ss-box.wd {
     width:90%;
@@ -3900,6 +3905,10 @@ textarea {
 } */
 .searchWrap .ss-content:last-child .ss_none-text {
   padding-left: 0
+}
+
+.searchWrap .ss_none-text.pdB {
+  margin:0 20px;
 }
 .searchWrap .ss-title-box {
   padding: 25px 0 14px 20px
