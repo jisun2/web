@@ -3489,7 +3489,7 @@ textarea {
   width: 10px;
   height: 5px;
   margin-left: 4px;
-  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/acco_arrow-gray_mo.png) center center/cover no-repeat;
+  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;
   vertical-align: 1px
 }
 .option-view .ov-title.active::after {
@@ -3545,7 +3545,7 @@ textarea {
   width: 10px;
   height: 5px;
   margin-top: 13px;
-  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/acco_arrow-gray.png) center center/10px 5px no-repeat
+  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;
 }
 .option-detail .option-content {
   display: none
@@ -4551,7 +4551,7 @@ textarea {
   width: 10px;
   height: 5px;
   margin-left: 8px;
-  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/acco_arrow-gray.png) center center/cover no-repeat;
+  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;
   vertical-align: 2px
 }
 .cart_fc-box .black_border-btn {
@@ -4591,7 +4591,7 @@ textarea {
 .cart_option-cor .product-select .selected {
   padding: 8px 10px;
   font-size: 11px;
-  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/acco_arrow-gray.png) 95% center/10px 5px no-repeat
+  background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) 100% center/10px 5px no-repeat
 }
 .cart_option-cor .product-select .just_right {
   width: auto
