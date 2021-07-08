@@ -3148,8 +3148,8 @@ textarea {
 .upDownArr {
   width:15px;
   height: 15px;
-  background-size: 150px 150px;
-  background-position:2px -68px;
+  background-size: 300px 300px;
+  background-position:0px -142px;
   background-repeat: no-repeat;
 }
 
@@ -3541,9 +3541,10 @@ textarea {
 .option-view .ov-info.purple {
   color: #7362c3
 }
-.option-view .ov-info.red {
+/* .option-view .ov-info.red {
   color: #f43434
-}
+} */
+
 .option-detail {
   display: none;
   position: absolute;
