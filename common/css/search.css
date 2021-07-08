@@ -92,7 +92,7 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .search-key li {
-  padding: 6px 0;
+  padding: 8px 0;
 }
 
 .search-key .keyword {
@@ -105,8 +105,10 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .search-key .keyBrand {
+  margin-top:4px;
   font-size: 13px;
   color:#ababab;
+  font-family: proxima-nova;
 }
 
 .search-key .brdStr {
@@ -124,6 +126,14 @@ scrollbar-width: none;  /* Firefox */
   height: 16px;
   margin: 0 0 -2px 3px;
   background-position: -182px -62px;
+}
+
+.ico.keyDel {
+  display:inline-block;
+  margin-top:2px;
+  width: 11px;
+  height: 11px;
+  background-position: -90px -86px;
 }
 
 html {
@@ -2931,7 +2941,7 @@ textarea {
 .btn_del {
   float:right;
   font-size:12px;
-  line-height:20px;
+  line-height:22px;
   color:#fff;
 }
 
@@ -3317,7 +3327,7 @@ textarea {
 }
 .product-item .pli-cate {
   display: block;
-  margin: 15px 0 4px 0;
+  margin: 12px 0 4px 0;
   display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height:18px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;
   line-height: 13px;
   font-size: 13px;
@@ -3356,8 +3366,8 @@ textarea {
 }
 
 .pli-box {
-  /* margin:5px 0; */
   min-height: 21px;
+  font-size: 16px;
 }
 
 .pli-heart_box {
@@ -3374,7 +3384,7 @@ textarea {
   display: block;
   margin-top:5px;
   color: #ababab;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   text-decoration: line-through
 }
@@ -3502,7 +3512,7 @@ textarea {
   margin-top:8px;
   line-height: 18px;
   color: #888;
-  font-size: 12px
+  font-size: 11px
 }
 .option-view .ov-title {
   float:left;
@@ -3526,7 +3536,8 @@ textarea {
 
 .ov_info-wrap {
   float:right;
-  display:inline-block
+  display:inline-block;
+  font-size: 12px;
 }
 
 .option-view .ov-info {
@@ -3847,6 +3858,17 @@ textarea {
 
 }
 
+@media screen and (max-width:360px) {
+  .option-view {
+    font-size: 10px;
+  }
+
+  .ov_info-wrap li:nth-child(2) {
+    font-size: 10px;
+    margin-left:0;
+  }
+}
+
 @media screen and (min-width:321px) and (max-width:600px) {
   /* #header .ss-text-box {
     width: 84%;
@@ -3971,7 +3993,7 @@ textarea {
 }
 
 .ss-list.keyLst {
-  padding: 9px 0;
+  padding: 9px 0 9px 50px;
 }
 
 /* .searchWrap .ss-list.second li {
@@ -4006,7 +4028,7 @@ textarea {
   padding: 0 12px;
   color: #555;
   font-size: 13px;
-  line-height: 1;
+  line-height: 16px;
   border: 1px solid #e5e5e5;
   border-radius: 30px;
   background-color: #fff;
