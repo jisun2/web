@@ -35,7 +35,7 @@ input:-internal-autofill-selected {
 /* .overflow_x::-webkit-scrollbar {
   display: none;
 } */
-@media screen and (min-width:100px) and (max-width:600px) {
+@media screen and (min-width:100px) and (max-width:570px) {
   .overflow_x {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -69,6 +69,10 @@ scrollbar-width: none;  /* Firefox */
 
 .ss-list.first {
   position:relative;
+}
+
+.overflow_x.mgTb2 {
+  margin:0 0 0 20px;
 }
 
 .brLine {
