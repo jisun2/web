@@ -62,24 +62,18 @@ scrollbar-width: none;  /* Firefox */
   padding-left:50px;
 }
 
-.overflow_x .mgTb2 {
-  display:inline-block;
-  width:150%;
-  margin: 0 20px !important;
-}
 .overflow_x.mgTb2 {
   display:block;
-  margin: 0 20px;
+  margin: 0 0 0 20px;
 }
 
 .ss-list.first {
   position:relative;
 }
 
-.pdB {
-  position:relative;
-  padding-bottom:25px;
-  /* width:100%; */
+.brLine {
+  padding-top:25px;
+  margin:0 20px;
   border-bottom:1px solid #f0f0f0; 
 }
 
@@ -3972,12 +3966,12 @@ textarea {
   padding-right:5px;
 }
 
-.searchWrap .ss-list.second li {
+/* .searchWrap .ss-list.second li {
   padding: 9px 5px 9px 0;
-}
-.searchWrap .ss-list.second {
+} */
+/* .searchWrap .ss-list.second {
   min-height:50px;
-}
+} */
 
 /* .searchWrap .ss-list.second li:first-child {
   padding:0 20px;
