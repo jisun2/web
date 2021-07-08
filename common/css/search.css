@@ -54,18 +54,18 @@ input:-internal-autofill-selected {
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
 }
-.overflow_x.mgTb {
+/* .overflow_x.mgTb {
   display:block;
-}
+} */
 
 .overflow_x.mgTb.pos_rel {
   padding-left:50px;
 }
-
+/* 
 .overflow_x.mgTb2 {
   display:block;
   margin: 0 0 0 20px;
-}
+} */
 
 .ss-list.first {
   position:relative;
@@ -3964,6 +3964,10 @@ textarea {
   position:relative;
   float: left;
   padding-right:5px;
+}
+
+.ss-list.keyLst {
+  padding: 9px 0;
 }
 
 /* .searchWrap .ss-list.second li {
