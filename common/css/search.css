@@ -3275,7 +3275,7 @@ textarea {
   clear:both;
   /* position: relative; */
   width: 100%;
-  /* min-height: 180px; */
+  min-height: 180px;
 }
 
 .product-item .pli-thumb {
@@ -3516,7 +3516,8 @@ textarea {
 }
 .option-view .ov-title {
   float:left;
-  cursor: pointer
+  cursor: pointer;
+  line-height: 1;
 }
 .option-view .ov-title::after {
   content: '';
