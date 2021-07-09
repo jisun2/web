@@ -32,7 +32,7 @@
             
             <div class="searchWrap">
                 <div id="container">
-                    <div class="sibi_search-wrap plb_title-box clearfix">
+                    <div class="sibi_search-wrap clearfix">
                         <span class="sibi-title">연관</span>
                         <div class="overflow_x scr_none">
                             <ul class="sbs-list">
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <!-- 검색 필터 키워드 -->
-                    <div class="ss_fitr">
+                    <div class="ss_fitr product_list-nav">
                         <!-- 추천 검색어 없을 때 -->
                         <!-- <p class="ss_none-text">아쉽게도 등록된 추천 검색어가 없어요.</p> -->
                         <!-- //추천 검색어 없을 때 -->
@@ -67,18 +67,18 @@
                                 <li><button type="button" class="ss-item">카테고리</button></li>
                             </ul>
                         </div>
+                        <!-- 검색 필터 툴팁 -->
+                        <div class="searchT tooltip">
+                            <span class="txt">
+                                원하시는 필터 조건을 적용해 보세요.
+                            </span>
+                            <button class="btn_del">
+                                <span class="ico keyDel"><span class="blind">필터 팝업 닫기</span>  </span>  
+                            </button>
+                        </div>
+                        <!-- //검색 필터 툴팁 -->
                     </div>
                     <!-- //검색 필터 키워드 -->
-                     <!-- 검색 필터 툴팁 -->
-                     <div class="searchT tooltip">
-                        <span class="txt">
-                            원하시는 필터 조건을 적용해 보세요.
-                        </span>
-                        <button class="btn_del">
-                            <span class="ico keyDel"><span class="blind">필터 팝업 닫기</span>  </span>  
-                        </button>
-                    </div>
-                    <!-- //검색 필터 툴팁 -->
     
                     <!-- 상품 리스트  -->
                     <div class="product_list-wrap padding-top plc_fc-box">
@@ -765,6 +765,11 @@
         <!-- slick slider -->
         <script src="../common/lib/slick.min.js"></script>
         <script>
+            // function myFunction(e) {
+            // e.classList.toggle("on");
+            // $('.toast.like').fadeIn().delay(1800);
+            // $('.toast.like').fadeOut();
+            // }
             function myFunction(e) {
                 e.classList.toggle("on");
                 $('.toast').fadeIn().delay(1800);
@@ -918,10 +923,10 @@
 
                 $(window).scroll(function(){
                     var nowScroll = $(window).scrollTop();
-                    var cateMainOffet = $('.overflow_x').offset().top;
+                    var cateMainOffet = $('.cate_main').offset().top;
                     var $nav = $('.product_list-nav');
 
-                    if ( nowScroll > cateMainOffet - 200 ) {
+                    if ( nowScroll > cateMainOffet - 100 ) {
                         $('.plb_title-box').addClass('active');
                     } else {
                         $('.plb_title-box').removeClass('active');
