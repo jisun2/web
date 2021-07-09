@@ -2951,12 +2951,12 @@ scrollbar-width: none;  /* Firefox */
   clear: both
 }
 .product_list-nav {
-  position:sticky;
+  /* position:sticky; */
   /* scroll-snap-type:y mandatory; */
   /* top:0; */
   /* display: none; */
   z-index: 1111111;
-  float: left;
+  /* float: left; */
   /* width: 220px; */
   /* margin-right: 36px */
 }
