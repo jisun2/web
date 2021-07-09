@@ -3755,7 +3755,6 @@ textarea {
 
 .searchWrap {
   position:relative;
-  overflow-x:hidden;
 }
 
 .searchWrap.pd {
