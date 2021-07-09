@@ -3507,10 +3507,11 @@ textarea {
   clear:both;
   position: relative;
   margin-top:8px;
-  line-height: 2.5;
+  line-height: 2.4;
   border-top: 1px solid #e5e5e5;
 }
 .option-view {
+  display:block;
   margin-top:8px;
   line-height: 18px;
   line-height: 2;
@@ -3518,16 +3519,16 @@ textarea {
   font-size: 11px
 }
 .option-view .ov-title {
-  float:left;
   cursor: pointer;
-  line-height: 1;
+  margin-top: -4px;
 }
 .option-view .ov-title::after {
   content: '';
   display: inline-block;
+  line-height: 1;
   width: 10px;
   height: 5px;
-  margin-left: 4px;
+  margin-left:4px;
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;
   vertical-align: 1px
 }
