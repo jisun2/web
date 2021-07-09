@@ -3277,7 +3277,7 @@ scrollbar-width: none;  /* Firefox */
   text-decoration: line-through
 }
 .product-item .pli-coupon {
-  height: 19px;
+  height: 18px;
   padding-left: 4px;
   background-color: #7890af;
   border: 1px solid #7890af;
@@ -3306,6 +3306,7 @@ scrollbar-width: none;  /* Firefox */
 }
 .product-item .pli_dis-box .big-font {
   font-size: 12px;
+  font-weight: 500;
   color: #555;
 }
 .pli_dis-box li {
