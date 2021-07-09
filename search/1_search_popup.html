@@ -921,23 +921,23 @@
                     thumbHeightAuto();
                 });
 
-                $(window).scroll(function(){
-                    var nowScroll = $(window).scrollTop();
-                    var cateMainOffet = $('.cate_main').offset().top;
-                    var $nav = $('.product_list-nav');
+                // $(window).scroll(function(){
+                //     var nowScroll = $(window).scrollTop();
+                //     var cateMainOffet = $('.cate_main').offset().top;
+                //     var $nav = $('.product_list-nav');
 
-                    if ( nowScroll > cateMainOffet - 100 ) {
-                        $('.plb_title-box').addClass('active');
-                    } else {
-                        $('.plb_title-box').removeClass('active');
-                    }
+                //     if ( nowScroll > cateMainOffet - 100 ) {
+                //         $('.plb_title-box').addClass('active');
+                //     } else {
+                //         $('.plb_title-box').removeClass('active');
+                //     }
 
-                    if ( nowScroll > 0 ) {
-                        $nav.css('transform', 'translateY(' + nowScroll + 'px)');
-                    } else {
-                        $nav.css('transform', 'translateY(' + 0 + 'px)');
-                    }
-                });
+                //     if ( nowScroll > 0 ) {
+                //         $nav.css('transform', 'translateY(' + nowScroll + 'px)');
+                //     } else {
+                //         $nav.css('transform', 'translateY(' + 0 + 'px)');
+                //     }
+                // });
 
                 function autoWidth(ele, child, add) {
                     var width = 0;
