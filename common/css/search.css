@@ -3239,6 +3239,7 @@ scrollbar-width: none;  /* Firefox */
 }
 .product-item .pli_pay-info {
   line-height: 0;
+  margin-top: 5px;
   min-height: 32px;
   color: #000;
   vertical-align: text-bottom;
@@ -3275,7 +3276,6 @@ scrollbar-width: none;  /* Firefox */
 }
 .product-item .pli_pay-info .pli-sale {
   display: block;
-  margin-top:5px;
   height:12px;
   line-height: 1;
   color: #ababab;
