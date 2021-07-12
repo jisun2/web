@@ -3340,8 +3340,8 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .ico.like_s {float:left; 
-  width:16px; height:15px; background-position:-192px -47px}
-.list_bar .on .ico.like_s {background-position:-192px -47px}
+  width:16px; height:15px; background-position:-192px -48px}
+.list_bar .on .ico.like_s {background-position:-192px -48px}
 
 .pli-top_wrap {
   position:relative;
