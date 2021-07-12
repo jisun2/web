@@ -3,6 +3,7 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
+.sticky {z-index:1; position:sticky; top:0}
 
 html {
   -webkit-box-sizing: border-box;
@@ -2888,8 +2889,6 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .ss_fitr .overflow_x {
-  /* z-index: 11;
-  position: sticky; */
   background-color: #f9f9f9;
 }
 
@@ -3067,6 +3066,9 @@ scrollbar-width: none;  /* Firefox */
 .plc_fc-pro span {
   font-size: 13px
 }
+.plc_fc-filter {
+  height:44px;
+}
 .plc_fc-filter .filter_view {
   display: inline-block;
   position:relative;
@@ -3206,7 +3208,7 @@ scrollbar-width: none;  /* Firefox */
 }
 .product-item .pli-cate {
   display: block;
-  margin: 12px 0 4px 0;
+  margin: 14px 0 4px 0;
   display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height:18px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;
   line-height: 13px;
   font-size: 13px;
@@ -3247,17 +3249,21 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .pli-box {
-  min-height: 30px;
+  min-height: 27px;
   vertical-align: text-bottom;
   line-height: 1;
   font-size: 16px;
 }
 
 .pli-pay {
+  display: inline-block;
   line-height: 20px;
   vertical-align: text-bottom;
 }
-
+.mg10 {
+  display: inline-block;
+  margin:10px 0;
+}
 .pli-heart_box {
   position:absolute;
   bottom:10px;
@@ -3270,11 +3276,17 @@ scrollbar-width: none;  /* Firefox */
 }
 .product-item .pli_pay-info .pli-sale {
   display: block;
+  margin-top:5px;
+  height:12px;
   line-height: 1;
   color: #ababab;
   font-size: 12px;
   font-weight: 400;
   text-decoration: line-through
+}
+
+.product-item .visi_hid {
+ visibility: hidden;
 }
 .product-item .pli-coupon {
   height: 18px;
@@ -3328,8 +3340,8 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .ico.like_s {float:left; 
-  width:16px; height:15px; background-position:-192px -48px}
-.list_bar .on .ico.like_s {background-position:-192px -48px}
+  width:16px; height:15px; background-position:-192px -47px}
+.list_bar .on .ico.like_s {background-position:-192px -47px}
 
 .pli-top_wrap {
   position:relative;
@@ -3387,8 +3399,8 @@ scrollbar-width: none;  /* Firefox */
   content: '';
   display: inline-block;
   line-height: 1;
-  width: 10px;
-  height: 5px;
+  width: 11px;
+  height: 6px;
   margin-left:4px;
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;
   vertical-align: 1px
@@ -3447,8 +3459,8 @@ scrollbar-width: none;  /* Firefox */
 }
 .option-detail .ov-arrow {
   display: block;
-  width: 10px;
-  height: 5px;
+  width: 11px;
+  height: 6px;
   margin-top: 13px;
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;
 }
@@ -3805,14 +3817,14 @@ scrollbar-width: none;  /* Firefox */
   position: absolute;
   /* top:44px; */
   float:left;
-  padding:14px 16.5px 10px 16.5px;
+  padding:14px 16px 10px 16px;
   background-color:#f9f9f9;
 }
 
 .searchWrap .reset {
   float:left;
-  width:17px;
-  height:20px;
+  width:18px;
+  height:21px;
   background : url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/btn_reset.png") center center/cover;
   background-repeat: no-repeat;
 }
@@ -3835,10 +3847,10 @@ scrollbar-width: none;  /* Firefox */
 
 .searchWrap .ss-item .arrow {
   display: flex;
-  margin:4px 0px 0px 5px;
+  margin:2px 0px 0px 5px;
   float:right;
-  width:12px;
-  height:6px;
+  width:16px;
+  height:10px;
   background : url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_keyword_arrow.png") center center/cover;
   background-repeat: no-repeat;
 }
@@ -4402,8 +4414,8 @@ scrollbar-width: none;  /* Firefox */
 .cart_fc-box .gray_border-btn::after {
   content: '';
   display: inline-block;
-  width: 10px;
-  height: 5px;
+  width: 11px;
+  height: 6px;
   margin-left: 8px;
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;
   vertical-align: 2px
