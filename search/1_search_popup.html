@@ -792,25 +792,15 @@
                 //     }
                 // }
 
-                // function myFunction(e) {
-                // e.classList.toggle("on");
-                //     $('.toast').fadeIn().delay(1800);
-                //     $('.toast').fadeOut();
-                //     $('.pli-heart').click(function(){
-                //         $('.toast').css('display' ,'block');
-                //     })
-                //     $('.pli-heart.on').click(function(){
-                //         $('.toast').css('display' ,'none');
-                //     })
-                // }
-     
-            function myFunction(e) {
+                function myFunction(e) {
                 e.classList.toggle("on");
+                    $('.toast').fadeIn().delay(1800);
+                    $('.toast').fadeOut();
+                    $('.pli-heart').click(function(){
+                        $('.toast.on').css('display' ,'block');
+                    })
                     $('.pli-heart').click(function(){
                         $('.toast').css('display' ,'none');
-                    })
-                    $('.pli-heart.on').click(function(){
-                        $('.toast').css('display' ,'block');
                     })
                 }
                 $(".tooltip").slideDown(500); 
