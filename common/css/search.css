@@ -294,7 +294,7 @@ scrollbar-width: none;  /* Firefox */
 
 .ico.keyDel {
   display:inline-block;
-  margin-top:2px;
+  margin-top:4px;
   width: 11px;
   height: 11px;
   background-position: -90px -86px;
@@ -4729,7 +4729,7 @@ input:focus {
 	-moz-border-radius: 30px;
 	border-radius: 30px;
   transform: translate(-50%, -30px);
-  animation: fade-in 1000ms, fade-out 1500ms, 2000ms;
+  animation: fade-in 1000ms, fade-out 1000ms, 2000ms;
 
 }
 
@@ -4751,6 +4751,7 @@ input:focus {
   to {
     opacity: 1; 
   }
+
 } 
 
 .search_standard-wrap .ss-text{
