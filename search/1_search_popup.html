@@ -105,7 +105,7 @@
                                             <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
                                         </span>
                                     </a>
-                                    <button type="button" class="pli-heart"></button>
+                                    <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
                                 </div>
 
                                 <div class="pli-info_wrap">
@@ -751,7 +751,7 @@
                                 </div>
                             </div>
                             <!-- .product-item E -->
-                            <div id="toast">
+                            <div class="toast">
                                 좋아요 목록에 추가 되었어요!
                             </div>
                         </div>
@@ -783,28 +783,30 @@
                 //     $('.ss-text').css('','');
                 // });
 
-                function myFunction(e) {
+                // function myFunction(e) {
+                //     e.classList.toggle("on");
+                //         $('.toast').fadeIn().delay(1800);
+                //         // $('.toast').fadeOut();
+                //         $('.pli-heart.on').click(function(){
+                //         $('.toast').hide();
+                //     }
+                // }
+     
+            function myFunction(e) {
                 e.classList.toggle("on");
                     $('.toast').fadeIn().delay(1800);
-                    // $('.toast').fadeOut();
                     $('.pli-heart.on').click(function(){
-                    $('.toast').hide();
-                })
-
-            // function myFunction(e) {
-            //     e.classList.toggle("on");
-            //         $('.toast').fadeIn().delay(1800);
-            //         $('.pli-heart.on').click(function(){
-            //             $('.toast').fadeOut().hide();
-            //          })
-            //         }) 
+                        $('.toast').css('display' ,'none');
+                    })
+                }
                 $(".tooltip").slideDown(500); 
                 $( this ).css( 'background-color', '#ffcdd2' );
                 $( '.tooltip' ).fadeIn(100);    
                 $( '.btn_del' ).click(function() {
                 $( '.tooltip' ).hide();                
-                $( '.tooltip' ).fadeOut(100);                
-            });       
+                $( '.tooltip' ).fadeOut(100);
+                                
+            })  
         </script>
 
         <script>
@@ -970,30 +972,5 @@
             })(jQuery);
         </script>
 
-        <!-- <script>
-            // function hideToast(){
-                
-            //     var alert = document.getElementById("toast");
-            //     alert.style.opacity = 0;
-            //     clearInterval(intervalCounter);
-            // }
-            var intervalCounter = 0;
-            // function myfunc() {
-            $(document).ready(function(){
-                var likebtn = $('.pli-heart');
-                var toast = $('#toast');
-                var toastHeight = toast.outerHeight();
-                
-                toast.css('bottom', -toastHeight);
-                
-                likebtn.on('click',function(){
-                    $(this).next(toast).animate({
-                        bottom : 0
-                    }, 400).delay(1000).animate({
-                        bottom : -toastHeight
-                    }, 400);
-                });
-            }); 
-        </script> -->
     </body>
 </html>
