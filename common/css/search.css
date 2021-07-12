@@ -3,7 +3,7 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
-.sticky {z-index:1; position:sticky; top:0}
+.sticky {z-index:10; position:sticky; top:0}
 
 html {
   -webkit-box-sizing: border-box;
@@ -3288,6 +3288,7 @@ scrollbar-width: none;  /* Firefox */
  visibility: hidden;
 }
 .product-item .pli-coupon {
+  margin-top:5px;
   height: 18px;
   padding-left: 4px;
   background-color: #7890af;
@@ -4729,6 +4730,7 @@ input:focus {
 	border-radius: 30px;
   transform: translate(-50%, -30px);
   animation: fade-in 1000ms, fade-out 1500ms, 2000ms;
+
 }
 
 @keyframes fade-in {
