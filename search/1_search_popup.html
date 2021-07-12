@@ -55,7 +55,7 @@
                         <button class="btn_reset"> <span class="reset"></span></button><!-- reset BTN -->
                         <div class="overflow_x">
                             <ul class="ss-list second keyLst">
-                                <li><button type="button" class="ss-item on">3만원 이하 999+ <span class="ico keyDel"><span class="blind">키워드 삭제</span>  </span></button></li>
+                                <li><button type="button" class="ss-item on">3만원 이하 999+ <span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
                                 <li><button type="button" class="ss-item on">상품쿠폰 <span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
                                 <li><button type="button" class="ss-item on">무료쿠폰 5</button></li>
                                 <li><button type="button" class="ss-item">나이 1<span class="ico arrowDwn"></span></button></li>
@@ -770,15 +770,22 @@
             // $('.toast.like').fadeIn().delay(1800);
             // $('.toast.like').fadeOut();
             // }
-            function myFunction(e) {
-                e.classList.toggle("on");
+
+            // function myFunction(e) {
+            //     e.classList.toggle("on");
+            //     $('.toast').fadeIn().delay(1800);
+            //     $('.toast').fadeOut();
+            //     $('.pli-heart.on').click(function(){
+            //     $('.toast').hide();
+            //     });
+            // }
+
+            $( document ).ready(function() {
+                $('.pli-heart').on('click', function() {
+                $(this).toggleClass('on');
                 $('.toast').fadeIn().delay(1800);
                 $('.toast').fadeOut();
-                $('.pli-heart.on').click(function(){
-                $('.toast').hide();
-                });
-            }
-            $( document ).ready(function() {
+            });
                 $('.ss-text').keyup(function () {
                     $('.ss-text').css('','');
                 });
@@ -910,11 +917,6 @@
                     $('.pli-thumb img').height(thisWidth);
                 }
 
-                   // 썸네일 height 맞춤
-                //    function thumbHeightAuto() {
-                //     var thisWidth = $('.pli-thumb').width();
-                //     $('.pli-thumb').height(thisWidth);
-                // }
                 thumbHeightAuto();
 
                 $(window).resize(function(){
@@ -956,6 +958,9 @@
                 })
                 $('.filter_select').on('click touch', function () {
                     $(this).toggleClass('active');
+                })
+                $('.keyDel').on('click touch', function(){
+                    $(this).parent().hide();
                 })
             })(jQuery);
         </script>
