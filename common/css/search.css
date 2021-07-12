@@ -3057,7 +3057,7 @@ scrollbar-width: none;  /* Firefox */
   margin: 0 auto
 }
 .plc_fc-pro {
-  padding:13px 20px;
+  padding:15px 20px;
   display: inline-block;
   float:right;
   font-size: 14px;
@@ -3077,17 +3077,16 @@ scrollbar-width: none;  /* Firefox */
 .plc_fc-filter .filter_view select {
   background-color: transparent;
   margin-left:25px;
-  height: 40px;
+  height: 44px;
   font-size: 14px;
   color: #555;
 }
 .ico.upDownArr {
   display: inline-block;
   position:absolute;
-  top:13.5px;
+  top:16.5px;
   left:15px;
   content: '';
-
 }
 .upDownArr {
   width:15px;
@@ -3394,16 +3393,17 @@ scrollbar-width: none;  /* Firefox */
 .option-view .ov-title {
   cursor: pointer;
   margin-top: -4px;
+  font-size: 12px;
 }
 .option-view .ov-title::after {
   content: '';
   display: inline-block;
+  margin:2px 0 0 5px;
   line-height: 1;
   width: 11px;
   height: 6px;
-  margin-left:4px;
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;
-  vertical-align: 1px
+  vertical-align: 0px
 }
 .option-view .ov-title.active::after {
   -webkit-transform: rotate(180deg);
@@ -3845,15 +3845,14 @@ scrollbar-width: none;  /* Firefox */
   background-color:#3067cc;
 }
 
-.searchWrap .ss-item .arrow {
-  display: flex;
-  margin:2px 0px 0px 5px;
-  float:right;
-  width:16px;
-  height:10px;
-  background : url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_keyword_arrow.png") center center/cover;
-  background-repeat: no-repeat;
+.searchWrap .ss-item .arrowDwn {
+  display: inline-block;
+  margin-top: 2px;
+  width: 14px;
+  height: 7px;
+  background-position: -86px -69px;
 }
+
 .searchWrap .ss-list .ss-item.gray {
   border: 1px solid #f5f5f5;
   background-color: #f5f5f5
