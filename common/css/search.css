@@ -3,7 +3,6 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
-.sticky {z-index:10; position:sticky; top:0}
 
 html {
   -webkit-box-sizing: border-box;
@@ -188,38 +187,16 @@ textarea {
 button,
 html,
 input,
-textarea {
-  font-family: proxima-nova,'Noto Sans KR'!important;
-  font-size: 16px
-}
-.visi_hid {
-  visibility: hidden;
-}
+textarea {font-family: proxima-nova,'Noto Sans KR'!important; font-size: 16px}
+
+.visi_hid {visibility: hidden;}
+.sticky {z-index:10; position:sticky; top:0}
 .blind {
-  visibility: hidden;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  line-height: 0
-}
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both
-}
+  visibility: hidden; overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0}
+.clearfix::after {content: ''; display: block; clear: both}
 
-
-input:-internal-autofill-selected {
-  background-color:#fff;
-}
-
-.overflow_x {
-  overflow-x: auto;
-}
-.example::-webkit-scrollbar {
-  display: none;
-}
+.overflow_x {overflow-x: auto;}
+.example::-webkit-scrollbar {display: none;}
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .example {
@@ -229,6 +206,10 @@ scrollbar-width: none;  /* Firefox */
 
 .overflow_x.mgTb.pos_rel {
   padding-left:50px;
+}
+
+input:-internal-autofill-selected {
+  background-color:#fff;
 }
 
 .ss-list.first {
@@ -247,7 +228,7 @@ scrollbar-width: none;  /* Firefox */
 
 .search-key {
   width:100%;
-  padding: 25px 0;
+  padding: 17px 0;
   background-color:#fff;
 }
 
@@ -299,7 +280,6 @@ scrollbar-width: none;  /* Firefox */
   height: 11px;
   background-position: -90px -86px;
 }
-
 
 .po-re {
   position: relative
@@ -430,7 +410,7 @@ scrollbar-width: none;  /* Firefox */
   width: 10px;
   height: 10px;
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/close_gray-icon.png) center center/cover no-repeat
-}*/
+}
 .like_toggle-btn {
   width: 17px;
   height: 15px;
@@ -3414,15 +3394,13 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .ov_info-wrap {
-  float:right;
+  float: right;
   display:inline-block;
   font-size: 12px;
 }
 .ov_info-wrap li {
   line-height: 18px;
 }
-
-
 
 .option-view .ov-info {
   display:inline-block;
@@ -3688,32 +3666,6 @@ scrollbar-width: none;  /* Firefox */
   color: #ababab !important;
 }
 
-@media screen and (max-width:720px) {
-  #header .ss-box.wd {
-    width:90%;
-  }
-  #header .ss-box.wd .ss-text-box {
-    width:100%;
-  }
-  #header .ss-text-box {
-    width:82%;
-  }
-  .overflow_x .ms-list.active li:nth-child() {
-    left:5%;
-    background-color: #fff;
-  }
-  .main_search-wrap .ms-list {
-    width:100%
-  }
-  .ms-list.active ul {
-    clear:both;
-    display:block;
-    left:25%;
-    background-color: #fff;
-  }
-}
-
-
 #header .ss-text::-webkit-input-placeholder {
   color: #888;
   font-size: 15px;
@@ -3760,6 +3712,10 @@ scrollbar-width: none;  /* Firefox */
   background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_search_del.png) no-repeat;
   background-size:15px 15px;
 }
+
+
+
+
 
 /* .searchWrap .ss-content {
   padding: 0 0 10px 0
@@ -4307,7 +4263,7 @@ scrollbar-width: none;  /* Firefox */
 .cart_info-box .soldout {
   position: relative
 }
-.cart_info-box .soldout::after {
+/* .cart_info-box .soldout::after {
   content: 'SOLD OUT';
   display: block;
   position: absolute;
@@ -4322,7 +4278,7 @@ scrollbar-width: none;  /* Firefox */
   font-size: 18px;
   font-weight: 700;
   text-align: center
-}
+} */
 .cart-title a {
   display: -webkit-box;
   height: auto;
@@ -4804,6 +4760,30 @@ input:focus {
   ::-webkit-scrollbar-button { width:20px; height:10px; display: none; }  */
 }
 
+@media screen and (max-width:720px) {
+  #header .ss-box.wd {
+    width:90%;
+  }
+  #header .ss-box.wd .ss-text-box {
+    width:100%;
+  }
+  #header .ss-text-box {
+    width:82%;
+  }
+  .overflow_x .ms-list.active li:nth-child() {
+    left:5%;
+    background-color: #fff;
+  }
+  .main_search-wrap .ms-list {
+    width:100%
+  }
+  .ms-list.active ul {
+    clear:both;
+    display:block;
+    left:25%;
+    background-color: #fff;
+  }
+}
 
 @media screen and (max-width:360px) {
   .option-view {
