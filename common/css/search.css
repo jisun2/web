@@ -2774,6 +2774,7 @@ width: 400px;
 
 /*  */
 .irs--big .irs-line {
+  height:4px !important;
   background-color: #e9efff !important;
   border: none !important;
 }
@@ -2782,7 +2783,20 @@ width: 400px;
   display: none !important;
 }
 .irs--big .irs-handle {
+  width:24px !important;
+  height:24px !important;
   background-color: #e9efff !important;
   background: #fff !important;
   border :4px solid #3067cc !important;
+}
+
+.irs--big .irs-bar {
+  height:4px;
+}
+
+.irs-single {
+  visibility: revert !important;
+}
+.irs--big .irs-from, .irs-to, .irs-min, .irs-max {
+  display: none !important;
 }
