@@ -63,7 +63,7 @@
     src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot);
     src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
   }
-body,option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
+body,option,select,input{font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
 input[type=number] {font-family:'proxima-nova' !important}
 html{font-size:14px;line-height:20px;color:#555}
 body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar;}
