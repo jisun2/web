@@ -64,11 +64,11 @@
     src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
   }
 body,option,select,input{font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
-input[type=number] {font-family:'proxima-nova' !important}
-html{font-size:14px;line-height:20px;color:#555}
+input[type=number] {ont-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
+html{font-size:14px;line-height:20px;color:#555; ont-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
 body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar;}
 button,input,pre,textarea{font-family:inherit;font-size:inherit;color:inherit}
-body,html{height:100%}
+body,html{height:100%; ont-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
 fieldset,ol,ul{margin:0;padding:0;}
 ol,ul{list-style:none}
 dd,dl,h1,h2,h3,h4,h5,input,p,pre{margin:0}
