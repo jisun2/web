@@ -1,4 +1,68 @@
 @charset "utf-8";
+
+@font-face {
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ProximaNova/ProximaNova-Regular.ttf);
+    unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+  }
+  @font-face {
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/ProximaNova/ProximaNova-Medium.ttf);
+    unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+  }
+  @font-face {
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ProximaNova/ProximaNova-Semibold.ttf);
+    unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Light.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 350;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
+  }
 body,option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
 input[type=number] {font-family:'proxima-nova' !important}
 html{font-size:14px;line-height:20px;color:#555}
@@ -67,6 +131,7 @@ input::-ms-clear{display:none}
 .lnb_with_cont .cont>.func>li:first-child:after,
 .snb.magazine li+li:before,
 .viewdetail .info .links li+li:before{left:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%)} */
+
 
 .hide{display:none!important}
 .light[class*=btn_],
@@ -346,7 +411,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .mgB10 {margin-bottom:10px !important}
 .mgB15 {margin-bottom:15px !important}
 /* btn */
-.btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color:#111}
+.btn_bk {display:inline-block; width:100%; max-height:55px; text-align:center; color:#fff; background-color:#000}
 .btn_bk .dark {display:block; padding:17px 0}
 .pd_btn_box .orange_btn {width:100%; height:45px; background-color:#ff4e25; color:#fff; font-size:17px; font-weight:500; border-radius:3px}
 .ico.more_arw {width:10px; height:16px; margin-left:10px; background-position:-183px -45px}
@@ -479,7 +544,9 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .tooltip .tooltiptext {z-index:1;padding:10px; background-color:#3067cc; color:#fff; text-align:left; border-radius:5px;-webkit-border-radius:6px;position:absolute;bottom:130%; margin-left:-58px;font-size:12px; font-weight:400; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
 .tooltip .tooltiptext:after {content:'';position:absolute;top:100%; left:48%; border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
 /* 공통 TopBTN */
-._button_top_wrap {overflow-x:hidden; max-width:720px; position:fixed; bottom:20px; right:20px!important; transition: bottom 0.1s ease-in-out; -webkit-transition: bottom 0.1s ease-in-out; -moz-transition: bottom 0.1s ease-in-out; -ms-transition: bottom 0.1s ease-in-out; -o-transition: bottom 0.1s ease-in-out;padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom);}
+._button_top_wrap {overflow-x:hidden; max-width:720px; position:fixed; bottom:20px; right:20px!important; transition: bottom 0.1s ease-in-out; 
+    -webkit-transition: bottom 0.1s ease-in-out; -moz-transition: bottom 0.1s ease-in-out; -ms-transition: bottom 0.1s ease-in-out; 
+    -o-transition: bottom 0.1s ease-in-out;}
 ._button_top_wrap.nav-up {bottom:20px}
 ._button_top_wrap.nav-down {right:20px; bottom:80px; right:0; overflow-x:hidden;}
 ._button_top_wrap a {display:block; width:40px; height:40px;}
