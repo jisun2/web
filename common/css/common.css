@@ -1,10 +1,74 @@
 @charset "utf-8";
-body,option,select,input{font-family:'Noto Sans KR','proxima-nova',sans-serif !important}
-input[type=number] {font-family:'proxima-nova' !important}
-html{font-size:14px;line-height:20px;color:#555}
+
+@font-face {
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ProximaNova/ProximaNova-Regular.ttf);
+    unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+  }
+  @font-face {
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/ProximaNova/ProximaNova-Medium.ttf);
+    unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+  }
+  @font-face {
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ProximaNova/ProximaNova-Semibold.ttf);
+    unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Light.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 350;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.otf) format("opentype")
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot);
+    src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
+  }
+body,option,select,input{font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
+input[type=number] {font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
+html{font-size:14px;line-height:20px;color:#555; font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
 body{margin:0;-ms-overflow-style:-ms-autohiding-scrollbar;}
 button,input,pre,textarea{font-family:inherit;font-size:inherit;color:inherit}
-body,html{height:100%}
+body,html{height:100%; font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
 fieldset,ol,ul{margin:0;padding:0;}
 ol,ul{list-style:none}
 dd,dl,h1,h2,h3,h4,h5,input,p,pre{margin:0}
@@ -67,6 +131,7 @@ input::-ms-clear{display:none}
 .lnb_with_cont .cont>.func>li:first-child:after,
 .snb.magazine li+li:before,
 .viewdetail .info .links li+li:before{left:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%)} */
+
 
 .hide{display:none!important}
 .light[class*=btn_],
