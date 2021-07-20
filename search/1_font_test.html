@@ -37,6 +37,11 @@
             </div>
 
             <div id="container">
+                <h1 style=" font-size:21px; font-weight:400; line-height: 24px; margin-bottom: 24px; color:#333">
+                    챔피온 S600 파워블랜드 무지 <br> 맨투맨 크루넥
+                    <br>
+                    [Flex07] [솔트워터] 오리지널/클래식/<br>레트로/슬라이드 샌들
+                </h1>
                 <div class="searchWrap">
                     <div class="sibi_search-wrap clearfix">
                         <span class="sibi-title">연관</span>
@@ -786,87 +791,14 @@
                             </div>
                         </div>
                        
-                        <div class="filter_contWrap" id="tab-cont">
-                            <div class="swipe-tab-cont">
-                                content111
-                                <span class="irs irs--big js-irs-0">
-                                    <span class="irs">
-
-                                        <span class="irs-single">원 이상 ~ 원 이하 </span>
-                                    </span>
-                                </span>
-                                <input type="text" id="example_id" class="js-range-slider" name="example_name" value="" />
-
-                                <div class="">
-                                    <ul class="filterKey ss-list">
-                                        <li><button type="button" class="ss-item on">3만원 이하</button></li>
-                                        <li><button type="button" class="ss-item on">5~7만원</button></li>
-                                        <li><button type="button" class="ss-item on">7~10만원</button></li>
-                                        <li><button type="button" class="ss-item on">10~20만원</button></li>
-                                        <li><button type="button" class="ss-item">20~30만원</button></li>
-                                        <li><button type="button" class="ss-item">30~50만원</button></li>
-                                        <li><button type="button" class="ss-item">50~100만원</button></li>
-                                        <li><button type="button" class="ss-item">100만원 이상</button></li>
-                                    </ul>
+                        <div class="main-container">
+                            <div class="swipe-tabs-container" id="tab-cont">
+                                <div class="swipe-tab-content">
+                                    content111
+                                    <input type="text" id="example_id" class="js-range-slider" name="example_name" value="" />
                                 </div>
 
-                            </div>
-                            <div>
-                                <span class="">성별</span>
-                                <div>
-                                    <div class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1"><span class="mgl30">남성</span></label>
-                                    </div>
-                                    <div class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_2"><label for="radio1_2"><span class="mgl30">여성</span></label>
-                                    </div>
-                                </div>
-                            </div>
-
-                           
-                            <div class="swipe-tab-cont">
-                                <div class="article_title">CLOTHING</div>
-                                <div class="article_content">
-                                    <ul>
-                                        <li>전체 16,106</li>
-                                        <li>맨투맨 1,453</li>
-                                        <li>아우터 1,412</li>
-                                        <li>니트 2,243</li>
-                                        <li>셔츠/블라우스 1,423</li>
-                                    </ul>
-                                    <ul>
-                                        <li>티셔츠 2,674</li>
-                                        <li>후디 1,524</li>
-                                        <li>바지 1,610</li>
-                                        <li>원피스/스커트 2,454</li>
-                                        <li>이너웨어 1,313</li>
-                                    </ul>
-                                </div>
-
-                                <div class="article_title">SHOES</div>
-                                <div class="article_content">
-                                    <div class="table_wrap2 pd_0">
-                                        dfdff
-                                    </div>
-                                </div>
-                                <div class="article_title">ACC</div>
-                                <div class="article_content">
-                                    <div class="table_wrap2 pd_0">
-                                        dfdff
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swipe-tab-cont">
-                                브랜드
-                            </div>
-                            <div class="swipe-tab-cont">사이즈
-                            </div>
-                            <div class="swipe-tab-cont">컬러</div>
-                            <div class="swipe-tab-cont">소재/패턴</div>
-                            <div class="swipe-tab-cont">이벤트</div>
-                            <div class="swipe-tab-cont">상품 만족도
-                                <div class="swipe-tab-cont">
+                                <div class="swipe-tab-content">
                                     <fieldset class="rating">
                                         <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                                         <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
@@ -879,10 +811,18 @@
                                         <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
                                         <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
                                     </fieldset>
-                                </div>  
+                                </div>
+
+                                <div class="swipe-tab-content">
+                                    content3
+                                </div>
+
+                                <div class="swipe-tab-content">content4 
+                                </div>
+                                <div class="swipe-tab-content">content5</div>
+                                <div class="swipe-tab-content">content6</div>
+                                <div class="swipe-tab-content">content7</div>
                             </div>
-                            <div class="swipe-tab-cont">시즌</div>
-                      
                         </div>
                         <div class="filter_btn">
                             <div class="overflow_x">
@@ -1102,6 +1042,7 @@
                 grid_num: 10
             });  
             
+            
             $(document).ready(function(){
                 // tab
                     var tabBtn = $("#tab_btn > ul > li");
@@ -1117,23 +1058,6 @@
                 });
 
             });     
-            (function(){
-                function toggleAcco(ele, content) {
-                    $(ele).on('click touch', function () {
-                        $(this).toggleClass('active');
-                        $(this).siblings(content).toggle();
-                    });
-                }
-                toggleAcco('.article_title', '.article_content');
-                $('.border_tab-list li').each(function(i){
-                    $(this).click(function(){
-                        $(this).addClass('active').siblings().removeClass('active');
-                        $('.border_tab-cont > div').eq(i).addClass('active').siblings().removeClass('active');
-                        return false;
-                    });
-                });
-            })(jQuery);
-
         </script>
         
     </body>

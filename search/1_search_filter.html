@@ -7,12 +7,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
-        <!--가격 슬라이드 Plugin 추가 -->
-        <script src="../common/lib/ion.rangeSlider.js"></script>
-        <script src="../common/lib/ion.rangeSlider.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--//가격 슬라이드 Plugin 추가 -->
-        <link rel="stylesheet" href="../common/css/ion.rangeSlider.min.css">
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/search.css">
         <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
@@ -74,7 +68,6 @@
                                 <li><button type="button" class="ss-item">카테고리</button></li>
                             </ul>
                         </div>
-                        
                         <!-- 검색 필터 툴팁 -->
                         <div class="searchT tooltip">
                             <span class="txt">
@@ -763,127 +756,72 @@
                     </div>
                     <!-- //토스트 팝업 -->
 
+
+
                     <div class="filterWrap">
                         <h3 class="slick-title blind">필터 선택</h3>
                         <!-- <p class="slick-caption">Swipeable tabs created using Slick Carousel - Touch enabled<p> -->
                         <div class="tabTouch">
                             <span class="touchBar"></span>
                         </div>
-                        <div>
-                            <div id="tab_btn" class="overflow_x">
-                                <ul class="swipe-tabs">
-                                    <li class="swipe-tab"><span>가격</span> </li>
-                                    <li class="swipe-tab">성별</li>
-                                    <li class="swipe-tab">카테고리</li>
-                                    <li class="swipe-tab">브랜드</li>
-                                    <li class="swipe-tab">사이즈</li>
-                                    <li class="swipe-tab">컬러</li>
-                                    <li class="swipe-tab">소재/패턴</li>
-                                    <li class="swipe-tab">이벤트</li>
-                                    <li class="swipe-tab">상품 만족도</li>
-                                    <li class="swipe-tab">시즌</li>
-                                </ul>
+                        <div class="sub-header">
+                            <div class="swipe-tabs">
+                                <div class="swipe-tab">가격</div>
+                                <div class="swipe-tab">성별</div>
+                                <div class="swipe-tab">카테고리</div>
+                                <div class="swipe-tab">브랜드</div>
+                                <div class="swipe-tab">사이즈</div>
+                                <div class="swipe-tab">컬러</div>
+                                <div class="swipe-tab">소재</div>
                             </div>
                         </div>
-                       
-                        <div class="filter_contWrap" id="tab-cont">
-                            <div class="swipe-tab-cont">
-                                content111
-                                <span class="irs irs--big js-irs-0">
-                                    <span class="irs">
-
-                                        <span class="irs-single">원 이상 ~ 원 이하 </span>
-                                    </span>
-                                </span>
-                                <input type="text" id="example_id" class="js-range-slider" name="example_name" value="" />
-
-                                <div class="">
-                                    <ul class="filterKey ss-list">
-                                        <li><button type="button" class="ss-item on">3만원 이하</button></li>
-                                        <li><button type="button" class="ss-item on">5~7만원</button></li>
-                                        <li><button type="button" class="ss-item on">7~10만원</button></li>
-                                        <li><button type="button" class="ss-item on">10~20만원</button></li>
-                                        <li><button type="button" class="ss-item">20~30만원</button></li>
-                                        <li><button type="button" class="ss-item">30~50만원</button></li>
-                                        <li><button type="button" class="ss-item">50~100만원</button></li>
-                                        <li><button type="button" class="ss-item">100만원 이상</button></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div>
-                                <span class="">성별</span>
-                                <div>
-                                    <div class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1"><span class="mgl30">남성</span></label>
+                        <div class="main-container">
+                            <div class="swipe-tabs-container">
+                                <div slider="" id="slider-distance">
+                                    <div>
+                                      <div inverse-left="" style="width:70%;"></div>
+                                      <div inverse-right="" style="width:70%;"></div>
+                                      <div range="" style="left:30%;right:40%;"></div>
+                                      <span thumb="" style="left:30%;"></span>
+                                      <span thumb="" style="left:60%;"></span>
+                                      <div sign="" style="left:30%;">
+                                        <span id="value1">30</span>
+                                      </div>
+                                      <div sign="" style="left:60%;">
+                                        <span id="value1">60</span>
+                                      </div>
                                     </div>
-                                    <div class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_2"><label for="radio1_2"><span class="mgl30">여성</span></label>
-                                    </div>
-                                </div>
-                            </div>
+                                    <input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="
+                                    this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                                    var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                    var children = this.parentNode.childNodes[1].childNodes;
+                                    children[1].style.width=value+'%';
+                                    children[5].style.left=value+'%';
+                                    children[7].style.left=value+'%';children[11].style.left=value+'%';
+                                    children[11].childNodes[1].innerHTML=this.value;">
 
-                           
-                            <div class="swipe-tab-cont">
-                                <div class="article_title">CLOTHING</div>
-                                <div class="article_content">
-                                    <ul>
-                                        <li>전체 16,106</li>
-                                        <li>맨투맨 1,453</li>
-                                        <li>아우터 1,412</li>
-                                        <li>니트 2,243</li>
-                                        <li>셔츠/블라우스 1,423</li>
-                                    </ul>
-                                    <ul>
-                                        <li>티셔츠 2,674</li>
-                                        <li>후디 1,524</li>
-                                        <li>바지 1,610</li>
-                                        <li>원피스/스커트 2,454</li>
-                                        <li>이너웨어 1,313</li>
-                                    </ul>
+                                    <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+                                    this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                                    var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                    var children = this.parentNode.childNodes[1].childNodes;
+                                    children[3].style.width=(100-value)+'%';
+                                    children[5].style.right=(100-value)+'%';
+                                    children[9].style.left=value+'%';children[13].style.left=value+'%';
+                                    children[13].childNodes[1].innerHTML=this.value;">
                                 </div>
 
-                                <div class="article_title">SHOES</div>
-                                <div class="article_content">
-                                    <div class="table_wrap2 pd_0">
-                                        dfdff
-                                    </div>
+                                <div class="swipe-tab-content">
+                                    content1
                                 </div>
-                                <div class="article_title">ACC</div>
-                                <div class="article_content">
-                                    <div class="table_wrap2 pd_0">
-                                        dfdff
-                                    </div>
-                                </div>
+                                <div class="swipe-tab-content">content2</div>
+                                <div class="swipe-tab-content">content3</div>
+                                <div class="swipe-tab-content">content4 </div>
+                                <div class="swipe-tab-content">content5</div>
+                                <div class="swipe-tab-content">content6</div>
+                                <div class="swipe-tab-content">content7</div>
                             </div>
-
-                            <div class="swipe-tab-cont">
-                                브랜드
-                            </div>
-                            <div class="swipe-tab-cont">사이즈
-                            </div>
-                            <div class="swipe-tab-cont">컬러</div>
-                            <div class="swipe-tab-cont">소재/패턴</div>
-                            <div class="swipe-tab-cont">이벤트</div>
-                            <div class="swipe-tab-cont">상품 만족도
-                                <div class="swipe-tab-cont">
-                                    <fieldset class="rating">
-                                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                                    </fieldset>
-                                </div>  
-                            </div>
-                            <div class="swipe-tab-cont">시즌</div>
-                      
                         </div>
+
                         <div class="filter_btn">
                             <div class="overflow_x">
                                 <ul class="ss-list second keyLst1">
@@ -903,8 +841,11 @@
                                 <span> <span class="num">1,542</span>개의 상품 보기</span>
                             </div>
                         </div>
+                       
                     </div>
                 </div>
+
+                
             </div> 
         </div>
         <script src="../common/lib/slick.min.js"></script>
@@ -1015,17 +956,18 @@
                 });
                 $(ele).width(width);
                 }
-                // autoWidth('.ms-list', '.ms-list li', 10);
-                autoWidth('.swipe-tabs', '.swipe-tabs li', 15);
-                autoWidth('.ss-list.first', '.ss-list.first li', 15);
+                autoWidth('.ms-list', '.ms-list li', 15);
+                autoWidth('.ss-list.first', '.ss-list.first li', 20);
                 autoWidth('.ss-list.second', '.ss-list.second li', 15);
                 autoWidth('.sbs-list', '.sbs-list li', 15);
+                
                 function fn_focus()
                 {
                 document.getElementById("txtOn").focus();
                 }
             })(jQuery);    
-        </script>
+        </script>       
+        
         <!-- <script>
             $(function () {
                 'use strict';
@@ -1083,58 +1025,6 @@
                     $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
                 });
             });
-        </script>    -->
-        <script>
-             $(".js-range-slider").ionRangeSlider({
-                type: "double",
-                min: 0,
-                max: 1000,
-                from: 200,
-                to: 500,
-                grid: true,
-                skin: "big",
-                min: 0,
-                max: 10000,
-                from: 1000,
-                to: 9000,
-                type: 'double',
-                grid: false,
-                grid_num: 10
-            });  
-            
-            $(document).ready(function(){
-                // tab
-                    var tabBtn = $("#tab_btn > ul > li");
-                    var tabCont = $("#tab-cont > div");
-                    tabCont.hide().eq(0).show();
-                    tabBtn.click(function(){
-                    var target = $(this);
-                    var index = target.index();
-                    tabBtn.removeClass("active");
-                    target.addClass("active");
-                    tabCont.css("display","none");
-                    tabCont.eq(index).css("display","block");
-                });
-
-            });     
-            (function(){
-                function toggleAcco(ele, content) {
-                    $(ele).on('click touch', function () {
-                        $(this).toggleClass('active');
-                        $(this).siblings(content).toggle();
-                    });
-                }
-                toggleAcco('.article_title', '.article_content');
-                $('.border_tab-list li').each(function(i){
-                    $(this).click(function(){
-                        $(this).addClass('active').siblings().removeClass('active');
-                        $('.border_tab-cont > div').eq(i).addClass('active').siblings().removeClass('active');
-                        return false;
-                    });
-                });
-            })(jQuery);
-
-        </script>
-        
+        </script> -->
     </body>
 </html>

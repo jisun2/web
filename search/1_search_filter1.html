@@ -7,12 +7,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
-        <!--가격 슬라이드 Plugin 추가 -->
-        <script src="../common/lib/ion.rangeSlider.js"></script>
-        <script src="../common/lib/ion.rangeSlider.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--//가격 슬라이드 Plugin 추가 -->
-        <link rel="stylesheet" href="../common/css/ion.rangeSlider.min.css">
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/search.css">
         <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
@@ -74,7 +68,6 @@
                                 <li><button type="button" class="ss-item">카테고리</button></li>
                             </ul>
                         </div>
-                        
                         <!-- 검색 필터 툴팁 -->
                         <div class="searchT tooltip">
                             <span class="txt">
@@ -763,127 +756,97 @@
                     </div>
                     <!-- //토스트 팝업 -->
 
+
+
                     <div class="filterWrap">
                         <h3 class="slick-title blind">필터 선택</h3>
                         <!-- <p class="slick-caption">Swipeable tabs created using Slick Carousel - Touch enabled<p> -->
                         <div class="tabTouch">
                             <span class="touchBar"></span>
                         </div>
-                        <div>
-                            <div id="tab_btn" class="overflow_x">
-                                <ul class="swipe-tabs">
-                                    <li class="swipe-tab"><span>가격</span> </li>
-                                    <li class="swipe-tab">성별</li>
-                                    <li class="swipe-tab">카테고리</li>
-                                    <li class="swipe-tab">브랜드</li>
-                                    <li class="swipe-tab">사이즈</li>
-                                    <li class="swipe-tab">컬러</li>
-                                    <li class="swipe-tab">소재/패턴</li>
-                                    <li class="swipe-tab">이벤트</li>
-                                    <li class="swipe-tab">상품 만족도</li>
-                                    <li class="swipe-tab">시즌</li>
-                                </ul>
+                        <div class="sub-header">
+                            <div class="swipe-tabs">
+                                <div class="swipe-tab">가격</div>
+                                <div class="swipe-tab">성별</div>
+                                <div class="swipe-tab">카테고리</div>
+                                <div class="swipe-tab">브랜드</div>
+                                <div class="swipe-tab">사이즈</div>
+                                <div class="swipe-tab">컬러</div>
+                                <div class="swipe-tab">소재</div>
                             </div>
                         </div>
-                       
-                        <div class="filter_contWrap" id="tab-cont">
-                            <div class="swipe-tab-cont">
-                                content111
-                                <span class="irs irs--big js-irs-0">
-                                    <span class="irs">
-
-                                        <span class="irs-single">원 이상 ~ 원 이하 </span>
-                                    </span>
-                                </span>
-                                <input type="text" id="example_id" class="js-range-slider" name="example_name" value="" />
-
-                                <div class="">
-                                    <ul class="filterKey ss-list">
-                                        <li><button type="button" class="ss-item on">3만원 이하</button></li>
-                                        <li><button type="button" class="ss-item on">5~7만원</button></li>
-                                        <li><button type="button" class="ss-item on">7~10만원</button></li>
-                                        <li><button type="button" class="ss-item on">10~20만원</button></li>
-                                        <li><button type="button" class="ss-item">20~30만원</button></li>
-                                        <li><button type="button" class="ss-item">30~50만원</button></li>
-                                        <li><button type="button" class="ss-item">50~100만원</button></li>
-                                        <li><button type="button" class="ss-item">100만원 이상</button></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div>
-                                <span class="">성별</span>
-                                <div>
-                                    <div class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1"><span class="mgl30">남성</span></label>
+                        <div class="main-container">
+                            <div class="swipe-tabs-container">
+                                <!-- <div slider="" id="slider-distance">
+                                    <div>
+                                      <div inverse-left="" style="width:70%;"></div>
+                                      <div inverse-right="" style="width:70%;"></div>
+                                      <div range="" style="left:30%;right:40%;"></div>
+                                      <span thumb="" style="left:30%;"></span>
+                                      <span thumb="" style="left:60%;"></span>
+                                      <div sign="" style="left:30%;">
+                                        <span id="value1">30</span>
+                                      </div>
+                                      <div sign="" style="left:60%;">
+                                        <span id="value1">60</span>
+                                      </div>
                                     </div>
-                                    <div class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_2"><label for="radio1_2"><span class="mgl30">여성</span></label>
-                                    </div>
-                                </div>
-                            </div>
+                                    <input type="range" tabindex="0" value="30" max="1,000,000" min="0" step="1" oninput="
+                                    this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                                    var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                    var children = this.parentNode.childNodes[1].childNodes;
+                                    children[1].style.width=value+'%';
+                                    children[5].style.left=value+'%';
+                                    children[7].style.left=value+'%';children[11].style.left=value+'%';
+                                    children[11].childNodes[1].innerHTML=this.value;">
 
-                           
-                            <div class="swipe-tab-cont">
-                                <div class="article_title">CLOTHING</div>
-                                <div class="article_content">
-                                    <ul>
-                                        <li>전체 16,106</li>
-                                        <li>맨투맨 1,453</li>
-                                        <li>아우터 1,412</li>
-                                        <li>니트 2,243</li>
-                                        <li>셔츠/블라우스 1,423</li>
-                                    </ul>
-                                    <ul>
-                                        <li>티셔츠 2,674</li>
-                                        <li>후디 1,524</li>
-                                        <li>바지 1,610</li>
-                                        <li>원피스/스커트 2,454</li>
-                                        <li>이너웨어 1,313</li>
-                                    </ul>
-                                </div>
+                                    <input type="range" tabindex="0" value="600" max="1,000,000" min="0" step="100" oninput="
+                                    this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1,000));
+                                    var value=(1,000,000/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(1,000,000/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                    var children = this.parentNode.childNodes[1].childNodes;
+                                    children[3].style.width=(1,000,000-value)+'%';
+                                    children[5].style.right=(1,000,000-value)+'%';
+                                    children[9].style.left=value+'%';children[13].style.left=value+'%';
+                                    children[13].childNodes[1].innerHTML=this.value;">
+                                </div> -->
 
-                                <div class="article_title">SHOES</div>
-                                <div class="article_content">
-                                    <div class="table_wrap2 pd_0">
-                                        dfdff
+
+                                <div class="swipe-tab-content">
+                                    content1
+                                    <div class="box">
+                                        <h3>Price <span>Range</span></h3>
+                                        <div class="values">
+                                            <div>$<span id="first"></span></div> - <div>$<span id="second"></span></div>
+                                        </div>
+                                        <small>
+                                            Current Range:
+                                            <div>$<span id="third"></span></div>
+                                        </small>
+                                    
+                                        <div class="slider" data-value-0="#first" data-value-1="#second" data-range="#third"></div>
+                                    
                                     </div>
-                                </div>
-                                <div class="article_title">ACC</div>
-                                <div class="article_content">
-                                    <div class="table_wrap2 pd_0">
-                                        dfdff
+                                    
+                                    <!-- dribbble -->
+                                    <a class="dribbble" href="https://dribbble.com/shots/7268454-Rubber-Slider" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
+                                    <div id="time-range">
+                                        <p>Time Range: 
+                                            <span class="slider-time">9:00 AM</span> - <span class="slider-time2">5:00 PM</span>
+                                        </p>
+                                        <div class="sliders_step1">
+                                            <div id="slider-range"></div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="swipe-tab-content">content2</div>
+                                <div class="swipe-tab-content">content3</div>
+                                <div class="swipe-tab-content">content4 </div>
+                                <div class="swipe-tab-content">content5</div>
+                                <div class="swipe-tab-content">content6</div>
+                                <div class="swipe-tab-content">content7</div>
                             </div>
-
-                            <div class="swipe-tab-cont">
-                                브랜드
-                            </div>
-                            <div class="swipe-tab-cont">사이즈
-                            </div>
-                            <div class="swipe-tab-cont">컬러</div>
-                            <div class="swipe-tab-cont">소재/패턴</div>
-                            <div class="swipe-tab-cont">이벤트</div>
-                            <div class="swipe-tab-cont">상품 만족도
-                                <div class="swipe-tab-cont">
-                                    <fieldset class="rating">
-                                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                                    </fieldset>
-                                </div>  
-                            </div>
-                            <div class="swipe-tab-cont">시즌</div>
-                      
                         </div>
+
                         <div class="filter_btn">
                             <div class="overflow_x">
                                 <ul class="ss-list second keyLst1">
@@ -1015,17 +978,18 @@
                 });
                 $(ele).width(width);
                 }
-                // autoWidth('.ms-list', '.ms-list li', 10);
-                autoWidth('.swipe-tabs', '.swipe-tabs li', 15);
-                autoWidth('.ss-list.first', '.ss-list.first li', 15);
+                autoWidth('.ms-list', '.ms-list li', 15);
+                autoWidth('.ss-list.first', '.ss-list.first li', 20);
                 autoWidth('.ss-list.second', '.ss-list.second li', 15);
                 autoWidth('.sbs-list', '.sbs-list li', 15);
+                
                 function fn_focus()
                 {
                 document.getElementById("txtOn").focus();
                 }
             })(jQuery);    
-        </script>
+        </script>       
+        
         <!-- <script>
             $(function () {
                 'use strict';
@@ -1083,58 +1047,260 @@
                     $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
                 });
             });
-        </script>    -->
+        </script> -->
+        <!-- <script>
+           $('.slider').each(function(e) {
+
+var slider = $(this),
+    width = slider.width(),
+    handle,
+    handleObj;
+
+let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+svg.setAttribute('viewBox', '0 0 ' + width + ' 83');
+
+slider.html(svg);
+slider.append($('<div>').addClass('active').html(svg.cloneNode(true)));
+
+slider.slider({
+    range: true,
+    values: [1800, 7800],
+    min: 500,
+    step: 5,
+    minRange: 1000,
+    max: 12000,
+    create(event, ui) {
+
+        slider.find('.ui-slider-handle').append($('<div />'));
+
+        $(slider.data('value-0')).html(slider.slider('values', 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '&thinsp;'));
+        $(slider.data('value-1')).html(slider.slider('values', 1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '&thinsp;'));
+        $(slider.data('range')).html((slider.slider('values', 1) - slider.slider('values', 0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '&thinsp;'));
+
+        setCSSVars(slider);
+
+    },
+    start(event, ui) {
+
+        $('body').addClass('ui-slider-active');
+
+        handle = $(ui.handle).data('index', ui.handleIndex);
+        handleObj = slider.find('.ui-slider-handle');
+
+    },
+    change(event, ui) {
+        setCSSVars(slider);
+    },
+    slide(event, ui) {
+
+        let min = slider.slider('option', 'min'),
+            minRange = slider.slider('option', 'minRange'),
+            max = slider.slider('option', 'max');
+
+        if(ui.handleIndex == 0) {
+            if((ui.values[0] + minRange) >= ui.values[1]) {
+                slider.slider('values', 1, ui.values[0] + minRange);
+            }
+            if(ui.values[0] > max - minRange) {
+                return false;
+            }
+        } else if(ui.handleIndex == 1) {
+            if((ui.values[1] - minRange) <= ui.values[0]) {
+                slider.slider('values', 0, ui.values[1] - minRange);
+            }
+            if(ui.values[1] < min + minRange) {
+                return false;
+            }
+        }
+
+        $(slider.data('value-0')).html(ui.values[0].toString().replace(/\B(?=(\d{3})+(?!\d))/g, '&thinsp;'));
+        $(slider.data('value-1')).html(ui.values[1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, '&thinsp;'));
+        $(slider.data('range')).html((slider.slider('values', 1) - slider.slider('values', 0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '&thinsp;'));
+
+        setCSSVars(slider);
+
+    },
+    stop(event, ui) {
+
+        $('body').removeClass('ui-slider-active');
+
+        let duration = .6,
+            ease = Elastic.easeOut.config(1.08, .44);
+
+        TweenMax.to(handle, duration, {
+            '--y': 0,
+            ease: ease
+        });
+
+        TweenMax.to(svgPath, duration, {
+            y: 42,
+            ease: ease
+        });
+
+        handle = null;
+
+    }
+});
+
+var svgPath = new Proxy({
+    x: null,
+    y: null,
+    b: null,
+    a: null
+}, {
+    set(target, key, value) {
+        target[key] = value;
+        if(target.x !== null && target.y !== null && target.b !== null && target.a !== null) {
+            slider.find('svg').html(getPath([target.x, target.y], target.b, target.a, width));
+        }
+        return true;
+    },
+    get(target, key) {
+        return target[key];
+    }
+});
+
+svgPath.x = width / 2;
+svgPath.y = 42;
+svgPath.b = 0;
+svgPath.a = width;
+
+$(document).on('mousemove touchmove', e => {
+    if(handle) {
+
+        let laziness = 4,
+            max = 24,
+            edge = 52,
+            other = handleObj.eq(handle.data('index') == 0 ? 1 : 0),
+            currentLeft = handle.position().left,
+            otherLeft = other.position().left,
+            handleWidth = handle.outerWidth(),
+            handleHalf = handleWidth / 2,
+            y = e.pageY - handle.offset().top - handle.outerHeight() / 2,
+            moveY = (y - laziness >= 0) ? y - laziness : (y + laziness <= 0) ? y + laziness : 0,
+            modify = 1;
+
+        moveY = (moveY > max) ? max : (moveY < -max) ? -max : moveY;
+        modify = handle.data('index') == 0 ? ((currentLeft + handleHalf <= edge ? (currentLeft + handleHalf) / edge : 1) * (otherLeft - currentLeft - handleWidth <= edge ? (otherLeft - currentLeft - handleWidth) / edge : 1)) : ((currentLeft - (otherLeft + handleHalf * 2) <= edge ? (currentLeft - (otherLeft + handleWidth)) / edge : 1) * (slider.outerWidth() - (currentLeft + handleHalf) <= edge ? (slider.outerWidth() - (currentLeft + handleHalf)) / edge : 1));
+        modify = modify > 1 ? 1 : modify < 0 ? 0 : modify;
+
+        if(handle.data('index') == 0) {
+            svgPath.b = currentLeft / 2  * modify;
+            svgPath.a = otherLeft;
+        } else {
+            svgPath.b = otherLeft + handleHalf;
+            svgPath.a = (slider.outerWidth() - currentLeft) / 2 + currentLeft + handleHalf + ((slider.outerWidth() - currentLeft) / 2) * (1 - modify);
+        }
+
+        svgPath.x = currentLeft + handleHalf;
+        svgPath.y = moveY * modify + 42;
+
+        handle.css('--y', moveY * modify);
+
+    }
+});
+
+});
+
+function getPoint(point, i, a, smoothing) {
+let cp = (current, previous, next, reverse) => {
+        let p = previous || current,
+            n = next || current,
+            o = {
+                length: Math.sqrt(Math.pow(n[0] - p[0], 2) + Math.pow(n[1] - p[1], 2)),
+                angle: Math.atan2(n[1] - p[1], n[0] - p[0])
+            },
+            angle = o.angle + (reverse ? Math.PI : 0),
+            length = o.length * smoothing;
+        return [current[0] + Math.cos(angle) * length, current[1] + Math.sin(angle) * length];
+    },
+    cps = cp(a[i - 1], a[i - 2], point, false),
+    cpe = cp(point, a[i - 1], a[i + 1], true);
+return `C ${cps[0]},${cps[1]} ${cpe[0]},${cpe[1]} ${point[0]},${point[1]}`;
+}
+
+function getPath(update, before, after, width) {
+let smoothing = .16,
+    points = [
+        [0, 42],
+        [before <= 0 ? 0 : before, 42],
+        update,
+        [after >= width ? width : after, 42],
+        [width, 42]
+    ],
+    d = points.reduce((acc, point, i, a) => i === 0 ? `M ${point[0]},${point[1]}` : `${acc} ${getPoint(point, i, a, smoothing)}`, '');
+return `<path d="${d}" />`;
+}
+
+function setCSSVars(slider) {
+let handle = slider.find('.ui-slider-handle');
+slider.css({
+    '--l': handle.eq(0).position().left + handle.eq(0).outerWidth() / 2,
+    '--r': slider.outerWidth() - (handle.eq(1).position().left + handle.eq(1).outerWidth() / 2)
+});
+}
+
+        </script> -->
         <script>
-             $(".js-range-slider").ionRangeSlider({
-                type: "double",
-                min: 0,
-                max: 1000,
-                from: 200,
-                to: 500,
-                grid: true,
-                skin: "big",
-                min: 0,
-                max: 10000,
-                from: 1000,
-                to: 9000,
-                type: 'double',
-                grid: false,
-                grid_num: 10
-            });  
-            
-            $(document).ready(function(){
-                // tab
-                    var tabBtn = $("#tab_btn > ul > li");
-                    var tabCont = $("#tab-cont > div");
-                    tabCont.hide().eq(0).show();
-                    tabBtn.click(function(){
-                    var target = $(this);
-                    var index = target.index();
-                    tabBtn.removeClass("active");
-                    target.addClass("active");
-                    tabCont.css("display","none");
-                    tabCont.eq(index).css("display","block");
-                });
+            $("#slider-range").slider({
+    range: true,
+    min: 0,
+    max: 1440,
+    step: 15,
+    values: [540, 1020],
+    slide: function (e, ui) {
+        var hours1 = Math.floor(ui.values[0] / 60);
+        var minutes1 = ui.values[0] - (hours1 * 60);
 
-            });     
-            (function(){
-                function toggleAcco(ele, content) {
-                    $(ele).on('click touch', function () {
-                        $(this).toggleClass('active');
-                        $(this).siblings(content).toggle();
-                    });
-                }
-                toggleAcco('.article_title', '.article_content');
-                $('.border_tab-list li').each(function(i){
-                    $(this).click(function(){
-                        $(this).addClass('active').siblings().removeClass('active');
-                        $('.border_tab-cont > div').eq(i).addClass('active').siblings().removeClass('active');
-                        return false;
-                    });
-                });
-            })(jQuery);
+        if (hours1.length == 1) hours1 = '0' + hours1;
+        if (minutes1.length == 1) minutes1 = '0' + minutes1;
+        if (minutes1 == 0) minutes1 = '00';
+        if (hours1 >= 12) {
+            if (hours1 == 12) {
+                hours1 = hours1;
+                minutes1 = minutes1 + " PM";
+            } else {
+                hours1 = hours1 - 12;
+                minutes1 = minutes1 + " PM";
+            }
+        } else {
+            hours1 = hours1;
+            minutes1 = minutes1 + " AM";
+        }
+        if (hours1 == 0) {
+            hours1 = 12;
+            minutes1 = minutes1;
+        }
 
+
+
+        $('.slider-time').html(hours1 + ':' + minutes1);
+
+        var hours2 = Math.floor(ui.values[1] / 60);
+        var minutes2 = ui.values[1] - (hours2 * 60);
+
+        if (hours2.length == 1) hours2 = '0' + hours2;
+        if (minutes2.length == 1) minutes2 = '0' + minutes2;
+        if (minutes2 == 0) minutes2 = '00';
+        if (hours2 >= 12) {
+            if (hours2 == 12) {
+                hours2 = hours2;
+                minutes2 = minutes2 + " PM";
+            } else if (hours2 == 24) {
+                hours2 = 11;
+                minutes2 = "59 PM";
+            } else {
+                hours2 = hours2 - 12;
+                minutes2 = minutes2 + " PM";
+            }
+        } else {
+            hours2 = hours2;
+            minutes2 = minutes2 + " AM";
+        }
+
+        $('.slider-time2').html(hours2 + ':' + minutes2);
+    }
+});
         </script>
-        
     </body>
 </html>
