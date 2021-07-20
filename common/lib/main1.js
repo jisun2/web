@@ -64,7 +64,7 @@
 
     function popupEvent($btn) {
         // 팝업 열기
-        $btn.on('click', function(e) {
+        $btn.on('click', function (e) {
             e.preventDefault();
 
             $('html, body').css('overflow', 'hidden');
@@ -186,7 +186,7 @@
     // Dom Ready
     $( function($) {
         // default selectbox
-        selectBox('.sz-select_list', '.sz-select_sub', '.sz-select_sl');
+        /*selectBox('.sz-select_list', '.sz-select_sub', '.sz-select_sl');*/
 
         // a태그 링크 삭제
         noLink();
@@ -255,79 +255,5 @@
         // 사이즈표 탭
         dafaultTab('.me-box .tab-list li', '.me-box .tab-content');
     });
-
-
-    // 슬라이더바
-    // Slider Standard sidebar ---------------------------------------------------
-   var Option_SB1_st       = 'genoption_sidebar_width_sb1_stand', //ID option
-       Option_SB2_st       = 'genoption_sidebar_width_sb2_stand', //ID option
-       Option_SB1_value_st = '20', //Value Numer id
-       Option_SB2_value_st = '32'; //Value Numer id
-
-   var Slider_box_st    = $('.sb-width-slider-standard'),
-       Slider_barS_st   = $('#sliderrange-S-standard'),
-       Slider_barR_st   = $('#sliderrange-M-standard'),
-       Slider_input1_cont_st = $('.sb-width-slider-standard .content-inputsd-1'),
-       Slider_input2_cont_st = $('.sb-width-slider-standard .content-inputsd-2'),
-       Slider_input1_st = $('#'+Option_SB1_st),
-       Slider_input2_st = $('#'+Option_SB2_st);
-   //---------------------------------------------------------------------------
-
-
-   //SLIDER JQUERY  -------------------------------------------------------
-   function Slider_single(BarS,S_Input1,S_Value1){
-       BarS.slider({
-             animate: "fast",
-             // orientation: "vertical",
-             range: 'min',
-             min: 0,
-             max: 100,
-             step: 1,
-             value: S_Value1,
-             //values: [ IDoptionSB1_value, IDoptionSB2_value ], // values: [ 30, 99 ],
-             slide: function( event, ui ) {   S_Input1.val( ui.value );     }
-        });
-   }
-   // ----------------------------
-   function Slider_multi2(BarR,S_Input1,S_Input2,S_Value1,S_Value2){
-       BarR.slider({
-             animate: "fast",
-             // orientation: "vertical",
-             range: true,
-             min: 0,
-             max: 100,
-             step: 1,
-             // value: 10,
-             values: [ S_Value1, 100 - S_Value2 ], // values: [ 30, 99 ],
-             slide: function( event, ui ) { S_Input1.val( ui.values[ 0 ]);   S_Input2.val( 100 - ui.values[ 1 ]);  }
-        });
-   }// ----------------------------
-
-   function Slider_single_activation(BarS,S_Input1)         {  S_Input1.val( BarS.slider( "value" ) );  }
-   function Slider_multi2_activation(BarR,S_Input1,S_Input2){  S_Input1.val( BarR.slider( "values", 0 ) );   S_Input2.val( 100 - BarR.slider( "values", 1 ) ); }
-
-   function Slider_change(BarS,BarR,S_Input1,S_Input2){ BarR.slider("values", [ S_Input1.val(), (100 - S_Input2.val() )  ] ); BarS.slider("value",S_Input1.val() ); }
-
-
-
-
-   //ACtion slider -------------------------
-       //slider standard
-   Slider_single(Slider_barS_st,   Slider_input1_st,   Option_SB1_value_st)
-   Slider_multi2(Slider_barR_st,   Slider_input1_st,   Slider_input2_st,   Option_SB1_value_st,    Option_SB2_value_st)
-
-
-   //start Page ------------------------------------------
-       //slider standard
-   Slider_single_activation(Slider_barS_st,  Slider_input1_st);
-   Slider_multi2_activation(Slider_barR_st,  Slider_input1_st,  Slider_input2_st);
-
-   //to Input on Slider ----------------------------------
-       //slider standard
-   Slider_input1_st.keyup(function()  { Slider_change(Slider_barS_st,  Slider_barR_st, Slider_input1_st,   Slider_input2_st)  });
-   Slider_input2_st.keyup(function()  { Slider_change(Slider_barS_st,  Slider_barR_st, Slider_input1_st,   Slider_input2_st)  });
-   Slider_input1_st.change(function() { Slider_change(Slider_barS_st,  Slider_barR_st, Slider_input1_st,   Slider_input2_st)  });
-   Slider_input2_st.change(function() { Slider_change(Slider_barS_st,  Slider_barR_st, Slider_input1_st,   Slider_input2_st)  });
-
 
 })(jQuery);
