@@ -123,12 +123,12 @@
         '<span class="irs">' +
         '<span class="irs-line" tabindex="0"></span>' +
         '<span class="irs-min">0,</span><span class="irs-max">1,</span>' +
-        '<span class="irs-from">0,</span><span class="irs-to">0,</span><span class="irs-single">0,</span>' +
+        '<span class="irs-from">0,</span><span class="irs-to">0,</span><span class="irs-single">012</span>' +
         '</span>' +
         '<span class="irs-grid"></span>';
 
     var single_html =
-        '<span class="irs-bar irs-bar--single"><span class="">원 이상~</span></span>' +
+        '<span class="irs-bar irs-bar--single">111111<span class="">원 이상~</span></span>' +
         '<span class="irs-shadow shadow-single"></span>' +
         '<span class="irs-handle single"><i></i><i></i><i></i></span>';
 
