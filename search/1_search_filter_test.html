@@ -7,11 +7,14 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
         <!--가격 슬라이드 Plugin 추가 -->
         <script src="../common/lib/ion.rangeSlider.js"></script>
         <script src="../common/lib/ion.rangeSlider.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--//가격 슬라이드 Plugin 추가 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../common/css/ion.rangeSlider.min.css">
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/search.css">
@@ -66,7 +69,7 @@
                                 <li><button type="button" class="ss-item on">상품쿠폰 <span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
                                 <li><button type="button" class="ss-item on">무료쿠폰 5</button></li>
                                 <li><button type="button" class="ss-item">나이 1<span class="ico arrowDwn"></span></button></li>
-                                <li><button type="button" class="ss-item">성별<span class="ico arrowDwn"></span></button></li>
+                                <li><button type="button" class="ss-item"  onclick="openLayer(event,'#tempLayer1',this)">성별<span class="ico arrowDwn"></span></button></li>
                                 <li><button type="button" class="ss-item">카테고리</button></li>
                                 <li><button type="button" class="ss-item">카테고리</button></li>
                                 <li><button type="button" class="ss-item">카테고리</button></li>
@@ -88,8 +91,8 @@
                     </div>
                     <!-- //검색 필터 키워드 -->
                     <!-- 상품 리스트  -->
-                    <div class="product_list-wrap padding-top plc_fc-box">
-                        <div class="product_list-box cate_main">
+                    <div class="product_list-wrap plc_fc-box">
+                        <div class="product_list-box">
                             <div class="plc_fc-filter">
                                 <div class="sltType1 filter_view">
                                     <span class="ico upDownArr"></span>
@@ -757,157 +760,307 @@
                         </div>
                     </div>
                     <!-- //상품 리스트  -->
-                    <!-- 토스트 팝업 -->
-                    <div class="toast">
+
+                    <!-- dimLayer -->
+                    <div class="dim_layer" id="tempLayer1">
+                        <!-- 검색필터  -->
+                        <div style="margin:0 auto">
+                            <div class="filterWrap">
+                                <h3 class="slick-title blind">필터 선택</h3>
+                                <div class="tabTouch">
+                                    <button type="button" class="touchBar"><span class="blind">필터 닫기</span></button>
+                                </div>
+                                
+                                <div class="bg_white">
+                                    <div class="wd720">
+                                        <div id="tab_lst" class="overflow_x">
+                                            <ul class="swipe-tabs">
+                                                <li class="swipe-tab"><span>가격</span></li>
+                                                <li class="swipe-tab">성별</li>
+                                                <li class="swipe-tab">카테고리</li>
+                                                <li class="swipe-tab">브랜드</li>
+                                                <li class="swipe-tab">사이즈</li>
+                                                <li class="swipe-tab">컬러</li>
+                                                <li class="swipe-tab">소재/패턴</li>
+                                                <li class="swipe-tab">이벤트</li>
+                                                <li class="swipe-tab">상품 만족도</li>
+                                                <li class="swipe-tab">시즌</li>
+                                            </ul>
+                                        </div>
+                                     
+                                    
+                                        <div class="filter_contWrap" id="tab-cont">
+                                            <!-- 가격 -->
+                                            <div class="swipe-tab-cont price">
+                                                content111
+                                                <span class="irs irs--big js-irs-0">
+                                                    <span class="irs">
+                                                        <span class="irs-single">원 이상 ~ 원 이하 </span>
+                                                    </span>
+                                                </span>
+                                                <input type="text" id="example_id" class="js-range-slider" name="example_name" value="" />
+                                                <div>
+                                                    <ul class="filterKey ss-list">
+                                                        <li><button type="button" class="ss-item on">3만원 이하</button></li>
+                                                        <li><button type="button" class="ss-item on">5~7만원</button></li>
+                                                        <li><button type="button" class="ss-item on">7~10만원</button></li>
+                                                        <li><button type="button" class="ss-item on">10~20만원</button></li>
+                                                        <li><button type="button" class="ss-item">20~30만원</button></li>
+                                                        <li><button type="button" class="ss-item">30~50만원</button></li>
+                                                        <li><button type="button" class="ss-item">50~100만원</button></li>
+                                                        <li><button type="button" class="ss-item">100만원 이상</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- //가격 -->
+                                                
+                                            <!-- 성별 -->
+                                            <div class="swipe-tab-cont conse">
+                                                <span class="">성별</span>
+                                                <button type="button" class="org_br"><span class="proxima">175,750</span><span class="notoS"><span class="won">원</span> 할인 쿠폰 받기</span><i class="ico down"></i></button>
+                                                <div>
+                                                    <div class="input_radio">
+                                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1"><span class="mgl30">남성</span></label>
+                                                    </div>
+                                                    <div class="input_radio">
+                                                        <input type="radio" name="radio1" id="radio1_2"><label for="radio1_2"><span class="mgl30">여성</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //성별 -->
+                                            <!-- 카테고리 -->
+                                            <div class="swipe-tab-cont cate">
+                                                <div class="article_cate">
+                                                    <div class="article_title">CLOTHING</div>
+                                                    <div class="article_content clearfix">
+                                                        <ul class="cateLst">
+                                                            <li></span>전체 16,106</li>
+                                                            <li></span>맨투맨 1,453</li>
+                                                            <li class="on"></span>아우터 1,412</li>
+                                                            <li></span>니트 2,243</li>
+                                                            <li></span>셔츠/블라우스 1,423</li>
+                                                        </ul>
+                                                        <ul class="cateLst">
+                                                            <li>티셔츠 2,674</li>
+                                                            <li>후디 1,524</li>
+                                                            <li>바지 1,610</li> 
+                                                            <li>원피스/스커트 2,454</li>
+                                                            <li>이너웨어 1,313</li>
+                                                        </ul>
+                                                    </div>    
+                                                </div>
+                                                
+                                                <div class="article_cate">
+                                                    <div class="article_title">CLOTHING <span class="cateDetail"> > 아우터</span> <button type="button" class="del"></button></div>
+                                                    <div class="article_content clearfix">
+                                                        <ul class="cateLst">
+                                                            <li><span class="ico check_off"></span>전체 16,106</li>
+                                                            <li><span class="ico check_off"></span>자켓 1,453</li>
+                                                            <li class="on"><span class="ico check_on"></span>점퍼 1,412</li>
+                                                        </ul>
+                                                        <ul class="cateLst">
+                                                            <li>코트</li> 2,674</li>
+                                                            <li>패딩 1,524</li>
+                                                            <!-- <li>베스트 1,610</li> -->
+                                                        </ul>
+                                                    </div>    
+                                                </div>
+            
+                                                <div class="article_cate">
+                                                    <div class="article_title">SHOES</div>
+                                                    <div class="article_content clearfix">
+                                                        <ul class="cateLst">
+                                                            <li>전체 16,106</li>
+                                                            <li>맨투맨 1,453</li>
+                                                            <li>아우터 1,412</li>
+                                                            <li>니트 2,243</li>
+                                                            <li>셔츠/블라우스 1,423</li>
+                                                        </ul>
+                                                        <ul class="cateLst">
+                                                            <li>티셔츠 2,674</li>
+                                                            <li class="on">후디 1,524</li>
+                                                            <li class="on"><span class="ico check_on"></span>바지 1,610</li> 
+                                                            <li>원피스/스커트 2,454</li>
+                                                            <li>이너웨어 1,313</li>
+                                                        </ul>
+                                                    </div>    
+                                                </div>
+                                                <!-- <div class="article_cate">
+                                                    <div class="article_title">ACC</div>
+                                                    <div class="article_content">
+                                                        <div class="table_wrap2 pd_0">
+                                                            333
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <!-- //카테고리 -->
+                                            <!-- 브랜드 -->
+                                            <div class="swipe-tab-cont brnd">
+                                                <ul class="sub_tab">
+                                                    <li class="active">가나다 순</li>
+                                                    <li>ABC 순</li>
+                                                </ul>
+                                                <ul class="cateLst">
+                                                    <li class="on">
+                                                        <span class="ico check_on pos"></span>
+                                                        <div class="cateBrd">
+                                                            <p class="brd_ko">가까이</p>
+                                                            <p class="brd_En">GAKKA2</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="ico check_off pos"></span>
+                                                        <div class="cateBrd">
+                                                            <p class="brd_ko">가네코 유닛</p>
+                                                            <p class="brd_En">GANEKO UNIT</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="cateLst">
+                                                    <li class="on">
+                                                        <span class="ico check_on pos"></span>
+                                                        <div class="cateBrd">
+                                                            <p class="brd_ko">가까이</p>
+                                                            <p class="brd_En">GAKKA2</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="ico check_off pos"></span>
+                                                        <div class="cateBrd">
+                                                            <p class="brd_ko">가네코 유닛</p>
+                                                            <p class="brd_En">GANEKO UNIT</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //브랜드 -->
+                                            <!-- 사이즈 -->
+                                            <div class="swipe-tab-cont size">
+                                                <span class="sub_title">신발 사이즈 1</span>
+                                                <ul class="filterKey ss-list">
+                                                    <li><button type="button" class="ss-item">220</button></li>
+                                                    <li><button type="button" class="ss-item">225</button></li>
+                                                    <li><button type="button" class="ss-item">230</button></li>
+                                                    <li><button type="button" class="ss-item">235</button></li>
+                                                    <li><button type="button" class="ss-item">240</button></li>
+                                                    <li><button type="button" class="ss-item">245</button></li>
+                                                    <li><button type="button" class="ss-item">250</button></li>
+                                                    <li><button type="button" class="ss-item">255</button></li>
+                                                    <li><button type="button" class="ss-item on">260</button></li>
+                                                    <li><button type="button" class="ss-item">265</button></li>
+                                                    <li><button type="button" class="ss-item">270</button></li>
+                                                    <li><button type="button" class="ss-item">275</button></li>
+                                                    <li><button type="button" class="ss-item">280</button></li>
+                                                    <li><button type="button" class="ss-item">285</button></li>
+                                                    <li><button type="button" class="ss-item">290</button></li>
+                                                    <li><button type="button" class="ss-item">295</button></li>
+                                                    <li><button type="button" class="ss-item">300</button></li>
+                                                </ul>
+
+                                                <span class="sub_title mgT25">의류 사이즈</span>
+                                                <ul class="filterKey ss-list">
+                                                    <li><button type="button" class="ss-item">XS</button></li>
+                                                    <li><button type="button" class="ss-item">S</button></li>
+                                                    <li><button type="button" class="ss-item">M</button></li>
+                                                    <li><button type="button" class="ss-item">L</button></li>
+                                                    <li><button type="button" class="ss-item">XL</button></li>
+                                                    <li><button type="button" class="ss-item on">XXL</button></li>
+                                                </ul>
+                                               
+                                            </div>
+                                             <!-- //사이즈 -->
+                                             <!-- 컬러 -->
+                                             
+                                            <div class="swipe-tab-cont color">
+                                                <ul class="colorLst">
+                                                    <li class="active col_bk"><span class="ico check"></span></li>
+                                                    <li class="active bk col_wht"><span class="ico check"></span><span class="ico check_on"></span></li>
+                                                    <li class="active col_red"><span class="ico check"></span><span class="ico check_on"></span></li>
+                                                    <li class="col_purp"></li>
+                                                    <li class="col_blue"></li>
+                                                    <li class="col_skyB"></li>
+                                                    <li class="col_ylw"></li>
+                                                    <li class="col_grn"></li>
+                                                    <li class="col_navy"></li>
+                                                    <li class="col_ivy"></li>
+                                                    <li class="col_idg"></li>
+                                                </ul>
+                                            </div>
+                                            <!-- //컬러 -->
+                                            <!-- 소재/패턴 -->
+                                            
+                                            <div class="swipe-tab-cont mtlPttn">소재/패턴</div>
+                                            <!-- //소재/패턴 -->
+    
+                                            <!-- 이벤트 -->
+                                            <div class="swipe-tab-cont evt">이벤트</div>
+                                            <!-- //이벤트 -->
+    
+                                            <!-- 상품 만족도 -->
+                                            <div class="swipe-tab-cont evaluation">상품 만족도
+                                                <div class="swipe-tab-cont">
+                                                    <fieldset class="rating">
+                                                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                                    </fieldset>
+                                                </div>  
+                                            </div>
+                                            <!-- //상품 만족도 -->
+    
+                                            <!-- 시즌 -->
+                                            <div class="swipe-tab-cont season">시즌</div>
+                                            <!-- //시즌 -->
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="filter_key">
+                                        <div class="overflow_x">
+                                            <ul class="ss-list second keyLst1">
+                                                <li><button type="button" class="ss-item on"><span class="ellipsis">XXL</span><span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
+                                                <li><button type="button" class="ss-item on"><span class="ellipsis">CONTEMPORARY ACCCC </span><span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
+                                                <li><button type="button" class="ss-item on"><span class="ellipsis">260</span><span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
+                                                <li><button type="button" class="ss-item on"><span class="ellipsis">린넨</span><span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
+                                                <li><button type="button" class="ss-item on"><span class="ellipsis">단색</span><span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
+                                                <li><button type="button" class="ss-item on"><span class="ellipsis">삼성 자급제 단말기 할인특</span><span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="filter_btn">
+                                            <button class="btn_reset"><span class="reset"></span></button>
+                                            <div class="btn_bk">
+                                                <span> <span class="num">1,542</span>개의 상품 보기</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <!-- //검색필터  -->
+                    </div>
+                    <!-- //dimLayer -->
+                  
+
+                     <!-- 토스트 팝업 -->
+                     <div class="toast">
                         좋아요 목록에 추가 되었어요!
                     </div>
                     <!-- //토스트 팝업 -->
 
-                    <div class="filterWrap">
-                        <h3 class="slick-title blind">필터 선택</h3>
-                        <!-- <p class="slick-caption">Swipeable tabs created using Slick Carousel - Touch enabled<p> -->
-                        <div class="tabTouch">
-                            <span class="touchBar"></span>
-                        </div>
-                        <div>
-                            <div id="tab_btn" class="overflow_x">
-                                <ul class="swipe-tabs">
-                                    <li class="swipe-tab"><span>가격</span> </li>
-                                    <li class="swipe-tab">성별</li>
-                                    <li class="swipe-tab">카테고리</li>
-                                    <li class="swipe-tab">브랜드</li>
-                                    <li class="swipe-tab">사이즈</li>
-                                    <li class="swipe-tab">컬러</li>
-                                    <li class="swipe-tab">소재/패턴</li>
-                                    <li class="swipe-tab">이벤트</li>
-                                    <li class="swipe-tab">상품 만족도</li>
-                                    <li class="swipe-tab">시즌</li>
-                                </ul>
-                            </div>
-                        </div>
-                       
-                        <div class="filter_contWrap" id="tab-cont">
-                            <div class="swipe-tab-cont">
-                                content111
-                                <span class="irs irs--big js-irs-0">
-                                    <span class="irs">
-
-                                        <span class="irs-single">원 이상 ~ 원 이하 </span>
-                                    </span>
-                                </span>
-                                <input type="text" id="example_id" class="js-range-slider" name="example_name" value="" />
-
-                                <div class="">
-                                    <ul class="filterKey ss-list">
-                                        <li><button type="button" class="ss-item on">3만원 이하</button></li>
-                                        <li><button type="button" class="ss-item on">5~7만원</button></li>
-                                        <li><button type="button" class="ss-item on">7~10만원</button></li>
-                                        <li><button type="button" class="ss-item on">10~20만원</button></li>
-                                        <li><button type="button" class="ss-item">20~30만원</button></li>
-                                        <li><button type="button" class="ss-item">30~50만원</button></li>
-                                        <li><button type="button" class="ss-item">50~100만원</button></li>
-                                        <li><button type="button" class="ss-item">100만원 이상</button></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div>
-                                <span class="">성별</span>
-                                <div>
-                                    <div class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1"><span class="mgl30">남성</span></label>
-                                    </div>
-                                    <div class="input_radio">
-                                        <input type="radio" name="radio1" id="radio1_2"><label for="radio1_2"><span class="mgl30">여성</span></label>
-                                    </div>
-                                </div>
-                            </div>
-
-                           
-                            <div class="swipe-tab-cont">
-                                <div class="article_title">CLOTHING</div>
-                                <div class="article_content">
-                                    <ul>
-                                        <li>전체 16,106</li>
-                                        <li>맨투맨 1,453</li>
-                                        <li>아우터 1,412</li>
-                                        <li>니트 2,243</li>
-                                        <li>셔츠/블라우스 1,423</li>
-                                    </ul>
-                                    <ul>
-                                        <li>티셔츠 2,674</li>
-                                        <li>후디 1,524</li>
-                                        <li>바지 1,610</li>
-                                        <li>원피스/스커트 2,454</li>
-                                        <li>이너웨어 1,313</li>
-                                    </ul>
-                                </div>
-
-                                <div class="article_title">SHOES</div>
-                                <div class="article_content">
-                                    <div class="table_wrap2 pd_0">
-                                        dfdff
-                                    </div>
-                                </div>
-                                <div class="article_title">ACC</div>
-                                <div class="article_content">
-                                    <div class="table_wrap2 pd_0">
-                                        dfdff
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swipe-tab-cont">
-                                브랜드
-                            </div>
-                            <div class="swipe-tab-cont">사이즈
-                            </div>
-                            <div class="swipe-tab-cont">컬러</div>
-                            <div class="swipe-tab-cont">소재/패턴</div>
-                            <div class="swipe-tab-cont">이벤트</div>
-                            <div class="swipe-tab-cont">상품 만족도
-                                <div class="swipe-tab-cont">
-                                    <fieldset class="rating">
-                                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                                    </fieldset>
-                                </div>  
-                            </div>
-                            <div class="swipe-tab-cont">시즌</div>
-                      
-                        </div>
-                        <div class="filter_btn">
-                            <div class="overflow_x">
-                                <ul class="ss-list second keyLst1">
-                                    <li><button type="button" class="ss-item on">3만원 이하 999+ <span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
-                                    <li><button type="button" class="ss-item on">상품쿠폰 <span class="ico keyDel"><span class="blind">키워드 삭제</span></span></button></li>
-                                    <li><button type="button" class="ss-item on">무료쿠폰 5</button></li>
-                                    <li><button type="button" class="ss-item">나이 1<span class="ico arrowDwn"></span></button></li>
-                                    <li><button type="button" class="ss-item">성별<span class="ico arrowDwn"></span></button></li>
-                                    <li><button type="button" class="ss-item">카테고리</button></li>
-                                    <li><button type="button" class="ss-item">카테고리</button></li>
-                                    <li><button type="button" class="ss-item">카테고리</button></li>
-                                    <li><button type="button" class="ss-item">카테고리</button></li>
-                                    <li><button type="button" class="ss-item">카테고리</button></li>
-                                </ul>
-                            </div>
-                            <div class="btn_bk">
-                                <span> <span class="num">1,542</span>개의 상품 보기</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div> 
         </div>
         <script src="../common/lib/slick.min.js"></script>
+        <!-- <script src="common/lib/common.js"></script> -->
         <!-- <script src="../common/lib/main.js"></script> -->
         <script>
             function myFunction(e) {
@@ -939,17 +1092,23 @@
                 }
              });
 
-            $('.search_clear-btn').on('click touch', function () {
+            $('.search_clear-btn').on('click touch', function(){
                 $(this).siblings('.ss-text').val('');
                 $(this).hide();
             });
-            $('.filter_select').on('click touch', function () {
+            $('.filter_select').on('click touch', function(){
                 $(this).toggleClass('active');
             })
 
+            $('.ss-item').on('click touch', function(){
+                $( '.filterWrap' ).removeClass('hide'); 
+            })
+            $('.tabTouch').on('click touch', function(){
+                $('.dim_layer').hide();
+            })
              //옵션 선택
             function acAcco(ele, content) {
-                $(ele).on('click touch', function () {
+                $(ele).on('click touch', function(){
                     $(this).toggleClass('active');
                     $(this).parents('.pln-nav li').find(content).slideToggle();
                     $(this).parents('.pln-nav li').siblings('li').find(content).slideUp();
@@ -1104,7 +1263,7 @@
             
             $(document).ready(function(){
                 // tab
-                    var tabBtn = $("#tab_btn > ul > li");
+                    var tabBtn = $("#tab_lst > ul > li");
                     var tabCont = $("#tab-cont > div");
                     tabCont.hide().eq(0).show();
                     tabBtn.click(function(){
