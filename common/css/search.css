@@ -1582,14 +1582,13 @@ input:-internal-autofill-selected {background-color:#fff;}
 .ss-list.keyLst1 {
   padding: 12px 0 12px 20px;
 }
-
+.searchWrap .filter_btn {
+  display:block; padding:20px 20px 60px 20px; background-color:#fff;}
 .searchWrap .btn_reset {
   z-index: 11;
   position: absolute;
-  /* top:44px; */
   float:left;
   padding:14px 16px 10px 16px;
-  background-color:#f9f9f9;
 }
 
 .searchWrap .reset {
@@ -2116,10 +2115,13 @@ input:-internal-autofill-selected {background-color:#fff;}
   -webkit-box-orient: vertical;
 }
 
-/* .filterWrap .filter_key .btn_bk {
-  width:100%;
+.filterWrap .filter_key .btn_bk {
   display: inline-block;
-} */
+  float: right;
+  padding:12px 0px;
+  width: 80%;
+  border-radius: 5px 5px;
+}
 .sub-header {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -2127,9 +2129,10 @@ input:-internal-autofill-selected {background-color:#fff;}
   width:100%;
   height:20px;
   text-align:center;
-  border-top-left-radius:30px;
-  border-top-right-radius:30px;
-  background-color: #e5e5e5;
+  line-height: 14px;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  background-color: #fff;
 }
 .touchBar {
   clear:both;
@@ -2140,7 +2143,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
   display: inline-block;
-  background-color: #fff;
+  background-color: #e5e5e5;
 }
 .swipe-tabs.container-fluid {
   width: 100%;
@@ -2205,6 +2208,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 
 .swipe-tabs {
   display: block;
+  padding: 0 10px;
   width:720px !important;
   height:40px;
   /* overflow-x: scroll; */
@@ -2215,7 +2219,6 @@ input:-internal-autofill-selected {background-color:#fff;}
   display:block;
   padding:10px 0;
   height:40px;
-  margin-right:15px;
   float:left;
   margin:0 10px;
   color: #ababab;
@@ -2225,7 +2228,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   border-bottom :2px solid #3067cc
 }
 .swipe-tab-cont {
-  max-height: 500px;
+  max-height: 300px;
   width:100%;
   overflow-y: scroll;
   padding: 25px 20px;
@@ -2427,13 +2430,16 @@ width: 400px;
 .last_btn_wrap .sz-custom_text {margin:2px 0 0 8px}
 .last_btn_bk1 {display:block; width:100%; height:45px; line-height:17px; background:#000; font-size:17px; color:#fff}
 
+/* 성별 */
+.swipe-tab-cont.conse {}
+.swipe-tab-cont.conse .input_radio {display:block; margin:10px 0;}
 /* 카테고리 아코디언 메뉴 */
 .article_title {position:relative; height:50px; line-height:50px; font-size:19px; font-weight:500; color:#333;}
 .article_title:after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_close_toggle.gif) center center/cover no-repeat}
 .article_content {width:100%; display:inline-block}
 /* .article_content:after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_close_toggle.gif) center center/cover no-repeat} */
-.article_cate {border-bottom:1px solid #e5e5e5;}
-
+.article_cate > li {border-bottom:1px solid #e5e5e5;}
+.article_cate.active > li:last-child {border-bottom :none;}
 .swipe-tab-cont.brnd .sub_tab {vertical-align:bottom; margin-bottom:6px;display:inline-block; width:100%; height:25px;}
 .swipe-tab-cont.brnd .sub_tab li {margin-right:15px; float:left; font-size:19px; color: #ababab;}
 .swipe-tab-cont.brnd .sub_tab li.active {font-weight:bold; color: #333;}
@@ -2474,48 +2480,12 @@ width: 400px;
 .swipe-tab-cont.color .colorLst li.col_ivy {background-color: #efe6cc;}
 .swipe-tab-cont.color .colorLst li.col_idg {background-color: #153e67;}
 
-
- @import url("https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
-
-fieldset, label { margin: 0; padding: 0; }
-
-/****** Style Star Rating Widget *****/
-
-.rating { 
-  border: none;
-  float: left;
-}
-.rating > input { display: none; } 
-.rating > label:before { 
-  margin: 5px;
-  font-size: 1.25em;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f005";
-}
-.rating > .half:before { 
-  content: "\f089";
-  position: absolute;
-}
-.rating > label { 
-  color: #ddd; 
- float: right; 
-}
-
-/***** CSS Magic to Highlight Stars on Hover *****/
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label {color: #ff4e25;} /* hover previous stars in list */
-
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #ff4e25;}
-
-
-.star-rating {
-  line-height:32px;
-  font-size:1.25em;
-}
-
-.star-rating .fa-star{color: #ff4e25;}
+/* 별점평 */
+.swipe-tab-cont.evlt .star_wrap {display:inline-block; margin:0 auto; text-align:center;}
+.star_rating {margin:0 auto; text-align:center}
+.star_rating strong {margin-bottom:15px; display:block; text-align:center; font-size:18px; font-weight:500; color:#333; line-height:1}
+.star_rating .star_wrap .star {margin-right:10px}
+.star_wrap .star.on, .star_wrap .star.off, .star_wrap .star.half {float:left; width:35px; height:35px;}
+.star_wrap .star.on {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/star_on.png") left top no-repeat; background-size:cover}
+.star_wrap .star.off {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/star_off.png") left top no-repeat;background-size:cover}
+.star_wrap .star.half {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/star_half.png") left top no-repeat;background-size:cover}
