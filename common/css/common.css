@@ -97,11 +97,10 @@ dd,dl,h1,h2,h3,h4,h5,input,p,pre{margin:0}
 legend,td,th{padding:0}  /* input[type=email],input[type=number],input[type=password],input[type=text] */
 button,input[type=email],input[type=number],input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button,input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 button,textarea{border:0}
-input, button:focus {outline:none}
 textarea{resize:none;padding:0}
-textarea:focus {outline:none}
 button{padding:0;background-color:rgba(0,0,0,0);border-radius:0;-webkit-border-radius:0; cursor:pointer}
-a{text-decoration:none!important;color:inherit}
+a{ display:block; text-decoration:none!important; color:inherit}
+a:focus {outline-style: solid;}
 h1,h2,h3,h4,h5,strong,th{font-weight:400}
 address,em{font-style:normal}
 fieldset{border:0;border-radius:0; -webkit-border-radius:0;}
@@ -244,7 +243,7 @@ td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].erro
 .white .btn_like .count{color:#fff!important}
 .tc_b,
 .tc_b [class^=btn_]{color:#ababab}
-select, button:focus {outline:none}
+/* select, button:focus {outline:none} */
 .order_discontent select[disabled],
 .table_st .disabled :not(.alram){color:#ababab!important}
 ::-webkit-input-placeholder,
@@ -614,7 +613,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .member-wrap .sz-select_list .selected::after {content: ''; display:block}
 .member-wrap .sz-select_sub {border:1px solid #e5e5e5;border-top:none;background-color:#fff}
 .member-wrap .sz-select_sub li {padding:10px; font-size:16px}
-.slick-slide a:focus, .slick-slide:focus {outline:none}
+/* .slick-slide a:focus, .slick-slide:focus {outline:none} */
 .tab-content {display:none}
 .tab-content.active {display:block}
 .sz-select_list {position:relative;}
