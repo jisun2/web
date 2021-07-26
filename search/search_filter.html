@@ -961,9 +961,8 @@
                                                     </div>    
                                                 </li>
                                                 <li>
-                                                    
+                                                    <button type="button" class="cate_btn_del"><span class="ico del"><span class="blind">선택 카테고리 삭제</span></span></button>
                                                     <div class="article_title">
-                                                        <button type="button" class="btn_del"><span class="ico del"></span></button>
                                                         <a href="#none">CLOTHING <span class="cateDetail"> > 아우터</span></a>
                                                     </div>
                                                     <div class="article_content clearfix">
@@ -1027,7 +1026,7 @@
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <ul class="cateLst">
+                                            <ul class="cateLst cateCont" style="display:none">
                                                 <li class="on">
                                                     <a href="#none">
                                                         <span class="ico check_on pos"></span>
@@ -1213,12 +1212,13 @@
                                         <!-- 시즌 -->
                                         <div class="swipe-tab-cont season">
                                             <ul class="filterKey ss-list">
-                                                <li><a href="#none" class="ss-item">XS</a></li>
-                                                <li><a href="#none" class="ss-item">S</a></li>
-                                                <li><a href="#none" class="ss-item">M</a></li>
-                                                <li><a href="#none" class="ss-item">L</a></li>
-                                                <li><a href="#none" class="ss-item">XL</a></li>
-                                                <li><a href="#none" class="ss-item on">XXL</a></li>
+                                                <li><a href="#none" class="ss-item">21 F/W</a></li>
+                                                <li><a href="#none" class="ss-item on">21 S/S</a></li>
+                                                <li><a href="#none" class="ss-item">20 F/W</a></li>
+                                                <li><a href="#none" class="ss-item">20 F/W</a></li>
+                                                <li><a href="#none" class="ss-item">19 F/W</a></li>
+                                                <li><a href="#none" class="ss-item">19 F/W</a></li>
+                                                <li><a href="#none" class="ss-item">18 F/W</a></li>
                                             </ul>
                                         </div>
                                         <!-- //시즌 -->
@@ -1362,8 +1362,10 @@
             $('.keyDel').on('click touch', function(){
                 $(this).parent().hide();
             })
-            $('.btn_del').on('click touch', function(){
-                $(this).hasClass('.cateDetail').hide();
+            $('.cate_btn_del').on('click touch', function(){
+                $(this).siblings().children().children('.cateDetail').hide();
+                $('.cate_btn_del').hide();
+                
         }); 
          // 모바일 앱 input focus 후 키보드 노출 코드
          (function () {
@@ -1470,6 +1472,7 @@
                     var index = target.index();
 
                     tabBtn1.removeClass("active");
+                    target.addClass("active");
 
                     cateCont.css("display","none");
                     cateCont.eq(index).css("display","block");
