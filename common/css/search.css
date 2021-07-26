@@ -1151,7 +1151,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   display: block;
   margin: 14px 0 4px 0;
   display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height:18px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;
-  line-height: 13px;
+  line-height: 15px;
   font-size: 13px;
   font-weight: 700
 }
@@ -1558,23 +1558,40 @@ input:-internal-autofill-selected {background-color:#fff;}
 .ss-list.keyLst1 {
   padding: 12px 0 12px 20px;
 }
-.searchWrap .filter_btn {
-  display:block; padding:20px 20px 60px 20px; background-color:#fff;}
+.searchWrap .filter_btn {display:block; padding:20px 20px 70px 20px; background-color:#fff;}
+
 .searchWrap .btn_reset {
-  z-index: 11;
+  z-index: 5;
+  padding: 8px 6%;
+  left:0;
   position: absolute;
-  float:left;
-  padding:14px 16px 10px 16px;
+}
+
+.searchWrap .btn_reset.bg {
+  padding:10px 14px;
+  background-color:#f9f9f9;
+}
+
+.searchWrap .reset_s {
+  width: 22px;
+  height: 30px;
+  background-position: -391px -85px;
+  background-size: 250px 250px;
   background-color:#f9f9f9
 }
 
 .searchWrap .reset {
+  width: 26px;
+  height: 30px;
+  background-position: -170px -106px;
+}
+/* .searchWrap .reset {
   float:left;
   width:18px;
   height:21px;
   background : url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/btn_reset.png") center center/cover;
   background-repeat: no-repeat;
-}
+} */
 .searchWrap .ss-list .ss-item {
   height: 32px;
   padding: 0 12px;
@@ -1585,6 +1602,14 @@ input:-internal-autofill-selected {background-color:#fff;}
   border-radius: 30px;
   background-color: #fff;
 }
+.searchWrap .ss-list a.ss-item {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 32px;
+}
+.searchWrap .ss-list a.ss-item span {line-height: 32px !important}
+/* .searchWrap .ss-list a.ss-item button {line-height: 15px !important;} */
+.searchWrap .ss-list a.ss-item button.keyDel {height:21px !important;}
 
 .searchWrap .ss-list .ss-item.on {
   color:#fff;
@@ -2096,7 +2121,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   display: inline-block;
   float: right;
   padding:12px 0px;
-  width: 80%;
+  width: 85%;
   border-radius: 5px 5px;
 }
 .sub-header {
@@ -2239,10 +2264,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   margin-top:0;
 }
 
-.filter_price {
-  font-size:19px; color:#333;
-}
-
+.filter_price {font-size:19px; font-weight:bold; color:#333;}
 /* 탭 */
 .tab {width:100% !important; height:auto; list-style:none; font-size:16px; border:0 none; 
   background-color:#fff;}
@@ -2278,22 +2300,30 @@ input:-internal-autofill-selected {background-color:#fff;}
 .conse .radio_box {margin-top:-10px;}
 .swipe-tab-cont.conse .input_radio {display:block; margin:10px 0;}
 /* 카테고리 아코디언 메뉴 */
-.article_title {position:relative; margin-top:-10px; height:50px; line-height:50px; font-size:19px; font-weight:500; color:#333;}
-.article_title .ico.arrow {content:''; display:block; position:absolute; top:10px; right:0; width:24px; height:24px; 
-  background-position: -45px -135px; background-repeat:no-repeat;}}
+.article_cate > li:first-child {margin-top:-10px;}
+.article_title {position:relative; height:50px; line-height:50px; font-size:19px; font-weight:500; color:#333;}
+/* .article_title .ico.arrow {content:''; display:block; position:absolute; top:10px; right:0; width:24px; height:24px; 
+  background-position: -45px -135px; background-repeat:no-repeat;} */
 /* .article_title:after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; 
   background-position: -45px -135px; background-repeat:no-repeat;} */
+.article_title:after {content:''; display:block; position:absolute; top:22px; right:0; width:12px; height:6px; 
+    background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ico_acco_arrow_down.png) center center/cover no-repeat}
+
+.article_title .btn_del {display:inline-block; padding:20px; position:absolute; right:0; width: 22px; height: 22px; background-color:#fff }
+.article_title .btn_del .ico.del { width: 22px; height: 22px; background-position: -278px -27px; background-color:#fff;}
+
+.article_title.active:after {background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ico_acco_arrow_up.png) center center/cover no-repeat}
 .article_content {width:100%; display:inline-block}
-/* .article_content:after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_close_toggle.gif) center center/cover no-repeat} */
 .article_cate > li {border-bottom:1px solid #e5e5e5;}
 .article_cate.active > li:last-child {border-bottom :none;}
-.swipe-tab-cont.brnd .sub_tab {vertical-align:bottom; margin-bottom:6px;display:inline-block; width:100%; height:25px;}
+.swipe-tab-cont.brnd .sub_tab {vertical-align:bottom; margin-bottom:6px;display:inline-block; width:100%; height:25px; font-size:19px;}
 .swipe-tab-cont.brnd .sub_tab li {margin-right:15px; float:left; font-size:19px; color: #ababab;}
 .swipe-tab-cont.brnd .sub_tab li.active {font-weight:bold; color: #333;}
 .swipe-tab-cont.brnd .cateLst {width:100%; display:block;}
+.swipe-tab-cont.brnd .cateLst li {width:100%; display:block;}
 /* 카테고리 리스트 공통 */
 .cateLst {float:left; width:50%; color:#ababab}
-.cateLst li {position:relative; padding: 8px 0;}
+.cateLst li {position:relative; padding: 10px 0;}
 .cateLst li .cateBrd {padding:0 20px;}
 .cateLst li.on {color:#3067cc}
 .cateLst li .ico {display:inline-block; width:20px; height:20px;}
