@@ -15,8 +15,6 @@
         <link rel="stylesheet" href="../common/css/search.css">
         <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
-        <!--  -->
-
     </head>
     <body>
         <div id="wrap" class="wd720">
@@ -910,10 +908,10 @@
                                             </script>
                                             
                                             <ul class="filterKey ss-list">
-                                                <li><a href="#" class="ss-item on">3만원 이하</a></li>
-                                                <li><a href="#" class="ss-item on">5~7만원</a></li>
-                                                <li><a href="#" class="ss-item on">7~10만원</a></li>
-                                                <li><a href="#" class="ss-item on">10~20만원</a></li>
+                                                <li><a href="#" class="ss-item">3만원 이하</a></li>
+                                                <li><a href="#" class="ss-item">5~7만원</a></li>
+                                                <li><a href="#" class="ss-item">7~10만원</a></li>
+                                                <li><a href="#" class="ss-item">10~20만원</a></li>
                                                 <li><a href="#none" class="ss-item">20~30만원</a></li>
                                                 <li><a href="#none" class="ss-item">30~50만원</a></li>
                                                 <li><a href="#none" class="ss-item">50~100만원</a></li>
@@ -925,17 +923,19 @@
                                         <!-- 성별 -->
                                         <div class="swipe-tab-cont conse">
                                             <span class="blind">성별 선택</span>
-                                            <div class="radio_box">
-                                                <div class="input_radio">
-                                                    <input type="radio" name="radio" id="radio1_1"><label for="radio1_1"><span class="mgl30">남성</span></label>
+                                            <form action="">
+                                                <div class="radio_box">
+                                                    <div class="input_radio">
+                                                        <input type="radio" name="radio" id="radio1_1"><label for="radio1_1"><span class="mgl30">남성</span></label>
+                                                    </div>
+                                                    <div class="input_radio">
+                                                        <input type="radio" name="radio" id="radio1_2"><label for="radio1_2"><span class="mgl30">여성</span></label>
+                                                    </div>
+                                                    <div class="input_radio">
+                                                        <input type="radio" name="radio" id="radio1_3"><label for="radio1_3"><span class="mgl30">공용</span></label>
+                                                    </div>
                                                 </div>
-                                                <div class="input_radio">
-                                                    <input type="radio" name="radio" id="radio1_2"><label for="radio1_2"><span class="mgl30">여성</span></label>
-                                                </div>
-                                                <div class="input_radio">
-                                                    <input type="radio" name="radio" id="radio1_3"><label for="radio1_3"><span class="mgl30">공용</span></label>
-                                                </div>
-                                            </div>
+                                            </form>
                                         </div>
                                         <!-- //성별 -->
                                         <!-- 카테고리 -->
@@ -963,17 +963,54 @@
                                                 <li>
                                                     <button type="button" class="cate_btn_del"><span class="ico del"><span class="blind">선택 카테고리 삭제</span></span></button>
                                                     <div class="article_title">
-                                                        <a href="#none">CLOTHING <span class="cateDetail"> > 아우터</span></a>
+                                                        <a href="#none">CLOTHING <span class="cateDetail"> > 아우터</span></a><!-- 2depth -->
                                                     </div>
                                                     <div class="article_content clearfix">
-                                                        <ul class="cateLst">
-                                                            <li><a href="#none"></a><span class="ico check_off"></span>전체 16,106</li>
-                                                            <li><a href="#none"></a><span class="ico check_off"></span>자켓 1,453</li>
-                                                            <li class="on"><a href="#none"></a><span class="ico check_on"></span>점퍼 1,412</li>
+                                                        <ul class="cateLst check">
+                                                            <li>
+                                                                <div class="input_check">
+                                                                    <input class="ico pos" type="checkbox" id="det_check_1" name=""  />
+                                                                    <label for="det_check_1">    
+                                                                        <p class="brd_ko">전체 16,106</p>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="input_check">
+                                                                    <input class="ico pos" type="checkbox" id="det_check_2" name=""  />
+                                                                    <label for="det_check_2">    
+                                                                        <p class="brd_ko">자켓 1,453</p>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="input_check">
+                                                                    <input class="ico pos" type="checkbox" id="det_check_3" name=""  />
+                                                                    <label for="det_check_3">    
+                                                                        <p class="brd_ko">점퍼 1,412</p>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
                                                         </ul>
-                                                        <ul class="cateLst">
-                                                            <li><a href="#none"></a>코트 2,674</li>
-                                                            <li><a href="#none"></a>패딩 1,524</li>
+                                                        <ul class="cateLst check">
+                                                            <!-- <li><a href="#none"></a>코트 2,674</li>
+                                                            <li><a href="#none"></a>패딩 1,524</li> -->
+                                                            <li>
+                                                                <div class="input_check">
+                                                                    <input class="ico pos" type="checkbox" id="det_check_4" name=""  />
+                                                                    <label for="det_check_4">    
+                                                                        <p class="brd_ko">코트 2,674</p>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="input_check">
+                                                                    <input class="ico pos" type="checkbox" id="det_check_5" name=""  />
+                                                                    <label for="det_check_5">    
+                                                                        <p class="brd_ko">패딩 1,524</p>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
                                                         </ul>
                                                     </div>    
                                                 </li>
@@ -990,7 +1027,7 @@
                                                         <ul class="cateLst">
                                                             <li><a href="#none">티셔츠 2,674</a></li>
                                                             <li class="on"><a href="#none">후디 1,524</a></li>
-                                                            <li class="on"><a href="#none"><span class="ico check_on"></span>바지 1,610</a></li>
+                                                            <li class="on"><a href="#none">바지 1,610</a></li>
                                                             <li><a href="#none">원피스/스커트 2,454</a></li>
                                                             <li><a href="#none">이너웨어 1,313</a></li>
                                                         </ul>
@@ -1006,44 +1043,82 @@
                                                 <li class="active"><a href="#none">가나다 순</a></li>
                                                 <li><a href="#none">ABC 순</a></li>
                                             </ul>
-                                            <ul class="cateLst cateCont">
-                                                <li class="on">
-                                                    <a href="#none">
-                                                        <span class="ico check_on pos"></span>
-                                                        <div class="cateBrd">
+
+                                            <ul class="cateLst cateCont ko">
+                                                <li>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="brnd_check_1" name=""  />
+                                                        <label for="brnd_check_1">    
                                                             <p class="brd_ko">가까이</p>
-                                                            <p class="brd_En">GAKKA2</p>
-                                                        </div>
-                                                    </a>
+                                                            <p class="brd_en">GAKKA2</p>
+                                                        </label>
+                                                    </div>
                                                 </li>
                                                 <li>
-                                                    <a href="#none">
-                                                        <span class="ico check_off pos"></span>
-                                                        <div class="cateBrd">
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="brnd_check_2" name=""  />
+                                                        <label for="brnd_check_2">    
                                                             <p class="brd_ko">가네코 유닛</p>
-                                                            <p class="brd_En">GANEKO UNIT</p>
-                                                        </div>
-                                                    </a>
+                                                            <p class="brd_en">GANEKO UNIT</p>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="brnd_check_3" name=""  />
+                                                        <label for="brnd_check_3">    
+                                                            <p class="brd_ko">고샤 루브친스키</p>
+                                                            <p class="brd_en">GOSHA RUBCHINSKIY</p>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="brnd_check_4" name=""  />
+                                                        <label for="brnd_check_4">    
+                                                            <p class="brd_ko">그리너리 크리</p>
+                                                            <p class="brd_en">GREENERY CREED</p>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="brnd_check_5" name=""  />
+                                                        <label for="brnd_check_5">    
+                                                            <p class="brd_ko">그리너리 크리</p>
+                                                            <p class="brd_en">GREENERY CREED</p>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="brnd_check_6" name=""  />
+                                                        <label for="brnd_check_6">    
+                                                            <p class="brd_ko">그리너리 크리</p>
+                                                            <p class="brd_en">GREENERY CREED</p>
+                                                        </label>
+                                                    </div>
                                                 </li>
                                             </ul>
-                                            <ul class="cateLst cateCont" style="display:none">
-                                                <li class="on">
-                                                    <a href="#none">
-                                                        <span class="ico check_on pos"></span>
-                                                        <div class="cateBrd">
-                                                            <p class="brd_ko">가까이11</p>
-                                                            <p class="brd_En">GAKKA2</p>
-                                                        </div>
-                                                    </a>
+
+                                            <ul class="cateLst cateCont en" style="display:none">
+                                                <li>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="brnd_check_1_1" name=""  />
+                                                        <label for="brnd_check_1_1">    
+                                                            <p class="brd_en">A BATHING APE</p>
+                                                            <p class="brd_ko">베이프</p>
+                                                        </label>
+                                                    </div>
                                                 </li>
                                                 <li>
-                                                    <a href="#none">
-                                                        <span class="ico check_off pos"></span>
-                                                        <div class="cateBrd">
-                                                            <p class="brd_ko">가네코 유닛</p>
-                                                            <p class="brd_En">GANEKO UNIT</p>
-                                                        </div>
-                                                    </a>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="brnd_check_1_2" name=""  />
+                                                        <label for="brnd_check_1_2">    
+                                                            <p class="brd_en">A BY A</p>
+                                                            <p class="brd_ko">에이바이에이</p>
+                                                        </label>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1086,19 +1161,19 @@
                                         <!-- 컬러 -->
                                         <div class="swipe-tab-cont color">
                                             <ul class="colorLst">
-                                                <li class="active col_bk"><span class="ico check"></span></li>
-                                                <!-- 흰색 컬러칩만 검은색 체크로 노출 -->
-                                                <li class="active bk col_wht"><span class="ico check"></span><span class="ico check_on"></span></li>
-                                                <!-- //흰색 컬러칩만 검은색 체크로 노출 -->
-                                                <li class="active col_red"><span class="ico check"></span><span class="ico check_on"></span></li>
-                                                <li class="col_purp"></li>
-                                                <li class="col_blue"></li>
-                                                <li class="col_skyB"></li>
-                                                <li class="col_ylw"></li>
-                                                <li class="col_grn"></li>
-                                                <li class="col_navy"></li>
-                                                <li class="col_ivy"></li>
-                                                <li class="col_idg"></li>
+                                                <li class="active"><a href="#none" class="col_bk" title="검정색"><span class="ico check"></span><span class="blind">검정색</span></a></li>
+                                                 <!-- 흰색 컬러칩만 검은색 체크로 노출 -->
+                                                <li class="active"><a href="#none" class="col_wht bk" title="흰색"><span class="ico check"></span><span class="blind">흰색</span></a></li>
+                                                  <!-- //흰색 컬러칩만 검은색 체크로 노출 -->
+                                                <li><a href="#none" class="col_red" title="빨강색"><span class="ico check"></span><span class="blind">빨강색</span></a></li>
+                                                <li><a href="#none" class="col_purp" title="보라색"><span class="ico check"></span><span class="blind">보라색</span></a></li>
+                                                <li><a href="#none" class="col_blue" title="파란색"><span class="ico check"></span><span class="blind">파란색</span></a></li>
+                                                <li><a href="#none" class="col_skyB" title="하늘색"><span class="ico check"></span><span class="blind">하늘색</span></a></li>
+                                                <li><a href="#none" class="col_ylw" title="노란색"><span class="ico check"></span><span class="blind">노란색</span></a></li>
+                                                <li><a href="#none" class="col_grn" title="녹색"><span class="ico check"></span><span class="blind">녹색</span></a></li>
+                                                <li><a href="#none" class="col_navy" title="남색"><span class="ico check"></span><span class="blind">남색</span></a></li>
+                                                <li><a href="#none" class="col_ivy" title="아이보리색"><span class="ico check"></span><span class="blind">아이보리색</span></a></li>
+                                                <li><a href="#none" class="col_idg" title="탁한 남색"><span class="ico check"></span><span class="blind">탁한 남색</span></a></li>
                                             </ul>
                                         </div>
                                         <!-- //컬러 -->
@@ -1137,58 +1212,76 @@
                                         <!-- 이벤트 -->
                                         <div class="swipe-tab-cont evt">
                                             <ul class="cateLst">
-                                                <li class="on">
-                                                    <span class="ico check_on pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">삼성 자급제 단말기 할인특가</p>
+                                                <li>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_1" name=""  />
+                                                        <label for="evt_check_1">    
+                                                            <p class="brd_ko">삼성 자급제 단말기 할인특가</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <span class="ico check_off pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">삼성 갤럭시 캠퍼스 스토어</p>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_2" name=""  />
+                                                        <label for="evt_check_2">    
+                                                            <p class="brd_ko">삼성 갤럭시 캠퍼스 스토어</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <span class="ico check_off pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">서프 서피 feat.VOLCOM</p>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_3" name=""  />
+                                                        <label for="evt_check_3">    
+                                                            <p class="brd_ko">서프 서피 feat.VOLCOM</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <span class="ico check_off pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">바캉SHOW</p>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_4" name=""  />
+                                                        <label for="evt_check_4">    
+                                                            <p class="brd_ko">바캉SHOW</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <span class="ico check_off pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">네가, 알아주길 바래</p>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_5" name=""  />
+                                                        <label for="evt_check_5">    
+                                                            <p class="brd_ko">네가, 알아주길 바래</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <span class="ico check_off pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">여름 눈부신 아이템 SHOW</p>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_6" name=""  />
+                                                        <label for="evt_check_6">    
+                                                            <p class="brd_ko">여름 눈부신 아이템 SHOW</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <span class="ico check_off pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">숏숏쇼(ShortShortShow)</p>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_7" name=""  />
+                                                        <label for="evt_check_7">    
+                                                            <p class="brd_ko">숏숏쇼(ShortShortShow)</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <span class="ico check_off pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">여름 눈부신 아이템 SHOW</p>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_8" name=""  />
+                                                        <label for="evt_check_8">    
+                                                            <p class="brd_ko">숏숏쇼(ShortShortShow)</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <span class="ico check_off pos"></span>
-                                                    <div class="cateBrd">
-                                                        <p class="brd_ko">여름 눈부신 아이템 SHOW</p>
+                                                    <div class="input_check">
+                                                        <input class="ico pos" type="checkbox" id="evt_check_9" name=""  />
+                                                        <label for="evt_check_9">    
+                                                            <p class="brd_ko">숏숏쇼(ShortShortShow)</p>
+                                                        </label>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -1237,10 +1330,8 @@
                                         </ul>
                                     </div>
                                     <div class="filter_btn">
-                                        <button class="btn_reset"><span class="ico reset"><span class="blind">키워드 전체 초기화</span></span></button><!-- reset BTN -->
-                                        <div class="btn_bk">
-                                            <span><span class="num">1,542</span>개의 상품 보기</span>
-                                        </div>
+                                        <button type="button" class="btn_reset"><span class="ico reset"><span class="blind">키워드 전체 초기화</span></span></button><!-- reset BTN -->
+                                        <button type="button" class="btn_bk"><span class="num">1,542</span>개의 상품 보기</button>
                                     </div>
                                 </div>
                             </div>
@@ -1303,6 +1394,10 @@
             })
             $('.tabTouch').on('click touch', function(){
                 $('.dim_layer').hide();
+                $(window).css("overflow-y","scroll");
+            })
+            $('.filter_btn').on('click touch', function(){
+                $('.ss-list.second.keyLst1').hide();
             })
              //옵션 선택
             function acAcco(ele, content) {
@@ -1359,13 +1454,26 @@
             $('.filter_select').on('click touch', function() {
                 $(this).toggleClass('active');
             })
+            $('.colorLst li').on('click touch', function() {
+                $(this).toggleClass('active');
+            })
+            $('.filterKey li').on('click touch', function(){
+                $(this).toggleClass('active');
+            })
+            $('.article_content .cateLst li').on('click touch', function(){
+                $(this).toggleClass('on');
+            })
             $('.keyDel').on('click touch', function(){
                 $(this).parent().hide();
             })
+            $('.second.keyLst li').on('click touch', function(){
+                $('#tempLayer1').css("display","block");
+            })
+            
             $('.cate_btn_del').on('click touch', function(){
                 $(this).siblings().children().children('.cateDetail').hide();
                 $('.cate_btn_del').hide();
-                
+                $(window).css("overflow-y","hidden");
         }); 
          // 모바일 앱 input focus 후 키보드 노출 코드
          (function () {
@@ -1388,64 +1496,6 @@
                 }
             })(jQuery);    
         </script>
-        <!-- <script>
-            $(function () {
-                'use strict';
-
-                var $swipeTabsContainer = $('.swipe-tabs'),
-                    $swipeTabs = $('.swipe-tab'),
-                    $swipeTabsContentContainer = $('.swipe-tabs-container'),
-                    currentIndex = 2,
-                    activeTabClassName = 'active-tab';
-
-                $swipeTabsContainer.on('init', function(event, slick) {
-                    $swipeTabsContentContainer.removeClass('invisible');
-                    $swipeTabsContainer.removeClass('invisible');
-
-                    currentIndex = 2;//slick.getCurrent();
-                    $swipeTabs.removeClass(activeTabClassName);
-                    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
-                });
-
-                $swipeTabsContainer.slick({
-                    //slidesToShow: 3.25,
-                    slidesToShow: 5.5,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    infinite: false,
-                    swipeToSlide: true,
-                    touchThreshold: 10,
-                    initialSlide: 0
-                });
-
-                $swipeTabsContentContainer.slick({
-                    asNavFor: $swipeTabsContainer,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    infinite: false,
-                    swipeToSlide: true,
-                draggable: true,
-                    touchThreshold: 10,
-                    initialSlide: 2
-                });
-                $swipeTabs.on('click', function(event) {
-                    // gets index of clicked tab
-                    currentIndex = $(this).data('slick-index');
-                    $swipeTabs.removeClass(activeTabClassName);
-                    $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
-                    $swipeTabsContainer.slick('slickGoTo', currentIndex);
-                    $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
-                });
-
-                //initializes slick navigation tabs swipe handler
-                $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
-                    currentIndex = $(this).slick('slickCurrentSlide');
-                    $swipeTabs.removeClass(activeTabClassName);
-                    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
-                });
-            });
-        </script>    -->
         <script>
             $(document).ready(function(){
                 // tab
@@ -1476,6 +1526,8 @@
 
                     cateCont.css("display","none");
                     cateCont.eq(index).css("display","block");
+
+                    
                 });
 
             });     
