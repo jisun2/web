@@ -111,7 +111,8 @@ input {
   -webkit-appearance: none;
 }
 input[type=checkbox] {
-  visibility: visible !important;
+  display:none;
+  border:none;
 }
 input[type="checkbox"]+label {
   display:none;
