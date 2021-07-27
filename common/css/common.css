@@ -82,7 +82,7 @@ font-display:auto;font-style:normal;font-weight:500;
   src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot);
   src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
 }
-
+.txtwrite_wrap .input_textarea textarea::placeholder {color:#555}
 body,option,select,input{font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
 input[type=number] {font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
 html{font-size:14px;line-height:20px;color:#555; font-family: proxima-nova,'Noto Sans KR',sans-serif !important;}
@@ -95,9 +95,9 @@ dd,dl,h1,h2,h3,h4,h5,input,p,pre{margin:0}
 legend,td,th{padding:0}  /* input[type=email],input[type=number],input[type=password],input[type=text] */
 button,input[type=email],input[type=number],input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button,input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 button,textarea{border:0}
-input, button:focus {outline:none}
+/* input, button:focus {outline:none} */
 textarea{resize:none;padding:0}
-textarea:focus {outline:none}
+/* textarea:focus {outline:none} */
 button{padding:0;background-color:rgba(0,0,0,0);border-radius:0;-webkit-border-radius:0; cursor:pointer}
 a{text-decoration:none!important;color:inherit}
 h1,h2,h3,h4,h5,strong,th{font-weight:400}
