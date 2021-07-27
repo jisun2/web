@@ -2106,7 +2106,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .cateLst.ko .brd_en {font-size:11px}
 .cateLst.en .brd_ko {font-size:10px}
 .cateLst.en .brd_en {font-size:14px}
-.cateLst.check li .ico.pos {top:8px}
+.cateLst.check li .ico.pos {top:6px}
 /* 이벤트 */
 .evt .cateLst {width:100%;}
 .evt .cateLst li {padding:9.5px 0; width:100%;}
