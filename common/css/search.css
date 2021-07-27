@@ -113,6 +113,9 @@ input {
 input[type=checkbox] {
   display:none;
 }
+input[type="checkbox"]+label {
+  display:none;
+}
 @font-face {
   font-family: proxima-nova;
   font-style: normal;
