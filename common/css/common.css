@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url("https://p.typekit.net/p.css?s=1&k=yzy2fux&ht=tk&f=173.175.25136&a=16936712&app=typekit&e=css");
-.tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
+.tk-proxima-nova { font-family:"proxima-nova",sans-serif; }
 
 @font-face {
 font-family:"proxima-nova";
@@ -130,7 +130,7 @@ input::-ms-clear{display:none}
 .pos_center_after:after,
 .pos_center_before:before,
 .spr_after:after,
-.spr_before:before{overflow:hidden;display:inline-block;background-repeat:no-repeat;text-indent:-200%;vertical-align:top;content:''}
+.spr_before:before{overflow:hidden;background-repeat:no-repeat;text-indent:-200%;vertical-align:top;content:''}
 .pos_center_after,
 .pos_center_before{position:relative}
 .btn_arr:before,
@@ -373,6 +373,12 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .sltType option .sel_arrow {display:none}
 .sltType .sel_arrow {position:absolute; top:13px; right:15px}
 .sltType1 .sel_arrow {position:absolute; top:17px; right:10px}
+/* 체크 박스 */
+.input_check {}
+.input_check input {background-position:-23px -140px; background-repeat:no-repeat; color: #ababab}
+.input_check input:checked {background-position: -45px -140px; background-repeat:no-repeat;}
+.input_check input:checked + label p {color:#3067cc}
+.cateLst li .ico.pos {position:absolute; top:13px;}
 
 /* Slider */
 .slick-slider {position:relative; display:block; box-sizing:border-box;-khtml-user-select:none;-ms-touch-action:pan-y; touch-action:pan-y;-webkit-tap-highlight-color: transparent;}
