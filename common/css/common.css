@@ -126,11 +126,11 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 input[type=number]{-moz-appearance:textfield}
 input::-ms-clear{display:none}
 .pos_rel {position:relative}
-.input_check label:before,
+/* .input_check label:before,
 .pos_center_after:after,
 .pos_center_before:before,
 .spr_after:after,
-.spr_before:before{overflow:hidden;background-repeat:no-repeat;text-indent:-200%;vertical-align:top;content:''}
+.spr_before:before{overflow:hidden;background-repeat:no-repeat;text-indent:-200%;vertical-align:top;content:''} */
 .pos_center_after,
 .pos_center_before{position:relative}
 .btn_arr:before,
