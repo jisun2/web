@@ -1420,7 +1420,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .ss-list.keyLst1 li .on {color:#fff; border: none; background-color:#3067cc;}
 .searchWrap .filter_btn {display:block; padding:12px 20px 70px 20px; background-color:#fff;}
 .searchWrap .btn_reset {z-index: 5; margin-left:2%; padding: 8px 6% 8px 20px; left:0; position: absolute;}
-.searchWrap .btn_reset.bg {margin:0; padding:8px 14px; background-color:#f9f9f9;}
+.searchWrap .btn_reset.bg {margin:0; padding:7px 14px; background-color:#f9f9f9;}
 
 .searchWrap .reset_s {
   width: 22px;
