@@ -1428,7 +1428,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   height: 30px;
   background-position: -391px -85px;
   background-size: 250px 250px;
-  background-color:#f9f9f9;
+  background-color:#f9f9f9
 }
 
 .searchWrap .reset {
@@ -1571,10 +1571,11 @@ input:-internal-autofill-selected {background-color:#fff;}
 .sibi_search-wrap .overflow_x {
   float: left;
   width: calc(100% - 39px);
-  /* min-height: 20px; */
+  min-height: 20px;
   overflow-y:hidden;
 }
 .sibi_search-wrap .sbs-list {
+  /* padding-bottom: 10px; */
   min-width: 655px;
   margin-left: -5px;
   -ms-overflow-style: none; 
@@ -1583,18 +1584,12 @@ input:-internal-autofill-selected {background-color:#fff;}
 .sibi_search-wrap .sbs-list::after {
   content: '';
   display: block;
-  clear: both;
+  clear: both
 }
 .sibi_search-wrap .sbs-list li {
   float: left;
   min-height: 18px;
   padding-left: 15px;
-  font-size: 14px !important;
-  white-space: nowrap;
-  line-height: 1.2;
-  color: #ababab;
-}
-.sibi_search-wrap .sbs-list li a {
   font-size: 14px;
   white-space: nowrap;
   line-height: 1.2;

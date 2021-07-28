@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url("https://p.typekit.net/p.css?s=1&k=yzy2fux&ht=tk&f=173.175.25136&a=16936712&app=typekit&e=css");
-.tk-proxima-nova {font-family:"proxima-nova",sans-serif}
+.tk-proxima-nova { font-family:"proxima-nova",sans-serif}
 
 @font-face {
 font-family:"proxima-nova";
@@ -663,13 +663,6 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 .popup-layer {display:block; position:absolute; top:0; left:0;width:100%; height:100%; background-color:rgba(0,0,0,.8)}
 .input_checkbox label:before, .input_radio_check label:before {border-radius:2px;}
 .input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {background-color: #333; color:#fff; width:300px; height:30px;}
-/* 404 에러 */
-/* .error404 {padding:40px 20px;height:100vh;font-size:14px;line-height:20px;word-break:keep-all;text-align:center;color:#000;}
-.error404 .tit {display:block;font-weight:bold;font-size:22px;line-height:30px;}
-.error404 .desc {margin-top:10px;font-weight:300;color:#555;}
-.error404 .btns a {clear:both;display:block;margin:10px 0;padding:14px 0;border:1px solid #111;border-radius:3px; color:#000; font-weight:500; text-align:center; font-size:17px}
-.error404 a.btn_bk {color:#fff; background-color:#111}
-.error404 a.btn_wh {width:100%;} */
 
 #footer {padding:20px 20px 100px 20px; background-color:#f9f9f9;}
 #footer .footer_top {overflow: hidden}
@@ -708,7 +701,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 #footer .outlink_kcp i.kcp {width: 38.4px; height: 38.4px; background-position: -148.2px -127.8px; background-size:360px 360px}
 
 /* Search */
-.justify_box .just_right {
+  .justify_box .just_right {
     float: right;
 }
 input::-ms-clear,
