@@ -1589,7 +1589,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   float: left;
   min-height: 18px;
   padding-left: 15px;
-  font-size: 14px;
+  font-size: 14px !important;
   white-space: nowrap;
   line-height: 1.2;
   color: #ababab;
