@@ -1571,7 +1571,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .sibi_search-wrap .overflow_x {
   float: left;
   width: calc(100% - 39px);
-  min-height: 20px;
+  /* min-height: 20px; */
   overflow-y:hidden;
 }
 .sibi_search-wrap .sbs-list {
