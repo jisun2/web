@@ -841,7 +841,7 @@
                                             
                                             <div id="time-range">
                                                 <div class="filter_price">
-                                                    <span class="slider-price-min">1000</span> ~ <span class="slider-time2">100000</span>
+                                                    <span class="slider-price-min">1000 원</span> ~ <span class="slider-price-max">1,000,000원 이하</span>
                                                 </div>
                                                 <div class="sliders_step1">
                                                     <div id="slider-range"></div>
@@ -851,60 +851,45 @@
                                             <script type="text/javascript">  
                                                 $("#slider-range").slider({
                                                 range: true,
-                                                min: 0,
+                                                min: 1000,
                                                 max: 1000000,
-                                                step: 10,
-                                                values: [1000, 50000],
+                                                step: 2000,
+                                                values: [100000, 500000],
                                                 slide: function (e, ui) {
-                                                    var hours1 = Math.floor(ui.values[0] / 10);
-                                                    var minutes1 = ui.values[0] - (hours1 * 10);
-
-                                                    if (hours1.length == 1) hours1 = '0' + hours1;
-                                                    if (minutes1.length == 1) minutes1 = '0' + minutes1;
-                                                    if (minutes1 == 0) minutes1 = '000';
-                                                    if (hours1 >= 1) {
-                                                        if (hours1 == 1) {
-                                                            hours1 = hours1;
-                                                            minutes1 = minutes1 + "원 이하";
+                                                    var priceMin = Math.floor(ui.values[0] / 10);
+                                                    var amount1 = ui.values[0] - (priceMin * 10);
+                                                    if (amount1 == 0) amount1 = '000';
+                                                    if (priceMin >= 1) {
+                                                        if (priceMin == 1) {
+                                                            priceMin = priceMin;
                                                         } else {
-                                                            hours1 = hours1 - 100;
-                                                            minutes1 = minutes1 + "원 이상";
+                                                            priceMin = priceMin - 1000;
+                                                            amount1 = amount1 + "원 이상";
                                                         }
                                                     } else {
-                                                        hours1 = hours1;
-                                                        minutes1 = minutes1 + "원 이상";
+                                                        priceMin = priceMin;
+                                                        amount1 = amount1 + "원 이상";
                                                     }
-                                                    if (hours1 == 0) {
-                                                        hours1 = 1;
-                                                        minutes1 = minutes1;
+                                                    if (priceMin == 0) {
+                                                        priceMin = 1;
+                                                        amount1 = amount1;
                                                     }
-
-                                                    $('.slider-price-min').html(hours1 + ',' + minutes1);
-
-                                                    var hours2 = Math.floor(ui.values[1] / 60);
-                                                    var minutes2 = ui.values[1] - (hours2 * 60);
-
-                                                    if (hours2.length == 1) hours2 = '0' + hours2;
-                                                    if (minutes2.length == 1) minutes2 = '0' + minutes2;
-                                                    if (minutes2 == 0) minutes2 = '00';
-                                                    if (hours2 >= 12) {
-                                                        if (hours2 == 12) {
-                                                            hours2 = hours2;
-                                                            minutes2 = minutes2 + "원 이하";
-                                                        } else if (hours2 == 24) {
-                                                            hours2 = 11;
-                                                            minutes2 = "59 PM";
-                                                        } else {
-                                                            hours2 = hours2 - 12;
-                                                            minutes2 = minutes2 + "원 이하";
+                                                    $('.slider-price-min').html(priceMin + ',' + amount1);
+                                                        var priceMax = Math.floor(ui.values[0] / 10);
+                                                        var amount2 = ui.values[0] - (priceMax * 10);
+                                                        if (amount2 == 0) amount2 = '000';
+                                                        if (priceMax >=  1) {
+                                                            if (priceMax == 1) {
+                                                                priceMax = priceMax;
+                                                                amount2 = amount2 + "원 이하";
+                                                            } else {
+                                                                priceMax = priceMax - 12;
+                                                                amount2 = amount2 + "원 이하";
+                                                            }
                                                         }
-                                                    } else {
-                                                        hours2 = hours2;
-                                                        minutes2 = minutes2 + "원 이상";
+                                                        $('.slider-price-max').html(priceMax + ',' + amount2);
                                                     }
-                                                    $('.slider-time2').html(hours2 + ':' + minutes2);
-                                                }
-                                            });
+                                                });
                                             </script>
                                             
                                             <ul class="filterKey ss-list">
@@ -1339,10 +1324,9 @@
                         <!-- //검색필터  -->
                     </div>
                     <!-- //dimLayer -->
-                  
-
-                     <!-- 토스트 팝업 -->
-                     <div class="toast">
+                
+                    <!-- 토스트 팝업 -->
+                    <div class="toast">
                         좋아요 목록에 추가 되었어요!
                     </div>
                     <!-- //토스트 팝업 -->
@@ -1526,10 +1510,7 @@
 
                     cateCont.css("display","none");
                     cateCont.eq(index).css("display","block");
-
-                    
                 });
-
             });     
             (function(){
                 function toggleAcco(ele, content) {
