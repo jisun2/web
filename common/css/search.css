@@ -1914,7 +1914,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .article_content {width:100%; display:inline-block}
 .article_content .cateLst li {color:#ababab; font-size:14px;}
 .article_content .cateLst li a {display:block; padding:2px 0}
-.article_content .cateLst li.on {color:#3067cc}
+.article_content .cateLst > li.on {color:#3067cc}
 .article_cate > li {border-bottom:1px solid #e5e5e5;}
 .article_cate.active > li:last-child {border-bottom :none;}
 .swipe-tab-cont.brnd .sub_tab {vertical-align:bottom; margin-bottom:6px;display:inline-block; width:100%; height:25px; font-size:19px;}
@@ -2244,7 +2244,6 @@ width: 100%;
     padding: 0 16px;
   }
 }
-
 @media screen and (min-width:720px) and (max-width:3000px) {
   .filterWrap .filter_key .btn_bk {width:90%}
 }

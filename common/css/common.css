@@ -376,7 +376,6 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .sltType .sel_arrow {position:absolute; top:13px; right:15px}
 .sltType1 .sel_arrow {position:absolute; top:17px; right:10px}
 /* 체크 박스 */
-.input_check {}
 .input_check input {background-position:-23px -140px; background-repeat:no-repeat; color: #ababab}
 .input_check input:checked {background-position: -45px -140px; background-repeat:no-repeat;}
 .input_check input:checked + label p {color:#3067cc}
