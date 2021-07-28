@@ -1595,6 +1595,12 @@ input:-internal-autofill-selected {background-color:#fff;}
   line-height: 1.2;
   color: #ababab;
 }
+.sibi_search-wrap .sbs-list li a {
+  font-size: 14px;
+  white-space: nowrap;
+  line-height: 1.2;
+  color: #ababab;
+}
 .sr-none {
   padding: 36px 20px;
   text-align: center
