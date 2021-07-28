@@ -98,7 +98,7 @@ input[type=email],input[type=number],input[type=password],input[type=text]{-webk
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none;-webkit-appearance:none;margin:0}
 input[type=number]{-moz-appearance:textfield}
 input::-ms-clear{display:none}
-legend,td,th{padding:0}  /* input[type=email],input[type=number],input[type=password],input[type=text] */
+legend,td,th{padding:0}
 button,input[type=email],input[type=number],input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button,input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 button,textarea{border:0}
 a, input, button:focus {display: block;}
@@ -159,8 +159,6 @@ input::-ms-clear{display:none}
 .lnb_with_cont .cont>.func>li:first-child:after,
 .snb.magazine li+li:before,
 .viewdetail .info .links li+li:before{left:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%)} */
-
-
 .hide{display:none!important}
 .light[class*=btn_],
 .list_tab .active a,
