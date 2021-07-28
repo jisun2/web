@@ -47,17 +47,17 @@ input[type=checkbox] {display:none}
 .ico.more_down {width:15px; height:8px; margin:0 0 2px 10px; background-position:-133px -41px}
 .pdWrap .btnMore a {padding:15px 0}
 .pdWrap .pi_txtBox {position:relative; width:100%; display:block; white-space:normal; color:#333}
-.pdWrap .pi_txtBox .pi_cate {display:block; width:88%; white-space:inherit; font-size:1.28rem; font-weight:700}
-.pdWrap .pi_txtBox .pi_name {margin-top:10px; width:88%; line-height:18px; font-size:1.16rem; font-weight:500}
+.pdWrap .pi_txtBox .pi_cate {display:block; width:88%; white-space:inherit; font-size:18px; font-weight:700}
+.pdWrap .pi_txtBox .pi_name {margin-top:10px; width:88%; line-height:18px; font-size:16px; font-weight:500}
 .pdWrap .pi_txtBox .pi_pay {margin:23px 0 25px 0;line-height: 1;font-family:'proxima-nova'}
 .pdWrap .pi_txtBox .pi_pay .sale_before {display:inline-block; margin-top:21px; color:#ababab; font-size:1.28rem; text-decoration:line-through}
-.pdWrap .pi_txtBox .pi_pay .sale_per {display:block; margin-top:5px; font-size:1.85rem; font-weight:700; color:#333}
+.pdWrap .pi_txtBox .pi_pay .sale_per {display:block; margin-top:5px; font-size:25px; font-weight:700; color:#333}
 .pdWrap .pi_txtBox .pi_pay .sale_per .orange {margin-right:8px}
 .pdWrap .pi_txtBox .pi_pay .pay_won {font-size:18px}
-.pdWrap .pi_txtBox .pi_pay .pay_Range {font-size:14px; font-weight:400; color:#ababab; }
+.pdWrap .pi_txtBox .pi_pay .pay_Range {font-size:13px; font-weight:400; color:#ababab; }
 .pdWrap .pi_txtBox .pi_pay .coupDwon {padding-top:20px; display:block; width:100%}
-.pdWrap .pi_txtBox .pi_pay .coupDwon button {width:100%; height:40px; background-color:transparent; border-radius:3px; font-size:1.12rem; font-weight:500; border:1px solid #ff4e25; color:#ff4e25}
-.pdWrap .pi_txtBox .pi_pay .coupDwon .won {font-size:1.12rem}
+.pdWrap .pi_txtBox .pi_pay .coupDwon button {width:100%; height:40px; background-color:transparent; border-radius:3px; font-size:16px; font-weight:500; border:1px solid #ff4e25; color:#ff4e25}
+.pdWrap .pi_txtBox .pi_pay .coupDwon .won {font-size:14px}
 .pdWrap .pi_txtBox .pi_pay .coupDwon .proxima {font-weight:700;}
 .pdWrap .pi_txtBox .star_num {position:absolute; top:-2.5px; margin-left:3px; color:#555; font-size:14px; font-weight:500}
 /* 상품 할인 구매 혜택 */
@@ -67,7 +67,7 @@ input[type=checkbox] {display:none}
 .pdWrap .pi_listWrap .con {font-size:1rem; margin-left:5px; font-weight:400; color:#888}
 .pdWrap .pi_listWrap .under {text-decoration:underline;}
 .pdWrap .pi_listWrap .num {font-size:1.1rem; font-weight:500; font-family:'proxima-nova'}
-.pdWrap .pi_list {width:100%; font-weight:300; font-size:1rem}
+.pdWrap .pi_list {width:100%; font-weight:300; font-size:14px}
 .pdWrap .pi_list th {font-weight:300; width:23%; vertical-align:top;}
 .pdWrap .pi_list th, .pdWrap .pi_list td {text-align:left; font-weight:400}
 .pdWrap .pi_list .orange {font-weight:700; font-family:'proxima-nova'}
@@ -81,6 +81,7 @@ input[type=checkbox] {display:none}
 .pdwrap .product_info .tooltiptext {min-width:600px;}
 .ico.naver {width:35px; height:12px; background-position: -175px -27px}
 /* 상품 상세 탭 */
+.cont_cms {padding:40px 0}
 .product img {max-width:100%}
 .product .tab {display:inline-block; width:100%; height:auto; list-style:none; font-size:16px; border:0 none; background-color:#fff; border-top:1px solid #e5e5e5}
 .product .tab li {float:left; text-align:center}
@@ -464,11 +465,12 @@ input[type=checkbox] {display:none}
 .btns .btn_confirm50 {width:48.5%; border-radius:3px; color:#fff; background-color:#111}
 .btns .btn_confirm100 {width:100%; border-radius:3px; color:#fff; background-color:#111}
 .main {clear:both; margin:0 auto; vertical-align:middle; min-height:60%; background-color:#f5f5f5}
-.main a {float:left}
+.main a {}
+.main a img {width:100%;}
 /* .main img {text-align:center; margin:0 auto} height:100vh; */
-.main .slider_for {text-align:center;margin:0 15%;height:auto;}
-.main .slider_for img {max-height:700px; text-align:center;margin:0 auto; vertical-align:middle; background-color:#f5f5f5}
-.main .slider_for .pdT {width:100%; height:100vh; transform:translateY(15%);}
+.main .slider_for {}
+/* .main .slider_for img {max-height:700px; text-align:center;margin:0 auto; vertical-align:middle; background-color:#f5f5f5} */
+/* .main .slider_for .pdT {width:100%; height:100vh; transform:translateY(15%);} */
 .slider_nav_box {display:inline-block; width:100%; padding-bottom:105px; position:absolute; min-height:66px; max-height:60%; left:0; bottom:0%; background-color:#fff}
 .main .slider_nav {padding:10px 0 100px 0; position:absolute; bottom:0%; width:100%; overflow:hidden; background-color:#fff}
 .main .slider_nav .slick-slide {margin:0 1%;}
@@ -492,7 +494,7 @@ input[type=checkbox] {display:none}
     .product-select .sz-select_sub {width:99.7%}
 }
 @media screen and (min-width:719px) {
-    .main .slider_for {margin:0 30%;}
+    /* .main .slider_for {margin:0 30%;} */
 }
 
 /* --------------------------------------------------------------------- 쇼핑백/카트  S ------------------------------------------------------------------ */
@@ -534,7 +536,8 @@ input[type=checkbox] {display:none}
 .cart_info .just_left img {width:100%; height:100%}
 .cart_info .soldout:before {content:'SOLD OUT';overflow:hidden; display:block; padding:18.5px 0; position:absolute; top:0px; left:0; line-height:1;background-color: rgba(0,0,0,.6); color: #fff; font-size:18px; font-weight:600; text-align:center; font-family:'proxima-nova';}
 .cart_brd {margin-right:10px; display:block; overflow:hidden; height:15px; line-height:1.33; height:auto; max-height:30px; margin-bottom:6px; line-height:1.3; color:#333; font-size:12px; font-weight:500; font-stretch:normal;}
-.cart-sub {display:block; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; height:auto; max-height:30px; margin-bottom:8px; line-height:1.3; color:#555; font-size:12px; word-break: break-all; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+/* .cart-sub {display:block; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; height:auto; max-height:30px; margin-bottom:8px; line-height:1.3; color:#555; font-size:12px; word-break: break-all; -webkit-line-clamp:1; -webkit-box-orient:vertical;} */
+.cart-sub {display: -webkit-box; text-overflow: ellipsis; overflow: hidden; height: auto; max-height: 30px; margin-bottom: 8px; line-height: 1.3; color: #555;  font-size: 12px; word-break: break-all; -webkit-line-clamp: 1;-webkit-box-orient: vertical;}
 .cart-price {margin-top:-3px; display:block; color:#000; font-size:12px; font-family:'Noto Sans KR'}
 .cartWrap .cart-price .flex-text {font-size:12px; font-weight:700; font-family:'Noto Sans KR'}
 .cartWrap .cart-price .flex-text .num {font-size:19px; font-weight:700}
@@ -568,7 +571,7 @@ input[type=checkbox] {display:none}
 .top_del .plf-text-btn {height:24px; line-height:24px; color:#888; font-size:13px; background-color:#fff}
 .top_del .plf-text-btn:first-child:after {content: ''; display:inline-block; width:1px; height:13px; margin:0 4px 0 10px; background-color: #e5e5e5; vertical-align: -2px}
 /* 예상 결제 금액 */
-.cart_total_wrap {padding:25px 15px 110px 15px; background-color:#fff}
+.cart_total_wrap {margin-top:8px; padding:25px 15px 110px 15px; background-color:#fff}
 .cart_total_wrap .pc-only {display:none}
 .cart_total_wrap dl {width:100%; margin-bottom:4px}
 .cart_total_wrap dl.last {margin-top:24px; padding-top:20px; border-top:1px solid #f0f0f0}
@@ -767,7 +770,7 @@ input[type=text].text-input.phone-last {width:70%}
 .pay_back .acc_wrap button {float:right; width:92%; min-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
 .pay_back .acc_wrap .acc_btn_bk button {float:right; padding:10px; background-color:#000; color:#fff}
 .paymtWrap .last_btn_wrap {z-index:5;background:#fff; max-width:720px; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
-.paymtWrap .last_btn_wrap1 {z-index:5;background:#fff; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
+.paymtWrap .last_btn_wrap1 {z-index:5;background:#fff; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:fixed; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .paymtWrap .last_btn_wrap .pr_chk_agree {margin-bottom:10px}
 .paymtWrap .last_btn_wrap .sz-custom_text {margin:2px 0 0 8px}
 .paymtWrap .last_btn_white {z-index:10; display:block; float:left; width:49%; border:1px solid #000; background:#fff; font-size:17px; color:#555; line-height:17px; height:45px;}
@@ -888,7 +891,7 @@ input[type=text].text-input.phone-last {width:70%}
 .radio_box .input_radio .date {color:#ababab}
 .radio_box .input_radio label:after {top:50%}
 .input_radio .txt {padding-left:35px; font-size:13px; color:#000}
-.paymt_order_applied {height:calc(100vh - 60px); padding:0 0 65px}
+.paymt_order_applied {min-height:calc(100vh); padding:0 0 65px}
 .paymt_order_applied .input_radio label:after {display:none; background-color:#ff4e25; border-radius:50%; position:absolute; top:49%; left:7px; width:10px; height:10px; content:"";-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
 .paymt_order_applied .input_radio input:checked + label:before {border-color:#ff4e25;}
 .paymt_order_applied .input_radio label:before, .paymt_order_applied .input_radio_check label:before

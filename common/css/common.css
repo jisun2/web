@@ -101,7 +101,7 @@ input::-ms-clear{display:none}
 legend,td,th{padding:0}
 button,input[type=email],input[type=number],input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button,input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 button,textarea{border:0}
-a, input, button:focus {display: block;}
+/* a, input, button:focus {display: block;} */
 textarea{resize:none;padding:0}
 /* textarea:focus {outline:none} */
 button{padding:0;background-color:rgba(0,0,0,0);border-radius:0;-webkit-border-radius:0; cursor:pointer}
@@ -354,7 +354,7 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .input_textarea textarea{display:inline-block;font-size:14px;line-height:22px;vertical-align:top;background-color:transparent;overflow-x:hidden;overflow-y:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;min-height:120px;width:100%}
 .input_textarea .count{text-align:right;font-size:13px;line-height:22px;margin-top:10px}
 select {padding:10px; border-radius:0; background-color:#fff; color:#ababab;}
-input[type=text], input[type=tel], input[type=number], input[type=password]
+input[type=text], input[type=tel], input[type=number], input[type=password], input[type=checkbox]
 {padding:5px 10px; width:100%; height:40px; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none; font-family:'Noto Sans KR'}
 .input_checkbox, .input_radio, .input_radio_check {display:inline-block; position:relative;}
 .intType {clear:both;}
