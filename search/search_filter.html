@@ -929,14 +929,14 @@
                                                 <li>
                                                     <div class="article_title"><a href="#none">CLOTHING<span class="ico arrow"></span></a></div>
                                                     <div class="article_content clearfix">
-                                                        <ul class="cateLst 1dep">
+                                                        <ul class="cateLst">
                                                             <li><a href="#none">전체 16,106</a></li>
                                                             <li><a href="#none">맨투맨 1,453</a></li>
                                                             <li class="on"><a href="#none">아우터 1,412</a></li>
                                                             <li><a href="#none">니트 2,243</a></li>
                                                             <li><a href="#none">셔츠/블라우스 1,423</a></li>
                                                         </ul>
-                                                        <ul class="cateLst 1dep">
+                                                        <ul class="cateLst">
                                                             <li><a href="#none">티셔츠 2,674</a></li>
                                                             <li><a href="#none">후디 1,524</a></li>
                                                             <li><a href="#none">바지 1,610</a></li> 
@@ -951,7 +951,7 @@
                                                         <a href="#none">CLOTHING <span class="cateDetail"> > 아우터</span></a><!-- 2depth -->
                                                     </div>
                                                     <div class="article_content clearfix">
-                                                        <ul class="cateLst 2dep check">
+                                                        <ul class="cateLst check">
                                                             <li>
                                                                 <div class="input_check">
                                                                     <input class="ico pos" type="checkbox" id="det_check_1" name=""  />
@@ -977,7 +977,9 @@
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                        <ul class="cateLst 2dep check">
+                                                        <ul class="cateLst check">
+                                                            <!-- <li><a href="#none"></a>코트 2,674</li>
+                                                            <li><a href="#none"></a>패딩 1,524</li> -->
                                                             <li>
                                                                 <div class="input_check">
                                                                     <input class="ico pos" type="checkbox" id="det_check_4" name=""  />
@@ -1000,14 +1002,14 @@
                                                 <li>
                                                     <div class="article_title"><a href="#none">SHOES</a></div>
                                                     <div class="article_content clearfix">
-                                                        <ul class="cateLst 1dep">
+                                                        <ul class="cateLst">
                                                             <li><a href="#none">전체 16,106</a></li>
                                                             <li><a href="#none">맨투맨 1,453</a></li>
                                                             <li><a href="#none">아우터 1,412</a></li>
                                                             <li><a href="#none">니트 2,243</a></li>
                                                             <li><a href="#none">셔츠/블라우스 1,423</a></li>
                                                         </ul>
-                                                        <ul class="cateLst 1dep">
+                                                        <ul class="cateLst">
                                                             <li><a href="#none">티셔츠 2,674</a></li>
                                                             <li class="on"><a href="#none">후디 1,524</a></li>
                                                             <li class="on"><a href="#none">바지 1,610</a></li>
@@ -1442,7 +1444,7 @@
             $('.filterKey li').on('click touch', function(){
                 $(this).toggleClass('active');
             })
-            $('.cateLst.1dep li').on('click touch', function(){
+            $('.article_content .cateLst li').on('click touch', function(){
                 $(this).toggleClass('on');
             })
             $('.keyDel').on('click touch', function(){
