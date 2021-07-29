@@ -1690,11 +1690,8 @@ input:-internal-autofill-selected {background-color:#fff;}
   position:absolute;
   left:50%;
   transform:translateX(-50%);
-  max-height:480px;
-  bottom:0;
-}
-.filterWrap.hit {
   max-height:450px;
+  bottom:0;
 }
 .filterWrap .bg_white {
   width:100%;
