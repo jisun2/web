@@ -2004,6 +2004,14 @@ width: 100%;
 
 /* -------------------------------------- CSS media queries -------------------------------------- */
 /* PC scroll custom */
+@media screen and (min-width:719px) {
+  ::-webkit-scrollbar { width: 2px; height:6px; }
+  ::-webkit-scrollbar-track { background-color:transparent;} 
+  ::-webkit-scrollbar-thumb { background:transparent; border-radius: 4px;} 
+  ::-webkit-scrollbar-thumb:hover { background:transparent;} 
+  ::-webkit-scrollbar-thumb:active { background:transparent;} 
+}
+/* PC scroll custom */
 @media screen and (max-width:3000px) {
   ::-webkit-scrollbar { width: 2px; height:6px; }
   ::-webkit-scrollbar-track { background-color:transparent;} 
