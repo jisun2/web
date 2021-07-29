@@ -1348,9 +1348,8 @@ input:-internal-autofill-selected {background-color:#fff;}
 .searchWrap .ss-list::after {content: ''; display: block; clear: both}
 .searchWrap .ss-list li { position:relative; float: left; margin-right:5px;}
 
-
-
 .ss-list.keyLst {padding: 9px 0 9px 50px;}
+.ss-list.second.keyLst {width:1100px !important}
 .ss-list.keyLst1 {padding: 12px 0 12px 20px;}
 .ss-list.keyLst li .on,
 .ss-list.keyLst1 li .on {color:#fff; border: none; background-color:#3067cc;}
@@ -1715,6 +1714,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 }
 .filterWrap .filter_key .keyLst1 {
   padding-bottom:0;
+  width:720px !important;
 }
 
 .filterWrap .filter_key .keyLst1 .ellipsis {
