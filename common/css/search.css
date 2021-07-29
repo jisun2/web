@@ -117,74 +117,7 @@ input[type=checkbox] {
 input[type="checkbox"]+label {
   display:none;
 }
-@font-face {
-  font-family: proxima-nova;
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/ProximaNova/ProximaNova-Regular.ttf);
-  unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
-}
-@font-face {
-  font-family: proxima-nova;
-  font-style: normal;
-  font-weight: 500;
-  src: url(../fonts/ProximaNova/ProximaNova-Medium.ttf);
-  unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
-}
-@font-face {
-  font-family: proxima-nova;
-  font-style: normal;
-  font-weight: 700;
-  src: url(../fonts/ProximaNova/ProximaNova-Semibold.ttf);
-  unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Light.otf) format("opentype")
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 350;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.otf) format("opentype")
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.otf) format("opentype")
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 500;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.otf) format("opentype")
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 700;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.otf) format("opentype")
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 900;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
-}
 
-[class$="-btn"] {
-  display: inline-block;
-  text-align: center
-}
 button,
 html,
 input,
@@ -1758,8 +1691,11 @@ input:-internal-autofill-selected {background-color:#fff;}
   position:absolute;
   left:50%;
   transform:translateX(-50%);
-  max-height:500px;
+  max-height:480px;
   bottom:0;
+}
+.filterWrap.hit {
+  max-height:450px;
 }
 .filterWrap .bg_white {
   width:100%;
@@ -1776,6 +1712,9 @@ input:-internal-autofill-selected {background-color:#fff;}
   border-top: 1px solid #d0d0d0;
   box-shadow: 0px -5px 15px 0px rgb(0 0 0 / 5%);
   background-color: #fff;
+}
+.filterWrap .filter_key .keyLst1 {
+  padding-bottom:0;
 }
 
 .filterWrap .filter_key .keyLst1 .ellipsis {
@@ -1842,6 +1781,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   padding: 0 10px;
   width:720px !important;
   height:40px;
+  font-size:15px;
   /* overflow-x: scroll; */
   border-bottom:1px solid #f5f5f5;
 }
@@ -1899,9 +1839,9 @@ input:-internal-autofill-selected {background-color:#fff;}
 .last_btn_wrap .pr_chk_agree {margin-bottom:10px}
 .last_btn_wrap .sz-custom_text {margin:2px 0 0 8px}
 .last_btn_bk1 {display:block; width:100%; height:45px; line-height:17px; background:#000; font-size:17px; color:#fff}
-
+/* 가격 */
+.filterWrap .swipe-tab-cont.price {max-height:430px;}
 /* 성별 */
-.swipe-tab-cont.conse {}
 .conse .input_radio .mgl30 {font-size: 14px;}
 .conse .radio_box {margin-top:-10px;}
 .swipe-tab-cont.conse .input_radio {display:block; padding:10px 0;}
@@ -1909,8 +1849,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .article_cate > li:first-child {margin-top:-10px;}
 .article_cate li {position:relative}
 .article_title {position:relative; height:50px; line-height:50px; font-size:19px; font-weight:500; color:#333;}
-.article_title:after {content:''; display:block; position:absolute; top:22px; right:0; width:12px; height:6px; background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ico_acco_arrow_down.png) center center/cover no-repeat}
-
+.article_title:after {padding:1px; content:''; display:block; position:absolute; top:22px; right:0; width:12px; height:6px; background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ico_acco_arrow_down.png) center center/cover no-repeat}
 
 /* .cateLst .input_check label {padding: 2px 0 2px 22px;} */
 .cate_btn_del {z-index:2;display:inline-block; margin-top:15px; padding:16px; position:absolute; top:-15px; right:-3px; width: 22px; height: 22px; background-color:#fff;}
@@ -1934,14 +1873,14 @@ input:-internal-autofill-selected {background-color:#fff;}
 .cateLst li .ico {display:inline-block; width:14px; height:14px;}
 .cateLst .input_check label {display:block; padding-left:22px; width:100%;}
 .cateLst.ko .brd_ko {font-size:13px}
-.cateLst.ko .brd_en {font-size:11px}
-.cateLst.en .brd_ko {font-size:10px}
+.cateLst.ko .brd_en {margin-top:4px; font-size:11px}
+.cateLst.en .brd_ko {margin-top:4px;font-size:10px}
 .cateLst.en .brd_en {font-size:14px}
 .cateLst.check li .ico.pos {top:6px}
 
 /* 이벤트 */
 .evt .cateLst {width:100%;}
-.evt .cateLst li {padding:9.5px 0; width:100%;}
+.evt .cateLst li {padding:10px 0; width:100%; font-size:14px}
 .evt .cateLst > li:first-child {margin-top:-10px}
 .evt .cateLst li .ico.pos {position:absolute; top:8px}
 
@@ -2049,7 +1988,7 @@ width: 400px;
   background: #fff;
 }
 .ui-slider-horizontal .ui-slider-handle {
-  top: -.5em;
+  top: -.6em;
   margin-left: -.6em;
 }
 
