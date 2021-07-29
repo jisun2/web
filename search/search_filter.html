@@ -809,7 +809,7 @@
                     <!-- dimLayer -->
                     <div class="dim_layer" id="tempLayer1">
                         <!-- 검색필터  -->
-                        <div class="filterWrap">
+                        <div class="filterWrap hit">
                             <h3 class="slick-title blind">필터 선택</h3>
                             <div class="tabTouch">
                                 <button type="button" class="touchBar"><span class="blind">필터 닫기</span></button>
@@ -1446,6 +1446,12 @@
             })
             $('.article_content .cateLst li').on('click touch', function(){
                 $(this).toggleClass('on');
+            })
+            $('#tab_lst > ul > li').on('click touch', function(){
+                $('.filterWrap').removeClass('hit');
+            })
+            $('#tab_lst > ul > li:first-child').on('click touch', function(){
+                $('.filterWrap').addClass('hit');
             })
             $('.keyDel').on('click touch', function(){
                 $(this).parent().hide();
