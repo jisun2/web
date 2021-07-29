@@ -2012,12 +2012,12 @@ width: 100%;
   ::-webkit-scrollbar-thumb:active { background:transparent;} 
 }
 /* PC scroll custom */
-@media screen and (max-width:3000px) {
+@media screen and (min-width:720px) and (max-width:3000px) {
   ::-webkit-scrollbar { width: 2px; height:6px; }
   ::-webkit-scrollbar-track { background-color:transparent;} 
   ::-webkit-scrollbar-thumb { background:transparent; border-radius: 4px; } 
-  ::-webkit-scrollbar-thumb:hover { background: #333;}
-  ::-webkit-scrollbar-thumb:active { background: #888; } 
+  ::-webkit-scrollbar-thumb:hover { background: #333} 
+  ::-webkit-scrollbar-thumb:active { background: #888;} 
   ::-webkit-scrollbar-button { width:20px; height:10px; display: none; } 
   ::-mos-scrollbar { width: 2px; height:6px; }
   /* ::-webkit-scrollbar-track { background-color:#fff; } 
