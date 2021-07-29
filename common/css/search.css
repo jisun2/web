@@ -2004,13 +2004,13 @@ width: 100%;
 
 /* -------------------------------------- CSS media queries -------------------------------------- */
 /* MO scroll custom */
-@media screen and (min-width:719px) {
+/* @media screen and (min-width:719px) {
   ::-webkit-scrollbar { width: 2px; height:6px; }
   ::-webkit-scrollbar-track { background-color:transparent;} 
   ::-webkit-scrollbar-thumb { background:transparent; border-radius: 4px;} 
   ::-webkit-scrollbar-thumb:hover { background:transparent;} 
   ::-webkit-scrollbar-thumb:active { background:transparent;} 
-}
+} */
 @media screen and (max-width:3000px) {
   ::-webkit-scrollbar { width: 4px; height:6px; }
   ::-webkit-scrollbar-track { background-color:transparent;} 
@@ -2027,7 +2027,8 @@ width: 100%;
 }
 /* PC scroll custom */
 @media screen and (min-width:720px) and (max-width:3000px) {
-  ::-webkit-scrollbar-thumb:hover { background: #f5f5f5} 
+  ::-webkit-scrollbar-thumb:hover { background:rgb(151, 151, 151)} 
+  ::-webkit-scrollbar-thumb:active {background: rgb(151, 151, 151)} 
 }
 
 @media screen and (max-width:720px) {
