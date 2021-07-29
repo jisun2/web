@@ -2011,10 +2011,6 @@ width: 100%;
   ::-webkit-scrollbar-thumb:hover { background:transparent;} 
   ::-webkit-scrollbar-thumb:active { background:transparent;} 
 }
-/* PC scroll custom */
-@media screen and (min-width:720px) and (max-width:3000px) {
-  ::-webkit-scrollbar-thumb:hover { background: #f5f5f5} 
-}
 @media screen and (max-width:3000px) {
   ::-webkit-scrollbar { width: 4px; height:6px; }
   ::-webkit-scrollbar-track { background-color:transparent;} 
@@ -2029,15 +2025,10 @@ width: 100%;
   ::-webkit-scrollbar-thumb:active { background: #888; } 
   ::-webkit-scrollbar-button { width:20px; height:10px; display: none; }  */
 }
-/* PC 화면 Scroll */
-/* @media screen and (max-width:720px) {
-  .overflow_x::-webkit-scrollbar {width:0; height:0; opacity:1;}
-  .sibi_search-wrap .sbs-list {
-    -ms-overflow-style: none;
-    width:0; height:0; opacity:1;
-  }
-  .sibi_search-wrap .sbs-list::-webkit-scrollbar { display: none;}
-} */
+/* PC scroll custom */
+@media screen and (min-width:720px) and (max-width:3000px) {
+  ::-webkit-scrollbar-thumb:hover { background: #f5f5f5} 
+}
 
 @media screen and (max-width:720px) {
   
