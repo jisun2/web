@@ -98,9 +98,6 @@ button {
   margin: 0;
   cursor: pointer
 }
-/* button:focus {
-  outline: 0
-} */
 a {
   color: inherit;
 }

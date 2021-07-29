@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .myWrap {padding-bottom:60px; min-width:320px; font-family:'Noto Sans KR'}
+.myWrap input {float:left}
 .myWrap.pdB0 {padding-bottom:0px}
 .myWrap .my_area {clear:both; width:100%}
 .myWrap .my_area::after {display:block; content: ''; clear:both; height:7px; background: #f0f0f0;border-top: 1px solid #d0d0d0;}
@@ -60,8 +61,8 @@
 @media screen and (min-width:320px) and (max-width:860px) {
     .txtwrite_wrap .myWrap .pd_lst li.ord_box {width:94%;}
 }
-@media screen and (min-width:319px) and (max-width:375px) {
-    .myWrap .pd_lst li.ord_box {width:94%;}
+@media screen and (min-width:200px) and (max-width:375px) {
+    .myWrap .pd_lst li.ord_box {width:93%;}
 }
 @media screen and (min-width:376px) and (max-width:500px) {
     .myWrap .pd_lst li.ord_box {width:96%;}
@@ -267,7 +268,7 @@
 /* ----------------------------------------- 문의 작성하기 -------------------------------------------- */
 /* 상품 문의 작성하기 */
 #header .box_left.nbk {padding-left:20px; display:inline-block;}
-.sltType1 .sel_arrow {top:16px}
+.sltType1 .sel_arrow {top:13px}
 .delBtn .btn_pd {float:right;padding:11px 14px; margin:-12px -12px 0 0; display:inline-block; }
 .delBtn .delete {display:inline-block; width:14px; height:12px;}
 .myWrap .sub_tit.brdT {padding-top:25px; border-top:1px solid #e5e5e5}
