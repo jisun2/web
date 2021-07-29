@@ -1714,7 +1714,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 }
 .filterWrap .filter_key .keyLst1 {
   padding-bottom:0;
-  width:720px !important;
+  width:1200px !important;
 }
 
 .filterWrap .filter_key .keyLst1 .ellipsis {
@@ -2012,8 +2012,8 @@ width: 100%;
   ::-webkit-scrollbar-thumb:active { background:transparent;} 
 }
 /* PC scroll custom */
-@media screen and (min-width:720px) and (max-width:3000px) {
-  ::-webkit-scrollbar { width: 2px; height:6px; }
+@media screen and (max-width:3000px) {
+  ::-webkit-scrollbar { width: 4px; height:6px; }
   ::-webkit-scrollbar-track { background-color:transparent;} 
   ::-webkit-scrollbar-thumb { background:transparent; border-radius: 4px; } 
   ::-webkit-scrollbar-thumb:hover { background: #333} 
