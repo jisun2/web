@@ -808,6 +808,7 @@
 
                     <!-- dimLayer -->
                     <div class="dim_layer" id="tempLayer1">
+                        <div class="dim_Touch"></div>
                         <!-- 검색필터  -->
                         <div class="filterWrap">
                             <h3 class="slick-title blind">필터 선택</h3>
@@ -1390,7 +1391,9 @@
             })
             $('.tabTouch').on('click touch', function(){
                 $('.dim_layer').hide();
-                // $(window).css("overflow-y","scroll");
+            })
+            $('.dim_Touch').on('click touch', function(){
+                $('#tempLayer1').hide();
             })
             $('.filter_btn').on('click touch', function(){
                 $('.ss-list.second.keyLst1').hide();
