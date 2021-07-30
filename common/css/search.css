@@ -3,7 +3,7 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
-
+body {overflow-y: hidden;}
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box
@@ -143,7 +143,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .ico.more {display:inline-block; width: 10px; height: 16px; margin: 0 0 -2px 3px; background-position: -182px -62px;}
 .ico.keyDel {display:inline-block; margin:2.5px 0 0 3px; width: 11px; height: 11px; background-position: -90px -86px;}
 
-#container {position:relative}
+#container {position:relative;}
 #header .ss-box {padding-top:10px;} 
 #header .back .btn_back::after, #header .back .btn_back::before {top: 29px;}
 #header .ss-box {z-index:10; float:left; width:100%; top:0; background-color: #fff;}
@@ -367,7 +367,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .pos_rel button {display:inline-block;}
 .pos_rel .search {position:absolute; top:10px; right:10px;}
 .ss-banner {padding: 25px 20px 20px 20px;}
-.searchWrap {position:relative;}
+.searchWrap {position:relative; overflow-y:scroll;}
 .searchWrap label {width:100%}
 .searchWrap.pd {padding: 0 20px;}
 .searchWrap .ss-content:last-child .ss_none-text {padding-left: 0}
@@ -468,6 +468,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .filterWrap .filter_key .keyLst1 .ellipsis {display: block; float:left; max-width: 135px; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; line-height: 18px; word-break: break-all; word-wrap: break-word; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
 .filterWrap .filter_key .btn_bk {display: inline-block; float: right; padding:12px 0px; width: 85%; border-radius: 5px 5px;}
 .sub-header {border-bottom: 1px solid #e5e5e5;}
+.scr_none {overflow-y: hidden;}
 .tabTouch {width:100%; height:20px;text-align:center; line-height: 14px; border-top-left-radius:15px; border-top-right-radius:15px; background-color: #fff;}
 .touchBar {clear:both; display: inline-block; width:40px; height:4px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; background-color: #e5e5e5;}
 .swipe-tabs.container-fluid {width: 100%; max-width: 1200px; padding: 0;}
@@ -476,7 +477,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .filterWrap .swipe-tabs {display: block; padding: 0 10px; height:40px; font-size:15px; /* overflow-x: scroll; */ border-bottom:1px solid #f5f5f5;}
 .filterWrap .swipe-tabs li a {display:block; padding:10px 0; height:40px; float:left; margin:0 10px; color: #ababab;}
 .filterWrap .swipe-tabs li.active a {color: #3067cc; border-bottom :2px solid #3067cc}
-.filterWrap .swipe-tab-cont {max-height: 310px; width:100%; overflow-y: scroll; padding: 25px 20px; background-color: #fff; color:#333;}
+.filterWrap .swipe-tab-cont {padding: 25px 20px 0 20px; max-height:252px; margin-bottom:50px; width:100%; overflow-y: scroll;  background-color: #fff; color:#333;}
 .slick-initialized .swipe-tab.active-tab {background-color: #fff; color:#3067cc;}
 .slick-title, .slick-caption {text-align: center;}
 .filter_contWrap {width:100%; /* height:100vh; */}
