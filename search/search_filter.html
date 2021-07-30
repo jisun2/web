@@ -809,7 +809,7 @@
                     <!-- dimLayer -->
                     <div class="dim_layer" id="tempLayer1">
                         <!-- 검색필터  -->
-                        <div class="filterWrap hit">
+                        <div class="filterWrap">
                             <h3 class="slick-title blind">필터 선택</h3>
                             <div class="tabTouch">
                                 <button type="button" class="touchBar"><span class="blind">필터 닫기</span></button>
@@ -1390,7 +1390,7 @@
             })
             $('.tabTouch').on('click touch', function(){
                 $('.dim_layer').hide();
-                $(window).css("overflow-y","scroll");
+                // $(window).css("overflow-y","scroll");
             })
             $('.filter_btn').on('click touch', function(){
                 $('.ss-list.second.keyLst1').hide();
@@ -1465,11 +1465,13 @@
             $('.second.keyLst li').on('click touch', function(){
                 $('#tempLayer1').css("display","block");
             })
+            $('.second.keyLst li').on('click touch', function(){
+                $(window).css("overflow-y","hidden");
+            })
             
             $('.cate_btn_del').on('click touch', function(){
                 $(this).siblings().children().children('.cateDetail').hide();
                 $('.cate_btn_del').hide();
-                $(window).css("overflow-y","hidden");
         }); 
          // 모바일 앱 input focus 후 키보드 노출 코드
          (function () {
