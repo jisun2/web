@@ -599,32 +599,32 @@ input:-internal-autofill-selected {background-color:#fff;}
 
 /* -------------------------------------- CSS media queries -------------------------------------- */
 /* MO scroll custom */
-/* @media screen and (min-width:719px) {
-  ::-webkit-scrollbar { width: 2px; height:6px; }
+@media screen and (min-width:719px) {
+  ::-webkit-scrollbar {width: 2px; height:6px;}
   ::-webkit-scrollbar-track { background-color:transparent;} 
   ::-webkit-scrollbar-thumb { background:transparent; border-radius: 4px;} 
   ::-webkit-scrollbar-thumb:hover { background:transparent;} 
   ::-webkit-scrollbar-thumb:active { background:transparent;} 
-} */
+}
 @media screen and (max-width:3000px) {
-  ::-webkit-scrollbar { width: 4px; height:6px; }
+  ::-webkit-scrollbar {width: 4px; height:6px;}
   ::-webkit-scrollbar-track { background-color:transparent;} 
-  ::-webkit-scrollbar-thumb { background:transparent; border-radius:4px; } 
+  ::-webkit-scrollbar-thumb { background:transparent; border-radius:4px;} 
   ::-webkit-scrollbar-thumb:hover { background:transparent;} 
   ::-webkit-scrollbar-thumb:active {background: #f5f5f5}
   ::-webkit-scrollbar-button { width:20px; height:10px; display:none; } 
   ::-mos-scrollbar {width: 2px; height:6px;}
   :-mos-scrollbar-track { background-color:transparent;} 
-  ::-mos-scrollbar-thumb { background:transparent; border-radius:4px; } 
+  ::-mos-scrollbar-thumb { background:transparent; border-radius:4px;} 
   ::-mos-scrollbar-thumb:hover { background:transparent;} 
   ::-mos-scrollbar-thumb:active {background: #f5f5f5}
   ::-mos-scrollbar-button { width:20px; height:10px; display:none; }
   ::-ms-scrollbar {width: 2px; height:6px;}
   :-ms-scrollbar-track { background-color:transparent;} 
-  ::-ms-scrollbar-thumb { background:transparent; border-radius:4px; } 
+  ::-ms-scrollbar-thumb { background:transparent; border-radius:4px;} 
   ::-ms-scrollbar-thumb:hover { background:transparent;} 
   ::-ms-scrollbar-thumb:active {background: #f5f5f5}
-  ::-ms-scrollbar-button { width:20px; height:10px; display:none; } 
+  ::-ms-scrollbar-button { width:20px; height:10px; display:none;} 
   /* ::-webkit-scrollbar-track { background-color:#fff; } 
   ::-webkit-scrollbar-thumb { background: #f5f5f5; border-radius: 4px; } 
   ::-webkit-scrollbar-thumb:hover { background: #f5f5f5; }
