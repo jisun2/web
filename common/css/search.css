@@ -640,10 +640,10 @@ input:-internal-autofill-selected {background-color:#fff;}
 /* MO scroll custom */
 @media screen and (min-width:719px) {
   ::-webkit-scrollbar {width: 2px; height:6px;}
-  ::-webkit-scrollbar-track { background-color:transparent;} 
-  ::-webkit-scrollbar-thumb { background:transparent; border-radius: 4px;} 
-  ::-webkit-scrollbar-thumb:hover { background:transparent;} 
-  ::-webkit-scrollbar-thumb:active { background:transparent;} 
+  ::-webkit-scrollbar-track { background: #f5f5f5} 
+  ::-webkit-scrollbar-thumb { background: #f5f5f5 border-radius: 4px;} 
+  ::-webkit-scrollbar-thumb:hover {background: #f5f5f5;} 
+  ::-webkit-scrollbar-thumb:active {background: #f5f5f5;} 
 }
 @media screen and (min-width:620px) and (max-width:719px) {
   #header .ss-text-box {width:90%;}
