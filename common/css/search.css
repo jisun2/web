@@ -624,19 +624,11 @@ input:-internal-autofill-selected {background-color:#fff;}
   ::-webkit-scrollbar-thumb:active { background: #888; } 
   ::-webkit-scrollbar-button { width:20px; height:10px; display: none; }  */
 }
-/* MO scroll custom */
-@media screen and (min-width:719px) {
-  ::-webkit-scrollbar {width: 2px; height:6px;}
-  ::-webkit-scrollbar-track { background-color:transparent;} 
-  ::-webkit-scrollbar-thumb { background:transparent; border-radius: 4px;} 
-  ::-webkit-scrollbar-thumb:hover { background:transparent;} 
-  ::-webkit-scrollbar-thumb:active { background:transparent;} 
-}
 /* PC scroll custom */
-/* @media screen and (min-width:720px) and (max-width:3000px) {
+@media screen and (min-width:720px) and (max-width:3000px) {
   ::-webkit-scrollbar-thumb:hover { background:rgb(151, 151, 151)} 
   ::-webkit-scrollbar-thumb:active {background: rgb(151, 151, 151)} 
-} */
+}
 @media screen and (max-width:720px) {
   #header .ss-box.wd {width:90%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
@@ -644,6 +636,14 @@ input:-internal-autofill-selected {background-color:#fff;}
   /* .overflow_x .ms-list.active li:nth-child() {left:5%;background-color: #fff;} */
   .main_search-wrap .ms-list {width:100%}
   .ms-list.active ul {clear:both;display:block;left:25%;background-color: #fff;}
+}
+/* MO scroll custom */
+@media screen and (min-width:719px) {
+  ::-webkit-scrollbar {width: 2px; height:6px;}
+  ::-webkit-scrollbar-track { background-color:transparent;} 
+  ::-webkit-scrollbar-thumb { background:transparent; border-radius: 4px;} 
+  ::-webkit-scrollbar-thumb:hover { background:transparent;} 
+  ::-webkit-scrollbar-thumb:active { background:transparent;} 
 }
 @media screen and (min-width:620px) and (max-width:719px) {
   #header .ss-text-box {width:90%;}
