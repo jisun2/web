@@ -3,7 +3,6 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
-body {overflow-y: hidden;}
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box
@@ -368,7 +367,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .pos_rel .search {position:absolute; top:10px; right:10px;}
 .ss-banner {padding: 25px 20px 20px 20px;}
 .searchWrap .ss-banner a img {min-width:100%; max-height:128.5px}
-.searchWrap {position:relative; overflow-y:scroll;}
+.searchWrap {position:relative;}
 .searchWrap label {width:100%}
 .searchWrap.pd {padding: 0 20px;}
 .searchWrap .ss-content:last-child .ss_none-text {padding-left: 0}
@@ -476,7 +475,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .swipe-tabs.container-fluid {width: 100%; max-width: 1200px; padding: 0;}
 .slick-initialized .swipe-tab.active-tab {border-bottom-color: #3067cc; font-weight: bold;}
 .filterWrap .swipe-tabs, .swipe-tabs-container { color: #3067cc;}
-.filterWrap .swipe-tabs {display: block; padding: 0 10px; height:40px; font-size:15px; /* overflow-x: scroll; */ border-bottom:1px solid #f5f5f5;}
+.filterWrap .swipe-tabs {display: block; width:720px !important; padding: 0 10px; height:40px; font-size:15px; /* overflow-x: scroll; */ border-bottom:1px solid #f5f5f5;}
 .filterWrap .swipe-tabs li a {display:block; padding:10px 0; height:40px; float:left; margin:0 10px; color: #ababab;}
 .filterWrap .swipe-tabs li.active a {color: #3067cc; border-bottom :2px solid #3067cc}
 .filterWrap .swipe-tab-cont {padding: 25px 20px 0 20px; max-height:252px; margin-bottom:50px; width:100%; overflow-y: scroll;  background-color: #fff; color:#333;}
@@ -622,10 +621,10 @@ input:-internal-autofill-selected {background-color:#fff;}
   ::-webkit-scrollbar-button { width:20px; height:10px; display: none; }  */
 }
 /* PC scroll custom */
-@media screen and (min-width:720px) and (max-width:3000px) {
+/* @media screen and (min-width:720px) and (max-width:3000px) {
   ::-webkit-scrollbar-thumb:hover { background:rgb(151, 151, 151)} 
   ::-webkit-scrollbar-thumb:active {background: rgb(151, 151, 151)} 
-}
+} */
 @media screen and (max-width:720px) {
   #header .ss-box.wd {width:90%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
