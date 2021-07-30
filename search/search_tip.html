@@ -15,81 +15,45 @@
     <body>
         <div id="wrap" class="wd720">
             <div id="header">
+                <div class="back"><a href="#" class="btn_back"><span class="blind">뒤로가기</span></a></div>
                 <!-- 검색창 -->
-                <div class="ss-box pd">
-                    <!-- <form accept-charset="utf-8" action="."><fieldset><legend>검색어 입력</legend> <strong class="tit tc_1">고객님<br>무엇을 찾으세요?</strong> <div class="search_box lc_3 dis_f ai_c searched "><span class="input_text" style="width: 100%;"><input type="search" id="siteSearchInput2" name="search" placeholder="상품을 찾아보세요." class="input_search tc_1" style="border: 0px; padding: 10px 30px 0px 60px;"> <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button></span> <button type="button" class="btn_submit spr_before pos_center_before"><span class="s_out">검색하기</span></button></div></fieldset></form> -->
+                <div class="ss-box wd">
                     <form action="">
                         <div class="ss-text-box">
                             <input type="search" title="검색어 입력창" class="ss-text" name="search" placeholder="검색어를 입력하세요" />
-                            <!-- <input type="search" title="검색어 입력창" class="ss-text" id="hhptemp" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" /> -->
                             <button type="button" class="search_clear-btn">
                                 <span class="blind">검색어 삭제</span>
                             </button>
                         </div>
                     </form>
-                    <button type="button" class="ss-cancel">취소</button>
                 </div>
                 <!-- //검색창 -->
             </div>
 
             <div id="container">
                 <div class="searchWrap">
-                    <!-- 최근 검색어 -->
-                    <div class="lately ss-content">
-                        <div class="ss-title-box justify_box">
-                            <span class="ss-title just_left">최근 검색어</span>
-                            <button type="button" class="ss-btn just_right">전체 삭제</button>
-                        </div>
-                        <div class="overflow_x mgTb2">
-                            <ul class="ss-list first">
-                                <li><button type="button" class="ss-item gray">에어맥스 98</button></li>
-                                <li><button type="button" class="ss-item gray">운동화</button></li>
-                                <li><button type="button" class="ss-item gray">kf94</button></li>
-                                <li><button type="button" class="ss-item gray">자켓</button></li>
-                                <li><button type="button" class="ss-item gray">아우터</button></li>
-                                <li><button type="button" class="ss-item gray">상의</button></li>
-                                <li><button type="button" class="ss-item gray">하의</button></li>
-                                <li><button type="button" class="ss-item gray">하의</button></li>
-                                <li><button type="button" class="ss-item gray">하의</button></li>
-                            </ul>
-                        </div>
-                        <!-- 최근 검색 내역이 없을 때 -->
-                        <!-- <p class="ss_none-text pdB">최근 검색어 내역이 없어요.</p> -->
-                        <!-- // 최근 검색 내역이 없을 때 -->
-                        <div class="brLine"></div>
+                    <!-- 검색결과 찾을 수 없음 -->
+                    <div class="sr-none">
+                        <p>
+                            <span class="search_text">'@#$%!'</span>에 대한 검색결과를 찾을 수 없어요. <br>
+                            다른 키워드로 검색해 보세요.
+                        </p>
                     </div>
-                    <!-- //최근 검색어 -->
-                    <!-- 추천 검색어 -->
-                    <div class="recom ss-content">
-                        <div class="ss-title-box justify_box">
-                            <span class="ss-title just_left">추천 검색어</span>
-                        </div>
-                        <div class="overflow_x mgTb2">
-                            <div class="ss-list first">
-                                <ul class="ss-list second">
-                                    <li><button type="button" class="ss-item">#에어맥스 98</button></li>
-                                    <li><button type="button" class="ss-item">#운동화</button></li>
-                                    <li><button type="button" class="ss-item">#kf94</button></li>
-                                    <li><button type="button" class="ss-item">#자켓</button></li>
-                                    <li><button type="button" class="ss-item">#꼼데가르송 척테일러</button></li>
-                                    <li><button type="button" class="ss-item">#아우터</button></li>
-                                    <li><button type="button" class="ss-item">#아우터</button></li>
-                                    <li><button type="button" class="ss-item">#아우터</button></li>
-                                    <li><button type="button" class="ss-item">#아우터</button></li>
-                                </ul>    
-                            </div>
-                        </div>
-                        <div class="brLine"></div>
-                         <!-- 추천 검색어 없을 때 -->
-                         <!-- <p class="ss_none-text pdB">아쉽게도 등록된 추천 검색어가 없어요.</p> -->
-                         <!-- //추천 검색어 없을 때 -->
+                    <div class="search_tip-box">
+                        <span class="stb-title">검색 팁</span>
+                        <ul class="dot-list">
+                            <li>검색어의 철자가 정확한지 확인해보세요.</li>
+                            <li>검색어의 단어수를 줄이거나 다른 검색어로 검색해보세요.</li>
+                            <li>보다 일반적인 단어로 다시 검색해보세요.</li>
+                        </ul>
                     </div>
-                    <!-- //추천 검색어 -->
-                    <!-- 인기 검색어 -->
-                    <div class="publi ss-content">
+                    <!-- //검색결과 찾을 수 없음 -->
+
+                     <!-- 인기 검색어 -->
+                     <div class="publi ss-content">
                         <div class="ss-title-box pd justify_box">
                             <span class="ss-title just_left">인기 검색어</span>
-                            <span class="ss-sub just_right"><span class="num">2021.05.20</span> 기준</span>
+                            <!-- <span class="ss-sub just_right"><span class="num">2021.05.20</span> 기준</span> -->
                         </div>
                         <div class="ss_major-slide">
                             <div class="ss_major-item clearfix">
@@ -125,7 +89,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- // 인기 검색어 -->
                         <!-- 인기 검색어 없을 때  -->
                         <!-- <p class="ss_none-text">
                             잠시 후 다시 확인해 주세요!
@@ -134,9 +97,35 @@
                         </p> -->
                         <!-- // 인기 검색어 없을 때  -->
                     </div>
-                    <!-- //인기 검색어 -->
+                    <!-- // 인기 검색어 -->
+
+                    <div class="brLine"></div>
+                    <div class="recom ss-content">
+                        <div class="ss-title-box justify_box">
+                            <span class="ss-title just_left">추천 검색어</span>
+                        </div>
+                        <div class="overflow_x mgTb2">
+                            <div class="ss-list first">
+                                <ul class="ss-list second">
+                                    <li><button type="button" class="ss-item">#에어맥스 98</button></li>
+                                    <li><button type="button" class="ss-item">#운동화</button></li>
+                                    <li><button type="button" class="ss-item">#kf94</button></li>
+                                    <li><button type="button" class="ss-item">#자켓</button></li>
+                                    <li><button type="button" class="ss-item">#꼼데가르송 척테일러</button></li>
+                                    <li><button type="button" class="ss-item">#아우터</button></li>
+                                    <li><button type="button" class="ss-item">#아우터</button></li>
+                                    <li><button type="button" class="ss-item">#아우터</button></li>
+                                    <li><button type="button" class="ss-item">#아우터</button></li>
+                                </ul>    
+                            </div>
+                        </div>
+
+                         <!-- 추천 검색어 없을 때 -->
+                         <!-- <p class="ss_none-text pdB">아쉽게도 등록된 추천 검색어가 없어요.</p> -->
+                         <!-- //추천 검색어 없을 때 -->
+                    </div>
                     <!-- 배너 슬라이드 -->
-                     <div class="ss-banner">
+                    <div class="ss-banner">
                         <div class="banner-slide">
                             <div>
                                 <a href="#none"><img src="../common/images/dummy/banner01.jpg" alt=""></a>
@@ -147,12 +136,12 @@
                         </div>
                     </div>
                     <!-- //배너 슬라이드 -->
-                </div>
+                </div>    
             </div>
         </div>
         <script src="../common/lib/slick.min.js"></script>
         <script>
-            (function() {
+            (function () {
                 function autoWidth(ele, child, add) {
                     var width = 0;
 
@@ -162,20 +151,23 @@
 
                     $(ele).width(width);
                 }
-                autoWidth('.ms-list', '.ms-list li', 15);
-                autoWidth('.ss-list.first', '.ss-list.first li', 15);
-                autoWidth('.ss-list.second', '.ss-list.second li', 15);
-                autoWidth('.sbs-list', '.sbs-list li', 15);
+                autoWidth('.ms-list', '.ms-list li', 40);
+                autoWidth('.ss-list.first', '.ss-list.first li', 25);
+                autoWidth('.ss-list.second', '.ss-list.second li', 25);
+                autoWidth('.sbs-list', '.sbs-list li', 20);
+  
+                function fn_focus()
+                {
+                    document.getElementById("txtOn").focus();
+                }
 
-                // 인기 검색어 슬라이드 
                 $('.ss_major-slide').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: true,
                     arrows: false,
                 });
-                // 배너 슬라이드
-                 $('.banner-slide').slick({
+                $('.banner-slide').slick({
                     autoplay: true,
                     slidesToShow: 1,
                     dots: false,
@@ -198,10 +190,10 @@
                     $(this).siblings('.ss-text').val('');
                     $(this).hide();
                 });
-
                 $('.filter_select').on('click touch', function () {
                     $(this).toggleClass('active');
                 })
+
             })(jQuery);
         </script>
     </body>

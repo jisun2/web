@@ -13,11 +13,11 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
     </head>
     <body>
+
         <div id="wrap" class="wd720">
             <div id="header">
                 <!-- 검색창 -->
                 <div class="ss-box pd">
-                    <!-- <form accept-charset="utf-8" action="."><fieldset><legend>검색어 입력</legend> <strong class="tit tc_1">고객님<br>무엇을 찾으세요?</strong> <div class="search_box lc_3 dis_f ai_c searched "><span class="input_text" style="width: 100%;"><input type="search" id="siteSearchInput2" name="search" placeholder="상품을 찾아보세요." class="input_search tc_1" style="border: 0px; padding: 10px 30px 0px 60px;"> <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button></span> <button type="button" class="btn_submit spr_before pos_center_before"><span class="s_out">검색하기</span></button></div></fieldset></form> -->
                     <form action="">
                         <div class="ss-text-box">
                             <input type="search" title="검색어 입력창" class="ss-text" name="search" placeholder="검색어를 입력하세요" />
@@ -31,16 +31,16 @@
                 </div>
                 <!-- //검색창 -->
             </div>
-
+            
             <div id="container">
                 <div class="searchWrap">
                     <!-- 최근 검색어 -->
                     <div class="lately ss-content">
                         <div class="ss-title-box justify_box">
                             <span class="ss-title just_left">최근 검색어</span>
-                            <button type="button" class="ss-btn just_right">전체 삭제</button>
+                            <!-- <button type="button" class="ss-btn just_right">전체 삭제</button> -->
                         </div>
-                        <div class="overflow_x mgTb2">
+                        <!-- <div class="overflow_x mgTb2">
                             <ul class="ss-list first">
                                 <li><button type="button" class="ss-item gray">에어맥스 98</button></li>
                                 <li><button type="button" class="ss-item gray">운동화</button></li>
@@ -52,19 +52,20 @@
                                 <li><button type="button" class="ss-item gray">하의</button></li>
                                 <li><button type="button" class="ss-item gray">하의</button></li>
                             </ul>
-                        </div>
-                        <!-- 최근 검색 내역이 없을 때 -->
-                        <!-- <p class="ss_none-text pdB">최근 검색어 내역이 없어요.</p> -->
-                        <!-- // 최근 검색 내역이 없을 때 -->
+                        </div> -->
+                         <!-- 최근 검색 내역이 없을 때 -->
+                         <p class="ss_none-text pdB">최근 검색어 내역이 없어요.</p>
+                         <!-- // 최근 검색 내역이 없을 때 -->
                         <div class="brLine"></div>
                     </div>
                     <!-- //최근 검색어 -->
+
                     <!-- 추천 검색어 -->
                     <div class="recom ss-content">
                         <div class="ss-title-box justify_box">
                             <span class="ss-title just_left">추천 검색어</span>
                         </div>
-                        <div class="overflow_x mgTb2">
+                        <!-- <div class="overflow_x mgTb2">
                             <div class="ss-list first">
                                 <ul class="ss-list second">
                                     <li><button type="button" class="ss-item">#에어맥스 98</button></li>
@@ -78,71 +79,72 @@
                                     <li><button type="button" class="ss-item">#아우터</button></li>
                                 </ul>    
                             </div>
-                        </div>
-                        <div class="brLine"></div>
+                        </div> -->
                          <!-- 추천 검색어 없을 때 -->
-                         <!-- <p class="ss_none-text pdB">아쉽게도 등록된 추천 검색어가 없어요.</p> -->
+                         <p class="ss_none-text pdB">아쉽게도 등록된 추천 검색어가 없어요.</p>
                          <!-- //추천 검색어 없을 때 -->
+                        <div class="brLine"></div>
                     </div>
                     <!-- //추천 검색어 -->
                     <!-- 인기 검색어 -->
                     <div class="publi ss-content">
                         <div class="ss-title-box pd justify_box">
                             <span class="ss-title just_left">인기 검색어</span>
-                            <span class="ss-sub just_right"><span class="num">2021.05.20</span> 기준</span>
+                            <!-- <span class="ss-sub just_right"><span class="num">2021.05.20</span> 기준</span> -->
                         </div>
-                        <div class="ss_major-slide">
+                        <!-- <div class="ss_major-slide">
                             <div class="ss_major-item clearfix">
                                 <ul class="ss_major-list">
-                                    <li class="active"><a href="#none" class="ellipsis"><span class="ss_major_num">1.</span>반스 올드 스쿨</a></li>
-                                    <li class="active"><a href="#none" class="ellipsis"><span class="ss_major_num">2.</span>뉴발란스 CTR 300</a></li>
-                                    <li class="active"><a href="#none" class="ellipsis"><span class="ss_major_num">3.</span>나이키 운동화</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">4.</span>후드티</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">5.</span>나이키</a></li>
+                                    <li class="active ellipsis">
+                                        <span class="ss_major_num">1.</span>반스 올드 스쿨
+                                    </li>
+                                    <li class="active ellipsis"><span class="ss_major_num">2.</span>뉴발란스 CTR 300</li>
+                                    <li class="active ellipsis"><span class="ss_major_num">3.</span>나이키 운동화</li>
+                                    <li class="ellipsis"><span class="ss_major_num">4.</span>후드티</li>
+                                    <li class="ellipsis"><span class="ss_major_num">5.</span>나이키</li>
                                 </ul>
                                 <ul class="ss_major-list">
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">6.</span>꼼데가르송 척테일러</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">7.</span>니트</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">8.</span>Galaxy Watch3</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">9.</span>뉴발란스 608</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">10.</span>후리스 자켓</a></li>
+                                    <li class="ellipsis"><span class="ss_major_num">6.</span>꼼데가르송 척테일러</li>
+                                    <li class="ellipsis"><span class="ss_major_num">7.</span>니트</li>
+                                    <li class="ellipsis"><span class="ss_major_num">8.</span>Galaxy Watch3</li>
+                                    <li class="ellipsis"><span class="ss_major_num">9.</span>뉴발란스 608</li>
+                                    <li class="ellipsis"><span class="ss_major_num">10.</span>후리스 자켓</li>
                                 </ul>
                             </div>
                             <div class="ss_major-item clearfix">
                                 <ul class="ss_major-list">
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">11.</span>꼼데가르송 척테일러</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">12.</span>니트</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">13.</span>Galaxy Watch3</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">14.</span>뉴발란스 608</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">15.</span>후리스 자켓</a></li>
+                                    <li><span class="ss_major_num">11.</span>패딩</li>
+                                    <li><span class="ss_major_num">12.</span>니트</li>
+                                    <li><span class="ss_major_num">13.</span>아디다스</li>
+                                    <li><span class="ss_major_num">14.</span>뉴발란스 608</li>
+                                    <li><span class="ss_major_num">15.</span>후리스 자켓</li>
                                 </ul>
                                 <ul class="ss_major-list">
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">16.</span>꼼데가르송 척테일러</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">17.</span>니트</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">18.</span>Galaxy Watch3</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">19.</span>뉴발란스 608</a></li>
-                                    <li><a href="#none" class="ellipsis"><span class="ss_major_num">20.</span>후리스 자켓</a></li>
+                                    <li><span class="ss_major_num">16.</span>패딩</li>
+                                    <li><span class="ss_major_num">17.</span>니트</li>
+                                    <li><span class="ss_major_num">18.</span>아디다스</li>
+                                    <li><span class="ss_major_num">19.</span>뉴발란스 608</li>
+                                    <li><span class="ss_major_num">20.</span>후리스 자켓</li>
                                 </ul>
                             </div>
-                        </div>
-                        <!-- // 인기 검색어 -->
+                        </div> -->
                         <!-- 인기 검색어 없을 때  -->
-                        <!-- <p class="ss_none-text">
+                        <p class="ss_none-text">
                             잠시 후 다시 확인해 주세요!
                             <br>
                             원활한 서비스 제공을 위해 문제를 확인 중 입니다.
-                        </p> -->
+                        </p>
                         <!-- // 인기 검색어 없을 때  -->
                     </div>
-                    <!-- //인기 검색어 -->
+                    <!-- // 인기 검색어 -->
                     <!-- 배너 슬라이드 -->
-                     <div class="ss-banner">
+                    <div class="ss-banner">
                         <div class="banner-slide">
                             <div>
-                                <a href="#none"><img src="../common/images/dummy/banner01.jpg" alt=""></a>
+                                <img src="../common/images/dummy/banner01.jpg" alt="">
                             </div>
                             <div>
-                                <a href="#none"><img src="../common/images/dummy/banner01.jpg" alt=""></a>
+                                <img src="../common/images/dummy/banner01.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -150,9 +152,10 @@
                 </div>
             </div>
         </div>
+
         <script src="../common/lib/slick.min.js"></script>
         <script>
-            (function() {
+            (function () {
                 function autoWidth(ele, child, add) {
                     var width = 0;
 
@@ -162,20 +165,15 @@
 
                     $(ele).width(width);
                 }
-                autoWidth('.ms-list', '.ms-list li', 15);
-                autoWidth('.ss-list.first', '.ss-list.first li', 15);
-                autoWidth('.ss-list.second', '.ss-list.second li', 15);
-                autoWidth('.sbs-list', '.sbs-list li', 15);
-
-                // 인기 검색어 슬라이드 
-                $('.ss_major-slide').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true,
-                    arrows: false,
-                });
-                // 배너 슬라이드
-                 $('.banner-slide').slick({
+                autoWidth('.ms-list', '.ms-list li', 40);
+                autoWidth('.ss-list.first', '.ss-list.first li', 25);
+                autoWidth('.ss-list.second', '.ss-list.second li', 25);
+                autoWidth('.sbs-list', '.sbs-list li', 20);
+                function fn_focus()
+                {
+                    document.getElementById("txtOn").focus();
+                }
+                $('.banner-slide').slick({
                     autoplay: true,
                     slidesToShow: 1,
                     dots: false,
@@ -198,10 +196,10 @@
                     $(this).siblings('.ss-text').val('');
                     $(this).hide();
                 });
-
                 $('.filter_select').on('click touch', function () {
                     $(this).toggleClass('active');
                 })
+
             })(jQuery);
         </script>
     </body>
