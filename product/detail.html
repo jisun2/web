@@ -285,9 +285,14 @@
                     <div id="tab-cont">
                         <div class="ovef_h">
                             <div class="pf-box tab_inr">
-                                <p class="overh" id="Demore">
+                                <div class="overh" id="Demore">
+                                    <!-- QA CMS 영역 -->
+                                    <article class="cont_cms">
+                                        CMS 추가 영역
+                                    </article>
+                                    <!-- //QA CMS 영역 -->
                                     <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="상세 이미지">
-                                </p>
+                                </div>
                                 <button type="button" id="Demore_btn" class="Demore_btn org_br">상품 상세 더보기<span class="ico detailBtn"></span></button>
                             </div>
                             <div class="member_event_acco-box lcear">
@@ -389,7 +394,7 @@
                                                         <span class="num">10,000원</span>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
+                                                        <li class="on"><span class="ico like_s"></span><span class="num">999+</span></li>
                                                         <li>상품평 <span class="num">999+</span></li>
                                                     </ul>
                                                 </div>
@@ -411,7 +416,8 @@
                                                     </div>
                                                     <ul class="list_bar rcn">
                                                         <!-- 하트 on 추가 -->
-                                                        <li class="on"><span class="ico like_s"></span><span class="num">1</span></li>
+                                                        <li class="on"><span class="ico like_s"></span><span class="num">100</span></li>
+                                                        <!-- //하트 on 추가 -->
                                                         <li>상품평 <span class="num">1</span></li>
                                                     </ul>
                                                 </div>
@@ -1107,6 +1113,9 @@
                     </div>
                 </div>
             </div>
+            <div class="_button_top_wrap nav-up">
+                <a href="#"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/btn_go_to_top.png" width="40" height="40" alt=""></a>
+            </div>
         </div>
 
         <!-- slick slider -->
@@ -1151,21 +1160,29 @@
                         $(this).toggleClass('on');
                         $(this).children('p').toggleClass('_ellipsis');
                     });
-                // 상품 상세 tab
-                    var tabBtn = $("#tab_btn > ul > li");
-                    var tabCont = $("#tab-cont > div");
-                    tabCont.hide().eq(0).show();
-                    tabBtn.click(function(){
-                    var target = $(this);
-                    var index = target.index();
-                    tabBtn.removeClass("active");
-                    target.addClass("active");
-                    tabCont.css("display","none");
-                    tabCont.eq(index).css("display","block");
-                });
-            }
+                    // 상품 상세 tab
+                        var tabBtn = $("#tab_btn > ul > li");
+                        var tabCont = $("#tab-cont > div");
+                        tabCont.hide().eq(0).show();
+                        tabBtn.click(function(){
+                        var target = $(this);
+                        var index = target.index();
+                        tabBtn.removeClass("active");
+                        target.addClass("active");
+            target.addClass("active"); 
+                        target.addClass("active");
+            target.addClass("active"); 
+                        target.addClass("active");
+            target.addClass("active"); 
+                        target.addClass("active");
+            target.addClass("active"); 
+                        target.addClass("active");
+                        tabCont.css("display","none");
+                        tabCont.eq(index).css("display","block");
+                    });
+                }
             $( document ).ready(function() {
-                $( '.Demore_btn' ).click(function() {
+                $('.Demore_btn' ).click(function() {
                     $( "#Demore" ).removeClass( "overh" )
                 });
             });
@@ -1180,6 +1197,7 @@
                         arrows: false,
                     });
                 }
+
                 function centerSlide($ele) {
                     $ele.slick({
                         infinite: false,
@@ -1192,14 +1210,24 @@
                 oneSlide($('.recc_place-slide'));
                 centerSlide($('.product_color_slide'));
                 centerSlide($('.more_prod_slide'));
+
+
                 function acAcco(ele, content) {
                     $(ele).on('click touch', function () {
                         $(this).toggleClass('active');
                         $(this).parents('.product_detail-acco').find(content).slideToggle();
                     });
                 }
+
                 acAcco('.pda-title', '.pda-content');
             })(jQuery);
+
+            jQuery( "#tabs").tabs({
+            activate: function(event, ui) {
+                window.location.hash = ui.newPanel.attr('id');
+            }
+        });
+
         </script>
     </body>
 </html>
