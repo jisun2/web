@@ -62,7 +62,7 @@
     .txtwrite_wrap .myWrap .pd_lst li.ord_box {width:94%;}
 }
 @media screen and (min-width:200px) and (max-width:375px) {
-    .myWrap .pd_lst li.ord_box {width:93%;}
+    .myWrap .pd_lst li.ord_box {width:102%;}
 }
 @media screen and (min-width:376px) and (max-width:500px) {
     .myWrap .pd_lst li.ord_box {width:96%;}
@@ -223,7 +223,7 @@
 .myWrap .mypd_deWrap ul li::after {content:''; position:absolute; top:10px; right:6.5px; width:1px; height:12px; background-color:#e5e5e5}
 .myWrap .mypd_deWrap.sm ul li::after {height:10px;}
 .myWrap .mypd_deWrap ul li:last-child::after {display:none}
-.myWrap .mypd_deWrap .pd_brd {display:block; display:-webkit-box; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; line-height: 1.5; word-break:break-all; -webkit-line-clamp:3; -webkit-box-orient:vertical; font-size:13px; color:#555}
+.myWrap .mypd_deWrap .pd_brd {display:block; display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height: 1.5; word-break:break-all; -webkit-line-clamp:3; -webkit-box-orient:vertical; font-size:13px; color:#555}
 .myWrap .mypd_deWrap .state {font-size:14px; font-weight:bold; color:#888}
 .myWrap .my_topBox {clear:both; padding:25px 20px;}
 .tab_inr .subTxt {margin-bottom:15px; font-size:15px; font-weight:500; color:#333}
@@ -270,7 +270,8 @@
 #header .box_left.nbk {padding-left:20px; display:inline-block;}
 .sltType1 .sel_arrow {top:13px}
 .delBtn .btn_pd {float:right;padding:11px 14px; margin:-12px -12px 0 0; display:inline-block; }
-.delBtn .delete {display:inline-block; width:14px; height:12px;}
+.delBtn .delete {display:inline-block; width:17px; height:16px;}
+.delBtn .ico.delete {background-position: -284px -23px;}
 .myWrap .sub_tit.brdT {padding-top:25px; border-top:1px solid #e5e5e5}
 .txtwrite_wrap {padding:25px 20px}
 .txtwrite_wrap .write_info li {font-size:12px; color:#888}
@@ -327,7 +328,7 @@
     .typeSelect ul li.on a::before {left:1px; width:100%;}
 }
 @media screen and (min-width:220px) and (max-width:800px) {
-    .sltType1 .sel_arrow {top:19px}
+    .sltType1 .sel_arrow {top:12px}
 }
 @media screen and (min-width:300px) and (max-width:359px) {
     .txtwrite_wrap .iqy_inr .pd_deWrap {width:73%}
