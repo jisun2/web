@@ -294,7 +294,7 @@ input[type=checkbox] {display:none}
 /* 쇼핑백 담기 바로구매 btn */
 .ico.del {margin:3px 0 0 18px; width:22px; height:22px; background-position:-50px -55px}
 .nav_fixed_wrap {z-index:10; position:fixed; bottom:0; width:100%; font-weight:200; background-color:#fff; box-shadow:0px -5px 15px 0px rgba(0,0,0,0.05);}
-.pd_btn_box {padding:12px 0; width:100%; display:inline-block; height:80px; background-color:#000}
+.pd_btn_box {padding:12px 0; width:100%; display:inline-block; height:45px; background-color:#000}
 .pd_btn_box li {padding:0 15px}
 .pd_btn_box.pl0 {padding-left:0;}
 .pd_btn_box:after {content:''; display:block; clear:both}
@@ -306,9 +306,11 @@ input[type=checkbox] {display:none}
 .button_like_new .num {display:block; padding-top:35px; font-size:13px; font-weight:400; color:#fff}
 .button_like_new.selected {background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/bg_like_new.png) no-repeat 0 0; background-size: 55px 91px; font-size:11px;}
 /* 총 상품 금액 */
-.nav_fixed_wrap .total {z-index:1; position:relative; line-height:55px; border-top:1px solid #333; font-size:16px; color:#000}
-.nav_fixed_wrap .total .pfb_pay {display:inline-block; margin-left:12px;font-size:27px; font-weight:700; font-family:'proxima-nova'}
+.nav_fixed_wrap .total {z-index:1; padding-top:20px; position:relative; line-height:15px; border-top:1px solid #333; font-size:16px; color:#000}
+.nav_fixed_wrap .total .pfb_pay {display:inline-block; height:20px; margin-left:12px;font-size:27px; font-weight:700; font-family:'proxima-nova'}
+.nav_fixed_wrap .total .coup_txt {clear:both; margin-top:8px; float:right; height:20px; font-size:13px; color:#f43434}
 .nav_fixed_wrap .total .won {font-size:23px; font-weight:600; font-family:'Noto Sans KR'}
+
 .regi_pro-list {margin-bottom:10px}
 .regi_pro-list:after {clear:both; content:''; display:block}
 .regi_pro-list li {position:relative; float:left; width:20%; text-align:center}
