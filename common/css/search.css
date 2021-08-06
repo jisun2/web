@@ -674,7 +674,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   #wrap.wd720 {position:relative}
   .filterWrap {width:720px !important;}
   .filterWrap .wd720 {width:720px;margin:0 auto; height:auto;}
-  .sltType1 .sel_arrow {top:22px}
+  /* .sltType1 .sel_arrow {top:22px} */
 }
 @media screen and (min-width:321px) and (max-width:600px) {
   #header .ss-box.wd {width:80%;}
