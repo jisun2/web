@@ -402,7 +402,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .searchWrap .ss-list .ss-item { height: 32px; padding: 0 12px; color: #555; font-size: 13px; line-height: 16px; border: 1px solid #e5e5e5; border-radius: 30px; background-color: #fff;}
 .searchWrap .ss-list a.ss-item {display: inline-block; vertical-align: middle; line-height: 31.5px;}
 .searchWrap .ss-list a.ss-item span {line-height: 32px !important}
-.searchWrap .ss-list a.ss-item button.keyDel {-o-height:21px; -webkit-height:21px !important;}
+.searchWrap .ss-list a.ss-item button.keyDel {-webkit-height:21px !important;}
 .searchWrap .ss-item .arrowDwn {display: inline-block; margin-top: 2px; width: 14px; height: 7px; background-position: -86px -69px;}
 .searchWrap .ss-list .ss-item.gray {border: 1px solid #f5f5f5; background-color: #f5f5f5}
 .searchWrap .ss-sub {line-height: 1; color: #ababab; font-size: 12px}
