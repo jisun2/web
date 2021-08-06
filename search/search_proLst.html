@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>검색창</title>
+        <meta name="viewport" content="width=device-width">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
+        <!--가격 슬라이드 추가 -->
+        <script src="../common/lib/rangeSliderUI.js"></script>
+        <!--//가격 슬라이드 추가 -->
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/search.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back mg"><span class="blind">뒤로가기</span></a>
+                        <span class="header_title">
+                            의류
+                        </span>
+                        <div class="btn_area flt_le">
+                            <a href="#"><i class="ico proLst up" onclick="btnFunction(this)"><span class="blind">카테고리 더보기</span></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">50</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico search"><span class="blind">서치 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <div id="container">
+                <div class="searchWrap">
+                    <div class="header_menu">
+                        <ul class="menu_lst">
+                            <li><a href="#none">의류</a></li>
+                            <li><a href="#none">라이프</a></li>
+                            <li><a href="#none">셀렉샵</a></li>
+                        </ul>
+                        <ul class="menu_lst">
+                            <li><a href="#none">신발</a></li>
+                            <li><a href="#none">잡화</a></li>
+                            <li><a href="#none">셀렉샵</a></li>
+                        </ul>
+
+                        <ul class="menu">
+                            <li><a href="javascript:;">Home</a></li>
+                            <li>
+                              <a href="javascript:;">About</a>
+                              <ul class="submenu">
+                                <li><a href="javascript:;">Sub-item</a></li>
+                                <li><a href="javascript:;">Sub-item</a></li>
+                                <li><a href="javascript:;">Sub-item</a></li>
+                                <li><a href="javascript:;">Sub-item</a></li>
+                                <li><a href="javascript:;">Sub-item</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="javascript:;">Services</a>
+                              <ul class="submenu">
+                                <li><a href="javascript:;">Sub-item</a></li>
+                                <li><a href="javascript:;">Sub-item</a></li>
+                                <li><a href="javascript:;">Sub-item</a></li>
+                                <li><a href="javascript:;">Sub-item</a></li>
+                                <li><a href="javascript:;">Sub-item</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="javascript:;">Contact</a></li>
+                          </ul>
+                    </div>
+                  
+                    <!-- 검색 필터 키워드 -->
+                    <div class="ss_fitr sticky">
+                        <div class="overflow_x">
+                            <ul class="ss-list second keyLst update">
+                                <li><a href="#none" class="ss-item">상품쿠폰</a></li>
+                                <li><a href="#none" class="ss-item">무료쿠폰</a></li>
+                                <li><a href="#none" class="ss-item">가격<span class="ico arrowDwn"></span></a></li>
+                                <li><a href="#none" class="ss-item" onclick="openLayer(event,'#tempLayer1',this)">성별<span class="ico arrowDwn"></span></a></li>
+                                <li><a href="#none" class="ss-item">카테고리</a></li>
+                                <li><a href="#none" class="ss-item">카테고리</a></li>
+                                <li><a href="#none" class="ss-item">카테고리</a></li>
+                                <li><a href="#none" class="ss-item">카테고리</a></li>
+                                <li><a href="#none" class="ss-item">카테고리</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- //검색 필터 키워드 -->
+                    <!-- 상품 리스트  -->
+                    <div class="product_list-wrap plc_fc-box">
+                        <div class="product_list-box">
+                            <div class="plc_fc-filter">
+                                <div class="sltType1 filter_view">
+                                    <span class="ico upDownArr"></span>
+                                    <select title="필터 선택">
+                                        <option value="인기순">인기순</option>
+                                        <option value="신상품순">신상품순</option>
+                                        <option value="할인율순">할인율순</option>
+                                        <option value="낮은가격순">낮은가격순</option>
+                                        <option value="높은가격순">높은가격순</option>
+                                    </select>
+                                </div>
+                                <span class="plc_fc-pro">상품 <span>30,788</span>개</span>
+                            </div>
+                            <!-- item List  -->
+                            <div class="product-item">
+                                <div class="pli-top_wrap">
+                                    <a href="#none">
+                                        <span class="pli-thumb">
+                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
+                                        </span>
+                                    </a>
+                                    <button type="button" class="pli-heart"></button>
+                                </div>
+                                <div class="pli-info_wrap">
+                                    <div class="pli-info">
+                                        <a href="#none">
+                                            <div class="pli-cate">나이키</div>
+                                        </a>
+                                        <a href="#none">
+                                            <span class="pli-title">
+                                                비욘드 레터링 특양면 비욘드 레터링 특양면 화이트 컬러
+                                            </span>
+                                        </a>
+                                        
+                                        <div class="pli_pay-info">
+                                            <p class="pli-sale">9,552,000</p>
+                                            <div class="pli-box">
+                                                <span class="pli-per"><span>50</span>%</span>
+                                                <span class="pli-pay">6,139,000</span>
+                                            </div>
+                                            <ul class="pli_dis-box">
+                                                <li>
+                                                    <span class="ico like_s"></span>
+                                                    <span class="big-font">999+</span>
+                                                </li>
+                                                <li><span class="object big-font">상품평 999+</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="option_info-box">
+                                        <div class="option-view justify_box">
+                                            <div class="ov-title just_left">옵션</div>
+                                            <!-- 배송정보 -->
+                                            <ul class="ov_info-wrap">
+                                                <li class="ov-info green just_right"><span class="num">7/1</span> 예약배송</li>
+                                                <!-- <li class="ov-info purple just_right">해외배송</li> -->
+                                                <!-- <li class="ov-info blue just_right">무료배송</li> -->
+                                            </ul>
+                                            <!-- //배송정보 -->
+                                        </div>
+                                        <!-- Option Type 1 -->
+                                        <div class="option-detail">
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">A TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title has-acco justify_box">
+                                                            <span class="ov-text just_left">COLOR</span>
+                                                            <span class="ov-arrow just_right"></span>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">블랙</span>
+                                                                    <span class="ov-text just_right">있음</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">화이트</span>
+                                                                    <span class="ov-text just_right">9</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">B TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">네이비</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">레드</span>
+                                                            <span class="ov-text just_right">있음</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">화이트</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //Option Type 1 -->
+                                    </div>
+                                    <!-- 쿠폰 배지 -->
+                                    <div class="badge_coupon">
+                                        <span class="txt">쿠폰</span>
+                                        <span class="num">3,000원</span>
+                                    </div>
+                                    <!-- //쿠폰 배지 -->
+                                </div>
+                            </div>
+                            <!--// item List  -->
+    
+                            <!-- item List  -->
+                            <div class="product-item">
+                                <div class="pli-top_wrap">
+                                    <a href="#none" >
+                                        <div class="pli-thumb">
+                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <!-- <div class="heart">
+                                        <span style="background-image: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_like_on.png);"></span>
+                                    </div> -->
+                                    <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
+                                </div>
+                                <div class="pli-info_wrap">
+                                    <div class="pli-info">
+                                        <a href="#none">
+                                            <div class="pli-cate">나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</div>
+                                        </a>
+                                        <a href="#none">
+                                            <span class="pli-title">
+                                                비욘드 레터링 특양면 비욘드 레터링 특양면 화이트 컬러
+                                            </span>
+                                        </a>
+                                        <div class="pli_pay-info">
+                                            <p class="pli-sale visi_hid"></p><!-- 할인 가격이 없을 때 **visi_hid** 추가 -->
+                                            <div class="pli-box">
+                                                <!-- <span class="pli-per"><span>30</span>%</span> -->
+                                                <span class="pli-pay">6,139,000</span>
+                                            </div>
+                                        </div>
+                                        <ul class="pli_dis-box">
+                                            <li>
+                                                <span class="ico like_s"></span>
+                                                <span class="big-font">30</span>
+                                            </li>
+                                            <!-- <li><span class="object big-font">상품평 999+</span></li> -->
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="option_info-box">
+                                        <div class="option-view justify_box">
+                                            <div class="ov-title just_left">옵션</div>
+                                            <!-- 배송정보 -->
+                                            <ul class="ov_info-wrap">
+                                                <!-- <li class="ov-info green just_right"><span class="num">7/1</span> 예약배송</li> -->
+                                                <li class="ov-info purple just_right">해외배송</li>
+                                                <!-- <li class="ov-info blue just_right">무료배송</li> -->
+                                            </ul>
+                                            <!-- //배송정보 -->
+                                        </div>
+                                        <!-- Option Type 2 -->
+                                        <div class="option-detail">
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title justify_box">
+                                                    <span class="ov-text just_left">A TYPE</span>
+                                                    <span class="ov-text just_right">있음</span>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title justify_box">
+                                                    <span class="ov-text just_left">B TYPE</span>
+                                                    <span class="ov-text just_right">5</span>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title justify_box">
+                                                    <span class="ov-text just_left">C TYPE</span>
+                                                    <span class="ov-text just_right">있음</span>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title justify_box">
+                                                    <span class="ov-text just_left">D TYPE</span>
+                                                    <span class="ov-text just_right">있음</span>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title justify_box">
+                                                    <span class="ov-text just_left">E TYPE</span>
+                                                    <span class="ov-text just_right">9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //Option Type 2 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// item List  -->
+    
+                            <!-- item List  -->
+                            <div class="product-item">
+                                <div class="pli-top_wrap">
+                                    <a href="#" >
+                                        <div class="pli-thumb">
+                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
+                                </div>
+    
+                                <div class="pli-info_wrap">
+                                    <div class="pli-info">
+                                        <a href="#none">
+                                            <div class="pli-cate">나이키나이키</div>
+                                        </a>
+                                        <a href="#none">
+                                            <span class="pli-title">
+                                                비욘드 레터링 특양면
+                                            </span>
+                                        </a>
+                                        <div class="pli_pay-info">
+                                            <p class="pli-sale">9,552,000</p>
+                                            <div class="pli-box">
+                                                <span class="pli-per"><span>30</span>%</span>
+                                                <span class="pli-pay">6,139,000</span>
+                                            </div>
+                                        </div>
+                                        <ul class="pli_dis-box">
+                                            <li><span class="object big-font">상품평 999+</span></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="option_info-box">
+                                        <div class="option-view justify_box">
+                                            <div class="ov-title just_left">옵션</div>
+                                            <!-- 배송정보 -->
+                                            <ul class="ov_info-wrap">
+                                                <!-- <li class="ov-info green just_right"><span class="num">7/1</span> 예약배송</li>
+                                                <li class="ov-info purple just_right">해외배송</li> -->
+                                                <li class="ov-info blue just_right">무료배송</li>
+                                            </ul>
+                                            <!-- //배송정보 -->
+                                        </div>
+        
+                                        <div class="option-detail">
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">A TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title has-acco justify_box">
+                                                            <span class="ov-text just_left">COLOR</span>
+                                                            <span class="ov-arrow just_right"></span>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">블랙</span>
+                                                                    <span class="ov-text just_right">있음</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">화이트</span>
+                                                                    <span class="ov-text just_right">9</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">B TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">네이비</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">레드</span>
+                                                            <span class="ov-text just_right">있음</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">화이트</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 쿠폰 배지 -->
+                                        <div class="badge_coupon">
+                                            <span class="txt">쿠폰</span>
+                                            <span class="num">3,000원</span>
+                                        </div>
+                                        <!-- //쿠폰 배지 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// item List  -->
+    
+                            <!-- item List  -->
+                            <div class="product-item">
+                                <div class="pli-top_wrap">
+                                    <a href="#none" >
+                                        <div class="pli-thumb">
+                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
+                                </div>
+    
+                                <div class="pli-info_wrap">
+                                    <div class="pli-info">
+                                        <a href="#none">
+                                            <div class="pli-cate">나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</div>
+                                        </a>
+                                        <a href="#none">
+                                            <span class="pli-title">
+                                                비욘드 레터링 특양면 비욘드 레터링 특양면 화이트 컬러
+                                            </span>
+                                        </a>
+                                        <div class="pli_pay-info">
+                                            <p class="pli-sale">9,552,000</p>
+                                            <div class="pli-box">
+                                                <span class="pli-per"><span>30</span>%</span>
+                                                <span class="pli-pay">6,139,000</span>
+                                            </div>
+                                        </div>
+                                        <ul class="pli_dis-box">
+                                            <li><span class="object big-font">상품평 999+</span></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="option_info-box">
+                                        <div class="option-view justify_box">
+                                            <div class="ov-title just_left">옵션</div>
+                                            <!-- 배송정보 -->
+                                            <ul class="ov_info-wrap">
+                                                <!-- <li class="ov-info green just_right"><span class="num">7/1</span> 예약배송</li>
+                                                <li class="ov-info purple just_right">해외배송</li> -->
+                                                <li class="ov-info blue just_right">무료배송</li>
+                                            </ul>
+                                            <!-- //배송정보 -->
+                                        </div>
+        
+                                        <div class="option-detail">
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">A TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title has-acco justify_box">
+                                                            <span class="ov-text just_left">COLOR</span>
+                                                            <span class="ov-arrow just_right"></span>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">블랙</span>
+                                                                    <span class="ov-text just_right">있음</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">화이트</span>
+                                                                    <span class="ov-text just_right">9</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">B TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">네이비</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">레드</span>
+                                                            <span class="ov-text just_right">있음</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">화이트</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 쿠폰 배지 -->
+                                        <div class="badge_coupon">
+                                            <span class="txt">쿠폰</span>
+                                            <span class="num">10,000원</span>
+                                        </div>
+                                        <!-- //쿠폰 배지 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// item List  -->
+    
+                            <!-- item List  -->
+                            <div class="product-item">
+                                <div class="pli-top_wrap">
+                                    <a href="#none" >
+                                        <div class="pli-thumb">
+                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
+                                </div>
+    
+                                <div class="pli-info_wrap">
+                                    <div class="pli-info">
+                                        <a href="#none">
+                                            <div class="pli-cate">나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</div>
+                                        </a>
+                                        <a href="#none">
+                                            <span class="pli-title">
+                                                비욘드 레터링 특양면 비욘드 레터링 특양면 화이트 컬러
+                                            </span>
+                                        </a>
+                                        <div class="pli_pay-info">
+                                            <p class="pli-sale visi_hid"></p><!-- 할인 가격이 없을 때 **visi_hid** 추가 -->
+                                            <div class="pli-box">
+                                                <!-- <span class="pli-per"><span>50</span>%</span> -->
+                                                <span class="pli-pay">6,139,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <ul class="pli_dis-box">
+                                        <li>
+                                            <span class="ico like_s"></span>
+                                            <span class="big-font">1</span>
+                                        </li>
+                                        <li><span class="object big-font">상품평 2</span></li>
+                                    </ul> -->
+                                    <div class="option_info-box">
+                                        <div class="option-view justify_box">
+                                            <div class="ov-title just_left">옵션</div>
+                                            <!-- 배송정보 -->
+                                            <ul class="ov_info-wrap">
+                                                <li class="ov-info green just_right"><span class="num">7/1</span> 예약배송</li>
+                                                <!-- <li class="ov-info purple just_right">해외배송</li> -->
+                                                <li class="ov-info blue just_right">무료배송</li>
+                                            </ul>
+                                            <!-- //배송정보 -->
+                                        </div>
+        
+                                        <div class="option-detail">
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">A TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title has-acco justify_box">
+                                                            <span class="ov-text just_left">COLOR</span>
+                                                            <span class="ov-arrow just_right"></span>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">블랙</span>
+                                                                    <span class="ov-text just_right">있음</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">화이트</span>
+                                                                    <span class="ov-text just_right">9</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">B TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">네이비</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">레드</span>
+                                                            <span class="ov-text just_right">있음</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">화이트</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// item List  -->
+    
+                            <!-- item List  -->
+                            <div class="product-item">
+                                <div class="pli-top_wrap">
+                                    <a href="#none" >
+                                        <div class="pli-thumb">
+                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
+                                </div>
+    
+                                <div class="pli-info_wrap">
+                                    <div class="pli-info">
+                                        <a href="#none">
+                                            <div class="pli-cate">나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키나이키</div>
+                                        </a>
+                                        <a href="#none">
+                                            <span class="pli-title">
+                                                비욘드 레터링 특양면 비욘드 레터링 특양면 화이트 컬러
+                                            </span>
+                                        </a>
+                                        <div class="pli_pay-info">
+                                            <p class="pli-sale">9,552,000</p>
+                                            <div class="pli-box">
+                                                <span class="pli-per"><span>50</span>%</span>
+                                                <span class="pli-pay">6,139,000</span>
+                                            </div>
+                                        </div>
+                                        <ul class="pli_dis-box">
+                                            <li>
+                                                <span class="ico like_s"></span>
+                                                <span class="big-font">1</span>
+                                            </li>
+                                            <li><span class="object big-font">상품평 2</span></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="option_info-box">
+                                        <div class="option-view justify_box">
+                                            <div class="ov-title just_left">옵션</div>
+                                            <!-- 배송정보 -->
+                                            <ul class="ov_info-wrap">
+                                                <li class="ov-info green just_right"><span class="num">7/1</span> 예약배송</li>
+                                                <!-- <li class="ov-info purple just_right">해외배송</li> -->
+                                                <li class="ov-info blue just_right">무료배송</li>
+                                            </ul>
+                                            <!-- //배송정보 -->
+                                        </div>
+        
+                                        <div class="option-detail">
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">A TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title has-acco justify_box">
+                                                            <span class="ov-text just_left">COLOR</span>
+                                                            <span class="ov-arrow just_right"></span>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">블랙</span>
+                                                                    <span class="ov-text just_right">있음</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 3depth -->
+                                                        <div class="option-content">
+                                                            <div class="option-acco depth-3">
+                                                                <div class="option-title justify_box">
+                                                                    <span class="ov-text just_left">화이트</span>
+                                                                    <span class="ov-text just_right">9</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 1depth -->
+                                            <div class="option-acco depth-1">
+                                                <div class="option-title has-acco justify_box">
+                                                    <span class="ov-text just_left">B TYPE</span>
+                                                    <span class="ov-arrow just_right"></span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">네이비</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">레드</span>
+                                                            <span class="ov-text just_right">있음</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2depth -->
+                                                    <div class="option-acco depth-2">
+                                                        <div class="option-title justify_box">
+                                                            <span class="ov-text just_left">화이트</span>
+                                                            <span class="ov-text just_right">5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// item List  -->
+                        </div>
+                    </div>
+                    <!-- //상품 리스트  -->
+                
+                    <!-- 토스트 팝업 -->
+                    <div class="toast">
+                        좋아요 목록에 추가 되었어요!
+                    </div>
+                    <!-- //토스트 팝업 -->
+
+                </div>
+            </div> 
+        </div>
+        <script src="../common/lib/slick.min.js"></script>
+        <script>
+            function myFunction(e) {
+                e.classList.toggle("on");
+                    $('.toast').fadeIn().delay(1800);
+                    $('.toast').fadeOut();
+                    $('.pli-heart').click(function(){
+                        $('.toast.on').css('display' ,'block');
+                    })
+                    $('.pli-heart').click(function(){
+                        $('.toast').css('display' ,'none');
+                    })
+                }
+                
+                $(".tooltip").slideDown(500); 
+                $( this ).css( 'background-color', '#ffcdd2' );
+                $( '.tooltip' ).fadeIn(100);    
+                $( '.btn_del' ).click(function() {
+                $( '.tooltip' ).hide();                
+                $( '.tooltip' ).fadeOut(100);     
+            })  
+
+             // .ss-text 작성 시 x버튼 출력
+            $('.ss-text').keyup(function () {
+                var valLeng = $(this).val().length;
+                if (valLeng > 0) {
+                    $(this).siblings('.search_clear-btn').show().css('display', 'block');
+                 } else {
+                    $(this).siblings('.search_clear-btn').hide();
+                }
+             });
+
+            $('.search_clear-btn').on('click touch', function(){
+                $(this).siblings('.ss-text').val('');
+                $(this).hide();
+            });
+            $('.filter_select').on('click touch', function(){
+                $(this).toggleClass('active');
+            })
+
+            $('.ss-item').on('click touch', function(){
+                $( '.filterWrap' ).removeClass('hide'); 
+            })
+            $('.tabTouch').on('click touch', function(){
+                $('.dim_layer').hide();
+            })
+            $('.dim_Touch').on('click touch', function(){
+                $('#tempLayer1').hide();
+            })
+            $('.filter_btn').on('click touch', function(){
+                $('.ss-list.second.keyLst1').hide();
+            })
+             //옵션 선택
+            function acAcco(ele, content) {
+                $(ele).on('click touch', function(){
+                    $(this).toggleClass('active');
+                    $(this).parents('.pln-nav li').find(content).slideToggle();
+                    $(this).parents('.pln-nav li').siblings('li').find(content).slideUp();
+                    $(this).parents('.pln-nav li').siblings('li').find(ele).removeClass('active');
+                });
+            }
+            function optionAcco(ele, content) {
+                $(ele).on('click touch', function () {
+                    $(this).toggleClass('active');
+                    $(this).siblings(content).toggle();
+                });
+            }
+            function toggleAcco(ele, content) {
+                $(ele).on('click touch', function () {
+                    $(this).toggleClass('active');
+                    $(this).parents('.option_info-box').find(content).toggle();
+                });
+            }
+            // 옵션 상세 선택
+            acAcco('.pln-title', '.pln-subnav');
+            optionAcco('.option-acco .has-acco', '.option-acco .option-content');
+            toggleAcco('.ov-title', '.option-detail');
+            
+            // 썸네일 height 맞춤
+            function thumbHeightAuto() {
+                var thisWidth = $('.pli-thumb img').width();
+                $('.pli-thumb img').height(thisWidth);
+            }
+
+            thumbHeightAuto();
+
+            $(window).resize(function(){
+                thumbHeightAuto();
+            });
+
+            function autoWidth(ele, child, add) {
+                var width = 0;
+
+                $(child).each(function(i, e){
+                    width += $(e).width() * 1 + add;
+                });
+                $(ele).width(width);
+            }
+
+            autoWidth('.pl-m-list', '.pl-m-list li', 32);
+
+            $('.filter_view').on('click touch', function(){
+                $(this).toggleClass('active');
+            })
+            $('.filter_select').on('click touch', function() {
+                $(this).toggleClass('active');
+            })
+            $('.colorLst li').on('click touch', function() {
+                $(this).toggleClass('active');
+            })
+            $('.filterKey li').on('click touch', function(){
+                $(this).toggleClass('active');
+            })
+            $('.article_content .cateLst li').on('click touch', function(){
+                $(this).toggleClass('on');
+            })
+            $('.keyDel').on('click touch', function(){
+                $(this).parent().hide();
+            })
+            $('.second.keyLst li').on('click touch', function(){
+                $('#tempLayer1').css("display","block");
+            })
+            $('.second.keyLst li').on('click touch', function(){
+                $(window).css("overflow-y","hidden");
+            })
+            
+            $('.cate_btn_del').on('click touch', function(){
+                $(this).siblings().children().children('.cateDetail').hide();
+                $('.cate_btn_del').hide();
+        }); 
+         // 모바일 앱 input focus 후 키보드 노출 코드
+         (function () {
+            function autoWidth(ele, child, add) {
+                var width = 0;
+
+                $(child).each(function(i, e){
+                    width += $(e).width() * 1 + add;
+                });
+                $(ele).width(width);
+                }
+                // autoWidth('.ms-list', '.ms-list li', 10);
+                autoWidth('.swipe-tabs', '.swipe-tabs li', 15);
+                autoWidth('.ss-list.first', '.ss-list.first li', 15);
+                autoWidth('.ss-list.second', '.ss-list.second li', 15);
+                autoWidth('.sbs-list', '.sbs-list li', 15);
+                function fn_focus()
+                {
+                document.getElementById("txtOn").focus();
+                }
+            })(jQuery);    
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".up").click(function(){
+                    $(this).toggleClass("down");
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                // tab
+                    var tabBtn = $("#tab_lst > ul > li");
+                    var tabCont = $("#tab-cont > div");
+                    tabCont.hide().eq(0).show();
+                    tabBtn.click(function(){
+                    var target = $(this);
+                    var index = target.index();
+                    
+                    tabBtn.removeClass("active");
+                
+                    target.addClass("active");
+                   
+                    tabCont.css("display","none");
+                    tabCont.eq(index).css("display","block");
+                    })
+
+                    var tabBtn1 = $(".brnd .sub_tab > li");
+                    var cateCont = $(".cateCont");
+
+                    tabBtn1.click(function(){
+                    var target = $(this);
+                    var index = target.index();
+
+                    tabBtn1.removeClass("active");
+                    target.addClass("active");
+
+                    cateCont.css("display","none");
+                    cateCont.eq(index).css("display","block");
+                });
+            });     
+            (function(){
+                function toggleAcco(ele, content) {
+                    $(ele).on('click touch', function () {
+                        $(this).toggleClass('active');
+                        $(this).siblings(content).toggle();
+                    });
+                }
+                toggleAcco('.article_title', '.article_content');
+                $('.border_tab-list li').each(function(i){
+                    $(this).click(function(){
+                        $(this).addClass('active').siblings().removeClass('active');
+                        $('.border_tab-cont > div').eq(i).addClass('active').siblings().removeClass('active');
+                        return false;
+                    });
+                });
+            })(jQuery);
+
+        </script>
+        <script>
+            $(function() {
+                    $('.ico.proLst').click(function() {
+                        var el = $(this);
+                        var ul = el.children('.submenu');
+                        ul.css('display', 'none').stop().fadeIn(200, function() { ul.removeAttr('style'); })
+                    }, function() {
+                        var el = $(this);
+                        var ul = el.children('ul.submenu');
+                        ul.css('display', 'block').stop().fadeOut(200, function() { ul.removeAttr('style'); })
+                    })
+                })
+        </script>
+        
+    </body>
+</html>
