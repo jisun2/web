@@ -651,7 +651,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   #header .ss-box.wd {width:90%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
   #header .ss-text-box {width:82%;}
-  .product-item .pli-thumb img {position: relative; min-height: 360px; max-height:360px;}
+  .product-item .pli-thumb img {position: relative; min-width: 360px; max-height:360px;}
   .main_search-wrap .ms-list {width:100%}
   .ms-list.active ul {clear:both;display:block;left:25%;background-color: #fff;}
 }
