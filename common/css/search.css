@@ -304,7 +304,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .sub_set .sltType1 {display:inline-block; position:absolute; width:65px; top:10px; right:5px; font-size:14px; color:#555}
 .sub_set .sltType1::before  {content: ''; display: block; position: absolute; top: 4px; right: 0; 
 background-position:-87px -50px}
-.sub_set .sltType1 select {display:flex; float:left; justify-content:center; align-items:center; padding:10px; width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
+.sub_set .sltType1 select {padding:0px; line-height:32px;  width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
 .sub_set .sltType1 option {margin:12px; font-size:14px; color:#555}
 .sub_set .filterKey.ss-list, .sub_set .filterKey.ss-list li {margin-top:0;}
 .sltType1 .sel_arrow {top: 16px;}
@@ -695,7 +695,7 @@ background-position:-87px -50px}
 }
 @media screen and (min-width:100px) and (max-width:570px) {
   .pli-heart, .pli-heart.on {width:20px;height:17px;}
-  .sltType1 .sel_arrow {top:14.5px}
+  .sltType1 .sel_arrow {top:15px}
 }
 @media screen and (min-width:980px) {
   .slide-wrap {padding-top: 20px}
