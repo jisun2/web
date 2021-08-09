@@ -300,11 +300,11 @@ input:-internal-autofill-selected {background-color:#fff;}
 .plc_fc-filter {height:44px;}
 .plc_fc-filter .filter_view {display: inline-block; position:relative; text-align: left;}
 .plc_fc-filter .filter_view select {background-color: transparent; margin-left:25px;height: 44px; font-size: 14px; color: #555;}
-.sub_set {clear:both; vertical-align: top; padding: 14px 15px; height:60px;}
-.sub_set .sltType1 {float:right; width:70px; font-size:14px; color:#555}
-.sub_set .sltType1 select {display:flex; justify-content:center; align-items:center; width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
+.sub_set {clear:both; position:relative; vertical-align: top; padding: 14px 15px; height:60px;}
+.sub_set .sltType1 {position:absolute; width:70px; top:10px; right:5px; font-size:14px; color:#555}
+.sub_set .sltType1 select {display:flex; justify-content:center; align-items:center; padding:10px; width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
 .sub_set .sltType1 option {margin:12px; font-size:14px; color:#555}
-.sub_set .filterKey.ss-list, .sub_set .filterKey.ss-list li {float:left; margin-top:0;}
+.sub_set .filterKey.ss-list, .sub_set .filterKey.ss-list li {margin-top:0;}
 
 .ico.upDownArr {display: inline-block; position:absolute; top:15.5px; left:15px; content: '';}
 .upDownArr {width:15px;height: 15px; background-size: 300px 300px; background-position:0px -142px; background-repeat: no-repeat;}
@@ -692,7 +692,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 }
 @media screen and (min-width:100px) and (max-width:570px) {
   .pli-heart, .pli-heart.on {width:20px;height:17px;}
-  .sltType1 .sel_arrow {top:15px}
+  .sltType1 .sel_arrow {top:19.5px}
 }
 @media screen and (min-width:980px) {
   .slide-wrap {padding-top: 20px}
