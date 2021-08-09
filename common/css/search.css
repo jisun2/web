@@ -673,7 +673,6 @@ input:-internal-autofill-selected {background-color:#fff;}
   #wrap.wd720 {position:relative}
   .filterWrap {width:720px !important;}
   .filterWrap .wd720 {width:720px;margin:0 auto; height:auto;}
-  /* .sltType1 .sel_arrow {top:22px} */
 }
 @media screen and (min-width:321px) and (max-width:600px) {
   #header .ss-box.wd {width:80%;}
@@ -693,6 +692,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 }
 @media screen and (min-width:100px) and (max-width:570px) {
   .pli-heart, .pli-heart.on {width:20px;height:17px;}
+  .sltType1 .sel_arrow {top:21px}
 }
 @media screen and (min-width:980px) {
   .slide-wrap {padding-top: 20px}
