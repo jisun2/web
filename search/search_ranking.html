@@ -70,8 +70,8 @@
                      <!-- //랭킹에 상단 탭 -->
                     <!-- 탭 상품 영역 -->
                     <div class="ranking_tab_pro cateCont">
-                        <div id="tab_lst" class="swipeWrap overflow_x">
-                            <ul class="swipe-tabs">
+                        <div class="swipeWrap overflow_x">
+                            <ul id="tab_lst" class="swipe-tabs slick-track">
                                 <li class="swipe-tab active">
                                     <a href="#none">전체</a>
                                 </li>
@@ -94,12 +94,14 @@
                                 <li><a href="#none" class="ss-item">무료쿠폰</a></li>
                             </ul>
                             <div class="sltType1">
-                                <select title="선택">
-                                    <option value="일간">일간</option>
-                                    <option value="주간">주간</option>
-                                    <option value="월간">월간</option>
-                                </select>
-                                <i class="ico sel_arrow"></i>
+                                <div class="pos_rel">
+                                    <select title="일간 주간 월간 선택">
+                                        <option value="일간">일간</option>
+                                        <option value="주간">주간</option>
+                                        <option value="월간">월간</option>
+                                    </select>
+                                    <i class="ico sel_arrow"></i>
+                                </div>
                             </div>
                         </div>
                         <!-- //탭 상품 상단 -->
@@ -1216,8 +1218,8 @@
 
         $(document).ready(function(){
             // tab
-                var tabBtn = $("#tab_lst > ul > li");
-                var tabCont = $("#tab-cont > div");
+                var tabBtn = $("#tab_lst > li");
+                var tabCont = $("#tab-cont .slick-track");
                 tabCont.hide().eq(0).show();
                 tabBtn.click(function(){
                 var target = $(this);

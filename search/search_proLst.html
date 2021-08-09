@@ -983,7 +983,7 @@
         <script>
             $(document).ready(function(){
                 $(".up").click(function(){
-                    $(this).toggleClass("down");
+                    $(this).toggleClass("arrowDown");
                 });
             });
         </script>
@@ -1036,19 +1036,6 @@
                 });
             })(jQuery);
 
-        </script>
-        <script>
-            $(function() {
-                    $('.ico.proLst').click(function() {
-                        var el = $(this);
-                        var ul = el.children('.submenu');
-                        ul.css('display', 'none').stop().fadeIn(200, function() { ul.removeAttr('style'); })
-                    }, function() {
-                        var el = $(this);
-                        var ul = el.children('ul.submenu');
-                        ul.css('display', 'block').stop().fadeOut(200, function() { ul.removeAttr('style'); })
-                    })
-                })
         </script>
         
     </body>
