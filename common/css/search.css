@@ -380,7 +380,7 @@ background-position:-87px -50px} */
 .pos_rel .search {position:absolute; top:10px; right:10px;}
 .ss-banner {padding: 25px 20px 20px 20px;}
 .searchWrap .ss-banner a img {min-width:100%; max-height:128.5px}
-.searchWrap {position:relative;}
+.searchWrap {position:relative; overflow-y: hidden;}
 .searchKeyWrap {z-index:100; padding: 0 20px; position:absolute; top:0px; width:100%; background-color:#fff;}
 .searchWrap label {width:100%}
 .searchWrap.pd {padding: 0 20px;}
@@ -393,7 +393,7 @@ background-position:-87px -50px} */
 .searchWrap .ss-list::after {content: ''; display: block; clear: both}
 .searchWrap .ss-list li { position:relative; float: left; margin-right:5px;}
 .ss-list.keyLst {padding: 9px 0 9px 50px;}
-.ss-list.keyLst.update {padding: 9px 0 9px 0px; border-top:1px solid #d0d0d0}
+.ss-list.keyLst.update {padding: 9px 0 9px 15px; border-top:1px solid #d0d0d0}
 /* .ss-list.second.keyLst {width:1100px !important} */
 .ss-list.keyLst1 {padding: 0 0 12px 20px;}
 .ss-list.keyLst li .on, .ss-list.keyLst1 li .on {color:#fff; border: none; background-color:#3067cc;}
@@ -727,20 +727,20 @@ background-position:-87px -50px} */
 #cartCnt.cart_num {min-width: 21px; line-height:18px;}
 #container .header_menu {display:none}
 #container .header_menu { z-index:21; position:absolute; top:0px; display:block; width:100%; margin:0 auto; 
-  border-radius: 0%; border-radius: 0 0 20px 20px; background-color:#fff; box-shadow: 0 2.5px 7.5px 0 rgba(0, 0, 0, 0.1);}
+  border-radius: 0%; border-radius: 0 0 20px 20px; background-color:#fff; box-shadow: 0 8px 8px 0 rgb(0 0 0 / 10%)}
 #container .header_menu .menu_lst {float:left; padding:0 30px 8px 55px; width:50%;}
 #container .header_menu .menu_lst li {float:left; padding:12px 0; width:100%; height:41px; font-size: 17px; font-weight:bold; color:#000} 
 
 .brd_main, .brd_main .dimWrap, .brd_main img {margin:0; padding:0; vertical-align:top;}
 .brd_main {display:inline-block;position:relative; width:100%; height:auto; max-height:100vh;}
 .brd_main img {display:block; max-width:100%; max-height:720px;}
-.brd_main .dimWrap {display:block; position:relative; width:100%; height:auto; min-height:184px; overflow: hidden;}
+.brd_main .dimWrap {display:block; position:relative; width:100%; height:auto; min-height:182px; overflow: hidden;}
 .brd_main .dimWrap:after {z-index: 5; content:''; display:block; position:absolute; top:0; width:100%; height:100vh; background-color:#000; opacity: .4;}
 /* .brd_main .dimWrap img::after {background-color:#000;opacity: .4;} */
 /* .brd_main .txt_box {z-index:13;display:block; min-height:184px; width:100%; padding:30px 20px; 
   position:absolute; bottom:0; -webkit-transform:translate(0%,-50%);-ms-transform:translate(0%,-50%);-o-transform:translate(0%,-50%);transform:translate(0%,-50%);
   margin:0 auto; text-align: center; color:#fff;} */
-.brd_main .txt_box {z-index:13;display:block; min-height:184px; width:100%; padding:30px 20px; 
+.brd_main .txt_box {z-index:13;display:block; min-height:106px; width:100%; padding:30px 20px; 
     position:absolute; top:50%;-ms-transform: translateY(-50%);
     transform: translateY(-50%); margin:0 auto; text-align: center; color:#fff;}
 .brd_main .brd_en {display:block; font-size:34px; font-weight: 600;}
@@ -788,7 +788,9 @@ background-position:-87px -50px} */
 .brd_item ul {position:relative; overflow:hidden;}
 .brd_item ul li {float:left; margin-right:5px; vertical-align:top; }
 .brd_item ul li a {display:block; width:72px; height:72px;}
+.brd_item ul li a:after {z-index: 5; content: ''; clear:both; display: block; position: absolute; top: 0; width: 72px; height: 72px; background-color: #000; opacity: 0.05; border-radius: 10px;}
 .brd_item ul li a img {width:100%; min-height:72px; border-radius:10px;}
+
 
 .btnMore a {padding:10.5px 0; margin:15px 0 50px 0; font-size:16px; color:#333}
 
