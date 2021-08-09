@@ -301,7 +301,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .plc_fc-filter .filter_view {display: inline-block; position:relative; text-align: left;}
 .plc_fc-filter .filter_view select {background-color: transparent; margin-left:25px;height: 44px; font-size: 14px; color: #555;}
 .sub_set {clear:both; position:relative; vertical-align: top; padding: 14px 15px; height:60px;}
-.sub_set .sltType1 {float:left; position:absolute; width:65px; top:10px; right:5px; font-size:14px; color:#555}
+.sub_set .sltType1 {display:inline-block; position:absolute; width:65px; top:10px; right:5px; font-size:14px; color:#555}
 .sub_set .sltType1::before  {content: ''; display: block; position: absolute; top: 4px; right: 0; 
 background-position:-87px -50px}
 .sub_set .sltType1 select {display:flex; float:left; justify-content:center; align-items:center; padding:10px; width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
