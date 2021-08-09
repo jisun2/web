@@ -677,7 +677,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 @media screen and (min-width:321px) and (max-width:600px) {
   #header .ss-box.wd {width:80%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
-  .product-item .pli-thumb img { min: width 155px !important;  min-height:155px !important}
+  .product-item .pli-thumb img { min-width:155px !important;  min-height:155px !important}
 }
 @media screen and (min-width:10px) and (max-width:320px) {
   #header .ss-text-box {width: 75%;}
@@ -692,7 +692,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 }
 @media screen and (min-width:100px) and (max-width:570px) {
   .pli-heart, .pli-heart.on {width:20px;height:17px;}
-  .sltType1 .sel_arrow {top:21px}
+  .sltType1 .sel_arrow {top:19.5px}
 }
 @media screen and (min-width:980px) {
   .slide-wrap {padding-top: 20px}
