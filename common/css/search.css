@@ -500,7 +500,7 @@ background-position:-87px -50px}
 .slick-title, .slick-caption {text-align: center;}
 .filter_contWrap {width:100%; /* height:100vh; */}
 .filterKey.ss-list li {margin-top:10px;}
-.filterKey.ss-list li.active a {background: #3067cc; color:#fff}
+/* .filterKey.ss-list li.active a {background: #3067cc; color:#fff} */
 .filter_price {font-size:19px; font-weight:bold; color:#333;}
 /* 탭 */
 .tab {width:100% !important; height:auto; list-style:none; font-size:16px; border:0 none;background-color:#fff;}
@@ -518,7 +518,7 @@ background-position:-87px -50px}
 /* 랭킹 탭 */
 .sub_tab.ss-list {}
 .sub_tab.ss-list li {float:left;}
-.sub_tab.ss-list li.active a {background: #3067cc; color:#fff}
+.sub_tab.ss-list li.active a {background: #3067cc; border:1px solid #3067cc; color:#fff}
  /* 셀렉트 박스 */
 .sltType {display:flex; justify-content:center; align-items:center; float:left; position:relative; width:100%;}
 .sltType select {height:40px; border:1px solid #e5e5e5;}
@@ -695,7 +695,7 @@ background-position:-87px -50px}
 }
 @media screen and (min-width:100px) and (max-width:570px) {
   .pli-heart, .pli-heart.on {width:20px;height:17px;}
-  .sltType1 .sel_arrow {top:9.5px}
+  .sltType1 .sel_arrow {top:14.5px}
 }
 @media screen and (min-width:980px) {
   .slide-wrap {padding-top: 20px}
