@@ -301,10 +301,10 @@ input:-internal-autofill-selected {background-color:#fff;}
 .plc_fc-filter .filter_view {display: inline-block; position:relative; text-align: left;}
 .plc_fc-filter .filter_view select {background-color: transparent; margin-left:25px;height: 44px; font-size: 14px; color: #555;}
 .sub_set {clear:both; position:relative; vertical-align: top; padding: 14px 15px; height:60px;}
-.sub_set .sltType1 {display:inline-block; position:absolute; width:60px; top:10px; right:5px; font-size:14px; color:#555}
+.sub_set .sltType1 {display:inline-block; position:absolute; width:65px; top:10px; right:5px; font-size:14px; color:#555}
 .sub_set .sltType1::before  {content: ''; display: block; position: absolute; top: 4px; right: 0; 
 background-position:-87px -50px}
-.sub_set .sltType1 select {padding:0px; line-height:32px;  width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
+.sub_set .sltType1 select {padding:0 10px; line-height:32px;  width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
 .sub_set .sltType1 option {margin:12px; font-size:14px; color:#555}
 .sub_set .filterKey.ss-list, .sub_set .filterKey.ss-list li {margin-top:0;}
 .sltType1 .sel_arrow {top:12px;}
@@ -649,12 +649,12 @@ background-position:-87px -50px}
 @media screen and (min-width:720px) and (max-width:3000px) {
   ::-webkit-scrollbar-thumb:hover { background:rgb(151, 151, 151)} 
   ::-webkit-scrollbar-thumb:active {background: rgb(151, 151, 151)} 
+  .product-item .pli-thumb img {position: relative; min-width:180px; min-height:180px;}
 }
 @media screen and (max-width:720px) {
   #header .ss-box.wd {width:90%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
   #header .ss-text-box {width:82%;}
-  .product-item .pli-thumb img {position: relative; min-width:180px; min-height:180px;}
   .main_search-wrap .ms-list {width:100%}
   .ms-list.active ul {clear:both;display:block;left:25%;background-color: #fff;}
 }
