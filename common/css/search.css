@@ -302,7 +302,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .plc_fc-filter .filter_view select {background-color: transparent; margin-left:25px;height: 44px; font-size: 14px; color: #555;}
 .sub_set {clear:both; vertical-align: top; padding: 14px 15px; height:60px;}
 .sub_set .sltType1 {float:right; width:58px; font-size:14px; color:#555}
-.sub_set .sltType1 select {display:flex; justify-content:center; align-items:center; width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
+.sub_set .sltType1 select {display:flex; padding:8px 10px; justify-content:center; align-items:center; width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
 .sub_set .sltType1 option {margin:12px; font-size:14px; color:#555}
 .sub_set .filterKey.ss-list, .sub_set .filterKey.ss-list li {float:left; margin-top:0;}
 
@@ -390,7 +390,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .searchWrap .ss-list::after {content: ''; display: block; clear: both}
 .searchWrap .ss-list li { position:relative; float: left; margin-right:5px;}
 .ss-list.keyLst {padding: 9px 0 9px 50px;}
-.ss-list.keyLst.update {padding: 9px 0 9px 0px; border-top:1px solid #d0d0d0}
+.ss-list.keyLst.update {padding: 9px 15px; border-top:1px solid #d0d0d0}
 /* .ss-list.second.keyLst {width:1100px !important} */
 .ss-list.keyLst1 {padding: 0 0 12px 20px;}
 .ss-list.keyLst li .on, .ss-list.keyLst1 li .on {color:#fff; border: none; background-color:#3067cc;}
@@ -523,7 +523,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 /* .sltType1 {position:absolute; width:100px; top:-12px; right:15px} */
 .sltType1 select {display:flex; justify-content:center; align-items:center; padding:10px; width:100%; font-size:13px; color:#ababab; border:1px solid #fff !important}
 .sltType1 option {margin:12px; font-size:13px; color:#888}
-.sltType1 .sel_arrow {right:0}
+.sltType1 .sel_arrow {top:13px; right:0}
 .sltType select, .sltType option {font-size:13px; font-family:'proxima-nova'}
 .last_btn_wrap {z-index:5; position:sticky; padding:15px 20px 44px; max-width:720px; border-top:1px solid #d0d0d0; bottom:0; font-size:17px; background:#fff; box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .last_btn_wrap button {border-radius:3px}
