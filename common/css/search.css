@@ -820,8 +820,8 @@ background-position:-87px -50px}
 } */
 
 .arrowDown {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
 }
 
 .pages .link {
