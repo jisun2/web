@@ -660,7 +660,7 @@ background-position:-87px -50px}
 @media screen and (min-width:720px) and (max-width:3000px) {
   ::-webkit-scrollbar-thumb:hover { background:rgb(151, 151, 151)} 
   ::-webkit-scrollbar-thumb:active {background: rgb(151, 151, 151)} 
-  .product-item .pli-thumb img {position: relative; min-width:360px; min-height:360px;}
+  .product-item .pli-thumb img {position: relative; width:360px; height:360px;}
 }
 @media screen and (max-width:720px) {
   #header .ss-box.wd {width:90%;}
