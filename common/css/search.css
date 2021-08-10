@@ -405,7 +405,11 @@ background-position:-87px -50px}
 .searchWrap .ss-list .ss-item { height: 32px; padding: 0 12px; color: #555; font-size: 13px; line-height: 16px; border: 1px solid #e5e5e5; border-radius: 30px; background-color: #fff;}
 .searchWrap .ss-list a.ss-item {display: inline-block; vertical-align: middle; line-height: 31.5px;}
 .searchWrap .ss-list a.ss-item span {line-height: 32px !important}
-.searchWrap .ss-list a.ss-item button.keyDel {height:21px;-webkit-height:21px !important;}
+.searchWrap .ss-list a.ss-item button.keyDel {height:10px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* webkit specific CSS */
+  .searchWrap .ss-list a.ss-item button.keyDel {margin-left:5px; height:19px}
+}
 .searchWrap .ss-item .arrowDwn {display: inline-block; margin-top: 2px; width: 14px; height: 7px; background-position: -86px -69px;}
 .searchWrap .ss-list .ss-item.gray {border: 1px solid #f5f5f5; background-color: #f5f5f5}
 .searchWrap .ss-sub {line-height: 1; color: #ababab; font-size: 12px}
@@ -479,6 +483,7 @@ background-position:-87px -50px}
 /* -------------------------------------- 검색 필터 -------------------------------------- */
 
 /* Slider */
+#tempLayer1 {display:none}
 .filterWrap {width:100%; display: inline-block; height:80%; position:absolute; left:50%; transform:translateX(-50%); max-height:450px; bottom:0;}
 .filterWrap .bg_white {width:100%; margin:0 auto; height:100vh; background-color:#fff;}
 .filterWrap .filter_key {z-index: 5; padding-top:12px; position:absolute; bottom:0; width:100%; display: inline-block; border-top: 1px solid #d0d0d0; box-shadow: 0px -5px 15px 0px rgb(0 0 0 / 5%); background-color: #fff;}
@@ -500,7 +505,7 @@ background-position:-87px -50px}
 .slick-title, .slick-caption {text-align: center;}
 .filter_contWrap {width:100%; /* height:100vh; */}
 .filterKey.ss-list li {margin-top:10px;}
-/* .filterKey.ss-list li.active a {background: #3067cc; color:#fff} */
+.filterKey.ss-list li.active a {background: #3067cc; border:1px solid #3067cc; color:#fff}
 .filter_price {font-size:19px; font-weight:bold; color:#333;}
 /* 탭 */
 .tab {width:100% !important; height:auto; list-style:none; font-size:16px; border:0 none;background-color:#fff;}
