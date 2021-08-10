@@ -271,7 +271,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .tooltip .txt {width:100%; line-height:20px; color:#fff; text-align:left; font-size:12px; font-weight:400;}
 .tooltip .txt:before {content:''; position:absolute;bottom:100%;left:80px;border-width:7px;border-style:solid;border-color: transparent transparent #3067cc transparent;}
 /* 헤더 툴팁 */
-.info.tooltip {z-index:20; padding:12px; position:absolute; top:45px; left:14px; width:245px; max-width:245px; height:180px; height: 60px; border-radius:5px;}
+.info.tooltip {z-index:22; padding:12px; position:absolute; top:45px; left:14px; width:245px; max-width:245px; height:180px; height: 60px; border-radius:5px;}
 .btn_del {float:right;font-size:12px; line-height:22px; color:#fff;}
 .ss_fitr .overflow_x {background-color: #f9f9f9;}
 .border_gray_right-list { margin-bottom: 20px}
@@ -301,7 +301,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .plc_fc-filter .filter_view {display: inline-block; position:relative; text-align: left;}
 .plc_fc-filter .filter_view select {background-color: transparent; margin-left:25px;height: 44px; font-size: 14px; color: #555;}
 .sub_set {clear:both; position:relative; vertical-align: top; padding: 14px 15px; height:60px;}
-.sub_set .sltType1 {display:inline-block; position:absolute; width:65px; top:10px; right:5px; font-size:14px; color:#555}
+.sub_set .sltType1 {display:inline-block; position:absolute; width:68px; top:10px; right:5px; font-size:14px; color:#555}
 .sub_set .sltType1::before  {content: ''; display: block; position: absolute; top: 4px; right: 0; 
 background-position:-87px -50px}
 .sub_set .sltType1 select {padding:0 10px; line-height:37px;  width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
