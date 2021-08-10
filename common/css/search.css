@@ -127,7 +127,7 @@ textarea {font-family: proxima-nova,'Noto Sans KR'!important; font-size: 16px}
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
 }
-a:focus, input:focus, textarea:focus, select:focus {outline:none}
+/* a:focus, input:focus, textarea:focus, select:focus {outline:none} */
 .overflow_x.mgTb.pos_rel {padding-left:50px;}
 input:-internal-autofill-selected {background-color:#fff;}
 .ss-list.first {position:relative;}
@@ -788,6 +788,7 @@ background-position:-87px -50px}
 .ranking_tab_pro .swipeWrap .swipe-tabs li {width:auto !important}
 /* 랭킹 브랜드 */
 .ranking_tab_brd.cateCont {display:none}
+.brd_list-wrap .brLine {margin-bottom:25px}
 .brd_list-wrap .box_left {width:80%}
 .brd_list-wrap .brd_ranking {clear:both; width:100%; height:58px;}
 .brd_list-wrap .brd_ranking .box_left {padding:12px 0}
@@ -821,6 +822,34 @@ background-position:-87px -50px}
 .arrowDown {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+}
+
+.pages .link {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+}
+.pages em.link {
+  font-weight: 500;
+  border-width: 2px 0 2px;
+  border-top-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pages .last {
+  position: relative;
+  padding-left: 40px;
+}
+.pages .last:before {
+  content: "...";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
 }
 /* 
 .menu {
