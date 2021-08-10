@@ -26,7 +26,8 @@
                             의류
                         </span>
                         <div class="btn_area flt_le">
-                            <a href="#"><i class="ico proLst up" onclick="btnFunction(this)"><span class="blind">카테고리 더보기</span></i></a>
+                            <!-- onclick="btnFunction(this)" -->
+                            <a href="#" ><i class="ico proLst up"><span class="blind">카테고리 더보기</span></i></a>
                         </div>
                     </div>
                     
@@ -42,7 +43,7 @@
            
             <div id="container">
                 <div class="searchWrap">
-                    <div class="header_menu">
+                    <div class="header_menu" style="display:none">
                         <ul class="menu_lst">
                             <li><a href="#none">의류</a></li>
                             <li><a href="#none">라이프</a></li>
@@ -831,17 +832,21 @@
         </div>
         <script src="../common/lib/slick.min.js"></script>
         <script>
-            function myFunction(e) {
-                e.classList.toggle("on");
-                    $('.toast').fadeIn().delay(1800);
-                    $('.toast').fadeOut();
-                    $('.pli-heart').click(function(){
-                        $('.toast.on').css('display' ,'block');
-                    })
-                    $('.pli-heart').click(function(){
-                        $('.toast').css('display' ,'none');
-                    })
-                }
+            // function btnFunction(e) {
+            //     e.classList.toggle("active");    
+            //     $('.header_menu').slideDown(500);
+                  
+            //         })
+            //     }
+            
+              // Dropdown Menu Fade    
+            //   $(document).ready(function(){
+            //     $(".ico.proLst").click(
+            //         function() { $('.header_menu').fadeIn(500);
+            //         },
+            //         function() { $('.header_menu').fadeOut(500);
+            //     });
+            // });
                 
                 $(".tooltip").slideDown(500); 
                 $( this ).css( 'background-color', '#ffcdd2' );
@@ -1034,8 +1039,13 @@
                         return false;
                     });
                 });
-            })(jQuery);
 
+            $(function() {
+                $(".ico.proLst").on("click", function(){
+                    $('.header_menu').slideToggle();
+                })    
+            })
+            })(jQuery);
         </script>
         
     </body>
