@@ -792,7 +792,7 @@ background-position:-87px -50px}
 .brd_list-wrap .brLine {margin-bottom:25px}
 .brd_list-wrap .box_left {width:80%}
 .brd_list-wrap .brd_ranking {clear:both; width:100%; height:58px;}
-.brd_list-wrap .brd_ranking .box_left {padding:12px 0}
+.brd_list-wrap .brd_ranking .box_left {padding-bottom:12px}
 .brd_list-wrap .brd_ranking .upNum {float:right; padding-top:15px}
 .brd_list-wrap .brd_ranking .downNum {float:right; padding-top:15px}
 /* .brd_ranking .rankNum {float:left} */
