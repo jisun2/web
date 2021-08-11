@@ -26,7 +26,6 @@
                             의류
                         </span>
                         <div class="btn_area flt_le">
-                            <!-- onclick="btnFunction(this)" -->
                             <a href="#" ><i class="ico proLst up"><span class="blind">카테고리 더보기</span></i></a>
                         </div>
                     </div>
@@ -54,31 +53,6 @@
                             <li><a href="#none">잡화</a></li>
                             <li><a href="#none">셀렉샵</a></li>
                         </ul>
-
-                        <!-- <ul class="menu">
-                            <li><a href="javascript:;">Home</a></li>
-                            <li>
-                              <a href="javascript:;">About</a>
-                              <ul class="submenu">
-                                <li><a href="javascript:;">Sub-item</a></li>
-                                <li><a href="javascript:;">Sub-item</a></li>
-                                <li><a href="javascript:;">Sub-item</a></li>
-                                <li><a href="javascript:;">Sub-item</a></li>
-                                <li><a href="javascript:;">Sub-item</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="javascript:;">Services</a>
-                              <ul class="submenu">
-                                <li><a href="javascript:;">Sub-item</a></li>
-                                <li><a href="javascript:;">Sub-item</a></li>
-                                <li><a href="javascript:;">Sub-item</a></li>
-                                <li><a href="javascript:;">Sub-item</a></li>
-                                <li><a href="javascript:;">Sub-item</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="javascript:;">Contact</a></li>
-                          </ul> -->
                     </div>
                   
                     <!-- 검색 필터 키워드 -->
@@ -96,7 +70,6 @@
                                 <li><a href="#none" class="ss-item">카테고리</a></li>
                             </ul>
                         </div>
-
                     </div>
                     <!-- //검색 필터 키워드 -->
                     <!-- 상품 리스트  -->
@@ -1386,6 +1359,7 @@
             </div> 
         </div>
         <script src="../common/lib/slick.min.js"></script>
+        <!-- 추가된 js -->
         <script>   
             (function(){
                 function toggleAcco(ele, content) {
@@ -1394,22 +1368,18 @@
                         $(this).siblings(content).toggle();
                     });
                 }
-                toggleAcco('.article_title', '.article_content');
-                $('.border_tab-list li').each(function(i){
-                    $(this).click(function(){
-                        $(this).addClass('active').siblings().removeClass('active');
-                        $('.border_tab-cont > div').eq(i).addClass('active').siblings().removeClass('active');
-                        return false;
-                    });
-                });
-
+            //상단 카테고리 메뉴    
             $(function() {
                 $(".ico.proLst").on("click", function(){
                     $('.header_menu').slideToggle();
                 })    
             })
+            $(".up").click(function(){
+                    $(this).toggleClass("arrowDown");
+                });
             })(jQuery);
         </script>
+         <!-- // 추가된 js -->
         <script>
             function myFunction(e) {
                 e.classList.toggle("on");
@@ -1422,45 +1392,7 @@
                         $('.toast').css('display' ,'none');
                     })
                 }
-                $(".tooltip").slideDown(500); 
-                $( this ).css( 'background-color', '#ffcdd2' );
-                $( '.tooltip' ).fadeIn(100);    
-                $( '.btn_del' ).click(function() {
-                $( '.tooltip' ).hide();                
-                $( '.tooltip' ).fadeOut(100);     
-            })  
-
-                // .ss-text 작성 시 x버튼 출력
-            $('.ss-text').keyup(function () {
-                var valLeng = $(this).val().length;
-                if (valLeng > 0) {
-                    $(this).siblings('.search_clear-btn').show().css('display', 'block');
-                    } else {
-                    $(this).siblings('.search_clear-btn').hide();
-                }
-                });
-
-            $('.search_clear-btn').on('click touch', function(){
-                $(this).siblings('.ss-text').val('');
-                $(this).hide();
-            });
-            $('.filter_select').on('click touch', function(){
-                $(this).toggleClass('active');
-            })
-
-            $('.ss-item').on('click touch', function(){
-                $( '.filterWrap' ).removeClass('hide'); 
-            })
-            $('.tabTouch').on('click touch', function(){
-                $('.dim_layer').hide();
-            })
-            $('.dim_Touch').on('click touch', function(){
-                $('#tempLayer1').hide();
-            })
-            $('.filter_btn').on('click touch', function(){
-                $('.ss-list.second.keyLst1').hide();
-            })
-                //옵션 선택
+            //옵션 선택
             function acAcco(ele, content) {
                 $(ele).on('click touch', function(){
                     $(this).toggleClass('active');
@@ -1485,19 +1417,16 @@
             acAcco('.pln-title', '.pln-subnav');
             optionAcco('.option-acco .has-acco', '.option-acco .option-content');
             toggleAcco('.ov-title', '.option-detail');
-            
             // 썸네일 height 맞춤
             function thumbHeightAuto() {
                 var thisWidth = $('.pli-thumb img').width();
                 $('.pli-thumb img').height(thisWidth);
             }
-
+            //이미지 1:1비율
             thumbHeightAuto();
-
             $(window).resize(function(){
                 thumbHeightAuto();
             });
-
             function autoWidth(ele, child, add) {
                 var width = 0;
 
@@ -1507,6 +1436,27 @@
                 $(ele).width(width);
             }
 
+            //필터  
+            $('.search_clear-btn').on('click touch', function(){
+                $(this).siblings('.ss-text').val('');
+                $(this).hide();
+            });
+            $('.filter_select').on('click touch', function(){
+                $(this).toggleClass('active');
+            })
+
+            $('.ss-item').on('click touch', function(){
+                $( '.filterWrap' ).removeClass('hide'); 
+            })
+            $('.tabTouch').on('click touch', function(){
+                $('.dim_layer').hide();
+            })
+            $('.dim_Touch').on('click touch', function(){
+                $('#tempLayer1').hide();
+            })
+            $('.filter_btn').on('click touch', function(){
+                $('.ss-list.second.keyLst1').hide();
+            })
             autoWidth('.pl-m-list', '.pl-m-list li', 32);
 
             $('.filter_view').on('click touch', function(){
@@ -1537,8 +1487,7 @@
             $('.cate_btn_del').on('click touch', function(){
                 $(this).siblings().children().children('.cateDetail').hide();
                 $('.cate_btn_del').hide();
-        }); 
-            // 모바일 앱 input focus 후 키보드 노출 코드
+            }); 
             (function () {
             function autoWidth(ele, child, add) {
                 var width = 0;
@@ -1549,46 +1498,44 @@
                 $(ele).width(width);
                 }
                 // autoWidth('.ms-list', '.ms-list li', 10);
-                autoWidth('.swipe-tabs', '.swipe-tabs li', 15);
-                autoWidth('.ss-list.first', '.ss-list.first li', 15);
+                autoWidth('.swipe-tabs', '.swipe-tabs li', 30);
+                autoWidth('.ss-list.first', '.ss-list.first li', 30);
                 autoWidth('.ss-list.second', '.ss-list.second li', 30);
-                autoWidth('.sbs-list', '.sbs-list li', 15);
+                autoWidth('.sbs-list', '.sbs-list li', 30);
                 function fn_focus()
                 {
                 document.getElementById("txtOn").focus();
                 }
             })(jQuery);    
-        </script>
-        <script>
             $(document).ready(function(){
                 // tab
-                    var tabBtn = $("#tab_lst > ul > li");
-                    var tabCont = $("#tab-cont > div");
-                    tabCont.hide().eq(0).show();
-                    tabBtn.click(function(){
-                    var target = $(this);
-                    var index = target.index();
-                    
-                    tabBtn.removeClass("active");
+                var tabBtn = $("#tab_lst > ul > li");
+                var tabCont = $("#tab-cont > div");
+                tabCont.hide().eq(0).show();
+                tabBtn.click(function(){
+                var target = $(this);
+                var index = target.index();
                 
-                    target.addClass("active");
-                    
-                    tabCont.css("display","none");
-                    tabCont.eq(index).css("display","block");
-                    })
-                    
-                    var tabBtn1 = $(".brnd .sub_tab > li");
-                    var cateCont = $(".cateCont");
+                tabBtn.removeClass("active");
+            
+                target.addClass("active");
+                
+                tabCont.css("display","none");
+                tabCont.eq(index).css("display","block");
+                })
+                
+                var tabBtn1 = $(".brnd .sub_tab > li");
+                var cateCont = $(".cateCont");
 
-                    tabBtn1.click(function(){
-                    var target = $(this);
-                    var index = target.index();
+                tabBtn1.click(function(){
+                var target = $(this);
+                var index = target.index();
 
-                    tabBtn1.removeClass("active");
-                    target.addClass("active");
+                tabBtn1.removeClass("active");
+                target.addClass("active");
 
-                    cateCont.css("display","none");
-                    cateCont.eq(index).css("display","block");
+                cateCont.css("display","none");
+                cateCont.eq(index).css("display","block");
                 });
             });     
             (function(){
@@ -1606,12 +1553,7 @@
                         return false;
                     });
                 });
-                $(".up").click(function(){
-                    $(this).toggleClass("arrowDown");
-                });
             })(jQuery);
-
         </script>
-
     </body>
 </html>

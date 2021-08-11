@@ -2,15 +2,12 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>검색_브랜드 메인</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>검색_신상 업데이트</title>
+        <meta name="viewport" content="width=device-width">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
         <script src="../common/lib/plugin.js"></script>
         <script src="../common/lib/common.js"></script>
-        <!--가격 슬라이드 추가 -->
-        <script src="../common/lib/rangeSliderUI.js"></script>
-        <!--//가격 슬라이드 추가 -->
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/search.css">
         <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
@@ -23,7 +20,7 @@
                     <div class="box_left back">
                         <a href="#" class="btn_back mg"><span class="blind">뒤로가기</span></a>
                         <span class="header_title">
-                            나이키
+                            신상 업데이트
                         </span>
                     </div>
                     
@@ -39,50 +36,112 @@
            
             <div id="container">
                 <div class="searchWrap">
-                    <div class="brd_main">
-                        <div class="dimWrap">
-                            <div class="txt_box">
-                                <p class="brd_en">NIKE</p>
-                                <p class="brd_ko">나이키</p>
-                                <p class="brd_des">1962년 블루 리본 스포츠의 설립으로 시작되었으며, 창립 첫 해의 매출은 8,000달러였습니다. 1972년 그리스 신화에 나오는 승리의 여신의 이름을 따 회사 이름을 나이키(Nike)</p>
+                    <!-- 탭 상품 영역 -->
+                    <div class="ranking_tab_pro cateCont">
+                        <div id="tab_lst" class="swipeWrap overflow_x">
+                            <!-- <ul class="swipe-tabs">
+                                <ul class="">
+                                    <li class="swipe-tab active">
+                                        <a href="#none">전체</a>
+                                    </li>
+                                    <li class="swipe-tab"><a href="#none">의류</a></li>
+                                    <li class="swipe-tab"><a href="#none">신발</a></li>
+                                    <li class="swipe-tab"><a href="#none">잡화</a></li>
+                                    <li class="swipe-tab"><a href="#none">라이프</a></li>
+                                    <li class="swipe-tab"><a href="#none">셀렉샵</a></li>
+                                    <li class="swipe-tab"><a href="#none">셀렉샵</a></li>
+                                    <li class="swipe-tab"><a href="#none">셀렉샵</a></li>
+                                    <li class="swipe-tab"><a href="#none">셀렉샵</a></li>
+                                    <li class="swipe-tab"><a href="#none">셀렉샵</a></li>
+                                </ul>
+                            </ul> -->
+                            <div class="swipe-tabs">
+                                <div class="swipe-tab">One</div>
+                                <div class="swipe-tab">Two</div>
+                                <div class="swipe-tab">Three</div>
+                                <div class="swipe-tab">Four</div>
+                                <div class="swipe-tab">Five</div>
                             </div>
-                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/brand_main_dummy01.jpg" alt="" >
-                        </div>
-                    </div>
 
-                    <!-- 검색 필터 키워드 -->
-                    <div class="ss_fitr sticky">
-                        <div class="overflow_x">
-                            <ul class="ss-list second keyLst update">
-                                <li><a href="#none" class="ss-item">상품쿠폰</a></li>
+                            <div class="main-container">
+                                <div class="swipe-tabs-container ">
+                                  <div class="swipe-tab-content">Tab 1</div>
+                                  <div class="swipe-tab-content">Tab 2</div>
+                                  <div class="swipe-tab-content">Tab 3</div>
+                                  <div class="swipe-tab-content">Tab 4</div>
+                                  <div class="swipe-tab-content">Tab 5</div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function () {
+                                    'use strict';
+
+                                    var $swipeTabsContainer = $('.swipe-tabs'),
+                                        $swipeTabs = $('.swipe-tab'),
+                                        $swipeTabsContentContainer = $('.swipe-tabs-container'),
+                                        currentIndex = 0,
+                                        activeTabClassName = 'active-tab';
+
+                                    $swipeTabsContainer.on('init', function(event, slick) {
+                                        $swipeTabsContentContainer.removeClass('invisible');
+                                        $swipeTabsContainer.removeClass('invisible');
+
+                                        currentIndex = slick.getCurrent();
+                                        $swipeTabs.removeClass(activeTabClassName);
+                                        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+                                    });
+
+                                    $swipeTabsContainer.slick({
+                                        //slidesToShow: 3.25,
+                                        slidesToShow: 3,
+                                        slidesToScroll: 1,
+                                        arrows: false,
+                                        infinite: false,
+                                        swipeToSlide: true,
+                                        touchThreshold: 10
+                                    });
+
+                                    $swipeTabsContentContainer.slick({
+                                        asNavFor: $swipeTabsContainer,
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        arrows: false,
+                                        infinite: false,
+                                        swipeToSlide: true,
+                                    draggable: false,
+                                        touchThreshold: 10
+                                    });
+
+
+                                    $swipeTabs.on('click', function(event) {
+                                        // gets index of clicked tab
+                                        currentIndex = $(this).data('slick-index');
+                                        $swipeTabs.removeClass(activeTabClassName);
+                                        $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+                                        $swipeTabsContainer.slick('slickGoTo', currentIndex);
+                                        $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+                                    });
+
+                                    //initializes slick navigation tabs swipe handler
+                                    $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+                                        currentIndex = $(this).slick('slickCurrentSlide');
+                                        $swipeTabs.removeClass(activeTabClassName);
+                                        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+                                    });
+                                });
+                            </script>
+
+                        </div>
+                        <!-- 탭 상품 상단 -->
+                        <div class="sub_set">
+                            <ul class="sub_tab ss-list filterKey">
+                                <li class="active"><a href="#none" class="ss-item">상품쿠폰</a></li>
                                 <li><a href="#none" class="ss-item">무료쿠폰</a></li>
-                                <li><a href="#none" class="ss-item">가격<span class="ico arrowDwn"></span></a></li>
-                                <li><a href="#none" class="ss-item" onclick="openLayer(event,'#tempLayer1',this)">성별<span class="ico arrowDwn"></span></a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <!-- //검색 필터 키워드 -->
-                    <!-- 상품 리스트  -->
-                    <div class="product_list-wrap plc_fc-box">
-                        <div class="product_list-box">
-                            <div class="plc_fc-filter">
-                                <div class="sltType1 filter_view">
-                                    <span class="ico upDownArr"></span>
-                                    <select title="필터 선택">
-                                        <option value="인기순">인기순</option>
-                                        <option value="신상품순">신상품순</option>
-                                        <option value="할인율순">할인율순</option>
-                                        <option value="낮은가격순">낮은가격순</option>
-                                        <option value="높은가격순">높은가격순</option>
-                                    </select>
-                                </div>
-                                <span class="plc_fc-pro">상품 <span>30,788</span>개</span>
-                            </div>
+                        <!-- //탭 상품 상단 -->
+                        <!-- 상품 리스트  -->
+                        <div class="product_list-wrap plc_fc-box">    
                             <!-- item List  -->
                             <div class="product-item">
                                 <div class="pli-top_wrap">
@@ -154,7 +213,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- 3depth -->
+                                                        <!--depth -->
                                                         <div class="option-content">
                                                             <div class="option-acco depth-3">
                                                                 <div class="option-title justify_box">
@@ -785,519 +844,40 @@
                                 </div>
                             </div>
                             <!--// item List  -->
-                        </div>
-
-                        <!-- page Navi -->
-                        <div class="pages_navi">
-                            <div class="pages">
-                                <em class="link">1</em>
-                                <a href="" class="link">2</a>
-                                <a href="" class="link">3</a>
-                                <a href="" class="link">4</a>
-                                <a href="" class="link">5</a>
-                                <a href="" class="link">6</a>
-                                <a href="" class="link">7</a>
-                                <a href="" class="link">8</a>
-                                <a href="" class="link">9</a>
-                                <a href="" class="link">10</a>
-                                <a href="" class="link last">123</a>
-                                <div id="navBar">
-                                    <!-- 비활성화 a에 class="disabled" 클레스 추가 -->
-                                    <a href="#none" class="disabled"><span class="ico prev"></span><span class="blind">이전</span></a> 
-                                    <a href="#none" class=""><span class="ico next"></span><span class="blind">다음</span></a>
-                                    <!-- //비활성화 a에 class="disabled" 클레스 추가 -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- //page Navi -->
-                    </div>
-                    <!-- //상품 리스트  -->
-
-                    <!-- dimLayer -->
-                    <div class="dim_layer" id="tempLayer1">
-                        <div class="dim_Touch"></div>
-                        <!-- 검색필터  -->
-                        <div class="filterWrap">
-                            <h3 class="slick-title blind">필터 선택</h3>
-                            <div class="tabTouch">
-                                <button type="button" class="touchBar"><span class="blind">필터 닫기</span></button>
-                            </div>
-                            
-                            <div class="bg_white">
-                                <div class="wd720">
-                                    <div id="tab_lst" class="overflow_x">
-                                        <ul class="swipe-tabs">
-                                            <li class="swipe-tab active">
-                                                <a href="#none">가격</a>
-                                            </li>
-                                            <li class="swipe-tab"><a href="#none">성별</a></li>
-                                            <li class="swipe-tab"><a href="#none">카테고리</a></li>
-                                            <li class="swipe-tab"><a href="#none">브랜드</a></li>
-                                            <li class="swipe-tab"><a href="#none">사이즈</a></li>
-                                            <li class="swipe-tab"><a href="#none">컬러</a></li>
-                                            <li class="swipe-tab"><a href="#none">소재/패턴</a></li>
-                                            <li class="swipe-tab"><a href="#none">이벤트</a></li>
-                                            <li class="swipe-tab"><a href="#none">상품 만족도</a></li>
-                                            <li class="swipe-tab"><a href="#none">시즌</a></li>
-                                        </ul>
-                                    </div>
-                                    
-                                    <div class="filter_contWrap" id="tab-cont">
-                                        <!-- 가격 -->
-                                        <div class="swipe-tab-cont price">
-                                            <!-- <input class="js-range-slider" type="range" name="example_name" value="0" min="10000" max="10000000" step="10" /> -->
-                                            <div id="time-range">
-                                                <div class="filter_price">
-                                                    <span class="slider-price-min">1000 원</span> ~ <span class="slider-price-max">1,000,000원 이하</span>
-                                                </div>
-                                                <div class="sliders_step1">
-                                                    <div id="slider-range"></div>
-                                                </div>
-                                            </div>
-                                            <ul class="filterKey ss-list">
-                                                <li><a href="#" class="ss-item">3만원 이하</a></li>
-                                                <li><a href="#" class="ss-item">5~7만원</a></li>
-                                                <li><a href="#" class="ss-item">7~10만원</a></li>
-                                                <li><a href="#" class="ss-item">10~20만원</a></li>
-                                                <li><a href="#none" class="ss-item">20~30만원</a></li>
-                                                <li><a href="#none" class="ss-item">30~50만원</a></li>
-                                                <li><a href="#none" class="ss-item">50~100만원</a></li>
-                                                <li><a href="#none" class="ss-item">100만원 이상</a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- //가격 -->  
-                                        <!-- 성별 -->
-                                        <div class="swipe-tab-cont conse">
-                                            <span class="blind">성별 선택</span>
-                                            <form action="">
-                                                <div class="radio_box">
-                                                    <div class="input_radio">
-                                                        <input type="radio" name="radio" id="radio1_1"><label for="radio1_1"><span class="mgl30">남성</span></label>
-                                                    </div>
-                                                    <div class="input_radio">
-                                                        <input type="radio" name="radio" id="radio1_2"><label for="radio1_2"><span class="mgl30">여성</span></label>
-                                                    </div>
-                                                    <div class="input_radio">
-                                                        <input type="radio" name="radio" id="radio1_3"><label for="radio1_3"><span class="mgl30">공용</span></label>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- //성별 -->
-                                        <!-- 카테고리 -->
-                                        <div class="swipe-tab-cont cate">
-                                            <ul class="article_cate">
-                                                <li>
-                                                    <div class="article_title"><a href="#none">CLOTHING<span class="ico arrow"></span></a></div>
-                                                    <div class="article_content clearfix">
-                                                        <ul class="cateLst">
-                                                            <li><a href="#none">전체 16,106</a></li>
-                                                            <li><a href="#none">맨투맨 1,453</a></li>
-                                                            <li class="on"><a href="#none">아우터 1,412</a></li>
-                                                            <li><a href="#none">니트 2,243</a></li>
-                                                            <li><a href="#none">셔츠/블라우스 1,423</a></li>
-                                                        </ul>
-                                                        <ul class="cateLst">
-                                                            <li><a href="#none">티셔츠 2,674</a></li>
-                                                            <li><a href="#none">후디 1,524</a></li>
-                                                            <li><a href="#none">바지 1,610</a></li> 
-                                                            <li><a href="#none">원피스/스커트 2,454</a></li>
-                                                            <li><a href="#none">이너웨어 1,313</a></li>
-                                                        </ul>
-                                                    </div>    
-                                                </li>
-                                                <li>
-                                                    <button type="button" class="cate_btn_del"><span class="ico del"><span class="blind">선택 카테고리 삭제</span></span></button>
-                                                    <div class="article_title">
-                                                        <a href="#none">CLOTHING <span class="cateDetail"> > 아우터</span></a><!-- 2depth -->
-                                                    </div>
-                                                    <div class="article_content clearfix">
-                                                        <ul class="cateLst check">
-                                                            <li>
-                                                                <div class="input_check">
-                                                                    <input class="ico pos" type="checkbox" id="det_check_1" name=""  />
-                                                                    <label for="det_check_1">    
-                                                                        <p class="brd_ko">전체 16,106</p>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="input_check">
-                                                                    <input class="ico pos" type="checkbox" id="det_check_2" name=""  />
-                                                                    <label for="det_check_2">    
-                                                                        <p class="brd_ko">자켓 1,453</p>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="input_check">
-                                                                    <input class="ico pos" type="checkbox" id="det_check_3" name=""  />
-                                                                    <label for="det_check_3">    
-                                                                        <p class="brd_ko">점퍼 1,412</p>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                        <ul class="cateLst check">
-                                                            <!-- <li><a href="#none"></a>코트 2,674</li>
-                                                            <li><a href="#none"></a>패딩 1,524</li> -->
-                                                            <li>
-                                                                <div class="input_check">
-                                                                    <input class="ico pos" type="checkbox" id="det_check_4" name=""  />
-                                                                    <label for="det_check_4">    
-                                                                        <p class="brd_ko">코트 2,674</p>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="input_check">
-                                                                    <input class="ico pos" type="checkbox" id="det_check_5" name=""  />
-                                                                    <label for="det_check_5">    
-                                                                        <p class="brd_ko">패딩 1,524</p>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>    
-                                                </li>
-                                                <li>
-                                                    <div class="article_title"><a href="#none">SHOES</a></div>
-                                                    <div class="article_content clearfix">
-                                                        <ul class="cateLst">
-                                                            <li><a href="#none">전체 16,106</a></li>
-                                                            <li><a href="#none">맨투맨 1,453</a></li>
-                                                            <li><a href="#none">아우터 1,412</a></li>
-                                                            <li><a href="#none">니트 2,243</a></li>
-                                                            <li><a href="#none">셔츠/블라우스 1,423</a></li>
-                                                        </ul>
-                                                        <ul class="cateLst">
-                                                            <li><a href="#none">티셔츠 2,674</a></li>
-                                                            <li class="on"><a href="#none">후디 1,524</a></li>
-                                                            <li class="on"><a href="#none">바지 1,610</a></li>
-                                                            <li><a href="#none">원피스/스커트 2,454</a></li>
-                                                            <li><a href="#none">이너웨어 1,313</a></li>
-                                                        </ul>
-                                                    </div>    
-                                                </li>
-                                            </ul>
-                                            
-                                        </div>
-                                        <!-- //카테고리 -->
-                                        <!-- 브랜드 -->
-                                        <div class="swipe-tab-cont brnd">
-                                            <ul class="sub_tab">
-                                                <li class="active"><a href="#none">가나다 순</a></li>
-                                                <li><a href="#none">ABC 순</a></li>
-                                            </ul>
-
-                                            <ul class="cateLst cateCont ko">
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_1" name=""  />
-                                                        <label for="brnd_check_1">    
-                                                            <p class="brd_ko">가까이</p>
-                                                            <p class="brd_en">GAKKA2</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_2" name=""  />
-                                                        <label for="brnd_check_2">    
-                                                            <p class="brd_ko">가네코 유닛</p>
-                                                            <p class="brd_en">GANEKO UNIT</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_3" name=""  />
-                                                        <label for="brnd_check_3">    
-                                                            <p class="brd_ko">고샤 루브친스키</p>
-                                                            <p class="brd_en">GOSHA RUBCHINSKIY</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_4" name=""  />
-                                                        <label for="brnd_check_4">    
-                                                            <p class="brd_ko">그리너리 크리</p>
-                                                            <p class="brd_en">GREENERY CREED</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_5" name=""  />
-                                                        <label for="brnd_check_5">    
-                                                            <p class="brd_ko">그리너리 크리</p>
-                                                            <p class="brd_en">GREENERY CREED</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_6" name=""  />
-                                                        <label for="brnd_check_6">    
-                                                            <p class="brd_ko">그리너리 크리</p>
-                                                            <p class="brd_en">GREENERY CREED</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_6" name=""  />
-                                                        <label for="brnd_check_6">    
-                                                            <p class="brd_ko">11그리너리 크리</p>
-                                                            <p class="brd_en">GREENERY CREED</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                            </ul>
-
-                                            <ul class="cateLst cateCont en" style="display:none">
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_1_1" name=""  />
-                                                        <label for="brnd_check_1_1">    
-                                                            <p class="brd_en">A BATHING APE</p>
-                                                            <p class="brd_ko">베이프</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_1_2" name=""  />
-                                                        <label for="brnd_check_1_2">    
-                                                            <p class="brd_en">A BY A</p>
-                                                            <p class="brd_ko">에이바이에이</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- //브랜드 -->
-                                        <!-- 사이즈 -->
-                                        <div class="swipe-tab-cont size">
-                                            <span class="sub_title">신발 사이즈</span>
-                                            <ul class="filterKey ss-list">
-                                                <li><a href="#none" class="ss-item">220</a></li>
-                                                <li><a href="#none" class="ss-item">225</a></li>
-                                                <li><a href="#none" class="ss-item">230</a></li>
-                                                <li><a href="#none" class="ss-item">235</a></li>
-                                                <li><a href="#none" class="ss-item">240</a></li>
-                                                <li><a href="#none" class="ss-item">245</a></li>
-                                                <li><a href="#none" class="ss-item">250</a></li>
-                                                <li><a href="#none" class="ss-item">255</a></li>
-                                                <li><a href="#none" class="ss-item on">260</a></li>
-                                                <li><a href="#none" class="ss-item">265</a></li>
-                                                <li><a href="#none" class="ss-item">270</a></li>
-                                                <li><a href="#none" class="ss-item">275</a></li>
-                                                <li><a href="#none" class="ss-item">280</a></li>
-                                                <li><a href="#none" class="ss-item">285</a></li>
-                                                <li><a href="#none" class="ss-item">290</a></li>
-                                                <li><a href="#none" class="ss-item">295</a></li>
-                                                <li><a href="#none" class="ss-item">300</a></li>
-                                            </ul>
-
-                                            <span class="sub_title mgT25">의류 사이즈</span>
-                                            <ul class="filterKey ss-list">
-                                                <li><a href="#none" class="ss-item">XS</a></li>
-                                                <li><a href="#none" class="ss-item">S</a></li>
-                                                <li><a href="#none" class="ss-item">M</a></li>
-                                                <li><a href="#none" class="ss-item">L</a></li>
-                                                <li><a href="#none" class="ss-item">XL</a></li>
-                                                <li><a href="#none" class="ss-item on">XXL</a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- //사이즈 -->
-                                        <!-- 컬러 -->
-                                        <div class="swipe-tab-cont color">
-                                            <ul class="colorLst">
-                                                <li class="active"><a href="#none" class="col_bk" title="검정색"><span class="ico check"></span><span class="blind">검정색</span></a></li>
-                                                <!-- 흰색 컬러칩만 검은색 체크로 노출 -->
-                                                <li class="active"><a href="#none" class="col_wht bk" title="흰색"><span class="ico check"></span><span class="blind">흰색</span></a></li>
-                                                <!-- //흰색 컬러칩만 검은색 체크로 노출 -->
-                                                <li><a href="#none" class="col_red" title="빨강색"><span class="ico check"></span><span class="blind">빨강색</span></a></li>
-                                                <li><a href="#none" class="col_purp" title="보라색"><span class="ico check"></span><span class="blind">보라색</span></a></li>
-                                                <li><a href="#none" class="col_blue" title="파란색"><span class="ico check"></span><span class="blind">파란색</span></a></li>
-                                                <li><a href="#none" class="col_skyB" title="하늘색"><span class="ico check"></span><span class="blind">하늘색</span></a></li>
-                                                <li><a href="#none" class="col_ylw" title="노란색"><span class="ico check"></span><span class="blind">노란색</span></a></li>
-                                                <li><a href="#none" class="col_grn" title="녹색"><span class="ico check"></span><span class="blind">녹색</span></a></li>
-                                                <li><a href="#none" class="col_navy" title="남색"><span class="ico check"></span><span class="blind">남색</span></a></li>
-                                                <li><a href="#none" class="col_ivy" title="아이보리색"><span class="ico check"></span><span class="blind">아이보리색</span></a></li>
-                                                <li><a href="#none" class="col_idg" title="탁한 남색"><span class="ico check"></span><span class="blind">탁한 남색</span></a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- //컬러 -->
-                                        <!-- 소재/패턴 -->
-                                        <div class="swipe-tab-cont mtlPttn">
-                                            <span class="sub_title">소재</span>
-                                            <ul class="filterKey ss-list">
-                                                <li><a href="#none" class="ss-item">코튼</a></li>
-                                                <li><a href="#none" class="ss-item on">린넨</a></li>
-                                                <li><a href="#none" class="ss-item">데님</a></li>
-                                                <li><a href="#none" class="ss-item">아크릴</a></li>
-                                                <li><a href="#none" class="ss-item">나일론</a></li>
-                                                <li><a href="#none" class="ss-item">레이온</a></li>
-                                                <li><a href="#none" class="ss-item">폴리</a></li>
-                                                <li><a href="#none" class="ss-item">울</a></li>
-                                                <li><a href="#none" class="ss-item">캐시미어</a></li>
-                                                <li><a href="#none" class="ss-item">레더</a></li>
-                                                <li><a href="#none" class="ss-item">스웨이드</a></li>
-                                                <li><a href="#none" class="ss-item">모피</a></li>
-                                                <li><a href="#none" class="ss-item">벨크로</a></li>
-                                            </ul>
-                                            <span class="sub_title mgT25">패턴</span>
-                                            <ul class="filterKey ss-list">
-                                                <li><a href="#none" class="ss-item">XS</a></li>
-                                                <li><a href="#none" class="ss-item">S</a></li>
-                                                <li><a href="#none" class="ss-item">M</a></li>
-                                                <li><a href="#none" class="ss-item">L</a></li>
-                                                <li><a href="#none" class="ss-item">XL</a></li>
-                                                <li><a href="#none" class="ss-item on">XXL</a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- //소재/패턴 -->
-                                        <!-- 이벤트 -->
-                                        <div class="swipe-tab-cont evt">
-                                            <ul class="cateLst">
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_1" name=""  />
-                                                        <label for="evt_check_1">    
-                                                            <p class="brd_ko">삼성 자급제 단말기 할인특가</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_2" name=""  />
-                                                        <label for="evt_check_2">    
-                                                            <p class="brd_ko">삼성 갤럭시 캠퍼스 스토어</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_3" name=""  />
-                                                        <label for="evt_check_3">    
-                                                            <p class="brd_ko">서프 서피 feat.VOLCOM</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_4" name=""  />
-                                                        <label for="evt_check_4">    
-                                                            <p class="brd_ko">바캉SHOW</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_5" name=""  />
-                                                        <label for="evt_check_5">    
-                                                            <p class="brd_ko">네가, 알아주길 바래</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_6" name=""  />
-                                                        <label for="evt_check_6">    
-                                                            <p class="brd_ko">여름 눈부신 아이템 SHOW</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_7" name=""  />
-                                                        <label for="evt_check_7">    
-                                                            <p class="brd_ko">숏숏쇼(ShortShortShow)</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_8" name=""  />
-                                                        <label for="evt_check_8">    
-                                                            <p class="brd_ko">숏숏쇼(ShortShortShow)</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="evt_check_9" name=""  />
-                                                        <label for="evt_check_9">    
-                                                            <p class="brd_ko">숏숏쇼(ShortShortShow)</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- //이벤트 -->
-                                        <!-- 상품 만족도 -->
-                                        <div class="swipe-tab-cont evlt">
-                                            <div class="star_rating">
-                                                <strong><span>3.5</span>점 이상</strong>
-                                                <div class="star_wrap"><div class="star on"></div>
-                                                    <div class="star on"></div>
-                                                    <div class="star on"></div>
-                                                    <div class="star half"></div>
-                                                    <div class="star off"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- //상품 만족도 -->
-                                        <!-- 시즌 -->
-                                        <div class="swipe-tab-cont season">
-                                            <ul class="filterKey ss-list">
-                                                <li><a href="#none" class="ss-item">21 F/W</a></li>
-                                                <li><a href="#none" class="ss-item on">21 S/S</a></li>
-                                                <li><a href="#none" class="ss-item">20 F/W</a></li>
-                                                <li><a href="#none" class="ss-item">20 F/W</a></li>
-                                                <li><a href="#none" class="ss-item">19 F/W</a></li>
-                                                <li><a href="#none" class="ss-item">19 F/W</a></li>
-                                                <li><a href="#none" class="ss-item">18 F/W</a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- //시즌 -->
-                                    </div>
-                                </div>
-                                
-                                <div class="filter_key">
-                                    <div class="overflow_x">
-                                        <ul class="ss-list second keyLst1">
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">XXL</span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">CONTEMPORARY ACCCC </span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">260</span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">린넨</span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">흰색</span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">삼성 자급제 단말기 할인특가</span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">삼성 자급제 단말기 할인특가</span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">삼성 자급제 단말기 할인특가</span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                            <li><a href="#none" class="ss-item on"><span class="ellipsis">삼성 자급제 단말기 할인특가</span><button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="filter_btn">
-                                        <button type="button" class="btn_reset"><span class="ico reset"><span class="blind">키워드 전체 초기화</span></span></button><!-- reset BTN -->
-                                        <button type="button" class="btn_bk"><span class="num">1,542</span>개의 상품 보기</button>
+                            <!-- page Navi -->
+                            <div class="pages_navi">
+                                <div class="pages">
+                                    <em class="link">1</em>
+                                    <a href="" class="link">2</a>
+                                    <a href="" class="link">3</a>
+                                    <a href="" class="link">4</a>
+                                    <a href="" class="link">5</a>
+                                    <a href="" class="link">6</a>
+                                    <a href="" class="link">7</a>
+                                    <a href="" class="link">8</a>
+                                    <a href="" class="link">9</a>
+                                    <a href="" class="link">10</a>
+                                    <a href="" class="link last">123</a>
+                                    <div id="navBar">
+                                        <!-- 비활성화 a에 class="disabled" 클레스 추가 -->
+                                        <a href="#none" class="disabled"><span class="ico prev"></span><span class="blind">이전</span></a> 
+                                        <a href="#none" class=""><span class="ico next"></span><span class="blind">다음</span></a>
+                                        <!-- //비활성화 a에 class="disabled" 클레스 추가 -->
                                     </div>
                                 </div>
                             </div>
+                            <!-- //page Navi -->
                         </div>
-                        <!-- //검색필터  -->
+                        <!-- //상품 리스트  -->
+                        
+                    
+                        <!-- 토스트 팝업 -->
+                        <div class="toast">
+                            좋아요 목록에 추가 되었어요!
+                        </div>
+                        <!-- //토스트 팝업 -->
                     </div>
-                    <!-- //dimLayer -->
-                
-                    <!-- 토스트 팝업 -->
-                    <div class="toast">
-                        좋아요 목록에 추가 되었어요!
-                    </div>
-                    <!-- //토스트 팝업 -->
-
+                    <!-- //탭 상품 영역 -->
                 </div>
             </div> 
         </div>
@@ -1314,7 +894,34 @@
                         $('.toast').css('display' ,'none');
                     })
                 }
-            //옵션 선택
+                $(".tooltip").slideDown(500); 
+                $( this ).css( 'background-color', '#ffcdd2' );
+                $( '.tooltip' ).fadeIn(100);    
+                $( '.btn_del' ).click(function() {
+                $( '.tooltip' ).hide();                
+                $( '.tooltip' ).fadeOut(100);     
+            }) 
+            $('.search_clear-btn').on('click touch', function(){
+                $(this).siblings('.ss-text').val('');
+                $(this).hide();
+            });
+            $('.filter_select').on('click touch', function(){
+                $(this).toggleClass('active');
+            })
+
+            $('.ss-item').on('click touch', function(){
+                $( '.filterWrap' ).removeClass('hide'); 
+            })
+            $('.tabTouch').on('click touch', function(){
+                $('.dim_layer').hide();
+            })
+            $('.dim_Touch').on('click touch', function(){
+                $('#tempLayer1').hide();
+            })
+            $('.filter_btn').on('click touch', function(){
+                $('.ss-list.second.keyLst1').hide();
+            })
+             //옵션 선택
             function acAcco(ele, content) {
                 $(ele).on('click touch', function(){
                     $(this).toggleClass('active');
@@ -1339,16 +946,19 @@
             acAcco('.pln-title', '.pln-subnav');
             optionAcco('.option-acco .has-acco', '.option-acco .option-content');
             toggleAcco('.ov-title', '.option-detail');
+            
             // 썸네일 height 맞춤
             function thumbHeightAuto() {
                 var thisWidth = $('.pli-thumb img').width();
                 $('.pli-thumb img').height(thisWidth);
             }
-            //이미지 1:1비율
+
             thumbHeightAuto();
+
             $(window).resize(function(){
                 thumbHeightAuto();
             });
+
             function autoWidth(ele, child, add) {
                 var width = 0;
 
@@ -1358,27 +968,6 @@
                 $(ele).width(width);
             }
 
-            //필터 시작
-            $('.search_clear-btn').on('click touch', function(){
-                $(this).siblings('.ss-text').val('');
-                $(this).hide();
-            });
-            $('.filter_select').on('click touch', function(){
-                $(this).toggleClass('active');
-            })
-
-            $('.ss-item').on('click touch', function(){
-                $( '.filterWrap' ).removeClass('hide'); 
-            })
-            $('.tabTouch').on('click touch', function(){
-                $('.dim_layer').hide();
-            })
-            $('.dim_Touch').on('click touch', function(){
-                $('#tempLayer1').hide();
-            })
-            $('.filter_btn').on('click touch', function(){
-                $('.ss-list.second.keyLst1').hide();
-            })
             autoWidth('.pl-m-list', '.pl-m-list li', 32);
 
             $('.filter_view').on('click touch', function(){
@@ -1409,28 +998,10 @@
             $('.cate_btn_del').on('click touch', function(){
                 $(this).siblings().children().children('.cateDetail').hide();
                 $('.cate_btn_del').hide();
-            }); 
-            (function () {
-            function autoWidth(ele, child, add) {
-                var width = 0;
+        }); 
 
-                $(child).each(function(i, e){
-                    width += $(e).width() * 1 + add;
-                });
-                $(ele).width(width);
-                }
-                // autoWidth('.ms-list', '.ms-list li', 10);
-                autoWidth('.swipe-tabs', '.swipe-tabs li', 30);
-                autoWidth('.ss-list.first', '.ss-list.first li', 30);
-                autoWidth('.ss-list.second', '.ss-list.second li', 30);
-                autoWidth('.sbs-list', '.sbs-list li', 30);
-                function fn_focus()
-                {
-                document.getElementById("txtOn").focus();
-                }
-            })(jQuery);    
-            $(document).ready(function(){
-                // tab
+        $(document).ready(function(){
+            // tab
                 var tabBtn = $("#tab_lst > ul > li");
                 var tabCont = $("#tab-cont > div");
                 tabCont.hide().eq(0).show();
@@ -1458,8 +1029,31 @@
 
                 cateCont.css("display","none");
                 cateCont.eq(index).css("display","block");
+            });
+        });
+         // 모바일 앱 input focus 후 키보드 노출 코드
+         (function () {
+            function autoWidth(ele, child, add) {
+                var width = 0;
+
+                $(child).each(function(i, e){
+                    width += $(e).width() * 1 + add;
                 });
-            });     
+                $(ele).width(width);
+                }
+                // autoWidth('.ms-list', '.ms-list li', 10);
+                // autoWidth('.swipe-tabs', '.swipe-tabs li', 15);
+                // autoWidth('.ss-list.first', '.ss-list.first li', 15);
+                // autoWidth('.ss-list.second', '.ss-list.second li', 15);
+                autoWidth('.sbs-list', '.sbs-list li', 30);
+                function fn_focus()
+                {
+                document.getElementById("txtOn").focus();
+                }
+            })(jQuery);    
+        </script>
+        <script>
+                
             (function(){
                 function toggleAcco(ele, content) {
                     $(ele).on('click touch', function () {
@@ -1467,7 +1061,90 @@
                         $(this).siblings(content).toggle();
                     });
                 }
+                toggleAcco('.article_title', '.article_content');
+                $('.border_tab-list li').each(function(i){
+                    $(this).click(function(){
+                        $(this).addClass('active').siblings().removeClass('active');
+                        $('.border_tab-cont > div').eq(i).addClass('active').siblings().removeClass('active');
+                        return false;
+                    });
+                });
+                //상단 툴팁
+                $(document).ready(function(){
+                $(".tooltiptext").show();
+                setTimeout(function () {
+                    $(".tooltiptext").hide();
+                }, 5000);
+                $(".ico.info").click(function(){
+                    if($("#toolShow").css("display") != "block"){
+                        $("#toolShow").show();
+                    }else{
+                        $("#toolShow").hide();
+                    }
+                });
+            });
             })(jQuery);
+
         </script>
+                <!-- 스와이프 메뉴 -->
+                <script>
+                    $(function () {
+                        'use strict';
+                        var $swipeTabsContainer = $('.swipe-tabs'),
+                            $swipeTabs = $('.swipe-tab'),
+                            $swipeTabsContentContainer = $('.swipe-tabs-container'),
+                            currentIndex = 2,
+                            activeTabClassName = 'active-tab';
+        
+                        $swipeTabsContainer.on('init', function(event, slick) {
+                            $swipeTabsContentContainer.removeClass('invisible');
+                            $swipeTabsContainer.removeClass('invisible');
+        
+                            currentIndex = 2;//slick.getCurrent();
+                            $swipeTabs.removeClass(activeTabClassName);
+                            $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+                        });
+        
+                        $swipeTabsContainer.slick({
+                            //slidesToShow: 3.25,
+                            slidesToShow: 5.5,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            infinite: false,
+                            swipeToSlide: true,
+                            touchThreshold: 10,
+                            initialSlide: 0
+                        });
+        
+                        $swipeTabsContentContainer.slick({
+                            asNavFor: $swipeTabsContainer,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            infinite: false,
+                            swipeToSlide: true,
+                            draggable: false,
+                            touchThreshold: 10,
+                            initialSlide: 2
+                        });
+                        $swipeTabs.on('click', function(event) {
+                            // gets index of clicked tab
+                            currentIndex = $(this).data('slick-index');
+                            $swipeTabs.removeClass(activeTabClassName);
+                            $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+                            $swipeTabsContainer.slick('slickGoTo', currentIndex);
+                            $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+                        });
+        
+                        //initializes slick navigation tabs swipe handler
+                        $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+                            currentIndex = $(this).slick('slickCurrentSlide');
+                            $swipeTabs.removeClass(activeTabClassName);
+                            $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+                        });
+                    });
+                </script>
+                <!-- 스와이프 메뉴 -->
+        
     </body>
 </html>
