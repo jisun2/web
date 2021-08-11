@@ -127,7 +127,7 @@ textarea {font-family: proxima-nova,'Noto Sans KR'!important; font-size: 16px}
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
 }
-/* a:focus, input:focus, textarea:focus, select:focus {outline:none} */
+a:focus, input:focus, textarea:focus, select:focus {outline:none}
 .overflow_x.mgTb.pos_rel {padding-left:50px;}
 input:-internal-autofill-selected {background-color:#fff;}
 .ss-list.first {position:relative;}
@@ -893,11 +893,11 @@ background-position:-87px -50px}
   z-index: 100;
 } */
 
-.btn_arr[data-v-77aad307] {
+/* .btn_arr[data-v-77aad307] {
   position: relative;
   border: 0;
   padding: 0;
   margin: 0!important;
   width: 20px;
   height: 20px;
-  min-width: 20px;
+  min-width: 20px; */
