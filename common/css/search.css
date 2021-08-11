@@ -826,17 +826,19 @@ background-position:-87px -50px}
   transform-origin: 0% 52%;
 }
 
-.ico.prev {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
-.ico.next {width:14px; height:12px; background-position:-287px -27px; background-repeat: no-repeat}
+.ico.prev {width:14px; height:14px; background-position:-157px -85px; background-repeat: no-repeat}
+.ico.next {width:14px; height:14px; background-position:-178px -85px; background-repeat: no-repeat}
+.disabled .ico.prev {background-position:-112px -85px; background-repeat: no-repeat}
+.disabled .ico.next {background-position:-137px -85px; background-repeat: no-repeat}
+#navBar {display:inline-block; white-space: nowrap}
+#navBar a {display:inline-block; width:25px; height:25px; line-height:28px;}
 
-
-/* .pages_navi {margin-left:50%; -ms-transform: translateX(-50%);
-  transform: translateX(-50%);} */
-.pages {display:flex; text-align: center; margin: 0px auto; }
+.pages_navi {min-width:250px; margin-left:50%; -ms-transform: translateX(-50%); transform: translateX(-50%);}
+.pages { display:flex; min-width:250px; height:25px; text-align: center; line-height:25px; }
 .pages .link {
-  width: 20px;
+  width: 25px;
   height: auto;
-  min-height: 20px;
+  min-height: 25px;
   font-size: 15px;
 }
 .pages em.link {
@@ -851,14 +853,15 @@ background-position:-87px -50px}
 .pages .last {
   position: relative;
   padding-left: 20px;
+  width:42px;
 }
 .pages .last:before {
   content: "...";
   position: absolute;
   left: 0;
   top: 0;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   line-height: 20px;
   text-align: center;
 }
