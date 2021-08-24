@@ -629,7 +629,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 .paymt_card_benefit .card li dl {float:left; text-align:left}
 .paymt_card_benefit .card li dl dt {font-size:0;}
 .paymt_card_benefit .card li dl dd {font-size:15px; color:#888}
-.paymt_card_benefit .card li dl>dd:first-of-type {margin-bottom:4px; line-height:1; font-size:15px; font-weight:400; color:#000;}
+.paymt_card_benefit .card li dl>dd:first-child {margin-bottom:4px; line-height:1.3; font-size:15px; font-weight:400; color:#000;}
 /* 이달의 카드사 혜택 */
 .paymt_card_benefit .card_benefit_info {margin:25px 0}
 .paymt_card_benefit .card_benefit_info p span {display:block; font-size:14px; font-weight:400; color:#555; margin:0 0 15px}
