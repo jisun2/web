@@ -625,7 +625,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 .paymt_card_benefit .card li:first-child {border-top:1px solid #e5e5e5}
 .paymt_card_benefit .card li:after {display:block; content:''; clear:both;}
 .paymt_card_benefit .card li {padding:18px 0; border-bottom:1px solid #e5e5e5}
-.paymt_card_benefit .card li .cardName {float:left; margin:0 16px 0 0}
+.paymt_card_benefit .card li .cardName {display:block; margin:16px 0}
 .paymt_card_benefit .card li dl {float:left; text-align:left}
 .paymt_card_benefit .card li dl dt {font-size:0;}
 .paymt_card_benefit .card li dl dd {font-size:15px; color:#888}
