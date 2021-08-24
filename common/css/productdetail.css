@@ -918,7 +918,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_order_applied .applied_info {margin:0 20px; padding:25px 0; text-indent:-8px}
 .paymtWrap .paymt_order_applied .applied_info li {font-size:13px; color:#333; line-height:1.6}
 .paymtWrap .paymt_order_applied .applied_info li:before {background-color:#333; display:inline-block;width:2px;height:2px;border-radius:20%;-webkit-border-radius:20%;content:'';margin-right:5px;vertical-align:2px;}
-.paymt_card_benefit {margin-bottom:30px; display:block;}
+.paymt_card_benefit {margin-bottom:40px; display:block;}
 .paymt_card_benefit strong {margin:25px 0 15px 0}
 .paymt_card_benefit ul.card li {position:relative; padding:22px 0; border-bottom:1px solid #e5e5e5;}
 .paymt_card_benefit ul.card li:first-child {border-top:1px solid #e5e5e5}
