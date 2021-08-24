@@ -515,7 +515,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 .pf_fc-box .gray_close-btn {margin-top: 6px;margin-left: 20px}
 /* 레이어 팝업 */
 .dim_layer {position:fixed;z-index:200;left:0;top:0;bottom:0;right:0;background-color:rgba( 0, 0, 0, 0.6)}
-.dim_layer .popuplayer {width:100%; vertical-align: middle; text-align: center; margin:0 auto; position:absolute; top:35%; left:-50%}
+.dim_layer .popuplayer {width:100%; vertical-align: middle; text-align: center; margin:0 auto; position:absolute; top:35%;}
 .popuplayer .popup_area {padding:20px; display:inline-block; margin:0 auto; text-align:center; background-color: #fff}
 .popuplayer .popup_area.wd260 {width:260px; border-radius:5px; -webkit-border-radius:5px; font-family:'Noto Sans KR';}
 .popuplayer .popup_area .title {margin-top:20px; font-size:22px; font-weight:bold; color:#333}
@@ -618,7 +618,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 .list_product .price {font-size:14px; line-height:17px;}
 .list_product .price * {font-weight:500;}
 /* 이달의 카드사 혜택 팝업 */
-.paymt_card_benefit {padding:0 0 30px; margin:0 20px 50px 20px; display:block;/* height:calc(100vh - 60px)*/}
+.paymt_card_benefit {padding:0 0 40px; margin:0 20px 50px 20px; display:block;/* height:calc(100vh - 60px)*/}
 .paymt_card_benefit .card img {width:96px; height:22.5px}
 .paymt_card_benefit strong {display:block;margin-top:25px;font-size:14px; color:#555; text-align:left; border:0;}
 /* .paymt_card_benefit strong:first-of-type {padding:25px 0 15px; } */

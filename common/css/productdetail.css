@@ -918,18 +918,18 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_order_applied .applied_info {margin:0 20px; padding:25px 0; text-indent:-8px}
 .paymtWrap .paymt_order_applied .applied_info li {font-size:13px; color:#333; line-height:1.6}
 .paymtWrap .paymt_order_applied .applied_info li:before {background-color:#333; display:inline-block;width:2px;height:2px;border-radius:20%;-webkit-border-radius:20%;content:'';margin-right:5px;vertical-align:2px;}
-.paymt_card_benefit {padding:0 0 30px; margin:0 20px; display:block;/* height:calc(100vh - 60px)*/}
+.paymt_card_benefit {margin-bottom:30px; display:block;}
 .paymt_card_benefit strong {margin:25px 0 15px 0}
 .paymt_card_benefit ul.card li {position:relative; padding:22px 0; border-bottom:1px solid #e5e5e5;}
 .paymt_card_benefit ul.card li:first-child {border-top:1px solid #e5e5e5}
 .paymt_card_benefit ul.card li:after {display:block; content:''; clear:both;}
 .paymt_card_benefit ul.card li .card {float:left; margin:0 16px 0 0 ;}
-.paymt_card_benefit ul.card li dl {position:absolute; top:50%; transform: translateY(-50%); -webkit-transform:translateY(-50%); left:50%; text-align:left}
+.paymt_card_benefit ul.card li dl {position:absolute; top:50%; transform: translateY(-50%); -webkit-transform:translateY(-50%); left:42%; text-align:left}
 .paymt_card_benefit ul.card li dl dt {font-size:0;}
 .paymt_card_benefit ul.card li dl dd {font-size:14px; color:#ff4e25}
 .paymt_card_benefit ul.card li dl>dd:first-child {font-size:14px; font-weight:500; color:#000; margin:0 0 6px}
 /* 이달의 카드사 혜택 */
-.paymt_card_benefit .card_benefit_info {margin:25px 0 0; padding:16px; background-color:#f9f9f9;}
+.paymt_card_benefit .card_benefit_info {margin:25px 0; padding:16px; background-color:#f9f9f9;}
 .paymt_card_benefit .card_benefit_info p span {display:block; font-size:15px; font-weight:300; color:#333; margin:0 0 15px}
 .paymt_card_benefit .card_benefit_info ul {margin:10px}
 .paymt_card_benefit .card_benefit_info li {padding:unset; font-size:11px; font-weight: 200;color:#888; line-height:1; margin:0 0 8px; text-indent:-8px}
@@ -1043,5 +1043,3 @@ input[type=text].text-input.phone-last {width:70%}
 @media screen and (max-width:719px) {
     #pop_card_benefit {min-width:100%; max-width:100%;}
 }
-
-
