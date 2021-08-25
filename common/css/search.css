@@ -295,7 +295,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .sub_set .sltType1 select {padding:0 10px; line-height:37px;  width:100%; font-size:13px; color:#ababab; color:#555; border:1px solid #fff !important}
 .sub_set .sltType1 option {margin:12px; font-size:14px; color:#555}
 .sub_set .filterKey.ss-list, .sub_set .filterKey.ss-list li {margin-top:0;}
-.sltType1 .sel_arrow {top:16px;}
+.sltType1 .sel_arrow {top:16px; -ms-top:10px;}
 
 .ico.upDownArr {display: inline-block; position:absolute; top:15.5px; left:15px; content: '';}
 .upDownArr {width:15px;height: 15px; background-size: 300px 300px; background-position:0px -142px; background-repeat: no-repeat;}
@@ -560,7 +560,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .evt .cateLst li .ico.pos {position:absolute; top:8px}
 /* 사이즈 */
 .swipe-tab-cont .sub_title {display:inline-block; font-size:17px; font-weight:bold; color:#333}
-.swipe-tab-cont .sub_title.mgT25 {margin-top:25px;}
+.swipe-tab-cont .sizeLst > li:nth-child(2) .sub_title {margin-top:25px}
 /* 컬러 */
 .swipe-tab-cont.color a {display:block; width:40px;height:40px; border-radius: 5px 5px 5px 5px;}
 .color .colorLst li {position:relative; float:left; margin:0 16px 16px 0px; width:40px;height:40px; border-radius: 5px 5px 5px 5px;}
@@ -670,7 +670,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 @media screen and (min-width:321px) and (max-width:600px) {
   #header .ss-box.wd {width:80%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
-  .product-item .pli-thumb img { min-width:155px !important;  min-height:155px !important}
+  .product-item .pli-thumb img { min-width:180px !important;  min-height:1px !important}
 }
 @media screen and (min-width:10px) and (max-width:320px) {
   #header .ss-text-box {width: 75%;}
