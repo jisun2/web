@@ -627,7 +627,7 @@ input[type=text].text-input.phone-last {width:70%}
 .mt25 {margin-top:25px}
 .mt30 {margin-top:30px}
 .mb10 {margin-bottom:10px}
-.paymtWrap {padding:0 0 75px; font-family:'Noto Sans KR'; max-width:720px}
+.paymtWrap {padding:0 0 75px; max-width:720px}
 .paymtWrap .num {font-family:'proxima-nova'!important}
 .paymtWrap ._addr input, .paymtWrap .paymt_modify input {height:40px}
 .paymtWrap ._sale input {min-height:30px; vertical-align:middle}
