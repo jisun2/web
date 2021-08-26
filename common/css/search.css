@@ -130,6 +130,7 @@ scrollbar-width: none;  /* Firefox */
 a:focus, input:focus, textarea:focus, select:focus {outline:none}
 .overflow_x.mgTb.pos_rel {padding-left:50px;}
 input:-internal-autofill-selected {background-color:#fff;}
+.ss-list a {cursor: default;}
 .ss-list.first {position:relative;}
 .overflow_x.mgTb2 {margin:0 0 0 20px;}
 .brLine {padding-top:25px; margin:0 15px; border-bottom:1px solid #f0f0f0;}
