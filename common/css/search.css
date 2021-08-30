@@ -117,7 +117,7 @@ input[type="checkbox"]+label {
 button,
 html,
 input,
-textarea {font-family: proxima-nova,'Noto Sans KR'!important; font-size: 16px}
+textarea {font-size: 16px}
 .visi_hid {visibility: hidden;}
 .sticky {z-index:10; position:sticky; top:0}
 .overflow_x {overflow-x: auto;}
@@ -130,7 +130,8 @@ scrollbar-width: none;  /* Firefox */
 a:focus, input:focus, textarea:focus, select:focus {outline:none}
 .overflow_x.mgTb.pos_rel {padding-left:50px;}
 input:-internal-autofill-selected {background-color:#fff;}
-.ss-list a {cursor: default;}
+.ss-list a {cursor:default;}
+.ss-list a:focus {border:2px solid #333}
 .ss-list.first {position:relative;}
 .overflow_x.mgTb2 {margin:0 0 0 20px;}
 .brLine {padding-top:25px; margin:0 15px; border-bottom:1px solid #f0f0f0;}
@@ -471,7 +472,8 @@ input:-internal-autofill-selected {background-color:#fff;}
 .filterWrap {width:100%; display: inline-block; height:80%; position:absolute; left:50%; transform:translateX(-50%); max-height:450px; bottom:0;}
 .filterWrap .bg_white {width:100%; margin:0 auto; height:100vh; background-color:#fff;}
 .filterWrap .filter_key {z-index: 5; padding-top:12px; position:absolute; bottom:0; width:100%; display: inline-block; border-top: 1px solid #d0d0d0; box-shadow: 0px -5px 15px 0px rgb(0 0 0 / 5%); background-color: #fff;}
-.filterWrap .filter_key .keyLst1 .ellipsis {display: block; float:left; max-width: 135px; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; line-height: 18px; word-break: break-all; word-wrap: break-word; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+.filterWrap .filter_key .keyLst1 .ellipsis, .keyLst .ellipsis
+{display: block; float:left; max-width: 135px; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; line-height: 18px; word-break: break-all; word-wrap: break-word; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
 .filterWrap .filter_key .btn_bk {display: inline-block; float: right; padding:12px 0px; width: 85%; border-radius: 5px 5px;}
 .sub-header {border-bottom: 1px solid #e5e5e5;}
 .scr_none {overflow-y: hidden;}
@@ -671,7 +673,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 @media screen and (min-width:321px) and (max-width:600px) {
   #header .ss-box.wd {width:80%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
-  .product-item .pli-thumb img { min-width:180px !important;  min-height:1px !important}
+  .product-item .pli-thumb img { min-width:180px !important;  min-height:180px !important}
 }
 @media screen and (min-width:10px) and (max-width:320px) {
   #header .ss-text-box {width: 75%;}
@@ -794,6 +796,6 @@ input:-internal-autofill-selected {background-color:#fff;}
 .pages_navi {clear:both; min-width:250px; margin-left:50%; -ms-transform: translateX(-50%); transform: translateX(-50%);}
 .pages { display:flex; min-width:250px; height:25px; text-align: center; line-height:25px; }
 .pages .link {width: 25px; height: auto; min-height: 25px; font-size: 15px;}
-.pages em.link {display: inline-block; border-width: 2px 0 2px; font-weight: 500; border-bottom: 2px solid #333; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.pages .link.active {display: inline-block; border-width: 2px 0 2px; font-weight: 500; border-bottom: 2px solid #333; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 .pages .last {position: relative; padding-left: 20px; width:42px;}
 .pages .last:before {content: "..."; position: absolute; left: 0; top: 0; width: 25px; height: 25px; line-height: 20px; text-align: center;}
