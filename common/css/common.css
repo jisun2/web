@@ -25,64 +25,64 @@ font-display:auto;font-style:normal;font-weight:500;
   font-family: proxima-nova;
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ProximaNova/ProximaNova-Regular.ttf);
+  src: url(../font/ProximaNova/ProximaNova-Regular.ttf);
   unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
 }
 @font-face {
   font-family: proxima-nova;
   font-style: normal;
   font-weight: 500;
-  src: url(../fonts/ProximaNova/ProximaNova-Medium.ttf);
+  src: url(../font/ProximaNova/ProximaNova-Medium.ttf);
   unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
 }
 @font-face {
   font-family: proxima-nova;
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ProximaNova/ProximaNova-Semibold.ttf);
+  src: url(../font/ProximaNova/ProximaNova-Semibold.ttf);
   unicode-range: U+0041-005A,U+0061-007A,U+0030-0039,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 300;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Light.otf) format("opentype")
+  src: url(../font/Noto_Sans_KR/NotoSans-Light.eot);
+  src: url(../font/Noto_Sans_KR/NotoSans-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Light.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Light.otf) format("opentype")
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 350;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.otf) format("opentype")
+  src: url(../font/Noto_Sans_KR/NotoSans-DemiLight.eot);
+  src: url(../font/Noto_Sans_KR/NotoSans-DemiLight.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-DemiLight.otf) format("opentype")
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.otf) format("opentype")
+  src: url(../font/Noto_Sans_KR/NotoSans-Regular.eot);
+  src: url(../font/Noto_Sans_KR/NotoSans-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Regular.otf) format("opentype")
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Medium.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.otf) format("opentype")
+  src: url(../font/Noto_Sans_KR/NotoSans-Medium.eot);
+  src: url(../font/Noto_Sans_KR/NotoSans-Medium.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Medium.otf) format("opentype")
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.otf) format("opentype")
+  src: url(../font/Noto_Sans_KR/NotoSans-Bold.eot);
+  src: url(../font/Noto_Sans_KR/NotoSans-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Bold.otf) format("opentype")
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 900;
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot);
-  src: url(../fonts/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
+  src: url(../font/Noto_Sans_KR/NotoSans-Black.eot);
+  src: url(../font/Noto_Sans_KR/NotoSans-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff2) format("woff2"),url(../fonts/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),url(../fonts/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
 }
 /* body {
     ::-webkit-scrollbar {width: 4px; height:6px;}
@@ -493,14 +493,17 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 .badge_coupon span {padding:0 2px}
 .badge_coupon .txt {display:inline-block; text-align:center; line-height:20px; width:24px; height:18px; font-size:10px; font-weight:200; color:#fff; background-color:#7890af}
 .badge_coupon .num {padding-left:5px; position:absolute; text-align:center; width:56px; height:18px; line-height:18px; background-color:#fff; font-size:11px; color:#7890af; border:1px solid #7890af; box-sizing:border-box;}
-/* 옵션 수량 버튼  */
-.count-input-box {float:right; min-width:90px; background-color:#fff;}
-.count-input-box::after {content: ''; display: block; clear:both}
-.count-input-box button,.count-input-box input {float: left; text-align: center; border: 1px solid #e5e5e5}
-.count-input-box .count-btn {width: 30px; height: 30px; background-color: #fff}
-.count-input-box .count-btn.minus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more_active-icon.png") center center/12px 1px no-repeat}
-.count-input-box .count-btn.plus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more-icon.png") center center/12px 12px no-repeat}
-.count-input-box .count-input {width:30px; height:30px; color:#555; font-size:15px; border-left:none; border-right:none;}
+
+/* 옵션 수량 버튼  */	
+.count-input-box {float:right; background-color:#fff;}	
+.count-input-box::after {content: ''; display: block; clear: both}	
+.count-input-box button,.count-input-box input {float: left; text-align: center; border: 1px solid #e5e5e5}	
+.count-input-box .count-btn {width: 30px; height: 30px; background-color: #fff}	
+.count-input-box .count-btn.minus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more_active-icon.png") center center/12px 1px no-repeat}	
+.count-input-box .count-btn.plus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more-icon.png") center center/12px 12px no-repeat}	
+.count-input-box .count-btn.cartMinus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more_active-icon.png") center center/12px 1px no-repeat}	
+.count-input-box .count-btn.cartPlus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more-icon.png") center center/12px 12px no-repeat}	
+.count-input-box .count-input {width:40px; height:30px; color:#555; font-size:15px; border-left:none; border-right:none;}
 /* 상품 셀렉트 박스 */
 .ico.box_close {width:18px; height:17px; background-position:-111px -52px}
 .pf_fc-box {max-height:333px; padding:0 15px 133px 15px; font-weight:400; background-color:#fff}
@@ -586,6 +589,11 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 #cartCnt.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:1px; min-width:16px; max-width:20px;
      height:19px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
+
+ #itemCntInCartHeader.cart_num {display: inline-block; padding:.5px 2px 0px 2px; position:absolute; right:0; top:1px; min-width:16px; max-width:20px;
+        height:19px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
+         -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}      
+      
 /* navigation */
 #container .fixed_nav {z-index:10; position:fixed; bottom:0px; width:100%; max-width:720px; line-height:15px; font-size:9px; font-weight:500; background-color: #fff; font-family:'Noto Sans KR'}
 #container .fixed_nav.hide {bottom:-10%}
@@ -640,6 +648,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 .popup-wrap .border_tab-cont > .paymt_wrap {display:none}
 .popup-wrap .border_tab-cont > .paymt_wrap.active {display:block}
 /* 공통 팝업 close btn */
+#photoView .pop_close {bottom: 30px;}
 .popup_close-btn {z-index:100; position:fixed; left:50%; width:40px; height:40px; background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/popup_close-icon.png") center center/cover no-repeat;
   -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform:translateX(-50%);}
 .popup-content .page-header .sz-wrap {padding:0 20px}
@@ -696,6 +705,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password], inp
 .error404 .btns a {clear:both;display:block;margin:10px 0;padding:14px 0;border:1px solid #111;border-radius:3px; color:#000; font-weight:500; text-align:center; font-size:17px}
 .error404 a.btn_bk {color:#fff; background-color:#111}
 .error404 a.btn_wh {width:100%;}
+
 
 #footer {padding:20px 20px 100px 20px; background-color:#f9f9f9;}
 #footer .footer_top {overflow: hidden}
@@ -760,6 +770,7 @@ input::-webkit-search-results-decoration {
 /* 크롬 사파리 오페라 파이어 폭스 브라우저 적용 */
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #cartCnt.cart_num {padding-top:1px;}
+    #itemCntInCartHeader.cart_num {padding-top:1px;}
     #header .header_title .number {font-family:'Proxima-Nova'!important}
 }
 @media screen and (min-width:720px) {
