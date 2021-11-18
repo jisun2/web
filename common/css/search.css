@@ -137,7 +137,7 @@ input,
 textarea {font-family: proxima-nova,'Noto Sans KR'!important; font-size: 16px}
 .visi_hid {visibility: hidden;}
 .sticky {z-index:10; position:sticky; top:0}
-.overflow_x {overflow-x: auto;}
+.overflow_x {overflow-x: auto; overflow-y: hidden;}
 .example::-webkit-scrollbar {display: none;}
 /* Hide scrollbar for IE, Edge and Firefox */
 .example {
@@ -511,7 +511,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .filterWrap .swipe-tabs li {display:inline-block; width:fit-content;white-space: nowrap;}
 .filterWrap .swipe-tabs li a {display:block; padding:10px 0; height:40px; float:left; margin:0 10px; color: #ababab;}
 .filterWrap .swipe-tabs li.active a {color: #3067cc; border-bottom :2px solid #3067cc}
-.filterWrap .swipe-tab-cont {margin: 20px 20px 0 20px; box-sizing:border-box; background-color: #fff; color:#333;}
+.filterWrap .swipe-tab-cont {margin: 20px 20px 0 20px; box-sizing:border-box; overflow-y: scroll; background-color: #fff; color:#333;}
 
 .swipe-tab-cont .cate,.filterWrap .size, .filterWrap .brnd {box-sizing:border-box; max-height:238px; 
     margin-bottom:50px;} 
@@ -581,7 +581,6 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .article_cate > li {border-bottom:1px solid #e5e5e5;}
 .article_cate.active > li:last-child {border-bottom :none;}
 /* 브랜드 서브 탭 */
-.swipe-tab-cont.brnd {box-sizing: border-box; overflow-x:hidden;}
 .swipe-tab-cont.brnd .sub_tab {float:left;vertical-align:bottom;display:inline-block;}
 .swipe-tab-cont.brnd .sub_tab li {margin-right:15px; display:flex; float:left; line-height:32px; font-size:18px; color: #ababab;}
 /* .swipe-tab-cont.brnd .sub_tab li:first-child {margin-right:15px;} */
@@ -612,6 +611,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .brnd .cateLst li {padding-bottom: 0px}
 .brnd .cateCont label {min-height:28px;}
 .brnd .cateCont label p {display:inline-block; font-size:14px;}
+.swipe-tab-cont.brnd {box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
 /* 이벤트 */
 .evt .cateLst {width:100%;}
 .evt .cateLst li {padding-top:8px; width:100%; font-size:14px}
@@ -619,7 +619,13 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .evt .cateLst li .ico.pos {position:absolute; top:11px}
 /* 사이즈 */
 .swipe-tab-cont.size {position:relative; box-sizing: border-box;}
-.size .sizeCont {position:sticky; overflow-y: scroll;}
+.size .sizeCont {position:sticky; width:100%; text-align: center;}
+.swipe-tab-cont.size {box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
+
+.size .sizeCont::-webkit-scrollbar {background-color:#f9f9f9}
+.size .sizeCont::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
+.size .sizeCont::-webkit-scrollbar-thumb:active {background-color:#f9f9f9}
+
 .size .sizeCont label {min-height:28px;}
 .size .sizeCont label p {display:inline-block; font-size:14px;}
 .swipe-tab-cont.size .sub_tab li {float:left; font-size:16.5px; line-height: 32px; color: #ababab;}
