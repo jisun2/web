@@ -137,7 +137,7 @@ input,
 textarea {font-family: proxima-nova,'Noto Sans KR'!important; font-size: 16px}
 .visi_hid {visibility: hidden;}
 .sticky {z-index:10; position:sticky; top:0}
-.overflow_x {overflow-x: auto; overflow-y: hidden;}
+.overflow_x {overflow-x: auto;}
 .example::-webkit-scrollbar {display: none;}
 /* Hide scrollbar for IE, Edge and Firefox */
 .example {
@@ -418,8 +418,8 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 
 .ss-list.filterKey li .on{color:#fff; border:1px solid #3067cc; background-color:#3067cc;}
 .searchWrap .filter_btn {position:relative; display:block; padding:0px 20px 70px 20px; background-color:#fff;}
-.searchWrap .filter_btn .txt {position:absolute; left:20%; bottom:0; white-space: nowrap; font-size:13px; color:#333}
-.searchWrap .btn_reset {z-index: 5; margin-left:2%; padding: 8px 5% 8px 20px; left:0; position: absolute;}
+.searchWrap .filter_btn .txt {position:absolute; left:20%; bottom:-6px; white-space: nowrap; font-size:13px; color:#333}
+.searchWrap .btn_reset {z-index: 5; margin-left:2%; padding:0px 5% 10px 20px; left:0; position: absolute;}
 .searchWrap .btn_reset.bg {margin:0; padding:6px 14px; background-color:#f9f9f9;}
 .searchWrap .reset_s {margin-top:2px;width: 22px;height: 30px;background-position: -391px -85px; background-size: 250px 250px; background-color:#f9f9f9;}
 .searchWrap .reset { width: 26px; height: 30px; background-position: -170px -106px;}
@@ -512,15 +512,20 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .filterWrap .swipe-tabs li {display:inline-block; width:fit-content;white-space: nowrap;}
 .filterWrap .swipe-tabs li a {display:block; padding:10px 0; height:40px; float:left; margin:0 10px; color: #ababab;}
 .filterWrap .swipe-tabs li.active a {color: #3067cc; border-bottom :2px solid #3067cc}
-.filterWrap .swipe-tab-cont {margin: 20px 20px 0 20px; box-sizing:border-box; overflow-y: scroll; background-color: #fff; color:#333;}
-.filterWrap .swipe-tab-cont .cate {overflow-x: hidden;}
+.filterWrap .swipe-tab-cont {margin: 20px 20px 0 20px; overflow-x:hidden; overflow-y:auto; max-height:252px; background-color: #fff; color:#333;}
+/* .filterWrap .swipe-tab-cont::-webkit-scrollbar {background-color:#f9f9f9} */
+/* .filterWrap .swipe-tab-cont::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
+.filterWrap .swipe-tab-cont::-webkit-scrollbar-thumb:active {background-color:#f9f9f9} */
 
 .swipe-tab-cont .cate,.filterWrap .size, .filterWrap .brnd {box-sizing:border-box; max-height:238px; 
     margin-bottom:50px;} 
 /*  overflow-y: scroll; */
 
 .slick-title, .slick-caption {text-align: center;}
-.filter_contWrap {margin-top:-4px; width:100%;}
+.filter_contWrap {margin-top:-4px; width:100%;overflow-x: hidden; overflow-y: auto;}
+/* .filter_contWrap::-webkit-scrollbar {background-color:#f9f9f9}
+.filter_contWrap::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
+.filter_contWrap::-webkit-scrollbar-thumb:active {background-color:#f9f9f9} */
 .filterKey.ss-list li {display:inline-block; margin-top:10px;}
 .filterKey.ss-list li.active a {background: #3067cc; border:1px solid #3067cc; color:#fff}
 .filter_price {margin-bottom:25px; font-size:19px; font-weight:bold; color:#333;}
@@ -560,7 +565,9 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .conse .input_radio .mgl30 {font-size: 14px;}
 .conse .radio_box {margin-top:-10px;}
 .swipe-tab-cont.conse .input_radio {display:block; padding:10px 0;}
-.swipe-tab-cont.conse .input_radio.active p {color:#3067cc}
+.conse .input_radio input[type=radio] {width: 22px;height: 22px;border: 1px solid #dadada}
+.conse .input_radio input[type=radio]:checked+label p {color:#3067cc;}
+
 /* .input_radio.active .mgl30 {color:#3067cc} */
 /* 카테고리 아코디언 메뉴 */
 .article_cate {margin-top:-10px;}
@@ -586,9 +593,9 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .swipe-tab-cont.brnd .cateLst li {width:100%; display:block;}
 .swipe-tab-cont.brnd .overflow_x {}
 .swipe-tab-cont.brnd .overflow_x {position:relative;}
-.swipe-tab-cont.brnd .overflow_x::-webkit-scrollbar {background-color:#f9f9f9}
+/* .swipe-tab-cont.brnd .overflow_x::-webkit-scrollbar {background-color:#f9f9f9}
 .swipe-tab-cont.brnd .overflow_x::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
-.swipe-tab-cont.brnd .overflow_x::-webkit-scrollbar-thumb:active {background-color:#f9f9f9}
+.swipe-tab-cont.brnd .overflow_x::-webkit-scrollbar-thumb:active {background-color:#f9f9f9} */
 .swipe-tab-cont.brnd .consonant_on {margin-top:5px; display: inline-block; text-align: center; vertical-align: middle; width:28px; height:28px; line-height: 27px; font-weight:bold; border-radius: 50% 50%; color:#fff; background-color:#3067cc}
 .swipe-tab-cont.brnd .consonant_txt {display:flex; width:max-content; font-size:19px; font-weight:bold; color:#ababab}
 .swipe-tab-cont.brnd .consonant_txt li {margin-right:2px; text-align:center; width:28px; line-height:28px;}
@@ -690,18 +697,18 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 
 /* -------------------------------------- CSS media queries -------------------------------------- */
 
-@media screen and (max-width:3000px) {
-  .overflow_x::-webkit-scrollbar {width: 4px; height:6px;}
-  .overflow_x::-webkit-scrollbar-track { background-color:transparent;} 
-  .overflow_x::-webkit-scrollbar-thumb { background:transparent; border-radius:4px;} 
-  .overflow_x::-webkit-scrollbar-thumb:hover { background:transparent;} 
-  .overflow_x::-webkit-scrollbar-thumb:active {background: #f5f5f5}
-  .overflow_x::-webkit-scrollbar-button { width:20px; height:10px; display:none;}
+@media screen and (max-width:3000px) {	
+  .overflow_x::-webkit-scrollbar {width: 4px; height:6px;}	
+  .overflow_x::-webkit-scrollbar-track { background-color:transparent;} 	
+  .overflow_x::-webkit-scrollbar-thumb { background:transparent; border-radius:4px;} 	
+  .overflow_x::-webkit-scrollbar-thumb:hover { background:transparent;} 	
+  .overflow_x::-webkit-scrollbar-thumb:active {background: #f5f5f5}	
+  .overflow_x::-webkit-scrollbar-button { width:20px; height:10px; display:none;} 	
 }
 /* PC scroll custom */
 @media screen and (min-width:720px) and (max-width:3000px) {
-  ::-webkit-scrollbar-thumb:hover { background:rgb(151, 151, 151)} 
-  ::-webkit-scrollbar-thumb:active {background: rgb(151, 151, 151)} 
+  /* ::-webkit-scrollbar-thumb:hover { background:rgb(151, 151, 151)} 
+  ::-webkit-scrollbar-thumb:active {background: rgb(151, 151, 151)}  */
   .overflow_x::-webkit-scrollbar-thumb:hover { background:rgb(151, 151, 151)} 
   .overflow_x::-webkit-scrollbar-thumb:active {background: rgb(151, 151, 151)} 
   .product-item .pli-thumb img {position: relative; width:360px; height:360px;}
@@ -733,7 +740,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 @media screen and (min-width:321px) and (max-width:600px) {
   #header .ss-box.wd {width:80%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
-  .product-item .pli-thumb img { min-width:155px !important;  min-height:155px !important}
+  .product-item .pli-thumb img {min-width:155px !important;  min-height:155px !important}
 }
 @media screen and (min-width:10px) and (max-width:320px) {
   #header .ss-text-box {width: 75%;}
@@ -793,7 +800,6 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .brd_main .brd_en {display:block; font-size:34px; font-weight: 600;}
 .brd_main .brd_ko {display:block; font-size:16px; font-weight: 500;}
 .brd_main .brd_des {margin-top:20px; display:block; display:-webkit-box; word-wrap:normal; line-height:17px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-line-clamp:4;-webkit-box-orient:vertical;text-overflow:ellipsis; overflow:hidden; font-size:13px; font-weight: 400}
-
 /* 랭킹 상품 */
 .ranking_tab_wrap {padding:0 15px}
 .ranking_tab_wrap .swipe-tabs {margin-top:5px}
@@ -835,8 +841,8 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .brd_list-wrap .brd_ranking .upNum {float:right; padding-top:15px}
 .brd_list-wrap .brd_ranking .downNum {float:right; padding-top:15px}
 /* .brd_ranking .rankNum {float:left} */
-.brd_name_ko { font-size: 17px;font-weight: 500; color:#333}
-.brd_name_en { font-size: 13px;font-weight: 400; color:#ababab}
+.brd_name_ko {font-size: 17px;font-weight: 500; color:#333}
+.brd_name_en {font-size: 13px;font-weight: 400; color:#ababab}
 .brd_item {margin-left:15px; position:relative; width:96%;}
 .brd_item ul {position:relative; overflow:hidden;}
 .brd_item ul li {float:left; margin-right:5px; vertical-align:top; }
@@ -853,7 +859,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .disabled .ico.prev {background-position:-112px -85px; background-repeat: no-repeat}
 .disabled .ico.next {background-position:-137px -85px; background-repeat: no-repeat}
 .pages_navi {clear:both; min-width:250px; margin-left:50%; -ms-transform: translateX(-50%); transform: translateX(-50%);}
-.pages { display:flex; justify-content:center; min-width:250px; height:25px; text-align: center; line-height:25px; }
+.pages {display:flex; justify-content:center; min-width:250px; height:25px; text-align: center; line-height:25px; }
 .pages .link {width: 25px; height: auto; min-height: 25px; font-size: 15px; margin-right: 7px;}
 .pages a.link.on {display: inline-block; border-width: 2px 0 2px; font-weight: 500; border-bottom: 2px solid #333; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 .pages .last {position: relative; padding-left: 20px; width:42px;}

@@ -719,6 +719,7 @@ input[type=radio] {
 	height: 22px;
 	border: 1px solid #dadada
 }
+
 /* bic check box */
 .input_checkbox_b label {
 	display: inline-block;
