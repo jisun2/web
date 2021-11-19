@@ -12,10 +12,10 @@ html {
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 html::-webkit-scrollbar {
-	background-color:#f5f5f5
+	background-color:#fff
 }
 html div::-webkit-scrollbar {
-	background-color:#f5f5f5
+	background-color:#fff
 }
 body::-webkit-scrollbar {
 	display: none;
