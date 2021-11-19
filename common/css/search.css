@@ -692,8 +692,9 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 
 /* -------------------------------------- CSS media queries -------------------------------------- */
 
-@media screen and (max-width:500px) {
+@media screen and (min-width:100px) and (min-width:500px) {
   body::-webkit-scrollbar {display:none;} 	
+  div::-webkit-scrollbar {display:none;} 	
 }
 
 @media screen and (max-width:3000px) {	
