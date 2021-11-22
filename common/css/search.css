@@ -25,7 +25,6 @@ body::-webkit-scrollbar-thumb {color: #f9f9f9; background: #fff}
 body::-webkit-scrollbar:active {background-color:#fff}
 body::-webkit-scrollbar-thumb:active {background-color:#fff}
 
-
 a,
 article,
 b,
@@ -155,6 +154,13 @@ input:-internal-autofill-selected {background-color:#fff;}
 .search-key .keyword {width:67%; margin-right:5px; display:block; display:-webkit-box; text-overflow:ellipsis; overflow:hidden; line-height:18px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical; font-size: 15px;color:#888;}
 .search-key .keyCate {margin-top:4px; font-size: 13px; color:#ababab; font-family: proxima-nova;}
 .search-key .brdStr {display:inline-block; position:absolute; right: -1px; top: 14px; font-size: 13px; color:#888;}
+
+.ico1 {clear: both;display: inline-block;
+	background:
+		url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr1.png")
+		center center/cover;
+	background-size: 300px 300px
+}
 .ico.more {display:inline-block; width: 10px; height: 16px; margin: 0 0 -2px 3px; background-position: -182px -62px;}
 .ico.keyDel {display:inline-block; margin:2.5px 0 0 3px; width: 11px; height: 11px; background-position: -90px -86px;}
 
@@ -631,7 +637,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .size .sizeCont label {min-height:28px;}
 .size .sizeCont label p {display:inline-block; font-size:14px;}
 
-.swipe-tab-cont.size .cateLst {width:100%; display:block;}
+.swipe-tab-cont.size .cateLst {width:100%; display:block; padding:30px 0;}
 .swipe-tab-cont.size .cateLst li {width:100%; display:block;}
 .swipe-tab-cont.size .overflow_x {position:relative;}
 .swipe-tab-cont.size .consonant_txt {display:flex; width:max-content; font-size:19px; font-weight:bold; color:#ababab}
