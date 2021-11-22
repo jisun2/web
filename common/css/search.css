@@ -402,8 +402,8 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .ss-banner {padding: 10px 20px 20px 20px;}
 .searchWrap .ss-banner a img {min-width:100%;}
 .searchWrap {position:relative;}
-.searchKeyWrap { z-index:100; padding: 0 0px; position:absolute; top:0px; width:100%; background-color:#fff; display: block; }
-.searchKeyWrap > div { padding: 0 20px; } 
+.searchKeyWrap { z-index:100; padding: 0 0px; position:absolute; top:0px; width:100%; background-color:#fff; display: block;}
+.searchKeyWrap > div { padding: 0 20px;} 
 .searchWrap label {width:100%}
 .searchWrap.pd {padding: 0 20px;}
 .searchWrap .ss-content:last-child .ss_none-text {padding-left: 0}
@@ -513,7 +513,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .touchBar {clear:both; display: inline-block; width:40px; height:4px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; background-color: #e5e5e5;}
 .swipe-tabs.container-fluid {width: 100%; max-width: 1200px; padding: 0;}
 .filterWrap .swipe-tabs, .swipe-tabs-container { color: #3067cc;}
-.filterWrap .swipe-tabs {display: inline-flex; padding: 0 10px; min-width: 130% !important; margin-bottom: 0px; font-size: 15px; background-color: transparent; border-bottom: 1px solid #f5f5f5;}
+.filterWrap .swipe-tabs {display: inline-flex; padding: 0 10px; min-width: 220% !important; margin-bottom: 0px; font-size: 15px; background-color: transparent; border-bottom: 1px solid #f5f5f5;}
 .filterWrap .swipe-tabs li {display:inline-block; width:fit-content;white-space: nowrap;}
 .filterWrap .swipe-tabs li a {display:block; padding:10px 0; height:40px; float:left; margin:0 10px; color: #ababab;}
 .filterWrap .swipe-tabs li.active a {color: #3067cc; border-bottom :2px solid #3067cc}
@@ -521,12 +521,11 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 /* .filterWrap .swipe-tab-cont::-webkit-scrollbar {background-color:#f9f9f9} */
 /* .filterWrap .swipe-tab-cont::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
 .filterWrap .swipe-tab-cont::-webkit-scrollbar-thumb:active {background-color:#f9f9f9} */
-
 .swipe-tab-cont .cate,.filterWrap .size, .filterWrap .brnd {box-sizing:border-box; max-height:238px; margin-bottom:50px;} 
 /*  overflow-y: scroll; */
 
 .slick-title, .slick-caption {text-align: center;}
-.filter_contWrap {margin-top:-4px; width:100%;overflow-x: hidden; overflow-y: auto;}
+.filter_contWrap {margin-top:-4px; width:100%; overflow-x: hidden; overflow-y: auto;}
 /* .filter_contWrap::-webkit-scrollbar {background-color:#f9f9f9}
 .filter_contWrap::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
 .filter_contWrap::-webkit-scrollbar-thumb:active {background-color:#f9f9f9} */
@@ -571,7 +570,6 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .swipe-tab-cont.conse .input_radio {display:block; padding:10px 0;}
 .conse .input_radio input[type=radio] {width: 22px;height: 22px;border: 1px solid #dadada}
 .conse .input_radio input[type=radio]:checked+label p {color:#3067cc; font-weight:bold;}
-
 /* .input_radio.active .mgl30 {color:#3067cc} */
 /* 카테고리 아코디언 메뉴 */
 .article_cate {margin-top:-10px;}
@@ -636,6 +634,8 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .size .sizeCont::-webkit-scrollbar-thumb:active {background-color:#f9f9f9}
 .size .sizeCont label {min-height:28px;}
 .size .sizeCont label p {display:inline-block; font-size:14px;}
+.sizeCont.gradient::before {z-index:5; pointer-events: none; display: block; position:fixed; top:119px; left:0; content: ""; width: 100%; height: 84px; background: linear-gradient(to top, rgba(255, 255, 255, 0), #fff); border:none}
+.sizeCont.gradient::after {z-index:5; pointer-events: none; display: block; position:fixed; bottom:119px; left:0; content: ""; width: 100%; height: 84px;background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff); border:none}
 
 .swipe-tab-cont.size .cateLst {width:100%; display:block; padding:30px 0;}
 .swipe-tab-cont.size .cateLst li {width:100%; display:block;}
@@ -697,12 +697,6 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 #alertDiv ._button_top_wr ap.nav-up {bottom: 20px} */
 ._button_top_wr ap.nav-down {bottom: 80px}
 /* ._button_top_wrap.nav-up {bottom: 80px} */
-
-.sizeCont.gradient::before {z-index:5; pointer-events: none; display: block; position:fixed; top:119px; left:0; content: ""; width: 100%; height: 84px;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0), #fff); border:none}
-
-.sizeCont.gradient::after {z-index:5; pointer-events: none; display: block; position:fixed; bottom:119px; left:0; content: ""; width: 100%; height: 84px;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff); border:none}
 
 /* -------------------------------------- CSS media queries -------------------------------------- */
 
