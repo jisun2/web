@@ -138,7 +138,7 @@ input,
 textarea {font-family: proxima-nova,'Noto Sans KR'!important; font-size: 16px}
 .visi_hid {visibility: hidden;}
 .sticky {z-index:10; position:sticky; top:0}
-.overflow_x {overflow-x: auto;}
+.overflow_x {overflow-y: hidden; overflow-x: auto;}
 /* .example::-webkit-scrollbar {display: none;}
 .example {-ms-overflow-style: none; scrollbar-width: none;} */
 a:focus, input:focus, textarea:focus, select:focus {outline:none}
