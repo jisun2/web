@@ -596,8 +596,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .swipe-tab-cont.brnd .cateLst {width:100%; display:block;}
 
 .swipe-tab-cont.brnd .cateLst li {width:100%; display:block;}
-.swipe-tab-cont.brnd .overflow_x {}
-.swipe-tab-cont.brnd .overflow_x {position:relative;}
+.swipe-tab-cont.brnd .overflow_x {position:relative; scrollbar-width: none;}
 /* .swipe-tab-cont.brnd .overflow_x::-webkit-scrollbar {background-color:#f9f9f9}
 .swipe-tab-cont.brnd .overflow_x::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
 .swipe-tab-cont.brnd .overflow_x::-webkit-scrollbar-thumb:active {background-color:#f9f9f9} */
@@ -628,7 +627,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .evt .cateLst > li:first-child {margin-top:-10px}
 .evt .cateLst li .ico.pos {position:absolute; top:11px;}
 /* 사이즈 */
-.size .cateLst li .ico.pos {position:absolute; top:13px; margin-left:-33px;}
+.size .cateLst li .ico.pos {position:absolute; top:12.5px; margin-left:-33px;}
 .swipe-tab-cont.size {position:relative;}
 .swipe-tab-cont.size .sizeCont {box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
 .size .sizeCont {position:sticky; width:100%; text-align: center;}
@@ -702,7 +701,7 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .sizeCont.gradient::before {z-index:5; pointer-events: none; display: block; position:fixed; top:119px; left:0; content: ""; width: 100%; height: 84px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0), #fff); border:none}
 
-.sizeCont.gradient::after {z-index:5; pointer-events: none; display: block; position:fixed; bottom:120px; left:0; content: ""; width: 100%; height: 90px;
+.sizeCont.gradient::after {z-index:5; pointer-events: none; display: block; position:fixed; bottom:119px; left:0; content: ""; width: 100%; height: 84px;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff); border:none}
 
 /* -------------------------------------- CSS media queries -------------------------------------- */
