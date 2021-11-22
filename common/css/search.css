@@ -629,7 +629,8 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .evt .cateLst li .ico.pos {position:absolute; top:11px;}
 /* 사이즈 */
 .size .cateLst li .ico.pos {position:absolute; top:13px; margin-left:-33px;}
-.swipe-tab-cont.size {position:relative; box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
+.swipe-tab-cont.size {position:relative;}
+.swipe-tab-cont.size .sizeCont {box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
 .size .sizeCont {position:sticky; width:100%; text-align: center;}
 .size .sizeCont::-webkit-scrollbar {background-color:#f9f9f9}
 .size .sizeCont::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
