@@ -1221,6 +1221,8 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 	background-size: 300px 300px
 }
 
+.ico1 {clear: both;display: inline-block;	background:url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/common/ispr1.png") center center/cover;	background-size: 300px 300px}
+
 .ico.Warning {
 	margin-top: 2px;
 	float: left;
