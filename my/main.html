@@ -29,7 +29,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="container">
                 <div class="myWrap">
                     <div class="my_area">
@@ -71,6 +70,7 @@
                         </div>
                         <div class="my_lst">
                             <p class="sub_tit">최근 구매 내역</p>
+
                             <!-- 에러일 때 -->
                             <!-- <div class="no_txt">
                                 예기치 않은 문제가 발생했습니다. <br> 새로고침 해주세요.
@@ -168,8 +168,6 @@
                                 </div>
                             </div>
                             <!-- //주문내역 여러 건 일 때 -->
-
-
                         </div>
                     </div>
                     <div class="my_area">
@@ -197,14 +195,37 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="fixed_nav">
-                    <ul class="fbn-list">
-                        <li><button type="button"><span class="ico fbn-item cate"></span><span class="txt">카테고리</span></button></li>
-                        <li> <button type="button"><span class="ico fbn-item search"></span><span class="txt">검색</span></button></li>
-                        <li> <button type="button"><span class="ico fbn-item home"></span><span class="blind">홈</span></button></li>
-                        <li> <button type="button"><span class="ico fbn-item mypage"></span><span class="txt">마이 페이지</span></button></li>
-                        <li> <button type="button"><span class="ico fbn-item product"></span><span class="txt">최근 본 상품</span></button></li>
+                    <ul class="fbn-list list_tab dis_f">
+                        <li id="CATE">
+                            <button type="button">
+                                <span class="ico1 fbn-item cate"></span><span class="blind">카테고리</span>
+                            </button>
+                        </li>
+                    
+                        <li>
+                               <button type="button" onclick="goSearch();">
+                                   <span class="ico1 fbn-item search"></span><span class="blind">검색</span>
+                            </button>
+                        </li>
+                        
+                        <li>
+                            <button type="button" onclick="goHome();">
+                                <span class="ico1 fbn-item home"></span><span class="blind">홈</span>
+                            </button>
+                        </li>
+                        
+                           <li>
+                               <button type="button" onclick="javascript:location.href='https://www.hiphoper.com/mypage'">
+                                   <span class="ico1 fbn-item mypage"></span><span class="blind">마이 페이지</span>
+                               </button>
+                         </li>
+                            
+                        <li>
+                            <button type="button" onclick="javascript:location.href='https://list.hiphoper.com/mypage/recent'">
+                                <span class="ico1 fbn-item product"></span><span class="blind">최근 본 상품</span>
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
