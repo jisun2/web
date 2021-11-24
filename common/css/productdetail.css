@@ -607,9 +607,9 @@ input[type=text].text-input.phone-last {width:70%}
 .cart_aera .pf_fc .product-select:last-child {margin-top:-1px}
 .cart-right .add_coupon-wrap {display:none}
 .terms-popup .set_product_pop.terms-content {padding:25px 15px 45px; overflow-y:auto}
-.terms-popup .set_product_pop.terms-content:-webkit-scrollbar {width:2px; background-color:#000}
+/* .terms-popup .set_product_pop.terms-content:-webkit-scrollbar {width:2px; background-color:#000}
 .terms-popup .set_product_pop.terms-content:-webkit-scrollbar-thumb {background-color:#000}
-.terms-popup .set_product_pop.terms-content:-webkit-scrollbar-track {background-color:#e5e5e5}
+.terms-popup .set_product_pop.terms-content:-webkit-scrollbar-track {background-color:#e5e5e5} */
 .terms-popup .set_product_pop .product-item .pli-thumb {height:180px}
 .terms-popup .set_product_pop .product-item {width:50%}
 .popup-content .member-wrap .sz-select_list .selected.active {border:1px solid #000}

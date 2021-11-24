@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-@import
-	url("https://p.typekit.net/p.css?s=1&k=yzy2fux&ht=tk&f=173.175.25136&a=16936712&app=typekit&e=css")
-	;
-
-.tk-proxima-nova {
-	font-family: "proxima-nova", sans-serif
-}
-
 @font-face {
 	font-family: "proxima-nova";
 	src:
@@ -242,9 +234,9 @@ input[type=number] {
 	-moz-appearance: textfield
 }
 
-input::-ms-clear {
+/* input::-ms-clear {
 	display: none
-}
+} */
 
 legend, td, th {
 	padding: 0
@@ -333,9 +325,9 @@ select {
 	appearance: none;
 }
 
-select::-ms-expand {
+/* select::-ms-expand {
 	display: none
-} /* 화살표 IE10, 11*/
+}  */
 del {
 	text-decoration: line-through
 }
@@ -831,7 +823,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 .input_radio .mgl30 {display:inline-block; vertical-align:middle; margin-left:36px; height:24px}
 .input_radio input {display:none;vertical-align:middle;}
 .input_radio label {display:inline-block; height:24px; vertical-align:middle;}
-.input_radio label:focus {outline-style: 2px solid #333;}
+/* .input_radio label:focus {outline-style: 2px solid #333;} */
 .input_radio img {margin-top:3px; width:50%}
 .input_radio label:after {display:none; background-color:#ff4e25; border-radius:50%; position:absolute; top:49%; left:7px; width:10px; height:10px; content:"";-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
 .article_content .input_radio input:checked + label:before {border-color:#ff4e25;}
