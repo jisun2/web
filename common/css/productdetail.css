@@ -659,7 +659,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .input_radio img {margin-top:3px; width:50%}
 .input_radio label:after {display:none; background-color:#ff4e25; border-radius:50%; position:absolute; top:30%; left:7px; width:10px; height:10px; content:"";-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
 .input_radio input:checked + label:before {border-color:#ff4e25;}
-.input_radio label:before, .input_radio_check label:before {width:22px; height:22px; position:absolute; border:1px solid #dadada; content: "";border-radius: 50%; background-color:#fff}
+.input_radio label:before, .input_radio_check label:before {width:22px; height:22px; position:absolute; top:0; border:1px solid #dadada; content: "";border-radius: 50%; background-color:#fff}
 .input_radio input:checked+label:after {display:block;}
 .slick-slide a:focus, .slick-slide:focus {outline: 0}
 
@@ -693,7 +693,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info._product:after {border-top:0}
 .paymtWrap ._product .paymt_product .cart_info .just_left {width:60px; height:60px}
 .paymtWrap .paymt_info .cart_section_total {border-bottom:0; border-bottom-left-radius:2px; border-bottom-right-radius:2px; border-top:1px solid #e5e5e5; background-color:#f9f9f9;}
-.paymtWrap .paymt_info:nth-child(2):before  {display:block; content:''; clear:both; height:7px; background:#f0f0f0; border-top:1px solid #d0d0d0;}
+/* .paymtWrap .paymt_info:nth-child(2):before  {display:block; content:''; clear:both; height:7px; background:#f0f0f0; border-top:1px solid #d0d0d0;} */
 .paymtWrap .paymt_info .article_title {position:relative; padding:0 20px; height:50px; line-height:50px; font-size:16px; font-weight:500; color:#000;}
 .paymtWrap .paymt_info .article_title:after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_close_toggle.gif) center center/cover no-repeat}
 .paymtWrap .paymt_info .article_title.active:after {content:''; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_open_toggle.gif) center center/cover no-repeat}
@@ -1056,5 +1056,4 @@ input[type=text].text-input.phone-last {width:70%}
 }
 @media screen and (max-width:719px) {
     #pop_card_benefit {min-width:100%; max-width:100%;}
-    .paymt_wrap {position:Relative;}
 }
