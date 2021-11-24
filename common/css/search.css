@@ -858,4 +858,76 @@ line-height:32px; word-break:break-all; word-wrap:break-word; -webkit-line-clamp
 .pages .last {position: relative; padding-left: 20px; width:42px;}
 .pages .last:before {content: "..."; position: absolute; left: 0; top: 0; width: 25px; height: 25px; line-height: 20px; text-align: center;}
 
+.input_radio .mgl30 {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+	height: 24px;
+	color: #ababab;
+}
 
+/* .input_radio label:after .mgl30 {
+	color:#3067cc;
+}
+ */
+.input_radio input {
+	display: none;
+	vertical-align: middle;
+}
+
+.input_radio label {
+	display: inline-block;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.input_radio label:focus {
+	outline-style: 2px solid #333;
+}
+
+.input_radio img {
+	margin-top: 3px;
+	width: 50%
+}
+
+.input_radio label:after {
+	display: none;
+	background-color: #3067cc;
+	border-radius: 50%;
+	position: absolute;
+	top: 21px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	content: "";
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.input_radio label:after span {
+	color: #3067cc;
+}
+
+/* .input_radio input:checked+label:before {
+	border-color: #3067cc;
+}
+ */
+.input_radio label:before, .input_radio_check label:before {
+	content: "";
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	top:16px;
+	box-shadow: 0 0 0 1px #e5e5e5 inset;
+	border-radius: 50%;
+}
+
+.input_radio input:checked+label:after {
+	display: block;
+}
+
+.input_radio input:checked+label:after.mgl30 {
+	color: #3067cc;
+}
