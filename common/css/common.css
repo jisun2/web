@@ -558,10 +558,10 @@ td .error [class*=input_], td .site_main.join .cert.error, td [class*=input_].er
 	color: #ababab
 }
 
-:-ms-input-placeholder, .out_reason .input_textarea textarea:-ms-input-placeholder
+/* :-ms-input-placeholder, .out_reason .input_textarea textarea:-ms-input-placeholder
 	{
 	color: #ababab
-}
+} */
 
 input::placeholder {
 	color: #ababab
@@ -679,9 +679,9 @@ textarea::-webkit-input-placeholder {
 	color: #ababab;
 }
 
-textarea:-ms-input-placeholder {
+/* textarea:-ms-input-placeholder {
 	color: #ababab;
-}
+} */
 
 .input_checkbox label:before, .input_number [class^=btn_], .input_radio label:before,
 	.input_radio_check label:before, .lc_d0, .table_st td, .table_st th,
@@ -2738,9 +2738,9 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 	float: right;
 }
 
-input::-ms-clear, input::-ms-reveal {
+/* input::-ms-clear, input::-ms-reveal {
 	display: none
-}
+} */
 
 input::-webkit-search-decoration, input::-webkit-search-cancel-button,
 	input::-webkit-search-results-button, input::-webkit-search-results-decoration
