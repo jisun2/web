@@ -1807,7 +1807,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 	clear: both
 }
 
-#itemCntInCartHeader.cart_num {
+#cartCnt {
 	display: inline-block;
 	padding: .5px 2px 0px 2px;
 	position: absolute;
@@ -1856,41 +1856,37 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 	display: none;
 }
 
-#container .fixed_nav .txt {
+/* #container .fixed_nav .txt {
 	display: inline-block;
 	width: 100%;
 	margin: 5px 0;
 	font-size: 9px
-}
-
+} */
 #container .fixed_nav .cate {
-	width: 20px;
-	height: 20px;
+	width: 21px;
+	height: 24px;
 	background-position: -36px -23px;
-	background-repeat: no-repeat;
 }
-
-#container .fixed_nav .bag {
+/* #container .fixed_nav .bag {
 	width: 22px;
 	height: 22px;
 	margin-bottom: -3px !important;
 	background-position: -175px 0px;
 	background-repeat: no-repeat;
-}
-
-#container .fixed_nav .shpbag {
+} */
+#container .fixed_nav .search {
+	top:28px;
+	right:33%;
 	width: 22px;
 	height: 22px;
-	margin-bottom: -2px !important;
-	background-position: 0px -278px;
+	background-position:-60px -27px;
 	background-repeat: no-repeat;
-}
-
+	}
 #container .fixed_nav .home {
-	margin-bottom: 10px !important;
-	width: 32px;
-	height: 32px;
-	background-position: 0px -27px;
+	margin-top: 5px !important;
+	width: 44px;
+	height: 44px;
+	background-position:0px -256px;
 	background-repeat: no-repeat;
 }
 
@@ -1910,56 +1906,37 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 
 #container .fixed_nav .fbn-list {
 	display: inline-block;
+	vertical-align: top;
 	width: 100%;
+	height:60px;
 	border-top: 1px solid #e5e5e5;
 }
 
 #container .fixed_nav .fbn-list li {
-	display: block;
+	display: inline-flex;
 	float: left;
 	padding: 0;
 	width: 20%;
+	height: 60px;
 	vertical-align: middle;
 	text-align: center;
 }
 
 #container .fixed_nav .fbn-list li button {
-	position: relative;
+	position:relative;
 	width: 100%;
-	height: 56px
+	/* height: 60px */
 }
 
-#container .fixed_nav .fbn-list li.on {
+/* #container .fixed_nav .fbn-list li.on {
 	border-top: 1px solid #333;
-}
+} */
 
 #container .fixed_nav .fbn-list .fbn-item {
-	display: block;
+	display: inline-flex;
 	margin: 0 auto;
-	margin-top: 11.5px;
-	font-size: 9px;
 	font-weight: 500;
 	color: #333;
-}
-
-#cartCntMobile {
-	display: inline-block;
-	position: absolute;
-	right: 16px;
-	top: 5px;
-	min-width: 20px;
-	height: 18px;
-	padding: 0 4px;
-	border-radius: 10px 10px;
-	text-align: center;
-	background: #ff4e25;
-	-webkit-border-radius: 10px 10px;
-	-moz-border-radius: 10px 10px;
-	-ms-border-radius: 10px 10px;
-	-o-border-radius: 10px 10px;
-	font-size: 11px;
-	line-height: 20px;
-	color: #fff;
 }
 
 #container .paymtWrap.pb0 {
@@ -3085,7 +3062,7 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button,
 	position: relative;
 }
 
-#wrap .gnb_top_area .ico_app_push .cart_num {
+#cartCnt {
 	display: inline-block;
 	position: absolute;
 	left: 50%;
@@ -3313,3 +3290,4 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button,
 #wrap .gnb .bottom_menu li:nth-child(even) {
 	float: right;
 }
+
