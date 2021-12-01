@@ -300,7 +300,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .plc_fc-box {margin-bottom:30px; line-height: 1}
 .plc_fc-box.active { z-index: 10; position: fixed; top: 0; left: 0; width: 100%; padding: 19px 15px 18px; background-color: #fff;}
 .plc_fc-box.active .pc-wrap {width: 100%; max-width: 1536px; margin: 0 auto}
-.plc_fc-pro {padding:15px 20px;display: inline-block; float:right; font-size: 14px; color: #ababab;}
+.plc_fc-pro {padding:15px 20px; float:right; font-size: 14px; color: #ababab;}
 .plc_fc-pro span {font-size: 13px}
 /* 셀렉트 박스 */
 .plc_fc-filter {height:44px;}
@@ -492,7 +492,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .filterWrap .filter_key {z-index: 5; padding-top:12px; position:absolute; bottom:0; width:100%; display: inline-block; border-top: 1px solid #d0d0d0; box-shadow: 0px -5px 15px 0px rgb(0 0 0 / 5%); background-color: #fff;}
 .filterWrap .filter_key .overflow_x {overflow-y: hidden;overflow-x: auto;}
 .filterWrap .filter_key .keyLst1 .ellipsis, .keyLst .ellipsis {display: block; float:left; max-width: 135px; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; line-height: 18px; word-break: break-all; word-wrap: break-word; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
-.filterWrap .filter_key .btn_bk {display: inline-block; float: right; padding:12px 0px; width: 85%; border-radius: 5px 5px;}
+.filterWrap .filter_key .btn_bk {display:block; float: right; padding:12px 0px; width: 85%; border-radius: 5px 5px;}
 .sub-header {border-bottom: 1px solid #e5e5e5;}
 .scr_none {overflow-y: hidden;}
 .dim_Touch {z-index:-1;width:100%; height:100vh; overflow: hidden; overflow-y: hidden;}
@@ -590,8 +590,8 @@ input:-internal-autofill-selected {background-color:#fff;}
 .cateLst li {display:block; position:relative; padding: 8px 0;}
 .cateLst li .cateBrd {padding:0 20px;}
 .cateLst li .ico {display:inline-block; width:14px; height:14px;}
-.cateLst .input_check label {display:block; padding-left:22px; width:100%; line-height:26px; vertical-align:middle}
-.size .input_check label {display:block; padding-left:0px; width:100%; line-height:26px; vertical-align:middle}
+.cateLst .input_check label {display:block; padding-left:22px; width:100%; line-height:26px;}
+.size .input_check label {display:block; padding-left:0px; width:100%; line-height:26px;}
 .cateLst.ko .brd_ko {font-size:13px}
 .cateLst.ko .brd_en {font-size:11px}
 .cateLst.en .brd_ko {font-size:10px}
@@ -603,7 +603,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .brnd .cateCont label p {display:inline-block; font-size:14px;}
 .swipe-tab-cont.brnd {box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
 /* 브랜드 서브 탭 */
-.swipe-tab-cont.brnd .sub_tab {float:left;vertical-align:bottom;display:inline-block;}
+.swipe-tab-cont.brnd .sub_tab {vertical-align:bottom; float:left}
 .swipe-tab-cont.brnd .sub_tab li {margin-right:15px; display:flex; float:left; line-height:32px; font-size:18px; color: #ababab;}
 .swipe-tab-cont.brnd .sub_tab li.active {margin-top:-1.5px; font-weight:bold; color: #333;}
 .swipe-tab-cont.brnd .cateLst {width:100%; display:block;}
@@ -834,7 +834,10 @@ input:-internal-autofill-selected {background-color:#fff;}
 .ico.sel_arrow {float:left; width:14px; height:8px; background-position: -112px -72px;}
 .ranking_tab_pro .swipeWrap .swipe-tabs li {width:auto !important}
 .ranking_tab_pro .swipeWrap .swipe-tabs div {width:auto !important}
-.ranking_tab_pro .swipeWrap.overflow_x {background-color:#fff}
+
+.sub_tab_pro .swipeWrap .swipe-tabs li {}
+.sub_tab_pro .swipeWrap .swipe-tabs div {}
+.sub_tab_pro .swipeWrap.overflow_x {background-color: #fff}
 /* 랭킹 브랜드 */
 /* .ranking_tab_brd.cateCont {display:none} */
 .brd_list-wrap .brLine {margin-bottom:25px}
@@ -886,14 +889,14 @@ input:-internal-autofill-selected {background-color:#fff;}
 .event_area .event_lst {width:100%; display:inline-block; padding:0 15px}
 .event_area .event_lst li {width:100%; display:flow-root; margin-bottom:20px}
 .event_area .event_lst li a {display:block;}
-.event_area .event_lst li a img {display:inline-block; width:calc(100%/1); float:left; width:120px; height:86px}
+.event_area .event_lst li a img {display:inline-block; width:calc(100%/1); width:120px; height:86px}
 .event_area .event_lst li .eventBrand {display:-webkit-box; width:100%; text-overflow:ellipsis; overflow:hidden; line-height:24px; word-break:break-all; word-wrap: break-word;-webkit-line-clamp: 1; -webkit-box-orient: vertical;font-size:13px; font-weight: 600; color:#333}
 .event_area .event_lst li .eventScr {display:-webkit-box; width:100%; text-overflow:ellipsis; overflow:hidden; line-height:28px; word-break:break-all; word-wrap: break-word;-webkit-line-clamp: 1; -webkit-box-orient: vertical;font-size:13px; font-size:18px; font-weight: 600; color:#333;}
 .event_area .event_lst li .eventDate {margin-top:20px; line-height:1; font-size:13px; font-weight: 600; color:#555}
 .event_area .event_lst li .txt_box {float:left; margin-left:2%; width:calc(100% - 38%);}
 /* 탭 + 이벤트 추가 */
 .tab_event_wrap {padding-bottom:50px; width:100%; vertical-align:top;}
-.tab_event_wrap .tab_event_lst {width:100%; margin-top:6px; padding:0 20px}
+.tab_event_wrap .tab_event_lst {width:100%; margin-top:6px;}
 .tab_event_wrap .tab_event_lst li {width:100%;}
 .tab_event_wrap .tab_event_lst a {display:block; overflow: hidden; position:relative; padding-top: 74.2%; margin-bottom:33px;}
 .tab_event_wrap .tab_event_lst img {width:100%; height:auto;}

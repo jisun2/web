@@ -839,7 +839,6 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 	position: relative;
 	display: block;
 	box-sizing: border-box;
-	-khtml-user-select: none;
 	-ms-touch-action: pan-y;
 	touch-action: pan-y;
 	-webkit-tap-highlight-color: transparent;
@@ -2650,8 +2649,8 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 }
 
 #footer .outlink_kcp {
-	display: inline-block;
-	float: right
+	display:block;
+	float: right;
 }
 
 #footer .outlink_kcp a {
