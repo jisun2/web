@@ -366,7 +366,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .option-view .ov-title {cursor: pointer; margin-top: -4px; font-size: 12px;}
 .option-view .ov-title::after {content: '';display: inline-block; margin:2px 0 0 5px; line-height: 1; width: 11px; height: 6px; background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_acco_arrow.png) center center/cover no-repeat;  vertical-align: 0px}
 .option-view .ov-title.active::after {margin-bottom: 0;-webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg);}
-.ov_info-wrap {float: right; display:inline-block; font-size: 12px;}
+.ov_info-wrap {float: right; font-size: 12px;}
 .ov_info-wrap li {line-height: 18px;}
 .option-view .ov-info {display:inline-block; margin-left: 5px;}
 .option-view .ov-info.green {color: #37a79b; font-size:10px;}
@@ -835,8 +835,8 @@ input:-internal-autofill-selected {background-color:#fff;}
 .ranking_tab_pro .swipeWrap .swipe-tabs li {width:auto !important}
 .ranking_tab_pro .swipeWrap .swipe-tabs div {width:auto !important}
 
-.sub_tab_pro .swipeWrap .swipe-tabs li {}
-.sub_tab_pro .swipeWrap .swipe-tabs div {}
+.sub_tab_pro .swipeWrap .swipe-tabs li {width: auto !important}
+.sub_tab_pro .swipeWrap .swipe-tabs div {width: auto !important}
 .sub_tab_pro .swipeWrap.overflow_x {background-color: #fff}
 /* 랭킹 브랜드 */
 /* .ranking_tab_brd.cateCont {display:none} */
