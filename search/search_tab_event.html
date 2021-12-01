@@ -89,7 +89,7 @@
                     </div>
                     <!-- 추가 -->
                     <div class="ranking_tab_pro cateCont">
-                        <div id="tab_lst" class="swipeWrap overflow_x">
+                        <div class="tab_lst swipeWrap overflow_x">
                             <ul class="swipe-tabs">
                                 <li class="tab_off swipe-tab active">
                                     <a href="#none">전체</a>
@@ -185,7 +185,7 @@
                             
                             <div class="bg_white">
                                 <div class="wd720">
-                                    <div id="tab_lst" class="overflow_x">
+                                    <div class="tab_lst overflow_x">
                                         <ul class="swipe-tabs">
                                             <li class="swipe-tab active">
                                                 <a href="#none">가격</a>
@@ -1069,9 +1069,9 @@
         //     })(jQuery);    
         </script>
         <script>
-            $(document).ready(function(){
+             $(document).ready(function(){
                 // tab
-                    var tabBtn = $("#tab_lst > ul > li");
+                    var tabBtn = $(".tab_lst > ul > li");//211122 수정
                     var tabCont = $("#tab-cont > div");
                     tabCont.hide().eq(0).show();
                     tabBtn.click(function(){
