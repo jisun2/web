@@ -140,37 +140,12 @@
 		url(../font/Noto_Sans_KR/NotoSans-Black.woff) format("woff"),
 		url(../font/Noto_Sans_KR/NotoSans-Black.otf) format("opentype")
 }
-/* body {
-    ::-webkit-scrollbar {width: 4px; height:6px;}
-  ::-webkit-scrollbar-track { background-color:transparent;} 
-  ::-webkit-scrollbar-thumb { background:transparent; border-radius:4px;} 
-  ::-webkit-scrollbar-thumb:hover { background:transparent;} 
-  ::-webkit-scrollbar-thumb:active {background: #f5f5f5}
-  ::-webkit-scrollbar-button { width:20px; height:10px; display:none; } 
-  ::-mos-scrollbar {width: 2px; height:6px;}
-  ::-mos-scrollbar-track { background-color:transparent;} 
-  ::-mos-scrollbar-thumb { background:transparent; border-radius:4px;} 
-  ::-mos-scrollbar-thumb:hover { background:transparent;} 
-  ::-mos-scrollbar-thumb:active {background: #f5f5f5}
-  ::-mos-scrollbar-button { width:20px; height:10px; display:none; }
-  ::-ms-scrollbar {width: 2px; height:6px;}
-  ::-ms-scrollbar-track { background-color:transparent;} 
-  ::-ms-scrollbar-thumb { background:transparent; border-radius:4px;} 
-  ::-ms-scrollbar-thumb:hover { background:transparent;} 
-  ::-ms-scrollbar-thumb:active {background: #f5f5f5}
-  ::-ms-scrollbar-button { width:20px; height:10px; display:none;} 
-  ::-o-scrollbar {width: 2px; height:6px;}
-  ::-o-scrollbar-track { background-color:transparent;} 
-  ::-o-scrollbar-thumb { background:transparent; border-radius:4px;} 
-  ::-o-scrollbar-thumb:hover { background:transparent;} 
-  ::-o-scrollbar-thumb:active {background: #f5f5f5}
-  ::-o-scrollbar-button { width:20px; height:10px; display:none;} 
-} */
+
 body, option, select, input {
 	font-family: proxima-nova, 'Noto Sans KR', sans-serif !important;
 }
 
-input[type=number] {
+input[type=number], b {
 	font-family: proxima-nova, 'Noto Sans KR', sans-serif !important;
 }
 
@@ -183,7 +158,6 @@ html {
 
 body {
 	margin: 0;
-	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 button, input, pre, textarea {
@@ -406,22 +380,6 @@ input::-ms-clear {
 	.list_tab .active>strong, .lnb .list_lnb, .pages .link, [class*=tit_] {
 	color: #333
 }
-/* input.tc_3:hover::-webkit-input-placeholder{color:#333!important}
-input.tc_3:hover::-moz-placeholder{color:#333!important}
-input.tc_3:hover:-ms-input-placeholder{color:#333!important}
-input.tc_3:hover::placeholder{color:#333!important}
-input.tc_3:focus::-webkit-input-placeholder{color:#333!important}
-input.tc_3:focus::-moz-placeholder{color:#333!important}
-input.tc_3:focus:-ms-input-placeholder{color:#333!important}
-input.tc_3:focus::placeholder{color:#333!important}
-textarea.tc_3:hover::-webkit-input-placeholder{color:#333!important}
-textarea.tc_3:hover::-moz-placeholder{color:#333!important}
-textarea.tc_3:hover:-ms-input-placeholder{color:#333!important}
-textarea.tc_3:hover::placeholder{color:#333!important}
-textarea.tc_3:focus::-webkit-input-placeholder{color:#333!important}
-textarea.tc_3:focus::-moz-placeholder{color:#333!important}
-textarea.tc_3:focus:-ms-input-placeholder{color:#333!important}
-textarea.tc_3:focus::placeholder{color:#333!important} */
 .wrap_login .cert_num>.error {
 	margin-bottom: 20px
 }
@@ -550,11 +508,6 @@ td .error [class*=input_], td .site_main.join .cert.error, td [class*=input_].er
 	color: #ababab
 }
 
-/* :-ms-input-placeholder, .out_reason .input_textarea textarea:-ms-input-placeholder
-	{
-	color: #ababab
-} */
-
 input::placeholder {
 	color: #ababab
 }
@@ -670,10 +623,6 @@ textarea::placeholder {
 textarea::-webkit-input-placeholder {
 	color: #ababab;
 }
-
-/* textarea:-ms-input-placeholder {
-	color: #ababab;
-} */
 
 .input_checkbox label:before, .input_number [class^=btn_], .input_radio label:before,
 	.input_radio_check label:before, .lc_d0, .table_st td, .table_st th,
@@ -827,9 +776,8 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 .input_radio img {margin-top:3px; width:50%}
 .input_radio label:after {display:none; background-color:#ff4e25; border-radius:50%; position:absolute; top:49%; left:7px; width:10px; height:10px; content:"";-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
 .article_content .input_radio input:checked + label:before {border-color:#ff4e25;}
-.input_radio label:before, .input_radio_check label:before {width:22px; height:22px; position:absolute; border:1px solid #dadada; content: "";border-radius: 50%; background-color:#fff}
+.input_radio label:before, .input_radio_check label:before {width:22px; height:22px; position:absolute; box-shadow: 0 0 0 1px #e5e5e5 inset; content: "";border-radius: 50%; background-color:#fff}
 .input_radio input:checked+label:after {display:block;}
-
 
 
 /* 셀렉트 박스 */
@@ -1063,39 +1011,39 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 }
 
 .dis_in {
-	display: inline-block !important
+	display: inline-block
 }
 
 .dis_blk {
-	display: block !important
+	display: block
 }
 
 .txt_cnt {
-	text-align: center !important
+	text-align: center
 }
 
 .orange {
-	color: #ff4e25 !important
+	color: #ff4e25
 }
 
 .red {
-	color: #f43434 !important
+	color: #f43434
 }
 
 .blue {
-	color: #3067cc !important
+	color: #3067cc
 }
 
 .gray {
-	color: #888 !important
+	color: #888 
 }
 
 .black {
-	color: #333 !important
+	color: #333 
 }
 
 .num {
-	font-family: 'proxima-nova' !important
+	font-family: 'proxima-nova'
 }
 
 .notoS {
@@ -1186,19 +1134,19 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 }
 /* margin / padding */
 .mgT10 {
-	margin-top: 10px !important
+	margin-top: 10px
 }
 
 .mgT15 {
-	margin-top: 15px !important
+	margin-top: 15px
 }
 
 .mgB10 {
-	margin-bottom: 10px !important
+	margin-bottom: 10px
 }
 
 .mgB15 {
-	margin-bottom: 15px !important
+	margin-bottom: 15px
 }
 /* btn */
 .btn_bk {
@@ -1799,7 +1747,8 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 	clear: both
 }
 
-#cartCnt {
+
+#itemCntInCartHeader.cart_num, #cartCnt {
 	display: inline-block;
 	padding: .5px 2px 0px 2px;
 	position: absolute;
@@ -3054,7 +3003,7 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button,
 	position: relative;
 }
 
-#cartCnt {
+#wrap .gnb_top_area .ico_app_push .cart_num, #cartCnt {
 	display: inline-block;
 	position: absolute;
 	left: 50%;
@@ -3283,3 +3232,4 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button,
 	float: right;
 }
 
+.section_line {height:7.5px; background-color:#F0F0F0; border-top:1px solid #D0D0D0}
