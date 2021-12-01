@@ -869,6 +869,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .pages .last:before {content: "..."; position: absolute; left: 0; top: 0; width: 25px; height: 25px; line-height: 20px; text-align: center;}
 /* 스트릿 패션 추가 */
 .sec_tit {padding:0 15px; margin:36px 0 10px 0; line-height:28px; font-weight:500; font-size:28px; color:#111;}
+.street_area {padding-bottom:30px}
 .street_area .street_lst {display:inline-block; padding:0 15px; width:100%;}
 .street_area .street_lst li {float:left; margin-right:5px; width:49%;}
 .street_area .street_lst li a {display:block;}
@@ -881,7 +882,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .btn_more {display:inline-table; padding:10px 0 36px 0; width:100%; text-align:center; vertical-align:middle; border:none}
 .btn_more .item_more {font-size:15px; line-height:22px; font-weight:400; color:#888}
 .btn_more .ico.more_arw {margin-left: 10px; width: 10px; height: 12px; background-position: -183px -65px;}
-
+.event_area {padding-bottom:30px}
 .event_area .event_lst {width:100%; display:inline-block; padding:0 15px}
 .event_area .event_lst li {width:100%; display:flow-root; margin-bottom:20px}
 .event_area .event_lst li a {display:block;}
