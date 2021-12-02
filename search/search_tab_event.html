@@ -1052,14 +1052,13 @@
             })
             //211122 수정
             //추가
-            // $('.tab_on').on('click touch', function() {
-            //     $('.ss_fitr.sticky').css('display','block');
-            // })
+            $('.tab_on').on('click touch', function() {
+                $('.ss_fitr.sticky').css('display','block');
+            })
 
-            // $('.tab_off').on('click touch', function() {
-            //     $('.ss_fitr.sticky').hide();
-            // })
-            //추가
+            $('.tab_off').on('click touch', function() {
+                $('.ss_fitr.sticky').css('display','none');
+            })
         
             $('.filter_view').on('click touch', function() {
                 $(this).toggleClass('active');
