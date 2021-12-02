@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
+   <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
         <title>검색창</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
         <script src="../common/lib/plugin.js"></script>
         <script src="../common/lib/common.js"></script>
@@ -13,8 +13,8 @@
         <!--//가격 슬라이드 추가 -->
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/search.css">
-        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+        <link rel="preload" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
     </head>
     <body>
         <div id="wrap" class="wd720">
@@ -117,11 +117,7 @@
                             <!-- item List  -->
                             <div class="product-item">
                                 <div class="pli-top_wrap">
-                                    <a href="#none">
-                                        <span class="pli-thumb">
-                                            <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
-                                        </span>
-                                    </a>
+                                    <a href="#none"><span class="pli-thumb"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt=""></span> </a>
                                     <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
                                 </div>
                                 <div class="pli-info_wrap">
@@ -248,10 +244,10 @@
                                             <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
                                         </div>
                                     </a>
+                                    <button name="like" type="button" class="pli-heart" onclick="myFunction(this)"></button>
                                     <!-- <div class="heart">
                                         <span style="background-image: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_like_on.png);"></span>
                                     </div> -->
-                                    <button type="button" class="pli-heart" onclick="myFunction(this)"></button>
                                 </div>
                                 <div class="pli-info_wrap">
                                     <div class="pli-info">
@@ -337,7 +333,7 @@
                             <!-- item List  -->
                             <div class="product-item">
                                 <div class="pli-top_wrap">
-                                    <a href="#" >
+                                    <a href="#">
                                         <div class="pli-thumb">
                                             <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/dummy13.jpg" alt="">
                                         </div>
@@ -826,7 +822,7 @@
                     <!-- 추가 -->
                     <div class="section_line"></div>
                     <!-- 스트릿 패션 -->
-                    <div class="street_area">
+                    <div class="street_area all">
                         <div class="sec_tit">스트릿 패션</div>
                         <ul class="street_lst">
                             <li>
