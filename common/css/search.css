@@ -828,19 +828,15 @@ input:-internal-autofill-selected {background-color:#fff;}
 /* 랭킹 상단 탭 공통 */
 .slick-track {width:100%} 
 .slick-initialized .slick-slide {width:100%} 
-/* display: inline-block; */
 .swipeWrap {width:100%; height:80%; max-height:450px; bottom:0;} 
 .swipeWrap .swipe-tabs, .swipe-tabs-container {color: #ff4e25;}
- /* width:720px !important; */
-.swipeWrap .swipe-tabs {display: block; padding: 5px 10px 10px 0px; height:45px; font-size:15px; /* overflow-x: scroll; */ border-bottom:1px solid #f5f5f5;}
+.swipeWrap .swipe-tabs {display: block; padding: 5px 10px 10px 0px; height:45px; font-size:15px; border-bottom:1px solid #f5f5f5;}
 .swipeWrap .swipe-tabs li a {display:block; padding:12px 0; height:40px; float:left; margin:0 19px; font-size:14px; color: #ababab;}
 .swipeWrap .swipe-tabs li.active a {color: #ff4e25; border-bottom : 2px solid #ff4e25}
 .swipeWrap .swipe-tabs div a {display:block; padding:12px 0; height:40px; float:left; margin:0 19px; font-size:14px; color: #ababab;}
 .ico.sel_arrow {float:left; width:14px; height:8px; background-position: -112px -72px;}
 .ranking_tab_pro .swipeWrap .swipe-tabs li {width:auto !important}
 .ranking_tab_pro .swipeWrap .swipe-tabs div {width:auto !important}
-/* .sub_tab_pro .swipeWrap .swipe-tabs li {width: auto !important}
-.sub_tab_pro .swipeWrap .swipe-tabs div {width: auto !important} */
 .sub_tab_pro .swipeWrap.overflow_x {background-color: #fff}
 /* 랭킹 브랜드 */
 /* .ranking_tab_brd.cateCont {display:none} */
@@ -876,7 +872,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 /* 스트릿 패션 추가 */
 .sec_tit {padding:0 15px; margin:10px 0; line-height:28px; font-weight:500; font-size:28px; color:#111;}
 .street_area {padding-bottom:30px}
-.street_area.all .sec_tit {margin-top:30px;}
+.street_area.all .sec_tit, .event_area.all .sec_tit {margin-top: 30px;}
 .street_area .street_lst {display:inline-block; padding:0 15px; width:100%;}
 .street_area .street_lst li {float:left; margin-right:5px; width:49%;}
 .street_area .street_lst li a {display:block;}
@@ -893,7 +889,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .event_area .event_lst {width:100%; display:inline-block; padding:0 15px}
 .event_area .event_lst li {width:100%; display:flow-root; margin-bottom:20px}
 .event_area .event_lst li a {display:block;}
-.event_area .event_lst li a img {display:inline-block; width:calc(100%/1); width:120px; height:86px}
+.event_area .event_lst li a img {float:left; width:calc(100%/1); width:120px; height:86px}
 .event_area .event_lst li .eventBrand {display:-webkit-box; width:100%; text-overflow:ellipsis; overflow:hidden; line-height:24px; word-break:break-all; word-wrap: break-word;-webkit-line-clamp: 1; -webkit-box-orient: vertical;font-size:13px; font-weight: 600; color:#333}
 .event_area .event_lst li .eventScr {display:-webkit-box; width:100%; text-overflow:ellipsis; overflow:hidden; line-height:28px; word-break:break-all; word-wrap: break-word;-webkit-line-clamp: 1; -webkit-box-orient: vertical;font-size:13px; font-size:18px; font-weight: 600; color:#333;}
 .event_area .event_lst li .eventDate {margin-top:20px; line-height:1; font-size:13px; font-weight: 600; color:#555}
