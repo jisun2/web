@@ -559,7 +559,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .input_radio label {display: inline-block;height: 24px;	vertical-align: middle;}
 .input_radio label:focus {outline-style: 2px solid #333;}
 .input_radio img {margin-top: 3px; width: 50%}
-.input_radio label:after {display: none; background-color: #3067cc; border-radius: 50%;	position: absolute; top: 21px; left: 0;	width: 10px;	height: 10px;	content: "";
+.input_radio label:after {display: none; background-color: #3067cc; border-radius: 50%;	position: absolute; top: 19px; left: 0;	width: 10px;	height: 10px;	content: "";
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
