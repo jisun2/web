@@ -893,7 +893,8 @@ input:-internal-autofill-selected {background-color:#fff;}
 .event_area .event_lst li .eventBrand {display:-webkit-box; width:100%; text-overflow:ellipsis; overflow:hidden; line-height:24px; word-break:break-all; word-wrap: break-word;-webkit-line-clamp: 1; -webkit-box-orient: vertical;font-size:13px; font-weight: 600; color:#333}
 .event_area .event_lst li .eventScr {display:-webkit-box; width:100%; text-overflow:ellipsis; overflow:hidden; line-height:28px; word-break:break-all; word-wrap: break-word;-webkit-line-clamp: 1; -webkit-box-orient: vertical;font-size:13px; font-size:18px; font-weight: 600; color:#333;}
 .event_area .event_lst li .eventDate {margin-top:20px; line-height:1; font-size:13px; font-weight: 600; color:#555}
-.event_area .event_lst li .txt_box {float:left; margin-left:2%; width:calc(100% - 38%);}
+.event_area .event_lst li .txt_box {float: left; margin-left: 2%;}/* width:calc(100% - 38%); */
+
 /* 탭 + 이벤트 추가 */
 .tab_event_wrap {padding-bottom:50px; width:100%; vertical-align:top;}
 .tab_event_wrap .tab_event_lst {width:100%; margin-top:6px;}
