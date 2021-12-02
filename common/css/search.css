@@ -551,9 +551,9 @@ input:-internal-autofill-selected {background-color:#fff;}
 .conse.input_radio label:before {border:none}
 .conse .radio_box {margin-top:-10px;}
 .swipe-tab-cont.conse .input_radio {display:block; padding:10px 0;}
-.conse .input_radio input[type=radio] {width: 22px;height: 22px;border: 1px solid #dadada}
-.conse .input_radio input[type=radio]:checked+label p {color:#3067cc; font-weight:bold;}
-.conse .input_radio input[type=radio]:checked+label span {color:#3067cc; font-weight:bold;}
+.filterWrap .input_radio input[type=radio] {width: 22px;height: 22px;border: 1px solid #dadada}
+.filterWrap .input_radio input[type=radio]:checked+label p {color:#3067cc; font-weight:bold;}
+.filterWrap .input_radio input[type=radio]:checked+label span {color:#3067cc; font-weight:bold;}
 
 .input_radio input {display: none;vertical-align: middle;}
 .input_radio label {display: inline-block;height: 24px;	vertical-align: middle;}
@@ -568,7 +568,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .input_radio label:after span {color: #3067cc;}
 .input_radio label:before, .input_radio_check label:before {content: "";width: 9px; height: 9px;	position: absolute;	top:16px;	box-shadow: 0 0 0 1px #e5e5e5 inset;	border-radius: 50%;}
 .input_radio input:checked + label:after {display: block;}
-.input_radio input:checked + label:after.mgl30 {color: #3067cc;}
+.input_radio input:checked + label:after span {display:inline-block; color: #3067cc;}
 
 /* 카테고리 아코디언 메뉴 */
 .article_cate {margin-top:-10px;}
@@ -592,6 +592,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .cateLst li .ico {display:inline-block; width:14px; height:14px;}
 .cateLst .input_check label {display:block; padding-left:22px; width:100%; line-height:26px;}
 .size .input_check label {display:block; padding-left:0px; width:100%; line-height:26px;}
+.input_check label > span {margin-left:5px}
 .cateLst.ko .brd_ko {font-size:13px}
 .cateLst.ko .brd_en {font-size:11px}
 .cateLst.en .brd_ko {font-size:10px}
@@ -600,7 +601,9 @@ input:-internal-autofill-selected {background-color:#fff;}
 /* 브랜드 */
 .brnd .cateLst li {padding-bottom: 0px}
 .brnd .cateCont label {min-height:28px;}
-.brnd .cateCont label p {display:inline-block; font-size:14px;}
+.brnd .cateCont label span {float:left}
+.brnd .cateCont label p,.brnd .cateCont label span {font-size: 14px;}
+
 .swipe-tab-cont.brnd {box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
 /* 브랜드 서브 탭 */
 .swipe-tab-cont.brnd .sub_tab {vertical-align:bottom; float:left}
@@ -628,6 +631,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .size .sizeCont::-webkit-scrollbar-thumb:active {background-color:#f9f9f9}
 .size .sizeCont label {min-height:28px;}
 .size .sizeCont label p {display:inline-block; font-size:14px;}
+.input_check input:checked+label span {color: #3067cc}
 .sizeCont.gradient::before {z-index:5; pointer-events: none; display: block; position:fixed; top:119px; left:0; content: ""; width: 100%; height: 84px; background: linear-gradient(to top, rgba(255, 255, 255, 0), #fff); border:none}
 .sizeCont.gradient::after {z-index:5; pointer-events: none; display: block; position:fixed; bottom:119px; left:0; content: ""; width: 100%; height: 84px;background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff); border:none}
 
