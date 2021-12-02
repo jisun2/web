@@ -137,7 +137,7 @@ html,
 input,
 textarea {font-family: proxima-nova,'Noto Sans KR'!important; font-size: 16px}
 .visi_hid {visibility: hidden;}
-.sticky {z-index:10; position:sticky; top:0}
+.sticky {z-index: 10; position:sticky;  position:-webkit-sticky; top: 0}
 .overflow_x {overflow-y: hidden; overflow-x: auto;}
 a:focus, input:focus, textarea:focus, select:focus {outline:none}
 .overflow_x.mgTb.pos_rel {padding-left:50px;}
@@ -471,7 +471,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .plc_fc-box.street .black-text {color: #333;font-size: 13px}
 .plc_fc-box.none {padding: 30px 15px 20px}
 .arrow-btn {height: 12px;line-height: 12px;color: #555;font-size: 12px;font-weight: 500;background-color: transparent; vertical-align: top}
-.arrow-btn::after {content: '';display: inline-block; width: 6px; height: 11px;margin-left: 10px;background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/right_arrow-icon.png) center center/cover no-repeat; vertical-align: -1px}
+.arrow-btn::after {content: ''; display: inline-block; width: 6px; height: 11px;margin-left: 10px;background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/right_arrow-icon.png) center center/cover no-repeat; vertical-align: -1px}
 /* 토스트 팝업  */
 /* .searchWrap .toast{z-index: 10; display:none;position: fixed; left: 50%; bottom: 0; margin:0 auto; vertical-align: middle; min-width: 168px; min-height: 42px;line-height: 40px; font-size:12px;color:#3067cc; border:1px solid #3067cc; text-align: center;background-color: #fff;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;transform: translate(-50%, -30px); animation: fade-in 1000ms, fade-out 1000ms, 2000ms;}
  */
@@ -501,7 +501,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .swipe-tabs.container-fluid {width: 100%; max-width: 1200px; padding: 0;}
 .filterWrap .swipe-tabs, .swipe-tabs-container { color: #3067cc;}
 .filterWrap .swipe-tabs {display: inline-flex; padding: 0 10px; min-width: 160% !important; margin-bottom: 0px; font-size: 15px; background-color: transparent; border-bottom: 1px solid #f5f5f5;}
-.filterWrap .swipe-tabs li {display:inline-block; width:fit-content;white-space: nowrap;}
+.filterWrap .swipe-tabs li {display:inline-block; width:fit-content; width: -moz-fit-content; white-space: nowrap;}
 .filterWrap .swipe-tabs li a {display:block; padding:10px 0; height:40px; float:left; margin:0 10px; color: #ababab;}
 .filterWrap .swipe-tabs li.active a {color: #3067cc; border-bottom :2px solid #3067cc}
 .filterWrap .swipe-tab-cont {margin: 20px 20px 0 20px; overflow-x:hidden; overflow-y:auto; max-height:252px; background-color: #fff; color:#333;}
@@ -515,7 +515,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .filterKey.ss-list li.active a {background: #3067cc; border:1px solid #3067cc; color:#fff}
 .filter_price {margin-bottom:25px; font-size:19px; font-weight:bold; color:#333;}
 /* 탭 */
-.sub_tab_wrap {z-index:1; position:sticky; top:0; background-color: #fff; padding-bottom:5px; display:inline-block; width:100%; border-bottom: 1px solid #f5f5f5;}
+.sub_tab_wrap {z-index:1; position:sticky; position:-webkit-sticky; top:0; background-color: #fff; padding-bottom:5px; display:inline-block; width:100%; border-bottom: 1px solid #f5f5f5;}
 .tab {width:100% !important; height:auto; list-style:none; font-size:16px; border:0 none;background-color:#fff;}
 .tab li {margin:10px; float:left; text-align:center}
 .tab>li:after {content:''; display:block; width:100%; height:13px; border:0 none}
@@ -539,7 +539,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .sltType1 select {display:flex; justify-content:center; align-items:center; padding:10px; width:100%; font-size:13px; color:#ababab; border:1px solid #fff !important}
 .sltType1 option {margin:12px; font-size:13px; color:#888}
 .sltType select, .sltType option {font-size:13px; font-family:'proxima-nova'}
-.last_btn_wrap {z-index:5; position:sticky; padding:15px 20px 44px; max-width:720px; border-top:1px solid #d0d0d0; bottom:0; font-size:17px; background:#fff; box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
+.last_btn_wrap {z-index:5;position:sticky; position:-webkit-sticky; top:0; padding:15px 20px 44px; max-width:720px; border-top:1px solid #d0d0d0; bottom:0; font-size:17px; background:#fff; box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .last_btn_wrap button {border-radius:3px}
 .last_btn_wrap .pr_chk_agree {margin-bottom:10px}
 .last_btn_wrap .sz-custom_text {margin:2px 0 0 8px}
@@ -625,7 +625,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .size .cateLst li .ico.pos {position:absolute; top:12.5px; margin-left:-33px;}
 .swipe-tab-cont.size {position:relative;}
 .swipe-tab-cont.size .sizeCont {box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
-.size .sizeCont {position:sticky; width:100%; text-align: center;}
+.size .sizeCont {position:sticky; position:-webkit-sticky; top:0; width:100%; text-align: center;}
 .size .sizeCont::-webkit-scrollbar {background-color:#f9f9f9}
 .size .sizeCont::-webkit-scrollbar-thumb {color: #f9f9f9; background: #f9f9f9}
 .size .sizeCont::-webkit-scrollbar-thumb:active {background-color:#f9f9f9}
@@ -876,6 +876,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 /* 스트릿 패션 추가 */
 .sec_tit {padding:0 15px; margin:10px 0; line-height:28px; font-weight:500; font-size:28px; color:#111;}
 .street_area {padding-bottom:30px}
+.street_area.all .sec_tit {margin-top:30px;}
 .street_area .street_lst {display:inline-block; padding:0 15px; width:100%;}
 .street_area .street_lst li {float:left; margin-right:5px; width:49%;}
 .street_area .street_lst li a {display:block;}
@@ -908,7 +909,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .tab_event_wrap .txt_box {margin:12px 10px}
 .tab_event_wrap .txt_box .sub_txt {margin-bottom: 0; font-size: 14px;font-weight: bold;}
 .tab_event_wrap .txt_box .script {font-size: 22px; font-weight: 700; line-height: 29px; color: #111; height: auto; margin-bottom: 4px;}
-.tab_event_wrap .txt_box .date {font-size: 12px; color: #888;}
+.tab_event_wrap .txt_box .date {font-size: 12px; color: #888; font-family: sans-serif;}
 
 @media screen and (min-width:480px) and (max-width:3000px){
   .streatArea {width:72%;}
