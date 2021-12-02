@@ -1179,7 +1179,7 @@
                                         </div>
                                         <!-- //카테고리 -->
 
-                                        <!-- 브랜드 -->
+                                          <!-- 브랜드 -->
                                         <!-- 211122 수정 -->
                                         <div class="swipe-tab-cont brnd">
                                             <div class="sub_tab_wrap">
@@ -1239,8 +1239,8 @@
                                                     <div class="input_check">
                                                         <input class="ico pos" type="checkbox" id="brnd_check_1" name=""  />
                                                         <label for="brnd_check_1">    
-                                                            <p class="brd_ko">가까이</p>
-                                                            <p class="brd_en">GAKKA2</p>
+                                                            <span class="brd_ko">가까이</span>
+                                                            <span class="brd_en">GAKKA2</span>
                                                         </label>
                                                     </div>
                                                 </li>
@@ -1248,53 +1248,8 @@
                                                     <div class="input_check">
                                                         <input class="ico pos" type="checkbox" id="brnd_check_2" name=""  />
                                                         <label for="brnd_check_2">    
-                                                            <p class="brd_ko">가네코 유닛</p>
-                                                            <p class="brd_en">GANEKO UNIT</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_3" name=""  />
-                                                        <label for="brnd_check_3">    
-                                                            <p class="brd_ko">고샤 루브친스키</p>
-                                                            <p class="brd_en">GOSHA RUBCHINSKIY</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_4" name=""  />
-                                                        <label for="brnd_check_4">    
-                                                            <p class="brd_ko">그리너리 크리</p>
-                                                            <p class="brd_en">GREENERY CREED</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_5" name=""  />
-                                                        <label for="brnd_check_5">    
-                                                            <p class="brd_ko">그리너리 크리</p>
-                                                            <p class="brd_en">GREENERY CREED</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_6" name=""  />
-                                                        <label for="brnd_check_6">    
-                                                            <p class="brd_ko">그리너리 크리</p>
-                                                            <p class="brd_en">GREENERY CREED</p>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input_check">
-                                                        <input class="ico pos" type="checkbox" id="brnd_check_7" name=""  />
-                                                        <label for="brnd_check_7">    
-                                                            <p class="brd_ko">11그리너리 크리</p>
-                                                            <p class="brd_en">GREENERY CREED</p>
+                                                            <span class="brd_ko">가네코 유닛</span>
+                                                            <span class="brd_en">GANEKO UNIT</span>
                                                         </label>
                                                     </div>
                                                 </li>
@@ -1304,8 +1259,8 @@
                                                     <div class="input_check">
                                                         <input class="ico pos" type="checkbox" id="brnd_check_1_1" name=""  />
                                                         <label for="brnd_check_1_1">    
-                                                            <p class="brd_en">A BATHING APE</p>
-                                                            <p class="brd_ko">베이프</p>
+                                                            <span class="brd_en">A BATHING AP</span>
+                                                            <span class="brd_ko">베이프</sapn>
                                                         </label>
                                                     </div>
                                                 </li>
@@ -1313,9 +1268,9 @@
                                                     <div class="input_check">
                                                         <input class="ico pos" type="checkbox" id="brnd_check_1_2" name=""  />
                                                         <label for="brnd_check_1_2">    
-                                                            <p class="brd_en">A BY A</p>
-                                                            <p class="brd_ko">에이바이에이</p>
-                                                        </label>
+                                                            <span class="brd_en">A BY A11</span>
+                                                            <span class="brd_ko">에이바이에이</sapn>
+                                                        </label>                                              
                                                     </div>
                                                 </li>
                                             </ul>
@@ -1796,15 +1751,12 @@
             //211122 수정
             //추가
             $('.tab_on').on('click touch', function() {
-                $('.ss_fitr.sticky').css('display','block');
+                $('.ss_fitr.sticky').show();
             })
-
-            $('.tab_off').on('click touch', function() {
+             $('.tab_off').on('click touch', function() {
                 $('.ss_fitr.sticky').hide();
             })
-            //추가
             
-
             $('.filter_view').on('click touch', function() {
                 $(this).toggleClass('active');
             })
