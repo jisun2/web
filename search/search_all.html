@@ -1673,7 +1673,7 @@
                  } else {
                     $(this).siblings('.search_clear-btn').hide();
                 }
-             });
+            });
 
             $('.search_clear-btn').on('click touch', function(){
                 $(this).siblings('.ss-text').val('');
@@ -1756,7 +1756,7 @@
              $('.tab_off').on('click touch', function() {
                 $('.ss_fitr.sticky').hide();
             })
-            
+        
             $('.filter_view').on('click touch', function() {
                 $(this).toggleClass('active');
             })
@@ -1808,7 +1808,7 @@
         //     })(jQuery);    
         </script>
         <script>
-            $(document).ready(function(){
+             $(document).ready(function(){
                 // tab
                     var tabBtn = $(".tab_lst > ul > li");//211122 수정
                     var tabCont = $("#tab-cont > div");
@@ -1825,8 +1825,8 @@
                     tabCont.eq(index).css("display","block");
                     })
                     
-                    var tabSubBtn1 = $(".brnd .sub_tab > li");//211122 수정
-                    var cateCont1 = $(".cateCont");
+                    var tabSubBtn1 = $(".brnd .sub_tab > li"); //211122 수정
+                    var cateCont1 = $(".brnd .cateCont"); //211122 수정
 
                     tabSubBtn1.click(function(){//211122 수정
                     var target = $(this);
