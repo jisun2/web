@@ -839,7 +839,6 @@ input:-internal-autofill-selected {background-color:#fff;}
 .ico.sel_arrow {float:left; width:14px; height:8px; background-position: -112px -72px;}
 .ranking_tab_pro .swipeWrap .swipe-tabs li {width:auto !important}
 .ranking_tab_pro .swipeWrap .swipe-tabs div {width:auto !important}
-
 /* .sub_tab_pro .swipeWrap .swipe-tabs li {width: auto !important}
 .sub_tab_pro .swipeWrap .swipe-tabs div {width: auto !important} */
 .sub_tab_pro .swipeWrap.overflow_x {background-color: #fff}
@@ -861,7 +860,6 @@ input:-internal-autofill-selected {background-color:#fff;}
 .brd_item ul li a:after {z-index: 5; content: ''; clear:both; display: block; position: absolute; top: 0; width: 72px; height: 72px; background-color: #000; opacity: 0.05; border-radius: 10px;}
 .brd_item ul li a img {width:100%; min-height:72px; border-radius:10px;}
 .btnMore a {padding:10.5px 0; margin:15px 0 50px 0; font-size:16px; color:#333}
-
 #navBar {display:flex; white-space: nowrap}
 #navBar a {display:inline-block; width:20px; height:25px; line-height:28px;}
 .arrowDown {transform: rotateX(180deg); -webkit-transform: rotateX(180deg);transform-origin: 0% 52%;}
@@ -876,7 +874,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .pages .last {position: relative; padding-left: 20px; width:42px;}
 .pages .last:before {content: "..."; position: absolute; left: 0; top: 0; width: 25px; height: 25px; line-height: 20px; text-align: center;}
 /* 스트릿 패션 추가 */
-.sec_tit {padding:0 15px; margin:36px 0 10px 0; line-height:28px; font-weight:500; font-size:28px; color:#111;}
+.sec_tit {padding:0 15px; margin:10px 0; line-height:28px; font-weight:500; font-size:28px; color:#111;}
 .street_area {padding-bottom:30px}
 .street_area .street_lst {display:inline-block; padding:0 15px; width:100%;}
 .street_area .street_lst li {float:left; margin-right:5px; width:49%;}
