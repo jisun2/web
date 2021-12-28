@@ -165,8 +165,8 @@ input:-internal-autofill-selected {background-color:#fff;}
 #header .ss-box {z-index:10; float:left; width:100%; top:0; background-color: #fff;}
 #header .ss-box::after {content: ''; display: block; clear: both;}
 #header .ss-box.pd {padding:10px 0 0 20px;}
+#header .ss-text-box {position: relative; float: left; width:90%;}
 #header .ss-text-box.wd {min-width:82%; max-width:92%; padding-right:3%; float:right;}
-#header .ss-text-box {position: relative; margin-right:10px; float: left; width:85%;}
 #header .ss-text {padding: 0 40px 0 12px; position: relative; width: 100%; height: 39px; border-radius: 20px 20px; color: #000; 
   font-size: 16px; font-weight: 700; border:none; background-color: #f9f9f9 !important;}
 #header .ss-text::placeholder {color: #ababab !important;}
@@ -572,7 +572,6 @@ input:-internal-autofill-selected {background-color:#fff;}
 .input_radio label:before, .input_radio_check label:before {content: "";width: 9px; height: 9px;	position: absolute;	top:16px;	box-shadow: 0 0 0 1px #e5e5e5 inset;	border-radius: 50%;}
 .input_radio input:checked + label:after {display: block;}
 .input_radio input:checked + label:after span {display:inline-block; color: #3067cc;}
-
 /* 카테고리 아코디언 메뉴 */
 .article_cate {margin-top:-10px;}
 .article_cate > li:first-child {margin-top:-10px;}
@@ -705,7 +704,6 @@ input:-internal-autofill-selected {background-color:#fff;}
   body::-webkit-scrollbar {display:none;} 	
   div::-webkit-scrollbar {display:none;} 
 }
-
 @media screen and (max-width:4096px){	
   div::-webkit-scrollbar {width: 4px; height:6px;}	
   div::-webkit-scrollbar-track {background-color:transparent;} 	
@@ -744,6 +742,9 @@ input:-internal-autofill-selected {background-color:#fff;}
   #wrap.wd720 {position:relative}
   .filterWrap {width:720px !important;}
   .filterWrap .wd720 {width:720px;margin:0 auto; height:auto;}
+}
+@media screen and (min-width:440px) and (max-width:619px) {
+  #header .ss-text-box { width: 87.5% }
 }
 @media screen and (min-width:319px) and (max-width:600px){
   #header .ss-box.wd {width:85%;}
