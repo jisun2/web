@@ -56,24 +56,17 @@
                         <!-- <p class="ss_none-text">아쉽게도 등록된 추천 검색어가 없어요.</p> -->
                         <!-- //추천 검색어 없을 때 -->
 
-                        <button class="btn_reset bg"><span class="ico1 reset_s"><span class="blind">키워드 전체 초기화</span></span></button><!-- reset BTN -->
+                        <!-- <button class="btn_reset bg"><span class="ico1 reset_s"><span class="blind">키워드 전체 초기화</span></span></button> -->
                         <div class="overflow_x">
                            <ul class="ss-list second keyLst">
-                                <li><a href="#none" class="ss-item on">
-                                        <span class="ellipsis">3만원 이하 3만원 이하3만원 이하3만원 이하</span><span>999+</span>
-                                        <button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button>
-                                    </a>
-                                </li>
-                                <li><a href="#none" class="ss-item on">상품쿠폰 <button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                <li><a href="#none" class="ss-item on bnt_open">무료쿠폰 5</a></li>
-                                <li><a href="#none" class="ss-item">타임세일<span class="ico arrowDwn"></span></a></li>
-                                <li><a href="#none" class="ss-item" onclick="openLayer(event,'#tempLayer1',this)">성별<span class="ico arrowDwn"></span></a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
+                                <li><a href="#none" class="ss-item on">3~5만원<button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
+                                <li><a href="#none" class="ss-item on">10만원 이상<button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
+                                <li><a href="#none" class="ss-item on">상품쿠폰</a></li>
+                                <li><a href="#none" class="ss-item on">무료쿠폰</a></li>
+                                <li><a href="#none" class="ss-item">타임세일</a></li>
+                                <!-- <li><a href="#none" class="ss-item">타임세일<span class="ico arrowDwn"></span></a></li> -->
                             </ul>
+                            <button type="button" class="filterBtn"><span class="ico filter"><span class="blind">필터선택</span></span></button>
                         </div>
                         
                         <!-- 검색 필터 툴팁 -->
@@ -814,13 +807,15 @@
                             <!--// item List  -->
                         </div>
                         <a href="#none" class="btn_more">
-                            <span class="item_more">9,999개 상품 결과 더보기</span><i class="ico more_arw"></i>
+                            <span class="br_gry">
+                                <span class="item_more">더보기 9,999+</span><i class="ico more_arw"></i>
+                            </span>
                         </a>
                     </div>
                     <!-- //상품 리스트  -->
                     
                     <!-- 211202 추가 -->
-                    <div class="section_line"></div>
+                    <!-- <div class="section_line"></div> -->
                     <!-- 스트릿 패션 -->
                     <div class="street_area all">
                         <div class="sec_tit">스트릿 패션</div>
@@ -906,13 +901,15 @@
                             </li>
                         </ul>
 
-                        <a href="#none" class="btn_more">
-                            <span class="item_more">19,999개 스트릿 패션 결과 더보기</span><i class="ico more_arw"></i>
+                      <a href="#none" class="btn_more">
+                            <span class="br_gry">
+                                <span class="item_more">더보기 9,999+</span><i class="ico more_arw"></i>
+                            </span>
                         </a>
                     </div>
                     <!-- //스트릿 패션 -->
-                    <div class="section_line"></div>
-
+                    <!-- <div class="section_line"></div> -->
+                    
                     <div class="event_area all">
                         <div class="sec_tit">이벤트</div>
                         <ul class="event_lst">
@@ -948,11 +945,15 @@
                             </li>
                         </ul>
                         
-                        <a href="#none" class="btn_more">
-                            <span class="item_more">19,999개 이벤트 결과 더보기</span><i class="ico more_arw"></i>
+                       <a href="#none" class="btn_more">
+                            <span class="br_gry">
+                                <span class="item_more">더보기 9,999+</span><i class="ico more_arw"></i>
+                            </span>
                         </a>
                     </div>
                     <!-- //211202 추가 -->
+                    
+
 
                     <!-- dimLayer -->
                     <div class="dim_layer" id="tempLayer1">
@@ -1677,7 +1678,7 @@
                 $(this).toggleClass('active');
             })
 
-            $('.ss-item').on('click touch', function(){
+            $('.ss-list.second.keyLst').on('click touch', function(){
                 $( '.filterWrap' ).removeClass('hide'); 
             })
             $('.tabTouch').on('click touch', function(){
