@@ -407,6 +407,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .searchWrap .ss-list::after {content: ''; display: block; clear: both}
 .searchWrap .ss-list li { position:relative; float:left; margin-right:5px;}
 .ss-list.keyLst { padding: 9px 50px 9px 20px; display: -webkit-box;}
+.ss-list.filterKey.second.keyLst li {margin-top:0}
 .ss-list.keyLst.update {padding: 9px 0 9px 15px; border-top:1px solid #d0d0d0; -webkit-overflow-scrolling:touch;}
  #srchFltrHdrUl, .ss-list.keyLst, .ss-list.keyLst1, .searchWrap .ss-list li, .sibi_search-wrap .sbs-list {white-space:inherit; width: -moz-max-content; width: -webkit-max-content; width:max-content !important;}
 .ss-list.keyLst1 {padding: 0 0 12px 20px;}
@@ -745,7 +746,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   .filterWrap .wd720 {width:720px;margin:0 auto; height:auto;}
 }
 @media screen and (min-width:319px) and (max-width:600px){
-  #header .ss-box.wd {width:82%;}
+  #header .ss-box.wd {width:85%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
   .product-item .pli-thumb img {min-width:155px !important; min-height:155px !important}
   .swipe-tab-cont.brnd .overflow_x {scrollbar-width: none;}
