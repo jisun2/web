@@ -50,30 +50,23 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- 검색 필터 키워드 -->
+                    <!-- 211229 검색 필터 키워드 수정-->
                     <div class="ss_fitr sticky" style="display:none">
                         <!-- 추천 검색어 없을 때 -->
                         <!-- <p class="ss_none-text">아쉽게도 등록된 추천 검색어가 없어요.</p> -->
                         <!-- //추천 검색어 없을 때 -->
 
-                        <button class="btn_reset bg"><span class="ico1 reset_s"><span class="blind">키워드 전체 초기화</span></span></button><!-- reset BTN -->
+                        <!-- <button class="btn_reset bg"><span class="ico1 reset_s"><span class="blind">키워드 전체 초기화</span></span></button> -->
                         <div class="overflow_x">
-                            <ul class="ss-list second keyLst">
-                                <li><a href="#none" class="ss-item on">
-                                        <span class="ellipsis">3만원 이하 3만원 이하3만원 이하3만원 이하</span><span>999+</span>
-                                        <button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button>
-                                    </a>
-                                </li>
-                                <li><a href="#none" class="ss-item on">상품쿠폰 <button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li>
-                                <li><a href="#none" class="ss-item on bnt_open">무료쿠폰 5</a></li>
-                                <li><a href="#none" class="ss-item">타임세일<span class="ico arrowDwn"></span></a></li>
-                                <li><a href="#none" class="ss-item" onclick="openLayer(event,'#tempLayer1',this)">성별<span class="ico arrowDwn"></span></a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
-                                <li><a href="#none" class="ss-item">카테고리</a></li>
+                           <ul class="ss-list filterKey second keyLst">
+                                <!-- <li><a href="#none" class="ss-item on">3~5만원<button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li> -->
+                                <!-- <li><a href="#none" class="ss-item on">10만원 이상<button type="button" class="ico keyDel"><span class="blind">키워드 삭제</span></button></a></li> -->
+                                <li><a href="#none" class="ss-item">상품쿠폰</a></li>
+                                <li><a href="#none" class="ss-item">무료쿠폰</a></li>
+                                <li><a href="#none" class="ss-item">타임세일</a></li>
+                                <!-- <li><a href="#none" class="ss-item">타임세일<span class="ico arrowDwn"></span></a></li> -->
                             </ul>
+                            <button type="button" class="filterBtn"><span class="ico filter"><span class="blind">필터선택</span></span></button>
                         </div>
                         
                         <!-- 검색 필터 툴팁 -->
@@ -87,19 +80,21 @@
                         </div>
                         <!-- //검색 필터 툴팁 -->
                     </div>
-                    <!-- 추가 -->
+
+                    <!-- 211229 탭 추가 -->
                     <div class="sub_tab_pro cateCont">
                         <div class="tab_lst swipeWrap overflow_x">
                             <ul class="swipe-tabs">
-                                <li class="tab_off active swipe-tab"><a href="#none">전체</a></li>
+                                <li class="tab_off active swipe-tab"><a href="#none">통합</a></li>
                                 <li class="tab_on"><a href="#none">상품</a></li>
                                 <li class="tab_off"><a href="#none">스트릿패션</a></li>
                                 <li class="tab_off"><a href="#none">이벤트</a></li>
                             </ul> 
                         </div>
                     </div>    
-                    <!-- //추가 -->
-                    <!-- //검색 필터 키워드 -->
+                    <!-- //211229 탭 추가 -->
+                    <!-- //211229 검색 필터 키워드 수정-->
+
                     <!-- 상품 리스트  -->
                     <div class="product_list-wrap plc_fc-box">
                         <div class="product_list-box">
@@ -117,7 +112,6 @@
  
                     <!-- 스트릿 패션 -->
                     <div class="street_area">
-                        <div class="sec_tit">스트릿 패션</div>
                         <ul class="street_lst">
                             <li>
                                 <a href="#none">
@@ -200,9 +194,27 @@
                             </li>
                         </ul>
 
-                        <a href="#none" class="btn_more">
-                            <span class="item_more">19,999개 스트릿 패션 결과 더보기</span><i class="ico more_arw"></i>
-                        </a>
+                        <div class="pages_navi">
+                            <div class="pages">
+                                <a href="#" class="link on">1</a>
+                                <a href="#" class="link">2</a>
+                                <a href="#" class="link">3</a>
+                                <a href="#" class="link">4</a>
+                                <a href="#" class="link">5</a>
+                                <a href="#" class="link">6</a>
+                                <a href="#" class="link">7</a>
+                                <a href="#" class="link">8</a>
+                                <a href="#" class="link">9</a>
+                                <a href="#" class="link">10</a>
+                                <a href="#" class="link last">123</a>
+                                <div id="navBar">
+                                    <!-- 비활성화 a에 class="disabled" 클레스 추가 -->
+                                    <a href="#none" class="disabled"><span class="ico prev"></span><span class="blind">이전</span></a> 
+                                    <a href="#none"><span class="ico next"></span><span class="blind">다음</span></a>
+                                    <!-- //비활성화 a에 class="disabled" 클레스 추가 -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- //스트릿 패션 -->
                     <!-- //추가 -->
