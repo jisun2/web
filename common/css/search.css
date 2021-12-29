@@ -874,9 +874,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .pages .last:before {content: "..."; position: absolute; left: 0; top: 0; width: 25px; height: 25px; line-height: 20px; text-align: center;}
 /* 스트릿 패션 추가 */
 .sec_tit {margin:0 15px 16px 15px; line-height:28px; font-weight:500; font-size:28px; color:#111;}
-/* .street_area {padding-bottom:30px} */
-/* .street_area.all .sec_tit, .event_area.all .sec_tit {margin-top: 30px;} */
-.street_area .street_lst {display:inline-block; padding:0 15px; width:100%;}
+.street_area .street_lst {display:inline-block; padding:0 15px; vertical-align: top; width:100%;}
 .street_area .street_lst li {float:left; margin-right:5px; width:49%;}
 .street_area .street_lst li a {display:block;}
 .street_area .street_lst li:nth-child(even) {margin-right:0;}
@@ -889,8 +887,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .searchWrap .btn_more .br_gry {display:inline-block; min-width:154px;  border: 1px solid #e5e5e5; border-radius: 20px 20px;}
 .btn_more .item_more {font-size:15px; line-height:32px; font-weight:400; color:#888;}
 .btn_more .ico.more_arw {margin-left: 4px; width: 10px; height: 12px; background-position: -183px -65px;}
-/* .event_area {padding-bottom:30px} */
-.event_area .event_lst {width:100%; display:inline-block; padding:0 15px}
+.event_area .event_lst {padding: 0 15px; width:100%; display: inline-block; vertical-align: top;}
 .event_area .event_lst li {width:100%; display:flow-root; margin-bottom:20px}
 .event_area .event_lst li:last-child {margin-bottom: 33px;}
 .event_area .event_lst li a {display:block;}
