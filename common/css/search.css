@@ -176,7 +176,6 @@ input:-internal-autofill-selected {background-color:#fff;}
 #header .ss-text::-ms-input-placeholder {color: #888; font-size: 15px; font-weight: 400}
 #header .ss-text::placeholder {color: #888; font-size: 15px; font-weight: 400}
 #header .ss-cancel {float: right; padding-right:20px; margin-top: 8px; font-size: 16px; font-weight: 500; color: #000; background-color: transparent;}
-#header {}
 /* 서치 delBTN */
 #header .search_clear-btn {z-index: 1; display: none; position: absolute; width:16px; height:16px; right: 12px; top: 12px; background: url(https://hhp-image.s3.ap-northeast-2.amazonaws.com/search/ico_search_del.png) no-repeat;  background-size:15px 15px;}
 .tab-content {display: none}
@@ -605,7 +604,6 @@ input:-internal-autofill-selected {background-color:#fff;}
 .brnd .cateCont label {min-height:28px;}
 .brnd .cateCont label span {float:left}
 .brnd .cateCont label p,.brnd .cateCont label span {font-size: 14px;}
-
 .swipe-tab-cont.brnd {box-sizing: border-box; overflow-x:hidden; overflow-y:auto;}
 /* 브랜드 서브 탭 */
 .swipe-tab-cont.brnd .sub_tab {vertical-align:bottom; float:left}
@@ -834,7 +832,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .slick-initialized .slick-slide {width:100%} 
 .swipeWrap {width:100%; height:80%; max-height:450px; bottom:0;} 
 .swipeWrap .swipe-tabs, .swipe-tabs-container {color: #ff4e25;}
-.swipeWrap .swipe-tabs {display: block; padding: 5px 10px 10px 0px; height:45px; font-size:15px; border-bottom:1px solid #f5f5f5}
+.swipeWrap .swipe-tabs {display: block; padding: 5px 10px 10px 0px; height:45px; font-size:15px; border-bottom: 1px solid #f5f5f5;}
 .swipeWrap .swipe-tabs li a {display:block; padding:12px 0; height:40px; float:left; margin:0 19px; font-size:14px; color: #ababab;}
 .swipeWrap .swipe-tabs li.active a {color: #ff4e25; border-bottom : 2px solid #ff4e25}
 .swipeWrap .swipe-tabs div a {display:block; padding:12px 0; height:40px; float:left; margin:0 19px; font-size:14px; color: #ababab;}
@@ -899,7 +897,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 
 /* 탭 + 이벤트 추가 */
 .tab_event_wrap {padding-bottom:50px; width:100%; vertical-align:top;}
-.tab_event_wrap .tab_event_lst {width:100%; margin-top:6px;}
+.tab_event_wrap .tab_event_lst {width:100%; margin-top:10px;}
 .tab_event_wrap .tab_event_lst li {width:100%;}
 .tab_event_wrap .tab_event_lst a {display:block; overflow: hidden; position:relative; padding-top: 74.2%; margin-bottom:33px;}
 .tab_event_wrap .tab_event_lst img {width:100%; height:auto;}
@@ -918,7 +916,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   .event_lst li .txt_box {width:calc(100% - 50%);}
 }
 @media screen and (min-width:359px) and (max-width:540px){
-  .event_lst li .txt_box {width:calc(100% - 40%);}
+  .event_lst li .txt_box {width:calc(100% - 30%);}
 }
 @media screen and (min-width:670px) and (max-width:4096px){
   .event_lst li .txt_box {width:calc(100% - 21%);}
