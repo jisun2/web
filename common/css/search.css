@@ -917,7 +917,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   .event_lst li .txt_box {width:calc(100% - 50%);}
 }
 @media screen and (min-width:359px) and (max-width:540px){
-  .event_lst li .txt_box {width:calc(100% - 30%);}
+  .event_lst li .txt_box {width:calc(100% - 39%);}
 }
 @media screen and (min-width:670px) and (max-width:4096px){
   .event_lst li .txt_box {width:calc(100% - 21%);}
