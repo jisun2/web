@@ -553,6 +553,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .conse.input_radio label:before {border:none}
 .conse .radio_box {margin-top:-10px;}
 .swipe-tab-cont.conse .input_radio {display:block; padding:10px 0;}
+.input_radio input:checked+label:before {border:none}
 .filterWrap .input_radio input[type=radio] {width: 22px;height: 22px;border: 1px solid #dadada}
 .filterWrap .input_radio input[type=radio]:checked+label p {color:#3067cc; font-weight:bold;}
 .filterWrap .input_radio input[type=radio]:checked+label span {color:#3067cc; font-weight:bold;}
@@ -561,7 +562,7 @@ input:-internal-autofill-selected {background-color:#fff;}
 .input_radio label {display: inline-block;height: 24px;	vertical-align: middle;}
 .input_radio label:focus {outline-style: 2px solid #333;}
 .input_radio img {margin-top: 3px; width: 50%}
-.input_radio label:after {display: none; background-color: #3067cc; border-radius: 50%;	position: absolute; top: 19px; left: 0;	width: 10px;	height: 10px;	content: "";
+.input_radio label:after {display: none; background-color: #3067cc; border-radius: 50%;	position: absolute; top: 21px; left: 0;	width: 10px;	height: 10px;	content: "";
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
@@ -882,8 +883,8 @@ input:-internal-autofill-selected {background-color:#fff;}
 .streatDate {position:absolute; right:17px; top:0;}
 .streatArea, .streatDate {font-size:13px; font-weight:700; color:#333;}
 .btn_more {display:inline-table; width:100%; text-align:center; vertical-align:middle; border:none}
-.searchWrap .btn_more .br_gry {display:inline-block; min-width:154px;  border: 1px solid #e5e5e5; border-radius: 20px 20px;}
-.btn_more .item_more {font-size:15px; line-height:32px; font-weight:400; color:#888;}
+.searchWrap .btn_more .br_gry {display:inline-block; height:36px; line-height: 34px; border: 1px solid #e5e5e5; border-radius: 20px 20px;}
+.btn_more .item_more {padding:0 19px; font-size:15px; font-weight:400; color:#555;}
 .btn_more .ico.more_arw {margin-left: 4px; width: 10px; height: 12px; background-position: -183px -65px;}
 .event_area .event_lst {padding: 0 15px; width:100%; display: inline-block; vertical-align: top;}
 .event_area .event_lst li {width:100%; display:flow-root; margin-bottom:20px}
@@ -924,5 +925,4 @@ input:-internal-autofill-selected {background-color:#fff;}
 @media screen and (min-width:720px) and (max-width:4096px){
   .tab_event_wrap .tab_event_lst a {padding-top: 70%;}
 }
-
 
