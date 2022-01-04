@@ -739,8 +739,8 @@ input:-internal-autofill-selected {background-color:#fff;}
   #header .ss-box.wd {width:90%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
   #wrap.wd720 {position:relative}
-  .filterWrap {width:720px !important;}
-  .filterWrap .wd720 {width:720px;margin:0 auto; height:auto;}
+  .filterWrap {width:500px !important;}
+  .filterWrap .wd720 {width:500px;margin:0 auto; height:auto;}
 }
 @media screen and (min-width:440px) and (max-width:619px) {
   #header .ss-text-box { width: 87.5% }
