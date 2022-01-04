@@ -337,8 +337,8 @@ input[type=checkbox] {display:none}
 .rp_pro .rp_bar:after {right: 0}
 .rp_pro_text {display: block; line-height: 1; margin-top: 13px; font-size: 11px; text-align: center}
 /* 상품 상세 셀렉박스 / 재입고 알림 신청 */
-.nav_fixed_wrap.wd720 {width:720px;}
-.nav_fixed_wrap.wd720 form {min-width:320px; max-width:720px; margin:0 auto;}
+.nav_fixed_wrap.wd720 {width:500px;}
+.nav_fixed_wrap.wd720 form {min-width:320px; max-width:500px; margin:0 auto;}
 .nav_fixed_wrap .just_left {float:left}
 .nav_fixed_wrap .just_right {float:right}
 .nav_fixed_wrap .just_right.pfb_pay {float:right;}
@@ -561,7 +561,7 @@ input[type=checkbox] {display:none}
 .cart_option_none {width:82%; display:inline-block; margin:15px 0 0 32px; padding:15px; line-height:1.3; color:#888; font-size:12px; background-color:#f5f5f5;}
 .cart_option_none .option_txt, .cart_option .option_txt {overflow:hidden; display:-webkit-box; display:block; white-space:nowrap; height:auto; max-height:36px; word-break: break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;}
 .nav_fixed_wrap.cart {padding:12px 0; background-color:#000}
-.nav_fixed_wrap.cart.wd720 {max-width:720px}
+.nav_fixed_wrap.cart.wd720 {max-width:500px}
 .nav_fixed_wrap.cart.wd720 .prod_num {font-weight:400;}
 .nav_fixed_wrap.cart .just_left {padding-left:15px; width:42%}
 .nav_fixed_wrap.cart .just_right {width:53%}
@@ -638,7 +638,7 @@ input[type=text].text-input.phone-last {width:70%}
 .mt25 {margin-top:25px}
 .mt30 {margin-top:30px}
 .mb10 {margin-bottom:10px}
-.paymtWrap {padding:0 0 75px; max-width:720px}
+.paymtWrap {padding:0 0 75px; max-width:500px}
 .paymtWrap .num {font-family:'proxima-nova'!important}
 .paymtWrap ._addr input, .paymtWrap .paymt_modify input {height:40px}
 .paymtWrap ._sale input {min-height:30px; vertical-align:middle}
@@ -783,7 +783,7 @@ input[type=text].text-input.phone-last {width:70%}
 .pay_back .acc_wrap {display:flow-root;}
 .pay_back .acc_wrap button {float:right; width:92%; min-width:80px; height:40px; color:#fff; font-size:12px; text-align:center; background-color:#000;}
 .pay_back .acc_wrap .acc_btn_bk button {float:right; padding:10px; background-color:#000; color:#fff}
-.paymtWrap .last_btn_wrap {z-index:5;background:#fff; max-width:720px; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
+.paymtWrap .last_btn_wrap {z-index:5;background:#fff; max-width:500px; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .paymtWrap .last_btn_wrap1 {z-index:5;background:#fff; border-top:1px solid #d0d0d0;padding:12px 20px 44px; position:sticky; bottom:0; overflow:hidden; margin:15px auto 0;font-size:unset;box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .paymtWrap .last_btn_wrap .pr_chk_agree {margin-bottom:10px}
 .paymtWrap .last_btn_wrap .sz-custom_text {margin:2px 0 0 8px}
@@ -1049,7 +1049,7 @@ input[type=text].text-input.phone-last {width:70%}
     .pay_back .input_text_new2.mb10 {width:81%}
 }
 @media screen and (min-width:600px) and (max-width:1020px) {
-    .paymtWrap .input_text_new3 {width:83%}
+    .paymtWrap .input_text_new3 {width:76%}
     .inp_d.sz-select_list {width:94%}
     .num-select .sz-select_sub {width:96.2%}
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
