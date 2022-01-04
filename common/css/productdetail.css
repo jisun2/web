@@ -626,8 +626,8 @@ input[type=text].text-input.phone-last {width:70%}
     .cart_option .just_right {width:18%}
     .cart_option_none .option_txt, .cart_option .option_txt {width:100%}
 }
-@media screen and (min-width:400px) and (min-width:720px) {
-    .cart_option .just_left {width:80%}
+@media screen and (min-width:400px) and (min-width:500px) {
+    .cart_option .just_left {width:74%}
 }
 
 /* --------------------------------------------------------------------- 결재  S ------------------------------------------------------------------ */

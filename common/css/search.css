@@ -762,7 +762,7 @@ input:-internal-autofill-selected {background-color:#fff;}
   .option-view .ov-title {font-size: 9px;}
   .ov_info-wrap li:nth-child(2) {margin-left:0;}
 }
-@media screen and (min-width:100px) and (max-width:570px){
+@media screen and (min-width:100px) and (max-width:700px){
   .pli-heart, .pli-heart.on {width:20px;height:17px;}
   /* .sltType1 .sel_arrow {top:15px} */
 }
