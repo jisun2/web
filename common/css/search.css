@@ -726,16 +726,16 @@ input:-internal-autofill-selected {background-color:#fff;}
   .swipe-tab-cont.brnd .overflow_x {scrollbar-width:3px;}
 }
 /* MO scroll custom */
-@media screen and (min-width:719px) {
+@media screen and (min-width:519px) {
  .overflow_x::-webkit-scrollbar {scrollbar-width: thin; height:6px;}
  .overflow_x::-webkit-scrollbar-track {scrollbar-width: thin; height:6px; background-color: #fff}
  .overflow_x::-webkit-scrollbar-thumb:hover {background-color:#ababab}
  .overflow_x::-webkit-scrollbar-thumb:active {background-color: #ababab}
 }
-@media screen and (min-width:620px) and (max-width:719px) {
+/* @media screen and (min-width:620px) and (max-width:719px) {
   #header .ss-text-box {width:90%;}
-}
-@media screen and (min-width:720px) {
+} */
+@media screen and (min-width:500px) {
   #header .ss-box.wd {width:90%;}
   #header .ss-box.wd .ss-text-box {width:100%;}
   #wrap.wd720 {position:relative}
