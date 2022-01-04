@@ -923,6 +923,6 @@ input:-internal-autofill-selected {background-color:#fff;}
   .event_lst li .txt_box {width:calc(100% - 30%);}
 }
 @media screen and (min-width:720px) and (max-width:4096px){
-  .tab_event_wrap .tab_event_lst a {padding-top: 70%;}
+  .tab_event_wrap .tab_event_lst a {padding-top: 75%;}
 }
 

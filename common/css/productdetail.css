@@ -623,7 +623,7 @@ input[type=text].text-input.phone-last {width:70%}
     .cart_option_none {width:90%;}
     .cart_option_none .just_left {width:100%;}
     .nav_fixed_wrap.cart .pd_btn_box {width:91%}
-    .cart_option .just_right {width:18%}
+    .cart_option .just_right {width:24%}
     .cart_option_none .option_txt, .cart_option .option_txt {width:100%}
 }
 @media screen and (min-width:400px) and (min-width:500px) {
@@ -1053,7 +1053,7 @@ input[type=text].text-input.phone-last {width:70%}
     .inp_d.sz-select_list {width:94%}
     .num-select .sz-select_sub {width:96.2%}
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
-    .addrN table td {min-width:500px}
+    /* .addrN table td {min-width:500px} */
 }
 @media screen and (max-width:719px) {
     #pop_card_benefit {min-width:100%; max-width:100%;}
