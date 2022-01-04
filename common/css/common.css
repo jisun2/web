@@ -1776,7 +1776,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password],
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
-	max-width: px;
+	max-width: 500px;
 	line-height: 15px;
 	font-size: 9px;
 	font-weight: 500;
