@@ -492,7 +492,7 @@ input[type=checkbox] {display:none}
    /*  .main .slider_nav {left:2%} */
     .reviewer .review_box .re_img li {width:16.5%}
 }
-@media screen and (min-width:319px) and (max-width:719px) {
+@media screen and (min-width:319px) and (max-width:499px) {
 	#photoView .slick-track img {height:70vh}
     .pf_fc-box .pro_pay {width:52%}
    /*  .product_banner_slide img {max-width:100% !important} */
@@ -506,7 +506,7 @@ input[type=checkbox] {display:none}
     .product-select .sz-select_sub {width:99.7%}
 }
 
-@media screen and (min-width:720px) {
+@media screen and (min-width:500px) {
   #photoView .slick-track img {margin:0 auto}
 }
 
@@ -529,6 +529,7 @@ input[type=checkbox] {display:none}
 .cartWrap .pro_check {margin-right:10px}
 .cartWrap .pro_check .all {margin:2px 0 0 10px; color:#000}
 .underline-btn-orange {float:left; display:block; height:24px; line-height:24px; color:#ff4e25; margin-left:6px; font-size:10px; text-decoration:underline; cursor:pointer}
+.cartWrap .cart_inner {min-width:330px}
 .cartWrap .cart_section {margin-top:8px;}
 .cartWrap .cart_section.soldout .cart_box {border-bottom:1px solid #d0d0d0}
 .cartWrap .cart_section1 {margin-top:8px; padding:0 15px; background-color:#fff}
@@ -557,7 +558,7 @@ input[type=checkbox] {display:none}
 .cart_option {display:flow-root; margin:15px 0 0 32px; padding:15px; line-height:1.3; color:#888; font-size:12px; background-color:#f5f5f5;}
 .cart_option .select {width:100%}
 .cart_option .just_left {clear:both; float:left; width:60%}
-.cart_option .just_right {display:block; width:40%}
+.cart_option .just_right {display:block; }
 .cart_option_none {width:82%; display:inline-block; margin:15px 0 0 32px; padding:15px; line-height:1.3; color:#888; font-size:12px; background-color:#f5f5f5;}
 .cart_option_none .option_txt, .cart_option .option_txt {overflow:hidden; display:-webkit-box; display:block; white-space:nowrap; height:auto; max-height:36px; word-break: break-all; word-wrap:break-word; -webkit-line-clamp:1; -webkit-box-orient: vertical;}
 .nav_fixed_wrap.cart {padding:12px 0; background-color:#000}
@@ -607,9 +608,9 @@ input[type=text].text-input.phone-last {width:70%}
 .cart_aera .pf_fc .product-select:last-child {margin-top:-1px}
 .cart-right .add_coupon-wrap {display:none}
 .terms-popup .set_product_pop.terms-content {padding:25px 15px 45px; overflow-y:auto}
-/* .terms-popup .set_product_pop.terms-content:-webkit-scrollbar {width:2px; background-color:#000}
+.terms-popup .set_product_pop.terms-content:-webkit-scrollbar {width:2px; background-color:#000}
 .terms-popup .set_product_pop.terms-content:-webkit-scrollbar-thumb {background-color:#000}
-.terms-popup .set_product_pop.terms-content:-webkit-scrollbar-track {background-color:#e5e5e5} */
+.terms-popup .set_product_pop.terms-content:-webkit-scrollbar-track {background-color:#e5e5e5}
 .terms-popup .set_product_pop .product-item .pli-thumb {height:180px}
 .terms-popup .set_product_pop .product-item {width:50%}
 .popup-content .member-wrap .sz-select_list .selected.active {border:1px solid #000}
@@ -618,16 +619,19 @@ input[type=text].text-input.phone-last {width:70%}
 
 @media screen and (max-width:350px) {
     .nav_fixed_wrap.cart .prod_total .ptolal_num {font-size:16px}
+    .nav_fixed_wrap.cart .just_right{display:block; width:100%;}
+    .nav_fixed_wrap.cart.wd720 {width:100%}
+    .nav_fixed_wrap.cart .just_left {width:100%; padding:0 15px 10px 15px;}
 }
 @media screen and (min-width:600px) {
     .cart_option_none {width:90%;}
-    .cart_option_none .just_left {width:100%;}
+    /* .cart_option_none .just_left {width:100%;} */
     .nav_fixed_wrap.cart .pd_btn_box {width:91%}
-    .cart_option .just_right {width:24%}
+    .cart_option .just_right {width:26%}
     .cart_option_none .option_txt, .cart_option .option_txt {width:100%}
 }
-@media screen and (min-width:400px) and (min-width:500px) {
-    .cart_option .just_left {width:74%}
+@media screen and (min-width:400px) and (max-width:500px) {
+    /* .cart_option .just_left {width:73%} */
 }
 
 /* --------------------------------------------------------------------- 결재  S ------------------------------------------------------------------ */
@@ -660,7 +664,6 @@ input[type=text].text-input.phone-last {width:70%}
 .input_radio label:after {display:none; background-color:#ff4e25; border-radius:50%; position:absolute; top:30%; left:7px; width:10px; height:10px; content:"";-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
 .input_radio input:checked + label:before {border-color:#ff4e25;}
 .input_radio label:before, .input_radio_check label:before {width:22px; height:22px; position:absolute; border:1px solid #dadada; content: "";border-radius: 50%; background-color:#fff}
-._method .input_radio label:before, ._method .input_radio_check label:before {top:0;}
 .input_radio input:checked+label:after {display:block;}
 .slick-slide a:focus, .slick-slide:focus {outline: 0}
 
@@ -695,7 +698,7 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap ._product .paymt_product .cart_info .just_left {width:60px; height:60px}
 .paymtWrap .paymt_info .cart_section_total {border-bottom:0; border-bottom-left-radius:2px; border-bottom-right-radius:2px; border-top:1px solid #e5e5e5; background-color:#f9f9f9;}
 /* .paymtWrap .paymt_info:nth-child(2):before  {display:block; content:''; clear:both; height:7px; background:#f0f0f0; border-top:1px solid #d0d0d0;} */
-.paymtWrap .paymt_info .article_title {position:relative; padding:0 20px; height:50px; line-height:50px; font-size:16px; font-weight:500; color:#000;}
+.paymtWrap .paymt_info .article_title {position:relative; padding:0 20px; height:50px; cursor:default; line-height:50px; font-size:16px; font-weight:500; color:#000;}
 .paymtWrap .paymt_info .article_title:after {content:''; display:block; position:absolute; top:18px; right:20px; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_close_toggle.gif) center center/cover no-repeat}
 .paymtWrap .paymt_info .article_title.active:after {content:''; width:12px; height:12px; background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_open_toggle.gif) center center/cover no-repeat}
 .paymtWrap .paymt_info .article_title .orange_txt b {font-size:16px}
@@ -775,9 +778,9 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .input_text_new .text_count {float:right; font-size:10px; color:#888; font-family:'proxima-nova'}
 .paymtWrap .input_text_new .text_count .bk {color:#000}
 .pay_back .input_text_new2 {max-width:90%;}
-.pay_back .input_text_new2 .wd {width:96%}
-.paymtWrap .input_text_new3 {float:left; width:82%; min-width:45%}
-.paymtWrap .input_text_new3 + .addrBtn {float:right}
+.pay_back .input_text_new2 .wd {width:89%}
+.paymtWrap .input_text_new3 {float:left; width:70%; min-width:45%}
+.paymtWrap .input_text_new3 + .addrBtn {float:right;width:15%}
 .paymtWrap .input_text_new3 + .addrBtn button {float:right; min-width:80px; height:40px; border:1px solid #555; color:#555; font-size:12px; text-align:center; background:#fff;}
 .pay_back input {height:40px}
 .pay_back .acc_wrap {display:flow-root;}
@@ -815,6 +818,15 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info .pay_back .content .name_check {overflow:hidden}
 .paymtWrap .paymt_info .pay_back .content .name_check .input_text_new {width:70%; float:left; margin:0 3% 10px 0;}
 .paymtWrap .paymt_info .pay_back .content .name_check .button_black {width:27%; float:left; height:45px; font-size:13px; background:#000; color:#fff}
+/* 결제 수단 UI 변경 */
+._method .wrap_button {display:inline-block; margin-bottom:20px; width:100%; text-align:center; vertical-align:top; box-sizing: border-box;}
+._method .wrap_button li {width:31.7%; height:59px; vertical-align: middle; display: inline; float:left; margin:0 auto; margin:0 2.1% 2.1% 0; vertical-align: top; font-size:13px; color:#333}
+._method .wrap_button li.on a {border:1px solid #333;}
+._method .wrap_button li:nth-child(3n + 0) {margin-right:0}
+._method .wrap_button li:nth-child(n + 6) {margin-bottom:0}
+._method .wrap_button li a > p {line-height:59px}
+._method .wrap_button li a > div {padding-top:13px}
+._method .wrap_button li a {width:100%; display: block; height:58px; margin:0 auto; border:1px solid #dadada;}
 /* 할인 차감 */
 .article_content .deduct {clear:both}
 .article_content .deduct tr {height:30px;vertical-align:top;}
@@ -1011,9 +1023,6 @@ input[type=text].text-input.phone-last {width:70%}
 .paymtWrap .paymt_info._method .wrap_radio .input_radio label > img {height:75%; vertical-align:middle}
 .paymtWrap .paymt_info .table_wrap2 .v_top {vertical-align:top; white-space:normal; min-width:80px}
 
-@media screen and (min-width: 720px) {
-    .paymtWrap .paymt_info .table_wrap2 td input {width:93%}
-}
 @media screen and (min-width:321px) and (max-width:709px){
     .pay_back .input_text_new2 .wd {width:92%}
 }
@@ -1022,39 +1031,35 @@ input[type=text].text-input.phone-last {width:70%}
 }
 @media screen and (max-width:320px) {
     .paymtWrap .paymt_info .sz-custom_text {font-size:10px}
-    .paymtWrap .input_text_new3 {width:57%;}
 }
 @media screen and (min-width:321px) and (max-width:360px) {
-    .paymtWrap .input_text_new3 {width:64%;}
     .pay_back .input_text_new2.mb10 {width:66%}
 }
 @media screen and (min-width:361px) and (max-width:519px) {
-    .paymtWrap .input_text_new3 {width:245px}
     .pay_back .input_text_new2 {width:82%}
     .pay_back .input_text_new2.mb10 {width:73%}
     .addrN table td {min-width:250px}
 }
 @media screen and (min-width:360px) and (max-width:380px) {
-    .paymtWrap .input_text_new3 {width:69%}
     .pay_back .input_text_new2 {width:74%}
 }
-@media screen and (min-width:321px) and (max-width:399px) {
-    .paymtWrap .input_text_new3 {width:67%}
+@media screen and (min-width:410px) and (max-width:6000px) {
+    .paymtWrap .input_text_new3 {width:75%}
 }
-@media screen and (min-width:400px) and (max-width:519px) {
-    .paymtWrap .input_text_new3 {width:70%}
+
+@media screen and (min-width:100px) and (max-width:460px) {
+    .paymtWrap .input_text_new3 {width: 100% }
+    .paymtWrap .input_text_new3+.addrBtn {width:100%}
+    .paymtWrap .input_text_new3+.addrBtn button { margin-top:10px; width: 100% }
 }
-@media screen and (min-width:520px) and (max-width:600px) {
-    .paymtWrap .input_text_new3 {width:77%}
+@media screen and (min-width:520px) and (max-width:599px) {
     .pay_back .input_text_new2.mb10 {width:81%}
 }
 @media screen and (min-width:600px) and (max-width:1020px) {
-    .paymtWrap .input_text_new3 {width:76%}
     .inp_d.sz-select_list {width:94%}
     .num-select .sz-select_sub {width:96.2%}
     .paymtWrap .paymt_product .prd_info .option li:first-child {max-width:70%}
-    /* .addrN table td {min-width:500px} */
 }
-@media screen and (max-width:719px) {
+@media screen and (max-width:499px) {
     #pop_card_benefit {min-width:100%; max-width:100%;}
 }
