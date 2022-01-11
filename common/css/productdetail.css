@@ -1046,7 +1046,6 @@ input[type=text].text-input.phone-last {width:70%}
 @media screen and (min-width:410px) and (max-width:6000px) {
     .paymtWrap .input_text_new3 {width:75%}
 }
-
 @media screen and (min-width:100px) and (max-width:460px) {
     .paymtWrap .input_text_new3 {width: 100% }
     .paymtWrap .input_text_new3+.addrBtn {width:100%}
