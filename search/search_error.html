@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
          <title>검색창</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <script src="../common/lib/jquery-2.2.4.min.js"></script>
         <link rel="stylesheet" href="../common/css/common.css">
         <link rel="stylesheet" href="../common/css/search.css">
@@ -15,8 +15,10 @@
     <body>
         <div id="wrap" class="wd720">
             <div id="header">
-                <div class="back"><a href="#" class="btn_back"><span class="blind">뒤로가기</span></a></div>
-                <!-- 검색창 -->
+                <ul class="btn_area flt_le">
+                    <li><a href="#"><i class="ico back"><span class="blind">닫기</span></i></a></li>
+                </ul>
+                <!-- 210106 검색창 디자인 변경 -->
                 <div class="ss-box wd">
                     <form action="">
                         <div class="ss-text-box">
@@ -27,7 +29,7 @@
                         </div>
                     </form>
                 </div>
-                <!-- //검색창 -->
+                <!-- //210106 검색창 디자인 변경 -->
             </div>
 
             <div id="container">
