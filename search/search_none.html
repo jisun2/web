@@ -2,7 +2,7 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
          <title>검색창</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,20 +16,21 @@
 
         <div id="wrap" class="wd720">
             <div id="header">
-                <!-- 검색창 -->
-                <div class="ss-box pd">
+                <ul class="btn_area flt_le">
+                    <li><a href="#"><i class="ico back"><span class="blind">닫기</span></i></a></li>
+                </ul>
+                <!-- 210106 검색창 디자인 변경 -->
+                <div class="ss-box wd">
                     <form action="">
                         <div class="ss-text-box">
                             <input type="search" title="검색어 입력창" class="ss-text" name="search" placeholder="검색어를 입력하세요" />
-                            <!-- <input type="search" title="검색어 입력창" class="ss-text" id="hhptemp" onkeypress="tempFn()" onfocusout="tempFn2()" name="search" placeholder="검색어를 입력하세요" /> -->
                             <button type="button" class="search_clear-btn">
                                 <span class="blind">검색어 삭제</span>
                             </button>
                         </div>
                     </form>
-                    <button type="button" class="ss-cancel">취소</button>
                 </div>
-                <!-- //검색창 -->
+                <!-- //210106 검색창 디자인 변경 -->
             </div>
             
             <div id="container">
