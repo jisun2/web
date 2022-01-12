@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.myWrap {padding-bottom:60px; min-width:320px; font-family:'Noto Sans KR'}
+.myWrap {padding-bottom:60px; min-width:320px; height:100vh; background-color: #fff; font-family:'Noto Sans KR'}
 .myWrap input {float:left}
 .myWrap.pdB0 {padding-bottom:0px}
 .myWrap .my_area {clear:both; width:100%}
